@@ -1,0 +1,22 @@
+# PROJECT.yaml v1 — GAVELED founding set 2026-08-02 (majkee); docket items stay pending
+name: nablarva              # operational repo/dir name (lowercase disk contract)
+official-name: nabLarva     # the animal — ∇larva (nabla larva), brand-car larva V3.
+                            # Public naming avoids the t-word (larvaTnux 'n' rule).
+                            # Claim no public namespace before majkee clears it.
+stack: { lang: TBD, framework: none }   # v1 language = gavel docket item 2 (python-stdlib
+                                        # vs C++ learning path) — do NOT assume before gavel
+commands:                   # docs-only phase; verbs land when docket item 2 gavels
+  test:  "TBD"
+  lint:  "TBD"
+  build: "none (strategy + substrate docs)"
+  run:   "none yet"
+docs:
+  architecture: docs/ARCHITECTURE.md
+  decisions:    session/flag.md
+agents: [ architect, challenger, researcher, implementer ]   # four base seats; domain seats earned
+mcp_profile: none           # placeholder — Model-C sizing deferred (onboarding-kit O1)
+# tools: none yet. First organs (stridularium naming = docket item 7) arrive as
+# experimental builds under the naming law in AGENTS.md, each carrying a provenance
+# header (name · status · schema · source · trust note) before it lands.
+guidelines_channel: stable
+# purpose · laws · ownership · constraints → session/flag.md
