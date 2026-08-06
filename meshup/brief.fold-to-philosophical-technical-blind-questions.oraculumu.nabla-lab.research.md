@@ -130,3 +130,115 @@ back synthesis with KEY + reconsiliation how successfull we were.
 > Flight, here yo can add your own observations recomendation, preflight links from your kuchine.
 
 ---
+
+## PROTOCOL — `TOP SECRET by PURPOSE not STYLE`
+
+> Captured by @Flight (MANNED, majkee driving) across loop-1 dialogue, 2026-08-06.
+> This is the operational spine that makes the brief runnable. Secret by **purpose**
+> (the intent — mask the real design to research it blind), not by style. Classify by *why*.
+
+### 0. Meta-discipline (read first)
+
+**This document is lab-readable** — Oraculum reads it in loop-1. Therefore this brief must
+**never** contain: the KEY, the literal safe path, or anything that collapses the blind wall.
+The protocol describes the *mechanism* of secrecy, not its contents. The artifact obeys its
+own protocol. Where a location is referenced below it is **abstracted on purpose**; the exact
+path is operator-held and out-of-band.
+
+### 1. Product ledger (numbering fix)
+
+The primary doc labels products inconsistently. Locked reading:
+
+- **P1 — KEY** · the private cipher table (agentive term → plain-architecture term). Held, never shipped.
+- **P2 — GUIDE / substrate** · the deflated, *shareable* descendant of the KEY. No agentive vocabulary. Safe to hand to colleagues/models.
+- **P3 — RESEARCH** · blind, in the masked technical layer → reports by scope.
+- **P4 — BACK-SYNTHESIS** · decode via KEY, reconcile, score.
+
+P1 and P2 are **one pass**, not two — you cannot write the GUIDE without the cipher, and the cipher *is* the KEY.
+
+### 2. The fold (P1/P2 method)
+
+The fold is a **visible mapping table** — left column the story term, right column the plain
+software-architecture term. That table *is* the KEY. IT jargon has the surface to cover agentive
+shapes ~1:1 (room → message bus/IPC; broker → message broker/router; journal → append-only log/WAL;
+incarnation & cold-start → process spawn / stateless-worker rehydration; larva → daemon/process
+lifecycle; handoff wake-doc → checkpoint/resume token; gate → CI stage/policy check).
+
+- Verbatim terms are lifted **by hand** into the RAW synth **before** any Field compression.
+  Field distills *meaning*, not the *glossary* — never trust it with the verbatim the cipher needs.
+- A table is **shareable** (colleagues carry the research without seeing the story) and **auditable** (which is what makes P4 possible).
+
+### 3. Clean-room = temporal boundary + project boundary
+
+- Every phase is a **cold-start session**; no memory crosses the boundary. Session death *is* the burn.
+- The **phase-2 → phase-3 handoff is deliberately amnesiac**: **goal-continuous, KEY-blind.** The next
+  incarnation carries the GOAL forward and must **never** reconstruct the cipher "to be helpful."
+- The blind wall is the **project boundary**: the lab team is rooted in `nabla-lab`; the safe lives in
+  the `nablarva` tree — a different project. A cold-start lab agent's saddle-read reads its own harness,
+  never nablarva's, and harness convention requires explicit registry reiteration to enter a foreign
+  project. **No official cross-instruction is ever given.** Layered with camouflage + gitignore =
+  defense-in-depth, not one thin wall. (Note: obscurity stops humans/git/saddle-read; the *load-bearing*
+  wall is the project boundary + no-official-instruction, not the quiet folder name.)
+
+### 4. The safe + the airlock
+
+- **Safe:** an operator-held, **gitignored** orphan folder in the `nablarva` tree (`git rm` from tracking,
+  local-only = "no legal record/log"). Camouflaged as orphaned dev-session debris nobody revisits.
+  Exact path operator-held, out-of-band (see §0).
+- **Airlock:** the **operator is the only courier.** Lab is **logs-only, no wires.** The mirror is
+  **operator-PULL, one-way (lab → safe)**; **no lab session ever reads back from the safe** — that read
+  is exactly what would carry the KEY across the amnesiac boundary. "No wires" is a *policy* wall
+  (instruction + no network tools granted), adequate for this threat model (adversary = contamination /
+  pattern-match, not a malicious exfiltrator); real enforcement is operator-as-sole-courier.
+- **KEY birth & burn:** the KEY is **born directly in the safe** (outside the lab, outside git — no move,
+  no burn window). "Burn ships" = the phase-2 session dies on cold-start; the mask-making reasoning is
+  gone, the frozen KEY persists in the safe, and phase-3 is never pointed at it.
+
+### 5. Trust topology
+
+- **Inside the KEY boundary (hold the cipher):** operator + nablarva **coordination** seats (Flight/Houston).
+- **Outside (blind):** the entire **nabla-lab research team** — Oraculum-in-lab, the Epoch/Janus blind briefs, phase-3.
+- **The KEY lives with the coordination seat, never the research seat.** Never promote the KEY into a lab session.
+
+### 6. Phases → products
+
+| Phase | Action | Produces |
+|---|---|---|
+| 1 · Data mining | collect real verbatim, **no hiding** → RAW synth | feeds P1/P2 |
+| 2 · Masking | build vocabulary + cipher, born in safe, **session burns** | **P1 KEY + P2 GUIDE** |
+| 3 · New generation (blind) | opportunities as *just another software architecture*, plain/common ways (topics) | P3 setup |
+| 4 · Release (blind brief in `drafts/`) | research per blind brief, **session ends** | **P3 reports by scope** |
+| 5 · Completion | back-synthesis + conclusion | **P4** |
+
+Phase-1 is **fanned out by source/scope** (Oraculum's sequencing competence) — 111k tokens / 30 files
+is not one heroic session; the heavy sources (`natural-ladders`, `old-but-good-onion`) each get a bounded ingest.
+
+Dropping the blind brief in `drafts/` is an instance of the lab's existing **Force 5 (blind before grounded)** —
+this applies canon, it does not bend it.
+
+### 7. P4 metric — `decode → fidelity gate → generativity rank`
+
+Two axes, because measuring one gets you fooled:
+
+- **Fidelity (floor)** — decode each finding through the KEY; does it land on the *real* machine?
+  Catches a leaked/flattened mask (clean answers to the *wrong* question). Pass/fail gate.
+- **Generativity (ceiling)** — of the findings that decode cleanly, how many are **net-new** vs. the
+  contaminated agentive frame? Catches the *sterile* pass (faithful but re-derives what you knew).
+
+|                    | Low generativity              | High generativity                          |
+|--------------------|-------------------------------|--------------------------------------------|
+| **High fidelity**  | Sterile — mask was a no-op     | ✅ **The win** → promote                    |
+| **Low fidelity**   | Garbage → discard              | Seductive drift — solves a machine you're not building |
+
+- **Success of the operation** = mass of findings in the **high/high** quadrant.
+- **Re-anchor pass** (gaveled 2026-08-06): high-generativity / medium-fidelity findings get a **second
+  decode/re-anchor attempt before discard** — don't throw away exciting findings that only need re-grounding.
+- **Failures teach:** low-fidelity clusters → *which KEY terms were lossy* (refine the cipher). Low-generativity
+  clusters → where the agentive framing was already honest (no hidden froth there). P4 sharpens both the KEY and self-understanding.
+
+### 8. Loop-1 exit gate
+
+Loop-1 is finished when: **frame confirmed · product ledger gaveled · this protocol captured ·
+open items closed.** Only then do the `### process` files get read.
+
+---
