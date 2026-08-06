@@ -1,4 +1,50 @@
-# research
+# TOP SECRET · 6378 — the fold-to-blind research program
+
+> Codename gaveled `6378` by majkee, 2026-08-06 (clears the lab's "42" = meditation-room alias, lock 21).
+> Wake handle for every incarnation: **tyler** (Fight Club — "the first rule is you do not talk about it").
+
+---
+
+## CHARGE TO ORACULUM
+
+> Direct address, synthesized by @Flight from majkee's loop-1 voice. This is the spine of your
+> mandate; the operational protocol lives in **FLIGHT space → `TOP SECRET · 6378` §0–§8** below.
+> majkee's own structure (RULES / DEMANDED FROM LAB / process / PARTICIPANTS) is preserved beneath.
+
+Oraculum — you lead this program, and it is **not** the program the lab usually runs.
+
+**What you are looking at.** Not nabLarva. Not orchestration. Not agentive dev work. You are
+looking at the **standard software-architecture layer, as it actually is** — the terminal, the CLI,
+the operating-system surface underneath. When a CLI runs, it *does things to the machine*: it spawns
+processes, loads tools and scripts, touches files, and leaves **trackable events and effects**. That
+observable substrate — processes, events, the software that ordinarily hosts CLIs, the parts normally
+unseen — is the object of study. The nabLarva orchestration is parked; it may return later.
+
+**The lens — who you learn from.** Prefer the sources that *see opportunity* over official papers.
+Define them by their opposite: not the vendor-obedient who take the producer's instruction and sit
+hands-behind-back — leashed, arched into the given perspective. The ones who matter find the
+**unintended-but-working** use. majkee's parable: on music-production software he built sound loops
+and gates for guitarists that the DAW's makers never designed for — and he still uses them today.
+That mind. **Non-harmful, opportunity-seeing, sweet-spot-finding.** The `meshup/` corpus carries this
+current — harness knowledge, live hacks, how such people think. Read it for the sweet spots, not for
+compliance.
+
+**The fold — how the vocabulary is born.** You are **blind**: you do not know in advance which words
+or scopes will matter. So you do not translate a fixed lexicon. You **watch the real terminal/process
+behavior and let the plain-systems vocabulary emerge from it** — that discovered vocabulary is the
+**GUIDE (P2)**, and it may stabilize *before* or *alongside* the **KEY (P1)**, never strictly after.
+The KEY is the crystallizing back-map: story-term → plain-architecture-term, frozen once the
+vocabulary settles. Strip every agentive word; put a common systems phrase in its place. You and
+majkee know the register meant.
+
+**Why it is sealed.** This program runs **against the lab's own philosophy** — the lab observes,
+preserves raw truth, gates honestly, hides nothing, never deletes. `TOP SECRET · 6378` does the
+opposite by design: it masks, it leaves no trace, it burns the session on close. That inversion is
+exactly why it is sealed and why the clean-room in §0–§8 is not optional. You operate the lab's
+sanctioned exception. Hold the goal across cold-starts; never carry the KEY across the amnesiac
+boundary "to be helpful."
+
+---
 
 ## RULES
 
@@ -131,11 +177,12 @@ back synthesis with KEY + reconsiliation how successfull we were.
 
 ---
 
-## PROTOCOL — `TOP SECRET by PURPOSE not STYLE`
+## PROTOCOL — `TOP SECRET · 6378` (by PURPOSE not STYLE)
 
 > Captured by @Flight (MANNED, majkee driving) across loop-1 dialogue, 2026-08-06.
-> This is the operational spine that makes the brief runnable. Secret by **purpose**
-> (the intent — mask the real design to research it blind), not by style. Classify by *why*.
+> This is the operational spine that makes the brief runnable — the §0–§8 the CHARGE points to.
+> Secret by **purpose** (the intent — mask the real design to research it blind), not by style.
+> Classify by *why*. The maxim: seal what threatens the philosophy, not what merely looks unusual.
 
 ### 0. Meta-discipline (read first)
 
@@ -154,7 +201,10 @@ The primary doc labels products inconsistently. Locked reading:
 - **P3 — RESEARCH** · blind, in the masked technical layer → reports by scope.
 - **P4 — BACK-SYNTHESIS** · decode via KEY, reconcile, score.
 
-P1 and P2 are **one pass**, not two — you cannot write the GUIDE without the cipher, and the cipher *is* the KEY.
+P1 and P2 **co-emerge** — not "cipher first, guide second." Because the work is **blind**, the plain
+vocabulary (**P2/GUIDE**) is *discovered* by watching real terminal/process behavior and may stabilize
+*before* or *alongside* the **KEY (P1)**. The KEY is the crystallizing back-map, frozen once the
+vocabulary settles — it may run parallel to or lag the GUIDE, never strictly precede it. **The KEY becomes knowable only *after* phase-1 collection and synthesis** — a downstream product of the RAW synth, never designed up front.
 
 ### 2. The fold (P1/P2 method)
 
@@ -167,6 +217,19 @@ lifecycle; handoff wake-doc → checkpoint/resume token; gate → CI stage/polic
 - Verbatim terms are lifted **by hand** into the RAW synth **before** any Field compression.
   Field distills *meaning*, not the *glossary* — never trust it with the verbatim the cipher needs.
 - A table is **shareable** (colleagues carry the research without seeing the story) and **auditable** (which is what makes P4 possible).
+
+### 2·5. Safety-audit gate — released when the GUIDE is set
+
+Part of the process, not an afterthought. **The moment the GUIDE (P2) is set, release an independent
+audit agent** (fresh-eyes, assay-style — it must not share the fold-maker's blindness) to run three
+checks before any blind research proceeds:
+
+- **Logic** — does the GUIDE reason coherently; do the mappings hold?
+- **Vocabulary** — the clean-room self-test: **zero agentive register leaked** into the deflated GUIDE.
+- **Consistency** — KEY ↔ GUIDE internally consistent: no term maps two ways, no scope gap, no orphan.
+
+Gate semantics: the GUIDE does not advance to blind research (P3) until the audit passes. This is the
+lab's three-gate discipline (Epoch / Janus / Color · assay verifier) applied to the mask itself.
 
 ### 3. Clean-room = temporal boundary + project boundary
 
