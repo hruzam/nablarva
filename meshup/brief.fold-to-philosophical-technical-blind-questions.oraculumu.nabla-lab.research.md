@@ -60,8 +60,17 @@ back synthesis with KEY + reconsiliation how successfull we were.
 **loop-2{,3,...} STUDY what IS**
 
 1. maybe first synthetysis with many buffers -> group of parts -> (`task.<scope>.md`) -> you will pick the style.
-	> -> blind work preparation (?)
-2. carefully study folder context here: `/home/hruzam/unikuklatrix/nablarva/meshup`
+> -> blind work preparation (?)
+2. carefully study folder context here: 
+- WHY? : repomix made to see by hand how much data from files here has :
+  ```zsh
+  		Total Files: 30 files
+	 	Total Tokens: 111,421 tokens
+  		Total Chars: 424,358 chars
+  ```
+
+- SOURCE: `/home/hruzam/unikuklatrix/nablarva/meshup`
+> Oraculum, possible sequencing sessions (YOUR COMPETENCE TO PLAN).
 - biggest impact/weight has technically: `/home/hruzam/unikuklatrix/nablarva/meshup/natural-ladders-grounded-phase.a-sym` + `/home/hruzam/unikuklatrix/nablarva/meshup/old-but-good-onion`
 - examples how to release philosophical questions *(by school or policy)*: `/home/hruzam/unikuklatrix/nablarva/meshup/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/seed.entity.vision-not-explored.2026-08-02.md`, `/home/hruzam/unikuklatrix/nablarva/meshup/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/seed.entity.full-idea.2026-08-02.md`
 3. collect what we else know: let (epoch, eagle) also collect data (worth to read + explain how is working in reposoma folder)

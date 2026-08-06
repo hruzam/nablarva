@@ -44,6 +44,9 @@ nabla-buffer-brideAndBook/
 natural-ladders-grounded-phase.a-sym/
   asymmetry.codex-bonding-layer.research.2026-08-05.md
   Houston.research.skill-script-bonding-layer.md
+old-but-good-onion/
+  interposition-study.md
+  terminal-onion-study.md
 oraculum-basic-triangulation/
   00_README.md
   01_ARCHITECTURE_ROOM_AND_BROKER.md
@@ -1868,6 +1871,389 @@ brief.fold-to-philosophical-technical-blind-questions.oraculumu.nabla-lab.resear
 434: ---
 435: 
 436: *End of research artifact. @Houston, 2026-08-05.*
+````
+
+## File: old-but-good-onion/interposition-study.md
+````markdown
+  1: # AI-CLI INTERPOSITION — Loop II Résumé
+  2: 
+  3: *How to wrap a vendor CLI for live message access while staying a standard
+  4: customer, and how to build it to survive whatever the vendor does next.*
+  5: *Policy wording verified June 2026; treat it as the most volatile section.*
+  6: *Companion to `terminal-onion-study.md` (the substrate map).*
+  7: 
+  8: ---
+  9: 
+ 10: ## 0. The goal, one line
+ 11: 
+ 12: > Personal access to the **living message exchange** of an AI CLI —
+ 13: > driven from files, not the UI; without breaking I/O; without being billed or
+ 14: > seen as an SDK agent builder. Extend, don't violate.
+ 15: 
+ 16: ---
+ 17: 
+ 18: ## 1. Vendor app ≠ SDK → the verb is *interpose*
+ 19: 
+ 20: You don't **link** these tools and call their functions. They are vendor
+ 21: **applications**, not libraries. So you **interpose** — wedge code between two
+ 22: rings of a binary you don't own. The onion gives a seam at almost every ring.
+ 23: 
+ 24: | Ring | Seam | Buys | Cost |
+ 25: |---|---|---|---|
+ 26: | **1** | **MCP server** (JSON-RPC / stdio) | hand the agent a new tool | none — a contract |
+ 27: | **1** | **Hooks** (PreToolUse / PostToolUse / Stop) | intercept/rewrite a command pre-run | none — sanctioned |
+ 28: | **6** | **`$PATH` shadow** wrapper | env/arg munging, logging | crude, zero-dep |
+ 29: | **3–4** | **PTY wrap** (tmux / Zellij / `portable-pty`) | *become its terminal*: inject input, tee output, multiplex | language-agnostic, binary untouched |
+ 30: | **7** | **`NODE_OPTIONS=--require`** | patch `https`/`fs`/`child_process` at load | brittle vs updates, ToS exposure |
+ 31: | **7** | **network proxy** (mitmproxy + `NODE_EXTRA_CA_CERTS`) | sit on the API stream | uses app's own proxy plumbing |
+ 32: | **7** | **`LD_PRELOAD`** | shim `connect`/`write`/`openat` at libc | max power, max fragility |
+ 33: 
+ 34: **Principle: stay shallow.** Ring 1 survives updates because it's a contract,
+ 35: not a hack. Drop to ring 4 only to own the stream itself; ring 7 only to bend
+ 36: runtime behavior — and pay the fragility tax knowingly.
+ 37: 
+ 38: ---
+ 39: 
+ 40: ## 2. The chosen architecture — file-backed loop around the unmodified CLI
+ 41: 
+ 42: Wrap the **interactive** binary in a PTY you own. Feed it from a file, tee its
+ 43: output to a file. The binary is never patched; it can't tell your pseudo-terminal
+ 44: from hardware — that's the whole point of a PTY.
+ 45: 
+ 46: ```sh
+ 47: tmux new -s ai claude                         # interactive, subscription auth, PTY tmux owns
+ 48: tmux pipe-pane -t ai -o 'cat >> ~/ai/out.log' # READ: tee the living exchange (copy, not divert)
+ 49: 
+ 50: # WRITE: your "leaking markdown" loop — append to feed.md, it streams in as keystrokes
+ 51: tail -F feed.md | while IFS= read -r line; do
+ 52:   tmux send-keys -t ai -l "$line"; tmux send-keys -t ai Enter
+ 53: done
+ 54: # multi-line block instead: tmux load-buffer msg.md && tmux paste-buffer -t ai
+ 55: ```
+ 56: 
+ 57: **Why the PTY is mandatory, not optional:** interactive Claude Code is an Ink
+ 58: TUI in raw mode — it needs a **TTY** on stdin. A bare `cat file | claude` fails
+ 59: (`isatty()` → false). The PTY supplies the TTY, so your file bytes arrive *as
+ 60: keystrokes*. I/O stays intact (you tee, you don't intercept-and-drop); the pane
+ 61: renders normally; no SDK, no API key, no `-p`.
+ 62: 
+ 63: ---
+ 64: 
+ 65: ## 3. The unskinned terminal (why this is principled, not a hack)
+ 66: 
+ 67: The GUI emulator is **only a skin** — a userspace rasterizer. Strip it and the
+ 68: terminal the kernel itself provides remains:
+ 69: 
+ 70: - **Virtual / framebuffer console** — `Ctrl+Alt+F3` → `/dev/tty3`; the kernel
+ 71:   draws glyphs to the framebuffer via `fbcon`, no emulator in the path.
+ 72: - **Serial console** — `/dev/ttyS0`; the terminal is literally UART bytes on a
+ 73:   wire. The most "on the iron." (`console=ttyS0,115200`, `picocom`.)
+ 74: - Enumerate: `cat /proc/consoles`, `ls -l /dev/tty*`.
+ 75: 
+ 76: A **PTY (`/dev/pts/N`) is the software emulation of exactly that wire.** So:
+ 77: 
+ 78: ```
+ 79: hardware skin:  keyboard+monitor ↔ VT/serial ↔ kernel TTY ↔ process
+ 80: emulator skin:  alacritty        ↔ PTY       ↔ kernel TTY ↔ process
+ 81: YOUR skin:      feed.md+out.log   ↔ PTY(tmux) ↔ kernel TTY ↔ claude
+ 82: ```
+ 83: 
+ 84: You aren't tapping the terminal — **you built your own unskinned front-end.**
+ 85: The VT renders to a framebuffer, the emulator to pixels, *you to a markdown
+ 86: file.* Same wire, interchangeable skin. Stripped to the iron, a terminal is just
+ 87: **a TTY + a line discipline**; everything above is a chosen skin over one byte
+ 88: contract.
+ 89: 
+ 90: ---
+ 91: 
+ 92: ## 4. The policy green zone  *(verified June 2026 — volatile)*
+ 93: 
+ 94: - The **Consumer Terms prohibit automated/non-human access** (bot, script) —
+ 95:   **except** via an Anthropic API key, **or** where explicitly permitted.
+ 96: - **Claude Code is built for scripted/automated use**, so the official product
+ 97:   is itself the permitted vehicle. The operative phrase for limits:
+ 98:   **"ordinary, individual usage of Claude Code."**
+ 99: - **The bright line:** your subscription login (**OAuth token**) is allowed
+100:   **only inside Claude Code and Claude.ai.** Feeding that token to the **Agent
+101:   SDK or any other tool/service is a violation** of the Consumer Terms. (This is
+102:   what the Feb 2026 authentication-policy update was written to stop.)
+103: - **Scale/purpose caveat:** "ordinary individual" = personal. Always-on,
+104:   business, or multi-user → switch to **API keys under the Commercial Terms.**
+105: 
+106: **Where this loop lands:** the tmux file-feed drives the *official interactive
+107: product's own input*, on *subscription auth*, *single-user, personal*. The token
+108: never leaves Claude Code. → **green.** The only grey edge is turning it
+109: always-on / shared / commercial. Pull the verbatim ToS text before relying on it
+110: for anything beyond personal use.
+111: 
+112: ---
+113: 
+114: ## 5. Codebase reality — nothing to fork, nothing to rebuild
+115: 
+116: - **No vendor source needed.** You wrap the binary as a black box; the PTY means
+117:   you never touch its insides. (Source *did* leak 2026-03-31 and an open toolkit
+118:   exists — **unnecessary** here.)
+119: - **No terminal to build.** PTY, TTY, line discipline are already in the Linux
+120:   kernel — open, and consumed *through tmux*. You don't write them.
+121: - **What you build from scratch:** ~20–40 lines of glue — the tmux wrapper, the
+122:   `tail -F` feeder, the output tee. Small because the kernel and tmux do the
+123:   heavy lifting. A thin file-skin, not a terminal.
+124: 
+125: ---
+126: 
+127: ## 6. Resilience against vendor shifts
+128: 
+129: Bind to the most stable contract; lock all vendor specifics behind one swappable
+130: piece. Depth of contract = number of shifts survived.
+131: 
+132: - **Spine — files are the contract.** Input file in, output log out. Invariant
+133:   whether the backend is a terminal, an API, or a future closed GUI (the GUI
+134:   still does message-in/response-out underneath).
+135: - **Seam — one thin ADAPTER** holds every vendor detail (flags, auth, escape
+136:   parsing, paths). Nothing else knows the vendor exists. A shift → rewrite one
+137:   file; **blast radius stops there.** Today's tmux/markdown loop *is* today's
+138:   adapter — the seam is already in the right place.
+139: - **Keep multiple adapters ready:**
+140:   - *interactive-CLI* — cheap (subscription), but scrapes a moving UI → fragile to parse.
+141:   - *API* — metered, but always available and clean to parse.
+142:   - *screen-automation* — worst-case full black-box GUI.
+143:   Same files in the middle; swap the backend. Never stranded.
+144: - **Canary — a tripwire (the "notice" half).** A smoke test feeds a known input
+145:   through the adapter and checks the output shape. The instant the vendor changes
+146:   the shape (new prompt, changed escapes, a refused pipe) it **fails loud** —
+147:   you learn immediately, not three days into producing garbage.
+148: 
+149: **Two honest limits:**
+150: 1. **No free lunch.** Cheap path = scraping a UI that moves constantly (fragile);
+151:    clean-parse path = the metered one. The adapter lets you *choose per job* —
+152:    it doesn't erase the tradeoff.
+153: 2. **Portability, not immunity.** Architecture protects you from *the contract
+154:    changing*. It cannot protect you from a vendor turning *adversarial* or
+155:    repricing — the economics stay theirs to set.
+156: 
+157: **Keep it lean:** one seam, one canary, a couple of adapters. A giant
+158: "just-in-case" plugin framework is the Rube Goldberg machine we reject. Files +
+159: adapter + tripwire ≈ 90% of the resilience for almost none of the bloat.
+160: 
+161: ---
+162: 
+163: ## 7. OPEN BRANCH — parallel-finger daemon  *(seed for next thread)*
+164: 
+165: Code that touches the same process data as additional parallel "fingers."
+166: Splits along the §4 line:
+167: 
+168: - **Worthy — fingers at the DISK layer.** `inotifywait` on
+169:   `~/.claude/projects/*.jsonl`, parse each new line, react / index / append to
+170:   *your own* anchor files. Touches the process data **without touching the
+171:   process.** Green, file-backed, observe-and-react only; survives shifts while
+172:   session files are written.
+173: - **Trap — fingers hardcoded into the RUNTIME.** `NODE_OPTIONS` preload /
+174:   in-process patch → mutate the live exchange in real time. Powerful, but fights
+175:   the minified build, breaks on daily releases, and drifts toward the
+176:   credential/automation violation once it acts autonomously. **Don't hardcode now.**
+177: - **Division of labor:** **read-side fingers at the disk; write-side injection
+178:   at the `feed.md` → PTY seam.** Observe at the file, inject at the wire. Another
+179:   module hanging off the file contract.
+180: 
+181: ---
+182: 
+183: ## 8. Principle, restated
+184: 
+185: ```
+186: Vendor app ≠ SDK        → interpose, don't link
+187: Stay shallow            → the contract is the bulletproof ring
+188: PTY = the wire          → a file-skin is as valid as a pixel-skin
+189: Files are the spine     → adapter swaps the backend, canary catches the shift
+190: Green zone              → official CLI + subscription auth + personal scale
+191: Resonance in streams.   Truth in files.
+192: ```
+````
+
+## File: old-but-good-onion/terminal-onion-study.md
+````markdown
+  1: # THE TERMINAL ONION — Study Reference
+  2: 
+  3: *Scope: what "the terminal" actually is, ring by ring, plus the concrete
+  4: filesystem coordinates where the bytes live and where you tap them.*
+  5: *Product facts verified against web sources, June 2026. Kernel/UNIX mechanics
+  6: are timeless — unsourced by design.*
+  7: 
+  8: ---
+  9: 
+ 10: ## 0. The one-line thesis
+ 11: 
+ 12: > Surface tools look like GUIs. The contract is unbroken.
+ 13: > **It is text all the way down, and every ring below the skin is tap-able.**
+ 14: 
+ 15: The flashy CLIs (`claude`, `gemini`, `cursor-agent`) draw nothing graphical.
+ 16: They emit ANSI/VT escape sequences into a byte stream. "UI" is a projection.
+ 17: 
+ 18: ---
+ 19: 
+ 20: ## 1. The onion — outer skin → core
+ 21: 
+ 22: | # | Ring | What lives here | Kernel? |
+ 23: |---|------|-----------------|:---:|
+ 24: | 1 | **TUI / application** | `claude`, `gemini`, `vim`, `htop`, `lazygit` | — |
+ 25: | 2 | **Escape-sequence protocol** | `\e[31m` red, `\e[2J` clear, `\e[?1049h` alt-screen | — |
+ 26: | 3 | **Terminal emulator** | alacritty, kitty, foot, wezterm, st — turns escapes → pixels, holds PTY **primary** | — |
+ 27: | 4 | **PTY pair** | the wire: `/dev/ptmx` → `/dev/pts/N` | **yes** |
+ 28: | 5 | **Line discipline (`n_tty`)** | echo, backspace, Ctrl-C→SIGINT, canonical vs raw | **yes** |
+ 29: | 6 | **Shell** | bash/zsh/fish — *just another tenant*; forks+execs the tool, then blocks | — |
+ 30: | 7 | **Process + FD layer** | fork/exec, process table, `/proc/PID/fd/` | **yes** |
+ 31: | 8 | **Core** | kernel + silicon | **yes** |
+ 32: 
+ 33: The cardinal sin: conflating **ring 3 (emulator)** with **ring 6 (shell)**.
+ 34: They are different programs. The shell is not special; the kernel is.
+ 35: 
+ 36: ---
+ 37: 
+ 38: ## 2. The three streams
+ 39: 
+ 40: A running agent splits its I/O into three independent byte-streams. Tap each
+ 41: at a different ring.
+ 42: 
+ 43: | Stream | Crosses | Tap point | Plaintext? |
+ 44: |--------|---------|-----------|:---:|
+ 45: | **Render** | PTY (fd 1) | `strace -e write` | yes (escapes + content) |
+ 46: | **Network** | TLS socket | `strace -e sendto` / `ss` | **no** — ciphertext on the wire |
+ 47: | **Disk** | filesystem | `inotifywait` / `strace -e openat` | yes — see §5 |
+ 48: 
+ 49: ---
+ 50: 
+ 51: ## 3. Device-node map (the PTY wire)
+ 52: 
+ 53: | Path | Role | Read it |
+ 54: |------|------|---------|
+ 55: | `/dev/ptmx` | PTY multiplexer — `open()` allocates a new pair, returns the **primary** fd (anonymous, held by emulator) | — |
+ 56: | `/dev/pts/N` | **subsidiary** side — the program's controlling terminal; its fd 0/1/2 | `tty` prints yours |
+ 57: | `/proc/PID/fd/` | symlinks per open fd; 0,1,2 → `/dev/pts/N` for an interactive proc | `ls -l /proc/PID/fd` |
+ 58: | `/proc/PID/fdinfo/N` | position + flags per fd | `cat` |
+ 59: 
+ 60: ```sh
+ 61: tty                         # which pts am I on
+ 62: ps -o pid,tty,cmd            # controlling tty per process
+ 63: who                          # who is on which pts
+ 64: ls -l /proc/$(pgrep -f claude)/fd   # see 0/1/2 → /dev/pts/N, plus socket fds
+ 65: lsof -p $(pgrep -f claude)          # every open file + socket, one view
+ 66: ```
+ 67: 
+ 68: > **Honest caveat:** you cannot cleanly mirror a pts's *output* by `cat`-ing the
+ 69: > node — reading `/dev/pts/N` competes with the foreground process for its
+ 70: > *input*. For reliable output capture use `strace -e write`, or wrap the
+ 71: > session in `script` / `ttyrec` from the start.
+ 72: 
+ 73: ---
+ 74: 
+ 75: ## 4. Mount table (the literal "mount points")
+ 76: 
+ 77: The kernel's own truth about what is mounted where — raw, authoritative,
+ 78: plaintext.
+ 79: 
+ 80: | Command | Gives you |
+ 81: |---------|-----------|
+ 82: | `cat /proc/mounts` | kernel's raw mount list (= `/proc/self/mounts`) |
+ 83: | `findmnt` | the mount **tree** |
+ 84: | `mount \| column -t` | aligned human view |
+ 85: | `df -hT` | usage + filesystem type per mount |
+ 86: | `lsblk -f` | block devices + their filesystems |
+ 87: 
+ 88: **This sandbox's mounts** (concrete example of the abstraction):
+ 89: 
+ 90: | Mount | Mode | Meaning |
+ 91: |-------|------|---------|
+ 92: | `/mnt/user-data/uploads` | ro | inbound — files the human handed in |
+ 93: | `/mnt/user-data/outputs` | rw | deliverables land here *(this file did)* |
+ 94: | `/mnt/skills/public` `…/private` `…/examples` | ro | skill substrate |
+ 95: | `/home/claude` | rw | scratch — **resets between tasks** (the dream state; volatile) |
+ 96: 
+ 97: ---
+ 98: 
+ 99: ## 5. On-disk truth (where the timeline actually lives)
+100: 
+101: Verified June 2026. Claude Code persists every session to plaintext on disk —
+102: this is the file-based truth, not volatile amnesia.
+103: 
+104: | Path | Contents |
+105: |------|----------|
+106: | `~/.claude/projects/<abs-path-encoded>/<session-id>.jsonl` | full transcript: every prompt, response, tool call, command output, pasted text |
+107: | `~/.claude/history.jsonl` | lightweight cross-session command/meta history |
+108: | `~/.claude/settings.json` · `settings.local.json` | config |
+109: | `~/.claude/.credentials.json` | API creds (Linux/Windows) |
+110: 
+111: **Properties that matter:**
+112: - **JSONL = line-delimited append.** The append-only invariant is the literal
+113:   storage format. `tail -f` it; `jq` it; `grep` it.
+114: - **Not encrypted at rest.** OS file permissions are the only protection. A
+115:   `.env` read or a printed credential is written into the `.jsonl`.
+116: - **TTL, not loss.** Files older than `cleanupPeriodDays` (default **30**) are
+117:   deleted on startup — a filter-on-read TTL. Opt out with
+118:   `CLAUDE_CODE_SKIP_PROMPT_HISTORY`.
+119: - Resume: `claude -c` (latest) / `claude -r <id>` (specific).
+120: 
+121: ```sh
+122: # watch the disk truth grow in real time, from another pane:
+123: tail -f ~/.claude/projects/*/$(ls -t ~/.claude/projects/*/ | head -1)
+124: # or trace every file the agent touches:
+125: strace -f -p $(pgrep -f claude) -e trace=openat,write -s 256
+126: ```
+127: 
+128: ---
+129: 
+130: ## 6. The tap drill (watch a live agent cross the wire)
+131: 
+132: ```sh
+133: PID=$(pgrep -f claude)
+134: 
+135: # render + disk streams (escapes, content, file writes)
+136: strace -f -p "$PID" -e trace=read,write,openat -s 8192
+137: 
+138: # network: the API socket — ESTABLISHED to api.anthropic.com:443, ciphertext
+139: ss -tnp  | grep "$PID"
+140: lsof -iTCP -a -p "$PID"
+141: 
+142: # to read the network plaintext you must intercept at another ring:
+143: #   SSLKEYLOGFILE=… + Wireshark, or a proxy (mitmproxy) with the Node agent's
+144: #   NODE_EXTRA_CA_CERTS / HTTPS_PROXY pointed at it.
+145: ```
+146: 
+147: > `strace -f` follows forks. These agents are **recursive stream multiplexers**:
+148: > a bash tool-call spawns a *child* with its own pipes, captures that child's
+149: > output, and re-renders it into the agent's own surface. So `-f` exposes an
+150: > entire process-subtree's I/O — nested byte-streams folded into one render.
+151: 
+152: ---
+153: 
+154: ## 7. Verified product facts — June 2026
+155: 
+156: | Tool | Render stack | Status |
+157: |------|--------------|--------|
+158: | **Claude Code** | React + **Ink** + **Yoga** layout · **Bun** build · **npm** dist · Node 18+ | ✅ CONFIRMED |
+159: | **Gemini CLI** | React + **Ink** | ✅ CONFIRMED (listed in Ink's own users) |
+160: | **Cursor CLI** | runs agents in-terminal; **render stack unknown** — *not* in Ink's user list | ⚠️ PARTIAL · `[unverified]` |
+161: 
+162: **Post-cutoff notes (training-era me couldn't know):**
+163: - **2026-03-31** — Claude Code's full TypeScript source exposed via npm source
+164:   maps. Leak-analysis claims the Yoga layout is a ~2700-line pure-TS rewrite,
+165:   not a C++ binding — *plausible, leak-derived, not gospel* (official framing
+166:   says "Meta's Yoga").
+167: - **Bloat datum:** Claude Code reserves ~**32.8 GB virtual** for the V8 heap,
+168:   ~45% malloc fragmentation, **746 MB peak** that never releases — classic leak
+169:   pattern. The React-in-a-terminal tax.
+170: 
+171: ---
+172: 
+173: ## 8. Principle, restated
+174: 
+175: ```
+176: Ring 1–2   convention   (escape sequences — a 1970s VT220 contract, unbroken)
+177: Ring 3     pixels       (emulator — the only thing that rasterizes)
+178: Ring 4–5   the wire     (PTY + line discipline — first place bytes are tap-able)
+179: Ring 6     a tenant     (the shell is not special)
+180: Ring 7–8   truth        (/proc/PID/fd — what is actually wired to what)
+181: 
+182: Resonance lives in streams.   Truth lives in files.
+183: ```
 ````
 
 ## File: oraculum-basic-triangulation/00_README.md
@@ -9758,37 +10144,127 @@ brief.fold-to-philosophical-technical-blind-questions.oraculumu.nabla-lab.resear
 
 ## File: brief.fold-to-philosophical-technical-blind-questions.oraculumu.nabla-lab.research.md
 ````markdown
- 1: # 
- 2: 
- 3: ## RULES
- 4: read all here only, do NOT read more than this document
- 5: 
- 6: 
- 7: - raw data buffer - synthetizer (spawn) : `` 
- 8: 
- 9: 
-10: ## DEMANDED FROM LAB
-11: 
-12: 
-13: 
-14: 
-15: ## PARTICIPANTS
-16: >Oraculum, do ***NOT*** have to read their profiles (if you need this information) by your presence, only if 
-17: 
-18: 
-19: **claude.ai**
-20: 
-21: 1. Symetry (claude-fable-5): `/home/hruzam/reposoma/raw.claude-ai.agents/symmetry.md`
-22: 2. Nabla (claude-opus-4-8): `/home/hruzam/reposoma/raw.claude-ai.agents/nabla.md`
-23: 
-24: 
-25: **chatGPT**
-26: 
-27: 1. Wave (GPT-5-6 Sol, effort : high) : `/home/hruzam/reposoma/raw.chatGPT-agents/wave/WAVE.md`
-28: 2. Asymmetry (GPT-5-6 Sol, effort : high) :  `/home/hruzam/reposoma/raw.chatGPT-agents/asymmetry/ASYMMETRY.md`
-29: 
-30: **CLI**
-31: 
-32: 1. (claude code CLI) nablarva team. Oraculum as leader
-33: 2. (codex CLI) blind triangulation, hones contra codex
+  1: # research
+  2: 
+  3: ## RULES
+  4: 
+  5: ***PRODUCT 2*** : research itself 
+  6: 1. questions are worth to be shown and replied instead bury in history
+  7: 2. read ***ONLY THIS*** file, do **NOT** read more than this document first. -> `**loop-1**`
+  8: 3. in first loop confirm how do you understand plan, *(later: if you do not can plan find help in files OR agents)*. 
+  9: 4. read ***ONLY*** what you really have to, rest is partner job.
+ 10: 
+ 11: - raw data buffer - synthetizer (spawn) is Field : `/home/hruzam/.claude/agents/field.md` he is holding full info memmory. But you have to hold on line whole session or i will set him before to opus (?) to be able think about what consumed (?) immediatelly relases file, but this must be pre-compression only because
+ 12: 
+ 13: 4. if you have some gavels should be filtered first on theese worth to discussion -> skill `/home/hruzam/.claude/skills/gavel-loop/SKILL.md`
+ 14: 
+ 15: 
+ 16: 
+ 17: ## DEMANDED FROM LAB
+ 18: 
+ 19: **GOAL**
+ 20: 
+ 21: 1. is not start to develop project but decompose what is verbatim to technical (industry) elements. we are seeing everything like programs, sw, hw. not problematic. We are taking verbatim and will fold to common, any mentioning, metaphore shoulld not meet original story (new materials must be pure from contamination). 
+ 22: 2. Multiorchestration app/engine/... is now secondary level of interest, or will come later. Main purpose of this CONCEPT is 
+ 23: - known shapes (verbatim agentive -> verbatim industry) fold to common languague.
+ 24: 
+ 25: 
+ 26: Where we should get?
+ 27: 
+ 28: ***PRODUCT 1*** : KEY
+ 29: 
+ 30: we know what is what behind our ciphers. Once would be ***PRODUCT 3*** released adn finisher - somebody 
+ 31: 
+ 32: ***PRODUCT 2*** : substrate 
+ 33: 
+ 34: 1. (fold date) -> common GUIDE (or artifacts by scope and hypothesis) (no agentive vocabulary, using plain technical languague and function desriptions, software architecture wocabulary) for talking with claude/chatGPT in assistance about chapters content
+ 35: 2. for research based on (1) or paralel ->
+ 36: 
+ 37: ***PRODUCT 3***
+ 38:  RESEARCH (oraculum/epoch) in technical layer and vocabulary and try to research about posibilites based on common knowledges 'we are not looking on agentive work but on programming, pc sw knowledge, programing language software architecture, linux architecture,...' -> philosophical questions + thinking example 'we have this programs and that - can make this or that, what we can do to obtain such results (MASKED) *(assymetry/symmetry dialogue is pure gold `/home/hruzam/unikuklatrix/nablarva/meshup/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity`)*
+ 39: 
+ 40: --> reports by scope
+ 41: 
+ 42: ---
+ 43: 
+ 44: ***PRODUCT 4***
+ 45: back synthesis with KEY + reconsiliation how successfull we were.
+ 46: 
+ 47: --- 
+ 48: 
+ 49: ### preparations
+ 50: 
+ 51: 
+ 52: **loop-1**
+ 53: 
+ 54: ---
+ 55: 
+ 56: > this - whole `### proces` job is provided after loop-1 between us is finished. ***NOT*** read mentioned files untill we clarify.
+ 57: 
+ 58: ### process
+ 59: 
+ 60: **loop-2{,3,...} STUDY what IS**
+ 61: 
+ 62: 1. maybe first synthetysis with many buffers -> group of parts -> (`task.<scope>.md`) -> you will pick the style.
+ 63: 	> -> blind work preparation (?)
+ 64: 2. carefully study folder context here: `/home/hruzam/unikuklatrix/nablarva/meshup`
+ 65: - biggest impact/weight has technically: `/home/hruzam/unikuklatrix/nablarva/meshup/natural-ladders-grounded-phase.a-sym` + `/home/hruzam/unikuklatrix/nablarva/meshup/old-but-good-onion`
+ 66: - examples how to release philosophical questions *(by school or policy)*: `/home/hruzam/unikuklatrix/nablarva/meshup/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/seed.entity.vision-not-explored.2026-08-02.md`, `/home/hruzam/unikuklatrix/nablarva/meshup/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/seed.entity.full-idea.2026-08-02.md`
+ 67: 3. collect what we else know: let (epoch, eagle) also collect data (worth to read + explain how is working in reposoma folder)
+ 68:  - `/home/hruzam/reposoma/raw.guides`
+ 69:  - `/home/hruzam/reposoma/raw.research`
+ 70:  - `/home/hruzam/reposoma/raw.settings`
+ 71: 4. consider `sella` if can play role: 
+ 72:  - `/home/hruzam/ia-sync/_staging/sella-sibling.codex.coldstart.md`
+ 73:  - `/home/hruzam/ia-sync/_staging/sella.coder-guide.md`
+ 74:  - `/home/hruzam/ia-sync/_staging/dev-journal.sella.md`
+ 75: 5. additional knowledge base - research within 'hard science' and coding and engines and application architecture and whatever is possible to know about event behind, editors proceses what normaly are not seen,... -> missing piecess in mosaic 
+ 76: > preffering sources from `WHO-SEE-OPPORTUNITY` than official papers.
+ 77: 
+ 78: --> SYNTHETYZING : (hypotheses, way of solutions)
+ 79: --> PRODUCTS {...}
+ 80: 
+ 81: ---
+ 82: 
+ 83: ## PARTICIPANTS
+ 84: >Oraculum, do ***NOT*** have to read their profiles (if you need this information) by your presence, only if need, spawn somebody for this job.
+ 85: 
+ 86: 
+ 87: ### authors
+ 88: 
+ 89: **claude.ai**
+ 90: 
+ 91: 1. Symetry (claude-fable-5): `/home/hruzam/reposoma/raw.claude-ai.agents/symmetry.md`
+ 92: 2. Nabla (claude-opus-4-8): `/home/hruzam/reposoma/raw.claude-ai.agents/nabla.md`
+ 93: 
+ 94: 
+ 95: **chatGPT**
+ 96: 
+ 97: 1. Wave (GPT-5-6 Sol, effort : high) : `/home/hruzam/reposoma/raw.chatGPT-agents/wave/WAVE.md`
+ 98: 2. Asymmetry (GPT-5-6 Sol, effort : high) :  `/home/hruzam/reposoma/raw.chatGPT-agents/asymmetry/ASYMMETRY.md`
+ 99: 
+100: ---
+101: 
+102: ### processed by
+103: 
+104: **CLI**
+105: 
+106: 1. claude code CLI: nablarva team + `*`, Oraculum as leader
+107: 2. claude->(codex CLI)  
+108: 	- blind triangulation `vega.md->(*)`, 
+109: 	- honest contra `mirror->(*)`,
+110: 	- practical coder `astrobley->(*)`
+111: 3. spawner ~ planner (calude CLI sonnet) : `flight`
+112: 4. pathfinder projects expert (calude CLI sonnet) : `eagle` OR lower `zenith`
+113: 5. internet researcher, local (PC) also (calude CLI sonnet) : `epoch`
+114: 6. If you want semi-autonomous regime (or claude->codex composites fails) i can provide manualy blind triangulation on chatGPT -> artifact.
+115: 7. preparing own builds and harness during process has my blessing as work helpers as same as some experimental shapes. 
+116: 
+117: ---
+118: 
+119: ## FLIGHT space
+120: 
+121: > Flight, here yo can add your own observations recomendation, preflight links from your kuchine.
+122: 
+123: ---
 ````
