@@ -173,6 +173,53 @@ back synthesis with KEY + reconsiliation how successfull we were.
 
 ---
 
+### thematic area
+
+**harness as programming layer**
+
+-power users tips, life hacks, in common where aro not users just only consuming vendor papers, and go under their rules, but found ways which maybe vendors did not exept or intent 
+ 
+1. by vendor scope (one of highest mountain) 
+- `/home/hruzam/unikuklatrix/nablarva/meshup/natural-ladders-grounded-phase.a-sym`
+
+2. complemental files
+other valuable researches as complemental sources:
+- `/home/hruzam/reposoma/raw.research/agent-docs/report/raw.agent-docs.2026-08-01.md`
+- `/home/hruzam/reposoma/raw.research/harness/reports/2026-07-20-harness-lifecycle-skill-injection-safe-protocol.md`
+- `/home/hruzam/reposoma/raw.guides/codex-builder-user`
+- by scope (vendor brand) : signpost `/home/hruzam/reposoma/raw.settings/README.md`
+
+
+3. terminal layers, what to measure, observe
+- `/home/hruzam/unikuklatrix/nablarva/meshup/old-but-good-onion`
+- `/home/hruzam/unikuklatrix/nablarva/meshup/oraculum-basic-triangulation/04_LABORATORY_OBSERVABILITY_AND_EXPERIMENTS.md` -> this one can be tested in real conditions 'ant-work', not mask needed only PADS (pad style) according `~/reposoma/raw.guides/PAD/pad-builder.md`
+
+4. sella & co. 
+***support info + in case we can obtain relewant 'framework or internal languague substrate'***
+- `/home/hruzam/ia-sync/_staging/dev-journal.sella.md`
+- `/home/hruzam/ia-sync/_staging/sella.coder-guide.md`
+- `/home/hruzam/ia-sync/_staging/sella-sibling.codex.coldstart.md`
+  
+--> thematic area 1
+--> nice to have 1 sella upgrades and implementations
+
+---
+
+**composites**
+
+1. claude[codex] : `/home/hruzam/.claude/agents/mirror.md`, `/home/hruzam/.claude/agents/vega.md`, `/home/hruzam/.claude/agents/astrobley.md` + zsh: `/home/hruzam/.config/zsh/ai/codex-run.zsh`
+
+2. theory (assymetry) - codex[claude] : `/home/hruzam/unikuklatrix/nablarva/meshup/grounded-composites/assymetry-preConsultation.md`  
+
+3. theory ()
+
+
+**compositions**
+
+majkees space end
+ 
+---
+
 ## FLIGHT space
 
 > Flight, here yo can add your own observations recomendation, preflight links from your kuchine.
@@ -394,3 +441,6 @@ Not a fixed liturgy — add a lens when it cuts (a physicist's, an economist's, 
 retire one when it only decorates. The palette is the question instrument; the guard above keeps it one.
 
 ---
+
+
+
