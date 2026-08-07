@@ -8,7 +8,7 @@
 ## CHARGE TO ORACULUM
 
 > Direct address, synthesized by @Flight from majkee's loop-1 voice. This is the spine of your
-> mandate; the operational protocol lives in **FLIGHT space → `TOP SECRET · 6378` §0–§11** below.
+> mandate; the operational protocol lives in **FLIGHT space → `TOP SECRET · 6378` §0–§12** below.
 > majkee's own structure (RULES / DEMANDED FROM LAB / process / PARTICIPANTS) is preserved beneath.
 
 Oraculum — you lead this program, and it is **not** the program the lab usually runs.
@@ -42,7 +42,7 @@ majkee know the register meant.
 **Why it is sealed.** This program runs **against the lab's own philosophy** — the lab observes,
 preserves raw truth, gates honestly, hides nothing, never deletes. `TOP SECRET · 6378` does the
 opposite by design: it masks, it leaves no trace, it burns the session on close. That inversion is
-exactly why it is sealed and why the clean-room in §0–§11 is not optional. You operate the lab's
+exactly why it is sealed and why the clean-room in §0–§12 is not optional. You operate the lab's
 sanctioned exception. Hold the goal across cold-starts; never carry the KEY across the amnesiac
 boundary "to be helpful."
 
@@ -116,6 +116,7 @@ back synthesis with KEY + reconsiliation how successfull we were.
 	 	Total Tokens: 111,421 tokens
   		Total Chars: 424,358 chars
   ```
+> _Note (audit 2026-08-07): "30" is the original repomix snapshot; the corpus grew to **32** by Field's later full map — see `_preflight/map.meshup.field.2026-08-07.md`._
 
 - SOURCE: `/home/hruzam/unikuklatrix/nablarva/meshup`
 > Oraculum, possible sequencing sessions (YOUR COMPETENCE TO PLAN).
@@ -256,7 +257,7 @@ what is terminal, its layers, how to measure and track events, can we have some 
 ## PROTOCOL — `TOP SECRET · 6378` (by PURPOSE not STYLE)
 
 > Captured by @Flight (MANNED, majkee driving) across loop-1 dialogue, 2026-08-06.
-> This is the operational spine that makes the brief runnable — the §0–§11 the CHARGE points to.
+> This is the operational spine that makes the brief runnable — the §0–§12 the CHARGE points to.
 > Secret by **purpose** (the intent — mask the real design to research it blind), not by style.
 > Classify by *why*. The maxim: seal what threatens the philosophy, not what merely looks unusual.
 
@@ -466,6 +467,31 @@ share one spine. The exemplar worked all the way through is
 
 Not a fixed liturgy — add a lens when it cuts (a physicist's, an economist's, a security-researcher's),
 retire one when it only decorates. The palette is the question instrument; the guard above keeps it one.
+
+### 12. The stratification axis — agent-as-program in layers (Flight)
+
+> majkee's call, 2026-08-07. Seam visible per G-35. A framing tool for future use, applied per scope —
+> not a mandatory grid. Deflation-native: model / controller / module is pure systems vocabulary, zero agentive register.
+
+An agent seen as a program decomposes into three strata:
+
+- **model layer** — the inference engine (weights + sampling runtime). Origin of refusals, capability ceilings, non-determinism.
+- **controller layer** — the harness driving the model: the CLI loop, instruction files, context management, orchestration logic. Origin of context bloat, topic drift, loop-control.
+- **module layer** — pluggable capabilities: tools, skills, hooks, MCP servers, scripts. Where the hook-seams and community life-hacks live.
+
+Worked example — **sella**: model (codex / GPT runtime) + controller (codex CLI + sella instruction set + coldstart) + modules (its coder tools / scripts).
+
+**Why it earns its place — a second axis, not a label.** §9 gives the *horizontal* — how many programs (scope 1 = one CLI,
+scope 2 = two communicating). This gives the *vertical* — which layer within a program. Together they form a **locator grid**:
+any observation (a hook firing, a context bloat, a refusal) lands at a (scope, stratum) coordinate.
+
+**It refines §9's confidence split.** The stratum *predicts the kind of confidence*: module and controller layers are
+**directly instrumentable** (observe the hook, the context, the loop → scope-1-style hard facts); the model layer is
+**only characterizable** (refusals and drift originate here → behavioral). This explains *why* scope-2 pathologies read as
+behavioral — they often originate in the model layer even when they manifest in the controller / stream.
+
+**Future usage.** When a build or reshape is warranted (sella upgrades, a new helper), stratify it — model / controller /
+module — so each layer can be scoped, swapped, or instrumented independently.
 
 ---
 
