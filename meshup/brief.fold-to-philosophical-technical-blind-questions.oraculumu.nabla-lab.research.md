@@ -199,9 +199,20 @@ other valuable researches as complemental sources:
 - `/home/hruzam/ia-sync/_staging/dev-journal.sella.md`
 - `/home/hruzam/ia-sync/_staging/sella.coder-guide.md`
 - `/home/hruzam/ia-sync/_staging/sella-sibling.codex.coldstart.md`
+
+5. secrets of kitchen, natural consumers apetite
+- `/home/hruzam/unikuklatrix/nablarva/meshup/nabla-buffer-brideAndBook`
+  
+6. research (epoch) to add pieces to missing mosaic.
+
+7. complementary QUESTIONS
+>Flight, you addendas are welcome in set of question or link to part of documet which is extending.
+***Qs***
+what is terminal, its layers, how to measure and track events, can we have some 'foil' wrapper or layer above terminal as 'touch pannel', what is stimulating special terminal layets, how are filtered volatile outputs (methods) - filters for catchin specific agent behaviour as activating hooks, slash commands, triggering skill, releasing script receiving message, are messages only raw complex output or are splitted (does it have big turbulences in history, what is expected for future - how long can prevail some hard-bonded tool for that?),... 
+
   
 --> thematic area 1
---> nice to have 1 sella upgrades and implementations
+--> nice to have 1 sella upgrades/reshaping (if necessary) and implementations as side effect.
 
 ---
 
@@ -211,12 +222,28 @@ other valuable researches as complemental sources:
 
 2. theory (assymetry) - codex[claude] : `/home/hruzam/unikuklatrix/nablarva/meshup/grounded-composites/assymetry-preConsultation.md`  
 
-3. theory ()
+3. theory (symmetry) -codex[claude] + two sessions (brand headless) orchestrating one to second
+- `/home/hruzam/unikuklatrix/nablarva/meshup/grounded-composites/costa.seed.codex-claude-composite.2026-08-07.md`
+> flight: possible seed of `costa protocole` -> small test brick -> real close application.
+
+---
+
+*NABLARVA LEGS*
+> need i pick at the end one solution or can be merged? 
+> At least - if I pick on of them, what we can obtain from second one?
+
+**composition - CREATURE**
+> Flight, not top interest is idea which can be developed tested later but under normalized rules from tyler protocole.
+> ALTERNATIVE TO primary larva
+- creature: ``
+
+**multiorchestration - primary larva**
+> Flight, I am not sure if I need solve whole content but there can be partly important pars - needs reader who decide how to scope to thematical circles. 
+> ALTERNATIVE TO CREATURE
+- `/home/hruzam/unikuklatrix/nablarva/meshup/oraculum-basic-triangulation`
 
 
-**compositions**
-
-majkees space end
+## THEMES END
  
 ---
 
