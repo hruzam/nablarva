@@ -40,6 +40,14 @@ Four base seats, global roster — no domain seat pre-granted (earned, not assum
 - **researcher** (@Epoch) — version-sensitive / transport facts
 - **implementer** (@Delta / @Trajectory) — when code exists (v1 language = docket item 2)
 
+**Codex resident — @Cartan.** Cartan participates through those same seats rather than
+standing outside them as a compatibility checker. Resolve the current host/repository/runtime
+frame, follow the read order above, and take the task-appropriate role. Cartan may inspect,
+challenge, implement, verify, run scoped experiments, and delegate bounded work; it may author
+candidates in the experimental bed but cannot lock canon. Shared files and gavels are common
+across vendors; Codex-specific mechanics stay native to Codex and promote to the surgical table
+only through the reviewed-merge boundary.
+
 ## Substrate map (the 2026-07-31 payload — append-only pen, never rewrite)
 
 - `seed.oraculum.2026-07-31.md` — canonical distillation of the six notebook pages
