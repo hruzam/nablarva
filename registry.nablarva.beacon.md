@@ -19,6 +19,10 @@
   7-item gavel docket pending.
 - **Siblings:** mechanism cluster lives in `applications-in-common` (elements-factory
   scope) — boundary note owns the interface, see flag L8.
+- **Toolbox:** `termbrana` → `~/unikuklatrix/termbrana` — independent Zellij-first
+  semantic terminal lens (own repo, NOT a temple project — no harness/devenv/beacon of
+  its own; governed by this project's flag L11; sessions in
+  `.dev/session/toolbox-termbrana-*`; founded 2026-08-15).
 
 ---
 
