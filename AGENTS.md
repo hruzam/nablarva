@@ -3,7 +3,7 @@
 `status: GAVELED — founding set locked 2026-08-02 (majkee; @Janus challenged 2026-08-01)`
 `this repo: nabLarva — larva V3, the agent↔agent communication ladder. Scope-group`
 `~/unikuklatrix/ (kukla = pupa — the cocoon matrix). Pair: nablarva/ + nablarva.devenv/`
-`(canon.project-topology, placement amendment: home-root scope-group, session/flag.md L5).`
+`(canon.project-topology, placement amendment: home-root scope-group, .dev/session/flag.md L5).`
 
 ## What this is
 
@@ -23,19 +23,19 @@
 
 ## Read order (any seat)
 
-1. this file → 2. `session/flag.md` (locked + pending-gavel docket) →
-3. `session/pulse.md` (volatile, where we left off — the ONLY canonical doing-state) →
+1. this file → 2. `.dev/session/flag.md` (locked + pending-gavel docket) →
+3. `.dev/session/pulse.md` (volatile, where we left off — the ONLY canonical doing-state) →
 4. `PROJECT.yaml` (contract) → 5. substrate docs only as the task needs them (map below).
 
-Session surfaces (flag L9): flag + pulse are canon. `session/dock.md` is the
+Session surfaces (flag L9): flag + pulse are canon. `.dev/session/dock.md` is the
 UNCANONICAL scratch — side quests land there without a blessing; never cite it as
-truth. Task-scoped work gets `session/<topic>/` dirs that die with the task. No
+truth. Task-scoped work gets `.dev/session/<topic>/` dirs that die with the task. No
 standing plan.md (abolished — survey receipt, 2026-08-02).
 
 ## Route by seat
 
 Four base seats, global roster — no domain seat pre-granted (earned, not assumed):
-- **architect** (@Houston-family) — plan + gates; owns session/pulse.md
+- **architect** (@Houston-family) — plan + gates; owns `.dev/session/pulse.md`
 - **challenger** (@Janus) — before any lock
 - **researcher** (@Epoch) — version-sensitive / transport facts
 - **implementer** (@Delta / @Trajectory) — when code exists (v1 language = docket item 2)

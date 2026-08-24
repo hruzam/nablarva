@@ -14,7 +14,7 @@
 
 - **What:** nabLarva — larva V3, the agent↔agent communication ladder (same-host bus →
   cross-host broker → stridularium human+AI hub).
-- **Lighthouse:** `AGENTS.md` (root saddle) → `session/flag.md` (locks + docket).
+- **Lighthouse:** `AGENTS.md` (root saddle) → `.dev/session/flag.md` (locks + docket).
 - **State:** founded 2026-08-01 from the provisorium substrate; triangulation CLOSED;
   7-item gavel docket pending.
 - **Siblings:** mechanism cluster lives in `applications-in-common` (elements-factory

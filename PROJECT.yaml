@@ -12,11 +12,11 @@ commands:                   # docs-only phase; verbs land when docket item 2 gav
   run:   "none yet"
 docs:
   architecture: docs/ARCHITECTURE.md
-  decisions:    session/flag.md
+  decisions:    .dev/session/flag.md
 agents: [ architect, challenger, researcher, implementer ]   # four base seats; domain seats earned
 mcp_profile: none           # placeholder — Model-C sizing deferred (onboarding-kit O1)
 # tools: none yet. First organs (stridularium naming = docket item 7) arrive as
 # experimental builds under the naming law in AGENTS.md, each carrying a provenance
 # header (name · status · schema · source · trust note) before it lands.
 guidelines_channel: stable
-# purpose · laws · ownership · constraints → session/flag.md
+# purpose · laws · ownership · constraints → .dev/session/flag.md
