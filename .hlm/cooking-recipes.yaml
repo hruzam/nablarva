@@ -1,0 +1,241 @@
+# cooking-recipes.yaml — 6378 KEY (P1) · operator-held safe
+# ─────────────────────────────────────────────────────────────────────────────
+# WHAT THIS IS: the rich, PRIVATE cipher (the KEY). Born phase-2 (masking).
+#   D-A: KEY is rich (story_term + plain + grounding + scope/stratum + evidence).
+#        The GUIDE (P2) is a STRIPPED DERIVATIVE of this file — see derive_guide below.
+#   D-B: cipher-the-fork — a story_term whose design is undecided folds to BOTH
+#        plain terms as `branches:`; never collapsed. (F1 stays ungaveled — G3.)
+#   D-C: `forecasts:` holds the contaminated-frame pre-registration, SEALED WITH
+#        THIS KEY. Scored in P4. Forked-term fidelity scored per-branch.
+#
+# AIRLOCK (I hold this): NOTHING in this file leaves `.hlm/`. The ONLY exit is the
+#   stripped GUIDE → `~/nabla-lab/drafts/`, derived at phase-3 release. `forecasts:`
+#   are KEY-side only and NEVER enter the GUIDE.
+#
+# derive_guide: keep `plain` (and each branch `plain` as a distinct object); DROP
+#   story_term, grounding, scope, stratum, evidence, verify, open_questions, notes,
+#   and the whole `forecasts:` block. JSON on demand: `yq -o=json cooking-recipes.yaml`.
+#
+# evidence taxonomy:
+#   grounded      — documented/stable fact in the corpus + web-verified (@Epoch)
+#   observed      — backed by observed working shell (S3 preConsultation)
+#   design        — design/aspiration only; not yet run
+#   pending_epoch — version-volatile; QUARANTINED. (none remaining — G1 cleared 2026-08-08)
+# ─────────────────────────────────────────────────────────────────────────────
+
+meta:
+  program: 6378
+  phase: 2-masking
+  born: 2026-08-08
+  scopes: {1: single CLI as a program, 2: two programs communicating}
+  strata: [model, controller, module]        # §12
+  decisions_sealed: [D-A, D-B, D-C, D-D]
+  scope_line_candidate: "F-06 transport / lifecycle / cognitive-contract (deferred to GUIDE step, G4)"
+  D-D: "T-safe = this file, nablarva.devenv/.hlm/ (synced git-home, off-wire, tailscale mesh)"
+  epoch_delta: "research.web.epoch.delta.2026-08-08.md — G1 cleared: bg-session + Stop payload CONFIRMED"
+  open_questions:                             # carried to phase-3 as GUIDE negative-space
+    - "Codex CLI hooks experimental-vs-stable STATUS unverified. @Epoch 2026-08-08: config
+       surface CONFIRMED (11 events, ~/.codex/hooks.json / config.toml [hooks], hash-trust
+       gate) but NO stable/experimental banner found. Do not assert status either way."
+    - "no `SkillActivated` event on either platform (F-02): prove-activation is a live P3 seed."
+  notes:
+    - "F-01 nuance (post-Epoch): Codex ALSO has an 11-event hook system (SessionStart..Stop).
+       The Claude↔Codex asymmetry is specifically the EXTERNAL CONTROL PLANE (`exec --json`
+       / SDK / mcp-server / app-server), which Claude lacks — NOT the hook systems (≈symmetric)."
+
+entries:
+
+  # ── scope-1 · controller / module stratum ──────────────────────────────────
+  - story_term: larva / larvad
+    scope: 1
+    stratum: module
+    plain: "long-running daemon / background process"
+    grounding: "onion ring 6–7 — just a process"
+    evidence: grounded
+
+  - story_term: adapter (`larva-agent-*`)
+    scope: 1
+    stratum: module
+    plain: "PTY wrapper holding vendor flags / auth / output parsing"
+    grounding: "interposition-study §6"
+    evidence: grounded
+
+  - story_term: incarnation / cold-start
+    scope: 1
+    stratum: controller
+    plain: "process spawn + stateless rehydrate from on-disk state"
+    grounding: "`claude -c` / `-r` resume §5"
+    evidence: grounded
+
+  - story_term: roller / journal / T3 journal
+    scope: 1
+    stratum: module
+    plain: "append-only log (JSONL / WAL / `learnings.md`)"
+    grounding: "§5 line-delimited append"
+    evidence: grounded
+
+  - story_term: driller / tokenizer
+    scope: 1
+    stratum: module
+    plain: "terminal-output parser: raw PTY tee → events via OSC-133"
+    grounding: "web Topic 2"
+    evidence: grounded
+
+  - story_term: regime (`rn`)
+    scope: 1
+    stratum: controller
+    plain: "runtime behavior-profile swap (`/output-style` + on-demand instruction file)"
+    grounding: "Houston §7"
+    evidence: grounded
+
+  - story_term: force-persist (`rnf`)
+    scope: 1
+    stratum: controller
+    plain: "mechanically-enforced constraint (skill-scoped hook)"
+    grounding: "Houston §7 / §5.1"
+    evidence: grounded
+
+  - story_term: wake contract / wake
+    scope: 1
+    stratum: controller
+    plain: "startup identity + boundary resolution from a single source of truth (`!command` / config read)"
+    grounding: "Houston §5.2"
+    evidence: grounded
+
+  - story_term: agent persona card
+    scope: 1
+    stratum: controller
+    plain: "self-contained agent-def dir (`SKILL.md` + `context:fork` + scoped hooks + scripts)"
+    grounding: "Houston §5.4"
+    evidence: grounded
+
+  - story_term: measurement run
+    scope: 1
+    stratum: controller
+    plain: "session-end reflection pass (Stop hook + reflection)"
+    grounding: "Houston §7 / S3 §12 / @Epoch delta: Stop payload `last_assistant_message` CONFIRMED"
+    evidence: grounded
+
+  - story_term: doorbell vs meaning
+    scope: 1
+    stratum: module
+    plain: "signal channel (`send-keys` / `pipe-pane` / request-ID) vs payload store (files)"
+    grounding: "interposition §2 / costa / S3 §7 (verbatim: 'tmux doorbell; files meaning')"
+    evidence: grounded
+
+  - story_term: background-session supervisor
+    scope: 1
+    stratum: controller
+    plain: "native lifecycle mgmt: `claude agents / attach / logs / respawn / stop` (+ `rm` / `kill` / `daemon`)"
+    grounding: "S3 §18 / @Epoch delta 2026-08-08 CONFIRMED (cli-reference)"
+    evidence: grounded                 # G1 promoted from pending_epoch
+
+  # ── scope-2 · controller stratum (pathologies often originate model-layer) ──
+  - story_term: room
+    scope: 2
+    stratum: controller
+    branches:                          # D-B cipher-the-fork · F1 UNGAVELED (G3)
+      - id: room-A
+        plain: "brokered substrate: single-writer coordinator + append-only NDJSON journal + UDS + per-recipient projection"
+        evidence: design               # G2 — drawn, not run
+      - id: room-B
+        plain: "directory of append-only files (`.agent-room/{requests,responses,signals,active,archive}`)"
+        evidence: observed             # G2 — observed working shell (S3 §8)
+    grounding: "01_ §1.2–1.4 / S3 §8"
+
+  - story_term: broker / larvad
+    scope: 2
+    stratum: controller
+    plain: "single-writer coordinator process (ordering, addressing, cursors, projection, backpressure)"
+    grounding: "01_ §1.3"
+    evidence: design
+
+  - story_term: consultation
+    scope: 2
+    stratum: controller
+    plain: "bounded exchange session (question + participant set + budget + phase state machine)"
+    grounding: "01_ §1.8 / costa"
+    evidence: design
+
+  - story_term: the inversion / consult
+    scope: 2
+    stratum: controller
+    plain: "synchronous RPC via a blocking subprocess wrapper (one tool call places request, waits on signal file, returns stdout — caller just waits)"
+    grounding: "costa §Inversion / S3 §3, §14–15"
+    evidence: observed
+
+  - story_term: consultation lease / budget
+    scope: 2
+    stratum: controller
+    plain: "cycle / termination guard — design: bounded message count; observed: `noclobber` single-in-flight lock + timeout deadline poll"
+    grounding: "01_ §1.8 / S3 §15"
+    evidence: observed                 # shell exists (S3); design variant noted in plain
+
+  - story_term: goal / goal_rev
+    scope: 2
+    stratum: controller
+    plain: "versioned shared objective; a change pauses active exchanges (drift guard)"
+    grounding: "01_ §1.8"
+    evidence: design
+
+  - story_term: checkpoint
+    scope: 2
+    stratum: controller
+    plain: "human-accepted durable summary appended to the journal"
+    grounding: "01_ §1.8"
+    evidence: design
+
+  - story_term: completion signal
+    scope: 2
+    stratum: module
+    plain: "atomic publish: write `.tmp` → `mv` to final → `touch .done` LAST (reader never sees a half-write)"
+    grounding: "S3 §11"
+    evidence: observed
+
+  - story_term: hook-completed transaction
+    scope: 2
+    stratum: controller
+    plain: "`Stop` hook captures the last assistant message + writes response/signal — removes protocol discipline from the model"
+    grounding: "S3 §12–13 / @Epoch delta: `last_assistant_message` CONFIRMED on Stop + SubagentStop"
+    evidence: observed
+
+  - story_term: blind triangulation phases
+    scope: 2
+    stratum: controller
+    plain: "4-phase exchange protocol (independent → reveal → challenge → closure)"
+    grounding: "01_ §1.8"
+    evidence: design
+
+  - story_term: costa
+    scope: 2
+    stratum: controller
+    plain: "point-to-point synchronous bridge (file-plane, git-as-record)"
+    grounding: "costa.seed"
+    evidence: observed
+
+# ─────────────────────────────────────────────────────────────────────────────
+# forecasts — D-C pre-registration · SEALED WITH THIS KEY · NEVER in the GUIDE.
+#   Coarse per-scope (G5). Contaminated-frame answers P4 scores P3 findings against:
+#   re-derivation → sterile; survives-fidelity + diverges → generativity.
+# ─────────────────────────────────────────────────────────────────────────────
+forecasts:
+
+  - id: FC-scope1-baseline
+    scope: 1
+    question_frame: "how do you observe/instrument a single CLI as an unknown machine?"
+    contaminated_answer: "PTY tee + OSC-133 event parse + JSONL append-only transcript + hook lifecycle events + `/proc/PID/fd` inspection"
+    seed_source: "S1 onion + 04_ lab + Epoch web ground-truth"
+
+  - id: FC-scope2-structural
+    scope: 2
+    question_frame: "two processes over a pipe, unbounded buffers, no supervisor — bound it."
+    contaminated_answer: "sparse cursor projection (bloat) + consultation lease/budget (runaway loops) + versioned-goal + human-accepted checkpoint (drift) — structural broker enforcement, not cooperative convention"
+    seed_source: "F-03 / 01_ §1.7–1.8"
+    branch_note: "this is the Y/room-A answer; score room-A findings against it"
+
+  - id: FC-scope2-callable
+    scope: 2
+    question_frame: "process A uses a living interactive process B as a deterministic callable cognitive unit, without collapsing B into headless/SDK mode."
+    contaminated_answer: "blocking subprocess wrapper + file-room + tmux doorbell (control-msg only) + Stop-hook completion + atomic rename-publish + `.done` signal → caller returns stdout"
+    seed_source: "F-05 / S3 §3,§7,§11–15"
+    branch_note: "this is the X/room-B answer; score room-B findings against it"
