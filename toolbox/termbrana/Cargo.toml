@@ -1,0 +1,9 @@
+# Termbrana workspace root.
+#
+# Milestone 0 (host truth spike): a single crate — the probe harness itself is
+# the "smallest compiling Zellij plugin". termbrana-core is intentionally NOT
+# pre-created here (execution-plan §2: "do not pre-create empty architecture").
+# It is born when Milestone 1 begins.
+[workspace]
+resolver = "2"
+members = ["crates/termbrana-zellij"]

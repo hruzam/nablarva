@@ -1,0 +1,9 @@
+[package]
+name = "termbrana-zellij"
+version = "0.0.0"
+edition = "2021"
+publish = false
+description = "Termbrana Zellij host — Milestone 0 truth-spike probe harness (not the product)."
+
+[dependencies]
+zellij-tile = "=0.44.3"

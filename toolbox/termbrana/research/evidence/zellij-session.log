@@ -1,0 +1,669 @@
+WARN   |zellij_server::os_input_o| 2026-08-15 07:52:08.860 [main      ] zellij-server/src/os_input_output_unix.rs:309: Starting a server without a controlling terminal, using the default termios configuration. 
+INFO   |zellij_server            | 2026-08-15 07:52:08.861 [main      ] zellij-server/src/lib.rs:826: Starting Zellij server! 
+ERROR  |zellij_server::route     | 2026-08-15 07:52:08.867 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 07:52:08.869 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+INFO   |zellij_server            | 2026-08-15 07:52:08.964 [main      ] zellij-server/src/lib.rs:982: FirstClientConnected: initializing session 
+INFO   |zellij_server            | 2026-08-15 07:52:08.966 [main      ] zellij-server/src/lib.rs:2423: Loading plugins using Wasmi interpreter 
+INFO   |zellij_server::plugins   | 2026-08-15 07:52:08.967 [wasm      ] zellij-server/src/plugins/mod.rs:313: Wasm main thread starts 
+INFO   |zellij_server            | 2026-08-15 07:52:08.969 [main      ] zellij-server/src/lib.rs:994: FirstClientConnected: session initialized, spawning tabs 
+WARN   |zellij_utils::input::layo| 2026-08-15 07:52:08.974 [wasm      ] zellij-utils/src/input/layout.rs:125: Overriding plugin alias 
+WARN   |zellij_utils::input::layo| 2026-08-15 07:52:08.974 [wasm      ] zellij-utils/src/input/layout.rs:125: Overriding plugin alias 
+INFO   |zellij_server::pty       | 2026-08-15 07:52:08.977 [pty       ] zellij-server/src/pty.rs:500: PtyInstruction::NewTab: spawning terminals for tab 0 
+INFO   |zellij_server::pty       | 2026-08-15 07:52:08.989 [pty       ] zellij-server/src/pty.rs:1304: spawn_terminals_for_layout: 1 tiled + 0 floating panes created, sending ApplyLayout 
+INFO   |zellij_server::screen    | 2026-08-15 07:52:08.989 [screen    ] zellij-server/src/screen.rs:7026: ScreenInstruction::ApplyLayout: applying layout for tab 0 
+INFO   |zellij_server::screen    | 2026-08-15 07:52:08.993 [screen    ] zellij-server/src/screen.rs:7111: ApplyLayout: sending QueryTerminalSize to client 1 
+INFO   |zellij_server::plugins::p| 2026-08-15 07:52:09.031 [plugin-exec-0] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin 'link' in 25.295957ms 
+INFO   |zellij_server::plugins::p| 2026-08-15 07:52:09.082 [plugin-exec-1] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin 'tab-bar' in 29.821108ms 
+INFO   |zellij_server::plugins::p| 2026-08-15 07:52:09.124 [plugin-exec-2] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin 'status-bar' in 33.378462ms 
+INFO   |zellij_server::plugins::p| 2026-08-15 07:52:09.161 [plugin-exec-3] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin 'configuration' in 25.374489ms 
+ERROR  |zellij_server::screen    | 2026-08-15 07:52:23.497 [screen    ] zellij-server/src/screen.rs:6296: No client ids in screen found 
+ERROR  |zellij_server::screen    | 2026-08-15 07:52:30.150 [screen    ] zellij-server/src/screen.rs:6296: No client ids in screen found 
+ERROR  |zellij_server::screen    | 2026-08-15 07:52:36.641 [screen    ] zellij-server/src/screen.rs:6350: No client ids in screen found 
+ERROR  |zellij_server::screen    | 2026-08-15 07:52:43.366 [screen    ] zellij-server/src/screen.rs:6755: No client ids in screen found 
+INFO   |zellij_server::plugins::w| 2026-08-15 07:52:43.378 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 3 
+INFO   |zellij_server::plugins::w| 2026-08-15 07:52:43.378 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 3 
+ERROR  |zellij_server::screen    | 2026-08-15 07:52:49.125 [screen    ] zellij-server/src/screen.rs:6296: No client ids in screen found 
+ERROR  |zellij_server::screen    | 2026-08-15 07:53:31.263 [screen    ] zellij-server/src/screen.rs:8290: No connected clients found - cannot load or focus plugin 
+ERROR  |zellij_server::screen    | 2026-08-15 07:53:51.022 [screen    ] zellij-server/src/screen.rs:8290: No connected clients found - cannot load or focus plugin 
+INFO   |zellij_client            | 2026-08-15 07:55:07.487 [main      ] zellij-client/src/lib.rs:735: Starting Zellij client! 
+INFO   |zellij_server::plugins::p| 2026-08-15 07:55:16.181 [plugin-exec-1] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin '/home/hruzam/unikuklatrix/termbrana/target/wasm32-wasip1/release/termbrana_zellij.wasm' in 25.982904ms 
+ERROR  |zellij_server::plugins::w| 2026-08-15 07:55:16.183 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:2058: failed to load plugin from instance Instance(
+    GuardedEntity {
+        guard_idx: StoreIdx(
+            7,
+        ),
+        entity_idx: InstanceIdx(
+            0,
+        ),
+    },
+)
+
+Caused by:
+    could not find exported function 
+ERROR  |zellij_client            | 2026-08-15 07:55:16.183 [main      ] zellij-client/src/lib.rs:1181: failed to load plugin from instance Instance(
+    GuardedEntity {
+        guard_idx: StoreIdx(
+            7,
+        ),
+        entity_idx: InstanceIdx(
+            0,
+        ),
+    },
+)
+
+Caused by:
+    could not find exported function 
+ERROR  |zellij_server::plugins   | 2026-08-15 07:56:08.970 [wasm      ] zellij-server/src/plugins/mod.rs:1320: Plugin with id: 4 not found 
+ERROR  |zellij_server::route     | 2026-08-15 07:56:27.770 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 07:56:27.772 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+INFO   |zellij_server::plugins::w| 2026-08-15 07:56:27.793 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 4 
+INFO   |zellij_server::plugins::p| 2026-08-15 07:56:33.189 [plugin-exec-1] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin '/home/hruzam/unikuklatrix/termbrana/target/wasm32-wasip1/release/termbrana_zellij.wasm' in 26.986543ms 
+ERROR  |zellij_server::plugins::w| 2026-08-15 07:56:33.191 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:2058: failed to load plugin from instance Instance(
+    GuardedEntity {
+        guard_idx: StoreIdx(
+            8,
+        ),
+        entity_idx: InstanceIdx(
+            0,
+        ),
+    },
+)
+
+Caused by:
+    could not find exported function 
+ERROR  |zellij_client            | 2026-08-15 07:56:33.192 [main      ] zellij-client/src/lib.rs:1181: failed to load plugin from instance Instance(
+    GuardedEntity {
+        guard_idx: StoreIdx(
+            8,
+        ),
+        entity_idx: InstanceIdx(
+            0,
+        ),
+    },
+)
+
+Caused by:
+    could not find exported function 
+ERROR  |zellij_server::plugins   | 2026-08-15 07:57:08.970 [wasm      ] zellij-server/src/plugins/mod.rs:1320: Plugin with id: 5 not found 
+ERROR  |zellij_server::route     | 2026-08-15 07:57:37.164 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 07:57:37.165 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+INFO   |zellij_server::plugins::w| 2026-08-15 07:57:37.189 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 5 
+INFO   |zellij_server::plugins::p| 2026-08-15 07:57:38.245 [plugin-exec-1] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin '/home/hruzam/unikuklatrix/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm' in 26.240686ms 
+ERROR  |zellij_utils::input::perm| 2026-08-15 07:57:38.249 [plugin-exec-1] zellij-utils/src/input/permission.rs:51: Failed to read permission cache file: No such file or directory (os error 2) 
+ERROR  |zellij_utils::input::perm| 2026-08-15 07:58:28.538 [wasm      ] zellij-utils/src/input/permission.rs:51: Failed to read permission cache file: No such file or directory (os error 2) 
+ERROR  |zellij_server::route     | 2026-08-15 08:00:54.633 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:00:54.635 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+INFO   |zellij_server::plugins::w| 2026-08-15 08:00:54.657 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 6 
+INFO   |zellij_server::plugins::p| 2026-08-15 08:00:55.713 [plugin-exec-1] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin '/home/hruzam/unikuklatrix/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm' in 25.48001ms 
+ERROR  |zellij_server::route     | 2026-08-15 08:00:57.714 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:00:57.720 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 114,
+        column: 34,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:00:57.720 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:1171: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::route     | 2026-08-15 08:03:13.887 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:03:13.888 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:13.891 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:13.891 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:13.894 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:13.894 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:13.897 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:13.897 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:13.899 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:13.899 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:13.901 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:13.901 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:13.902 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:13.902 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::route     | 2026-08-15 08:03:19.007 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:19.009 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:19.009 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:19.012 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:19.012 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:19.013 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:19.013 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:19.014 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:19.014 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:1171: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::route     | 2026-08-15 08:03:24.986 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:03:24.988 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:24.991 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:24.991 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:24.993 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:24.993 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:24.996 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:24.996 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:24.998 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:24.998 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:25.000 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:25.000 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:03:25.002 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:03:25.002 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::route     | 2026-08-15 08:05:24.575 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+INFO   |zellij_server::plugins   | 2026-08-15 08:05:24.576 [wasm      ] zellij-server/src/plugins/mod.rs:1273: wasm main thread exits 
+INFO   |zellij_client            | 2026-08-15 08:05:24.576 [main      ] zellij-client/src/lib.rs:1266: Bye from Zellij! 
+ERROR  |zellij_server::route     | 2026-08-15 08:05:24.577 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:05:24.578 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:05:24.578 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:05:24.581 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:05:24.581 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:05:24.583 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:05:24.583 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 7
+
+Caused by:
+    wasm `unreachable` instruction executed 
+INFO   |zellij_server::plugins::w| 2026-08-15 08:05:24.583 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 0 
+INFO   |zellij_server::plugins::w| 2026-08-15 08:05:24.583 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 1 
+INFO   |zellij_server::plugins::w| 2026-08-15 08:05:24.583 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 7 
+INFO   |zellij_server::plugins::w| 2026-08-15 08:05:24.583 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 2 
+WARN   |zellij_server::os_input_o| 2026-08-15 08:05:33.914 [main      ] zellij-server/src/os_input_output_unix.rs:309: Starting a server without a controlling terminal, using the default termios configuration. 
+INFO   |zellij_server            | 2026-08-15 08:05:33.915 [main      ] zellij-server/src/lib.rs:826: Starting Zellij server! 
+ERROR  |zellij_server::route     | 2026-08-15 08:05:33.920 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:05:33.922 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+INFO   |zellij_server            | 2026-08-15 08:05:34.022 [main      ] zellij-server/src/lib.rs:982: FirstClientConnected: initializing session 
+INFO   |zellij_server            | 2026-08-15 08:05:34.023 [main      ] zellij-server/src/lib.rs:2423: Loading plugins using Wasmi interpreter 
+INFO   |zellij_server::plugins   | 2026-08-15 08:05:34.024 [wasm      ] zellij-server/src/plugins/mod.rs:313: Wasm main thread starts 
+INFO   |zellij_server            | 2026-08-15 08:05:34.025 [main      ] zellij-server/src/lib.rs:994: FirstClientConnected: session initialized, spawning tabs 
+INFO   |zellij_server::plugins::p| 2026-08-15 08:05:34.078 [plugin-exec-0] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin 'link' in 24.552756ms 
+WARN   |zellij_utils::input::layo| 2026-08-15 08:05:34.094 [wasm      ] zellij-utils/src/input/layout.rs:125: Overriding plugin alias 
+WARN   |zellij_utils::input::layo| 2026-08-15 08:05:34.094 [wasm      ] zellij-utils/src/input/layout.rs:125: Overriding plugin alias 
+INFO   |zellij_server::pty       | 2026-08-15 08:05:34.097 [pty       ] zellij-server/src/pty.rs:500: PtyInstruction::NewTab: spawning terminals for tab 0 
+INFO   |zellij_server::pty       | 2026-08-15 08:05:34.113 [pty       ] zellij-server/src/pty.rs:1304: spawn_terminals_for_layout: 1 tiled + 0 floating panes created, sending ApplyLayout 
+INFO   |zellij_server::screen    | 2026-08-15 08:05:34.113 [screen    ] zellij-server/src/screen.rs:7026: ScreenInstruction::ApplyLayout: applying layout for tab 0 
+INFO   |zellij_server::screen    | 2026-08-15 08:05:34.114 [screen    ] zellij-server/src/screen.rs:7111: ApplyLayout: sending QueryTerminalSize to client 1 
+INFO   |zellij_server::plugins::p| 2026-08-15 08:05:34.148 [plugin-exec-1] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin 'tab-bar' in 35.648528ms 
+INFO   |zellij_server::plugins::p| 2026-08-15 08:05:34.188 [plugin-exec-2] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin 'status-bar' in 31.552754ms 
+INFO   |zellij_server::plugins::p| 2026-08-15 08:05:34.227 [plugin-exec-3] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin 'about' in 28.461532ms 
+ERROR  |zellij_server::background| 2026-08-15 08:05:34.236 [async-runtime] zellij-server/src/background_jobs.rs:327: Failed to run command: No such file or directory (os error 2) 
+INFO   |zellij_client            | 2026-08-15 08:05:35.094 [main      ] zellij-client/src/lib.rs:735: Starting Zellij client! 
+ERROR  |zellij_server::background| 2026-08-15 08:05:35.108 [async-runtime] zellij-server/src/background_jobs.rs:327: Failed to run command: No such file or directory (os error 2) 
+INFO   |zellij_server::plugins::w| 2026-08-15 08:06:00.803 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 3 
+INFO   |zellij_server::plugins::w| 2026-08-15 08:06:00.804 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 3 
+INFO   |zellij_server::plugins::p| 2026-08-15 08:06:07.149 [plugin-exec-1] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin '/home/hruzam/unikuklatrix/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm' in 25.036017ms 
+ERROR  |zellij_server::route     | 2026-08-15 08:06:30.715 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:06:30.722 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 114,
+        column: 34,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:06:30.722 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:1171: Failed to apply event to plugin 4
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::route     | 2026-08-15 08:06:35.694 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:06:35.696 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:06:35.699 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:06:35.699 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 4
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:06:35.702 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:06:35.702 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 4
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:06:35.704 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:06:35.704 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 4
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:06:35.707 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:06:35.707 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 4
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:06:35.708 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:06:35.709 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 4
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:06:35.710 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:06:35.710 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 4
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:07:05.858 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:07:05.858 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 4
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:07:05.860 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:07:05.860 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 4
+
+Caused by:
+    wasm `unreachable` instruction executed 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:07:05.862 [plugin-exec-1] zellij-server/src/plugins/zellij_exports.rs:5240: PANIC IN PLUGIN!
+<NO PAYLOAD>
+PanicHookInfo {
+    payload: Any { .. },
+    location: Location {
+        file: "crates/termbrana-zellij/src/main.rs",
+        line: 44,
+        column: 1,
+    },
+    can_unwind: true,
+    force_no_backtrace: false,
+} 
+ERROR  |zellij_server::plugins::w| 2026-08-15 08:07:05.862 [plugin-exec-1] zellij-server/src/plugins/wasm_bridge.rs:954: Failed to apply event to plugin 4
+
+Caused by:
+    wasm `unreachable` instruction executed 
+INFO   |zellij_client            | 2026-08-15 08:07:05.949 [main      ] zellij-client/src/lib.rs:1266: Bye from Zellij! 
+ERROR  |???                      | 2026-08-15 08:07:21.545 [screen    ] zellij-server/src/screen.rs:1869: a non-fatal error occured
+
+Caused by:
+    0: Failed to switch to active tab at position 0 for client id: 1
+    1: active tab not found for client 1 
+ERROR  |zellij_server::screen    | 2026-08-15 08:07:21.570 [screen    ] zellij-server/src/screen.rs:6764: No client ids in screen found 
+ERROR  |zellij_server::screen    | 2026-08-15 08:07:22.598 [screen    ] zellij-server/src/screen.rs:8290: No connected clients found - cannot load or focus plugin 
+INFO   |zellij_client            | 2026-08-15 08:07:32.860 [main      ] zellij-client/src/lib.rs:735: Starting Zellij client! 
+INFO   |zellij_server::plugins::p| 2026-08-15 08:07:40.643 [plugin-exec-4] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin '/home/hruzam/unikuklatrix/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm' in 28.085231ms 
+INFO   |zellij_server::plugins::w| 2026-08-15 08:07:50.526 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 4 
+ERROR  |zellij_server::route     | 2026-08-15 08:07:56.512 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:07:56.519 [plugin-exec-4] zellij-server/src/plugins/zellij_exports.rs:775: Plugin '/home/hruzam/unikuklatrix/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm (ID 5)' permission 'ReadCliPipes' denied - Command 'CliPipeOutput' denied 
+ERROR  |zellij_server::route     | 2026-08-15 08:07:56.519 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::plugins::z| 2026-08-15 08:07:56.519 [plugin-exec-4] zellij-server/src/plugins/zellij_exports.rs:775: Plugin '/home/hruzam/unikuklatrix/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm (ID 5)' permission 'ReadCliPipes' denied - Command 'CliPipeOutput' denied 
+ERROR  |zellij_server::route     | 2026-08-15 08:08:25.442 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:08:25.444 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+INFO   |zellij_server::plugins::w| 2026-08-15 08:08:25.467 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 5 
+INFO   |zellij_server::plugins::p| 2026-08-15 08:08:26.523 [plugin-exec-1] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin '/home/hruzam/unikuklatrix/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm' in 25.951351ms 
+ERROR  |zellij_server::route     | 2026-08-15 08:08:36.707 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:08:41.686 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:08:41.688 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+ERROR  |zellij_server::route     | 2026-08-15 08:08:59.528 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:09:04.508 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:09:04.510 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+INFO   |zellij_client            | 2026-08-15 08:09:34.244 [main      ] zellij-client/src/lib.rs:1266: Bye from Zellij! 
+INFO   |zellij_client            | 2026-08-15 08:09:50.111 [main      ] zellij-client/src/lib.rs:735: Starting Zellij client! 
+ERROR  |zellij_server::route     | 2026-08-15 08:10:03.825 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:10:08.804 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:10:08.806 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+ERROR  |zellij_server::route     | 2026-08-15 08:10:24.618 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:10:29.591 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:10:29.593 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+ERROR  |???                      | 2026-08-15 08:11:34.141 [screen    ] zellij-server/src/screen.rs:1869: a non-fatal error occured
+
+Caused by:
+    0: Failed to switch to active tab at position 0 for client id: 2
+    1: active tab not found for client 2 
+INFO   |zellij_server::plugins::w| 2026-08-15 08:11:34.170 [wasm      ] zellij-server/src/plugins/wasm_bridge.rs:494: Bye from plugin 6 
+INFO   |zellij_server::plugins::p| 2026-08-15 08:11:35.225 [plugin-exec-1] zellij-server/src/plugins/plugin_loader.rs:151: Loaded plugin '/home/hruzam/unikuklatrix/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm' in 24.855815ms 
+ERROR  |zellij_server::route     | 2026-08-15 08:11:45.196 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:11:50.175 [server_router] zellij-server/src/route.rs:2642: Received unknown message from client. 
+ERROR  |zellij_server::route     | 2026-08-15 08:11:50.176 [server_router] zellij-server/src/route.rs:2645: Client sent over 1000 consecutive unknown messages, this is probably an infinite loop, logging client out 
+ERROR  |zellij_server::route     | 2026-08-15 08:13:23.079 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:13:23.084 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:13:41.923 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:13:41.937 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:13:52.503 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:13:52.510 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:14:15.118 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
+ERROR  |zellij_server::route     | 2026-08-15 08:14:15.127 [server_router] zellij-server/src/route.rs:75: Action CliPipe did not complete within 1s timeout 
