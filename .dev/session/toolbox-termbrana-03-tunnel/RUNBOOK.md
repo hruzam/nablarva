@@ -20,7 +20,7 @@ participant_3: [majkee, {role: "operator — pane/tab hands, tunnel enable gavel
   via `codex app-server` JSON-RPC (living, steerable, headless thread) + native Claude
   messaging (SendMessage, v2.1.224+) on the Claude side. **v1 = visible mode** — the
   Codex thread rendered into a pane termbrana observes; zellij-paste mechanics where
-  injection is needed. Decision record: `~/unikuklatrix/termbrana/research/`
+  injection is needed. Decision record: `~/unikuklatrix/nablarva/toolbox/termbrana/research/`
   `termbrana.tunnel-stage.observations.2026-09-01.md` §4. Do not re-litigate the axis;
   t1 decides only per-leg mechanics inside this shape.
 - **Office only.** Verify before anything: `ls /usr/bin/php74 && command -v valet` —
@@ -47,10 +47,10 @@ Do not trust any file's host: header.
    ~/unikuklatrix/nablarva/AGENTS.md
    ~/unikuklatrix/nablarva/.dev/session/flag.md          — L6, L9, L11 (L11 gates this session)
    ~/unikuklatrix/nablarva/.dev/session/pulse.md         — top entry only
-   ~/unikuklatrix/termbrana/research/termbrana.project-definition.md   — laws 2.4, 2.5
-   ~/unikuklatrix/termbrana/research/research.epoch.tunnel-claude-side.2026-09-01.md
-   ~/unikuklatrix/termbrana/research/research.epoch.tunnel-codex-side.2026-09-01.md
-   ~/unikuklatrix/termbrana/research/termbrana.tunnel-stage.observations.2026-09-01.md  — §4 = gaveled v0 shape
+   ~/unikuklatrix/nablarva/toolbox/termbrana/research/termbrana.project-definition.md   — laws 2.4, 2.5
+   ~/unikuklatrix/nablarva/toolbox/termbrana/research/research.epoch.tunnel-claude-side.2026-09-01.md
+   ~/unikuklatrix/nablarva/toolbox/termbrana/research/research.epoch.tunnel-codex-side.2026-09-01.md
+   ~/unikuklatrix/nablarva/toolbox/termbrana/research/termbrana.tunnel-stage.observations.2026-09-01.md  — §4 = gaveled v0 shape
    ~/ia-sync/HANDSHAKE.md                                — Delivery rule + TABLE candidate
 
 2 · L11 CHECK — FIRST ACTION. If M0 is not frozen and no L11 exception is recorded in
@@ -88,8 +88,8 @@ the pilot date + models (Sella L8).
 ```
 Termbrana 03-tunnel, Codex side. You are @Cartan. Read (absolute paths):
 ~/ia-sync/HANDSHAKE.md ·
-~/unikuklatrix/termbrana/research/research.epoch.tunnel-codex-side.2026-09-01.md ·
-~/unikuklatrix/termbrana/research/termbrana.tunnel-stage.observations.2026-09-01.md (§4
+~/unikuklatrix/nablarva/toolbox/termbrana/research/research.epoch.tunnel-codex-side.2026-09-01.md ·
+~/unikuklatrix/nablarva/toolbox/termbrana/research/termbrana.tunnel-stage.observations.2026-09-01.md (§4
 = the gaveled v0 shape) · this folder's STATUS.md. Your scope: the Codex leg of v0 —
 app-server mechanics (thread/start|resume lifecycle, turn/start|steer, result
 read-back, auth/entitlement frame on the current CLI), verified against your live
@@ -102,8 +102,8 @@ you are not seated in this bed directly.
 ## References — point, do not copy
 
 - Canon: `~/unikuklatrix/nablarva/.dev/session/flag.md` (L11 sole authority on structure)
-  · `~/unikuklatrix/termbrana/research/termbrana.project-definition.md` (laws)
-- Decision record: `~/unikuklatrix/termbrana/research/termbrana.tunnel-stage.observations.2026-09-01.md` §4
+  · `~/unikuklatrix/nablarva/toolbox/termbrana/research/termbrana.project-definition.md` (laws)
+- Decision record: `~/unikuklatrix/nablarva/toolbox/termbrana/research/termbrana.tunnel-stage.observations.2026-09-01.md` §4
 - Prior session: `~/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-02-m0-truthspike/`
   (M0 — must freeze first or be excepted)
 - Cross-runtime: `~/ia-sync/HANDSHAKE.md` · `~/ia-sync/session/rellays-calude-codex/`

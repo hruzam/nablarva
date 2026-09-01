@@ -71,7 +71,7 @@ STEP 0 was sat 2026-08-16 (<MATCH>). STEPS 1–5 were still empty as of 2026-08-
     (handoff gate law — the writer does not verify their own work), then freeze.
 
 4 · RESOLVE BEFORE FREEZING.
- a) termbrana/README.md carries an uncommitted +153/−3 expansion by @Cartan. It is NOT
+ a) toolbox/termbrana/README.md carries an uncommitted +153/−3 expansion by @Cartan. It is NOT
     stashed. Review against CS.termbrana-readme.2026-08-24.md (IN THIS FOLDER).
     DO NOT `git checkout` it away.
  b) The machines are MANJARO (/etc/os-release → ID=manjaro, ID_LIKE=arch), not Arch.
@@ -114,8 +114,8 @@ Point, do not copy — canon lives with the project.
 - Session bed: `nablarva/.dev/session/toolbox-termbrana-02-m0-truthspike/` (this folder)
 - README review card: `CS.termbrana-readme.2026-08-24.md` (this folder — moved from the
   bench 2026-09-01)
-- Evidence: `termbrana/research/evidence/` — `host-versions.md` is the pin record
-- Canon: nablarva `flag.md` L6 · L9 · L11 · `termbrana/DECISIONS.md`
+- Evidence: `toolbox/termbrana/research/evidence/` — `host-versions.md` is the pin record
+- Canon: nablarva `flag.md` L6 · L9 · L11 · `toolbox/termbrana/DECISIONS.md`
 - Re-entry: `~/reposoma/_mail/monkey/inbox/CS.termbrana-m0.2026-08-15.md`
 - Machine layer: `~/ia-sync/journal.host-cleanup.md` · `AGENTS.md` §"Which host am I on?"
 - Next session (authored, L11-gated): `.dev/session/toolbox-termbrana-03-tunnel/RUNBOOK.md`
