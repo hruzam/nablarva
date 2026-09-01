@@ -3,6 +3,7 @@
 # Termbrana — Project Definition
 
 **Status:** Draft r0  
+**Status addendum 2026-09-02:** termbrana is a nablarva toolbox member (`nablarva/toolbox/termbrana/`); repo-level independence retired by majkee's unification gavel. Law 2.3 "standalone first" survives as a LIBRARY boundary — termbrana-core stays free of nablarva/vendor concepts — not as a repo boundary. Governance: nablarva flag L11, as always.  
 **Date:** 2026-08-15  
 **Decision owner:** majkee  
 **Source lineage:** Nabla's Foil exploration, revised by Wave  
