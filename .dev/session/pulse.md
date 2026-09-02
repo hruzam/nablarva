@@ -5,4 +5,4 @@
 
 | active session | gate | STATUS |
 |---|---|---|
-| `toolbox-termbrana-03-tunnel` | One full round-trip (Claude→Codex task, Codex→Claude result) through the v0 tunnel, live on office, receipts on disk in this session folder | `/home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-03-tunnel/STATUS.md` |
+| none — 03-tunnel CLOSED (PASS) | no active termbrana session | evidence: `/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/research/evidence/t06-tunnel-v0-roundtrip.md` |
