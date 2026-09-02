@@ -14,7 +14,7 @@ this file is now the session's `RUNBOOK.md`, completing the runbook-GUIDE file s
 bed. `handoff.md` keeps its name (its gate is still open — never rename inside an open bed).
 The bench copy at `~/reposoma/_runbook/termbrana/m0-close/` is pruned; reposoma git history
 holds it. The superseded `termbrana-readme` draft (Proxima, 2026-08-24) was pruned with it —
-its live content is item 4a below; its cold-start card now sits IN THIS FOLDER.
+its live content is item 4a below; its cold-start card now sits IN THIS FOLDER. GLOSS.termbrana.md opened at the session root 2026-09-02 (majkee lean; convention line for AGENTS.md pending his gavel).
 
 ## Scope
 
@@ -111,6 +111,7 @@ a first audit.
 
 Point, do not copy — canon lives with the project.
 
+- Gloss (operator learning, spans all termbrana sessions): `../GLOSS.termbrana.md` — opened 2026-09-02
 - Session bed: `nablarva/.dev/session/toolbox-termbrana-02-m0-truthspike/` (this folder)
 - README review card: `CS.termbrana-readme.2026-08-24.md` (this folder — moved from the
   bench 2026-09-01)

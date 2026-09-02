@@ -71,6 +71,14 @@
   `reposoma@2c17a5c:raw.guides/status/GUIDE.md`; audit receipt (working-state, not the
   durable law): `_mail/oraculum/archive/cartan.session-rhythm-convention-audit.2026-08-27.md`
   in that repository.
+- **L12 · Repo topology** (majkee gavel 2026-09-02): nablarva, nablarva.devenv, and
+  termbrana unified into ONE repo (nablarva). Plain `git pull`/`push` on `core` — never
+  `pull --rebase` (subtree history; near-miss 2026-09-02); parallel work via `git
+  worktree`. sync.sh / deploy.sh / SYNC_DISCIPLINE.md retired. termbrana lives at
+  `toolbox/termbrana/` (subtree, history preserved); its law 2.3 "standalone first" is
+  a library boundary, not a repo boundary. `.hlm/` = operator vault: tracked, sealed
+  from agent reading. Old remotes deleted from GitHub. Details:
+  `docs/repo-unification.2026-09-02.md`.
 
 ## Named deferral thresholds (folded from abolished plan.md)
 
