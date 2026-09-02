@@ -25,9 +25,9 @@ least as reliably as with native Zellij search and scrollback editing.
 | Code on disk | `termbrana-zellij` 0.0.0: a read-only M0 probe harness |
 | Capture ceiling | Zellij plugins receive host-rendered strings/events: `rendered_text` or `rendered_ansi`, never `raw_pty` |
 | Chosen MVP view | A side/tiled review pane; the overlay experiment was dropped |
-| Chosen capture shape | Render-report events signal changes; full scrollback is pulled on demand. Burst cadence, debounce, and repeated-call cost remain unmeasured |
+| Chosen capture shape | Render-report events signal changes; full scrollback is pulled on demand. Burst cadence measured 2026-09-02 (self-feeding storm when subscribing to own pane; dozens of PaneUpdates per resize); per-call cost of repeated get_pane_scrollback remains unmeasured — see ADR-0002 L-A1/L-A2 |
 | Observer safety | No writes, signals, or global input interception in the default product mode |
-| M0 gate | Not frozen: operator pad steps 1–5, evidence folding, and an independent fresh-eyes pass remain |
+| M0 gate | **FROZEN 2026-09-02** — operator pad sat (8/8 fences), evidence folded, @Assay fresh-eyes PASS, ADR-0002 gaveled by majkee. Re-verification loop (pad.2-m0-loop) is due before M2 adapter code — ADR-0002 §Loop |
 
 Zellij owns the PTY master, parses terminal control sequences, and constructs its terminal
 model before Termbrana can observe it:
@@ -50,7 +50,7 @@ own the PTY from process start; that is a separately gated system, not part of t
 | Grade | Meaning | Available now? |
 |---|---|---|
 | `raw_pty` | Bytes read by the process that owns the PTY master | No; future PTY experiment only |
-| `rendered_ansi` | Host-rendered pane representation retaining ANSI styling | API path verified; exact runtime semantics still partly operator-pending |
+| `rendered_ansi` | Host-rendered pane representation retaining ANSI styling | Runtime-confirmed 2026-09-02: reachable ONLY via PaneRenderReportWithAnsi subscription; get_pane_scrollback strips ANSI (ADR-0002 fact 1) |
 | `rendered_text` | Host-rendered plain text | API path verified |
 | `derived` | Blocks, highlights, filters, or summaries referencing parent observations | Planned in `termbrana-core` |
 
@@ -111,7 +111,7 @@ command injection, global interception, or provider-specific policy in the core.
 
 | Milestone | State | Exit gate |
 |---|---|---|
-| M0 — host truth spike | **In progress** | Finish the operator pad, fold T0.2–T0.5 evidence, independent review, then freeze the host contract |
+| M0 — host truth spike | **Frozen 2026-09-02** (ADR-0002) | Done — see ADR-0002; loop pad.2-m0-loop due before M2 code |
 | M1 — pure core | Not started | Deterministic model, block index, navigation, bookmarks, JSONL replay, and host-independent tests |
 | M2 — read-only Zellij MVP | Not started | User workflow works without nabLarva and passes the pre-registered benchmark |
 | M3 — beta hardening | Conditional | Opens only if the M2 benchmark passes |

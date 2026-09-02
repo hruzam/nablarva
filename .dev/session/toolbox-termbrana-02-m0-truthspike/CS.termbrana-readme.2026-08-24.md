@@ -9,7 +9,7 @@ host:
   hostname: hruzam-120922
   logical: office
 project:
-  root: /home/hruzam/unikuklatrix/termbrana
+  root: /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana
   branch: core
   head: e319ed459b268971555f257a7efc388f65490024
   upstream: origin/core
@@ -24,10 +24,10 @@ codex:
   effort: high
 task:
   objective: Review and close the evidence-backed Termbrana README without changing the M0 gate.
-  first_action: git -C /home/hruzam/unikuklatrix/termbrana diff -- README.md
+  first_action: git -C /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana diff -- README.md
 authority:
   may_write:
-    - /home/hruzam/unikuklatrix/termbrana/README.md
+    - /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md
     - /home/hruzam/unikuklatrix/nablarva/.dev/session/pulse.md
   gated:
     - commit or push
@@ -35,7 +35,7 @@ authority:
     - flag or topology changes
     - Codex deployment
 pointers:
-  - /home/hruzam/unikuklatrix/termbrana/README.md
+  - /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md
   - /home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md
   - /home/hruzam/unikuklatrix/nablarva/.dev/session/pulse.md
   - /home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-02-m0-truthspike/status.md
@@ -71,9 +71,9 @@ pointers:
 ## First tool shot
 
 ```bash
-git -C /home/hruzam/unikuklatrix/termbrana status --short
-git -C /home/hruzam/unikuklatrix/termbrana diff --check
-git -C /home/hruzam/unikuklatrix/termbrana diff -- README.md
+git -C /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana status --short
+git -C /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana diff --check
+git -C /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana diff -- README.md
 ```
 
 ## Gates

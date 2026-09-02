@@ -43,6 +43,7 @@ full reasoning — but the *specific* "does it flicker/misalign" empirical check
 deferred to the operator pad, honestly, rather than assumed.
 
 ## What is NOT confirmed
+→ visual alignment under resize confirmed 2026-09-02, see §Confirmed by pad.1 sitting
 
 - Visual alignment of a floating pane's re-rendered content against the pane it copies
   from, under resize and rapid updates — needs eyes.
@@ -58,3 +59,23 @@ deferred to the operator pad, honestly, rather than assumed.
 resize the terminal/window; watch for flicker or stale content; visually compare a
 `dump-screen`-captured terminal pane's regex-highlighted content (native) against the
 plugin's re-rendered echo of the same content (copied-pane path) side by side.
+
+## Confirmed by pad.1 sitting, 2026-09-02 (operator majkee over SSH from home; driver Oraculum)
+
+Judgement is SSH/Tailscale-mediated: operator on Konsole at home, session running on
+office, over Tailscale (fence 4).
+
+- **Verdict: `<STABLE, NO FLICKER/MISALIGNMENT>` in the plugin pane.** The operator
+  manually resized the Konsole window several times, and toggled tiled↔floating
+  (`Ctrl+p e`) twice — pane slot order changed (normal re-embed behavior). Photo shows
+  the plugin pane (now left, tiled) with aligned borders and a continuous log,
+  `[0358]..[0420]`, no stale lines.
+- **Control datum:** the terminal (shell) pane on the same screen showed heavy
+  artefacts under identical resizes — its zsh powerline prompt was redrawn/smeared
+  roughly 40 times (SIGWINCH redraw). This is judged a transport/zsh-side artefact,
+  not a termbrana finding, but it means the plugin pane behaved *better* than an
+  ordinary terminal pane under the same resize stress, not merely "as good."
+- **Cadence datum (T0.5-relevant):** one resize drag produced dozens of `PaneUpdate`
+  events (sequence counter moved 0193 → 0420 across the resizes).
+- **ADR-0001 review-pane reservation: closed.** This removes the last open
+  reservation the T0.4 gate above left pending on visual alignment.

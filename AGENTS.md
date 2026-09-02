@@ -30,7 +30,7 @@
 Session surfaces (flag L9): flag + pulse are canon. `.dev/session/dock.md` is the
 UNCANONICAL scratch — side quests land there without a blessing; never cite it as
 truth. Task-scoped work gets `.dev/session/<topic>/` dirs that die with the task. No
-standing plan.md (abolished — survey receipt, 2026-08-02).
+standing plan.md (abolished — survey receipt, 2026-08-02). `.dev/session/GLOSS.<part>.md` = the operator's learning file for one part (uncanonical like dock.md; one per part; every RUNBOOK of the part points to it). Not every work needs one — the driver ASKS "record GLOSS.<slug>.md?" when a sitting looks like it needs explaining, never assumes. Guide: reposoma `raw.guides/gloss/GUIDE.md`.
 
 ## Route by seat
 

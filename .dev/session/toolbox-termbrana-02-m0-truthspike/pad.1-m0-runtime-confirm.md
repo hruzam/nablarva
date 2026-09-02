@@ -336,7 +336,20 @@ it) for ~30s, then bring it back. Watch overall session responsiveness throughou
 
 >MAJKEE report 5
 ```zsh
-
+# sat 2026-09-02 ~03:00–03:30, driver: Oraculum · operator: majkee over SSH from home · probe instance NOT subscribed to render reports (fresh after 2b)
+# verdict: <SESSION STAYS RESPONSIVE, PLUGIN RESUMES CLEANLY> — with one unresolved refinement (R1 below)
+❯ yes "termbrana perf fixture line" | head -100000 > /tmp/big-fixture.txt
+❯ cat /tmp/big-fixture.txt          # scrolled through; shell pane title afterwards: SCROLL: 0/10000
+# during cat: session responsive; probe pane UNCHANGED — zero events delivered (PaneUpdate fires on layout/focus, not content).
+# htop: zellij --server 0.6 % CPU after the cat (RES 107M); operator: CPU wandered 0.6–1.9 % with NO correlation to the cat (background noise).
+# host fact: zellij scrollback cap = 10 000 lines (SCROLL: 0/10000) → get_pane_scrollback(full=1) can never exceed that on this contract.
+# hide/show: Ctrl+t n (new tab, probe hidden ~30 s+), Ctrl+t ← back → probe counter STILL [0519]; Alt+arrows tab switches → still [0519].
+#   pipe "clear" → log emptied and counting resumed from [0001] "PaneUpdate: 9 pane(s) across 2 tab(s)" + live Event::Key lines → plugin ALIVE.
+# R1 UNRESOLVED: whether the frozen counter after the tab excursion was event-starvation (no PaneUpdate delivered to a plugin on a non-active tab)
+#    or a missed re-render on return — `clear` wiped the evidence that would separate them. Either way: M2 must re-sync on tab return.
+# operator-UX finding (product-relevant): zellij's modal keyboard + floating layer + SSH made "where do my keys go" the dominant difficulty for a
+#    non-expert operator (focus landed on the probe / htop repeatedly). termbrana's operator is this person, not a zellij power-user.
+# photos: 8419c2e9-image.jpg (htop after cat), 97481b05-image.jpg (probe live [0457]-[0519]), 7d816630-image.jpg (after clear, [0001]-[0016])
 ```
 
 ## Trailing sink
@@ -356,3 +369,13 @@ context — the two halves of this evidence trail should stay legible together.
 ## parked
 
 (space for off-pad questions raised during the sitting)
+
+- **Operator display constraints (majkee, 2026-09-02, raised after STEP 5)** — product input for M2, not gate evidence:
+  - home: one 21″ monitor; sharp screen edges tire the eyes so majkee focuses on one half; preferred orientation VERTICAL
+    (one column: 2 agent sessions + 2 live shells by tab); currently horizontal. The "semitransparent foil" (overlay) idea
+    originated HERE — as a way to fit a review surface without another column, not as a compositing preference.
+  - office: two 19″ — one horizontal (Sublime / browsers), one VERTICAL for terminal/agentive sessions.
+  - eye budget: small-text monitoring (htop-class) ≤ 4 columns; may split vertically into 2 when output is short.
+  - consequence for ADR-0001's review pane: it must be NARROW, TOGGLEABLE (float/hide) or TAB-based — never a standing extra
+    column; the need the overlay served (real estate) is now an M2 requirement (see ADR-0002 §Consequences / L-A6).
+  - photo: ~/.claude/uploads/52bb55ac-f94f-49a7-ba99-efaf215bc3a8/86f1d7e4-image.jpg — home 21″ horizontal, Konsole split: left half = the driver session (Claude), right half = zellij (htop · probe · shell). The 4-column budget is fully spent with no room left for a review pane — the constraint made visible.

@@ -29,7 +29,7 @@ working plugin.
   forced by the Zellij WASM boundary — it does NOT pre-decide docket item 2 (nabLarva v1
   language).
 - **A2 — placement + classification (aligned to `/new-project` skill · canon.project-topology,
-  checked 2026-08-15 per majkee's direction).** Own repo `~/unikuklatrix/termbrana/` —
+  checked 2026-08-15 per majkee's direction).** Own repo `~/unikuklatrix/nablarva/toolbox/termbrana/` —
   scope-group sibling of nablarva; git + gh PRIVATE, branch `core`. **Termbrana is a TOOLBOX
   repo, NOT a temple project** — the anti-parallel-system reading:
   - reuses the skill's mechanics: scope-group placement (canon MANDATE satisfied —

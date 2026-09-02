@@ -42,7 +42,7 @@ repo boundary — see the addendum in
 
 **ONE repo. Plain git, no custom transport.**
 
-- Cross-machine sync: `git pull --rebase` / `git push` on `core`. That's it.
+- Cross-machine sync: plain `git pull` / `git push` on `core`. NEVER `pull --rebase` (subtree history — flag L12, near-miss 2026-09-02). That's it.
 - Parallel/experimental work: `git worktree add ../nablarva-<topic> -b dev/<topic>`
   instead of a second clone or a sibling repo.
 - No sync/deploy shuttling between repos for this project going forward.

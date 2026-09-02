@@ -30,7 +30,7 @@ execution) and for any future assumption about WASM feature support.
 
 ## The smallest compiling plugin
 
-Workspace: `~/unikuklatrix/termbrana/` (Cargo.toml `[workspace] members =
+Workspace: `~/unikuklatrix/nablarva/toolbox/termbrana/` (Cargo.toml `[workspace] members =
 ["crates/termbrana-zellij"]`). `termbrana-core` is intentionally not created — execution
 plan §2: "do not pre-create empty architecture."
 
@@ -57,7 +57,7 @@ editing and recompiling the plugin per probe.
 ### Exact build command
 
 ```bash
-cd ~/unikuklatrix/termbrana
+cd ~/unikuklatrix/nablarva/toolbox/termbrana
 cargo build --release --target wasm32-wasip1 -p termbrana-zellij
 ```
 

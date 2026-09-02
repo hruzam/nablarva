@@ -4,6 +4,7 @@
 # T0.2 — Pane-content semantics
 
 ## Status: source-verified, runtime capture incomplete — see gap below
+→ runtime capture completed 2026-09-02, see §Confirmed by pad.1 sitting
 
 The probe harness (`crates/termbrana-zellij`) implements a `capture <kind> <id> <full>`
 pipe command that calls `get_pane_scrollback` and logs the escaped result (control
@@ -82,3 +83,40 @@ a human can watch the plugin's floating pane directly rather than needing
 `dump-screen`). That sitting will fill in the fixture-by-fixture rows in
 `pane-content-matrix.md` with observed strings; it will not change the raw/ansi/text
 grade conclusion above, which is already source-certain.
+
+## Confirmed by pad.1 sitting, 2026-09-02 (operator majkee over SSH from home; driver Oraculum)
+
+- **`get_pane_scrollback(Terminal(0), full=false)` STRIPS ANSI by default.** Fixture
+  `\033[31mred\033[0m \033[1;32mbold-green\033[0m \033[38;5;208morange256\033[0m
+  \033[38;2;10;200;250mtruecolor\033[0m` captured via
+  `capture terminal 0 0` and logged by the plugin as `viewport_lines=39 above=0
+  below=0`, with the fixture line appearing plain — `red bold-green orange256
+  truecolor` — zero `<ESC>` tokens, reproduced on two separate captures (fence 2,
+  `[0072]`/`[0097]`/`[0099]`/`[0102]`). `full=0` means viewport-only, per the same
+  fence. This settles the one point t02's "What could not be captured this session"
+  paragraph above left open for `get_pane_scrollback` specifically.
+- **`PaneRenderReportWithAnsi` (push subscription) CARRIES ANSI** — lines contain
+  literal `<ESC>[m` tokens (fence 2b, `[528133]`/`[528136]`/`[528142]`). The
+  `rendered_ansi` grade is therefore reachable only via subscription, never via
+  `get_pane_scrollback`, on this host contract. Caveat: the fixture line itself for
+  `terminal_0` was not isolated in the photographed log — the subscription storm
+  (below) buried it; the `<ESC>` tokens actually read were SGR resets inside the
+  plugin's own pane report, not confirmed-attributed to the fixture line word-for-word.
+- **Pipe round-trip, sharper finding than August's "unreliable against a headless
+  client":** `zellij action pipe` reached the plugin every time this sitting (4/4
+  commands acted on — `capture` ×2, `clear`, `subscribe_render_reports`), but
+  `cli_pipe_output()` → CLI stdout landed 0/2 times under a genuine interactive
+  client. Evidence had to be read from the plugin's own log pane (fullscreened),
+  never from the CLI echo. This narrows the August finding: the *delivery* half is
+  reliable even interactively; the *reply-to-CLI-stdout* half is not, independent of
+  headless-vs-interactive.
+- **Subscription storm (T0.5-relevant, discovered while confirming the above):**
+  subscribing to render reports without excluding the plugin's own pane self-feeds
+  (report → re-render of the plugin's own log → new report → loop). Sequence counter
+  reached ~300K within ~1 minute and ~528K at photo time. Session responsiveness
+  degraded past recovery — `Ctrl+p x` (close pane) was not reachable; the operator
+  had to quit the whole session (`Ctrl+q`). No `unsubscribe` command exists in the
+  harness. Derived adapter law for M2: a subscriber must exclude its own pane and
+  debounce; never subscribe blindly to all panes.
+- `zellij action list-clients` is the working way to get a focused pane's id (used
+  to resolve `terminal_0`'s numeric id for the capture commands above).

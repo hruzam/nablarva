@@ -1,4 +1,5 @@
 # handoff — toolbox-termbrana · session 02 (M0 truth spike)
+`NOTE 2026-09-02: paths below pre-date flag L12 — termbrana now lives at ~/unikuklatrix/nablarva/toolbox/termbrana/; Part 1 bootstrap commands are historical record, do not re-run.`
 
 `authorized-by: flag L11 (majkee gavel 2026-08-15) · designed-by: Houston (office 2026-08-15)`
 `read first: nablarva AGENTS.md → flag L11 → ../toolbox-termbrana-01-brief/brief.md →`

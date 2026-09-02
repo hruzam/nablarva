@@ -25,4 +25,4 @@ Correction to research.epoch.host-versions.2026-08-15.md ("Arch extra in sync wi
 right package origin, wrong delivery timing. The pin is empirical (verified 2026-08-15/16 and
 2026-09-02 on this host), not a repo-tracking promise.
 
-repo path: toolbox/termbrana/ inside nablarva (flag L12, 2026-09-02) — was ~/unikuklatrix/termbrana at 2026-08-15.
+repo path: toolbox/termbrana/ inside nablarva (flag L12, 2026-09-02) — was ~/unikuklatrix/nablarva/toolbox/termbrana at 2026-08-15.

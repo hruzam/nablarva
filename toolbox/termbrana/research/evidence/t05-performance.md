@@ -26,6 +26,7 @@
   should not assume sub-second turnaround is guaranteed under load.
 
 ## What is NOT confirmed — this is the largest gap of the five probes
+→ large-scrollback + hidden-plugin scenarios confirmed 2026-09-02, see §Confirmed by pad.1 sitting (per-call polling cost remains unmeasured, see that section)
 
 None of the actual T0.5 scenarios (rapid continuous output, 100k-line scrollback,
 viewport-only vs full-scrollback capture cost, update-driven vs timer-polling capture,
@@ -53,3 +54,43 @@ plugin pane and watch whether `render()` keeps firing while hidden, close a capt
 target pane mid-observation and confirm the harness's `get_pane_scrollback` error path
 (already implemented — see `src/main.rs`'s `capture` command, which logs `Err` results
 same as `Ok`) behaves as expected rather than crashing.
+
+## Confirmed by pad.1 sitting, 2026-09-02 (operator majkee over SSH from home; driver Oraculum)
+
+Probe instance was NOT subscribed to render reports for this step (fresh session
+after the 2b storm). Verdict: **`<SESSION STAYS RESPONSIVE, PLUGIN RESUMES CLEANLY>`**
+— with one unresolved refinement (R1 below) (fence 5, plus the storm carried over
+from fence 2b).
+
+- **`yes "termbrana perf fixture line" | head -100000` → `cat`, 100,000-line
+  fixture:** while unsubscribed, zero events were delivered to the probe pane —
+  `PaneUpdate` is layout/focus-driven, not content-driven, so a `cat` flood in an
+  unrelated pane produces no plugin traffic. Session stayed responsive throughout.
+- **CPU:** `zellij --server` measured ~0.6% CPU after the cat (RES 107M); the
+  operator additionally observed CPU wandering 0.6–1.9% with no correlation to the
+  cat (background noise, not attributable to the fixture).
+- **Host fact:** zellij's scrollback cap is 10,000 lines (`SCROLL: 0/10000` in the
+  pane title) — so `get_pane_scrollback(full=1)` can never exceed that cap on this
+  host contract, regardless of how much more a fixture writes.
+- **Hidden-on-other-tab:** the probe's event counter froze at `[0519]` across a tab
+  excursion (`Ctrl+t n`, hidden 30s+) and subsequent tab switches (`Alt+arrows`).
+  Sending `clear` via pipe emptied the log and counting resumed from `[0001]`
+  (`PaneUpdate: 9 pane(s) across 2 tab(s)`) with live `Event::Key` lines following —
+  proving the plugin was alive throughout, not crashed.
+- **R1 — UNRESOLVED:** whether the frozen counter during the tab excursion was
+  event-starvation (no `PaneUpdate` delivered to a plugin on a non-active tab) or a
+  missed re-render on return could not be separated, because the `clear` command used
+  to prove liveness also wiped the evidence that would have distinguished the two.
+  Either way, the derived adapter law for M2 is: re-sync state on tab return.
+- **Subscribed-mode cost remains UNMEASURED.** The only subscribed-mode data point
+  from this sitting is the runaway storm documented in t02's pad.1 section (fence
+  2b) — a subscriber that includes its own pane self-feeds into an unbounded loop.
+  The steady-state per-call cost of `get_pane_scrollback` under repeated/timed
+  polling (as opposed to a self-feeding subscription) was not measured this sitting
+  and is an explicit open gap for M2.
+- **Operator-UX finding (product-relevant, not a performance number):** zellij's
+  modal keyboard bindings, combined with the floating pane layer and SSH-mediated
+  input, made "where do my keys go" the dominant difficulty for a non-expert
+  operator (focus repeatedly landed on the probe or `htop` unintentionally).
+  termbrana's real operator is this kind of user, not a zellij power-user, and this
+  should inform M2 input-affordance design.

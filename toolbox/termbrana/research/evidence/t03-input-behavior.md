@@ -40,6 +40,7 @@ interception"** — at the design level: nothing about receiving and reacting to
 construction, not by having exercised interception live and watched it consume input.
 
 ## What is NOT confirmed and is the honest gap
+→ interception cycle live-exercised 2026-09-02, see §Confirmed by pad.1 sitting
 
 - Live exercise of `intercept_on` → `Event::InterceptedKeyPress` → confirm an
   unhandled key is genuinely swallowed → `intercept_off` → confirm keys flow normally
@@ -64,3 +65,32 @@ send `intercept_on`, press a key that should be swallowed, confirm normal `Event
 does not also fire for it, send `intercept_off`, confirm normal keys resume. This is
 exactly the class of probe the handoff brief anticipated needing a live human for
 ("input behavior... may need a live human at the terminal").
+
+## Confirmed by pad.1 sitting, 2026-09-02 (operator majkee over SSH from home; driver Oraculum)
+
+Live-exercised in a fresh session (post-2b storm). **Verdict:
+`<KEYS SWALLOWED DURING INTERCEPT, NORMAL AFTER intercept_off>`** — the honest gap
+above is now closed, with three findings (fence 3):
+
+- **F1 — harness ordering bug.** `intercept_on` calls `intercept_key_presses()` in the
+  same handler that requests the `InterceptInput` permission. The first `intercept_on`
+  (`[0049]` "requested InterceptInput + intercept_key_presses()") fired *before* the
+  permission grant (`[0062]`) landed: the operator typed `abc` and it reached the
+  shell (`zsh: command not found: abc`), no `Event::Key` logged. A second
+  `intercept_on`, sent once the permission was already granted (`[0069]`), worked as
+  designed: `[0077]` logged `Event::InterceptedKeyPress = Enter`, and every
+  subsequent key including arrows was logged as `InterceptedKeyPress` with nothing
+  reaching the shell. Fix for M1: request the permission, await the grant event, only
+  then call `intercept_key_presses()` — do not call both in the same handler.
+- **Permission prompt**, confirmed to appear only at `intercept_on` (never at
+  `load()`, matching the design-level finding above), listing three items: 1. Access
+  Zellij state, 2. Intercept Input (keyboard & mouse), 3. Read pane contents —
+  approved.
+- **F2 — operator lock-out.** While intercepting, the operator could not type the
+  `intercept_off` pipe command itself (keys were swallowed, as designed) — confirming
+  the product needs an out-of-band off-switch, not just a self-serve one.
+- **F3 — out-of-band off-switch works.** From a separate shell (not the intercepted
+  session):
+  `zellij --session termbrana-spike action pipe --plugin file:…/termbrana-zellij.wasm --name termbrana-probe -- "intercept_off"`
+  exited 0 with no output; the plugin's header flipped to `intercepting=false`.
+  Recovery confirmed: `Ctrl+u` → `Esc` → `echo ok` printed `ok`, shell normal.

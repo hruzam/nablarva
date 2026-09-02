@@ -229,3 +229,30 @@ Verdicts: session stays responsive, plugin resumes cleanly → no red flag; note
 Session lags or the plugin pane breaks → note *when* (during the cat, during hide, on show).
 Remember 2b: a *subscribed* plugin would have paid far more here — that is the number M2
 must measure before choosing a capture cadence.
+
+```
+
+**Result 2026-09-02:** responsive throughout; an *unsubscribed* probe received zero events during
+a 100 000-line burst and zellij's server sat at ~0.6 % CPU. Host fact learned on the way: zellij
+keeps 10 000 lines of scrollback, so "full scrollback" can never mean more than that. After
+hiding the probe on another tab its counter froze; a direct message (`clear`) woke it — alive,
+but M2 must re-sync when its tab comes back. The hardest part of the whole sitting was not the
+plugin: it was knowing where your keys go.
+
+## Words we use (fixed 2026-09-02 after the sitting)
+
+| word | means | how you recognise it |
+|---|---|---|
+| **session** | the whole zellij inside your terminal window | top bar `Zellij (termbrana-spike)` |
+| **pane** | *any* box inside the session — zellij's own word; never used alone in instructions | — |
+| **probe** | the pane showing the termbrana log (`[0001] PaneUpdate…`) | title ends `termbrana-zellij.wasm` |
+| **shell** | the pane with your `❯` prompt where commands are typed | prompt visible |
+| **htop pane** | the third one, if opened | `htop` title |
+| **focus** | where your keys go — **yellow border** | one pane at a time; the probe logs every key it gets |
+| **floating** | a pane lying *on top* of the grid — **orange border**, `PIN [ ]` in its title | `Ctrl+p w` hides/shows the whole floating layer |
+| **tiled** | a pane in the grid | teal border when not focused |
+| **mode** | what `Ctrl+<letter>` put you in; the bottom bar highlights it | `Esc` returns to normal |
+
+Rule for the driver: every instruction names the target by these words ("in the **shell**",
+"with the **probe** focused") and says which border colour you should see before pressing.
+```
