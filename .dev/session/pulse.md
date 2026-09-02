@@ -5,4 +5,4 @@
 
 | active session | gate | STATUS |
 |---|---|---|
-| `toolbox-termbrana-02-m0-truthspike` | M0 host contract FROZEN | `/home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-02-m0-truthspike/status.md` |
+| `toolbox-termbrana-03-tunnel` | One full round-trip (Claude→Codex task, Codex→Claude result) through the v0 tunnel, live on office, receipts on disk in this session folder | `/home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-03-tunnel/STATUS.md` |
