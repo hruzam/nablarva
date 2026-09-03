@@ -16,6 +16,8 @@ Three repos collapsed into one: `nablarva` (this repo). History preserved for al
   this file leaves `.hlm/`"; `MAJKEE.md` is marked TOP SECRET / not wired to
   any LLM). It stays behind in the quarantined clone, not deleted, not moved
   into a repo that gets pushed to GitHub.
+
+  > ADDENDUM 2026-09-03: superseded — majkee moved .hlm into the unified repo BY HAND (2026-09-02) and gaveled it TRACKED. The seal is agent-READING, not git tracking (Sella GUIDE §5 operator-vault pattern · flag L12).
 - **termbrana** — merged in as `toolbox/termbrana/` via `git subtree`, full
   history preserved and visible under that prefix.
 
