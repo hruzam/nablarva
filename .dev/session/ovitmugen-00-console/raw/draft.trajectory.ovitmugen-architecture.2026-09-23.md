@@ -161,6 +161,7 @@ refuses any layer that would take the last reference to such a pane.
 - `status off` (the left pane already shows the inner tab bar)
 - own prefix (proposal `C-a`) so `C-b` passes through to the agents server
 - `C-a h` / `C-a l`: focus left / right pane; `C-a <` / `C-a >`: resize split
+- `C-a t`: console popup (§5.7)
 - `mouse on`: click a pane to focus it
 
 ### 5.6 Presets `ovitmugen.presets.json`
@@ -174,6 +175,41 @@ refuses any layer that would take the last reference to such a pane.
 
 `fixed` is a named command (`runbook` = `runbook.py --root <bed>`). The preset file never
 holds a raw shell string, which keeps it declarative.
+
+### 5.7 Console hosting: one view, three places to open it (majkee: yes, 2026-09-23)
+
+The ovitmugen **console** is one curses view function, `console(screen)` in
+`ovitmugen.py`. It lists the bed's tabs (`●` agent running / `○` empty shell), with keys
+to switch a tab, add a tab and peel layers. Three hosts open the same function:
+
+```
+1. popup over the frame     C-a t  →  tmux -L ovitmugen display-popup -E 'ovitmugen.py console <slug>'
+   ┌──────────────────┬───────────┐
+   │ agents   ┌───────┴──┐        │   floats on top, closes after one action,
+   │          │ ● cSharp │ runbook│   works even when runbook isn't running
+   │          │ ○ bus    │        │
+   │          └───────┬──┘        │
+   └──────────────────┴───────────┘
+
+2. runbook modal            key T  →  same function, takes over the right pane (board_view pattern, §5.4)
+
+3. standalone command       ov (alias in keyboard.zsh)  →  any terminal, even outside the frame
+```
+
+**No permanent subwindow in v1**, because:
+- the left pane's tmux status bar already shows the tabs, so a permanent console would duplicate them and take rows from runbook;
+- a permanent pane must keep refreshing, so it polls tmux continuously (R4). Popup and modal query only when opened;
+- it's cheap to add later as a preset option, with no new code:
+  `"fixed": ["runbook", "ovitmugen"]` splits the right column, runbook on top and the console below.
+
+```
+optional later (preset choice, not v1):
+┌──────────────────┬─ runbook ────┐
+│ agents (left)    │              │
+│                  ├─ console ────┤
+│                  │ ● cSharp ... │
+└──────────────────┴──────────────┘
+```
 
 ---
 
@@ -211,8 +247,8 @@ holds a raw shell string, which keeps it declarative.
 | Phase | Scope | Gate |
 |---|---|---|
 | **P0** | HELP.md: commit "by hand" section, fix "don't switch windows" → left switches, right fixed | majkee read-through |
-| **P1** | `ovitmugen.py` (plan/apply, up/tab/ls/down, dry-run) + presets + frame conf + selftest on an isolated socket. No runbook change | selftest green on office **and** home; `up` → `tab` → `down --idle` live on a scratch slug |
-| **P2** | runbook modal `T` + overview line; fixed pane = runbook | `runbook.py selftest` still green + new cases; live walk |
+| **P1** | `ovitmugen.py` (plan/apply, up/tab/ls/down, dry-run) + `console` view (standalone + `C-a t` frame popup, §5.7) + presets + frame conf + selftest on an isolated socket. No runbook change | selftest green on office **and** home; `up` → `tab` → `down --idle` live on a scratch slug |
+| **P2** | runbook modal `T` (calls the same `console` view) + overview line; fixed pane = runbook. Later, only on request: permanent console preset `"fixed": ["runbook","ovitmugen"]` | `runbook.py selftest` still green + new cases; live walk |
 | **P3** | t41 converges: `t41` becomes a thin alias over `ovitmugen up` (or retires); `t41/registry.json` → presets | no behavior lost from t41 `--help` |
 | **P4** | nablarva: termbrana reads `ovitmugen ls --json` as its dashboard source | nablarva's own gate |
 
