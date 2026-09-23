@@ -159,7 +159,8 @@ refuses any layer that would take the last reference to such a pane.
 
 ### 5.5 Frame config `ovitmugen.tmux.conf`
 - `status off` (the left pane already shows the inner tab bar)
-- own prefix (proposal `C-a`) so `C-b` passes through to the agents server
+- own prefix **`C-a`** (majkee 2026-09-24) so `C-b` passes through to the agents server
+- `bind C-a send-prefix`: `C-a C-a` sends a literal `C-a` (shell start-of-line) into the focused pane
 - `C-a h` / `C-a l`: focus left / right pane; `C-a <` / `C-a >`: resize split
 - `C-a t`: console popup (§5.7)
 - `mouse on`: click a pane to focus it
@@ -172,6 +173,9 @@ refuses any layer that would take the last reference to such a pane.
   "web":    { "tabs": ["front", "api", "db"],                   "fixed": "runbook", "split": "40%" }
 }
 ```
+
+`split` = width of the **fixed (right)** pane, passed to `split-window -h -l`, so
+`"40%"` = left 60 / right 40 (majkee default). It's only the starting size; `C-a <` / `C-a >` resize live.
 
 `fixed` is a named command (`runbook` = `runbook.py --root <bed>`). The preset file never
 holds a raw shell string, which keeps it declarative.
@@ -261,12 +265,12 @@ P1 is the real core. P2 is maybe 150 lines in runbook.
 1. ~~Placement~~ **ANSWERED 2026-09-23 (majkee):** documentation lives in nablarva (this
    bed). The implementation is zsh/py bricks, built in `~/ia-sync/zsh/` and deployed with
    `bash deploy.sh`. ia-sync = deploy layer.
-2. **Split default:** left 60 / right 40?
-3. **Tabs with agents:** v1 = empty shells (t41 contract). Later, a preset `cmd` per tab
-   (e.g. `claude --agent trajectory`)? That's launching via `new-window <cmd>`, not
-   `send-keys`, so L4 is intact. Your call.
-4. **Frame prefix:** `C-a` (conflicts with shell start-of-line inside panes), or `C-]`, or no
-   prefix and only mouse + `M-h/M-l`?
+2. ~~Split default~~ **ANSWERED 2026-09-24 (majkee):** left 60 / right 40 as the default;
+   adjustable live with `C-a <` / `C-a >`.
+3. ~~Tabs with agents~~ **ANSWERED 2026-09-24 (majkee):** tabs are **empty shells** (t41
+   contract). The operator starts agents by hand. A per-tab `cmd` in presets is not in scope.
+4. ~~Frame prefix~~ **ANSWERED 2026-09-24 (majkee):** `C-a`. Shell start-of-line inside a
+   pane = press `C-a` twice (`bind C-a send-prefix`, §5.5).
 5. **Existing bed** `~/unikuklatrix/nablarva/.dev/session/ovitmugen-00-console/` holds
    only `brief.ovitmugen-sentinel.2026-09-04.md`, which is the **@kukla sentinel** brief
    (agent-file sorting keys), not a tmux manager. Misfiled, or was "ovitmugen" once a
