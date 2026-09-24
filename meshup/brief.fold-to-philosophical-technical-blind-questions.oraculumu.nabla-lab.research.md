@@ -200,7 +200,6 @@ other valuable researches as complemental sources:
 - `/home/hruzam/ia-sync/_staging/dev-journal.sella.md`
 - `/home/hruzam/ia-sync/_staging/sella.coder-guide.md`
 - `/home/hruzam/ia-sync/_staging/sella-sibling.codex.coldstart.md`
-<<<<<<< Updated upstream
 
 5. secrets of kitchen, natural consumers apetite
 - `/home/hruzam/unikuklatrix/nablarva/meshup/nabla-buffer-brideAndBook`
@@ -215,11 +214,6 @@ what is terminal, its layers, how to measure and track events, can we have some 
   
 --> thematic area 1
 --> nice to have 1 sella upgrades/reshaping (if necessary) and implementations as side effect.
-=======
-  
---> thematic area 1
---> nice to have 1 sella upgrades and implementations
->>>>>>> Stashed changes
 
 ---
 
@@ -229,7 +223,6 @@ what is terminal, its layers, how to measure and track events, can we have some 
 
 2. theory (assymetry) - codex[claude] : `/home/hruzam/unikuklatrix/nablarva/meshup/grounded-composites/assymetry-preConsultation.md`  
 
-<<<<<<< Updated upstream
 3. theory (symmetry) -codex[claude] + two sessions (brand headless) orchestrating one to second
 - `/home/hruzam/unikuklatrix/nablarva/meshup/grounded-composites/costa.seed.codex-claude-composite.2026-08-07.md`
 > flight: possible seed of `costa protocole` -> small test brick -> real close application.
@@ -252,14 +245,6 @@ what is terminal, its layers, how to measure and track events, can we have some 
 
 
 ## THEMES END
-=======
-3. theory ()
-
-
-**compositions**
-
-majkees space end
->>>>>>> Stashed changes
  
 ---
 
