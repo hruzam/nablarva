@@ -2,8 +2,8 @@
 
 `status: GAVELED — founding set locked 2026-08-02 (majkee; @Janus challenged 2026-08-01)`
 `this repo: nabLarva — larva V3, the agent↔agent communication ladder. Scope-group`
-`~/unikuklatrix/ (kukla = pupa — the cocoon matrix). Pair: nablarva/ + nablarva.devenv/`
-`(canon.project-topology, placement amendment: home-root scope-group, .dev/session/flag.md L5).`
+`~/unikuklatrix/ (kukla = pupa — the cocoon matrix). One repo: nablarva/; termbrana at toolbox/termbrana/.`
+`(home-root placement: .dev/session/flag.md L5; unified repo topology supersedes the pair: L12).`
 
 ## What this is
 
@@ -24,15 +24,20 @@
 ## Read order (any seat)
 
 1. this file → 2. `.dev/session/flag.md` (locked + pending-gavel docket) →
-3. `.dev/session/pulse.md` (volatile, where we left off — the ONLY canonical doing-state) →
+3. `.dev/session/pulse.md` (active-session router; each linked `STATUS.md` owns its gate's doing-state, L9′) →
 4. `PROJECT.yaml` (contract) → 5. substrate docs only as the task needs them (map below).
 
-Session surfaces (flag L9): flag + pulse are canon. `.dev/session/dock.md` is the
+Session surfaces (flag L9 + L9′): `flag.md` owns locks; `pulse.md` routes to each
+session's sole doing-state, `STATUS.md`. The working project wrapper is
+`.dev/session/AGENTS.PROJECT-DESIGN.md`, linked from `PROJECT.yaml`; it carries
+design intent and open questions. `.dev/session/dock.md` is the
 UNCANONICAL scratch — side quests land there without a blessing; never cite it as
 truth. Task-scoped work gets `.dev/session/<topic>/` dirs that die with the task. No
 standing plan.md (abolished — survey receipt, 2026-08-02). `.dev/session/GLOSS.<part>.md` = the operator's learning file for one part (uncanonical like dock.md; one per part; every RUNBOOK of the part points to it). Not every work needs one — the driver ASKS "record GLOSS.<slug>.md?" when a sitting looks like it needs explaining, never assumes. Guide: reposoma `raw.guides/gloss/GUIDE.md`.
 
 ## Route by seat
+
+**Convergence — app-scheme maintainer (any runtime, agent or subagent):** at session entry, unless already settled, ask @majkee "Am I the master app-scheme maintainer?"; if yes, read `.shared/agents/convergence.md` and maintain its named target; `flag.md` retains authority over locks.
 
 Four base seats, global roster — no domain seat pre-granted (earned, not assumed):
 - **architect** (@Houston-family) — plan + gates; owns `.dev/session/pulse.md`
