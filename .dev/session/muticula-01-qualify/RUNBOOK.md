@@ -44,9 +44,10 @@ runtime and mode.
   not permission rules, so this session tests permission rules.
 - **`claude -p`** is a test instrument only (majkee, 2026-09-25): allowed for measurement, never
   in anything built. The gate's modes are the interactive ones.
-- **Codex scars.** From Cartan's transfer, the B0 Codex lane lost qualification for two reasons:
-  global trust persisted, and no pre-test whole-config hash was taken. Every lane hashes the
-  live config before and after.
+- **Codex scars.** From Cartan's transfer, the B0 Codex lane lost qualification for three reasons
+  (corrected 2026-09-29, Cartan's verdict 01): interactive byte receipts were missing, global trust
+  persisted, and no pre-test whole-config hash was taken. Every lane hashes the live config before
+  and after, and keeps byte receipts for every interactive cell.
 - **Read before authoring:**
   - my transfer: `git -C ~/unikuklatrix/nablarva show adce981:.dev/session/muticula-00-brief/raw/trajectory.experience-transfer.2026-09-27.md`
   - Cartan's transfer: `git -C ~/ia-sync show 9bb608b:.dev/session/runbook-upgrade-02-app/raw/cartan.experience-transfer.2026-09-27.md`
@@ -57,7 +58,7 @@ runtime and mode.
 | axis | values |
 |---|---|
 | runtime | Claude Code · Codex CLI (versions recorded at run time) |
-| mode | interactive (gated); print/exec only as instruments; each runtime's permission-bypass mode, as a declared-negative row |
+| mode | interactive default + acceptEdits (majkee, 2026-09-29), each claimed cell run in the TUI; print/exec is optional discovery only; bypass mode gets limit rows only |
 | denied routes | `git add`, `git commit` (all forms) · `stash`, `reset --hard`, `checkout -- .`, `restore .`, `clean` · `pull`, `merge`, `rebase`, `switch`, `checkout <branch>` · human verbs (`muticula launch`, `reap`, `stop`, `beacon on`, their human forms) |
 | indirect forms | alias · `sh -c` / `bash -c` · `command git` · `env git` · `/usr/bin/git` · `git -C` / `git -c` · compound (`cd x && git …`, `;`, `\|\|`) · a script that calls git |
 | allowed route | a stub `muticula` on PATH, which only logs its argv — never keys — and exits 0 |

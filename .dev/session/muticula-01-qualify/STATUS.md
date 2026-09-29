@@ -1,7 +1,7 @@
 # STATUS: muticula-01-qualify
 
 ```yaml
-updated: 2026-09-29 (majkee's Q1/Q2 answers folded; POINT re-pinned)
+updated: 2026-09-29 (Cartan's verdict 01 folded into plan r2; POINT 02 out)
 writer: trajectory · anthropic
 host: office
 worktree: >-
@@ -27,8 +27,14 @@ checkpoint: >-
   his interactive modes (Q1) and a sandbox row (Q2). He answered the same day: default + acceptEdits,
   and no sandbox row. Both are folded (plan sha256 054bc2ac…), and the POINT was re-pinned before
   any reply. No run has started.
+  Cartan answered on 2026-09-29: verdict 01 REVISE (_bus/01.cartan-muticula.verdict.md), plus his
+  Codex-lane companion (raw/plan.step0.codex-lane.2026-09-29.md), whose native mapping is complete
+  but blocked on persistence-free trust. The head folded the verdict into plan r2 (sha256
+  3b83620b…): interactive-first, 34 cells per mode, the rest not_run. A Sonnet spawn drafted it and
+  the head applied 8 corrections. r1 is kept as reviewed-054bc2ac. The RUNBOOK's fixed facts were
+  corrected: three B0 Codex reasons, and the modes row.
 in_flight: >-
-  _bus/01.trajectory-dashboard.point.md → cartan: a CHALLENGE of the plan plus his Codex-lane half.
+  _bus/02.trajectory-dashboard.point.md → cartan: a fold check of r2 and the budget freeze.
 recovery_probe: >-
   ls raw/ — if only the brief is there, prompt-0 has not started. A raw/plan.step0.*.md file
   means the plan exists: check _bus/ for its POINT to cartan and the CHALLENGE path it names.
@@ -40,8 +46,10 @@ holds:
   - No run before Cartan's CHALLENGE of the plan is answered and folded.
   - claude -p is a measurement instrument only, never in anything built.
 next: >-
-  majkee relays the POINT's path to Cartan. Cartan writes his CHALLENGE and his Codex-lane half;
-  the head folds, then tier A runs.
+  majkee answers the Codex trust question — (a) a temporary Codex trust entry for the fixture
+  only, with hashes and a semantic check, or (b) no exception, meaning Codex cells stay NOT RUN and
+  the gate changes — and relays POINT 02 to Cartan. After Cartan's fold check and the budget
+  freeze, the Claude lane launches.
 expected: >-
-  _bus/01.cartan-muticula.verdict.md and raw/plan.step0.codex-lane.2026-09-29.md.
+  _bus/02.cartan-muticula.verdict.md (PROCEED + frozen budget → the Claude lane runs; REVISE → r3).
 ```
