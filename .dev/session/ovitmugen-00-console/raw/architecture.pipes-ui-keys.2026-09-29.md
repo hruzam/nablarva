@@ -112,7 +112,11 @@ points to `ov-keys` for the live truth. **No keys registry file.**
 ## 8. Decisions for majkee
 
 - **D1 · events.jsonl — ANSWERED 2026-09-29 (majkee): YES.** JSONL (= NDJSON), one line per ovitmugen action, append-only, plain file per host; never agent content or keystrokes.
-- **D2 · state in `~/.local/state/ovitmugen/`** (machine-local, never synced): yes / other.
+- **D2 · state — ANSWERED 2026-09-29 (majkee): YES.** `~/.local/state/ovitmugen/`
+  (events.jsonl · last · beds/<bed>.json), machine-local, never synced.
+  **Next-version note (majkee):** from home, a pipe that attaches to the whole office UI —
+  the frame lives on office, so `ssh -t office tmux -L ovitmugen attach -t =<bed>` already
+  works in principle; wrap as `ov-up --host office <bed>` (nablarva Stage 2, cross-host).
 - **D3 · keys: derive, don't register** — no registry file; register `ov-`/`rb-` families in
   `ai/keys.zsh` (outside zsh/session: one line, announced): yes / no.
 - **D4 · termbrana:** tmux stays the frame; termbrana consumes only L1/L2 (neutral data);
