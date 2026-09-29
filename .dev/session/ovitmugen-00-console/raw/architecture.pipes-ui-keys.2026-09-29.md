@@ -28,7 +28,7 @@ reads: raw/ui-operability.2026-09-29.md · ~/ia-sync/zsh/guides/claviature.globa
 ```text
 L4  UI        frame keys · console · runbook T · (mosaic later)
 L3  control   narrow verbs: up · tab · close-idle · down · open   (never input to a pane)
-L2  pipes     pull: ov-ls --json      push: events.ndjson      state: beds/<bed>.json
+L2  pipes     pull: ov-ls --json      push: events.jsonl      state: beds/<bed>.json
 L1  map       neutral model: host → bed → tabs → process (pid, tty, cwd, fg program)
 L0  adapter   tmux today (ovitmugen.py internals); a zellij adapter stays possible
 ```
@@ -59,7 +59,7 @@ Python (runbook is the one sibling allowed to import; it ships in the same folde
 | pipe | form | who writes | who reads | truth |
 |---|---|---|---|---|
 | **pull** | `ov-ls --json` (+ `--schema`) | computed live from tmux | runbook, termbrana, nablarva monitor | live |
-| **push** | `~/.local/state/ovitmugen/events.ndjson` | ovitmugen only, own actions | anyone tailing (plain file, S6) | append-only |
+| **push** | `~/.local/state/ovitmugen/events.jsonl` | ovitmugen only, own actions | anyone tailing (plain file, S6) | append-only |
 | **state** | `~/.local/state/ovitmugen/beds/<bed>.json` + `last` | ovitmugen on up/down/b/x | ovitmugen (rebuild), others (which beds exist even after a reboot) | remembered |
 
 - **Events** are ovitmugen's own verbs only: `bed.built · tab.added · tab.closed ·
@@ -104,14 +104,14 @@ points to `ov-keys` for the live truth. **No keys registry file.**
 
 | step | scope | proves |
 |---|---|---|
-| B1 | L1 schema + versioned `ov-ls --json` · L2 state dir, `beds/<bed>.json`, `last` · events.ndjson | selftest: schema keys, state written on up/down, events appended |
+| B1 | L1 schema + versioned `ov-ls --json` · L2 state dir, `beds/<bed>.json`, `last` · events.jsonl | selftest: schema keys, state written on up/down, events appended |
 | B2 | U1 tab jumps · U3 last bed · U4 remembered tabs | selftest + live: C-a 2 from the runbook pane moves the left pane |
 | B3 | keys: `bind -N` notes, KEYMAP, `ov-keys`, families `ov-`/`rb-` in `ai/keys.zsh` | `keys` shows them outside UNSORTED; `C-a ?` lists notes |
 | B4 | U5 mosaic | when 3+ agents run at once |
 
 ## 8. Decisions for majkee
 
-- **D1 · events.ndjson** (ovitmugen's own actions, plain file, append-only): yes / no.
+- **D1 · events.jsonl — ANSWERED 2026-09-29 (majkee): YES.** JSONL (= NDJSON), one line per ovitmugen action, append-only, plain file per host; never agent content or keystrokes.
 - **D2 · state in `~/.local/state/ovitmugen/`** (machine-local, never synced): yes / other.
 - **D3 · keys: derive, don't register** — no registry file; register `ov-`/`rb-` families in
   `ai/keys.zsh` (outside zsh/session: one line, announced): yes / no.
