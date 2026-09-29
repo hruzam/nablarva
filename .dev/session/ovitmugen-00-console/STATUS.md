@@ -1,7 +1,7 @@
 # STATUS — ovitmugen-00-console
 
 ```yaml
-updated: 2026-09-29 (P2 built and committed)
+updated: 2026-09-29 (live walk in progress on office; walk fix 794d328)
 writer: trajectory · anthropic
 host: office · hruzam-120922
 worktree: |
@@ -20,7 +20,10 @@ checkpoint: >-
   cached tmux line. Evidence in the commit message: runbook selftest PASS (with 8 bridge cases,
   real tmux never queried), ov-selftest OK, and a live isolated frame whose fixed pane was the
   real runbook — T, then Enter, moved the left pane to bus and the overview followed.
-  Not deployed; the gate's live walk and home selftests remain majkee's.
+  Office deployed by majkee 2026-09-29, selftests green, walk in progress. Walk finding 1:
+  quitting runbook (q / C-c, exit 0) left the fixed pane dead and ov-up revived only the left
+  pane; fixed in ia-sync 794d328 (ov-up revives any dead frame pane; C-a r restarts the focused
+  pane), ov-selftest OK with 2 new cases. 794d328 is local, not pushed or deployed yet.
   Carried tasks (outside the gate): (1) res/examples.md for the session-browser GUIDE, to be
   written after the live walk so it teaches the final TUI; (2) this bed's
   pad.1-remote-cli-walk.md; (3) parked idea: display-only receipt navigation in the browser.
