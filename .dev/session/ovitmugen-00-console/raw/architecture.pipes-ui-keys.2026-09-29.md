@@ -119,3 +119,20 @@ points to `ov-keys` for the live truth. **No keys registry file.**
   a zellij adapter is possible later but not planned: accept / want termbrana as the frame.
 - **D5 · session shape:** this exceeds the 00 gate (v1 live). Close 00 after the home
   selftests; open sibling `ovitmugen-01-basement` with its own gate for B1–B3.
+
+## 9. majkee input (2026-09-29, mobile, voice — recorded as heard)
+
+- nablarva = the multi-session bridge / bus between brand CLIs (Codex, Claude, Gemini…);
+  toolboxes = partly independent organs of nablarva, like building bricks. ovitmugen is
+  converging into that picture — fine.
+- Keys: "derive, don't register" was meant for shell commands. For the UIs of the
+  toolboxes the wish is ONE normalized shortcut style across all of them (not lost between
+  styles) — a shared key grammar, not a registry file.
+- No heavier IDE: terminal / tmux, or zellij if needed, behind an app construction with a
+  loader that can switch (= L0 adapter).
+- Pseudo-buttons (trees, lists inside the animal) instead of real buttons are fine.
+- Sooner or later all toolboxes / nablarva parts hosted in the LEFT half of the window.
+  (Open: today agents are left and runbook right — confirm the side when we reach layout.)
+- ovitmugen must design for horizontal AND vertical monitors (office: two, one can be a
+  vertical 21"; home: one horizontal 21").
+- Process: answer D1–D5 one question per turn, loop until answered, then the next.
