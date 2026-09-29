@@ -1,7 +1,7 @@
 # STATUS — ovitmugen-00-console
 
 ```yaml
-updated: 2026-09-29 (live walk in progress on office; walk fix 794d328)
+updated: 2026-09-29 (P2.1 batch committed; walk continues)
 writer: trajectory · anthropic
 host: office · hruzam-120922
 worktree: |
@@ -23,7 +23,11 @@ checkpoint: >-
   Office deployed by majkee 2026-09-29, selftests green, walk in progress. Walk finding 1:
   quitting runbook (q / C-c, exit 0) left the fixed pane dead and ov-up revived only the left
   pane; fixed in ia-sync 794d328 (ov-up revives any dead frame pane; C-a r restarts the focused
-  pane), ov-selftest OK with 2 new cases. 794d328 is local, not pushed or deployed yet.
+  pane), ov-selftest OK with 2 new cases; 794d328 reached origin with another writer's push.
+  P2.1 batch (majkee go) committed at ia-sync d7d35e0: C-a q numbers persist, console x x
+  closes idle tabs (busy and last tab refused), b builds a missing bed, optional slug
+  (frame → .dev/session/<bed> cwd → only frame), ov-ls hides grouped views. ov-selftest
+  33/33 x3, runbook selftest PASS, live console smoke (b build, x x close) on isolated servers.
   Carried tasks (outside the gate): (1) res/examples.md for the session-browser GUIDE, to be
   written after the live walk so it teaches the final TUI; (2) this bed's
   pad.1-remote-cli-walk.md; (3) parked idea: display-only receipt navigation in the browser.
@@ -42,9 +46,9 @@ holds:
   - raw/brief.ovitmugen-sentinel.2026-09-04.md (@kukla) stays untouched until majkee rules.
   - Resolved 2026-09-29 — the push hold on b2b7901 (cartan-muticula): ia-sync was pushed through a541808 on 2026-09-27.
 next: >-
-  majkee says whether trajectory may push ia-sync a1d4d25; after the push majkee runs bash
-  deploy.sh on office and home, ov-selftest + rb-selftest on both, and walks the gate sequence
-  from a plain terminal (ov-up <slug> @csharp).
+  majkee pulls and runs bash deploy.sh on office (P2.1 d7d35e0), reloads the frame config
+  (tmux -L ovitmugen source-file ~/.config/zsh/session/ovitmugen.tmux.conf) and continues the
+  gate walk; then home: deploy, ov-selftest, rb-selftest.
 expected: >-
   origin/main contains a1d4d25; majkee reports selftest output from both hosts and records GO or
   STOP on the live walk; trajectory then closes this STATUS or opens the named fix.
