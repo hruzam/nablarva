@@ -1,7 +1,7 @@
 # STATUS: muticula-01-qualify
 
 ```yaml
-updated: 2026-09-29 (plan written; POINT 01 out to cartan)
+updated: 2026-09-29 (majkee's Q1/Q2 answers folded; POINT re-pinned)
 writer: trajectory · anthropic
 host: office
 worktree: >-
@@ -24,7 +24,9 @@ checkpoint: >-
   subcommand, hold in bypassPermissions, and miss git -C / git -c. It has tier A (print
   instrument, breadth) and tier B (interactive confirmation), with outcome classes DENIED /
   PROMPTED / RAN / INVALID. The Codex lane is framed for Cartan. Two open questions for majkee:
-  his interactive modes (Q1) and a sandbox row (Q2). No run has started.
+  his interactive modes (Q1) and a sandbox row (Q2). He answered the same day: default + acceptEdits,
+  and no sandbox row. Both are folded (plan sha256 054bc2ac…), and the POINT was re-pinned before
+  any reply. No run has started.
 in_flight: >-
   _bus/01.trajectory-dashboard.point.md → cartan: a CHALLENGE of the plan plus his Codex-lane half.
 recovery_probe: >-
@@ -38,8 +40,8 @@ holds:
   - No run before Cartan's CHALLENGE of the plan is answered and folded.
   - claude -p is a measurement instrument only, never in anything built.
 next: >-
-  majkee relays the POINT's path to Cartan and answers the plan's Q1 (modes) and Q2 (sandbox
-  row). Cartan writes his CHALLENGE and his Codex-lane half; the head folds, then tier A runs.
+  majkee relays the POINT's path to Cartan. Cartan writes his CHALLENGE and his Codex-lane half;
+  the head folds, then tier A runs.
 expected: >-
   _bus/01.cartan-muticula.verdict.md and raw/plan.step0.codex-lane.2026-09-29.md.
 ```

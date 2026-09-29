@@ -3,7 +3,7 @@ title: "muticula step 0 — qualification plan (Claude lane in full, Codex lane 
 session: muticula-01-qualify
 author: "trajectory-dashboard · Claude · office (cSharp head)"
 date: "2026-09-29"
-status: "for Cartan's CHALLENGE — no run starts before it is answered and folded"
+status: "for Cartan's CHALLENGE — no run starts before it is answered and folded · majkee's answers folded 2026-09-29 (modes default + acceptEdits; no sandbox row)"
 versions: "Claude Code 2.1.284 · codex-cli 0.158.0 · git /usr/bin/git (office, measured 2026-09-29)"
 inputs:
   - "raw/muticula.master.2026-09-26.md (brief r3 — §4 Leg 2 deny list, §5 Env, build step 0)"
@@ -19,7 +19,7 @@ inputs:
   deny, whether a stub `muticula` stays allowed, and whether `MUTICULA_ID`/`MUTICULA_KEY` reach
   tool commands and child agents.
 - **Out of scope:** everything else. Muticula itself is not built or qualified. Hooks are B0's
-  ground, carried here as limits. Sandboxing is an open question (§9).
+  ground, carried here as limits. Sandboxing is out (majkee, 2026-09-29).
 
 ## 2. Documented baseline (Claude Code 2.1.284 — each row still gets measured)
 
@@ -71,12 +71,13 @@ build"). The permission engine is the one under test; interactive confirmation c
 
 | id | route (brief deny list) | form | modes |
 |---|---|---|---|
-| A1–A11 | `git add a` · `git commit -m x` · `git stash` · `git reset --hard` · `git checkout -- .` · `git restore .` · `git clean -fd` · `git pull` · `git merge x` · `git rebase x` · `git switch -c x` | direct | default · acceptEdits · bypassPermissions |
-| A12–A15 | `muticula launch x` · `muticula reap x` · `muticula stop` · `muticula beacon on x "y"` | direct (human verbs) | default · bypassPermissions |
-| A16–A17 | `muticula commit -m x` · `muticula claim a` | direct (allowed route) | default · bypassPermissions |
+| A1–A11 | `git add a` · `git commit -m x` · `git stash` · `git reset --hard` · `git checkout -- .` · `git restore .` · `git clean -fd` · `git pull` · `git merge x` · `git rebase x` · `git switch -c x` | direct | default · acceptEdits |
+| A12–A15 | `muticula launch x` · `muticula reap x` · `muticula stop` · `muticula beacon on x "y"` | direct (human verbs) | default · acceptEdits |
+| A16–A17 | `muticula commit -m x` · `muticula claim a` | direct (allowed route) | default · acceptEdits |
+| L1–L2 | `git add a` (direct) · `git -C . add a` (F8) | limit rows, not gate-bearing: what a session in bypass mode would meet | bypassPermissions |
 
 **F-rows — indirect forms**, run for 3 representative routes (`git add a`, `git commit -m x`,
-`git reset --hard`) in **default** and **bypassPermissions**:
+`git reset --hard`) in **default** and **acceptEdits**:
 
 | id | form | expected |
 |---|---|---|
@@ -102,11 +103,11 @@ one row per observed outcome class:
 - the first F-row that RAN, if any
 - E1
 - E2
-- the same A1 again in the interactive `bypassPermissions` mode
+- the same A1 again in interactive `acceptEdits` mode
 
 Tier B carries the gate's "interactive modes" claim; tier A carries the breadth.
 
-**Size.** Tier A is about 11×3 + 4×2 + 2×2 + 18×3×2 + 3 ≈ 150 print calls on haiku (about 40 min).
+**Size.** Tier A is about 11×2 + 4×2 + 2×2 + 2 + 18×3×2 + 3 ≈ 147 print calls on haiku (about 40 min).
 Tier B is about 6 interactive rows. Cartan may cut F-rows if the challenge finds redundancy.
 
 ## 6. Receipts (per row, under `raw/lane-claude/`)
@@ -146,10 +147,8 @@ following, in his CHALLENGE or in `raw/plan.step0.codex-lane.<date>.md`:
 - how child agents inherit;
 - how he meets his own B0 scars: a pre-test whole-config hash, and no persisted global trust.
 
-## 10. Open questions (majkee)
+## 10. Decided (majkee, 2026-09-29)
 
-- **Q1.** Which interactive modes do you actually run sessions in: default, acceptEdits, `auto`?
-  The gate's "modes muticula will run in" should name them.
-- **Q2.** The docs recommend sandboxing for enforcement that does not depend on command text. Add
-  one exploratory row — can a sandbox write-deny on `.git/` still let `muticula commit` through? —
-  or keep step 0 text-rules only?
+- **Q1 → default + acceptEdits.** These are the gate's interactive modes. `bypassPermissions`
+  keeps only the two limit rows L1–L2.
+- **Q2 → no sandbox row.** Step 0 stays about text rules only.
