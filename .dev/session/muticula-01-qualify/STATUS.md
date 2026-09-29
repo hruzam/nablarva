@@ -1,7 +1,7 @@
 # STATUS: muticula-01-qualify
 
 ```yaml
-updated: 2026-09-27 (opened)
+updated: 2026-09-29 (majkee's trust word recorded; prompt-0 not started)
 writer: trajectory · anthropic
 host: office
 worktree: >-
@@ -28,6 +28,7 @@ recovery_probe: >-
 holds:
   - No product code; the stub muticula is a logging fixture.
   - No global settings or trust change (~/.claude*, ~/.codex/) without majkee's explicit word recorded here.
+  - Recorded 2026-09-29, majkee "ok, try" — one temporary trust entry for the throwaway fixture folder, Claude lane only. It is added right before the interactive runs and removed right after. Only ~/.claude.json's before/after hashes are kept; the file itself never enters evidence.
   - No run before Cartan's CHALLENGE of the plan is answered and folded.
   - claude -p is a measurement instrument only, never in anything built.
 next: >-
