@@ -4,11 +4,11 @@
 > gate passed 2026-09-10 and the bed was pruned 2026-09-29; its files resolve in ia-sync history.
 > It came into `ovitmugen-00-console`, the closest active session in scope (tmux sessions, seats,
 > views), on majkee's rule: "move where is closest session held in scope".
-> **Step 7 is partly done (2026-09-29, majkee's word; he waived the step 0–4 precondition).**
+> **Step 7 is done (2026-09-29, majkee's word; he waived the step 0–4 precondition).**
 > Both PCs' `authorized_keys.pre-rotation-2026-09-10` were removed after fingerprint checks. Each
 > held only the rotated-out keys (old redmi `mMS4…`, old tab `SI8z…`). The live keys are the PC
-> key, redmi `JFoh…` and galaxy `UHP7…`. **Still owed on the phone** (Termux sshd was unreachable):
-> `rm ~/.ssh/id_ed25519.old ~/.ssh/id_ed25519.pub.old`.
+> key, redmi `JFoh…` and galaxy `UHP7…`. majkee removed the phone's `id_ed25519.old` and
+> `.pub.old` himself the same day. The rotation debt is zero.
 > Steps 0–6 and the drills are untouched. The "session folder" constant below is historical.
 
 > Operator test surface. Sequential — one step, report back, next step.

@@ -28,7 +28,7 @@ checkpoint: >-
   sections teach the basics.
   (2) pad.1-remote-cli-walk.md — the deferred remote-cli tests (steps 0–6) and the muscle-memory
   drills. It comes from codex-remote-control-cli-01-wrapper, which is now pruned. Step 7 is done
-  on both PCs; the phone's old key files are still owed.
+  on both PCs and on the phone (majkee): the rotation debt is zero.
   (3) A parked idea from runbook-tool-00: receipt navigation in the browser, display-only.
   runbook-tool-00's home-selftest items are covered by this gate's "runbook selftest green on
   office and home".
