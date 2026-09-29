@@ -1,7 +1,7 @@
 # STATUS — ovitmugen-00-console
 
 ```yaml
-updated: 2026-09-29 (office walk GO; scenario 3 added; home selftests pending)
+updated: "2026-09-29 (walk bug 2 fixed — frame runbook root; home selftests pending)"
 writer: trajectory · anthropic
 host: office · hruzam-120922
 worktree: |
@@ -28,7 +28,11 @@ checkpoint: >-
   Remaining gate condition: ov-selftest + rb-selftest green on HOME.
   After the walk: help key table + scenarios 1-2 (ia-sync 08d2081), rb-keys/t41 note (1062a31),
   console o = open the bed's frame, scenario 3 (rb-open → T → b → o), help at ≤ 40 columns
-  (a4b0cb5, local). Earlier:
+  (a4b0cb5, local). Walk bug 2: rb-open on nablarva → T → b → o gave a frame whose runbook
+  showed ~/ia-sync ($RB_ROOT won: no --root); fixed in ia-sync 515eac5 (local): --root = the
+  bed's .dev/session, tabs start in its project, old frames re-rooted, ov-up --root flag,
+  console b stays on a typed name. Live frames nablarva-00- (%9) and nablarva-QQ (%7) still
+  run the old runbook command until re-rooted. Earlier:
   P2.1 batch (majkee go) committed at ia-sync d7d35e0: C-a q numbers persist, console x x
   closes idle tabs (busy and last tab refused), b builds a missing bed, optional slug
   (frame → .dev/session/<bed> cwd → only frame), ov-ls hides grouped views. ov-selftest
