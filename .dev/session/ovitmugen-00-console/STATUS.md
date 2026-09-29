@@ -1,7 +1,7 @@
 # STATUS — ovitmugen-00-console
 
 ```yaml
-updated: 2026-09-29 (P2.1 batch committed; walk continues)
+updated: 2026-09-29 (office walk GO; scenario 3 added; home selftests pending)
 writer: trajectory · anthropic
 host: office · hruzam-120922
 worktree: |
@@ -24,6 +24,11 @@ checkpoint: >-
   quitting runbook (q / C-c, exit 0) left the fixed pane dead and ov-up revived only the left
   pane; fixed in ia-sync 794d328 (ov-up revives any dead frame pane; C-a r restarts the focused
   pane), ov-selftest OK with 2 new cases; 794d328 reached origin with another writer's push.
+  GATE WALK: majkee walked it on office after deploy — GO (2026-09-29), office selftests green.
+  Remaining gate condition: ov-selftest + rb-selftest green on HOME.
+  After the walk: help key table + scenarios 1-2 (ia-sync 08d2081), rb-keys/t41 note (1062a31),
+  console o = open the bed's frame, scenario 3 (rb-open → T → b → o), help at ≤ 40 columns
+  (a4b0cb5, local). Earlier:
   P2.1 batch (majkee go) committed at ia-sync d7d35e0: C-a q numbers persist, console x x
   closes idle tabs (busy and last tab refused), b builds a missing bed, optional slug
   (frame → .dev/session/<bed> cwd → only frame), ov-ls hides grouped views. ov-selftest
@@ -46,10 +51,9 @@ holds:
   - raw/brief.ovitmugen-sentinel.2026-09-04.md (@kukla) stays untouched until majkee rules.
   - Resolved 2026-09-29 — the push hold on b2b7901 (cartan-muticula): ia-sync was pushed through a541808 on 2026-09-27.
 next: >-
-  majkee pulls and runs bash deploy.sh on office (P2.1 d7d35e0), reloads the frame config
-  (tmux -L ovitmugen source-file ~/.config/zsh/session/ovitmugen.tmux.conf) and continues the
-  gate walk; then home: deploy, ov-selftest, rb-selftest.
+  majkee on HOME: git -C ~/ia-sync pull, bash deploy.sh, then ov-selftest and rb-selftest,
+  and reports both results here.
 expected: >-
-  origin/main contains a1d4d25; majkee reports selftest output from both hosts and records GO or
-  STOP on the live walk; trajectory then closes this STATUS or opens the named fix.
+  "ovitmugen selftest: OK" and "SELFTEST PASS" from home; trajectory then records the gate
+  closed (GO) and parks the carried tasks (examples.md, pad.1, receipt navigation).
 ```
