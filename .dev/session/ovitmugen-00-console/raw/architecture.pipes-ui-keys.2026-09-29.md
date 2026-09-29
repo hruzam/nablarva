@@ -117,10 +117,11 @@ points to `ov-keys` for the live truth. **No keys registry file.**
   **Next-version note (majkee):** from home, a pipe that attaches to the whole office UI —
   the frame lives on office, so `ssh -t office tmux -L ovitmugen attach -t =<bed>` already
   works in principle; wrap as `ov-up --host office <bed>` (nablarva Stage 2, cross-host).
-- **D3 · keys: derive, don't register** — no registry file; register `ov-`/`rb-` families in
-  `ai/keys.zsh` (outside zsh/session: one line, announced): yes / no.
-- **D4 · termbrana:** tmux stays the frame; termbrana consumes only L1/L2 (neutral data);
-  a zellij adapter is possible later but not planned: accept / want termbrana as the frame.
+- **D3 · keys — ANSWERED 2026-09-29 (majkee): shared TUI key grammar ACCEPTED, DRY.** Lives once
+  in `.dev/session/AGENTS.PROJECT-DESIGN.md` § KEYS CODE; organ helps point there, never copy.
+  Shell side unchanged: families `ov-`/`rb-` in `ai/keys.zsh` (one line, announced).
+- **D4 · frame — ANSWERED by majkee's input 2026-09-29:** tmux now; zellij possible behind a
+  loader (= L0 adapter); termbrana consumes the neutral L1/L2 data.
 - **D5 · session shape:** this exceeds the 00 gate (v1 live). Close 00 after the home
   selftests; open sibling `ovitmugen-01-basement` with its own gate for B1–B3.
 
