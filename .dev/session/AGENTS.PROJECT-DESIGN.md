@@ -24,7 +24,7 @@ belong to [flag.md](flag.md), the standing machine contract to
 linked by [pulse.md](pulse.md). Design statements here remain proposals unless
 supported by a cited decision.
 
-The shared maintainer role is [convergence](../../.shared/agents/convergence.md).
+The shared maintainer role is [convergence](../../.germline/agents/convergence.md).
 The frontmatter records its current assignment and runtime-specific session
 reference; the role file holds the maintenance instructions.
 
@@ -51,6 +51,56 @@ reference; the role file holds the maintenance instructions.
 **questions which should be answered**
 1. wrapper| ui -> still terminal or some terminal wraper + process window -> real app -> than build should move seriously to `~/unikuklatrix/nablarva/.dev/session/toobox-instarmux
 2. but also prepared for your advices
+
+## 2.2. Architecture work
+
+The first useful loop is file-backed prompts and replies between living agents,
+with an inspectable inter-session roller. Majkee's priority is to remove routine
+human carriage while keeping human decisions at meaningful boundaries. Peers from
+different vendors may use their own specialist rosters. A small application core
+with explicit adapters and thin clients is the candidate under challenge; runtime
+activation remains a qualified, replaceable dependency. The study compares its ownership
+boundary with an operator workbench and a process-owning room host, using the
+earlier sessions and observed workflow. Existing session tools remain reusable.
+
+The [architecture session](nablarva-03-app-architecture/RUNBOOK.md) holds the
+[working blueprint](nablarva-03-app-architecture/raw/architecture.working.md):
+animal/toolbox boundaries, source tree, code/config/data/runtime homes, installation,
+wiring, administration and the first complete exchange. These remain proposals.
+Its [STATUS](nablarva-03-app-architecture/STATUS.md) owns progress; the project
+[pulse](pulse.md) routes all active work. Cartan synthesizes; the attached Claude
+seat, Flight, challenges the architecture independently. Flight joins
+through the RUNBOOK's scoped prompt; its attachment and assignments live in STATUS.
+Keep detailed research and review in that bed.
+
+The [workflow reading and alternatives](nablarva-03-app-architecture/raw/workflow-reading.2026-09-29.md)
+also assess the onion-terminal observation device as a possible independent tool
+and test instrument. Observation, message delivery and context insertion have
+separate responsibilities; none is a mandatory new build yet.
+
+Existing [Claude → Codex consultation tools](nablarva-03-app-architecture/raw/tunnel-consultation.2026-09-29.md)
+offer a fresh relay for a new opinion and a stored-thread tunnel for continued
+conversation. Their relationship to exchanges between living peers is in the study.
+
+# VOLATILE
+
+*Current delivery shape · checked 2026-09-29 · maintained by Convergence.*
+
+Until a separate UI versus integration into a specific IDE is decided, useful
+increments continue as **zsh-layer bricks**. Session-facing tools currently fit
+`~/ia-sync/zsh/session/`; nabLarva may be delivered in this early phase through
+`~/ia-sync/`, the **surgical table**. Each task retains its own source, promotion and
+deployment authority. A future app-source/installation model is still a proposal.
+
+The present route is authored ia-sync source → reviewed `bash ~/ia-sync/deploy.sh`
+→ live `~/.config/zsh/`; host activation beyond copying uses the separate
+`install-pkgs` leg where needed. Command details and constraints live in the
+[delivery discipline](/home/hruzam/ia-sync/SYNC_DISCIPLINE.md) and the
+[maintainer's route](../../.germline/agents/convergence.md#interim-delivery-route).
+
+Update this section when the route changes. For actual work and verification use
+[pulse.md](pulse.md) → the owning `STATUS.md`; this wrapper carries the description
+and pointers, not a second progress register or deployment authorization.
 
 # 3. APP parts
 
@@ -159,6 +209,60 @@ no bond to specific `.dev/session/<specific-session>`
 ## 3.5. muticula *(tool)*
 
 - origin `mutex` × Latin `cuticula` (small skin) -> protective skin around work in progress
-- concurrency guard for sessions, agents and subagents across vendors
-- coordinates who may edit which files -> claim, work, hand over, release
-- protects shared work from overlapping writes; enforcement and cooperation rules still to be designed
+- file-backed concurrency coordination for cooperating teams across vendors in one identified checkout
+- claim, work, explicitly hand over or release; current design gates commits to the team's live, adopted paths
+- claims alone do not prevent edits, identify who typed each byte, or isolate builds from neighboring changes
+- source: [master brief](muticula-01-qualify/raw/muticula.master.2026-09-26.md); enforcement coverage is being qualified in the [current task](muticula-01-qualify/STATUS.md)
+
+---
+
+# KEYS CODE
+
+*Added 2026-09-29 by Trajectory (ovitmugen-00-console) at majkee's request · **ACCEPTED by
+majkee 2026-09-29** (D3 in `ovitmugen-00-console/raw/architecture.pipes-ui-keys.2026-09-29.md`).*
+
+**DRY:** the meanings live only here. An organ's help points to this chapter and lists only
+its own extra keys — it never copies this table.
+
+One shortcut style for every organ's TUI: **the same key means the same thing everywhere**,
+so moving between toolboxes never means relearning. This is a grammar, not a registry:
+each organ keeps its keys in its own code; this chapter only fixes their meaning.
+
+Shell commands stay under the claviature rule (`~/ia-sync/zsh/guides/claviature.global.spec.md`,
+"derive, don't register"): families only (`ov-`, `rb-` …), the `keys` panel derives the rest.
+
+## Shared meanings (all organs)
+
+| key | meaning |
+|---|---|
+| ↑↓ · j k | move |
+| Enter | act / open the selected item |
+| q · Esc | back (close the view, never quit something running) |
+| ? | help for this view |
+| / | search |
+| a | add |
+| x x | remove — **always two presses** (first arms, second acts, any other key disarms) |
+| b | build (create what is missing) |
+| o | open / attach |
+| r | refresh |
+| T | tabs (agent tabs of the bed) |
+| 1-9 | jump to item / part N |
+
+## Reserved (never bound by an organ)
+
+- `C-a` — the ovitmugen frame prefix (frame keys: focus, split, popup, restart, tabs).
+- `C-b` — the agents' own tmux.
+- Keys a running agent needs (anything typed into an agent pane) — organs act only in
+  their own views.
+- `Alt-…` — open: may become prefix-less tab jumps (`Alt-1…9`); decide before any organ uses Alt.
+
+## Conformity today (honest check, 2026-09-29)
+
+| organ · view | follows | deviates |
+|---|---|---|
+| ovitmugen console | ↑↓ j k · Enter · q Esc · a · x x · b · o · r | ? and / not yet |
+| runbook tree | ↑↓ · Enter · q Esc · ? · r · T · 1-5 · A A (two-press) | no j k; `h` also opens help; no / (search only inside help: Ctrl-F / F) |
+| runbook buffer view (P) | q · ↑↓ | `x` removes a line with ONE press |
+| ovitmugen frame (C-a …) | reserved prefix | — |
+
+Deviations are listed, not fixed here: each fix belongs to its organ's own session.
