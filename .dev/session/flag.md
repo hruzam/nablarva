@@ -79,6 +79,12 @@
   a library boundary, not a repo boundary. `.hlm/` = operator vault: tracked, sealed
   from agent reading. Old remotes deleted from GitHub. Details:
   `docs/repo-unification.2026-09-02.md`.
+- **L13 · Component naming — docket 7 closed** (majkee 2026-10-01): stridularium =
+  the phone app, the human's door to stage 3 (L2 framing holds; stage content
+  evolves). Broker and its CLI = stridulatrix, chosen to survive voice input;
+  Codex's larvad/larva and Oraculum's stridulator are not adopted. Observation
+  lab = termpanum. Display form of the whole: nab∫ar∇a (∫ U+222B, ∇ U+2207);
+  slugs, paths and commands stay ASCII `nablarva`.
 
 ## Named deferral thresholds (folded from abolished plan.md)
 
