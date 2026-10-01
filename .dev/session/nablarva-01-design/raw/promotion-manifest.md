@@ -63,4 +63,4 @@ evidence. The `.dev/session/runbook-tool-00/MOVED.md` stub and `_mail/` remain u
 
 ## Preservation receipt
 
-_empty — filled by the head only after the commit is observed (`git log -1 -- .dev/session/nablarva-01-design`), never before._
+Preserved in commit 28847e8f8c703166a018123b0bdfd6808c69f99d (observed via git log -1 -- .dev/session/nablarva-01-design, 2026-10-01). Prune authorized by majkee 2026-10-01 (chat: "Pruning has my blessing"). Receipt written by @delta on oraculum's brief.
