@@ -23,14 +23,7 @@
 
 ## Files (chronological)
 
-- `seed.oraculum.2026-07-31.md` — distilled substrate from the six notebook
-  pages (2026-07-30) + first verdict + open decisions.
-- `brief.triangulation.2026-07-31.md` — position-free brief handed to Codex
-  (Z seat). Sealed from X and Y by construction.
-- `vision.oraculum.Y.2026-07-31.md` — Oraculum's Y position (room-is-a-
-  process) + pre-registered convergence forecast.
-- `triad.comparison.2026-07-31.md` — scored X/Y/Z comparison; settled points,
-  deaths, **gavel docket** for nabla-lab. The fixed artifact for next loops.
+- Design registry: meshup/REGISTRY.md · substrate archived under raw.nablarva/ — every former meshup/<X>/<f> is raw.nablarva/<X>/<f> (prefix rule, raw.nablarva/README.md).
 - Z return lives at `~/reposoma/_mail/flight/bt-from-codex.md` (move to
   archive seat per mail protocol after absorption).
 

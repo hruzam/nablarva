@@ -55,13 +55,7 @@ only through the reviewed-merge boundary.
 
 ## Substrate map (the 2026-07-31 payload — append-only pen, never rewrite)
 
-- `seed.oraculum.2026-07-31.md` — canonical distillation of the six notebook pages
-- `vision.oraculum.Y.2026-07-31.md` — Y position (room-is-a-process)
-- `brief.triangulation.2026-07-31.md` — the position-free Z brief
-- `triad.comparison.2026-07-31.md` — **the fixed artifact**: S1–S8 settled · deaths ·
-  gavel docket. Do not re-litigate settled points without new evidence.
-- `meshup/nabla_drafts/` — seam-probe (stage-2 groundwork): reliable cross-host read =
-  headless/JSONL, NOT tmux capture-pane; write-test gated on majkee's go.
+- Design registry: meshup/REGISTRY.md · substrate archived under raw.nablarva/ — every former meshup/<X>/<f> is raw.nablarva/<X>/<f> (prefix rule, raw.nablarva/README.md).
 - `GEMINI.md` — retired Bluebottle stub (pre-project era); superseded by this file.
 
 ## Standing rules
