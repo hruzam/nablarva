@@ -25,3 +25,11 @@ Seam probe protocol: six-stage cross-host TUI read with [SEEN]/[INFERRED]/[BLIND
 ## Boundaries
 
 LAB/observability · stage 2 cross-host · Claude↔Codex seam (multi-vendor read) · feeds room.brokered-journal only through the 7 gates.
+
+## Sources (5)
+
+- raw.nablarva/oraculum-basic-triangulation/04_LABORATORY_OBSERVABILITY_AND_EXPERIMENTS.md
+- raw.nablarva/nabla-buffer-brideAndBook/test.seam-probe.atlas-over-tailscale.2026-08-01.md
+- raw.nablarva/nabla-buffer-brideAndBook/report.seam-probe.2026-08-01.md
+- raw.nablarva/_preflight/research.web.epoch.2026-08-07.md
+- raw.nablarva/_preflight/research.web.epoch.delta.2026-08-08.md

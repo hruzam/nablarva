@@ -33,3 +33,19 @@ Costa: blocking bridge — Codex shell wrapper wakes living Claude via tmux door
 
 Claude↔Codex seam · stage 1 (tmux doorbell) · LAB/observability (hooks, JSONL, transcript pinning) · broker/room (`_bus/`, `.agent-room/`).
 Two-planes contract sighted here and in Ommatermia → canon candidate, separate thread (v2:80).
+
+## Sources (13)
+
+- raw.nablarva/a-symmetry-lightest/brief.asymmetry.consultation.2026-09-11.md
+- raw.nablarva/a-symmetry-lightest/brief.symmetry.relay-seam.2026-09-11.md
+- raw.nablarva/a-symmetry-lightest/countersign.relay-seam.2026-09-11.md
+- raw.nablarva/a-symmetry-lightest/consult.relay-seam.round2.symmetry.2026-09-13.md
+- raw.nablarva/a-symmetry-lightest/brief.relay-seam.v2.2026-09-13.md
+- raw.nablarva/grounded-composites/costa.seed.codex-claude-composite.2026-08-07.md
+- raw.nablarva/grounded-composites/assymetry-preConsultation.md
+- raw.nablarva/natural-ladders-grounded-phase.a-sym/Houston.research.skill-script-bonding-layer.md
+- raw.nablarva/natural-ladders-grounded-phase.a-sym/asymmetry.codex-bonding-layer.research.2026-08-05.md
+- raw.nablarva/_preflight/task.T1.harness-programming-layer.md
+- raw.nablarva/_preflight/task.T2.composites.md
+- raw.nablarva/nablarva-01-design/RUNBOOK.md
+- raw.nablarva/nablarva-01-design/brief.md

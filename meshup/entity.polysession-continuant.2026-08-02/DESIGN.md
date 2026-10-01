@@ -30,3 +30,15 @@
 
 stage 2 (Tailscale session as empirical anchor) · stage 1 (sessions as processes in one body) · Claude↔Codex seam · naming (#ENTITY vs Inscribed Continuant vs riverbed-being) · LAB/observability (tensor floor §5, cut-log telemetry).
 Strongest independent convergence across strains + empirical: resonance/damping (`triangulation…2026-08-03.md:29`).
+
+## Sources (9)
+
+- raw.nablarva/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/seed.entity.full-idea.2026-08-02.md
+- raw.nablarva/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/seed.entity.vision-not-explored.2026-08-02.md
+- raw.nablarva/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/reply.entity.full-idea.md
+- raw.nablarva/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/reply.entity.vision-not-explored.md
+- raw.nablarva/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/replies.symmetry.entity-full-idea.incontext.2026-08-03.md
+- raw.nablarva/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/replies.symmetry.vision-not-explored.2026-08-03.md
+- raw.nablarva/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/triangulation.entity.symmetry-x-asymmetry.2026-08-03.md
+- raw.nablarva/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/triangulation.entity.round-two.2026-08-04.md
+- raw.nablarva/_preflight/task.STYLE-SUPPORT.md

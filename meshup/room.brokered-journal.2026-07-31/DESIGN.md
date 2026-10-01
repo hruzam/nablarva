@@ -36,3 +36,20 @@ book derived from braid, braid never destroyed.
 
 stage 1 · stage 2 (S7) · stage 3 stridularium (organ naming = gavel docket 7) · broker/room · naming.
 Locks live in `.dev/session/flag.md`; this file does not re-litigate them.
+
+## Sources (14)
+
+- raw.nablarva/oraculum-basic-triangulation/seed.oraculum.2026-07-31.md
+- raw.nablarva/oraculum-basic-triangulation/vision.oraculum.Y.2026-07-31.md
+- raw.nablarva/oraculum-basic-triangulation/triad.comparison.2026-07-31.md
+- raw.nablarva/oraculum-basic-triangulation/brief.triangulation.2026-07-31.md
+- raw.nablarva/oraculum-basic-triangulation/00_README.md
+- raw.nablarva/oraculum-basic-triangulation/01_ARCHITECTURE_ROOM_AND_BROKER.md
+- raw.nablarva/oraculum-basic-triangulation/03_COST_COMPLEXITY_AND_STAGED_DECISION.md
+- raw.nablarva/oraculum-basic-triangulation/05_DECISION_LEDGER_PARKED_BRANCHES_AND_FORKS.md
+- raw.nablarva/oraculum-basic-triangulation/06_ORACULUM_TRANSMISSION.md
+- raw.nablarva/oraculum-basic-triangulation/07_AI_HANDOFF.md
+- raw.nablarva/oraculum-basic-triangulation/nablarva.wave.full-report.2026-08-05.md
+- raw.nablarva/oraculum-basic-triangulation/handoff.applications-in-common.2026-07-31.FINAL.md
+- raw.nablarva/_preflight/task.T3-T4.orchestration-fork.md
+- raw.nablarva/nabla-buffer-brideAndBook/braid-and-book.substrate.2026-08-01.md

@@ -4,9 +4,10 @@
 `substrate: raw.nablarva/ — every former meshup/<X>/<f> is raw.nablarva/<X>/<f> (prefix rule, raw.nablarva/README.md). Cite, never copy.`
 `slug form: <slug>.<one-two-words>.<origin-date> — date = when the design was born. Month-only where the source carries no day.`
 `per design: DESIGN.md (shape · phases · boundaries, fixed-ish) · HYPOTHESES.md (STATUS-shaped mirror: open · confirmed · refuted · next_probe).`
+`machine-readable registry: none — if ever needed, generate it from the five DESIGN.md §Sources lists; never hand-maintain a second copy.`
 `established 2026-10-01, session cleanup-00-meshup (majkee ack of slug map). Studies are listed, not run here.`
 
-| slug | scope | status | phases | sources (raw.nablarva/) |
+| slug | scope | status | phases | sources (raw.nablarva/ — abbreviated; full list: <slug>/DESIGN.md §Sources) |
 |---|---|---|---|---|
 | `room.brokered-journal.2026-07-31` | production room: broker + append-only journal + adapter-owned PTY + cursor projections (stage 1→2) | live · S1–S8 locked · hybrid Y+Z selected | X (dead) · Y larvad · Wave hybrid V1 · braid-and-book · consultation lease · two-lane evidence (open) · capability handshake | `oraculum-basic-triangulation/` {seed, vision.Y, triad, 00, 01, 03, 05, 06, 07, wave.full-report, handoff FINAL, brief.triangulation} · `_preflight/task.T3-T4…` · `nabla-buffer-brideAndBook/braid-and-book…` — 14 |
 | `extraction.driller-onion.2026-06` | raw PTY → clean provenance-tagged events; tap-point ring map | V1 driller selected · generalized + larvanizer parked | onion rings · file-loop interposition · parallel-finger · driller V1 · generalized · larvanizer | `oraculum-basic-triangulation/02_DRILLER…` · `symetry…/parked.larvanizer…` · `old-but-good-onion/` {interposition, terminal-onion} — 4 |

@@ -31,3 +31,10 @@ one thin adapter per vendor, canary tripwire.
 ## Boundaries
 
 LAB/observability (feeds lab.observability-probes) · broker/room (emits events into room.brokered-journal) · Claude↔Codex seam (one adapter per vendor).
+
+## Sources (4)
+
+- raw.nablarva/oraculum-basic-triangulation/02_DRILLER_TOKENIZATION_AND_RECONSTRUCTION.md
+- raw.nablarva/symetry.claude.ai.claude-fable-5/blind-traingulation.chatgpt-asymmetry-sol.entity/parked.larvanizer-tensor-drill.2026-08-04.md
+- raw.nablarva/old-but-good-onion/interposition-study.md
+- raw.nablarva/old-but-good-onion/terminal-onion-study.md
