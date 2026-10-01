@@ -37,7 +37,7 @@ standing plan.md (abolished — survey receipt, 2026-08-02). `.dev/session/GLOSS
 
 ## Route by seat
 
-**Convergence — app-scheme maintainer (any runtime, agent or subagent):** at session entry, unless already settled, ask @majkee "Am I the master app-scheme maintainer?"; if yes, read `.shared/agents/convergence.md` and maintain its named target; `flag.md` retains authority over locks.
+**Convergence — app-scheme maintainer (any runtime, agent or subagent):** at session entry, unless already settled, ask @majkee "Am I the master app-scheme maintainer?"; if yes, read `.germline/agents/convergence.md` and maintain its named target; `flag.md` retains authority over locks.
 
 Four base seats, global roster — no domain seat pre-granted (earned, not assumed):
 - **architect** (@Houston-family) — plan + gates; owns `.dev/session/pulse.md`
