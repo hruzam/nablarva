@@ -1,3 +1,16 @@
+<<<<<<< Updated upstream
 target/
 toolbox/termbrana/target/
 *.bak*
+=======
+# canon.project-topology: the app repo never carries the harness — the devenv
+# (nablarva.devenv/) is the harness git-home via sync allowlist.
+# AGENTS.md
+# CLAUDE.md
+# GEMINI.md
+# PROJECT.yaml
+session/
+# .claude/
+# .gemini/
+# .mcp.json
+>>>>>>> Stashed changes
