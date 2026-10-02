@@ -25,5 +25,9 @@ status: open list; nothing here is built until majkee picks it
 | 7 | Konsole profile / shortcut starting straight into ov-up | click | tiny (operator side) | medium |
 | 8 | ov-ls --json as the pipe for nablarva's dashboard / bus | — | none now | future |
 
+| 9 | U7 scrolling policy (Cartan feedback 2026-10-01): app scroll vs copy mode, direct + nested | wheel | medium | high |
+| 10 | U8 idle frames: ov-ls marks unattached frames; runbook in an unattached frame skips its tick | — | small | low–medium |
+| 11 | layout A4: agents/organs halves, side per preset, vertical up/down, swappable organs (stash + swap-pane) | C-a O | medium | must-have |
+
 Recommendation: 1 + 3 + 4 now · 5 when 3+ agents run at once · 2 after the stolen-keys OK ·
 6's "!" after a reliable waiting-for-input signal exists.

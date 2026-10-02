@@ -141,3 +141,37 @@ points to `ov-keys` for the live truth. **No keys registry file.**
 - ovitmugen must design for horizontal AND vertical monitors (office: two, one can be a
   vertical 21"; home: one horizontal 21").
 - Process: answer D1–D5 one question per turn, loop until answered, then the next.
+
+## 10. Layout — ANSWERED 2026-10-02 (majkee, A4)
+
+```text
+part 1 (~½)  agents, or one clean terminal; fast agent-to-agent switching
+part 2 (~½)  organs, swappable too: runbook, later termbrana, …
+horizontal:  left | right   preset default = today (agents left, organs right)
+vertical:    up | down      default organs up, agents down
+```
+
+Build notes (trajectory, not built):
+- preset keys `"agents_side": "left|right|up|down"`, `"split"` stays the organs' share;
+  orientation auto-detected from the terminal shape (taller than wide → up|down) unless
+  the preset forces it.
+- swappable organs: each organ runs in its own frame pane; the hidden ones wait in a
+  stash window and `swap-pane` brings one into the organ half — processes keep their
+  state (runbook stays where you left it). Candidate key: `C-a O` / organ list in the console.
+- "one clean terminal" in part 1 = a plain shell tab in the agents server (no new mechanism).
+
+## 11. Reports received 2026-10-02 (dispositions)
+
+- **Cartan feedback** (`../_bus/feedback-from-cartan.2026-10-01.md`): mouse wheel fails in a
+  Codex pane on a DIRECT `tmux attach` (no ovitmugen frame in the chain); PgUp/PgDn in copy
+  mode works. ovitmugen source has no wheel bindings; the live `%56` override is not ours.
+  Accepted as backlog **U7 · scrolling policy**: one rule for agent panes (application scroll
+  vs tmux copy mode), qualified on isolated servers for direct attach AND the frame's nested
+  left view (shell, Codex, Claude, runbook), both directions away from history edges; the
+  physical wheel check stays majkee's. A frame-only change cannot fix the direct case.
+  Help gets the keyboard fallback now (C-b [ · PgUp/PgDn · q).
+- **Memory card** (`~/reposoma/_cold-start/issues/ISS.office-no-swap-memory-stall.2026-10-01.md`):
+  measured 2026-10-02 — ovitmugen ≈ 100 MB runbook (5 × ~20 MB, 4 in unattached frames) +
+  45 MB all tmux processes; the 800 MB zsh is gone. Not a material contributor; the fix
+  (zram) is majkee's. ovitmugen follow-ups: ov-ls marks unattached frames; consider letting a
+  runbook in an unattached frame skip its 1 s tick (backlog U8).
