@@ -1,13 +1,13 @@
 ---
 research: EVENTS map — the shared event vocabulary for session observation
-version: v0.2 · 2026-10-02 · oraculum (task from majkee journal 2026-10-01 §1 item 4 · flag L14 D3 · docket 8) · smoothed with majkee 2026-10-02 · corrected from Epoch vendor catalogue 2026-10-02
+version: v0.3 · 2026-10-02 · oraculum (task from majkee journal 2026-10-01 §1 item 4 · flag L14 D3 · docket 8) · smoothed with majkee 2026-10-02 · corrected from Epoch vendor catalogue 2026-10-02 · jev resolved from ia-sync jev-implementation-00-build
 status: DRAFT for docket 8 — rows confirmed by majkee as reversible; v1 after first fixture run
-vendors (majkee 2026-10-02): FIRST-CLASS Claude Code · Codex CLI — SECOND-LEVEL Gemini CLI (paid API tokens; personal tiers ended 2026-06-18) · agy (Antigravity, Google's wider successor) — CANDIDATE `jev` (different case; reachable via zsh; UI + harness under construction; surface unknown)
-sources: card.H · research.epoch.hooks-vs-pty-meaning.2026-10-01 · .dev/research/vendor-events/vendor-events.catalogue.2026-10-02.md · .dev/research/pty-community/pty-observation.prior-art.2026-10-02.md · onion study ch.0/§4 · doc 04 §4.13/§4.15 · termbrana provenance
+vendors (majkee 2026-10-02): FIRST-CLASS Claude Code · Codex CLI — SECOND-LEVEL Gemini CLI (paid API tokens; personal tiers ended 2026-06-18) · agy (Antigravity, Google's wider successor) — MODEL-ROLE `jev` (TypeSafe Jev decision model via majkee's own CLI pilot, ia-sync `jev-implementation-00-build`; not a session, a callee)
+sources: card.H · research.epoch.hooks-vs-pty-meaning.2026-10-01 · .dev/research/vendor-events/vendor-events.catalogue.2026-10-02.md · .dev/research/vendor-events/jev.agent-cli.2026-10-02.md · ~/ia-sync/.dev/session/jev-implementation-00-build/{RUNBOOK,raw/design.2026-10-01,raw/jev-events.example.jsonl} · .dev/research/pty-community/pty-observation.prior-art.2026-10-02.md · onion study ch.0/§4 · doc 04 §4.13/§4.15 · termbrana provenance
 rule: an event earns a slot only if at least one real source emits it today, or it is the only way to derive one of the four states. Rows nobody can emit are wishes, not events.
 ---
 
-# EVENTS map v0.2 — 20 events, 4 states
+# EVENTS map v0.3 — 20 events, 4 states
 
 ## 0 · Shape of one event (every tap, every CLI)
 
@@ -22,6 +22,8 @@ ts · session_id (join key) · event · phase? · source · certainty · grade? 
 - `payload`: small; paths over content (#ax5). Final text lives in the record, not in the event.
 
 One writer per session file (study:655). Events are append-only facts; state is derived, never stored.
+
+**Envelope convergence — open (see §3):** jev's ledger (`jev.event/v1`: `schema · event_id · sequence · at · session_id · request_id · kind · actor · data`) and this envelope (`ts · session_id · event · source · certainty · anchor · payload`) are two shapes for one idea. The termpanum brief's own handoff warned: *"the shared format, frozen as its own small decision before a third toolbox hardens its own."* jev is that third toolbox, and it is at Flight-review stage — the cheapest moment to align field names (`at`↔`ts`, `kind`↔`event`, `actor`↔`source`+`anchor`, `data`↔`payload`; `schema`, `event_id`, `sequence` are jev's additions worth adopting here).
 
 ## 1 · The map
 
@@ -50,7 +52,9 @@ Legend: CC = Claude Code hook · CX = Codex hook · GM = Gemini CLI hook · AG =
 | 19 | `file_changed` {path} | FileChanged | — | ? | — | — | inotify / fanotify | confirmed / observed |
 | 20 | `unknown_activity` | — | — | — | — | bytes moved, unclassified | — | unknown |
 
-**Record sources (state without screen):** CC `~/.claude/sessions/<pid>.json` → `status: busy|idle|waiting|shell` (undocumented; `sessionId` stale after `/clear`, #36213) · CC `claude agents --json` (preview) → `state/status/waitingFor` · Codex rollout JSONL (reverse-engineered, drifts) · Codex app-server `waitingOnApproval` · agy `brain/<uuid>/.system_generated/logs/transcript.jsonl` (third-party).
+**jev — model-role, not a column.** jev never runs as an observed session: a consumer CLI (Claude Code, Codex, zsh) calls the jev pilot CLI, which prepares → sends (human-confirmed) → records → stops. To the map it appears as the caller's `tool_started`/`tool_ended` (#7/#8) and, headless, as `process_spawned`/`process_exited` (#9/#10). Its own ledger `~/.jev/sessions/<id>/events.jsonl` is a **`record` source** with five kinds — `request_prepared · send_attempted · reply_received · request_failed · disposition_recorded` — a sub-vocabulary beneath #7/#8, `confirmed` certainty (single writer lock, SHA-256-correlated). No PTY tap needed; no state of its own beyond the caller's.
+
+**Record sources (state without screen):** CC `~/.claude/sessions/<pid>.json` → `status: busy|idle|waiting|shell` (undocumented; `sessionId` stale after `/clear`, #36213) · CC `claude agents --json` (preview) → `state/status/waitingFor` · Codex rollout JSONL (reverse-engineered, drifts) · Codex app-server `waitingOnApproval` · agy `brain/<uuid>/.system_generated/logs/transcript.jsonl` (third-party) · jev `~/.jev/sessions/<id>/events.jsonl` (own schema, documented in its design).
 
 **Dropped (real emitters, not needed for any state; lab extensions):** `cwd_changed` · `model_switch` (CC ≥2.1.251) · `instruction_loaded` · `skill_discovered/activated` · `prompt_expanded` · `config_changed` · `worktree_*`.
 
@@ -63,7 +67,7 @@ Legend: CC = Claude Code hook · CX = Codex hook · GM = Gemini CLI hook · AG =
 | **idle** | `turn_ended` and no `turn_started` since; `stall` confirms | 4 | viewport stable, no input since last change |
 | **exited** | `session_ended` — **always confirmed by L0** (hooks miss `kill -9`, hangs, OOM — and Codex missed 3/10 clean exits) | 2 + L0 | `pane_closed` · pidfd readable |
 
-Per vendor, without screen reading (Epoch 10-02): **CC all 4** · **CX working·waiting·idle, exited needs L0** · **GM all 4 on paper (M, no fixture)** · **AG working·idle only**.
+Per vendor, without screen reading (Epoch 10-02): **CC all 4** · **CX working·waiting·idle, exited needs L0** · **GM all 4 on paper (M, no fixture)** · **AG working·idle only** · **jev n/a (callee; state is the caller's)**.
 
 `stall` is an **event** (PTY-sourced, `inferred`), not a state. A state is never stored — recomputed from the last events on read. *(majkee 2026-10-02: agreed, reversible.)*
 
@@ -72,9 +76,10 @@ Per vendor, without screen reading (Epoch 10-02): **CC all 4** · **CX working·
 - `stall` = event, not state.
 - `approval_requested` and `attention_requested` stay split.
 - **Margin note (majkee):** projecting vendor-specific events into the app is chasing vendors — a race, likely unsustainable; the future may teach otherwise. Base vocabulary stays vendor-neutral; vendor hooks are *sources*, never *words*.
-- **Vendor tiers:** first-class Claude Code · Codex; second-level Gemini CLI (paid tokens) · agy; candidate `jev` (zsh-reachable, surface unknown — row pending).
-- Multiplexers: tmux · zellij · others — taken into account (loop 1.4).
-- Event details must be known for all intended vendors before v1 → vendor catalogue 2026-10-02 (file A) attached.
+- **Vendor tiers:** first-class Claude Code · Codex; second-level Gemini CLI (paid tokens) · agy; `jev` = model-role (callee), observed through its caller + its own ledger.
+- Multiplexers: tmux · zellij · others — one `mux` word, one adapter per multiplexer (loop 1.4).
+- Event details must be known for all intended vendors before v1 → vendor catalogue 2026-10-02 attached.
+- **OPEN → majkee:** envelope convergence with jev's `jev.event/v1` before jev's implementation starts (ia-sync session is at Flight-review; Cartan is head there). Smallest move: both adopt `schema · event_id · sequence · at · session_id · kind · actor · data`; this map's `source · certainty · grade · anchor` live inside `actor`/`data`. Cross-repo; needs a POINT to Cartan, not an edit here.
 
 ## 4 · Known gaps → fixtures (carry into lab HYPOTHESES)
 
@@ -82,7 +87,7 @@ Per vendor, without screen reading (Epoch 10-02): **CC all 4** · **CX working·
 - CX: do rollout files record approvals? · can an interactive TUI attach to app-server? · `exec --json` names from a third-party sheet (official doc 404).
 - GM: when did hooks ship? no fixture run yet.
 - AG: real payload + config path on the installed version; approval gap.
-- `jev`: everything.
+- jev: none for observation; the open item is format convergence (§3).
 - PTY: does any agent CLI emit OSC 133 itself? tmux 3.8 (OSC 133 hook events) still rc. BEL/OSC 9/777 passthrough in tmux.
 - tmux pane↔PID join on `pane_tty` vs Zellij `$ZELLIJ_PANE_ID` (study:583) — untested under tmux.
 - Summarizer-derived rows (S) — re-read primaries before any field name is gaveled.
