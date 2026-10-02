@@ -85,6 +85,29 @@
   Codex's larvad/larva and Oraculum's stridulator are not adopted. Observation
   lab = termpanum. Display form of the whole: nab∫ar∇a (∫ U+222B, ∇ U+2207);
   slugs, paths and commands stay ASCII `nablarva`.
+- **L14 · Relay foundations — D1–D7 carried from decisions.relay.2026-09-30** (majkee,
+  voice 2026-09-30; gaveled journal 2026-10-01/02; D7 triangulation tests the relay
+  architecture, not these constraints):
+  · D1 PTY is the base layer for session relay. No vendor devices or features where
+    avoidable — vendor doors (Claude channels, `codex queue`, ACP) are weather, parked.
+    Boundary (plan, not lock): PTY as impulse layer; "full PTY orchestration as
+    architecture" stays dead (L4, seam v2) — a later phase only if stable patterns are
+    tracked. First build = LAB (termpanum) + the PTY plan.
+  · D2 Only bad transports exist today → the file plane is the spine; no transport is truth.
+  · D4 Research before build: sweep → PTY research → tracker draft. Canon mapping gaveled:
+    `relay-00-research` (verdict gate) → `relay-01-pty` · `relay-02-tracker`; touches the
+    LAB toolbox.
+  · D5 Phone = thin lens: sessions live on the workstation; attaching advisory; detaching
+    never closes a bed. Design drafted by majkee in `stridularium-00-design` + thin wrapper
+    `.dev/session/AGENTS.stridularium-design.md` (beside AGENTS.PROJECT-DESIGN.md).
+  · D6 Phone reach: on the device, app-scoped (the app and its files; operator-scoped vault
+    as later extension). Toward hosts, the app controls sessions only through a host-side
+    engine that hosts the processes — the app sends commands and prompts and receives
+    output, nothing more by design. Never Android functions outside the app.
+  · D7 Blind triangulation (two Asymmetry briefs, 09-30) before locking the relay
+    architecture. D1/D2/D5/D6 are the operator's constraints to those briefs and precede it.
+  · D3 (discrete states, never comprehension) → docket item 8, pending the EVENTS map
+    (≤20 basic events) — task opened 2026-10-02.
 
 ## Named deferral thresholds (folded from abolished plan.md)
 
@@ -102,6 +125,7 @@
 6. V1 sweet-spot cut: one machine · one room · one human · two agents · one
    consultation (Z E.2) — confirm
 7. Component naming: larvad/larva vs stridulator/stridularium organ mapping
+8. Discrete-state vocabulary — EVENTS map ≤20 basic events (L14 · D3) — confirm after the map exists (2026-10-02)
 
 ## Open — carried from seed, NOT covered by the triangulation
 
