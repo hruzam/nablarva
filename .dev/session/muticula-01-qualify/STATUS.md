@@ -1,7 +1,7 @@
 # STATUS: muticula-01-qualify
 
 ```yaml
-updated: 2026-09-29 (Cartan's verdict 01 folded into plan r2; POINT 02 out)
+updated: 2026-10-02 (majkee chose (a) for Codex trust; POINT 02 relayed to cartan)
 writer: trajectory · anthropic
 host: office
 worktree: >-
@@ -43,13 +43,13 @@ holds:
   - No product code; the stub muticula is a logging fixture.
   - No global settings or trust change (~/.claude*, ~/.codex/) without majkee's explicit word recorded here.
   - Recorded 2026-09-29, majkee "ok, try" — one temporary trust entry for the throwaway fixture folder, Claude lane only. It is added right before the interactive runs and removed right after. Only ~/.claude.json's before/after hashes are kept; the file itself never enters evidence.
+  - Recorded 2026-10-02, majkee "(a)" — one temporary trust entry for the throwaway Codex fixture folder, Codex lane only. Added right before the Codex interactive runs and removed right after. Whole-file hashes of ~/.codex/config.toml and the other inventoried layers are taken before and after, plus a semantic check that only that one entry came and went. No other config change; this is not a precedent for any other folder.
   - No run before Cartan's CHALLENGE of the plan is answered and folded.
   - claude -p is a measurement instrument only, never in anything built.
 next: >-
-  majkee answers the Codex trust question — (a) a temporary Codex trust entry for the fixture
-  only, with hashes and a semantic check, or (b) no exception, meaning Codex cells stay NOT RUN and
-  the gate changes — and relays POINT 02 to Cartan. After Cartan's fold check and the budget
-  freeze, the Claude lane launches.
+  Cartan answers POINT 02 (fold check of r2 plus the budget freeze). majkee chose (a) for Codex
+  trust on 2026-10-02 (see holds), which unblocks Cartan's lane setup gate. After the fold check and
+  the budget freeze, the Claude lane launches.
 expected: >-
   _bus/02.cartan-muticula.verdict.md (PROCEED + frozen budget → the Claude lane runs; REVISE → r3).
 ```
