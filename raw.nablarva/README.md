@@ -61,3 +61,15 @@ Prefix rule: every former `meshup/<X>/<f>` is now `raw.nablarva/<X>/<f>`; sub-fo
 ## Added 2026-10-01 — cleanup-00-meshup/
 
 Study artifacts of the cleanup that built this archive (not former meshup files): `card.A.md`–`card.F.md` (one Field card per branch) and `slugmap.md` (the acked contraction → `meshup/REGISTRY.md`). Audit RETURNs live in git history of `.dev/session/cleanup-00-meshup/_bus/` (pruned after gate closure).
+
+## ovitmugen-00-console (closed GO 2026-10-02, pruned; manifest inside)
+
+```
+/home/hruzam/unikuklatrix/nablarva/raw.nablarva/ovitmugen-00-console/RUNBOOK.md
+/home/hruzam/unikuklatrix/nablarva/raw.nablarva/ovitmugen-00-console/brief.ovitmugen-sentinel.2026-09-04.md
+/home/hruzam/unikuklatrix/nablarva/raw.nablarva/ovitmugen-00-console/draft.trajectory.ovitmugen-architecture.2026-09-23.md
+/home/hruzam/unikuklatrix/nablarva/raw.nablarva/ovitmugen-00-console/experience-transfer.trajectory.2026-10-02.md
+/home/hruzam/unikuklatrix/nablarva/raw.nablarva/ovitmugen-00-console/journal-proposal.ia-sync.2026-09-25.md
+/home/hruzam/unikuklatrix/nablarva/raw.nablarva/ovitmugen-00-console/notice.ovitmugen-p1-zsh-session.2026-09-25.md
+/home/hruzam/unikuklatrix/nablarva/raw.nablarva/ovitmugen-00-console/promotion-manifest.md
+```

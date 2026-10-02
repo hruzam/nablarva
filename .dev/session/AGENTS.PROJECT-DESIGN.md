@@ -151,7 +151,7 @@ no bond to specific `.dev/session/<specific-session>`
 
 ### 3.2.x. @Trajectory notes — tips, observations, upgrade ideas *(append-only, dated)*
 
-> Full architecture: `~/unikuklatrix/nablarva/.dev/session/ovitmugen-00-console/raw/draft.trajectory.ovitmugen-architecture.2026-09-23.md`
+> Full architecture: `~/unikuklatrix/nablarva/raw.nablarva/ovitmugen-00-console/draft.trajectory.ovitmugen-architecture.2026-09-23.md`
 > These notes are the short, growing layer on top of it. Newest at the bottom.
 
 **2026-09-24 · answers to the inline questions in 3.1.1**
@@ -219,7 +219,7 @@ no bond to specific `.dev/session/<specific-session>`
 # KEYS CODE
 
 *Added 2026-09-29 by Trajectory (ovitmugen-00-console) at majkee's request · **ACCEPTED by
-majkee 2026-09-29** (D3 in `ovitmugen-00-console/raw/architecture.pipes-ui-keys.2026-09-29.md`).*
+majkee 2026-09-29** (D3 in `ovitmugen-01-basement/raw/architecture.pipes-ui-keys.2026-09-29.md`).*
 
 **DRY:** the meanings live only here. An organ's help points to this chapter and lists only
 its own extra keys — it never copies this table.

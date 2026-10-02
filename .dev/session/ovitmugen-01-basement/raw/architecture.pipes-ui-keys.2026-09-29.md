@@ -162,7 +162,7 @@ Build notes (trajectory, not built):
 
 ## 11. Reports received 2026-10-02 (dispositions)
 
-- **Cartan feedback** (`../_bus/feedback-from-cartan.2026-10-01.md`): mouse wheel fails in a
+- **Cartan feedback** (`feedback-from-cartan.2026-10-01.md`, same folder): mouse wheel fails in a
   Codex pane on a DIRECT `tmux attach` (no ovitmugen frame in the chain); PgUp/PgDn in copy
   mode works. ovitmugen source has no wheel bindings; the live `%56` override is not ours.
   Accepted as backlog **U7 · scrolling policy**: one rule for agent panes (application scroll

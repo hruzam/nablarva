@@ -35,7 +35,7 @@ answered the basement design D1–D5 and the layout one question per turn; this 
 
 ## Fixed facts (settled — do not re-litigate)
 
-- Design + every answer: `/home/hruzam/unikuklatrix/nablarva/.dev/session/ovitmugen-00-console/raw/architecture.pipes-ui-keys.2026-09-29.md`
+- Design + every answer: `/home/hruzam/unikuklatrix/nablarva/.dev/session/ovitmugen-01-basement/raw/architecture.pipes-ui-keys.2026-09-29.md`
   (§1 layers · §2 map · §3 pipes · §6 keys · §8 D1–D5 · §9 majkee input · §10–10.1 layout · §11 reports · §12 D5).
 - D1 events.jsonl yes · D2 `~/.local/state/ovitmugen/` (machine-local, never synced) ·
   D3 shared key grammar ACCEPTED, DRY: it lives ONLY in
@@ -46,7 +46,7 @@ answered the basement design D1–D5 and the layout one question per turn; this 
   key and saves / deletes presets in the console.
 - Code lives in `/home/hruzam/ia-sync/zsh/session/` (ovitmugen.{py,zsh,tmux.conf,presets.json},
   runbook.py T bridge, help/ovitmugen/HELP.md ≤ 40 columns). Live only via majkee's `bash deploy.sh`.
-- UI backlog + friction log: `.../ovitmugen-00-console/raw/ui-operability.2026-09-29.md`.
+- UI backlog + friction log: `/home/hruzam/unikuklatrix/nablarva/.dev/session/ovitmugen-01-basement/raw/ui-operability.2026-09-29.md`.
 
 ## Engineering laws (each one cost a bug)
 
@@ -100,7 +100,7 @@ output that proves it. No opinions, no scope growth.
 
 ## References
 
-- `/home/hruzam/unikuklatrix/nablarva/.dev/session/ovitmugen-00-console/` — predecessor bed (RUNBOOK, STATUS, raw/).
+- `/home/hruzam/unikuklatrix/nablarva/raw.nablarva/ovitmugen-00-console/` — predecessor bed, closed GO 2026-10-02 (RUNBOOK, experience transfer, manifest).
 - `/home/hruzam/ia-sync/zsh/guides/claviature.global.spec.md` — shell keys: derive, don't register.
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-03-app-architecture/RUNBOOK.md` — live blueprint gate.
 
