@@ -1,7 +1,7 @@
 # STATUS — ovitmugen-00-console
 
 ```yaml
-updated: "2026-09-29 (walk bug 2 fixed — frame runbook root; home selftests pending)"
+updated: "2026-10-02 (home selftests: rb PASS; ov FAIL → fixed, table copy green on home x3)"
 writer: trajectory · anthropic
 host: office · hruzam-120922
 worktree: |
@@ -25,6 +25,10 @@ checkpoint: >-
   pane; fixed in ia-sync 794d328 (ov-up revives any dead frame pane; C-a r restarts the focused
   pane), ov-selftest OK with 2 new cases; 794d328 reached origin with another writer's push.
   GATE WALK: majkee walked it on office after deploy — GO (2026-09-29), office selftests green.
+  HOME 2026-10-02: rb-selftest PASS (majkee). ov-selftest FAIL (close_idle_tab refused an idle
+  shell: home shells look busy >8 s at startup, `groups` seen in front; no persistent children).
+  Fixed in ia-sync (patient idle checks); the fixed table copy ran green on home x3 over ssh.
+  Remaining: push, majkee deploys on home, reruns ov-selftest → gate closes.
   Remaining gate condition: ov-selftest + rb-selftest green on HOME.
   After the walk: help key table + scenarios 1-2 (ia-sync 08d2081), rb-keys/t41 note (1062a31),
   console o = open the bed's frame, scenario 3 (rb-open → T → b → o), help at ≤ 40 columns
@@ -55,8 +59,7 @@ holds:
   - raw/brief.ovitmugen-sentinel.2026-09-04.md (@kukla) stays untouched until majkee rules.
   - Resolved 2026-09-29 — the push hold on b2b7901 (cartan-muticula): ia-sync was pushed through a541808 on 2026-09-27.
 next: >-
-  majkee on HOME: git -C ~/ia-sync pull, bash deploy.sh, then ov-selftest and rb-selftest,
-  and reports both results here.
+  majkee: after the ia-sync push, on HOME git pull + bash deploy.sh + ov-selftest, report the result.
 expected: >-
   "ovitmugen selftest: OK" and "SELFTEST PASS" from home; trajectory then records the gate
   closed (GO) and parks the carried tasks (examples.md, pad.1, receipt navigation).
