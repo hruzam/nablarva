@@ -1,7 +1,7 @@
 # STATUS: muticula-01-qualify
 
 ```yaml
-updated: 2026-10-02 (majkee chose (a) for Codex trust; POINT 02 relayed to cartan)
+updated: 2026-10-02 (Cartan's verdict 02 folded into plan r3 + run manifest; POINT 03 out)
 writer: trajectory · anthropic
 host: office
 worktree: >-
@@ -33,8 +33,15 @@ checkpoint: >-
   3b83620b…): interactive-first, 34 cells per mode, the rest not_run. A Sonnet spawn drafted it and
   the head applied 8 corrections. r1 is kept as reviewed-054bc2ac. The RUNBOOK's fixed facts were
   corrected: three B0 Codex reasons, and the modes row.
+  On 2026-10-02 Cartan returned verdict 02 REVISE (bounded: M1–M4) and fixed the Claude-lane budget:
+  122 cell attempts, 8 parent launches, 3.5 h, haiku. It is folded into plan r3 (sha256 8b484e6d…) and
+  the run manifest raw/manifest.step0.claude.2026-10-02.md (sha256 b661adc7…). The manifest has 8
+  launches and 122 frozen rows, and its frozen settings list bare + wildcard denies. A Sonnet spawn
+  applied the fold; the head made 4 corrections (the E cells run the stub, key-only absence, frozen
+  settings, the title). r2 is kept as reviewed-3b83620b.
 in_flight: >-
-  _bus/02.trajectory-dashboard.point.md → cartan: a fold check of r2 and the budget freeze.
+  _bus/03.trajectory-dashboard.point.md → cartan: a fold check of r3 and a review of the manifest's
+  frozen settings (§1b).
 recovery_probe: >-
   ls raw/ — if only the brief is there, prompt-0 has not started. A raw/plan.step0.*.md file
   means the plan exists: check _bus/ for its POINT to cartan and the CHALLENGE path it names.
@@ -47,9 +54,9 @@ holds:
   - No run before Cartan's CHALLENGE of the plan is answered and folded.
   - claude -p is a measurement instrument only, never in anything built.
 next: >-
-  Cartan answers POINT 02 (fold check of r2 plus the budget freeze). majkee chose (a) for Codex
-  trust on 2026-10-02 (see holds), which unblocks Cartan's lane setup gate. After the fold check and
-  the budget freeze, the Claude lane launches.
+  Cartan answers POINT 03. On PROCEED the Claude lane launches within the 122 / 8 / 3.5 h ceiling,
+  in a session majkee chooses (this one or a fresh runner). The Codex lane follows Cartan's companion
+  with majkee's (a) trust entry.
 expected: >-
-  _bus/02.cartan-muticula.verdict.md (PROCEED + frozen budget → the Claude lane runs; REVISE → r3).
+  _bus/03.cartan-muticula.verdict.md (PROCEED → the Claude lane runs; REVISE → r4).
 ```
