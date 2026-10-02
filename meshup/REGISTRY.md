@@ -14,6 +14,7 @@
 | `lab.observability-probes.2026-08-01` | laboratory: capture, extractor replay, cross-host read discipline, 7-gate promotion | live · stage-6 write-back gated | seam probe · stage-6 write-back · lab 7 gates · shadow extractor · Epoch facts | `oraculum-basic-triangulation/04_LABORATORY…` · `nabla-buffer-brideAndBook/` {test.seam-probe, report.seam-probe} · `_preflight/` {research.web.epoch, …delta} — 5 |
 | `seam.cross-vendor-relay.2026-08-05` | Claude Code ↔ Codex: bonding surfaces, blocking bridge, file-bus relay, first correlated path | relay v2 FROZEN (09-13) · first-brick CLOSED GO (09-12 → session bed) | bonding CC · bonding Codex · Costa · consult rounds · relay v2 · observe() adapter · first brick · T1 harness layer | `a-symmetry-lightest/` (5) · `grounded-composites/` {costa.seed, assymetry-preConsultation (raw)} · `natural-ladders-grounded-phase.a-sym/` (2) · `_preflight/` {task.T1, task.T2} · `nablarva-01-design/` {RUNBOOK, brief} — 13 |
 | `entity.polysession-continuant.2026-08-02` | identity of the agent-process across session death: forks A (null) · B (canon-as-entity, primary) · C (middleware, parked) | two loops closed, decisions-grade · experiment design pending green light | seeds · raw replies · symmetry replies · loop 1 · loop 2 · Noether instrument · invariant experiment | `symetry.claude.ai.claude-fable-5/…entity/` (8, all but parked.larvanizer) · `_preflight/task.STYLE-SUPPORT.md` — 9 |
+| `stridularium.mobile-console.2026-09-29` | the human's door (L2 stage 3): thin mobile lens over host sessions — organ with a toolbox-grade console core; host-side engine; names stridularium (L13) · k0k0nV3R | design input · majkee drafts in stridularium-00-design (L14 D5) · living draft .dev/session/AGENTS.stridularium-design.md | phone-lens note · k0k0nV3R IDEA · stridularium note · L13/L14 locks · console-core-first | `stridularium.mobile-console.2026-09-29/raw/` {IDEA.k0k0nV3R, note.phone-lens, note.stridularium} + X0 design-chapters §3.8 — 3 (+1 pointer) |
 
 ## Orphans — in raw.nablarva/, no design (6)
 
@@ -28,7 +29,7 @@
 
 ## Count
 
-5 designs = 14 + 4 + 5 + 13 + 9 = 45 · orphans 6 · total 51 = all former meshup files (50, after repomix deletion) + root brief.triangulation. Deleted: `repomix.meshup.md` (generated).
+6 designs = 14 + 4 + 5 + 13 + 9 + 3 (own raw/, born inside the design) = 48 · orphans 6 · total 51 = all former meshup files (50, after repomix deletion) + root brief.triangulation. Deleted: `repomix.meshup.md` (generated).
 
 ## Adding a design
 
