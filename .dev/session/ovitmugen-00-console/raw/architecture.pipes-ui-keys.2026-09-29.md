@@ -175,3 +175,18 @@ Build notes (trajectory, not built):
   45 MB all tmux processes; the 800 MB zsh is gone. Not a material contributor; the fix
   (zram) is majkee's. ovitmugen follow-ups: ov-ls marks unattached frames; consider letting a
   runbook in an unattached frame skip its 1 s tick (backlog U8).
+
+### 10.1 Layout addendum — majkee 2026-10-02
+
+The layout above is only the DEFAULT. The user can, live, with proper keys:
+- swap the halves: agents ↔ organs, left ↔ right (horizontal) or up ↔ down (vertical);
+- **save** the current arrangement as a preset and **delete** a preset — a small preset
+  manager (console view; writes `ovitmugen.presets.json` per host or the state dir — to be
+  decided in 01, since the table copy is deploy-owned).
+Keys follow § KEYS CODE: `a` save as preset · `x x` delete preset · `Enter` apply.
+
+## 12. D5 — ANSWERED 2026-10-02 (majkee): agreed
+
+Close ovitmugen-00-console after the home selftests; open sibling `ovitmugen-01-basement`
+(gate: B1 map/state/events · B2 tab jumps, last bed, remembered tabs · B3 shared keys ·
+layout A4 + 10.1 incl. preset manager).
