@@ -49,4 +49,4 @@ LAB/observability (lab measures; extraction is what lab would promote if a CLI n
 - raw.nablarva/old-but-good-onion/interposition-study.md
 - raw.nablarva/old-but-good-onion/terminal-onion-study.md
 
-Pointers (not copied): .dev/research/vendor-events/research.epoch.hooks-vs-pty-meaning.2026-10-01.md · .dev/research/vendor-events/vendor-events.catalogue.2026-10-02.md · lab/raw/terminal-onion.study.2026-09-17.md (the September study)
+Pointers (not copied): .dev/research/vendor-events/research.epoch.hooks-vs-pty-meaning.2026-10-01.md · .dev/research/vendor-events/vendor-events.catalogue.2026-10-02.md · meshup/lab.observability-probes.2026-08-01/raw/terminal-onion.study.2026-09-17.md (the September study)

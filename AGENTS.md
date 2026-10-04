@@ -8,8 +8,8 @@
 ## What this is
 
 - **nabLarva** = the whole app / process wrapper (majkee ruling 2026-07-31). The animal.
-- **stridularium** = a partial tool INSIDE nabLarva — which organ carries the name is
-  gavel docket item 7. Not the whole.
+- **stridularium** = the phone app, the human's door at stage 3 (L13, majkee 2026-10-01;
+  docket 7 closed). Broker + CLI = stridulatrix · lab = termpanum. Not the whole.
 - Identity: `∇larva` (nabla larva) · brand-car **larva V3**. Public naming avoids the
   t-word (larvaTnux rule: 'n' intentional).
 
@@ -70,5 +70,5 @@ only through the reviewed-merge boundary.
 - **Guardrail:** unchanged `.md` ≠ unchanged behavior; the model is a moving target.
 - **Boundary:** Cluster A mechanism (session clipper / processor / composer) stays in
   `applications-in-common`. The clipper `OUTPUT (A)` ↔ stridularium feed interface gets
-  one boundary note when both threads run (docket item 7-adjacent).
+  one boundary note when both threads run (L13).
 - Canon is gaveled by majkee. Agents draft; he locks.

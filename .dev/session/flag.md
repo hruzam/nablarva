@@ -108,6 +108,11 @@
     architecture. D1/D2/D5/D6 are the operator's constraints to those briefs and precede it.
   · D3 (discrete states, never comprehension) → docket item 8, pending the EVENTS map
     (≤20 basic events) — task opened 2026-10-02.
+- **L15 · Archive rule** (majkee 2026-10-05, loop 1.6 on Field audit 2026-10-04: 35/37 flag
+  items live): no `.dev/archive/`. Stale or superseded flag items stay in place, append-only,
+  and are listed in `## Archived index` below with what superseded them. Pulse rows leave on
+  gate closure (runbook GUIDE §On gate closure) — existing law, no new rule. Reconciliation is
+  ad hoc, by challenge seats; no fixed ceremony.
 
 ## Named deferral thresholds (folded from abolished plan.md)
 
@@ -158,3 +163,11 @@ seed §open-6 = docket 6.)
 - Any public namespace claims (domains, packages, GitHub org names) before clearance
 - Auto-deploy of anything from this repo to live `~/.claude/` — always via surgical
   table review
+
+## Archived index (L15 — superseded items stay above; this lists what superseded them)
+
+- docket 7 → CLOSED by L13 (majkee 2026-10-01): stridularium = phone app · stridulatrix = broker+CLI · termpanum = lab.
+- untabled-4 path `meshup/nabla_drafts/report.seam-probe.2026-08-01.md` → resolves by the prefix rule to `raw.nablarva/nabla-buffer-brideAndBook/report.seam-probe.2026-08-01.md` (cleanup-00-meshup, 2026-10-01).
+- L9 pulse-role clause → superseded in place by L9′ (2026-08-27); all other L9 clauses live.
+- docket 1 → lean recorded by L14 D2 (file plane is the spine); formal gavel pending.
+- O2 → lean recorded by L14 D5/D6 + stridularium bridge (hardened Tailscale + Termux, then mosh); transport gavel pending.

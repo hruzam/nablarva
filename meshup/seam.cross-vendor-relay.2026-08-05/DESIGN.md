@@ -2,7 +2,7 @@
 
 `scope: the Claude Code ↔ Codex seam — bonding surfaces per vendor, blocking bridge, file-bus relay, first correlated request/response; since 2026-09-30 the RELAY as a big-scope system (session relay + mechanical tracker + phone lens) under a research gate.`
 `status: relay v2 brief FROZEN (09-13) · first-brick CLOSED GO (09-12, session bed) · relay research seed 09-30 → L14 D1–D7 gaveled 10-01/02 · relay-00-research NOT opened · Asymmetry blind replies: unknown whether received · origin 2026-08-05`
-`sources: raw.nablarva/ (prefix rule) + raw/ (born 09-30, moved in 10-02 with history). Composed from cards C, D, F + X0 raw 09-30.`
+`sources: raw.nablarva/ (prefix rule) + raw/ (born 09-30 as untracked X0 inputs; moved in 10-02 — additions in git, no rename history). Composed from cards C, D, F + X0 raw 09-30.`
 
 ## Shape
 

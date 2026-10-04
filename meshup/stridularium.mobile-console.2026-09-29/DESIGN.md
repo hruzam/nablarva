@@ -40,6 +40,6 @@ stage 3 · Claude↔Codex seam (vendor-neutral console; agent identity never inv
 ## Sources (3 + 1 pointer)
 
 - raw/IDEA.k0k0nV3R.2026-09-29.md — copied from ~/unikuklatrix/k0k0nV3R/IDEA.md 2026-10-02 (origin header inside); folder left as stub pointer
-- raw/note.phone-lens.2026-09-30.md — moved from .dev/session/nablarva-X0-restarted/raw/ (git history = origin)
+- raw/note.phone-lens.2026-09-30.md — materialized 2026-10-02 from the formerly untracked X0 input (never committed before → no git rename history; its frontmatter 'supersedes'/'home' lines are the origin record)
 - raw/note.stridularium.2026-10-01.md — moved from .dev/session/nablarva-X0-restarted/raw/ (git history = origin)
 - .dev/session/nablarva-X0-restarted/raw/design-chapters.for-cartan.2026-10-01.md §3.8 — stays with Cartan's input

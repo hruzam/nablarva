@@ -48,4 +48,4 @@ LAB/observability · stage 2 cross-host · Claude↔Codex seam (vendor-neutral r
 - raw/card.G.onion-buildplan.md — Field card, 2026-10-01 (study × plan × brief delta check)
 - raw/card.H.event-vocabularies.md — Field card, 2026-10-02 (doc 04 §4.13/§4.15 × hooks × taps)
 
-Pointers (not copied): toolbox-termpanum-00-brief/raw/brief… · .dev/research/termpanum-events/ · .dev/research/vendor-events/ · .dev/research/pty-community/ · raw.nablarva/old-but-good-onion/ (the June "old onion", 183 lines — a different, earlier document; owned by extraction)
+Pointers (not copied): .dev/session/toolbox-termpanum-00-brief/raw/brief-substrate-for-RUNBOOK.termpanum.2026-10-01.md · .dev/research/termpanum-events/ · .dev/research/vendor-events/ · .dev/research/pty-community/ · raw.nablarva/old-but-good-onion/ (the June "old onion", 183 lines — a different, earlier document; owned by extraction)
