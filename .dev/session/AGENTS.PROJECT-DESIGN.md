@@ -35,6 +35,7 @@ reference; the role file holds the maintenance instructions.
 
 ## 1.1. nablarva *(itself)*
 
+- display form **nab∫ar∇a** (∫ U+222B, ∇ U+2207); paths, commands and slugs stay ASCII `nablarva` ([L13](flag.md))
 - agentive framework, multisession drive, decentralized rag connector
 - multisession driwing -mesage buss and control mechanism over vendors and sessions
 
@@ -63,6 +64,14 @@ activation remains a qualified, replaceable dependency. The study compares its o
 boundary with an operator workbench and a process-owning room host, using the
 earlier sessions and observed workflow. Existing session tools remain reusable.
 
+[L14](flag.md) supplies the current premises: PTY is the relay's base layer, files
+are the spine, and research precedes build (`relay-00-research` → `relay-01-pty` ·
+`relay-02-tracker`). Termpanum is the first-build plan. Vendor doors remain weather;
+the research verdict and blind triangulation must precede a relay-architecture lock.
+The architecture session proposes final organ homes; lifecycle and journal-store
+choices remain docket 4 and 5. Its first automated exchange depends on that research
+verdict as well as the separately owned native-carrier qualification.
+
 The [architecture session](nablarva-03-app-architecture/RUNBOOK.md) holds the
 [working blueprint](nablarva-03-app-architecture/raw/architecture.working.md):
 animal/toolbox boundaries, source tree, code/config/data/runtime homes, installation,
@@ -74,9 +83,10 @@ through the RUNBOOK's scoped prompt; its attachment and assignments live in STAT
 Keep detailed research and review in that bed.
 
 The [workflow reading and alternatives](nablarva-03-app-architecture/raw/workflow-reading.2026-09-29.md)
-also assess the onion-terminal observation device as a possible independent tool
-and test instrument. Observation, message delivery and context insertion have
-separate responsibilities; none is a mandatory new build yet.
+preserves the earlier comparison of the onion-terminal observation device. Its
+optional-build framing is superseded by L14's termpanum-first plan. Observation,
+message delivery and context insertion retain separate responsibilities; this
+wrapper authorizes no implementation or live sampling.
 
 Existing [Claude → Codex consultation tools](nablarva-03-app-architecture/raw/tunnel-consultation.2026-09-29.md)
 offer a fresh relay for a new opinion and a stored-thread tunnel for continued
@@ -213,6 +223,53 @@ no bond to specific `.dev/session/<specific-session>`
 - claim, work, explicitly hand over or release; current design gates commits to the team's live, adopted paths
 - claims alone do not prevent edits, identify who typed each byte, or isolate builds from neighboring changes
 - source: [master brief](muticula-01-qualify/raw/muticula.master.2026-09-26.md); enforcement coverage is being qualified in the [current task](muticula-01-qualify/STATUS.md)
+
+---
+
+## 3.6. termpanum *(toolbox)*
+
+- observation lab, named by [L13](flag.md): the read-only ear on living CLI sessions;
+  adopts the onion study, unilarvatrix build plan and earlier lab design
+- L14 D1 supplies the PTY base and first-build plan; hooks and records enrich it.
+  The proposed state vocabulary remains docket 8, not a frozen protocol
+- observes and records events with source and certainty; never types into sessions
+  or injects context. Proposed context-bus ownership belongs to stridulatrix
+- proposed home `toolbox/termpanum/`, scripts and plain files first; optional read-only
+  MCP and a separate observation window remain design choices for session 03
+- sources and open probes: [lab registry design](../../meshup/lab.observability-probes.2026-08-01/DESIGN.md)
+  and [hypotheses](../../meshup/lab.observability-probes.2026-08-01/HYPOTHESES.md);
+  [brief](toolbox-termpanum-00-brief/raw/brief-substrate-for-RUNBOOK.termpanum.2026-10-01.md)
+
+## 3.7. stridulatrix *(broker + CLI)*
+
+- the broker and its CLI, named by [L13](flag.md) for voice-input reliability;
+  L3 supplies the single-writer room journal, participant cursors and adapter-owned
+  PTY delivery; L4's rejected input mechanisms remain rejected
+- L14 D1/D2: PTY carries the impulse; file-backed content remains inspectable.
+  Proposed boundary: owns writes into sessions, including the context bus;
+  consumes termpanum observations without turning observation into acceptance
+- lifecycle (docket 4), store (docket 5), command prefix and final source home remain
+  open. [Session 03](nablarva-03-app-architecture/STATUS.md) owns the architecture
+  proposal; relay-00-research supplies its transport/research verdict
+- shape and sources: [room registry design](../../meshup/room.brokered-journal.2026-07-31/DESIGN.md);
+  cross-vendor research: [seam design](../../meshup/seam.cross-vendor-relay.2026-08-05/DESIGN.md)
+
+## 3.8. stridularium *(phone app)*
+
+- the human's door to stage 3, named by [L13](flag.md); an organ with a proposed
+  independently usable console core, not a second authority for the room
+- L14 D5/D6: thin lens over host-resident sessions; attaching is advisory and
+  detaching never closes a bed. A host-side engine hosts the processes; the app
+  sends commands/prompts and receives output. Device reach is the app and its
+  files; an operator-scoped vault is a later extension
+- console versus rendered cards, voice input, per-target buffers, carousel,
+  breadcrumbs and bridge choices remain design input. The two origins disagree
+  about a native terminal on the phone; this fold preserves that open question.
+  `stridularium/{android,host}` is a home proposal for session 03, not a created tree
+- [registry design and origins](../../meshup/stridularium.mobile-console.2026-09-29/DESIGN.md)
+  → [living phone wrapper](AGENTS.stridularium-design.md) →
+  [open hypotheses](../../meshup/stridularium.mobile-console.2026-09-29/HYPOTHESES.md).
+  Majkee drafts the app in stridularium-00-design when that gate opens
 
 ---
 
