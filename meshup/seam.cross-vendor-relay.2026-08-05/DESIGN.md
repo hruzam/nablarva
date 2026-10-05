@@ -30,6 +30,7 @@ Costa: blocking bridge — Codex shell wrapper wakes living Claude via tmux door
 | **decisions.relay D1–D7** | 2026-09-30 | carried to flag L14 (10-01/02) | `raw/decisions.relay.2026-09-30.md` → `.dev/session/flag.md` L14 |
 | **Blind briefs to Asymmetry** — research + architecture (D7) | 2026-09-30 | sent?/answered? unknown | `raw/brief.blind.relay-research.2026-09-30.md` · `raw/brief.blind.relay-architecture.2026-09-30.md` |
 | stridulatrix = broker + CLI name and boundary (L13; chapter 3.7) | 2026-10-01 | locked name; design → room + session 03 | `.dev/session/nablarva-X0-restarted/raw/design-chapters.for-cartan.2026-10-01.md` §3.7 |
+| **Session 03 app-architecture (Cartan head · Flight challenger) — bounded exchange loop candidate; CLOSED stale under M1 2026-10-05** | 2026-09-29 → 10-04 | closed by ruling; survivors kept; restart = sibling 04 with oraculum | `raw/survivors.nablarva-03.2026-10-05.md` · `raw/review.claude.2026-09-29.md` · history fd66470 |
 
 ## Raw, needs synthesis
 
@@ -39,7 +40,7 @@ Costa: blocking bridge — Codex shell wrapper wakes living Claude via tmux door
 
 Claude↔Codex seam · stage 1 (tmux doorbell) · LAB/observability (termpanum supplies states to the relay; never meaning) · broker/room (`_bus/`, `.agent-room/`; stridulatrix owns everything that writes into sessions, incl. the context bus) · stage 3 (stridularium is the relay's human door). Two-planes contract sighted four times → canon candidate, separate thread (v2:80, seed axiom 6).
 
-## Sources (13 archived + 4 own)
+## Sources (13 archived + 6 own)
 
 - raw.nablarva/a-symmetry-lightest/brief.asymmetry.consultation.2026-09-11.md
 - raw.nablarva/a-symmetry-lightest/brief.symmetry.relay-seam.2026-09-11.md
@@ -58,5 +59,7 @@ Claude↔Codex seam · stage 1 (tmux doorbell) · LAB/observability (termpanum s
 - raw/decisions.relay.2026-09-30.md — moved, same
 - raw/brief.blind.relay-research.2026-09-30.md — moved, same
 - raw/brief.blind.relay-architecture.2026-09-30.md — moved, same
+- raw/survivors.nablarva-03.2026-10-05.md — oraculum 2026-10-05; verbatim quotes from architecture.working.md @ fd66470 + Flight RETURN 00/01 conclusions
+- raw/review.claude.2026-09-29.md — one-off Claude Opus 5.5 CLI review (majkee-requested, 2026-09-29); git mv from the closed 03 bed, history preserved
 
 Pointer: .dev/session/nablarva-X0-restarted/raw/design-chapters.for-cartan.2026-10-01.md §3.7 (stays with Cartan's input)

@@ -27,6 +27,7 @@ Journal has two projections: **braid** = raw interleaved audit trail, **book** =
 | Adapter capability handshake | 2026-08-05 | post-V1 | `oraculum-basic-triangulation/04_LABORATORY_OBSERVABILITY_AND_EXPERIMENTS.md:4.15` |
 | **stridulatrix** — name, boundary, owns the writes + context bus | 2026-10-01 | locked (L13); design → session 03 | `.dev/session/nablarva-X0-restarted/raw/design-chapters.for-cartan.2026-10-01.md` §3.7 |
 | L14 D1/D2 — PTY base layer; files are the spine | 2026-09-30 → 10-02 | locked | `.dev/session/flag.md` L14 |
+| majkee's notebook sheets 2026-07-30 — the operator's seed drawing (clipper · roller · composer · release/submit per system) | 2026-07-30 (photos 09-29) | operator substrate, kept whole | `raw/notebook-2026-07-30/` |
 
 ## Records, not design
 
@@ -36,7 +37,7 @@ Journal has two projections: **braid** = raw interleaved audit trail, **book** =
 
 stage 1 · stage 2 (S7) · stage 3 (stridularium is the door; the room is what it opens onto) · broker/room · naming (L13) · LAB (termpanum feeds states into the journal; the room never reads screens). Locks live in `.dev/session/flag.md`; this file does not re-litigate them. Full architecture (homes, lifecycle, install, first prompt/reply slice) = `nablarva-03-app-architecture` — which, as of 2026-10-02, has not yet read L14 or the 09-30 stream (POINT 03 to Cartan).
 
-## Sources (14)
+## Sources (14 archived + 4 own)
 
 - raw.nablarva/oraculum-basic-triangulation/seed.oraculum.2026-07-31.md
 - raw.nablarva/oraculum-basic-triangulation/vision.oraculum.Y.2026-07-31.md
@@ -52,5 +53,7 @@ stage 1 · stage 2 (S7) · stage 3 (stridularium is the door; the room is what i
 - raw.nablarva/oraculum-basic-triangulation/handoff.applications-in-common.2026-07-31.FINAL.md
 - raw.nablarva/_preflight/task.T3-T4.orchestration-fork.md
 - raw.nablarva/nabla-buffer-brideAndBook/braid-and-book.substrate.2026-08-01.md
+- raw/notebook-2026-07-30/IMG_20260929_055330.jpg · IMG_20260929_055444.jpg · IMG_20260929_055516.jpg — majkee's notebook sheets of 2026-07-30 (SESSION/CLIPPER/ROLLER/COMPOSER · processor sheet · features sheet); operator substrate; git mv from the closed 03 bed 2026-10-05
+- raw/notebook-2026-07-30/reading.notebook-2026-07-30.md — Cartan 2026-09-29: SHA-256 + transcription receipt for the three sheets (their text layer); git mv, history preserved
 
 Pointer: .dev/session/nablarva-X0-restarted/raw/design-chapters.for-cartan.2026-10-01.md §3.7 (stays with Cartan's input)
