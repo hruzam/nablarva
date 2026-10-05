@@ -29,3 +29,14 @@
 ## What the carrier reports to majkee after round 1
 
 Which route actually ran · the challenge file exists · Cartan's RETURN exists · recovery events (timeouts, exit 61/50) · carriage effort (turns, minutes) · the next bounded check. Nothing else.
+
+## Addendum 2026-10-05 (after resume, Bash enabled) — schema + call signs (majkee)
+
+**Schema (majkee):** oraculum progresses on her own rail and sends only *thin pulses* to Cartan over the tunnel (actualise or consult). Atlas and Cartan run a parallel stream; Cartan is half oraculum's companion, half atlas-ui's; Cartan reports the **final product** to oraculum (first independent reviewer/user). Carrier duty = numbering + transport of the thin pulses and of Atlas↔Cartan files when asked; never summarizing.
+
+**Call signs (proposed for the provisional protocol; Cartan's file, Cartan appends):**
+`oraculum(cSharp)` · `atlas-ui(harness)` · `cartan(coordinator)` · `majkee(gavel)`. Every tunnel message and every `_provisional/` file opens with sender call sign + cycle number.
+
+**Resume check 2026-10-05:** host hruzam-120922 · core @ e07b95f · Bash live · tunnel GUIDE + user-run read · shim selftest run (result in chat). Table NOT open; waiting for majkee's `tn-on <bed> [name] -- …` or `tun open --enable` and the vault path.
+
+**Observer (majkee 2026-10-05):** trajectory(it) — mute tunnel IT support. Carrier logs every tunnel defect at once to `raw/tunnel-issues.2026-10-05.md` (exit code · verb · time · vault · expected→observed); trajectory repairs in real time on request and collects for maintenance. Not a bus participant.

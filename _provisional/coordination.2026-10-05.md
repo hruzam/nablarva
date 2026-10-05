@@ -4,36 +4,63 @@ date: 2026-10-05
 status: provisional
 scope: houston-design-trial
 owner: Cartan
+revision: HOUSTON-R2-2026-10-05
 review_at: first-independently-audited-candidate
 source: /home/hruzam/ia-sync/.dev/session/tunnel-02-programmatic-scaling/raw/trajectory/coordination.two-seats-one-head.2026-10-05.md
 ---
 
 # One design head, two continuing collaborators
 
-Requested by majkee. This is a temporary discipline proposal, not an installed role,
-a RUNBOOK, or a live state file. It changes the earlier packet's Oraculum-led topology.
-The owning build bed, exact thread binding and live authoring scopes remain to be
-established. No table is opened by writing this file.
+Requested by majkee. This is a temporary discipline proposal, not an installed role
+or live state file. Latest operator direction: the cooperation uses the standard
+RUNBOOK → `_bus/` shape at `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/`.
+Oraculum has authored that RUNBOOK. It is the sole place to appoint the trial's
+STATUS owner; this provisional protocol does not appoint a second owner. Two concurrent
+drafts assigned that role differently, so majkee's explicit choice is pending. Cartan
+has stopped STATUS writes. RUNBOOK authorship alone does not transfer state ownership.
+No special STATUS transcription exception is active. Majkee has
+explicitly retained the TUI for now; a later announcement establishes the tunnel handover.
+
+## Call signs and the two work streams
+
+`oraculum(cSharp)` · `atlas-ui(harness)` · `cartan(coordinator)` · `majkee(gavel)`
+
+These are the agreed call signs; brands are already understood. Call signs do not
+settle the pending trial STATUS appointment. Other gates retain their existing owners.
+
+Oraculum continues on her own rail and sends short updates or concrete questions to
+Cartan: changed fact + evidence pointer + whether a decision is requested. Atlas and
+Cartan develop Houston alongside that work. Cartan brings the resulting candidate
+and its evidence to Oraculum for independent review and the authorized first use.
+No recurring progress report is owed merely because the streams coexist.
+
+Exchange messages and their receipts start with, for example:
+`sender: atlas-ui(harness) · cycle: 01 · kind: challenge`
+Use the owning BUS cycle for its POINT/RETURN/VERDICT; static reference documents are
+not extra cycles. The earlier `_provisional/` cycle 01 is bootstrap evidence, not a
+second live sequence. Oraculum owns numbering and transports requested files unchanged.
+On handover the two streams share one ordered tunnel conversation; they never run
+simultaneous turns on Cartan's thread.
 
 ## Responsibilities
 
-- **Cartan:** carries the Houston design, frames decisions, reconciles critique and
-  coordinates the bounded build trial. Owns its RUNBOOK/STATUS if appointed cSharp;
-  delegates implementation bodies whole, including any Codex binding. Coordination
-  here grants no ownership of Oraculum's existing project gates.
+- **Cartan:** carries the Houston design, frames alternatives, reconciles critique and
+  returns architectural dispositions and proposed assignments through BUS. The
+  confirmed RUNBOOK state owner admits them, with independent witnesses for claims. A native Codex implementation body needs
+  its own named writer; coordination alone does not authorize a runtime build.
 - **Atlas:** continuing grounded challenger and co-designer; authors the agreed
   shared/Claude candidate when assigned. Critique must name a concrete failure case
   and a smaller workable alternative. Does not independently accept its own work.
-- **Oraculum:** remains head of her existing work, contributes project requirements,
-  and is the intended first independent reviewer/user of the Houston candidate.
+- **Oraculum:** authored the cooperation RUNBOOK, owns numbering and carriage;
+  keeps her existing work, contributes project requirements, and is the intended first
+  independent reviewer/user of the Houston candidate.
   Review is independent only for claims she did not author. Receiving a candidate
   does not install it or transfer her existing gate to Houston.
 - **Majkee:** intent, consequential locks, opening the table and promotion decisions.
 
-One named local **carrier** numbers exchanges and operates the tunnel. Oraculum is
-the initial proposal for that small job; another accepted carrier may fill it.
-Carriage conveys Cartan's decisions and the authors' questions; it confers no design
-or task-dispatch authority. Keep Atlas↔Oraculum ordinary traffic in files.
+Oraculum carries the exchanges; numbering and transport do not confer STATUS
+ownership. A later named carrier likewise receives no design or
+state authority merely by carrying files. Keep ordinary traffic in files.
 
 ## Atlas's default posture — challenge first
 
@@ -67,20 +94,18 @@ useful alternative, with observed constraints kept distinct from design preferen
    turn per open cycle may go directly to Cartan if the carrier has yielded that
    slot and Atlas's native authority permits it; otherwise carry her tagged question
    unchanged. That consultation is not independent verification or a new assignment.
-4. The named witness checks the relevant claim; Cartan integrates its verdict.
+4. The named witness checks the relevant claim; Cartan reconciles architectural
+   findings, and the confirmed RUNBOOK owner records the warranted STATUS edge. A
+   peer verdict remains that peer's evidence, not the design head's own acceptance.
    Reuse POINT/RETURN/VERDICT and the existing STATUS. No separate progress board,
    architecture report, journal entry or meeting is required for every exchange.
 
-Cartan remains the trial's sole decision/status owner. Prefer direct authorized
-STATUS writes. If the bound head is read-only, a proposed **mechanical transcription**
-exception must be declared in the owning RUNBOOK: Cartan authors the complete STATUS
-payload, preserved in its RETURN; the carrier copies that payload byte-for-byte only
-against the expected prior STATUS hash and records author/carrier provenance outside
-the payload. A witness verifies the match. The carrier cannot summarize, interpret or
-advance it. On any mismatch, retain the RETURN and return the discrepancy to Cartan.
-This limited exception is provisional; the existing guide otherwise permits only the
-declared status_owner to replace STATUS. Without it, the read-only head returns advice
-until an authorized owner can perform the update. Never alternate two independent writers.
+Only the single confirmed RUNBOOK status_owner replaces STATUS. Its claims need the
+named independent witness before acceptance. No special transcription exception is
+active: if that owner cannot write, preserve its RETURN through the agreed carriage
+route and hold advancement until an authorized write route or explicit owner transfer
+is established. Each source/rendering has one assigned writer; a receipt
+does not grant writes.
 
 ## Tunnel boundary
 
@@ -89,7 +114,8 @@ the table; confirm effective runtime permissions before assigning writes. Altern
 the interactive client and tunnel deliberately; this current chat's binding is not
 established by the source note. No second vault for that thread, including cross-host.
 
-Only the carrier performs open/resume/close, between settled turns. Close only after
+Opening/enabling remains majkee's action. The carrier performs resume/close between
+settled turns under that opened table. Close only after
 checking the outstanding turn has ended. The source lock covers send/ask/steer, not
 all verbs. It supplements explicit turn order; it is not the coordination protocol.
 Atlas's current read-only Bash contract is not broadened by this draft.

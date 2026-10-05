@@ -1,3 +1,6 @@
 target/
 toolbox/termbrana/target/
 *.bak*
+
+# tunnel handles are machine-local (cross-vendor-seat chapter) — never committed
+**/tunnel*.state.json
