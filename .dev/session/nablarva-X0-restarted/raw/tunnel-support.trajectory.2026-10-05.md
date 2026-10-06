@@ -54,3 +54,29 @@ to name any refused command in its RETURN.
   a second caller reads pid 0 and treats the lock as stale; `lastTurnId` advances only on
   success, so `steer` after a timeout targets the previous turn. Mitigation = carrier's
   strict turn order; repairs belong to the transport owner.
+
+## T3 · 2026-10-06 · exit 13 from a second terminal — operator wiring, not a defect
+
+- **Reported (majkee, relayed):** `tun ask` works in the terminal where `tn-on` ran; a
+  second terminal gets `refused — no state path given … (exit 13)`. Nothing was sent.
+- **Cause:** `TUNNEL_CODEX_STATE` is a per-shell env var; `tn-on`/`tn-use` export it only in
+  the shell that ran them. The shim never infers the vault from `$PWD` (by design, no
+  default — exit 13 creates nothing). Reproduced 12:41 from inside the bed folder with the
+  var unset → exit 13. **Running from the bed folder does NOT fix it.**
+- **Fix per new terminal (one of):**
+  `tn-use /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted` ·
+  `cd …/nablarva-X0-restarted && tn-use .` · or `tun ask --state <vault path> "…"`.
+  Agent Bash calls: `export TUNNEL_CODEX_STATE=<vault path>;` in every call.
+- **Live check 12:41:15 → 12:41:24 (+02:00):** `tun ask` with explicit export → exit 0,
+  reply `pong — cartan(coordinator)`, `ctx=77724/258400 (30.1%)`. Line healthy on 0.160.0
+  (this also serves as the L8 live-turn proof). Pre-check: no `.lock`, no TUI holding the
+  rollout of `01a0f5a6…`.
+- Repair candidate (transport owner): exit-13 message could add "per-shell — run
+  `tn-use <bed>` in this terminal".
+
+## T4 · 2026-10-06 · approvalPolicy still on-request after bring-up
+
+`state.runtime` stamped 10:33:09Z: `approvalPolicy: on-request`, `workspaceWrite`, network
+off, `writableRoots: []`. Either the TUI change (T1 workaround a) was not made, or it does
+not survive into app-server `thread/resume`. Escalations behind the tunnel are therefore
+still auto-declined silently (T1). Open until majkee says which.
