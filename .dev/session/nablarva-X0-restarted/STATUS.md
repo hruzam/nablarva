@@ -1,12 +1,11 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-06 --:-- +02:00 (oraculum; clock not read)"
+updated: "2026-10-06 13:25 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
-  /home/hruzam/unikuklatrix/nablarva · core · 8516a81 · dirty: this bed's RUNBOOK.md + STATUS.md (this refresh) ·
-  untracked: .majkee/ (operator's), pre-existing elsewhere unchanged. Vault tunnel.state.json present, gitignored.
+  /home/hruzam/unikuklatrix/nablarva · core · a31e1e5 · dirty: this bed's RUNBOOK.md, STATUS.md, _bus/12.oraculum.point.md (this refresh) · untracked: .majkee/ (operator's). Vault + lock gitignored.
 gate: >
   Majkee records GO on the re-forged Houston in this bed — body matches L16 and the triad
   (houston · architecture-process · project-documentation .symmetry.2026-10-06), one real audit has run with its
@@ -14,38 +13,32 @@ gate: >
   KEEP / AMEND / RETIRE of the coordination discipline that carried the forge (carrier · tunnel · bus), with
   unresolved defects, recovery events and carriage effort from existing receipts.
 checkpoint: >
-  L16 LANDED in flag (32b645f; 14 amended — Houston keeps write/spawn bounded by card; 15 confirmed; full
-  record 2ae8636). Gate of this bed rewritten in place by majkee ruling (a): re-forge runs here (7839651).
-  Round 1: Atlas challenge 01 (REVISE) → cartan RETURN 06 → R2; cartan then produced R3 on disk (coordination
-  c9725baa · mediation brief 78ff72d4 · compact design 84e7c32f, HOUSTON-R3-2026-10-05) + pre-tunnel review
-  and a RUNBOOK patch (its six corrections applied by hand in this refresh; base had moved). Atlas RETURN 07
-  reviewed R3 on disk against challenge 01 + the triad: REVISE → one re-base pass R3→R4 (its §A table maps
-  every delta); B1–B5 answered; curvature list §C (stale pins in POINT 07 — superseded by 09/10; diff sha256
-  is f0fcfa29…, not 2efaadaa…; HEAD moved). POINT 08's "produce R3" was overtaken by R3 existing; POINT 09
-  announced L16. Tunnel: trajectory's live check 2026-10-06 12:41 — tun ask → exit 0, "pong — cartan(coordinator)",
-  ctx 30.1% (L8 proof on 0.160.0); T3 exit-13 = per-shell export; T4 approvalPolicy still on-request (open).
-  Carrier has run NO verb; waiting for majkee's "path is clear".
-in_flight: >
-  TUNNEL TURN (carrier, first): tun ask → cartan, cycles 10+11 (R4 against L16; thin pulse L14–16 + duty split).
-  Side effects: one Codex turn spent; reply preserved as _bus/10.cartan.return.md when it lands; lock file during turn.
+  L16 landed (32b645f). FIRST CARRIER TUNNEL TURN done: cycles 10+11 → cartan, 13:14:42–13:19:11 (+02:00), exit 0,
+  ctx 43.1 %, no defect, refused commands: none. RETURN 10 = HOUSTON-R4-2026-10-06 (blob 45f71a48, 237 lines): every
+  Atlas §A delta dispositioned (adopt cards · adopt keeper as locked · replace trigger prose · withdraw reserved path ·
+  fold re-forge into this gate · amend writes to card pen · fold proofs); B1 adopted; B2 accepted with boundary;
+  candidate package raw/houston/{identity, project addendum, binding/claude, binding/codex, render/claude,
+  render/codex, README+verify_cmd} with sole writers (Atlas; Cartan for Codex); coordination temporary in-bed.
+  ACK 11 (duty split). Earlier: round 1 by file (challenge 01 → RETURN 06 → R3); Atlas RETURN 07 REVISE.
+  Carriage so far: 1 tunnel turn · 4 m 29 s · 0 recovery events · 0 duplicate turns.
+in_flight: none
 recovery_probe: |
-  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ /home/hruzam/unikuklatrix/nablarva/_provisional/
-  07.oraculum.point.md absent                      → round 2 not opened; oraculum writes it (next).
-  07.oraculum.point.md present, no 07.atlas-ui.return.md → waiting on Atlas (living session; majkee relays if needed).
-  07.atlas-ui.return.md present, no 08.cartan.return.md  → carrier carries to cartan (file while TUI; tunnel after majkee opens).
-  env TUNNEL_CODEX_STATE unset and no tn-* vault for this bed → table not open; by-file only.
+  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
+  12.oraculum.point.md present, no 12.atlas-ui.return.md → waiting on Atlas (living; majkee relays the pointer).
+  12.atlas-ui.return.md present, no 13.* → carrier's next tunnel turn: carry it to cartan (POINT 13) unless PROCEED → assignment first.
+  lock present → a tunnel turn is in flight on this vault: wait or `tun read`; never a second turn.
+  export TUNNEL_CODEX_STATE=/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json; zsh ~/.config/zsh/ai/tunnel-codex.zsh read | jq '.thread.turns[-1] | {id,status,completedAt}'  # free recovery read
 holds: >
   majkee said "path is clear" 2026-10-06 → carrier may run verbs. TUI or tunnel, never both; one turn in flight (exit 61 = wait).
   T4: approvals on-request behind the tunnel → escalations fail silently; POINTs to cartan ask "name any refused
   command"; writes stay inside nablarva. Atlas Bash read-only; Atlas write scope beyond its named RETURN files
   depends on the "pulse/flag writes opened to Atlas" canon line (Atlas §C7) — UNVERIFIED, majkee confirms or strikes.
-  _provisional/ = cartan's/atlas's. One STATUS writer (oraculum). No construction: R3 is review material; R4 pending.
+  _provisional/ = cartan's/atlas's. One STATUS writer (oraculum). No construction: R4 is review material; accepted revision unassigned.
   Re-forge's "one real audit" (L16.13) = audit card, spawned by majkee only (L16.4) — not by this head.
 next: >
-  POINT 10 → cartan: R4 = R3 re-based on L16 AS LANDED (clause cites; Atlas RETURN 07 §A as the map; note 14
-  amended → Houston keeps write/spawn, bounded by card), keep R3's harness-grade material; reply
-  _bus/10.cartan.return.md. By file now; by tunnel once majkee says "path is clear".
+  majkee points the living atlas-ui at _bus/12.oraculum.point.md; Atlas returns _bus/12.atlas-ui.return.md
+  (PROCEED / REVISE / STOP on R4 @ 45f71a48 with the six specific answers).
 expected: >
-  _bus/10.cartan.return.md with R4 pins and "refused commands" line; then POINT 11 → atlas-ui to review R4
-  against L16; majkee's answers on §C7 (Atlas write scope), §C8 (writable_roots), T4 (approvals), B4/B5 tests.
+  RETURN 12 on disk; PROCEED → STATUS records accepted revision + majkee issues the assignment; REVISE → POINT 13
+  to cartan by tunnel for R5. majkee's open answers: C7 (Atlas scope — Cartan's reading in R4 §6), C8/T4 (policy).
 ```

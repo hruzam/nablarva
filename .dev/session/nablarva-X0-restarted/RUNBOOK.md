@@ -42,9 +42,10 @@ nest, and wants the coordination discipline for growing it tested on a real case
 as the carrier's channel to Codex. Cartan drafted the discipline and the brief (`_provisional/`); Atlas is
 the grounded challenger; oraculum carries and later audits. The whole cooperation runs in the standard
 RUNBOOK → `_bus/` shape (majkee 2026-10-05): one sequence, numbered by the carrier, POINT / RETURN /
-VERDICT only. Houston's own build gate, germline source scopes and runtime authoring are **separate**
-explicit steps; this session produces a reviewed candidate and a verdict on the discipline, not an
-installed role.
+VERDICT only. Per majkee's ruling (a) and L16.13 the Houston **re-forge runs in this bed**: the accepted candidate, the
+package build under an explicit assignment, one real audit (spawned by majkee, L16.4) and the discipline
+verdict all close the one gate. Germline promotion, deployment to live vendor directories and any global
+wrapper edit remain **outside** this gate (named later by majkee).
 
 ## Fixed facts
 
@@ -185,5 +186,5 @@ Receipts for all of these: `~/reposoma/.majkee/journal/2026-10-01.md` §1 (loops
 
 ## What this session deliberately does not do
 
-- Build or install Houston; edit germline; choose the build bed; measure anything beyond existing receipts.
+- Promote to germline/ia-sync, deploy to live vendor directories, edit the global houston.md, or measure anything beyond existing receipts. (Building the candidate package inside this bed IS in scope once majkee assigns revision + writers.)
 - Advance nablarva's own open items (seam h11/h12, first fixture, nablarva-04) — oraculum carries those on her rail.
