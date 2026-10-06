@@ -114,6 +114,71 @@
   gate closure (runbook GUIDE §On gate closure) — existing law, no new rule. Reconciliation is
   ad hoc, by challenge seats; no fixed ceremony.
 
+- **L16 · Whole-animal architecture coherence** (majkee 2026-10-06; gaveled in
+  conversation after blind triangulation and the Wave↔Symmetry contrast; clauses 14–15
+  confirmed with amendment 2026-10-06; full record: the triad `architecture-process` ·
+  `project-documentation` · `houston` (`.symmetry.2026-10-06`) at
+  `nablarva@2ae8636:.dev/architect-now-uncanonical/`):
+  · 1 Authority. Majkee owns intent, canon and the gavel. Oraculum owns divergence and
+    move formation. cSharp owns session lifecycle, RUNBOOK, STATUS, integration and
+    closure. Houston is the grounding architect: whole-animal coherence, never
+    lifecycle, gavel, implementation or functional verification.
+  · 2 One session universe. Architecture work is ordinary session work. One session has
+    one `gate:`. No parallel architecture-session lifecycle.
+  · 3 Checks. A session gate may require independent implementation, verification,
+    architecture and canon checks. Architecture and canon checks are conditional; the
+    four are not four session gates.
+  · 4 Houston. One identity, three cards: `consult` (in-session grounding check, spawned
+    by head or Majkee), `audit` (whole-animal audit, spawned by Majkee), `sitting` (rare
+    whole-animal design session, spawned by Majkee).
+  · 5 Divergence boundary. Houston does not own divergence. If consult finds the
+    presented frame cannot preserve coherence, Houston names the hole and its
+    constraints; Oraculum or a sitting designs the alternative.
+  · 6 Intrinsic architecture classes. New/reopened locks, irreversible changes,
+    trust-boundary changes, fundamental ownership changes, architect-authored
+    consequential design, and any Houston `breaks` verdict require architecture
+    attention from first occurrence. Known classes land in RUNBOOK constraints; classes
+    discovered mid-session land in STATUS `holds:`. New permanent classes require
+    Majkee GO and flag.
+  · 7 Earned ceremony. Routine mandatory architecture checks, lint, PROJECT.yaml trigger
+    machinery, machine-readable envelopes, audit cadence and similar mechanisms are
+    added only after evidence earns them.
+  · 8 No autonomous loops, no self-confirmation. Every Houston invocation is bounded:
+    read → finding → return. A correction may trigger a new explicit invocation.
+    Consequential locks and architect-authored consequential design receive fresh
+    architecture eyes.
+  · 9 Documentation homes. PROJECT.yaml = machine skeleton and pointers;
+    PROJECT-DESIGN.md = thin animal wrapper and index; docs/ARCHITECTURE.md =
+    whole-animal cross-organ architecture; organ body = local contract, detail, key
+    files; flag.md = locks; pulse.md = live-session router; session = temporary work.
+  · 10 Documentation law. One home per fact. The wrapper stays thin. Organs are born
+    thin and grow only on need. Staleness is declared; age is not a finding. Mechanical
+    claims are tested mechanically; architectural claims cite locks or evidence;
+    unknowns remain unknown.
+  · 11 Epistemic provenance. `said:` = source words; `inferred: <seat>` =
+    interpretation; `locked: L<n>` = gaveled durable decision. Never merged.
+  · 12 Promotion. The head keeps the closure pen and promotes surviving deltas to the
+    correct durable home. Houston may check; Houston does not own promotion. Only
+    Majkee's GO creates a lock.
+  · 13 Houston re-forge. Houston's body is rebuilt in its own small session (majkee
+    2026-10-06: runs in `nablarva-X0-restarted`, shared with the coordination-discipline
+    trial). Acceptance: the body matches this lock and its full record, one real audit
+    has run, its output is classified useful / overreaching / missing, and no authority
+    boundary was crossed.
+  · 14 Houston's pen and keeper (amended by majkee 2026-10-06 — NOT read-only by
+    default). Houston keeps at least the capabilities of the current houston card
+    (read · grep · glob · write · spawn); write authority travels with the card and is
+    bounded to the card's task — `consult` writes only its finding, `audit` maintains
+    wrapper mechanics (pointers, `checked:` stamps, one-liners whose meaning is
+    unchanged) plus its findings, `sitting` drafts in its own session. Houston never
+    silently rewrites organ contracts, locks, project intent or implementation truth;
+    disagreement returns as a finding. Rationale: a write-less Houston would spawn for
+    every small conclusion. Convergence (`.germline/agents/convergence.md`) is an ad hoc,
+    uncanonical seat that may be retired without ceremony; when it retires, the audit
+    card keeps PROJECT-DESIGN.md.
+  · 15 No deflection. No seat stops at "Houston must judge": it does what it can,
+    records `inferred: <seat>`, names the pending check, and returns useful work.
+
 ## Named deferral thresholds (folded from abolished plan.md)
 
 - Domain seat: earned when a build-task class repeats 3× (not before)
