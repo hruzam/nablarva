@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-06 16:10 +02:00 (oraculum)"
+updated: "2026-10-06 16:20 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -18,13 +18,17 @@ checkpoint: >
   when a binding is edited alone (born thin); B: section markers + one body-equality diff line per render beside
   verify_cmd (proven runnable in zsh). Accepted limit: writable_roots cannot narrow the repo root (T4 stays with
   transport). C7 closed (card pens, not Atlas authority). B4 placement test = step 0 of Atlas's assignment.
-  Migration: 7 live convergence pointers in 4 files; writer to be named in the assignment (POINT 13 A asks cartan).
+  Migration: 7 live convergence pointers in 4 files; writer = cartan (accepted, RETURN 13 A) → D-b resolved unless majkee prefers Houston's first pen.
   Assignment DRAFT for majkee's GO = _bus/14.oraculum.point.md (decisions D-a..D-d). Carriage: turn 1 (10+11)
   4 m 29 s / 0 refusals; turn 12 by Atlas (slot yielded by majkee); turn 2 (13, rail) in flight; recovery events 1
   (earlier interrupted attempt 01a110ec…, not re-sent). L16 landed 32b645f; R3/R4 history above in _bus/.
-in_flight: >
-  TUNNEL TURN 2 (carrier): tun ask → cartan, cycle 13 (rail: nablarva — keeper migration, U10 stale links, U12 re-audit,
-  seed facts). Parallel: atlas-ui working on _bus/12 and may itself ask cartan (majkee 2026-10-06); lock serializes.
+  TURN 2 (rail 13) done 15:59:37–16:05:39, exit 0, ctx 59.6 %, 0 refusals. RETURN 13: A — cartan ACCEPTS as the single
+  keeper-migration writer (after the accepted card exists; scope incl. VOLATILE attribution/link; carrier commits);
+  B — U10 DONE: six stale 03 links repointed in AGENTS.PROJECT-DESIGN (60e6680a→fe154101; committed under Cartan's
+  authorship); C — U12: all seven RETURN-04 repairs confirmed REPAIRED; D — seed 1–3 CONFIRMED by command; seed 4
+  CORRECTED: `.majkee/` is TRACKED since 3547e3c (outside the literal .hlm/ seal; contents unread). Cartan thread ctx
+  59.6 % — reset watch at ~80 % is majkee's call.
+in_flight: none
 recovery_probe: |
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
   12.oraculum.point.md present, no 12.atlas-ui.return.md → waiting on Atlas (living; majkee relays the pointer).
