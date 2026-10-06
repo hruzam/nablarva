@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-06 16:20 +02:00 (oraculum)"
+updated: "2026-10-06 16:40 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -19,7 +19,8 @@ checkpoint: >
   verify_cmd (proven runnable in zsh). Accepted limit: writable_roots cannot narrow the repo root (T4 stays with
   transport). C7 closed (card pens, not Atlas authority). B4 placement test = step 0 of Atlas's assignment.
   Migration: 7 live convergence pointers in 4 files; writer = cartan (accepted, RETURN 13 A) → D-b resolved unless majkee prefers Houston's first pen.
-  Assignment DRAFT for majkee's GO = _bus/14.oraculum.point.md (decisions D-a..D-d). Carriage: turn 1 (10+11)
+  majkee 2026-10-06 on POINT 14: D-b cartan (RETURN 13) · D-c audit after render witnessed · D-d T4 leave · D-a PENDING
+  (richer context requested). ASSIGNMENT ISSUED = _bus/15.oraculum.point.md (identity + addendum + B4 start now; renders/README after D-a). Carriage: turn 1 (10+11)
   4 m 29 s / 0 refusals; turn 12 by Atlas (slot yielded by majkee); turn 2 (13, rail) in flight; recovery events 1
   (earlier interrupted attempt 01a110ec…, not re-sent). L16 landed 32b645f; R3/R4 history above in _bus/.
   TURN 2 (rail 13) done 15:59:37–16:05:39, exit 0, ctx 59.6 %, 0 refusals. RETURN 13: A — cartan ACCEPTS as the single
@@ -41,13 +42,16 @@ holds: >
   T4: approvals on-request behind the tunnel → escalations fail silently; POINTs to cartan ask "name any refused
   command"; writes stay inside nablarva. Atlas Bash read-only; Atlas write scope beyond its named RETURN files
   depends on the "pulse/flag writes opened to Atlas" canon line (Atlas §C7) — UNVERIFIED, majkee confirms or strikes.
-  _provisional/ = cartan's/atlas's. One STATUS writer (oraculum). No construction: R4 is review material; accepted revision unassigned.
+  _provisional/ = cartan's/atlas's. One STATUS writer (oraculum). CONSTRUCTION OPEN under _bus/15 sole writers; D-a pending
+  blocks only render layout + README. Effective Codex policy (trajectory T5, unchanged since 13:59:38Z): approvals on-request ·
+  workspaceWrite · network off · writableRoots [] — POINT permitted-writes lines are the only scope control.
+  Transport: design turns TUNNEL_CODEX_TIMEOUT=1800 (timeout kills the turn); turn ID into .meta; Cartan thread 59.6 % ctx →
+  reset by majkee at ~80 % (re-brief from files).
   Re-forge's "one real audit" (L16.13) = audit card, spawned by majkee only (L16.4) — not by this head.
 next: >
-  majkee reads _bus/14.oraculum.point.md and rules D-a (5 or 7 files) · D-b (migration writer) · D-c (when he spawns
-  the real audit) · D-d (T4 leave/narrow); oraculum retypes the GO into STATUS and issues _bus/15 (the assignment) to
-  atlas-ui + cartan. Meanwhile turn 2 (cycle 13, rail) returns; carrier preserves _bus/13.cartan.return.md.
+  carrier tunnel turn 3 → cartan: read _bus/15 (assignment; D-a pending), begin Codex-side prep, RETURN 15 when a slice
+  completes. majkee points atlas-ui at _bus/15 (or Atlas reads the bus); majkee rules D-a after the 5-vs-7 context.
 expected: >
-  GO (or amendments) on D-a..D-d recorded here; _bus/15 assignment on disk; construction starts under sole writers;
-  _bus/13.cartan.return.md preserved with its four blocks.
+  raw/houston/germline/agents/houston/identity.md + project/nablarva.md appear under Atlas's pen; B4 result line in
+  _bus/15.atlas-ui.return.md; cartan's ack/plan in _bus/15.cartan.return.md; D-a ruled → renders + README proceed.
 ```

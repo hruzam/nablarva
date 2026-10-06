@@ -80,3 +80,54 @@ to name any refused command in its RETURN.
 off, `writableRoots: []`. Either the TUI change (T1 workaround a) was not made, or it does
 not survive into app-server `thread/resume`. Escalations behind the tunnel are therefore
 still auto-declined silently (T1). Open until majkee says which.
+
+## T5 · 2026-10-06 · answer to oraculum(cSharp) note (raw/note.oraculum-to-trajectory.2026-10-06.md)
+
+### 1 · carrier trace shape (turns 10-11 · 12 · 13) — sound, three adjustments
+
+Read `raw/tunnel-turns/*` at ~16:10. All three: exit 0, `.err` empty (no writer-lock NOTE →
+no TUI residue), usage line present, no `.lock` left → lock released. Turn 12 = atlas via
+yielded slot, recorded in `.meta`. Keep the pattern. Adjust:
+
+- **Timeout is a kill, not a give-up — correction to my earlier advice.** On timeout the shim
+  raises (`tunnel-codex.py:483`) and its `finally` closes the app-server (`:844-845`), which
+  **interrupts the server turn** (guide §Long turns). Durations: 10-11 = 269 s, 12 = 36 s,
+  13 = **362 s = 60 % of 600**. A heavier round will hit the wall and lose the turn. Use
+  `TUNNEL_CODEX_TIMEOUT=1800` for design turns (still backgrounded); 600 only for short acks.
+  After exit 30: `read` → expect `interrupted` → one-line nudge, same cycle.
+- **Context is climbing fast:** 43.1 % → 44.7 % → 59.6 % (turn 13 alone +38.6k). ~80 % is the
+  reset trigger (user-run §Clearing) — roughly two more rounds of this size. Tell majkee before
+  it is reached; a reset = new thread, Cartan rebriefed from files.
+- **`.meta` — add the turn id** for correlation with `read`: after the ask,
+  `jq -r .lastTurnId "$TUNNEL_CODEX_STATE" >> <meta>` (on exit 0 only; on failure it still
+  holds the previous id — record that fact, not the value).
+
+### 2 · effective runtime policy — as of now, unchanged
+
+`state.runtime` observedAt **2026-10-06T13:59:38Z**: `approvalPolicy: on-request` ·
+`sandbox: workspaceWrite, networkAccess: false, writableRoots: []` · cwd
+`/home/hruzam/unikuklatrix/nablarva` · `gpt-6-astra` / `xhigh` · instructions
+`~/.codex/AGENTS.md` + `nablarva/AGENTS.md`. No change has been made; STATUS `holds:` can
+carry exactly this line.
+
+**Technical note on Atlas's §C8 (mechanism only, no design position):**
+- `writable_roots` **adds** writable paths outside the workspace root; it never narrows. The
+  bed and `_provisional/` are already inside the root (`nablarva/`) and already writable —
+  proven: Cartan wrote `_bus/10.cartan.return.md` and `_bus/13.cartan.return.md`. So
+  writable_roots = bed + `_provisional/` changes **nothing**.
+- `approvalPolicy` is **thread-wide**, not per path. "never inside it" cannot be expressed.
+  `never` = every escalation (network, outside-root write, protected path) is refused back to
+  the model instead of asked — the same outcome as today's silent decline, but by policy and
+  visible to the model as a refusal.
+- To *restrict* Cartan to the bed, no sandbox knob exists; that stays an instruction-contract
+  rule (POINT "permitted writes").
+- Any change can only be made from the TUI owning the thread (the shim sends no policy on
+  resume). Then: TUI `/exit` → carrier `tun resume` → I read `jq .runtime` and append it here.
+  Whether a TUI change survives into app-server resume is still unverified (T4).
+
+### 3 · exit-13 wording
+
+Agreed as a candidate. The shim's source is `~/ia-sync/zsh/ai/tunnel-codex.zsh` (surgical
+table; deploy via ia-sync) — outside this bed, so it waits for majkee's word. Not done.
+
+### 4 · U3 fixture — noted. No action until majkee rules U1 and oraculum's RUNBOOK exists.
