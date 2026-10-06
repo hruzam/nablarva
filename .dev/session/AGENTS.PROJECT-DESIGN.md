@@ -72,25 +72,25 @@ The architecture session proposes final organ homes; lifecycle and journal-store
 choices remain docket 4 and 5. Its first automated exchange depends on that research
 verdict as well as the separately owned native-carrier qualification.
 
-The [architecture session](nablarva-03-app-architecture/RUNBOOK.md) holds the
-[working blueprint](nablarva-03-app-architecture/raw/architecture.working.md):
-animal/toolbox boundaries, source tree, code/config/data/runtime homes, installation,
-wiring, administration and the first complete exchange. These remain proposals.
-Its [STATUS](nablarva-03-app-architecture/STATUS.md) owns progress; the project
-[pulse](pulse.md) routes all active work. Cartan synthesizes; the attached Claude
-seat, Flight, challenges the architecture independently. Flight joins
-through the RUNBOOK's scoped prompt; its attachment and assignments live in STATUS.
-Keep detailed research and review in that bed.
+The [architecture session 03 closure](nablarva-03-app-architecture/README.md)
+records majkee's 2026-10-05 ruling: the stale bed is closed, with history preserved
+at `fd66470`. Its [survivors](../../meshup/seam.cross-vendor-relay.2026-08-05/raw/survivors.nablarva-03.2026-10-05.md)
+carry the animal-ownership statement, bounded exchange loop and Flight's conclusions
+as inputs for a later restart, not an accepted architecture. The full working
+blueprint remains at
+`nablarva@fd66470:.dev/session/nablarva-03-app-architecture/raw/architecture.working.md`.
+The project [pulse](pulse.md) routes active work; the closed bed no longer owns progress.
 
-The [workflow reading and alternatives](nablarva-03-app-architecture/raw/workflow-reading.2026-09-29.md)
-preserves the earlier comparison of the onion-terminal observation device. Its
-optional-build framing is superseded by L14's termpanum-first plan. Observation,
+The earlier workflow reading is preserved at
+`nablarva@fd66470:.dev/session/nablarva-03-app-architecture/raw/workflow-reading.2026-09-29.md`.
+Its optional-build framing is superseded by L14's termpanum-first plan. Observation,
 message delivery and context insertion retain separate responsibilities; this
 wrapper authorizes no implementation or live sampling.
 
-Existing [Claude → Codex consultation tools](nablarva-03-app-architecture/raw/tunnel-consultation.2026-09-29.md)
-offer a fresh relay for a new opinion and a stored-thread tunnel for continued
-conversation. Their relationship to exchanges between living peers is in the study.
+The Claude → Codex consultation study is preserved at
+`nablarva@fd66470:.dev/session/nablarva-03-app-architecture/raw/tunnel-consultation.2026-09-29.md`.
+It distinguishes a fresh relay for a new opinion from a stored-thread tunnel for
+continued conversation, and compares both with exchanges between living peers.
 
 # VOLATILE
 
@@ -249,8 +249,9 @@ no bond to specific `.dev/session/<specific-session>`
   Proposed boundary: owns writes into sessions, including the context bus;
   consumes termpanum observations without turning observation into acceptance
 - lifecycle (docket 4), store (docket 5), command prefix and final source home remain
-  open. [Session 03](nablarva-03-app-architecture/STATUS.md) owns the architecture
-  proposal; relay-00-research supplies its transport/research verdict
+  open. [Session 03 survivors](../../meshup/seam.cross-vendor-relay.2026-08-05/raw/survivors.nablarva-03.2026-10-05.md)
+  preserve its architecture proposals after closure; relay-00-research supplies
+  the transport/research verdict for subsequent work
 - shape and sources: [room registry design](../../meshup/room.brokered-journal.2026-07-31/DESIGN.md);
   cross-vendor research: [seam design](../../meshup/seam.cross-vendor-relay.2026-08-05/DESIGN.md)
 
