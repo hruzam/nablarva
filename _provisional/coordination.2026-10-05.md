@@ -4,7 +4,7 @@ date: 2026-10-05
 status: provisional
 scope: houston-design-trial
 owner: Cartan
-revision: HOUSTON-R2-2026-10-05
+revision: HOUSTON-R3-2026-10-05
 review_at: first-independently-audited-candidate
 source: /home/hruzam/ia-sync/.dev/session/tunnel-02-programmatic-scaling/raw/trajectory/coordination.two-seats-one-head.2026-10-05.md
 ---
@@ -15,9 +15,10 @@ Requested by majkee. This is a temporary discipline proposal, not an installed r
 or live state file. Latest operator direction: the cooperation uses the standard
 RUNBOOK → `_bus/` shape at `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/`.
 Oraculum has authored that RUNBOOK. It is the sole place to appoint the trial's
-STATUS owner; this provisional protocol does not appoint a second owner. Two concurrent
-drafts assigned that role differently, so majkee's explicit choice is pending. Cartan
-has stopped STATUS writes. RUNBOOK authorship alone does not transfer state ownership.
+STATUS owner; this provisional protocol does not appoint a second owner. Majkee has
+now blessed the authored RUNBOOK: Oraculum owns STATUS and Cartan returns design
+dispositions. That explicit blessing closes the earlier ownership hold. Cartan does
+not write STATUS. RUNBOOK authorship alone was not the authority for that assignment.
 No special STATUS transcription exception is active. Majkee has
 explicitly retained the TUI for now; a later announcement establishes the tunnel handover.
 
@@ -25,8 +26,9 @@ explicitly retained the TUI for now; a later announcement establishes the tunnel
 
 `oraculum(cSharp)` · `atlas-ui(harness)` · `cartan(coordinator)` · `majkee(gavel)`
 
-These are the agreed call signs; brands are already understood. Call signs do not
-settle the pending trial STATUS appointment. Other gates retain their existing owners.
+These are the agreed call signs; brands are already understood. The blessed RUNBOOK
+settles the trial appointment; other gates retain their existing owners. Trajectory is
+the RUNBOOK's mute transport-support observer, without a design or STATUS role.
 
 Oraculum continues on her own rail and sends short updates or concrete questions to
 Cartan: changed fact + evidence pointer + whether a decision is requested. Atlas and

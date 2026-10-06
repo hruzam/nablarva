@@ -1,0 +1,55 @@
+--- a/.dev/session/nablarva-X0-restarted/RUNBOOK.md
++++ b/.dev/session/nablarva-X0-restarted/RUNBOOK.md
+@@ -16,8 +16,8 @@
+ participant_5: [trajectory, {brand: claude, model: as-woken-by-majkee, effort: high}, host: office hruzam-120922, role: MUTE observer · tunnel IT support — repairs the transport in real time on request, collects issues for tunnel maintenance; no design voice, no bus turn, never STATUS (call sign trajectory(it))]
+ status_owner: oraculum
+ head_note: >
+-  cSharp — oraculum, per majkee's direction 2026-10-05 (recorded in cartan RETURN 06: Oraculum is
+-  cSharp/status_owner of this X0 bed; Cartan coordinates design and returns dispositions). Authors
++  cSharp — oraculum, per majkee's explicit blessing of this RUNBOOK on 2026-10-05.
++  Cartan coordinates design and returns dispositions; RETURN 06's earlier hold is superseded. Authors
+   and STAYS as navigator/status_owner; carries; audits only claims she did not author.
+ schema_note: >
+   runbook GUIDE verified 2026-09-17 · status GUIDE 2026-08-27 · cross-vendor-seat DRAFT 2026-09-03 ·
+@@ -38,9 +38,9 @@
+ 
+ ## Fixed facts
+ 
+-- Discipline under test (R2, revised by cartan 2026-10-05 after Atlas's challenge 01; blob 77421c4): `/home/hruzam/unikuklatrix/nablarva/_provisional/coordination.2026-10-05.md`
++- Discipline under test (R3, after majkee's RUNBOOK blessing; blob c9725baab1d55c64956fadcee36fc9df581aeedd): `/home/hruzam/unikuklatrix/nablarva/_provisional/coordination.2026-10-05.md`
+   (one design head, two continuing collaborators, one carrier; challenge-first; STATUS single owner with
+-  a declared exact-payload transcription exception; tunnel boundary; retire-or-keep at first audited
++  no active STATUS transcription exception; tunnel boundary; retire-or-keep at first audited
+   candidate). Brief: `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/brief.cartan.houston-mediation.2026-10-05.md`.
+ - Schema (majkee): oraculum works her own rail and sends only *thin pulses* to cartan; atlas-ui ↔ cartan is
+   the parallel heavy stream; cartan reports the final product to oraculum for independent review.
+@@ -73,7 +73,7 @@
+ Read RUNBOOK.md, STATUS.md, then /home/hruzam/unikuklatrix/nablarva/_provisional/carrier.resume.2026-10-05.md and
+ /home/hruzam/reposoma/raw.guides/runbook/res/csharp-head-protocol.md. You own STATUS (rewrite before every non-idempotent step). Carrier duties:
+ mint _bus/ numbers; carry files and thin pulses unchanged; preserve every RETURN as a file before claiming a
+-handoff; never summarize, interpret or advance STATUS (cartan owns it). Tunnel: only after majkee's
++handoff; carry design messages unchanged; advance STATUS only in your status_owner role after the required witness. Tunnel: only after majkee's
+ `tn-on …`/`tun open --enable` on the vault he names; add `**/tunnel.state.json` to nablarva .gitignore first;
+ `tun resume` only after the TUI released; first turn `tun ask "ping"` (L8); one turn in flight (exit 61 →
+ wait/`tun read`; exit 50 → record mismatch, never retry); close only between settled turns. Count turns and
+@@ -103,14 +103,13 @@
+ You are cartan(coordinator) for /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/.
+ Read RUNBOOK.md and STATUS.md there. You coordinate the Houston design and return dispositions; oraculum owns
+ STATUS and numbering; you never write STATUS.
+-Round 1: when /home/hruzam/unikuklatrix/nablarva/_provisional/atlas.challenge.2026-10-05.md exists (carrier
+-tells you by thin pulse or file), read it, reconcile each material objection (resolved / open, with reason),
+-and write your RETURN to this bed's _bus/ as <NN>.cartan.return.md — decision, evidence, assigned owner, next
+-bounded check. Append the call signs to coordination.2026-10-05.md (your file). Decide whether _provisional/
+-migrates into _bus/. Freeze candidate revision r1 at the end of round 1. Do not self-confirm your design;
++Round 1 is recorded in RETURN 06. Read raw/brief.cartan.houston-design.2026-10-05.md and
++raw/review.cartan.pre-tunnel.2026-10-05.md, then the current numbered POINT. Reconcile each
++material objection and write only its named RETURN — decision, evidence, assigned owner,
++next bounded check. Bootstrap _provisional files stay referenced; new exchanges use BUS. Do not self-confirm your design;
+ oraculum audits claims you authored; atlas-ui cannot witness its own draft. No runtime primitive, no
+-germline edit, no deployment, no tunnel open (majkee's hand). Rewrite STATUS before every non-idempotent
+-step and before yielding.
++germline edit, no deployment, no tunnel open (majkee's hand). Report pending actions and evidence in
++your RETURN; only Oraculum advances STATUS.
+ ```
+ 
+ ## Known constraints + destructive holds
