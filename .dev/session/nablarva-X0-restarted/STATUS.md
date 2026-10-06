@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-06 16:40 +02:00 (oraculum)"
+updated: "2026-10-06 16:50 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -29,6 +29,9 @@ checkpoint: >
   authorship); C — U12: all seven RETURN-04 repairs confirmed REPAIRED; D — seed 1–3 CONFIRMED by command; seed 4
   CORRECTED: `.majkee/` is TRACKED since 3547e3c (outside the literal .hlm/ seal; contents unread). Cartan thread ctx
   59.6 % — reset watch at ~80 % is majkee's call.
+  TURN 3 (assignment 15 → cartan) 16:17:01–16:17:29, exit 0, ctx 60.4 %, turn 01a11193…, ACK: Codex prep now, render
+  waits for D-a, project-fact review when inputs appear; refused none. Carriage total: 4 tunnel turns (3 carrier, 1 Atlas),
+  ~11 min driver time, 0 refusals, 1 recovery event.
 in_flight: none
 recovery_probe: |
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
@@ -45,13 +48,15 @@ holds: >
   _provisional/ = cartan's/atlas's. One STATUS writer (oraculum). CONSTRUCTION OPEN under _bus/15 sole writers; D-a pending
   blocks only render layout + README. Effective Codex policy (trajectory T5, unchanged since 13:59:38Z): approvals on-request ·
   workspaceWrite · network off · writableRoots [] — POINT permitted-writes lines are the only scope control.
-  Transport: design turns TUNNEL_CODEX_TIMEOUT=1800 (timeout kills the turn); turn ID into .meta; Cartan thread 59.6 % ctx →
+  Transport: design turns TUNNEL_CODEX_TIMEOUT=1800 (timeout kills the turn); turn ID into .meta; UNVERIFIED whether the
+  carrier's Bash background ceiling (10 min foreground max) can cut a long driver — first long turn will tell (log as T6 if so).
+  Cartan thread 60.4 % ctx →
   reset by majkee at ~80 % (re-brief from files).
   Re-forge's "one real audit" (L16.13) = audit card, spawned by majkee only (L16.4) — not by this head.
 next: >
-  carrier tunnel turn 3 → cartan: read _bus/15 (assignment; D-a pending), begin Codex-side prep, RETURN 15 when a slice
-  completes. majkee points atlas-ui at _bus/15 (or Atlas reads the bus); majkee rules D-a after the 5-vs-7 context.
+  majkee rules D-a (5 vs 7; context given) and points atlas-ui at _bus/15; Atlas starts identity.md + addendum + B4 test;
+  carrier idles on the tunnel until a RETURN 15 slice or D-a needs carrying (Cartan ctx 60.4 % — conserve turns).
 expected: >
-  raw/houston/germline/agents/houston/identity.md + project/nablarva.md appear under Atlas's pen; B4 result line in
-  _bus/15.atlas-ui.return.md; cartan's ack/plan in _bus/15.cartan.return.md; D-a ruled → renders + README proceed.
+  raw/houston/germline/agents/houston/identity.md + project/nablarva.md under Atlas's pen; _bus/15.atlas-ui.return.md with
+  the B4 line; D-a ruled → one short tunnel turn carries it; renders + README proceed.
 ```
