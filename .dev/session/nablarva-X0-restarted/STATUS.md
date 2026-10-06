@@ -25,7 +25,9 @@ checkpoint: >
   announced L16. Tunnel: trajectory's live check 2026-10-06 12:41 — tun ask → exit 0, "pong — cartan(coordinator)",
   ctx 30.1% (L8 proof on 0.160.0); T3 exit-13 = per-shell export; T4 approvalPolicy still on-request (open).
   Carrier has run NO verb; waiting for majkee's "path is clear".
-in_flight: none
+in_flight: >
+  TUNNEL TURN (carrier, first): tun ask → cartan, cycles 10+11 (R4 against L16; thin pulse L14–16 + duty split).
+  Side effects: one Codex turn spent; reply preserved as _bus/10.cartan.return.md when it lands; lock file during turn.
 recovery_probe: |
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ /home/hruzam/unikuklatrix/nablarva/_provisional/
   07.oraculum.point.md absent                      → round 2 not opened; oraculum writes it (next).
@@ -33,7 +35,7 @@ recovery_probe: |
   07.atlas-ui.return.md present, no 08.cartan.return.md  → carrier carries to cartan (file while TUI; tunnel after majkee opens).
   env TUNNEL_CODEX_STATE unset and no tn-* vault for this bed → table not open; by-file only.
 holds: >
-  No tunnel verb by the carrier until majkee says "path is clear"; TUI or tunnel, never both; one turn in flight.
+  majkee said "path is clear" 2026-10-06 → carrier may run verbs. TUI or tunnel, never both; one turn in flight (exit 61 = wait).
   T4: approvals on-request behind the tunnel → escalations fail silently; POINTs to cartan ask "name any refused
   command"; writes stay inside nablarva. Atlas Bash read-only; Atlas write scope beyond its named RETURN files
   depends on the "pulse/flag writes opened to Atlas" canon line (Atlas §C7) — UNVERIFIED, majkee confirms or strikes.
