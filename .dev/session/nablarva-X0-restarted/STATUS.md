@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-06 17:05 +02:00 (oraculum)"
+updated: "2026-10-06 17:10 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -33,6 +33,8 @@ checkpoint: >
   TURN 3 (assignment 15 → cartan) 16:17:01–16:17:29, exit 0, ctx 60.4 %, turn 01a11193…, ACK: Codex prep now, render
   waits for D-a, project-fact review when inputs appear; refused none. Carriage total: 4 tunnel turns (3 carrier, 1 Atlas),
   ~11 min driver time, 0 refusals, 1 recovery event.
+  TURN 4 (amendment 16 → cartan) 17:02:07–17:02:20, exit 0, ctx 60.8 %, turn 01a111bc…, ACK: seven-file package, owns
+  binding/codex.md + render/codex/houston.md with equality checks for all three sections; refused none. Total 5 turns.
 in_flight: none
 recovery_probe: |
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
@@ -54,8 +56,8 @@ holds: >
   reset by majkee at ~80 % (re-brief from files).
   Re-forge's "one real audit" (L16.13) = audit card, spawned by majkee only (L16.4) — not by this head.
 next: >
-  carrier tunnel turn 4 → cartan: one line carrying _bus/16 (7 files; binding/codex.md is his). Then idle on the tunnel until a
-  RETURN 15 slice lands; Atlas builds identity · addendum · binding/claude · B4 test.
+  carrier idles on the tunnel; Atlas builds identity · addendum · binding/claude · B4 test and returns _bus/15.atlas-ui.return.md;
+  then cartan drafts binding/codex + render/codex (RETURN 15); carrier runs verify_cmd before any POINT touching raw/houston/**.
 expected: >
   Cartan ack of 16 in the turn trace; first raw/houston/ files under Atlas's pen; _bus/15.atlas-ui.return.md (B4 line + slice);
   _bus/15.cartan.return.md when binding/codex + render/codex are drafted.
