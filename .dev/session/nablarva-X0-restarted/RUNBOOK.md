@@ -2,13 +2,15 @@
 
 ```yaml
 goal: >
-  A first Houston candidate (shared project architect composed through germline, native Claude/Codex
-  bindings) exists, has been challenged by Atlas, reconciled by Cartan and independently audited by
-  oraculum, and majkee can keep, amend or retire the provisional coordination discipline on evidence.
+  Houston is re-forged here (L16.13) by cartan(coordinator) and atlas-ui(harness) with oraculum as cSharp and carrier,
+  under the provisional coordination discipline — so that one bed yields both the re-forged seat and the evidence
+  to keep, amend or retire the discipline. oraculum works her nablarva rail alongside, consulting cartan by tunnel.
 gate: >
-  Majkee records KEEP / AMEND / RETIRE of the provisional coordination discipline on the first Houston
-  candidate that Atlas challenged, Cartan reconciled and oraculum independently audited — with
-  unresolved defects, recovery events and carriage effort recorded from existing receipts.
+  Majkee records GO on the re-forged Houston in this bed — body matches L16 and the triad
+  (houston · architecture-process · project-documentation .symmetry.2026-10-06), one real audit has run with its
+  output classed useful / overreaching / missing, no authority boundary was crossed — and in the same record
+  KEEP / AMEND / RETIRE of the coordination discipline that carried the forge (carrier · tunnel · bus), with
+  unresolved defects, recovery events and carriage effort from existing receipts.
 participant_1: [oraculum, {brand: claude, model: fable, effort: high}, host: office hruzam-120922, role: cSharp · status_owner · carrier (numbering + tunnel transport, Bash) · first independent reviewer/user; keeps her nablarva gates (call sign oraculum(cSharp))]
 participant_2: [atlas-ui, {brand: claude, model: as-woken-by-majkee, effort: high}, host: office hruzam-120922, role: continuing challenger / co-designer · living session woken by majkee · writes only its named challenge files (call sign atlas-ui(harness))]
 participant_3: [cartan, {brand: codex, model: as-declared-by-cartan, effort: high}, host: office hruzam-120922, instrument: tunnel, role: coordinator of the Houston design · returns architecture dispositions (RETURN) · never writes STATUS (call sign cartan(coordinator))]
@@ -24,6 +26,14 @@ schema_note: >
   csharp-head-protocol GAVELED 2026-09-04 · tunnel GUIDE verified 2026-10-03; codex-cli 0.160.0 on office,
   so L8 applies — the first live turn is the version proof
 ```
+
+## Gate rewritten in place — majkee's ruling 2026-10-06
+
+Runbook law says a changed gate closes the session and opens a numbered sibling. majkee ruled otherwise for this bed
+(2026-10-06, option (a)): the Houston **re-forge** (L16.13) runs HERE, shared with the forging atlas-ui/cartan who insisted
+on one bed; the discipline test (KEEP/AMEND/RETIRE) becomes a **check** inside the one gate (triad P4: one gate, several
+checks). Previous gate text is in git history (ce60630). oraculum keeps her own nablarva business running alongside,
+consulting cartan over the tunnel when useful — those exchanges are numbered in the same `_bus/` and tagged `rail: nablarva`.
 
 ## Why this session exists
 
@@ -59,6 +69,16 @@ installed role.
   holds 01–05 (oraculum POINTs, cartan RETURNs 03/04) from the X0 fold loops and 06 (cartan RETURN: round-1
   disposition, candidate HOUSTON-R2-2026-10-05, source pins); the trial continues the SAME sequence from 07 —
   oraculum mints numbers. From 07 on, all trial traffic lives in this `_bus/`, not in `_provisional/`.
+- Tunnel usage policy (trajectory(it), requested by majkee, 2026-10-06; this RUNBOOK outranks it):
+  `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel-using-protocole.md`. Fixed values: vault
+  `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json` (gitignored) · thread
+  `01a0f5a6-42f9-76e3-938e-c7d798a9dcc5` = cartan(coordinator), BOUND not born · head cwd `/home/hruzam/unikuklatrix/nablarva`
+  · policy workspaceWrite, network off, approvals on-request. Rules: export per Bash call · ask/send/resume/open/close =
+  carrier only, open --enable = majkee · one turn at a time, TUI or tunnel never both · POINT file first, message = call sign
+  + cycle + path · long turns in background, never kill the driver · reply preserved as file before handoff · exit table
+  (13 no address · 10 closed · 61 in flight · 30/40 read first · 50 record both, hold) · usage ≥80% → tell majkee.
+  **Blind spot:** approvals cannot be answered behind the tunnel → escalated commands fail silently; every POINT to cartan
+  asks "name any command that was refused"; writes stay inside nablarva.
 - Tunnel issue log (majkee 2026-10-05): every tunnel defect the carrier meets — exit code, verb, timestamp, vault, what
   was expected, what happened — is appended at once to
   `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/tunnel-issues.2026-10-05.md` (append-only,
@@ -136,7 +156,7 @@ step and before yielding.
 
 - `/home/hruzam/unikuklatrix/nablarva/_provisional/coordination.2026-10-05.md` — the discipline under test
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/brief.cartan.houston-mediation.2026-10-05.md`
-- `/home/hruzam/reposoma/raw.guides/tunnel/GUIDE.md` · `res/user-run.md` · `/home/hruzam/ia-sync/HANDSHAKE.md` §TABLE
+- `/home/hruzam/reposoma/raw.guides/tunnel/GUIDE.md` · `res/user-run.md` · `/home/hruzam/ia-sync/HANDSHAKE.md` §TABLE · bed policy `tunnel-using-protocole.md` (trajectory)
 - `/home/hruzam/reposoma/raw.guides/runbook/res/csharp-head-protocol.md` · `res/cross-vendor-seat.md` · `/home/hruzam/reposoma/raw.guides/bus/GUIDE.md`
 - `/home/hruzam/ia-sync/claude/agents/houston.md` · `atlas-ui.md` · `/home/hruzam/reposoma/.germline/README.md`
 - `/home/hruzam/reposoma/.majkee/journal/2026-10-01.md` §1.9 — the handoff that opened this

@@ -11,9 +11,11 @@ worktree: >
   raw/houston-round-01.2026-10-05.diff, _provisional/atlas.challenge.2026-10-05.md, _provisional/atlas.welcome.2026-10-05.md,
   raw/research.cartan.project-coordination.2026-10-04.md · pre-existing untracked elsewhere unchanged.
 gate: >
-  Majkee records KEEP / AMEND / RETIRE of the provisional coordination discipline on the first Houston
-  candidate that Atlas challenged, Cartan reconciled and oraculum independently audited — with
-  unresolved defects, recovery events and carriage effort recorded from existing receipts.
+  Majkee records GO on the re-forged Houston in this bed — body matches L16 and the triad
+  (houston · architecture-process · project-documentation .symmetry.2026-10-06), one real audit has run with its
+  output classed useful / overreaching / missing, no authority boundary was crossed — and in the same record
+  KEEP / AMEND / RETIRE of the coordination discipline that carried the forge (carrier · tunnel · bus), with
+  unresolved defects, recovery events and carriage effort from existing receipts.
 checkpoint: >
   Round 1 complete by file. Atlas challenge 01 (_provisional/atlas.challenge.2026-10-05.md, blob bd9767e):
   REVISE — strongest concern trigger row 3 as pre-commit gate; home-shape duplication; runtime-boundary
