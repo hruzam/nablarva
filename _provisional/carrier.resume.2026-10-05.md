@@ -40,3 +40,5 @@ Which route actually ran · the challenge file exists · Cartan's RETURN exists 
 **Resume check 2026-10-05:** host hruzam-120922 · core @ e07b95f · Bash live · tunnel GUIDE + user-run read · shim selftest run (result in chat). Table NOT open; waiting for majkee's `tn-on <bed> [name] -- …` or `tun open --enable` and the vault path.
 
 **Observer (majkee 2026-10-05):** trajectory(it) — mute tunnel IT support. Carrier logs every tunnel defect at once to `raw/tunnel-issues.2026-10-05.md` (exit code · verb · time · vault · expected→observed); trajectory repairs in real time on request and collects for maintenance. Not a bus participant.
+
+**2026-10-06 — HOLD:** majkee's `.dev/architect-now-uncanonical/` triad (Symmetry, FINAL, L16 pending) redefines Houston. Round 2 held; POINT 08 asks cartan for R3 and atlas to read; majkee decides L16 landing, bed-vs-re-forge relation, tunnel timing ("path is clear"). Carrier does nothing on the tunnel until then.

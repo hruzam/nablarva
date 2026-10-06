@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-05 --:-- +02:00 (oraculum; clock not read)"
+updated: "2026-10-06 --:-- +02:00 (oraculum; clock not read)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -24,6 +24,10 @@ checkpoint: >
   precedence UNVERIFIED; nested Codex child spawn OBSERVED in TUI; manual stamped render recommended; STATUS
   transcription exception withdrawn; majkee set oraculum = cSharp/status_owner. RUNBOOK authored accordingly.
   Codex still in TUI; table NOT open; no tun verb run; shim selftest 96/96 on codex-cli 0.160.0.
+  2026-10-06: majkee pointed at .dev/architect-now-uncanonical/ (Symmetry triad: houston · architecture-process ·
+  project-documentation — FINAL, gaveled in conversation, L16 pending in flag). It redefines Houston (three cards,
+  authority split, re-forge session L16.13, documentation homes L16.9). HOUSTON-R2 predates it → round 2 HELD;
+  POINT 08 asks cartan for R3 reconciled with the triad and atlas to read it; three decisions put to majkee.
   Pre-Houston unfinished business U1–U12 carried in RUNBOOK §Unfinished business (not this gate); majkee's
   rulings pending on U1, U2.
 in_flight: none
@@ -37,13 +41,14 @@ holds: >
   Table not open (majkee's hand); no tun send/ask/resume; Codex TUI holds the thread (bind ≠ birth).
   `**/tunnel.state.json` not yet in nablarva .gitignore — add before first open. Atlas Bash read-only.
   _provisional/ files are cartan's/atlas's — oraculum appends only to carrier.resume. One STATUS writer (oraculum).
-  No construction: candidate R2 is for review; no accepted revision or write scope assigned yet.
+  No construction: candidate R2 is superseded-pending-R3; no accepted revision or write scope assigned.
+  ROUND 2 HELD (POINT 08) until R3 and majkee's decisions on L16 landing / re-forge relation.
   Bookkeeping commit of this bed waits for majkee's word (he has not seen the RUNBOOK yet).
 next: >
-  oraculum writes _bus/07.oraculum.point.md → atlas-ui(harness): round-2 review of HOUSTON-R2 (narrowed trigger
-  row 3 · first-build home/writer table without new tree · manual stamped render · retained distinct roles vs
-  Atlas's absorb/collapse recommendation) against challenge 01; reply path _bus/07.atlas-ui.return.md.
+  HOLD. cartan returns HOUSTON-R3 (_bus/08.cartan.return.md) reconciled with the L16 triad; majkee decides
+  (1) L16 landing + clauses 14–15, (2) this bed vs the re-forge session (fold → sibling, or two sessions),
+  (3) says 'path is clear' for the tunnel handover. Atlas reads the triad meanwhile; no review until R3.
 expected: >
-  _bus/07.oraculum.point.md exists with R2 pins and the exact reply path; majkee reads RUNBOOK + STATUS and
-  either blesses the bookkeeping commit or amends; Atlas's RETURN 07 follows by file.
+  _bus/08.cartan.return.md exists (R3 + pins); majkee's three answers recorded here; then round 2 reopens
+  as a POINT to atlas naming R3 and the reply path.
 ```
