@@ -42,3 +42,5 @@ Which route actually ran · the challenge file exists · Cartan's RETURN exists 
 **Observer (majkee 2026-10-05):** trajectory(it) — mute tunnel IT support. Carrier logs every tunnel defect at once to `raw/tunnel-issues.2026-10-05.md` (exit code · verb · time · vault · expected→observed); trajectory repairs in real time on request and collects for maintenance. Not a bus participant.
 
 **2026-10-06 — HOLD:** majkee's `.dev/architect-now-uncanonical/` triad (Symmetry, FINAL, L16 pending) redefines Houston. Round 2 held; POINT 08 asks cartan for R3 and atlas to read; majkee decides L16 landing, bed-vs-re-forge relation, tunnel timing ("path is clear"). Carrier does nothing on the tunnel until then.
+
+**2026-10-06 (majkee):** Cartan may coordinate all three living sessions over the tunnel; atlas-ui may `ask` cartan too (shared vault → exit 61 = wait). Carrier does not idle while Atlas works: rail pulses to cartan in the same `_bus/` numbering, tagged `rail: nablarva`.

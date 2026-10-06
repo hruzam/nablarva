@@ -21,7 +21,9 @@ checkpoint: >
   render/codex, README+verify_cmd} with sole writers (Atlas; Cartan for Codex); coordination temporary in-bed.
   ACK 11 (duty split). Earlier: round 1 by file (challenge 01 → RETURN 06 → R3); Atlas RETURN 07 REVISE.
   Carriage so far: 1 tunnel turn · 4 m 29 s · 0 recovery events · 0 duplicate turns.
-in_flight: none
+in_flight: >
+  TUNNEL TURN 2 (carrier): tun ask → cartan, cycle 13 (rail: nablarva — keeper migration, U10 stale links, U12 re-audit,
+  seed facts). Parallel: atlas-ui working on _bus/12 and may itself ask cartan (majkee 2026-10-06); lock serializes.
 recovery_probe: |
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
   12.oraculum.point.md present, no 12.atlas-ui.return.md → waiting on Atlas (living; majkee relays the pointer).
@@ -29,7 +31,8 @@ recovery_probe: |
   lock present → a tunnel turn is in flight on this vault: wait or `tun read`; never a second turn.
   export TUNNEL_CODEX_STATE=/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json; zsh ~/.config/zsh/ai/tunnel-codex.zsh read | jq '.thread.turns[-1] | {id,status,completedAt}'  # free recovery read
 holds: >
-  majkee said "path is clear" 2026-10-06 → carrier may run verbs. TUI or tunnel, never both; one turn in flight (exit 61 = wait).
+  majkee said "path is clear" 2026-10-06 → carrier may run verbs; majkee 2026-10-06 also: atlas-ui may `ask` cartan over the
+  SAME vault (policy Rule 2 to be amended by trajectory) — turn lock serializes, exit 61 = wait, never two turns. TUI or tunnel, never both.
   T4: approvals on-request behind the tunnel → escalations fail silently; POINTs to cartan ask "name any refused
   command"; writes stay inside nablarva. Atlas Bash read-only; Atlas write scope beyond its named RETURN files
   depends on the "pulse/flag writes opened to Atlas" canon line (Atlas §C7) — UNVERIFIED, majkee confirms or strikes.
