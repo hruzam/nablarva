@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-06 13:25 +02:00 (oraculum)"
+updated: "2026-10-06 16:10 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -13,14 +13,15 @@ gate: >
   KEEP / AMEND / RETIRE of the coordination discipline that carried the forge (carrier · tunnel · bus), with
   unresolved defects, recovery events and carriage effort from existing receipts.
 checkpoint: >
-  L16 landed (32b645f). FIRST CARRIER TUNNEL TURN done: cycles 10+11 → cartan, 13:14:42–13:19:11 (+02:00), exit 0,
-  ctx 43.1 %, no defect, refused commands: none. RETURN 10 = HOUSTON-R4-2026-10-06 (blob 45f71a48, 237 lines): every
-  Atlas §A delta dispositioned (adopt cards · adopt keeper as locked · replace trigger prose · withdraw reserved path ·
-  fold re-forge into this gate · amend writes to card pen · fold proofs); B1 adopted; B2 accepted with boundary;
-  candidate package raw/houston/{identity, project addendum, binding/claude, binding/codex, render/claude,
-  render/codex, README+verify_cmd} with sole writers (Atlas; Cartan for Codex); coordination temporary in-bed.
-  ACK 11 (duty split). Earlier: round 1 by file (challenge 01 → RETURN 06 → R3); Atlas RETURN 07 REVISE.
-  Carriage so far: 1 tunnel turn · 4 m 29 s · 0 recovery events · 0 duplicate turns.
+  ACCEPTED REVISION (Atlas PROCEED, RETURN 12): HOUSTON-R4-2026-10-06 = _bus/10.cartan.return.md @ 45f71a48, with two
+  assignment-level conditions — A: package 5 files, binding as marked VENDOR DELTA section in each render, split only
+  when a binding is edited alone (born thin); B: section markers + one body-equality diff line per render beside
+  verify_cmd (proven runnable in zsh). Accepted limit: writable_roots cannot narrow the repo root (T4 stays with
+  transport). C7 closed (card pens, not Atlas authority). B4 placement test = step 0 of Atlas's assignment.
+  Migration: 7 live convergence pointers in 4 files; writer to be named in the assignment (POINT 13 A asks cartan).
+  Assignment DRAFT for majkee's GO = _bus/14.oraculum.point.md (decisions D-a..D-d). Carriage: turn 1 (10+11)
+  4 m 29 s / 0 refusals; turn 12 by Atlas (slot yielded by majkee); turn 2 (13, rail) in flight; recovery events 1
+  (earlier interrupted attempt 01a110ec…, not re-sent). L16 landed 32b645f; R3/R4 history above in _bus/.
 in_flight: >
   TUNNEL TURN 2 (carrier): tun ask → cartan, cycle 13 (rail: nablarva — keeper migration, U10 stale links, U12 re-audit,
   seed facts). Parallel: atlas-ui working on _bus/12 and may itself ask cartan (majkee 2026-10-06); lock serializes.
@@ -39,9 +40,10 @@ holds: >
   _provisional/ = cartan's/atlas's. One STATUS writer (oraculum). No construction: R4 is review material; accepted revision unassigned.
   Re-forge's "one real audit" (L16.13) = audit card, spawned by majkee only (L16.4) — not by this head.
 next: >
-  majkee points the living atlas-ui at _bus/12.oraculum.point.md; Atlas returns _bus/12.atlas-ui.return.md
-  (PROCEED / REVISE / STOP on R4 @ 45f71a48 with the six specific answers).
+  majkee reads _bus/14.oraculum.point.md and rules D-a (5 or 7 files) · D-b (migration writer) · D-c (when he spawns
+  the real audit) · D-d (T4 leave/narrow); oraculum retypes the GO into STATUS and issues _bus/15 (the assignment) to
+  atlas-ui + cartan. Meanwhile turn 2 (cycle 13, rail) returns; carrier preserves _bus/13.cartan.return.md.
 expected: >
-  RETURN 12 on disk; PROCEED → STATUS records accepted revision + majkee issues the assignment; REVISE → POINT 13
-  to cartan by tunnel for R5. majkee's open answers: C7 (Atlas scope — Cartan's reading in R4 §6), C8/T4 (policy).
+  GO (or amendments) on D-a..D-d recorded here; _bus/15 assignment on disk; construction starts under sole writers;
+  _bus/13.cartan.return.md preserved with its four blocks.
 ```
