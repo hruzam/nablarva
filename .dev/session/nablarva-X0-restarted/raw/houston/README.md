@@ -1,0 +1,183 @@
+# houston — re-forge package (workbench · review stage)
+
+`what: one vendor-neutral identity + one project addendum + two vendor bindings → two hand-composed, stamped renders. Nothing here is loaded by any runtime.`
+`accepted design: HOUSTON-R4-2026-10-06 = _bus/10.cartan.return.md @ 45f71a484663a92b77a9373e70028292c5cd8b8b · conditions _bus/12 (B, extended by _bus/16) · assignment _bus/15 + _bus/16 (D-a = 7 files)`
+`authority: locked L16 · nablarva flag.md @ 32b645f · record nablarva@2ae8636:.dev/architect-now-uncanonical/`
+`writers: identity · addendum · binding/claude · render/claude · this README = atlas-ui(harness) · binding/codex · render/codex = cartan(coordinator) · Codex section below supplied by cartan via _bus/15.cartan.return.md §4`
+`state: CANDIDATE — composition checks below PASS for the Claude render; the Codex render awaits recomposition against the corrected sources (see §Stamp currency). verified: none for every file — no witnessed fresh-session proof exists.`
+
+## Layout and composition order
+
+```text
+germline/agents/houston/identity.md   shared identity (vendor-blind, project-blind)        ─┐
+project/nablarva.md                   nablarva addendum (paths · landing · keeper · method)  ├─ identity → addendum → binding
+binding/claude.md                     Claude mechanics (frontmatter · card selection · proof)─┤
+binding/codex.md                      Codex mechanics (loading · capability · proof)         ─┘
+render/claude/houston.md              = identity ⊕ addendum ⊕ binding/claude, stamped, 3 marker pairs
+render/codex/houston.md               = identity ⊕ addendum ⊕ binding/codex,  stamped, 3 marker pairs
+README.md                             this manifest — excluded from its own hash check
+```
+
+**Precedence (stated here and in every render):** a later layer *specialises* an earlier one — adds
+paths, procedures, mechanics; it never overrides the identity, a project lock, or the runtime's own
+instruction hierarchy. A disagreement between layers is a finding, never last-file-wins.
+
+**Source body boundary (both renders):** bytes after the closing delimiter of the leading YAML
+frontmatter, copied byte-for-byte into one marker pair each: `<!-- identity -->…<!-- /identity -->`,
+`<!-- addendum -->…<!-- /addendum -->`, `<!-- binding -->…<!-- /binding -->`. The first body line of a
+render is its stamp: `derived from <identity canonical> @ <blob>; <addendum canonical> @ <blob>;
+<binding canonical | UNASSIGNED-…> @ <blob> — do not edit here`. **Edits go to sources, then the
+render is re-composed and re-stamped; a render is never hand-edited.**
+
+## Workbench ↔ canonical (promotion map)
+
+This directory is the **workbench**: deploy-inert, dies with the bed, read by nobody at runtime.
+Promotion is majkee's later, named step (`_bus/15` §Outside). Stamps already carry the canonical
+paths so a promoted render needs no re-stamp except the revision.
+
+| workbench file | canonical home after promotion | status |
+|---|---|---|
+| `germline/agents/houston/identity.md` | `/home/hruzam/reposoma/.germline/agents/houston/identity.md` | intended (germline README rule); absent today |
+| `project/nablarva.md` | `/home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md` (beside `convergence.md`) | intended; absent today |
+| `binding/claude.md` | **UNASSIGNED-CANONICAL-CLAUDE-BINDING** — proposal `<project>/.germline/agents/houston/binding.claude.md` (`inferred: atlas`), **co-signed by cartan(.germline) 2026-10-07** (majkee journal §1.1.2 carries a ready ruling line) | awaits majkee's line; then writers update metadata, recompose, re-stamp, re-verify |
+| `binding/codex.md` | **UNASSIGNED-CANONICAL-CODEX-BINDING** — same proposal, `binding.codex.md` beside the addendum | same |
+| `render/claude/houston.md` | `<project>/.claude/agents/houston.md` — **DECIDED by observation** (B4, majkee 2026-10-07: `claude --agent houston` in the project root loaded the project-scoped probe body over the global `houston`); the global `~/ia-sync/claude/agents/houston.md` stays a project-less fallback, out of this assignment | decided; promotion itself still majkee's step |
+| `render/codex/houston.md` | **to be re-based on a native route** (majkee journal 2026-10-07 §1.1.1, cartan(.germline)): Codex has two entries — *delegated* (custom-agent TOML in `.codex/agents/`, selected via `spawn_agent`) and *standalone* (`codex --profile houston`, a profile carrying the composed instructions; CLI 0.160.0 has `--profile`, no `--agent`). The current candidate (composed initial-prompt document) is neither; cartan reworks after his thread reset | pending cartan |
+
+A render whose stamp carries a workbench path, or an `UNASSIGNED-…` binding home, is reviewable
+but **not promotable**.
+
+## Manifest — reviewed bytes (full Git blobs; uncommitted bytes are identified, not stored)
+
+| file | blob @ this README | note |
+|---|---|---|
+| `germline/agents/houston/identity.md` | `883ccede2dcff454976234baa6fceaea8bc297fd` | after cartan's RETURN 15 §3 corrections (shell-ban → mechanism wording; spawn never silently downgraded) + assay 2026-10-07 omissions folded (explicit H8, researcher half → sitting input, "no document proves me", fresh-eyes cost clause) |
+| `project/nablarva.md` | `b7e0ff5740f45312f9ba394cf3bc34c50a549ce8` | after cartan's RETURN 15 §2 dispositions (landing filenames · sitting pen · prerequisites incl. real audit · targets by text · AGENTS entry question retired · L15 wording · stale links fixed) |
+| `binding/claude.md` | `ffb6641c7e31c3288e35c4a1183acd355fe6f6a1` | + `home:` (UNASSIGNED; proposal co-signed by cartan(.germline) 2026-10-07) · `placement:` DECIDED (B4) · Entry declaration table (child vs main-session binding, germline invariance) · audit-as-subagent must declare `unqualified` (assay item 15) · P1 rewritten (`/agents` wizard removed) |
+| `binding/codex.md` | `423058fc11fb2bb8f54f7b9a0779679008d072a7` | cartan, slice 1 |
+| `render/claude/houston.md` | `c9d6d5d154aeee4b9165339c2b62703fdbb62a7f` | recomposed mechanically 2026-10-07 from the three blobs above; checks 2 + 3 PASS; stamp current |
+| `render/codex/houston.md` | `0bb466e3bd2ee87930ae9a7ccbe51b17eb753fb0` | cartan, slice 1 — **stamp pins pre-correction identity/addendum (`5a3a4b6a…` / `5c202562…`) → stale; recomposition owed** |
+| `nablarva/.dev/session/flag.md` (authority input) | `32b645f` (commit) | L16 as landed |
+
+## Checks — run from this directory, zsh
+
+### 1 · `verify_cmd` — input + render hashes (ordered; README excluded)
+
+```zsh
+git hash-object -- germline/agents/houston/identity.md project/nablarva.md binding/claude.md binding/codex.md render/claude/houston.md render/codex/houston.md | diff -u <(printf '%s\n' 883ccede2dcff454976234baa6fceaea8bc297fd b7e0ff5740f45312f9ba394cf3bc34c50a549ce8 ffb6641c7e31c3288e35c4a1183acd355fe6f6a1 423058fc11fb2bb8f54f7b9a0779679008d072a7 c9d6d5d154aeee4b9165339c2b62703fdbb62a7f 0bb466e3bd2ee87930ae9a7ccbe51b17eb753fb0) -
+```
+
+Exit 0 = every reviewed byte unchanged since this README. Any diff = review before use; a changed
+source invalidates its renders' stamps until re-composed. Hash equality proves unchanged bytes only.
+
+### 2 · Body equality — three lines per render (Condition B as amended by `_bus/16` §3)
+
+```zsh
+body(){ awk 'BEGIN{n=0} /^---$/ && n<2 {n++; next} n==2 {print}' "$1"; }
+sect(){ sed -n "/^<!-- $2 -->$/,/^<!-- \/$2 -->$/p" "$1" | sed '1d;$d'; }
+diff <(sect render/claude/houston.md identity) <(body germline/agents/houston/identity.md)
+diff <(sect render/claude/houston.md addendum) <(body project/nablarva.md)
+diff <(sect render/claude/houston.md binding)  <(body binding/claude.md)
+diff <(sect render/codex/houston.md  identity) <(body germline/agents/houston/identity.md)
+diff <(sect render/codex/houston.md  addendum) <(body project/nablarva.md)
+diff <(sect render/codex/houston.md  binding)  <(body binding/codex.md)
+```
+
+Each line must exit 0; a later pass does not erase an earlier failure. Also exactly one opening and
+one closing marker per section per render:
+`for m in identity /identity addendum /addendum binding /binding; do grep -c "^<!-- $m -->$" render/claude/houston.md render/codex/houston.md; done`
+(every count = 1). A forgotten or stale binding source now **fails here** instead of hiding behind
+matching hashes.
+
+### 3 · Stamp currency — the stamp's blobs equal the sources' blobs
+
+```zsh
+for r in render/claude/houston.md render/codex/houston.md; do
+  s=$(awk 'BEGIN{n=0} /^---$/ && n<2 {n++; next} n==2 {print; exit}' "$r")
+  for f in germline/agents/houston/identity.md project/nablarva.md; do
+    b=$(git hash-object "$f"); case "$s" in *"$b"*) ;; *) echo "STALE STAMP: $r does not pin current $f ($b)";; esac
+  done
+done
+```
+
+Silent = current. A `STALE STAMP` line = the render was composed from older source bytes →
+re-compose. (Binding blobs are checked by the same loop once both canonical homes are assigned;
+until then the binding element of a stamp reads `UNASSIGNED-…` by design.)
+
+### Who runs what, when (`_bus/15` §Package · `_bus/16` §3)
+
+| who | when | runs |
+|---|---|---|
+| each source/render writer | before returning any change | 1 · 2 · 3 |
+| oraculum (carrier) | before dispatching any POINT touching `raw/houston/**` | 1 · 2 · 3 |
+| the gate reviewer | first step of "body matches L16 + record", **then a composition read** (hashes prove bytes, not meaning) | 1 · 2 · 3 + read |
+
+## Loading — per vendor
+
+### Claude (`binding/claude.md`)
+
+File-discovered agent. `consult` = subagent spawned by the head (`Agent`) or by majkee's session;
+`audit` = subagent or living session; `sitting` = living session `claude --agent houston` in the
+sitting's bed. Card named on line 1 of the spawn prompt (`card: consult | audit | sitting`; default
+consult; out-of-card requests answered `out of card:`). Tools exactly L16.14 → `Read Grep Glob Write
+Agent`; no Bash, no Edit, no web. `-p` never. Destination pending B4 (table above).
+
+### Codex (`binding/codex.md` — cartan, RETURN 15 §4, carried verbatim in substance)
+
+**Explicit initial-prompt composition in a fresh native main session.** No `.md` auto-discovery, no
+custom-agent override, no new profile, no edit of the global read-only `architect`. The
+operator/loader starts `codex -C /home/hruzam/unikuklatrix/nablarva` and submits **one prompt**:
+`card`, authorized `invoker`, bounded `move`, `read_scope`, exact `permitted_writes`, `reply_path`,
+an end condition — then **the complete accepted render text**. The optional CLI `[PROMPT]` argument
+carries the same text. A render pathname by itself is not an activation. Native AGENTS instructions
+and effective runtime permissions stay in force; Houston reads no workbench/addendum file at runtime.
+*The Codex session performs Houston's method for that bounded invocation; it does not become the
+head.* Evidence: `codex-cli 0.160.0`, `codex --help` (`[PROMPT]`, `-C`); OpenAI docs checked
+2026-10-06 (cartan §4).
+
+**Superseded 2026-10-07 by the germline invariance note (majkee journal §1.1.1, cartan(.germline)):**
+one identity, **two bindings per vendor** — a *child* binding (returns bounded work) and a
+*main-session* binding (leads a bounded invocation). Mapped across vendors:
+
+| | Claude | Codex |
+|---|---|---|
+| child · **consult** (and audit-as-probe) | `Agent` spawn from `<project>/.claude/agents/houston.md` | custom-agent TOML in `.codex/agents/`, selected via `spawn_agent` (hierarchy majkee → Cartan → Houston) |
+| main session · **audit (full) · sitting** | `claude --agent houston` in the project root | `codex --profile houston` (profile with the composed instructions) |
+
+Each binding declares **entry · permissions · delegation authority · return destination**
+(`binding/claude.md` §Entry declaration; `binding/codex.md` to follow). The earlier "second fresh
+session" consequence and the "spawn_agent child, unproven" note are resolved by this: the child
+route *is* the Codex consult. "Cartan is the controller" is local policy, not a Codex requirement.
+Composition checks and fresh-session behaviour checks stay separate on both vendors.
+
+## Proofs — what "verified" requires (separate recorded checks, `_bus/15` §Checks (2); none run)
+
+| # | check | Claude | Codex |
+|---|---|---|---|
+| P1 | invocation identity / loading | `/agents` wizard is **removed** (observed 2026-10-07) → behavioural probe: `claude --agent houston` in the project root, ask *"do you know this text?"* with a sentence unique to this render; reply must locate it in its system instructions | per the native route chosen (child TOML via `spawn_agent`, or `--profile houston`): a card-shaped finding from a fresh session |
+| P2 | card selection | `card: consult` → consult shape; no card → consult; audit-under-consult → `out of card:` | same, via the prompt fields |
+| P3 | read/write scope | consult writes no file; audit writes only the assigned `raw/houston-audit.<date>[.<cycle>].{md,diff}` | named fixture found/read by a mechanism the identity permits; one assigned finding written; nothing else changed |
+| P4 | spawn capability | subagent: refused/absent (expected); living session: one bounded reader spawn succeeds | one explicitly authorized read-only helper on the fixture; unavailable → binding **unqualified** |
+| P5 | placement (B4, Claude only) | **DONE 2026-10-07 (majkee):** untracked marker at `.claude/agents/houston.md` (haiku, `HOUSTON_PLACEMENT_PROBE`) · `claude --agent houston` in the project root · the session's system prompt was the probe body → **project wins**. Probe deleted afterwards (atlas-ui, same day); `.claude/agents/` removed | n/a |
+
+**Pre-check on record (not a gate):** `assay` (fresh-eyes subagent, 2026-10-07) checked identity ·
+addendum · binding/claude · render/claude against the triad `houston` file + L16: **PASS 15/15**,
+one tension (audit-as-subagent must declare `unqualified` — fixed in `binding/claude.md`), omissions
+folded into the identity, additions listed in `_bus/15.atlas-ui.return.slice3.md` as sanctioned
+extensions. It does not satisfy L16.13's "one real audit" and witnesses nothing — that remains
+majkee's spawn (D-c) and a non-Atlas witness (L16.8).
+
+Witness rule (L16.8): the Claude render is witnessed by a non-Atlas seat, the design by a non-Cartan
+seat; nobody accepts their own work. The **real audit** (L16.13, D-c) is majkee's spawn from the
+accepted card after P1–P4; a capability probe is not that audit. Keeper migration (D-b) follows the
+real audit.
+
+## Provenance
+
+- `_bus/15.atlas-ui.return.md` (slice 1 · slice 2) · `_bus/15.cartan.return.md` (Codex slice + source
+  review) · `_bus/10.cartan.return.md` (R4) · `_bus/12.atlas-ui.return.md` · `_bus/16.oraculum.point.md`.
+- Precedent for the package shape: `~/ia-sync/.dev/session/tunnel-02-programmatic-scaling/raw/atlas-ui/`
+  (Shuttle; 3 files, binding inside the render) — this package is the first with binding sources as
+  files (majkee D-a: full invariance; reduce to 5 if the bindings prove orphans).
+- Pre-forge Houston: `~/ia-sync/claude/agents/houston.md` @ ia-sync `8da748a` — retired wholesale;
+  what was cut and why: `binding/claude.md` §Dropped.
