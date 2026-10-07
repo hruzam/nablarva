@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-07 04:35 +02:00 (oraculum)"
+updated: "2026-10-07 04:50 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -32,7 +32,11 @@ checkpoint: >
   4 after); last line shows auto_review but predates the turn; Cartan requested no auto-review decision. Runtime artifacts
   (<project>/.codex/agents/houston.toml · ~/.codex profile) are OUTSIDE the 7-file assignment — sole writer unnamed.
   Carriage: 6 carrier turns + 2 Atlas turns; 0 refusals; 1 recovery event; thread reset once at 81 %.
-in_flight: none
+in_flight: >
+  WITNESS ROUND (POINT 19): assay spawned for the static part (test copy at .claude/agents/houston.md, untracked; checks;
+  prompt rows); majkee runs two fresh sessions (P1, P2a–c, P4-main · P4-child); oraculum relays observed texts to the same
+  assay; assay judges, writes raw/witness.claude.2026-10-07.md, removes the copy. Side effects: one untracked file under
+  .claude/agents/ for the duration; no source edits.
 recovery_probe: |
   cd /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/houston && zsh -c 'eval "$(sed -n "/^### 1 /,/^### 2 /p" README.md | sed -n "/^...zsh/,/^...$/p" | sed "1d;\$d")"'   # check 1 (verify_cmd); checks 2–3 likewise from README §Checks
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ | tail -5 ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
@@ -51,11 +55,9 @@ holds: >
   design non-Cartan) + majkee's real audit before migration. One STATUS writer (oraculum). Nothing promotable: both
   binding stamps UNASSIGNED until majkee's binding-home line; raw/houston/ is a workbench that dies with the bed.
 next: >
-  majkee decides the WITNESS step (L16.8): (a) who witnesses the Claude render — a fresh non-Atlas Claude seat; (b) allow a
-  test copy of raw/houston/render/claude/houston.md → /home/hruzam/unikuklatrix/nablarva/.claude/agents/houston.md (untracked,
-  deleted after) for P1–P4 fresh-session proofs before promotion; (c) sole writer for the Codex runtime TOML/profile.
-  Then majkee spawns the real audit (D-c) from the accepted card.
+  majkee runs the interactive steps from README §Witness brief (two fresh terminals in the project root) and pastes the
+  observed replies; oraculum relays them to assay; assay returns _bus/19.assay.return.md + the witness file.
 expected: >
-  Witness RETURN with P1–P4 results for Claude on the bus (carrier mints the cycle); majkee's audit RETURN classified
-  useful/overreaching/missing; then cartan's keeper migration (one commit); then the closing receipt and KEEP/AMEND/RETIRE.
+  witness file with P1–P4 rows judged; test copy removed; on PASS atlas edits verified: + recomposes; then majkee spawns the
+  real audit (D-c); cartan's W-c runtime artifacts as a separate step.
 ```
