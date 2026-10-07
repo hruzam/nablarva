@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-07 07:20 +02:00 (oraculum)"
+updated: "2026-10-07 07:45 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -14,6 +14,9 @@ gate: >
   KEEP / AMEND / RETIRE of the coordination discipline that carried the forge (carrier · tunnel · bus), with
   unresolved defects, recovery events and carriage effort from existing receipts.
 checkpoint: >
+  GATE CLOSED 2026-10-07 07:45 — GO on the re-forged Houston (checks 1–3 on evidence) + majkee KEEP on the coordination
+  discipline (check 4); receipt _bus/27.oraculum.receipt.md. Bed closes under runbook law: promote (houston package + audit +
+  witness → nablarva-X1-architecture/raw/) → router row out → prune to stub README.
   GATE CHECKS STANDING 2026-10-07 06:30 — (1) body matches L16 + record: package FROZEN (second freeze, README 59ebcab3;
   checks 1–3 PASS, carrier + witness); witness rounds 1–3 (assay, claude 2.1.292): static · P1 · P2a · P2b · P3 PASS ·
   P2c pass-dev · P4-main pass-dev (ba586e00) · P4-child PASS · P4-child-2 PASS (86e2db27) — verified: may claim: loads as
@@ -52,11 +55,7 @@ holds: >
   design non-Cartan) + majkee's real audit before migration. One STATUS writer (oraculum). Nothing promotable: both
   binding stamps UNASSIGNED until majkee's binding-home line; raw/houston/ is a workbench that dies with the bed.
 next: >
-  majkee: KEEP / AMEND / RETIRE on raw/closing-receipt.draft.2026-10-07.md (check 4) → carrier finalizes the receipt into
-  _bus/27.oraculum.receipt.md, writes the verdict into STATUS, removes the pulse.md router row, prunes the bed to a stub
-  README — EXCEPT raw/houston/ (only copy until promotion; moves to the X1 bed's raw/ or canonical homes first). Then /runbook
-  nablarva-X1-architecture (name = majkee's).
+  none — closed. Continuation: .dev/session/nablarva-X1-architecture/STATUS.md.
 expected: >
-  majkee's GO on the audit + diff decision; verified: line updated; migration commit; _bus/NN closing receipt with the
-  carriage numbers; majkee's KEEP/AMEND/RETIRE in STATUS; router row removed; bed pruned per runbook law.
+  nothing further in this bed.
 ```
