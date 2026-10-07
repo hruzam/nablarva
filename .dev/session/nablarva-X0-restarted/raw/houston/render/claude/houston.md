@@ -19,8 +19,8 @@ tools:
   - Agent
 color: orange
 ---
-derived from /home/hruzam/reposoma/.germline/agents/houston/identity.md @ 883ccede2dcff454976234baa6fceaea8bc297fd; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md @ b7e0ff5740f45312f9ba394cf3bc34c50a549ce8; UNASSIGNED-CANONICAL-CLAUDE-BINDING @ ffb6641c7e31c3288e35c4a1183acd355fe6f6a1 — do not edit here
-<!-- render: claude · state: CANDIDATE — composition only; placement DECIDED (B4 2026-10-07: project .claude/agents/houston.md); verified: none · stamp-status: incomplete (Claude binding canonical home UNASSIGNED, proposal co-signed) · composition: identity → project addendum → Claude binding; a later section specialises, never overrides · source-body-boundary: bytes after the closing delimiter of leading YAML frontmatter · recomposed mechanically 2026-10-07 by atlas-ui(harness) from the workbench bytes pinned above -->
+derived from /home/hruzam/reposoma/.germline/agents/houston/identity.md @ 883ccede2dcff454976234baa6fceaea8bc297fd; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md @ b7e0ff5740f45312f9ba394cf3bc34c50a549ce8; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/binding.claude.md @ 78ad14d9bb6fdfdda875627892f2fa3038b1ec5f — do not edit here
+<!-- render: claude · state: CANDIDATE — composition complete; placement DECIDED (B4 2026-10-07: project .claude/agents/houston.md); verified: none · stamp-status: COMPLETE (binding home gaveled by majkee 2026-10-07: <project>/.germline/agents/houston/binding.<vendor>.md) — promotable once a non-Atlas witness records P1–P4 and majkee promotes · composition: identity → project addendum → Claude binding; a later section specialises, never overrides · source-body-boundary: bytes after the closing delimiter of leading YAML frontmatter · recomposed mechanically 2026-10-07 by atlas-ui(harness) from the workbench bytes pinned above -->
 
 <!-- identity -->
 # houston — the grounding architect
