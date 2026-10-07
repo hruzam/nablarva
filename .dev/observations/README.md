@@ -1,5 +1,7 @@
 # .dev/observations/ — the session-process record (first instance 2026-10-07; law PROPOSED, not gaveled)
 
+**If you just arrived:** this folder holds what closed sessions learned about *running* sessions — not their work results. Read a file by the session slug in its name; write your own only for a session you are in. Pointed from `AGENTS.md` §Read order (session surfaces).
+
 `what: what a SESSION taught about running sessions — regime facts, carriage faults, support logs, watcher/latency incidents, what broke and how it was caught. Not work evidence (that promotes to canon/commits), not the seat's inner record (that is reposoma raw.therapy/<seat>/), not the operator's journal.`
 `why: beds die with the gate (runbook law). Process observations written inside a bed die with it or orphan in a preservation commit nobody opens. "Forgetting is one of the strongest human harnesses" (majkee, S10). This folder is outside every bed and never pruned.`
 
