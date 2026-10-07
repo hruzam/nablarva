@@ -107,6 +107,9 @@ The present route is authored ia-sync source → reviewed `bash ~/ia-sync/deploy
 `install-pkgs` leg where needed. Command details and constraints live in the
 [delivery discipline](/home/hruzam/ia-sync/SYNC_DISCIPLINE.md) and the
 [maintainer's route](../../.germline/agents/convergence.md#interim-delivery-route).
+These ia-sync delivery scripts are distinct from the `sync.sh` / `deploy.sh` /
+`SYNC_DISCIPLINE.md` retired by [L12](flag.md) — those lived in `nablarva.devenv`
+(see [repo unification](../../docs/repo-unification.2026-09-02.md)).
 
 Update this section when the route changes. For actual work and verification use
 [pulse.md](pulse.md) → the owning `STATUS.md`; this wrapper carries the description
