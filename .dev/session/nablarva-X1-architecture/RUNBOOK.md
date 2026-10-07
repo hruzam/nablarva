@@ -10,6 +10,7 @@
 `status_owner: oraculum`
 `head_note: cSharp protocol (~/reposoma/raw.guides/runbook/res/csharp-head-protocol.md) — authors and stays; carrier duties per X0 tunnel-using-protocole.md (KEEP, X0 receipt 27)`
 `schema_note: runbook GUIDE rev as of 2026-10-07; STATUS 11 fields; bus NN.<seat>.<kind>.md, carrier mints numbers (this bed starts at 01)`
+`observations_read: [.dev/observations/nablarva-X0-restarted.atlas-ui.2026-10-07.md, .dev/observations/nablarva-X0-restarted.trajectory.2026-10-05.md, .dev/observations/nablarva-X0-restarted.oraculum.2026-10-07.md] — first instance of the reader clause; read by the author (she wrote the third, witnessed the other two)`
 `opened: 2026-10-07 by majkee (name) · oraculum (author) · predecessor nablarva-X0-restarted CLOSED (GO + KEEP), preserved whole; see its stub README`
 
 ## Why this session

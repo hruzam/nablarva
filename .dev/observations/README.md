@@ -18,6 +18,11 @@
 
 Rationale: G-27 extension (2026-10-07) — a check whose verdict cannot reach the act stops nothing; the refusal wires it to the act. First instance: X0 — three files below, promoted from `d1c4b1e` after the prune (out of order, hence the law).
 
+## Who reads this, when, how he knows (gaveled with the folder; authority = runbook GUIDE `observations_read`)
+
+- **Reader:** the head authoring the NEXT session on the same program line (`/runbook` seat). **When:** at authoring, before the gate line is written. **How:** `ls .dev/observations/<program>*` — the slug law makes the predecessor greppable; the new RUNBOOK carries `observations_read: [...]` or `none exist`; without that line it is not parkable.
+- Secondary, by pointer, not obliged: a reincarnation via its cold-start card · majkee at KEEP/AMEND/RETIRE via the closing receipt · Atlas when a guide is being forged from a seat's observations.
+
 ## Index (by filename date; no other index by design)
 
 - `nablarva-X0-restarted.trajectory.2026-10-05.md` — tunnel support + issues log (T1–T11), carrier→IT note
