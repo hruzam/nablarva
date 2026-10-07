@@ -27,3 +27,11 @@
 - **This prune itself skipped a standing law:** `csharp-head-protocol.md` §4 asks for an explicit promotion manifest listing EVERY `raw/` keeper before any prune. X0 got a survivors list (four moves) and a preservation commit, not a per-file classification. The 16 other `raw/` files (briefs, research, cards, patches, witness, probe) live only at `d1c4b1e`. Lesson: "keeper" judged by work-value drops the session-process class entirely — hence this folder.
 - **Regime verdict:** KEEP (majkee). Cheaper finishing regime (one head + spawns, Cartan on tunnel) adopted for X1; comparison numbers owed by the X1 receipt.
 - **Where the heat was:** in the carrier's own record (pins written ahead of the disk) — see faults list above; the cure Atlas named: manifest over message.
+
+---
+
+## Appended 2026-10-07 13:00 — practitioner observation (majkee → oraculum, folded with his agreement to the organ's purpose)
+
+- **Forgetting a known mechanism.** majkee wanted, a week ago, a way to keep a Bash-capable head on bookkeeping and force coding to spawns; the mechanism (permission rules / hooks) was known to him and forgotten — "forgetting is one of the strongest human harnesses." The gap is the one this folder exists for: the want had no surface to land on until a question re-raised it. Landed now as a card (`CS.oraculum-bash-whitelist-hook`).
+- **Verified against docs 2.1.292:** settings `deny` cannot be carved by `allow` (so settings give no per-agent whitelist); frontmatter `tools:` takes bare names; agent-scoped `hooks:` PreToolUse is the only true per-seat leash, and the agent sees the denial reason. The carrier (me) stated the wrong composition ("deny Bash + allow git = whitelist") at verdict strength one turn before verifying — G-41, same arc, same seat.
+- **Regime consequence:** a mechanical whitelist turns "prefer spawns" from prose into a guard that can hold the hand (G-27 extension) — the token-economy and the leash are then one artifact.

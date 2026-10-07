@@ -68,6 +68,7 @@ flag L14–L16 (`.dev/session/flag.md`) · L16 record `nablarva@2ae8636:.dev/arc
 | U13 | bus GUIDE: slice/suffix rule for per-seat RETURNs under one cycle (Atlas obs §A.3) | majkee → guide keeper |
 | U14 | PROJECT.yaml `docs:` line for the stridularium wrapper | one writer, later |
 | U15 | reposoma commit of the three cold-start cards | majkee |
+| U18 | carrier Bash whitelist hook (agent-scoped PreToolUse on oraculum) — pointer only: `~/reposoma/_cold-start/card/CS.oraculum-bash-whitelist-hook.2026-10-07.md`, Atlas sitting outside this bed; once deployed the head here obeys denials by spawning | atlas-ui + majkee |
 | U17 | Houston audit card: one clause — `.dev/observations/` is process-reality evidence for the `RUNBOOK ≈ implementation` link (grounding only) — lands at the next forge bed, never in place | next forge head |
 | U16 | ~~closure step "observations promote before prune"~~ **GAVELED + folded 2026-10-07** (runbook GUIDE §On gate closure; csharp §4 cross-ref) | — |
 
