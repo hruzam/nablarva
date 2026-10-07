@@ -1,7 +1,7 @@
 # nablarva-X1-architecture — STATUS
 
 ```yaml
-updated: "2026-10-07 10:15 +02:00 (oraculum)"
+updated: "2026-10-07 10:40 +02:00 (oraculum)"
 writer: oraculum
 host: hruzam-120922
 worktree: /home/hruzam/unikuklatrix/nablarva (core)
@@ -32,7 +32,8 @@ holds:
   - tunnel: table open since X0 (majkee); vault at this bed's path
   - raw/houston/ = workbench; canonical bytes now at homes — edits happen in a new forge bed, never in place
   - reposoma: cards committed a299583; identity committed (see checkpoint); archive/ drains by other readers uncommitted (majkee)
-  - Atlas (living, X0) still owes spawn-notes appended to its own card before its session ends
+  - Atlas living session ended; spawn background = his card (7 spawn-notes) — oraculum's card §Waking Atlas carries the
+    spawn skeleton + X0→X1 path translation
   - cartan head thread at 76.7 % ctx: retire + re-brief from cards before W-c (majkee opens the new thread)
 next: >
   majkee: (a) decide cartan thread reset before W-c; (b) open a sitting for check 3 — POINT 03 to cartan: .codex/agents/
