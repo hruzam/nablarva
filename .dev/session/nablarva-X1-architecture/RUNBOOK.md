@@ -63,6 +63,7 @@ flag L14–L16 (`.dev/session/flag.md`) · L16 record `nablarva@2ae8636:.dev/arc
 | U13 | bus GUIDE: slice/suffix rule for per-seat RETURNs under one cycle (Atlas obs §A.3) | majkee → guide keeper |
 | U14 | PROJECT.yaml `docs:` line for the stridularium wrapper | one writer, later |
 | U15 | reposoma commit of the three cold-start cards | majkee |
+| U16 | gavel the closure step "observations promote before prune" (`.dev/observations/README.md` §Proposed) into runbook GUIDE §On gate closure; X0 = first instance | majkee → guide keeper |
 
 ## What this session does not do
 
