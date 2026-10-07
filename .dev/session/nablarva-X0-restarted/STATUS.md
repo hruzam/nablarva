@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-07 05:45 +02:00 (oraculum)"
+updated: "2026-10-07 06:00 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -51,9 +51,9 @@ holds: >
   design non-Cartan) + majkee's real audit before migration. One STATUS writer (oraculum). Nothing promotable: both
   binding stamps UNASSIGNED until majkee's binding-home line; raw/houston/ is a workbench that dies with the bed.
 next: >
-  Atlas re-pins the README Codex row (9c0856f5) → carrier reruns checks 1–3 → package FROZEN → witness round 3 (assay:
-  P4-child rewritten · P4-child-2; one prompt per row, no nudges; witness re-places + removes the test copy) → majkee spawns
-  the real audit (D-c) from the witnessed card, in this bed.
+  WITNESS ROUND 3 (assay fresh eyes): re-place the test copy from render/claude/houston.md (current blob), rows P4-child
+  (rewritten) and P4-child-2 per README §Proofs — one prompt per row, no nudges, verbatim first lines; majkee runs terminal B
+  twice; witness judges, removes the copy, returns _bus/23.assay.return.md. Then majkee spawns the real audit (D-c) here.
 expected: >
   raw/houston-audit.<date>.probe.* exists only under the audit card; _bus/21.atlas-ui.return.md with new blobs; checks
   1–3 green again; witness round 2 PASS on P4 rows; then D-c audit, migration, closing receipt.
