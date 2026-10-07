@@ -1,7 +1,7 @@
 # nablarva-X1-architecture — STATUS
 
 ```yaml
-updated: "2026-10-07 08:15 +02:00 (oraculum)"
+updated: "2026-10-07 10:15 +02:00 (oraculum)"
 writer: oraculum
 host: hruzam-120922
 worktree: /home/hruzam/unikuklatrix/nablarva (core)
@@ -19,9 +19,11 @@ checkpoint: >
   CHECK 1 DONE 08:15 — promotion: five files byte-identical at gaveled homes (Atlas RETURN 01; carrier verified blobs =
   README §Manifest): identity 32fcf199 (reposoma), nablarva 88a7617f, binding.claude bbce1cdd, binding.codex 04213fc1
   (.germline/agents/houston/), Claude render 9c973ca5 (.claude/agents/houston.md). Codex render stays in workbench for W-c.
-in_flight: >
-  TUNNEL TURN 1 (X1): POINT 02 to cartan — keeper migration (PROJECT.yaml · AGENTS.md convergence route · wrapper frontmatter
-  → canonical card). Side effect: one commit on core by cartan.
+  CHECK 2 DONE 10:15 — keeper migration by cartan as convergence, nablarva@31bd51e (PROJECT.yaml:16 · AGENTS.md:40 Houston
+  keeper paragraph, Convergence entry question retired · wrapper frontmatter maintainer role houston/audit + source + bindings);
+  carrier verified all three pointers resolve; convergence.md kept as interim-delivery-route doc; J2 untouched. Turn 1 on the
+  moved vault: 161 s, refused none, cartan ctx 76.7 % (reset point near — plan before POINT 03).
+in_flight: none
 recovery_probe: >
   cd raw/houston && run README checks 1–3 (sed-extract the zsh blocks under "### 1/2/3"): all PASS = package intact, proceed
   from next; any FAIL = stop, compare blobs to README §Manifest, report to majkee before any POINT. Also git status --short
@@ -31,9 +33,12 @@ holds:
   - raw/houston/ = workbench; canonical bytes now at homes — edits happen in a new forge bed, never in place
   - reposoma: cards committed a299583; identity committed (see checkpoint); archive/ drains by other readers uncommitted (majkee)
   - Atlas (living, X0) still owes spawn-notes appended to its own card before its session ends
+  - cartan head thread at 76.7 % ctx: retire + re-brief from cards before W-c (majkee opens the new thread)
 next: >
-  cartan RETURN 02 (migration commit) → carrier verifies pointers resolve → STATUS check 2 → POINT 03 W-c (cartan: .codex/agents/
-  houston.toml + --profile houston embedding render/codex 9c0856f5; assay-witnessed Codex consult probe needs majkee's hands).
+  majkee: (a) decide cartan thread reset before W-c; (b) open a sitting for check 3 — POINT 03 to cartan: .codex/agents/
+  houston.toml + --profile houston embedding render/codex 9c0856f5, then one Codex `card: consult` probe run by majkee,
+  witnessed by assay. Checks 4–6 follow (architecture doc = Houston living session, majkee-invoked).
 expected: >
-  _bus/02.cartan.return.md with one commit hash; grep shows the three pointers at .germline/agents/houston/; J2 untouched.
+  _bus/03.cartan.return.md with the two runtime artifacts (uncommitted until probed); a witness row for the Codex consult;
+  STATUS check 3.
 ```
