@@ -26,6 +26,10 @@ X0 forged Houston and proved the carrier regime; it deliberately left promotion,
 5. **One audit from the canonical card** — Houston (card: audit) walks wrapper → organ bodies (termbrana) → ARCHITECTURE → guides → flag; proposes `checked:` stamps (X0 audit "missing" ×2 closed); majkee classifies.
 6. **Lock lines** (majkee, append-only): L12 seal covers all operator vaults (M3); L12 qualifier on the retired trio's home (C1-lock).
 
+## Side stream (under the head, not a gate check)
+
+- **Agol harvest #1** — first instance of the synthesis read: oraculum spawns @agol once with `.dev/observations/*` (three X0 files) → `.dev/observations/harvest.2026-10-07.agol.md`; candidates → U-rows here. Cross-project: Agol may cite practitioner lines outside nablarva. Run when the head has a quiet turn; bounded to one spawn.
+
 ## prompt-0 (next oraculum main; paste after `claude --agent oraculum` in the project root)
 
 ###### prompt
@@ -64,6 +68,7 @@ flag L14–L16 (`.dev/session/flag.md`) · L16 record `nablarva@2ae8636:.dev/arc
 | U13 | bus GUIDE: slice/suffix rule for per-seat RETURNs under one cycle (Atlas obs §A.3) | majkee → guide keeper |
 | U14 | PROJECT.yaml `docs:` line for the stridularium wrapper | one writer, later |
 | U15 | reposoma commit of the three cold-start cards | majkee |
+| U17 | Houston audit card: one clause — `.dev/observations/` is process-reality evidence for the `RUNBOOK ≈ implementation` link (grounding only) — lands at the next forge bed, never in place | next forge head |
 | U16 | ~~closure step "observations promote before prune"~~ **GAVELED + folded 2026-10-07** (runbook GUIDE §On gate closure; csharp §4 cross-ref) | — |
 
 ## What this session does not do

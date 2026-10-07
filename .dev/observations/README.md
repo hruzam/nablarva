@@ -18,10 +18,17 @@
 
 Rationale: G-27 extension (2026-10-07) — a check whose verdict cannot reach the act stops nothing; the refusal wires it to the act. First instance: X0 — three files below, promoted from `d1c4b1e` after the prune (out of order, hence the law).
 
-## Who reads this, when, how he knows (gaveled with the folder; authority = runbook GUIDE `observations_read`)
+## Readers — three reads, by what they produce (gaveled majkee 2026-10-07 "all three"; authority = runbook GUIDE `observations_read` + §On gate closure)
 
-- **Reader:** the head authoring the NEXT session on the same program line (`/runbook` seat). **When:** at authoring, before the gate line is written. **How:** `ls .dev/observations/<program>*` — the slug law makes the predecessor greppable; the new RUNBOOK carries `observations_read: [...]` or `none exist`; without that line it is not parkable.
-- Secondary, by pointer, not obliged: a reincarnation via its cold-start card · majkee at KEEP/AMEND/RETIRE via the closing receipt · Atlas when a guide is being forged from a seat's observations.
+| read | reader | trigger | output |
+|---|---|---|---|
+| **lineage** | next head on the same program line (`/runbook` seat) | authoring; `ls .dev/observations/<program>*` | `observations_read:` line in the RUNBOOK — not parkable without it |
+| **coherence** | Houston, audit card | majkee invokes the audit | mech findings: does RUNBOOK/guide describe how sessions actually ran? pointers · `checked:` stamps. Observations = the process-reality half of `RUNBOOK ≈ implementation`. Grounding only — no ideas (L16.1). Clause lands in the audit card at the NEXT forge bed (homes are canonical; no in-place edit) |
+| **synthesis / improvement** | **@agol**, spawned once by the closing head (or by majkee in a sitting) | the folder GREW at a closure (≥1 file promoted) | `harvest.<date>.agol.md` here: patterns across sessions, candidate amendments to guides / skills / regimes — proposals, no verdict shape; candidates become U-rows in the next RUNBOOK on any line |
+
+Why not the head herself for synthesis: the one who ran the session is the wrong synthesizer of it — the author is not the witness. Why a growth trigger, not a schedule: a schedule is nobody's; a closure is somebody's. Cross-project incentive is welcome — observations from any practitioner line may be harvested here.
+
+Open, named: whether harvests get read is the same orphan risk one level up; the U-row landing is the current answer.
 
 ## Index (by filename date; no other index by design)
 
