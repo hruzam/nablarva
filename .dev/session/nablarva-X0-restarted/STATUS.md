@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-07 04:20 +02:00 (oraculum)"
+updated: "2026-10-07 04:35 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -14,8 +14,10 @@ gate: >
   KEEP / AMEND / RETIRE of the coordination discipline that carried the forge (carrier · tunnel · bus), with
   unresolved defects, recovery events and carriage effort from existing receipts.
 checkpoint: >
-  PACKAGE COMPOSITION — Atlas cleanup done (slice 6, 03:38: frontmatter-only edits, README re-pinned, Claude render
-  ba586e00 recomposed; checks 1+2 green, check 3 STALE ×2 for Codex only → POINT 18 re-stamp). majkee gaveled binding homes 2026-10-07:
+  PACKAGE COMPOSITION COMPLETE AND CARRIER-VERIFIED 04:35: README checks 1–3 all PASS on current bytes (identity 860e8bcb ·
+  addendum 88a7617f · binding/claude 78ad14d9 · binding/codex 04213fc1 · render/claude ba586e00 · render/codex 1339bda4 ·
+  README re-pinned by Atlas). Turn 7 (POINT 18 → cartan): 67 s, exit 0, ctx 58.1 %, refused/escalated none; RETURN 18 =
+  stamp-only re-stamp. WITNESS-READY: nothing has a fresh-session proof yet (`verified: none`). majkee gaveled binding homes 2026-10-07:
   <project>/.germline/agents/houston/{nablarva.md, binding.claude.md, binding.codex.md}; identity at
   ~/reposoma/.germline/agents/houston/identity.md (none promoted yet; stamps name them; UNASSIGNED now fails review).
   Claude render 49561fe2 (Atlas) and Codex render 187fab11 (cartan, re-based on two native routes: child TOML via
@@ -30,9 +32,7 @@ checkpoint: >
   4 after); last line shows auto_review but predates the turn; Cartan requested no auto-review decision. Runtime artifacts
   (<project>/.codex/agents/houston.toml · ~/.codex profile) are OUTSIDE the 7-file assignment — sole writer unnamed.
   Carriage: 6 carrier turns + 2 Atlas turns; 0 refusals; 1 recovery event; thread reset once at 81 %.
-in_flight: >
-  TUNNEL TURN 7 (carrier): tun ask → cartan, cycle 18 (re-stamp render/codex from final blobs; bodies unchanged). One Codex
-  turn; RETURN preserved as _bus/18.cartan.return.md.
+in_flight: none
 recovery_probe: |
   cd /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/houston && zsh -c 'eval "$(sed -n "/^### 1 /,/^### 2 /p" README.md | sed -n "/^...zsh/,/^...$/p" | sed "1d;\$d")"'   # check 1 (verify_cmd); checks 2–3 likewise from README §Checks
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ | tail -5 ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
@@ -51,9 +51,11 @@ holds: >
   design non-Cartan) + majkee's real audit before migration. One STATUS writer (oraculum). Nothing promotable: both
   binding stamps UNASSIGNED until majkee's binding-home line; raw/houston/ is a workbench that dies with the bed.
 next: >
-  cartan re-stamps render/codex (POINT 18) → Atlas re-pins its README row → package green on checks 1–3 → majkee's WITNESS
-  decisions (who witnesses the Claude render · test copy to .claude/agents/houston.md for P1–P4 · Codex runtime TOML writer).
+  majkee decides the WITNESS step (L16.8): (a) who witnesses the Claude render — a fresh non-Atlas Claude seat; (b) allow a
+  test copy of raw/houston/render/claude/houston.md → /home/hruzam/unikuklatrix/nablarva/.claude/agents/houston.md (untracked,
+  deleted after) for P1–P4 fresh-session proofs before promotion; (c) sole writer for the Codex runtime TOML/profile.
+  Then majkee spawns the real audit (D-c) from the accepted card.
 expected: >
-  Witness RETURN (P1–P4 for Claude) on the bus; Atlas's README/frontmatter cleanup slice; majkee spawns the real audit
-  from the accepted card; migration follows; then the gate's closing receipt (KEEP/AMEND/RETIRE from receipts).
+  Witness RETURN with P1–P4 results for Claude on the bus (carrier mints the cycle); majkee's audit RETURN classified
+  useful/overreaching/missing; then cartan's keeper migration (one commit); then the closing receipt and KEEP/AMEND/RETIRE.
 ```
