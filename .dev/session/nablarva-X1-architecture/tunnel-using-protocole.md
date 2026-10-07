@@ -16,7 +16,7 @@ that changes nothing below.
 
 | what | value |
 |---|---|
-| vault | `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json` |
+| vault | `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/tunnel.state.json` |
 | thread | `01a113e0-b774-7e32-926a-bc19f050ab2c` (cartan(coordinator), bound, TUI-born 2026-10-07 after context reset; previous `01a0f5a6-42f9-76e3-938e-c7d798a9dcc5` retired from the tunnel, kept server-side) |
 | head's cwd | `/home/hruzam/unikuklatrix/nablarva` |
 | head's policy | `gpt-6-sol` / effort `medium` · `workspaceWrite`, network off · approvals `on-request`, reviewer **`auto_review`** (Guardian answers escalations) — set 2026-10-07; tunnel-turn honouring unverified until the first turn (support log T11) |
@@ -29,7 +29,7 @@ An agent's every Bash call is a fresh shell. So **every tunnel command carries t
 the same call**:
 
 ```zsh
-export TUNNEL_CODEX_STATE=/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json; <command>
+export TUNNEL_CODEX_STATE=/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/tunnel.state.json; <command>
 ```
 
 Operator terminal: once per terminal — `tn-use /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted`.
@@ -68,7 +68,7 @@ ls "$TUNNEL_CODEX_STATE.lock" 2>/dev/null && echo "turn in flight — WAIT" || e
 ## Rule 4 — a turn
 
 ```zsh
-export TUNNEL_CODEX_STATE=/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json; \
+export TUNNEL_CODEX_STATE=/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/tunnel.state.json; \
 TUNNEL_CODEX_TIMEOUT=600 zsh ~/.config/zsh/ai/tunnel-codex.zsh ask "<call sign> · cycle NN · read /abs/path/_bus/NN.<sender>.point.md and RETURN to /abs/path/_bus/NN.cartan.return.md"
 ```
 
@@ -120,3 +120,5 @@ declines it and the escalated command (network, writes outside nablarva, possibl
 - Diagnosis/repair notes → `raw/tunnel-support.trajectory.2026-10-05.md` (trajectory(support)).
 - Design traffic → `_bus/` only. Never through the issue logs.
 - Help → majkee relays to trajectory(support).
+
+**2026-10-07 (carrier, X0 closed KEEP):** vault moved with the carrier to `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/tunnel.state.json` (same head thread 01a113e0; export the new path). Policy unchanged.
