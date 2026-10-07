@@ -13,7 +13,7 @@ gate: >
   unresolved defects, recovery events and carriage effort from existing receipts.
 participant_1: [oraculum, {brand: claude, model: fable, effort: high}, host: office hruzam-120922, role: cSharp · status_owner · carrier (numbering + tunnel transport, Bash) · first independent reviewer/user; keeps her nablarva gates (call sign oraculum(cSharp))]
 participant_2: [atlas-ui, {brand: claude, model: as-woken-by-majkee, effort: high}, host: office hruzam-120922, role: continuing challenger / co-designer · living session woken by majkee · writes only its named challenge files (call sign atlas-ui(harness))]
-participant_3: [cartan, {brand: codex, model: as-declared-by-cartan, effort: high}, host: office hruzam-120922, instrument: tunnel, role: coordinator of the Houston design · returns architecture dispositions (RETURN) · never writes STATUS (call sign cartan(coordinator))]
+participant_3: [cartan, {brand: codex, model: as-declared-by-cartan, effort: high}, host: office hruzam-120922, instrument: tunnel, role: coordinator of the Houston design — temporary, inside this bed, not a Houston card, no durable seat (RETURN 10 §4) · returns dispositions (RETURN) · authors binding/codex + render/codex · later the single keeper-migration writer · never writes STATUS (call sign cartan(coordinator))]
 participant_4: [majkee, human, host: office + home, role: opens the table (law 2.4) · wakes Atlas · consequential gavel · KEEP/AMEND/RETIRE (call sign majkee(gavel))]
 participant_5: [trajectory, {brand: claude, model: as-woken-by-majkee, effort: high}, host: office hruzam-120922, role: MUTE observer · tunnel IT support — repairs the transport in real time on request, collects issues for tunnel maintenance; no design voice, no bus turn, never STATUS (call sign trajectory(it))]
 status_owner: oraculum
@@ -139,19 +139,30 @@ your RETURN; only oraculum advances STATUS.
 - One STATUS writer: oraculum. The former STATUS transcription exception is withdrawn (cartan R2); cartan's
   RETURNs are input, never STATUS edits.
 - No seat opens the table; no seat enables itself (law 2.4). No second vault on the same threadId.
-- Atlas's Bash contract read-only this round; carrier's Bash = tunnel verbs + git only.
+- Write scopes are the assignment's (_bus/15 + 16): atlas-ui writes `raw/houston/**` (its rows) and had one untracked
+  probe file for B4 (deleted after majkee's observation); cartan writes `binding/codex.md`, `render/codex/houston.md`
+  and its RETURNs; otherwise Atlas's Bash is read-only and the carrier's Bash = tunnel verbs + git. No general flag/pulse
+  authority for Atlas (C7 closed).
+- **L16.6 intrinsic classes touched by this session** — ownership change (convergence → audit card, keeper migration ·
+  writer cartan), architect-authored consequential design (R4 and the Codex render, both cartan's), locks L14–L16 as
+  inputs. Each carries fresh eyes per L16.8: the witness rule (_bus/15 — Claude render needs a non-Atlas witness, design a
+  non-Cartan one) and majkee's real audit before the migration (D-c).
 - No germline edit, no runtime primitive, no deployment, no build gate opened by this session.
   Houston's build home/scopes are a separate explicit step (brief §First useful round).
 - `_provisional/` files are Cartan's; oraculum appends only to `carrier.resume`.
 - Keep Atlas↔oraculum traffic in files; every relayed tunnel word is a model turn.
 - No commit/push by any seat except the carrier's bookkeeping commits majkee already allowed; majkee gavels.
 
-## Acceptance evidence
+## Acceptance evidence (= the gate's checks, one gate)
 
-- `_provisional/atlas.challenge.2026-10-05.md` · cartan's RETURN(s) in `_bus/` · a frozen candidate revision
-  named in STATUS · oraculum's audit RETURN · one closing receipt naming: accepted revision, unresolved defects,
-  recovery events (timeouts, exit 61/50), duplicate/conflicting turns, carriage effort — then majkee's
-  KEEP / AMEND / RETIRE recorded in STATUS.
+- **Body matches L16 + record:** `raw/houston/README.md` checks 1–3 green for both renders (verify_cmd · six body-equality
+  lines · stamp currency); binding homes assigned (majkee's line) so stamps are canonical; witness of the Claude render
+  (non-Atlas) and of the design (non-Cartan) recorded as RETURNs.
+- **One real audit:** spawned by majkee (L16.4) from the accepted card; findings tagged mech/judge/cross; output classified
+  useful / overreaching / missing in a RETURN.
+- **No authority boundary crossed:** every RETURN's "refused commands" line; one STATUS writer; no Houston promotion.
+- **Discipline KEEP / AMEND / RETIRE:** one closing receipt from existing receipts — turns, driver minutes, recovery events,
+  duplicate/conflicting turns, carriage latency (incl. Atlas's 80-min watcher miss), refusals — then majkee's word in STATUS.
 
 ## References
 
@@ -178,7 +189,7 @@ Houston is lost while the trial runs. oraculum carries them on her rail; majkee 
 | U7 | **M3 documentation + architecture reconciliation** — Cartan's placement proposal is the input; oraculum owes a review | majkee explains phase; oraculum reviews | `raw/research.cartan.documentation-placement.2026-10-04.md` | later phase, majkee's call |
 | U8 | **ovitmugen-01 citations** of the old `nablarva-00` path (RUNBOOK:87, STATUS:30) — stub redirects; that head edits its own files | ovitmugen-01 head | stub `.dev/session/nablarva-00/README.md` | that head, when convenient |
 | U9 | **stridularium UI pass** — chatbot bundle → `stridularium-00-design` when majkee opens it; result file → `meshup/stridularium…/raw/app-description.ui.v0.<date>.md` | majkee | `_bus/01.oraculum.point.bundle.md` · wrapper `AGENTS.stridularium-design.md` | majkee's session |
-| U10 | **Project-design maintenance debt** — 6 stale session-03 links in `AGENTS.PROJECT-DESIGN.md` (Atlas's live probe) | convergence (Cartan) | RETURN 06 §2 · challenge 01 | convergence drives to 0; names the role |
+| U10 | ~~Project-design maintenance debt — 6 stale session-03 links~~ **DONE 2026-10-06** (cartan as convergence, RETURN 13 B; wrapper fe154101; commit 3219def) | — | `_bus/13.cartan.return.md` §B | none |
 | U11 | **Push + home carry** of today's commits (`95d4a9d` … this one) | majkee (flag L12) | git | `git push` on core, never rebase |
 | U12 | **Cartan re-audit** of the RETURN 04 repairs (`ccfb514`) | cartan, at convenience | `_bus/04.cartan.return.md` · `_bus/05.oraculum.point.md` | one ack |
 
