@@ -3,7 +3,7 @@ addendum: houston
 project: nablarva
 scope: project:nablarva — specialises `germline/agents/houston/identity.md` for this animal; may add paths, procedures and local method; may not override the identity or any lock in flag.md
 authority: locked L16 · /home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md @ 32b645f · full record nablarva@2ae8636:.dev/architect-now-uncanonical/{architecture-process,project-documentation,houston}.symmetry.2026-10-06.md
-state: CANDIDATE — review stage; project facts marked `inferred: atlas` await cartan's review (assignment _bus/15: "project facts reviewed by cartan via RETURN")
+state: CANDIDATE — review stage; project facts marked `inferred: atlas` REVIEWED by cartan — ACCEPT, no substantive residue (_bus/15.cartan.return.slice2.md §4.3 · _bus/17.cartan.return.md §4); the tags stay as provenance (who inferred), not as an open question
 home: this path (`.dev/session/nablarva-X0-restarted/raw/houston/project/nablarva.md`) is the WORKBENCH — deploy-inert, dies with the bed, read by nobody at runtime. Canonical home after majkee's promotion = `/home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md` (project-scope `.germline/`, beside `convergence.md` — germline README + record `houston` "lands where convergence.md lives"). Renders are composed from the canonical path and stamp it; a render stamped with a workbench path is not promotable.
 revision: unresolved — uncommitted at authoring
 authored: 2026-10-06 · atlas-ui(harness) · assignment _bus/15 + amendment _bus/16

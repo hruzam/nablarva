@@ -7,8 +7,8 @@ state: CANDIDATE — re-forge package, review stage; not promoted, not loaded by
 revision: unresolved — uncommitted at authoring; every render stamps this file's committed blob at promotion
 verified: none — no fresh-session behaviour proof yet (package README §Proofs)
 renders:
-  - claude · built from ../../../binding/claude.md (render/claude/houston.md)
-  - codex · built from ../../../binding/codex.md (render/codex/houston.md) — instruction document for an authorized fresh controller, not an auto-discovered agent
+  - claude · built from ../../../binding/claude.md (render/claude/houston.md) — child binding = `Agent` spawn from `<project>/.claude/agents/houston.md`; main-session binding = `claude --agent houston`
+  - codex · built from ../../../binding/codex.md (render/codex/houston.md) — child binding = custom-agent TOML `<project>/.codex/agents/houston.toml` via `spawn_agent`; main-session binding = named profile `codex --profile houston` (two native routes, majkee journal 2026-10-07 §1.1.1); the render is the composed body those runtime artifacts carry
 composition: identity → project addendum → vendor binding; a later layer specialises, never overrides an earlier one or a project lock; a disagreement is a finding
 authored: 2026-10-06 · atlas-ui(harness) · assignment _bus/15 + amendment _bus/16 · design cartan(coordinator) · gavel majkee
 ---
