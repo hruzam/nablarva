@@ -34,8 +34,7 @@ holds:
   - reposoma: cards committed a299583; identity committed (see checkpoint); archive/ drains by other readers uncommitted (majkee)
   - Atlas living session ended; spawn background = his card (7 spawn-notes) — oraculum's card §Waking Atlas carries the
     spawn skeleton + X0→X1 path translation
-  - cartan: RETIRE the 01a113e0 thread (76.7 %) — fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture
-    .cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
+  - cartan — RETIRE thread 01a113e0 (76.7 %); fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
 next: >
   majkee: (a) decide cartan thread reset before W-c; (b) open a sitting for check 3 — POINT 03 to cartan: .codex/agents/
   houston.toml + --profile houston embedding render/codex 9c0856f5, then one Codex `card: consult` probe run by majkee,
