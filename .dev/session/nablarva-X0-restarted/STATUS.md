@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-07 07:00 +02:00 (oraculum)"
+updated: "2026-10-07 07:20 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -28,9 +28,12 @@ checkpoint: >
   majkee 2026-10-07 07:00: audit ACCEPTED · (b) gate closes on four checks, migration after promotion · cartan commits the
   hunk as convergence · J2 separate · next session = oraculum main + atlas-ui spawn, cartan on tunnel; cold-start cards for
   oraculum + Atlas; new bed proposed nablarva-X1-architecture.
-in_flight: >
-  TUNNEL TURN 9 (carrier): tun ask → cartan, cycle 26 (apply + commit the audit's one-hunk wrapper diff as convergence;
-  rulings b/J2; regime note). Side effect: ONE commit on core by cartan (wrapper only) if git is not refused behind the tunnel.
+  07:20 — cartan RETURN 26: audit hunk applied + committed as convergence, nablarva@189efed (wrapper only, 3 insertions;
+  carrier verified: one file, applies C1, refused none; turn 9: 72 s, ctx 63.8 %). Atlas RETURN 25: verified: set per witness;
+  carrier checks on current bytes: check1=PASS check2=PASS check3=PASS → THIRD FREEZE.
+  Oraculum cold-start card: ~/reposoma/_cold-start/card/CS.nablarva-x0-houston-forge.oraculum.2026-10-07.md (Atlas appends
+  to its own sibling card — single-writer).
+in_flight: none
 recovery_probe: |
   cd /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/houston && zsh -c 'eval "$(sed -n "/^### 1 /,/^### 2 /p" README.md | sed -n "/^...zsh/,/^...$/p" | sed "1d;\$d")"'   # check 1 (verify_cmd); checks 2–3 likewise from README §Checks
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ | tail -5 ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
@@ -49,10 +52,10 @@ holds: >
   design non-Cartan) + majkee's real audit before migration. One STATUS writer (oraculum). Nothing promotable: both
   binding stamps UNASSIGNED until majkee's binding-home line; raw/houston/ is a workbench that dies with the bed.
 next: >
-  cartan RETURN 26 (hunk committed or refusal reported); Atlas RETURN 25 (verified: line, third freeze) + Atlas folds its
-  notes into its sibling card; oraculum's cold-start card at ~/reposoma/_cold-start/card/CS.nablarva-x0-houston-forge.
-  oraculum.2026-10-07.md; majkee rules KEEP/AMEND/RETIRE on raw/closing-receipt.draft; then router row out, bed pruned,
-  X1 opened via /runbook.
+  majkee: KEEP / AMEND / RETIRE on raw/closing-receipt.draft.2026-10-07.md (check 4) → carrier finalizes the receipt into
+  _bus/27.oraculum.receipt.md, writes the verdict into STATUS, removes the pulse.md router row, prunes the bed to a stub
+  README — EXCEPT raw/houston/ (only copy until promotion; moves to the X1 bed's raw/ or canonical homes first). Then /runbook
+  nablarva-X1-architecture (name = majkee's).
 expected: >
   majkee's GO on the audit + diff decision; verified: line updated; migration commit; _bus/NN closing receipt with the
   carriage numbers; majkee's KEEP/AMEND/RETIRE in STATUS; router row removed; bed pruned per runbook law.

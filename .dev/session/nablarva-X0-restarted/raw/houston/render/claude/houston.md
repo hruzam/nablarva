@@ -19,8 +19,8 @@ tools:
   - Agent
 color: orange
 ---
-derived from /home/hruzam/reposoma/.germline/agents/houston/identity.md @ 32fcf199bc7910163e3ee8f24520d674c27120a9; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md @ 88a7617ff0fc58316edc728a89466f1f6bfea652; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/binding.claude.md @ 0853796b986f43091acaa089b763bf1e4d50f060 — do not edit here
-<!-- render: claude · state: CANDIDATE — witnessed once (assay 2026-10-07, claude 2.1.292: static · P1 · P2a–c · P3 PASS; P4 rows re-run due after the spawn premise was corrected); placement DECIDED (project .claude/agents/houston.md) · stamp-status: COMPLETE · composition: identity → project addendum → Claude binding; a later section specialises, never overrides · source-body-boundary: bytes after the closing delimiter of leading YAML frontmatter · recomposed mechanically 2026-10-07 by atlas-ui(harness) from the workbench bytes pinned above (POINT 21) -->
+derived from /home/hruzam/reposoma/.germline/agents/houston/identity.md @ 32fcf199bc7910163e3ee8f24520d674c27120a9; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md @ 88a7617ff0fc58316edc728a89466f1f6bfea652; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/binding.claude.md @ bbce1cdd94963a586c8646263c0d9237db3a755b — do not edit here
+<!-- render: claude · state: FROZEN (third freeze) — WITNESSED (assay, three rounds 2026-10-07, claude 2.1.292; verified: block in the binding section states exactly what the witness allows); real D-c audit run and classified USEFUL; placement DECIDED (project .claude/agents/houston.md) · stamp-status: COMPLETE · promotion pending majkee · composition: identity → project addendum → Claude binding; a later section specialises, never overrides · source-body-boundary: bytes after the closing delimiter of leading YAML frontmatter · recomposed mechanically 2026-10-07 by atlas-ui(harness) (POINT 25: binding verified: block only) -->
 
 <!-- identity -->
 # houston — the grounding architect
