@@ -1,0 +1,43 @@
+# observations — atlas-ui(harness) · Houston forge · nablarva-X0-restarted
+
+`kind: raw observations (append-only; uncanonical) · author: atlas-ui(harness) · opened 2026-10-07 after the package froze (slice 7) · closes at the gate · feeds: raw.guides/germline-forge (post-session, majkee item 3) and the Atlas re-forge (build 3)`
+`rule: each entry = what was observed · evidence path · what it should become (guide line · check · nothing). Opinions tagged inferred: atlas.`
+
+## A · Workflow (RUNBOOK → bus → tunnel, three living seats + gavel)
+
+1. **Files carry the work; the wire carries one line.** The first Cartan thread filled to 81 % in 16 cycles mostly from RETURN bodies relayed over the tunnel; after the reset, "one line + a path" kept the second thread at ~56 % through five forge turns. Evidence: `raw/tunnel-turns/*.meta` usage tails; `_bus/17–18`. → guide line: *tunnel message = call sign · cycle · path · one-line ask; never a body.*
+2. **A watcher must baseline after the last known read.** My first bus watcher took its baseline in the same minute POINT 12 landed and treated it as pre-existing → 80 min latency. Fresh-baseline watchers afterwards caught every change within one poll. Evidence: slice 2 §C3. → check: *list → act → re-list, never list → wait.*
+3. **"A RETURN per slice under one cycle" needs a numbering rule.** Seven `15.atlas-ui.return.sliceN.md` files exist because POINT 15 allowed slice RETURNs but the bus contract has no suffix form. Worked, but the carrier's listing and my own re-reads paid for it. → bus GUIDE candidate: *the carrier mints a new cycle per slice, or the assignment names a `slice:` field in the header and the filename stays `NN.<seat>.return.md` + append.* (`inferred: atlas` — Oraculum's call.)
+4. **POINTs written over a moving disk go stale in minutes.** POINT 17 cited a binding blob and a "pending" ruling that had both changed ~30 min earlier; the fresh head read my card + README (current) and did the right thing. → guide line: *a POINT pins what the carrier verified at send time and says "README §Manifest wins"; readers resolve by the manifest, not by the POINT.*
+5. **Bytes before receipt happens, and is survivable** when every file carries its own hash: Cartan's re-base landed 30 min before his RETURN; I re-pinned to bytes and claimed nothing about his review until the receipt. → guide line: *a manifest describes bytes; a RETURN describes work; neither waits for the other, and the gate needs both.*
+6. **Carrier slot yielded by gavel works** for a second Claude seat on the same vault — the per-vault turn lock serialized us without incident (two Atlas turns, zero exit-61). Evidence: `turn.12`, `turn.15` meta. → protocol line already in `tunnel-using-protocole.md` Rule 2; keep "majkee yields explicitly".
+
+## B · Composition (germline identity → addendum → binding → render)
+
+7. **Hashes pass while bodies drift — and the opposite.** Day one: Cartan's render passed `verify_cmd` (every file was the byte it was reviewed as) while its identity/addendum sections differed from the corrected sources (check 2 FAIL) and its stamp pinned old blobs (check 3 STALE). Later: my frontmatter-only edits left his bodies identical (check 2 PASS) but his stamp stale (check 3). All three checks are needed; none substitutes for another. → guide: *three checks, three questions — unchanged bytes? equal bodies? current stamps?*
+8. **Frontmatter is part of the source; batch it.** A metadata-only edit after the partner recomposed cost one extra re-stamp turn. → guide line: *declare "final" in the RETURN that hands sources over; partners recompose once after "final".*
+9. **Compose derived files by pipeline, not by hand.** 442-line renders were produced byte-exact three times by `awk`/`printf`; hand-copying would have failed check 2 on the first stray space. The Write tool stays for authored files. → guide: *renders are generated; sources are written.* (Within an assigned write scope; my read-only-Bash doctrine is about git/deploy, not about which tool emits an authored artifact — recorded so the gate reviewer can object.)
+10. **Workbench ≠ canonical must be declared in the source, not assumed.** Until the `home:` line existed, a render could have been stamped with a `raw/` path and nobody would have caught it. → guide: *every source carries `home:`; a stamp with a workbench path is not promotable; `UNASSIGNED-…` fails review.*
+11. **Bindings need a home rule of their own.** Germline's README names identities and skills, not vendor bindings; both writers hit the same hole the same day. Gaveled: `<project>/.germline/agents/<slug>/binding.<vendor>.md`. → germline README: one line.
+12. **One identity, two bindings per vendor** (child vs main-session) is the invariant that made Claude and Codex answer the same four questions (entry · permissions · delegation authority · return destination). Claude: `Agent` spawn ↔ `--agent`; Codex: TOML+`spawn_agent` ↔ `--profile`. → guide table.
+13. **The render is not the runtime artifact.** Claude: a copy at `.claude/agents/<slug>.md`; Codex: a TOML (child) and a profile in `~/.codex/config.toml` (main session, local by design → manual per machine, outside `deploy.sh`). The 7-file assignment named no writer for these; they block every behavioural proof. → guide: *name the runtime-artifact writer in the build assignment, not after.*
+
+## C · Harness facts banked (dated; weather per Sella L8)
+
+14. **Claude Code: the `/agents` wizard is removed** (observed 2026-10-07 by majkee: "edit the files directly: .claude/agents/ · ~/.claude/agents/"). Proof of invocation identity is behavioural (`--agent <slug>` + "do you know this text?"). → `raw.card.claude-code.md` refresh.
+15. **Project agent wins over same-name global** — observed (B4): `claude --agent houston` in the project root loaded the project-scoped file. The temple card said so, expired; now re-verified. → card `verified:` bump.
+16. **Codex 0.160.0: `--profile`, no `--agent`;** custom agents in `.codex/agents/` configure spawned sessions only (cartan(.germline), journal 2026-10-07 §1.1.1). → `codex-builder-user` refresh.
+17. **A small-model probe does not hold a one-line contract** — the haiku placement probe explained itself instead of returning its line. Irrelevant to placement; relevant to anyone who wants a probe's reply machine-checked. → use `opus`/`sonnet` for contract-shaped probes, or check the system-prompt echo, not the reply.
+
+## D · Roles and gates
+
+18. **A fresh-eyes subagent is a pre-check, not a witness.** `assay` (spawned by me) gave PASS 15/15 and found one real tension in 57 s — valuable, and still not independent for L16.8. → guide: *pre-check with a subagent you spawn; witness with a seat you did not.*
+19. **The challenger who becomes the builder stops being a witness** — exactly as the coordination draft said; it held in practice: I did not accept my own render, and the design needed Cartan's RETURNs to move. → keep.
+20. **Convergence → Houston audit card** was decided by lock (L16.14) before the migration had a writer or an order; the addendum §4 now carries both, reviewed by the migration writer himself. → guide: *a keeper transfer names writer + order + prerequisites in the addendum of the seat that inherits.*
+
+## E · Open at the time of writing (not findings)
+
+- Witness for Claude P1–P4; test-copy permission; Codex runtime-artifact writer; real audit (D-c); keeper migration (D-b); promotion.
+- Whether the 7-file shape reduces to 5 (bindings as render sections) — majkee's rule: only if the binding files prove orphans. Evidence so far: both bindings were edited independently of their renders twice (home line; entry declaration) → **not orphans** in this build. (`inferred: atlas`)
+
+*(append below this line; do not rewrite entries above)*
