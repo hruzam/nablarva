@@ -28,7 +28,7 @@ checkpoint: >
   Earlier: R4 accepted (Atlas PROCEED), D-a 7 files, L16 landed 32b645f, round 1 by file, turns 1–4 as recorded in git history.
 in_flight: none
 recovery_probe: |
-  cd /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/houston && zsh -c "$(awk '/^### 1 /,/^### 2 /' README.md | sed -n '/^```zsh/,/^```/p' | sed '1d;$d')"   # check 1
+  cd /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/houston && zsh -c 'eval "$(sed -n "/^### 1 /,/^### 2 /p" README.md | sed -n "/^...zsh/,/^...$/p" | sed "1d;\$d")"'   # check 1 (verify_cmd); checks 2–3 likewise from README §Checks
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ | tail -5 ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
   Codex render stale (check 3 STALE STAMP ×2) and no fresh Cartan yet → wait for majkee's reset + card; do not send to the 81 % thread.
   fresh thread bound + card read → carrier POINT: recompose render/codex from corrected bytes; then witness → majkee's audit (D-c).
