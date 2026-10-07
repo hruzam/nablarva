@@ -14,12 +14,15 @@ gate: >
   KEEP / AMEND / RETIRE of the coordination discipline that carried the forge (carrier · tunnel · bus), with
   unresolved defects, recovery events and carriage effort from existing receipts.
 checkpoint: >
-  PACKAGE COMPOSITION COMPLETE (raw/houston/, 7 files + README). majkee gaveled binding homes 2026-10-07:
+  PACKAGE COMPOSITION IN FLUX (raw/houston/, 7 files + README; Atlas slice 4 editing on disk). majkee gaveled binding homes 2026-10-07:
   <project>/.germline/agents/houston/{nablarva.md, binding.claude.md, binding.codex.md}; identity at
   ~/reposoma/.germline/agents/houston/identity.md (none promoted yet; stamps name them; UNASSIGNED now fails review).
   Claude render 49561fe2 (Atlas) and Codex render 187fab11 (cartan, re-based on two native routes: child TOML via
-  spawn_agent · main session via --profile houston) both complete; carrier re-ran README checks 1–3 on the current bytes
-  (results recorded in the next rewrite line). RETURN 17 (fresh head, turn 6: 60 s, exit 0, ctx 56 %, refused none,
+  spawn_agent · main session via --profile houston) were complete at their RETURNs; since then Atlas's slice-4 edits
+  moved identity → 860e8bcb and addendum → 88a7617f. Carrier's checks on CURRENT bytes (04:00): check 1 FAIL (manifest
+  not re-pinned) · check 2 PASS · check 3 STALE STAMP ×4 (both renders) → Atlas re-pins README + recomposes Claude; cartan
+  recomposes Codex from Atlas's final bytes (his RETURN 17 §5 already says so). Nothing is witness-ready until checks 1–3 are
+  green again. RETURN 17 (fresh head, turn 6: 60 s, exit 0, ctx 56 %, refused none,
   escalated none): addendum facts ACCEPTED; README §Loading prose and identity frontmatter still carry superseded
   "initial-prompt only" wording (Atlas's cleanup pass). Cold-start cards: cartan (oraculum) + atlas-ui sibling, both read.
   T11 (reviewer auto_review honoured on tunnel turns): INCONCLUSIVE — the tunnel turn added no turn_context line (4 before,
@@ -45,9 +48,10 @@ holds: >
   design non-Cartan) + majkee's real audit before migration. One STATUS writer (oraculum). Nothing promotable: both
   binding stamps UNASSIGNED until majkee's binding-home line; raw/houston/ is a workbench that dies with the bed.
 next: >
-  majkee decides the WITNESS step (L16.8): (a) who witnesses the Claude render — a fresh non-Atlas Claude seat; (b) allow
-  a test copy of render/claude/houston.md to <project>/.claude/agents/houston.md (untracked, deleted after) so P1–P4
-  fresh-session proofs can run before promotion; (c) sole writer for the Codex runtime TOML/profile. Then the real audit (D-c).
+  Atlas finishes slice 4 (identity/README cleanup) and returns with re-pinned manifest + recomposed Claude render; carrier
+  then POINT 18 → cartan: recompose Codex from the final blobs. In parallel majkee decides the WITNESS step (L16.8): who
+  witnesses the Claude render (non-Atlas), whether a test copy to <project>/.claude/agents/houston.md is allowed for
+  P1–P4, and the sole writer for the Codex runtime TOML/profile.
 expected: >
   Witness RETURN (P1–P4 for Claude) on the bus; Atlas's README/frontmatter cleanup slice; majkee spawns the real audit
   from the accepted card; migration follows; then the gate's closing receipt (KEEP/AMEND/RETIRE from receipts).
