@@ -4,7 +4,7 @@
 `accepted design: HOUSTON-R4-2026-10-06 = _bus/10.cartan.return.md @ 45f71a484663a92b77a9373e70028292c5cd8b8b · conditions _bus/12 (B, extended by _bus/16) · assignment _bus/15 + _bus/16 (D-a = 7 files)`
 `authority: locked L16 · nablarva flag.md @ 32b645f · record nablarva@2ae8636:.dev/architect-now-uncanonical/`
 `writers: identity · addendum · binding/claude · render/claude · this README = atlas-ui(harness) · binding/codex · render/codex = cartan(coordinator) · Codex section below supplied by cartan via _bus/15.cartan.return.md §4`
-`state: CANDIDATE — COMPOSITION-COMPLETE on both vendors (2026-10-07): checks 1–2 PASS for both renders; check 3 PASS for Claude, STALE ×2 for Codex (re-stamp owed after the final frontmatter edits — bodies identical). verified: none for every file — no witnessed fresh-session proof exists; runtime artifacts (project .claude/agents file, Codex TOML + profile) not authored; promotion is majkee's named step.`
+`state: CANDIDATE — COMPOSITION-COMPLETE and FROZEN on both vendors (2026-10-07, after POINT 18): checks 1–3 PASS for all six files; both stamps complete. Any further source edit reopens composition: both renders recompose and re-stamp together. verified: none for every file — no witnessed fresh-session proof exists; runtime artifacts (project .claude/agents file, Codex TOML + profile) not authored; promotion is majkee's named step.`
 
 ## Layout and composition order
 
@@ -57,7 +57,7 @@ Promotion itself remains majkee's named step after the witnessed proofs (P1–P4
 | `binding/claude.md` | `78ad14d9bb6fdfdda875627892f2fa3038b1ec5f` | `home:` **ASSIGNED** (majkee gavel 2026-10-07) · `placement:` DECIDED (B4) · Entry declaration table (child vs main-session binding, germline invariance) · audit-as-subagent must declare `unqualified` (assay item 15) · P1 rewritten (`/agents` wizard removed) |
 | `binding/codex.md` | `04213fc1370eb3b600b4bfe05d7f9fbc42189e91` | cartan, re-base 2026-10-07 after journal §1.1.1–1.1.2: `canonical-home` set (gavel) · entry declaration child (project TOML + `spawn_agent`) vs main session (named profile) · four fields per route |
 | `render/claude/houston.md` | `ba586e006807a1ae8fdce36baab456535896700f` | recomposed mechanically 2026-10-07 (final sources) from the three blobs above; checks 2 + 3 PASS; **stamp COMPLETE** |
-| `render/codex/houston.md` | `187fab116040c188a282dbfcd06cec55e4f5ca64` | cartan, recomposed 2026-10-07 from identity `883ccede…` · addendum `b7e0ff57…` · binding `04213fc1…`; check 2 PASS ×3 (bodies identical to the final sources); **check 3 STALE ×2** — the identity/addendum frontmatter moved after his recomposition, so the stamp pins the previous blobs → **re-stamp owed by cartan** (bodies need no change) |
+| `render/codex/houston.md` | `1339bda4fc195ecd89c5dc903177e6ff5241eef0` | cartan, re-stamped 2026-10-07 (POINT 18) from identity `860e8bcb…` · addendum `88a7617f…` · binding `04213fc1…`; checks 2 + 3 PASS; **stamp COMPLETE** |
 | `nablarva/.dev/session/flag.md` (authority input) | `32b645f` (commit) | L16 as landed |
 
 ## Checks — run from this directory, zsh
@@ -65,7 +65,7 @@ Promotion itself remains majkee's named step after the witnessed proofs (P1–P4
 ### 1 · `verify_cmd` — input + render hashes (ordered; README excluded)
 
 ```zsh
-git hash-object -- germline/agents/houston/identity.md project/nablarva.md binding/claude.md binding/codex.md render/claude/houston.md render/codex/houston.md | diff -u <(printf '%s\n' 860e8bcb858ffea63ea2c4db02b77ced4a4ef2aa 88a7617ff0fc58316edc728a89466f1f6bfea652 78ad14d9bb6fdfdda875627892f2fa3038b1ec5f 04213fc1370eb3b600b4bfe05d7f9fbc42189e91 ba586e006807a1ae8fdce36baab456535896700f 187fab116040c188a282dbfcd06cec55e4f5ca64) -
+git hash-object -- germline/agents/houston/identity.md project/nablarva.md binding/claude.md binding/codex.md render/claude/houston.md render/codex/houston.md | diff -u <(printf '%s\n' 860e8bcb858ffea63ea2c4db02b77ced4a4ef2aa 88a7617ff0fc58316edc728a89466f1f6bfea652 78ad14d9bb6fdfdda875627892f2fa3038b1ec5f 04213fc1370eb3b600b4bfe05d7f9fbc42189e91 ba586e006807a1ae8fdce36baab456535896700f 1339bda4fc195ecd89c5dc903177e6ff5241eef0) -
 ```
 
 Exit 0 = every reviewed byte unchanged since this README. Any diff = review before use; a changed

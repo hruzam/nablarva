@@ -9,7 +9,7 @@ stamp-status: complete — all three canonical source paths and current blobs
 composition: identity → project addendum → Codex binding; specialization never overrides source authority
 source-body-boundary: bytes after the closing delimiter of leading YAML frontmatter
 ---
-derived from /home/hruzam/reposoma/.germline/agents/houston/identity.md @ 883ccede2dcff454976234baa6fceaea8bc297fd; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md @ b7e0ff5740f45312f9ba394cf3bc34c50a549ce8; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/binding.codex.md @ 04213fc1370eb3b600b4bfe05d7f9fbc42189e91 — do not edit here
+derived from /home/hruzam/reposoma/.germline/agents/houston/identity.md @ 860e8bcb858ffea63ea2c4db02b77ced4a4ef2aa; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md @ 88a7617ff0fc58316edc728a89466f1f6bfea652; /home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/binding.codex.md @ 04213fc1370eb3b600b4bfe05d7f9fbc42189e91 — do not edit here
 
 <!-- identity -->
 # houston — the grounding architect
