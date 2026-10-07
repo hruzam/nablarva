@@ -5,14 +5,12 @@ status: working-draft
 created: 2026-09-24
 source: /home/hruzam/ia-sync/.dev/session/runbook-upgrade-02-app/raw/draft.majkee.app-scheme.2026-09-23.md
 maintainer:
-  role: convergence
-  seat: Cartan
+  role: houston
+  card: audit
+  source: .germline/agents/houston/nablarva.md
+  bindings: [.germline/agents/houston/binding.claude.md, .germline/agents/houston/binding.codex.md]
   assigned-by: majkee
-  assigned: 2026-09-24
-  attachment:
-    runtime: codex
-    session-id: "01a0d3ef-c76a-7042-af3f-3b5fb383edd6"
-    host: hruzam-120922
+  assigned: 2026-10-07
 ---
 
 ## Document role
@@ -24,9 +22,11 @@ belong to [flag.md](flag.md), the standing machine contract to
 linked by [pulse.md](pulse.md). Design statements here remain proposals unless
 supported by a cited decision.
 
-The shared maintainer role is [convergence](../../.germline/agents/convergence.md).
-The frontmatter records its current assignment and runtime-specific session
-reference; the role file holds the maintenance instructions.
+The maintainer is Houston's audit card. Its [project addendum](../../.germline/agents/houston/nablarva.md)
+and [Claude](../../.germline/agents/houston/binding.claude.md) or
+[Codex](../../.germline/agents/houston/binding.codex.md) binding compose with the shared
+identity. The frontmatter records this keeper route; Majkee invokes the audit and
+commits its proposed mechanics diff.
 
 # 1. what is it
 
@@ -94,7 +94,7 @@ continued conversation, and compares both with exchanges between living peers.
 
 # VOLATILE
 
-*Current delivery shape · checked 2026-09-29 · maintained by Convergence.*
+*Current delivery shape · checked 2026-09-29 · maintained by Houston's audit card.*
 
 Until a separate UI versus integration into a specific IDE is decided, useful
 increments continue as **zsh-layer bricks**. Session-facing tools currently fit
@@ -106,7 +106,7 @@ The present route is authored ia-sync source → reviewed `bash ~/ia-sync/deploy
 → live `~/.config/zsh/`; host activation beyond copying uses the separate
 `install-pkgs` leg where needed. Command details and constraints live in the
 [delivery discipline](/home/hruzam/ia-sync/SYNC_DISCIPLINE.md) and the
-[maintainer's route](../../.germline/agents/convergence.md#interim-delivery-route).
+[interim delivery notes](../../.germline/agents/convergence.md#interim-delivery-route).
 These ia-sync delivery scripts are distinct from the `sync.sh` / `deploy.sh` /
 `SYNC_DISCIPLINE.md` retired by [L12](flag.md) — those lived in `nablarva.devenv`
 (see [repo unification](../../docs/repo-unification.2026-09-02.md)).

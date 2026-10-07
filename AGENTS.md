@@ -37,7 +37,7 @@ standing plan.md (abolished — survey receipt, 2026-08-02). `.dev/session/GLOSS
 
 ## Route by seat
 
-**Convergence — app-scheme maintainer (any runtime, agent or subagent):** at session entry, unless already settled, ask @majkee "Am I the master app-scheme maintainer?"; if yes, read `.germline/agents/convergence.md` and maintain its named target; `flag.md` retains authority over locks.
+**Houston — project-design keeper (audit card):** Majkee invokes the audit. Its project method lives at `.germline/agents/houston/nablarva.md`, with `binding.claude.md` and `binding.codex.md` beside it and the shared identity at `~/reposoma/.germline/agents/houston/identity.md`. The audit returns wrapper-mechanics changes for Majkee to commit; `flag.md` retains authority over locks.
 
 Four base seats, global roster — no domain seat pre-granted (earned, not assumed):
 - **architect** (@Houston-family) — plan + gates; owns `.dev/session/pulse.md`
