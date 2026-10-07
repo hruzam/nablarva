@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-07 05:15 +02:00 (oraculum)"
+updated: "2026-10-07 05:30 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -32,7 +32,9 @@ checkpoint: >
   4 after); last line shows auto_review but predates the turn; Cartan requested no auto-review decision. Runtime artifacts
   (<project>/.codex/agents/houston.toml · ~/.codex profile) are OUTSIDE the 7-file assignment — sole writer unnamed.
   Carriage: 6 carrier turns + 2 Atlas turns; 0 refusals; 1 recovery event; thread reset once at 81 %.
-in_flight: none
+in_flight: >
+  TUNNEL TURN 8 (carrier): tun ask → cartan, cycle 22 (RECOMPOSE Codex render from identity 32fcf199 · addendum 88a7617f
+  · binding 04213fc1). One Codex turn; RETURN preserved as _bus/22.cartan.return.md.
 recovery_probe: |
   cd /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/houston && zsh -c 'eval "$(sed -n "/^### 1 /,/^### 2 /p" README.md | sed -n "/^...zsh/,/^...$/p" | sed "1d;\$d")"'   # check 1 (verify_cmd); checks 2–3 likewise from README §Checks
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ | tail -5 ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
@@ -51,9 +53,8 @@ holds: >
   design non-Cartan) + majkee's real audit before migration. One STATUS writer (oraculum). Nothing promotable: both
   binding stamps UNASSIGNED until majkee's binding-home line; raw/houston/ is a workbench that dies with the bed.
 next: >
-  Atlas returns _bus/21.atlas-ui.return.md (binding premise corrected, P4 criteria rewritten, verified: set, recomposed,
-  README re-pinned); carrier runs checks 1–3; POINT 22 → cartan re-stamp Codex (identity touched); witness round 3 = P4-child
-  under the rewritten criterion (test copy re-placed by the witness); then majkee's real audit (D-c).
+  cartan recomposes Codex (RETURN 22) → Atlas re-pins one README row → package frozen → witness round 3 (assay: P4-child
+  rewritten · P4-child-2 · one prompt per row, no nudges; witness re-places + removes the test copy) → majkee's real audit (D-c).
 expected: >
   raw/houston-audit.<date>.probe.* exists only under the audit card; _bus/21.atlas-ui.return.md with new blobs; checks
   1–3 green again; witness round 2 PASS on P4 rows; then D-c audit, migration, closing receipt.
