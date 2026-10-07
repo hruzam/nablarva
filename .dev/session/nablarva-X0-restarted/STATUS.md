@@ -1,12 +1,12 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-07 --:-- +02:00 (oraculum; tunnel back up on a fresh head)"
+updated: "2026-10-07 04:00 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
-  /home/hruzam/unikuklatrix/nablarva · core · 8d88ff5 (raw/houston package + RETURN 15 slices preserved) · dirty: this
-  bed's RUNBOOK.md + STATUS.md (this refresh) · untracked: .majkee/ (operator's; tracked contents elsewhere). Vault gitignored.
+  /home/hruzam/unikuklatrix/nablarva · core · e966c66 · dirty: STATUS.md (this refresh) · Atlas slice-4 RETURN may be in
+  progress on disk (not yet preserved). Vault gitignored; lock clear.
 gate: >
   Majkee records GO on the re-forged Houston in this bed — body matches L16 and the triad
   (houston · architecture-process · project-documentation .symmetry.2026-10-06), one real audit has run with its
@@ -14,22 +14,19 @@ gate: >
   KEEP / AMEND / RETIRE of the coordination discipline that carried the forge (carrier · tunnel · bus), with
   unresolved defects, recovery events and carriage effort from existing receipts.
 checkpoint: >
-  CONSTRUCTION under _bus/15+16 — package raw/houston/ = 7 files + README on disk (preserved 8d88ff5). Atlas RETURN 15
-  slices 1–3: identity · addendum · binding/claude · Claude render composed mechanically · README with checks 1–3
-  (verify_cmd, six body-equality lines, stamp currency) · B4 DECIDED by majkee's observation 2026-10-07 (project agent
-  file wins; probe deleted) · entry declaration (child vs main-session) per majkee journal 2026-10-07 §1.1.1 (Codex
-  invariance) · assay pre-check of the Claude side PASS 15/15. Cartan RETURN 15: binding/codex + render/codex written;
-  **OBJECT** — nine addendum corrections + two identity findings (Atlas applied all in slice 2) → Codex render is now
-  STALE vs corrected sources (checks 2/3 fail for Codex by the checker's correct verdict); recomposition owed by cartan.
-  Binding canonical homes: proposal <project>/.germline/agents/houston/{binding.claude.md, binding.codex.md} beside
-  nablarva.md (journal 2026-10-07 §1.1.2, cartan(.germline)); majkee's one ruling line PENDING. Tunnel: 6 turns (4 carrier,
-  2 Atlas on yielded slots: turn.12, turn.15 11 min); Cartan thread **81 % ctx → RESET due (majkee's hand)**; cold-start
-  card for the fresh Cartan in preparation. Carrier ran README checks 1–3 2026-10-07 (results in this file's next rewrite).
-  Earlier: R4 accepted (Atlas PROCEED), D-a 7 files, L16 landed 32b645f, round 1 by file, turns 1–4 as recorded in git history.
-in_flight: >
-  TUNNEL TURN 6 (carrier; first to the FRESH head): tun ask → cartan 01a113e0…, cycle 17 (card + recompose Codex render +
-  entry route + addendum review). Side effects: one Codex turn; RETURN preserved as _bus/17.cartan.return.md; lock during turn.
-  Post-turn verification owed (trajectory T11): turn_context of the rollout shows approvals_reviewer auto_review or user.
+  PACKAGE COMPOSITION COMPLETE (raw/houston/, 7 files + README). majkee gaveled binding homes 2026-10-07:
+  <project>/.germline/agents/houston/{nablarva.md, binding.claude.md, binding.codex.md}; identity at
+  ~/reposoma/.germline/agents/houston/identity.md (none promoted yet; stamps name them; UNASSIGNED now fails review).
+  Claude render 49561fe2 (Atlas) and Codex render 187fab11 (cartan, re-based on two native routes: child TOML via
+  spawn_agent · main session via --profile houston) both complete; carrier re-ran README checks 1–3 on the current bytes
+  (results recorded in the next rewrite line). RETURN 17 (fresh head, turn 6: 60 s, exit 0, ctx 56 %, refused none,
+  escalated none): addendum facts ACCEPTED; README §Loading prose and identity frontmatter still carry superseded
+  "initial-prompt only" wording (Atlas's cleanup pass). Cold-start cards: cartan (oraculum) + atlas-ui sibling, both read.
+  T11 (reviewer auto_review honoured on tunnel turns): INCONCLUSIVE — the tunnel turn added no turn_context line (4 before,
+  4 after); last line shows auto_review but predates the turn; Cartan requested no auto-review decision. Runtime artifacts
+  (<project>/.codex/agents/houston.toml · ~/.codex profile) are OUTSIDE the 7-file assignment — sole writer unnamed.
+  Carriage: 6 carrier turns + 2 Atlas turns; 0 refusals; 1 recovery event; thread reset once at 81 %.
+in_flight: none
 recovery_probe: |
   cd /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/houston && zsh -c 'eval "$(sed -n "/^### 1 /,/^### 2 /p" README.md | sed -n "/^...zsh/,/^...$/p" | sed "1d;\$d")"'   # check 1 (verify_cmd); checks 2–3 likewise from README §Checks
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ | tail -5 ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
@@ -48,9 +45,10 @@ holds: >
   design non-Cartan) + majkee's real audit before migration. One STATUS writer (oraculum). Nothing promotable: both
   binding stamps UNASSIGNED until majkee's binding-home line; raw/houston/ is a workbench that dies with the bed.
 next: >
-  carrier turn 6 → fresh cartan with _bus/17 (card · recompose render/codex · entry route · addendum review); then verify
-  trajectory's turn_context line (auto_review vs user) and record it; majkee: binding-home ruling line; Atlas: sibling card.
+  majkee decides the WITNESS step (L16.8): (a) who witnesses the Claude render — a fresh non-Atlas Claude seat; (b) allow
+  a test copy of render/claude/houston.md to <project>/.claude/agents/houston.md (untracked, deleted after) so P1–P4
+  fresh-session proofs can run before promotion; (c) sole writer for the Codex runtime TOML/profile. Then the real audit (D-c).
 expected: >
-  _bus/17.cartan.return.md with the recomposed Codex render blob (README checks 1–3 green for Codex), entry-route rows,
-  addendum review; rollout turn_context shows approvals_reviewer=auto_review (else fall back to global config.toml line).
+  Witness RETURN (P1–P4 for Claude) on the bus; Atlas's README/frontmatter cleanup slice; majkee spawns the real audit
+  from the accepted card; migration follows; then the gate's closing receipt (KEEP/AMEND/RETIRE from receipts).
 ```
