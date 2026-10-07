@@ -1,7 +1,7 @@
 # STATUS — nablarva-X0-restarted
 
 ```yaml
-updated: "2026-10-07 04:50 +02:00 (oraculum)"
+updated: "2026-10-07 05:00 +02:00 (oraculum)"
 writer: oraculum · Claude
 host: hruzam-120922 (office)
 worktree: >
@@ -32,11 +32,7 @@ checkpoint: >
   4 after); last line shows auto_review but predates the turn; Cartan requested no auto-review decision. Runtime artifacts
   (<project>/.codex/agents/houston.toml · ~/.codex profile) are OUTSIDE the 7-file assignment — sole writer unnamed.
   Carriage: 6 carrier turns + 2 Atlas turns; 0 refusals; 1 recovery event; thread reset once at 81 %.
-in_flight: >
-  WITNESS ROUND (POINT 19): assay spawned for the static part (test copy at .claude/agents/houston.md, untracked; checks;
-  prompt rows); majkee runs two fresh sessions (P1, P2a–c, P4-main · P4-child); oraculum relays observed texts to the same
-  assay; assay judges, writes raw/witness.claude.2026-10-07.md, removes the copy. Side effects: one untracked file under
-  .claude/agents/ for the duration; no source edits.
+in_flight: none
 recovery_probe: |
   cd /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/raw/houston && zsh -c 'eval "$(sed -n "/^### 1 /,/^### 2 /p" README.md | sed -n "/^...zsh/,/^...$/p" | sed "1d;\$d")"'   # check 1 (verify_cmd); checks 2–3 likewise from README §Checks
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/_bus/ | tail -5 ; ls /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/tunnel.state.json.lock 2>/dev/null
@@ -55,9 +51,10 @@ holds: >
   design non-Cartan) + majkee's real audit before migration. One STATUS writer (oraculum). Nothing promotable: both
   binding stamps UNASSIGNED until majkee's binding-home line; raw/houston/ is a workbench that dies with the bed.
 next: >
-  majkee runs the interactive steps from README §Witness brief (two fresh terminals in the project root) and pastes the
-  observed replies; oraculum relays them to assay; assay returns _bus/19.assay.return.md + the witness file.
+  (1) majkee runs P4-main in a fresh `claude --agent houston` (card: audit · scope raw/houston only · one bounded field
+  reader) and reports where output landed; (2) atlas-ui answers POINT 21 (binding premise + P4 criteria + verified: line,
+  recompose, re-pin); (3) carrier POINT 22 → cartan re-stamp Codex; (4) re-witness P4 rows (assay); then majkee's real audit.
 expected: >
-  witness file with P1–P4 rows judged; test copy removed; on PASS atlas edits verified: + recomposes; then majkee spawns the
-  real audit (D-c); cartan's W-c runtime artifacts as a separate step.
+  raw/houston-audit.<date>.probe.* exists only under the audit card; _bus/21.atlas-ui.return.md with new blobs; checks
+  1–3 green again; witness round 2 PASS on P4 rows; then D-c audit, migration, closing receipt.
 ```
