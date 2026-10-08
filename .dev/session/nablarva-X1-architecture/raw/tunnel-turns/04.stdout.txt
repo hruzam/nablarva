@@ -1,0 +1,2 @@
+cartan(coordinator) · cycle 04 · RETURN `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/_bus/04.cartan.return.md` · proposal only; no refused or escalated commands, no commit.
+[usage: ctx=132315/258400 (51.2%) out=188]
