@@ -34,7 +34,14 @@ checkpoint: >
   Both UNCOMMITTED until the probe. Escalations behind the tunnel were honoured by auto_review (2 approved, 0 rejected).
   Cartan corrected the POINT — binding gives consult to the CHILD route only, the profile carries audit/sitting; probe
   recipe = RETURN 03 §4 (two fresh sessions, majkee-run).
-in_flight: check 3 probe (majkee) — artifacts uncommitted
+  Deploy route checked 2026-10-08 — assay vs SYNC_DISCIPLINE (A .codex/agents/houston.toml COMPLIANT, project-local; B hand
+  cp to ~/.codex NON-COMPLIANT as a standing deploy, L7-22 L51-53 L151-161) + epoch (--profile CURRENT since 0.134.0,
+  $CODEX_HOME/<name>.config.toml; project trust for nablarva already set). GAVELS majkee 2026-10-08 — Houston is
+  project-only (test here, decide promotion later); hand cp OK for the probe only, journaled host-local; germline model =
+  every agent body is a render of identity (reposoma) + project addendum/bindings, deployed like agents/skills.
+  POINT 04 sent to cartan — design note for a project-named profile (collision of a global-only slot with a project
+  render) on the ia-sync deploy route; proposal only.
+in_flight: check 3 probe (majkee, parallel, fresh threads) + cycle 04 design turn (cartan) — artifacts uncommitted
 recovery_probe: >
   cd raw/houston && run README checks 1–3 (sed-extract the zsh blocks under "### 1/2/3"): all PASS = package intact, proceed
   from next; any FAIL = stop, compare blobs to README §Manifest, report to majkee before any POINT. Also git status --short
@@ -53,9 +60,10 @@ holds:
   - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook deferred to a different sitting
   - cartan — RETIRE thread 01a113e0 (76.7 %); fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
 next: >
-  majkee runs the probe per _bus/03.cartan.return.md §4 — install the candidate as ~/.codex/houston.config.toml, (i) profile
-  session with card audit entry proof, (ii) fresh head spawn_agent houston with card consult on the PROJECT.yaml question;
-  keep both transcripts. Then oraculum spawns assay to witness (transcripts, effective permissions, exposed tools), and the
+  majkee runs the probe — journal line in journal.host-cleanup.md, cp candidate to ~/.codex/houston.config.toml, (i) profile
+  session with card audit entry proof quoting the first stamp line AND the last instruction sentence (tail canary), (ii)
+  fresh head spawns houston (agent_type or by name) with card consult on the PROJECT.yaml question; rollout paths to
+  oraculum. Cartan RETURN 04 goes to majkee for a gavel before any ia-sync implementer row. Then oraculum spawns assay to witness (transcripts, effective permissions, exposed tools), and the
   two artifacts are committed on a witnessed PASS. Checks 4–6 follow (architecture doc = Houston living session, majkee-invoked).
 expected: >
   two probe transcripts from majkee (profile entry proof + child consult finding); assay witness file in raw/; on PASS
