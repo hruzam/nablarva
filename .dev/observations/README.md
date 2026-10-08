@@ -35,3 +35,4 @@ Open, named: whether harvests get read is the same orphan risk one level up; the
 - `nablarva-X0-restarted.trajectory.2026-10-05.md` — tunnel support + issues log (T1–T11), carrier→IT note
 - `nablarva-X0-restarted.atlas-ui.2026-10-07.md` — 30 harness observations (watcher baseline, manifest-over-POINT, numbering gap, what broke) + note to carrier
 - `nablarva-X0-restarted.oraculum.2026-10-07.md` — carriage facts (11 turns, 0 refusals, 1 recovery, 1 reset), carrier faults, bought/cost, the skipped §4 manifest
+- `nablarva-X1-architecture.trajectory.2026-10-08.md` — tunnel support log, written live (T12→); handshake + state at X1 entry
