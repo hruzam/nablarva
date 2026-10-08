@@ -23,12 +23,18 @@ checkpoint: >
   keeper paragraph, Convergence entry question retired · wrapper frontmatter maintainer role houston/audit + source + bindings);
   carrier verified all three pointers resolve; convergence.md kept as interim-delivery-route doc; J2 untouched. Turn 1 on the
   moved vault: 161 s, refused none, cartan ctx 76.7 % (reset point near — plan before POINT 03).
-  2026-10-08 SITTING OPENED (oraculum reincarnated, Fable 5.1; SendMessage + TaskStop added to the oraculum body by majkee):
+  2026-10-08 SITTING OPENED (oraculum reincarnated, Opus 5.5 per majkee — briefly Fable 5.1 at restart; SendMessage + TaskStop added to the oraculum body by majkee):
   recovery_probe PASS in full by a stable atlas(harness) spawn — README checks 1–3 PASS (six blobs = §Manifest), .claude/
   clean, tunnel.state.json present + ignored (`!!`); two-turn resume verified (turn 2 recalled turn-1 facts unread) → regime
   for X1 = stable Atlas via SendMessage, re-spawn fresh when its transcript outweighs a cold start; no hand relay, no
   Atlas↔Cartan traffic. trajectory(support) handshake received; its vault committed d9d3602.
-in_flight: none
+  CHECK 3 DRAFTED 03:46 — vault rebound by majkee to fresh cartan thread 01a118ff (old 01a113e0 unbound, kept server-side).
+  RETURN 03 (166 s, ctx 38.3 %) — .codex/agents/houston.toml (name, description, developer_instructions) + raw/
+  houston.config.toml.candidate (developer_instructions only); carrier re-ran the byte proof, both parse to 9c0856f5.
+  Both UNCOMMITTED until the probe. Escalations behind the tunnel were honoured by auto_review (2 approved, 0 rejected).
+  Cartan corrected the POINT — binding gives consult to the CHILD route only, the profile carries audit/sitting; probe
+  recipe = RETURN 03 §4 (two fresh sessions, majkee-run).
+in_flight: check 3 probe (majkee) — artifacts uncommitted
 recovery_probe: >
   cd raw/houston && run README checks 1–3 (sed-extract the zsh blocks under "### 1/2/3"): all PASS = package intact, proceed
   from next; any FAIL = stop, compare blobs to README §Manifest, report to majkee before any POINT. Also git status --short
@@ -47,10 +53,11 @@ holds:
   - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook deferred to a different sitting
   - cartan — RETIRE thread 01a113e0 (76.7 %); fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
 next: >
-  majkee: wake the fresh Codex head, brief cartan from his X1 card, bind the new thread into the X1 vault (`open --enable`),
-  tell oraculum the thread id. Then oraculum writes POINT 03 to cartan: .codex/agents/houston.toml + --profile houston
-  embedding render/codex 9c0856f5, then one Codex `card: consult` probe run by majkee, witnessed by assay. Checks 4–6 follow (architecture doc = Houston living session, majkee-invoked).
+  majkee runs the probe per _bus/03.cartan.return.md §4 — install the candidate as ~/.codex/houston.config.toml, (i) profile
+  session with card audit entry proof, (ii) fresh head spawn_agent houston with card consult on the PROJECT.yaml question;
+  keep both transcripts. Then oraculum spawns assay to witness (transcripts, effective permissions, exposed tools), and the
+  two artifacts are committed on a witnessed PASS. Checks 4–6 follow (architecture doc = Houston living session, majkee-invoked).
 expected: >
-  _bus/03.cartan.return.md with the two runtime artifacts (uncommitted until probed); a witness row for the Codex consult;
-  STATUS check 3.
+  two probe transcripts from majkee (profile entry proof + child consult finding); assay witness file in raw/; on PASS
+  commit of .codex/agents/houston.toml (+ candidate as record) and STATUS CHECK 3 DONE.
 ```
