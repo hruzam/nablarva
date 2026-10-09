@@ -1,5 +1,7 @@
 name = "houston"
 description = "Nablarva Houston architecture consult and bounded audit probe; invoke only by the authorized head or majkee."
+model = "gpt-6.1-sol"
+model_reasoning_effort = "high"
 developer_instructions = '''
 ---
 name: houston

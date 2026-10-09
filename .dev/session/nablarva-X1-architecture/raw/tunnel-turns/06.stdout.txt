@@ -1,0 +1,2 @@
+Cycle 06 RETURN: [06.cartan.return.md](/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/_bus/06.cartan.return.md) — **REVISE**; both TOML keys are documented, and the local model catalog is recorded. No commands refused or escalated.
+[usage: ctx=85767/258400 (33.2%) out=114]
