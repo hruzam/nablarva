@@ -122,3 +122,12 @@ declines it and the escalated command (network, writes outside nablarva, possibl
 - Help → majkee relays to trajectory(support).
 
 **2026-10-07 (carrier, X0 closed KEEP):** vault moved with the carrier to `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/tunnel.state.json` (same head thread 01a113e0; export the new path). Policy unchanged.
+
+**2026-10-09 (majkee gavel, amends Rule 2):** a second driver — `atlas(harness)`, the stable atlas-ui spawn of
+oraculum(cSharp) — may run `ask`/`send` on this vault under its own call sign. Same law as the carrier: lock check
+before every turn (exit 61 = wait, never retry-loop) · explicit export in the same call · `TUNNEL_CODEX_TIMEOUT=1800`
+in the background · POINT file first, one line + path on the wire · RETURN saved to `_bus/` before any claim.
+Bus numbering: the next free `NN` in `_bus/` at the moment of writing (oraculum and atlas never write concurrently —
+atlas runs only inside an oraculum row). `resume`/`open`/`close` stay carrier-only; `open --enable` stays majkee's.
+Atlas reports every tunnel turn (NN · exit · ctx %) in its reply to oraculum, who keeps STATUS.
+
