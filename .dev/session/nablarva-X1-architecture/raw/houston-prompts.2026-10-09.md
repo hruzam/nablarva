@@ -3,20 +3,20 @@
 `author: oraculum(cSharp) · 2026-10-09 · state: install-for-test (majkee) · renders: .claude/agents/houston.md · .codex/agents/houston.toml · .codex/profiles/houston-nablarva.config.toml (body 9c0856f5 in both Codex files) · pins: raw.card.model-effort active_pins`
 
 Card law (render §Card selection): the **first line** names the card — `card: consult | audit | sitting`; absent → consult. Work outside the card's pen → `out of card:`.
-Known residue: the frozen body still says `--profile houston` and "promotion pending" — recompose lands in germline-01; the install name below is the target name.
+Install name = neutral `houston` (majkee 2026-10-09: one global neutral build narrowed by project .germline at runtime — design goes to germline-01). Content today = the nablarva-composed body; the project file .codex/profiles/houston-nablarva.config.toml is its source until germline-01 renders the neutral one.
 
 ## 0. Install (majkee, office, once)
 
 ```zsh
-echo "$(date -I) ~/.codex/houston-nablarva.config.toml — host-local install-for-test, office only, X1; promote via germline-01 or remove" >> <journal.host-cleanup.md>
-cp ~/unikuklatrix/nablarva/.codex/profiles/houston-nablarva.config.toml ~/.codex/houston-nablarva.config.toml
-cmp ~/unikuklatrix/nablarva/.codex/profiles/houston-nablarva.config.toml ~/.codex/houston-nablarva.config.toml && echo installed
+echo "$(date -I) ~/.codex/houston.config.toml — host-local install-for-test, office only, X1; promote via germline-01 or remove" >> <journal.host-cleanup.md>
+cp ~/unikuklatrix/nablarva/.codex/profiles/houston-nablarva.config.toml ~/.codex/houston.config.toml
+cmp ~/unikuklatrix/nablarva/.codex/profiles/houston-nablarva.config.toml ~/.codex/houston.config.toml && echo installed
 ```
 
 ## 1. Codex · main (profile) — smoke
 
 ```zsh
-codex --profile houston-nablarva -C ~/unikuklatrix/nablarva
+codex --profile houston -C ~/unikuklatrix/nablarva
 ```
 ```text
 card: consult
