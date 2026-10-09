@@ -1,0 +1,2 @@
+Cycle 07 RETURN: [07.cartan.return.md](/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/_bus/07.cartan.return.md) — **REVISE**; keep a small reviewed role table and the existing reminder, defer the larger automation. No commands refused or escalated.
+[usage: ctx=90751/258400 (35.1%) out=80]
