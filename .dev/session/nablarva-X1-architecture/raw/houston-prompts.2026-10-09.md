@@ -7,8 +7,9 @@ Install name = neutral `houston` (majkee 2026-10-09: one global neutral build na
 
 ## 0. Install (majkee, office, once)
 
+Journal entry in ~/ia-sync/journal.host-cleanup.md is written by a spawn per the file's own rules (newest first) — never an `echo >>`.
+
 ```zsh
-echo "$(date -I) ~/.codex/houston.config.toml — host-local install-for-test, office only, X1; promote via germline-01 or remove" >> <journal.host-cleanup.md>
 cp ~/unikuklatrix/nablarva/.codex/profiles/houston-nablarva.config.toml ~/.codex/houston.config.toml
 cmp ~/unikuklatrix/nablarva/.codex/profiles/houston-nablarva.config.toml ~/.codex/houston.config.toml && echo installed
 ```
