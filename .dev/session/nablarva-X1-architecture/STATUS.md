@@ -48,7 +48,13 @@ checkpoint: >
   assay witness PASS-WITH-FINDINGS (raw/witness.codex-child.2026-10-09.md) — render byte-identical incl. tail, consult card
   shape right, finding correct, follow-up via parent kept context; bounds cooperative only; child ran gpt-5.6-terra/medium
   inherited from the head. .codex/agents/houston.toml committed d936955. Profile route = majkee decision (open).
-in_flight: none — cartan thread 01a118ff free for turns (context compacted by majkee 2026-10-09; trajectory runs its own tunnel probe in another cwd); majkee closes his ad hoc probe threads
+  Cycles 06–07 — child pinned gpt-6.1-sol/high (majkee; listed in local 0.162 catalog, keys documented; e4ebf15); epoch
+  tier read (astra≈fable and luna≈haiku confirmed, sol≈opus and terra≈sonnet amended; no OpenAI floating alias); cartan
+  REVISE ×2 — one source → generated adapters with exact drift check, explicit reviewed pins per exact route, catalog check
+  optional, fixed effort equivalences and auto-update rejected, bubble/pane deferred.
+  GAVELS majkee 2026-10-09 — REVISE 06+07 accepted; CHECK 3 DONE (child route live + pinned + witnessed; main-session
+  profile route moves to the render sibling bed); meta-registry named render.settings.model-effort (form open).
+in_flight: none — cartan thread 01a118ff free (ctx 35 %); tunnel.preamble.md = trajectory hotfix, left uncommitted by majkee ruling
 recovery_probe: >
   cd raw/houston && run README checks 1–3 (sed-extract the zsh blocks under "### 1/2/3"): all PASS = package intact, proceed
   from next; any FAIL = stop, compare blobs to README §Manifest, report to majkee before any POINT. Also git status --short
@@ -67,11 +73,10 @@ holds:
   - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook deferred to a different sitting
   - cartan — RETIRE thread 01a113e0 (76.7 %); fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
 next: >
-  majkee decides (1) profile route — (a) child-only, drop RETURN 04, revise binding.codex (cards audit/sitting move to the
-  child, needs one full child-audit proof) or (b) keep RETURN 04 as the main-session route; (2) whether houston.toml pins
-  model/effort (today inherits the head, e.g. gpt-5.6-terra/medium) — a binding change either way. Then check 3 DONE and
-  checks 4–6 (architecture doc, Houston living session).
+  open the render sibling bed (name + home = majkee) — renderer from canonical germline homes (recompose; 9c0856f5 body
+  carries pre-promotion prose), Codex profile adapter houston-nablarva via deploy.sh, render.settings.model-effort with
+  active pins only (first row = houston child after an effective-runtime witness). X1 continues at check 4 (architecture
+  doc, Houston living session, majkee-invoked).
 expected: >
-  majkee's two rulings recorded here; on (a) a binding-revision row (new forge bed, never in place) + a child-audit probe;
-  on (b) RETURN 04 implemented by a Claude implementer on ia-sync with commit/push held for majkee.
+  majkee names the sibling bed; oraculum writes its RUNBOOK + first POINT for a stable atlas spawn; check 4 sitting set up.
 ```

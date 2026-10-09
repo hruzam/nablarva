@@ -70,6 +70,9 @@ flag L14–L16 (`.dev/session/flag.md`) · L16 record `nablarva@2ae8636:.dev/arc
 | U15 | reposoma commit of the three cold-start cards | majkee |
 | U18 | carrier Bash whitelist hook (agent-scoped PreToolUse on oraculum) — pointer only: `~/reposoma/_cold-start/card/CS.oraculum-bash-whitelist-hook.2026-10-07.md`, Atlas sitting outside this bed; once deployed the head here obeys denials by spawning | atlas-ui + majkee |
 | U17 | Houston audit card: one clause — `.dev/observations/` is process-reality evidence for the `RUNBOOK ≈ implementation` link (grounding only) — lands at the next forge bed, never in place | next forge head |
+| U19 | ia-sync Codex roster (7 TOMLs) pins gpt-5.6-sol/terra, base config gpt-5.6-terra/medium — refresh via render.settings.model-effort after witnessed probes (cycles 06–07) | majkee → render bed |
+| U20 | Cartan main identity lives in global + nablarva AGENTS.md; collides (as noise) with Houston developer_instructions — move to base config developer_instructions (journal 2026-10-07 case study) | majkee (harness change) |
+| U21 | louder review channel (notify-send from the reposoma cron) — first deferred item to return if the cron reminder alone goes unread | majkee |
 | U16 | ~~closure step "observations promote before prune"~~ **GAVELED + folded 2026-10-07** (runbook GUIDE §On gate closure; csharp §4 cross-ref) | — |
 
 ## What this session does not do
