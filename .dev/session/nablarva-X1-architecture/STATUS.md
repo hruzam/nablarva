@@ -54,6 +54,10 @@ checkpoint: >
   optional, fixed effort equivalences and auto-update rejected, bubble/pane deferred.
   GAVELS majkee 2026-10-09 — REVISE 06+07 accepted; CHECK 3 DONE (child route live + pinned + witnessed; main-session
   profile route moves to the render sibling bed); meta-registry named render.settings.model-effort (form open).
+  Card landed — majkee ruled one md file as ~/reposoma/raw.settings/raw.card.model-effort.md (raw.card glob keeps it
+  inside harness-stale; half_life_days 14; active_pins gavel-only, 2 rows). Built by stable atlas spawn (blob e7bb8a8f),
+  assay witness PASS-WITH-FINDINGS (pins equal both adapters; Codex facts equal RETURN 06/07; prices, AA scores and
+  aliases rest on epoch's cited URLs, not local evidence). Uncommitted in reposoma — majkee commits.
 in_flight: none — cartan thread 01a118ff free (ctx 35 %); tunnel.preamble.md = trajectory hotfix, left uncommitted by majkee ruling
 recovery_probe: >
   cd raw/houston && run README checks 1–3 (sed-extract the zsh blocks under "### 1/2/3"): all PASS = package intact, proceed
