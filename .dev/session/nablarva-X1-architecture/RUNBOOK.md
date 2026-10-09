@@ -77,4 +77,4 @@ flag L14–L16 (`.dev/session/flag.md`) · L16 record `nablarva@2ae8636:.dev/arc
 
 ## What this session does not do
 
-Build stridularium or termbrana code · touch L14/L15 · reopen the Houston body (frozen; changes = new forge bed) · run two-living-Claude-seat design rounds (X0 regime kept available, not used here) · promote anything to `~/ia-sync/` (reviewed merge only).
+Build stridularium or termbrana code · touch L14/L15 · reopen the Houston body (frozen; changes = new forge bed) · run two-living-Claude-seat design rounds (X0 regime kept available, not used here) · promote anything to `~/ia-sync/` (reviewed merge only). **Superseded for Houston by majkee's gavel 2026-10-10 (final fold; forge bed = ia-sync germline-01) — see STATUS.**

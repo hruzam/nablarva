@@ -1,7 +1,7 @@
 # nablarva-X1-architecture — STATUS
 
 ```yaml
-updated: "2026-10-09 (oraculum)"
+updated: "2026-10-10 (oraculum)"
 writer: oraculum
 host: hruzam-120922
 worktree: /home/hruzam/unikuklatrix/nablarva (core)
@@ -58,14 +58,24 @@ checkpoint: >
   inside harness-stale; half_life_days 14; active_pins gavel-only, 2 rows). Built by stable atlas spawn (blob e7bb8a8f),
   assay witness PASS-WITH-FINDINGS (pins equal both adapters; Codex facts equal RETURN 06/07; prices, AA scores and
   aliases rest on epoch's cited URLs, not local evidence). Uncommitted in reposoma — majkee commits.
+  FINAL FOLD 2026-10-10 (majkee gavel — "fold all to ~/ia-sync/{claude,codex}/agents and nablarva .germline, X0 working
+  versions to backup"). This gavel SUPERSEDES for Houston the RUNBOOK "does not do" lines (reopen the frozen body; promote
+  to ia-sync) and the forge-in-place hold; the forge bed is ~/ia-sync/.dev/session/germline-01-builds-and-deploy/.
+  Homes now — meaning once in germline (global ~/.germline/agents/houston/ identity + binding.claude/codex + cards/; project
+  nablarva/.germline/agents/houston/nablarva.md); thin global loader wrappers ~/ia-sync/claude/agents/houston.md,
+  codex/agents/houston.toml, codex/profiles/houston.config.toml; X0 renders + pre-fold sources archived in
+  raw/archive.x0-renders/. Checks 1 and 3 stay DONE as history of the composed regime; the gate's "canonical homes" now
+  means these homes. Atlas built it (cartan REVISE folded, _bus/09); janus REVISE (12 red flags) under repair — stamp
+  tokens + transcript-read PASS rule, Route lines, fresh-head rule, pointers, pins back to pending. Uncommitted in three
+  repos — commit order reposoma → nablarva → ia-sync after test GO.
 in_flight: none — cartan thread 01a118ff free (ctx 35 %); tunnel.preamble.md = trajectory hotfix, left uncommitted by majkee ruling
 recovery_probe: >
-  cd raw/houston && run README checks 1–3 (sed-extract the zsh blocks under "### 1/2/3"): all PASS = package intact, proceed
-  from next; any FAIL = stop, compare blobs to README §Manifest, report to majkee before any POINT. Also git status --short
-  .claude/ must be empty (no test copy left) and tunnel.state.json must exist in this bed and be untracked.
+  (since the 2026-10-10 fold) raw/houston/ README checks 1–3 still PASS = frozen X0 package intact (history, not the live
+  homes); .claude/ and .codex/ in nablarva hold NO houston wrapper (git status shows them moved into raw/archive.x0-renders/
+  until committed); tunnel.state.json exists in this bed and is ignored. Live Houston = ~/.germline + ia-sync wrappers.
 holds:
   - tunnel: table open since X0 (majkee); vault at this bed's path
-  - raw/houston/ = workbench; canonical bytes now at homes — edits happen in a new forge bed, never in place
+  - raw/houston/ = frozen X0 package (history); Houston edits happen in the germline-01 forge bed (majkee 2026-10-10)
   - reposoma: cards committed a299583; identity committed (see checkpoint); archive/ drains by other readers uncommitted (majkee)
   - Atlas = stable spawn (SendMessage); background = his card (7 spawn-notes) + oraculum's card §Waking Atlas; one named
     instance per sitting, sonnet for verify/re-pin, opus for a recomposing source edit
@@ -77,10 +87,10 @@ holds:
   - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook deferred to a different sitting
   - cartan — RETIRE thread 01a113e0 (76.7 %); fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
 next: >
-  open the render sibling bed (name + home = majkee) — renderer from canonical germline homes (recompose; 9c0856f5 body
-  carries pre-promotion prose), Codex profile adapter houston-nablarva via deploy.sh, render.settings.model-effort with
-  active pins only (first row = houston child after an effective-runtime witness). X1 continues at check 4 (architecture
-  doc, Houston living session, majkee-invoked).
+  atlas + delta finish the janus fix rows; assay witnesses the fold (no duplicate lines, loader paths resolve, stamp tokens,
+  pointers clean); majkee runs ~/ia-sync/.dev/session/germline-01-builds-and-deploy/raw/TEST-INSTALL.houston.2026-10-10.md
+  from FRESH heads; assay checks transcripts; GO → commits reposoma → nablarva → ia-sync. Open for majkee: name sweep for
+  the global `houston` (flight/vara/oraculum call it phase-planner; codex roster lists 7). Then check 4 (sitting).
 expected: >
-  majkee names the sibling bed; oraculum writes its RUNBOOK + first POINT for a stable atlas spawn; check 4 sitting set up.
+  witness file for the fold; test transcripts per row with tokens + Read evidence + effective model/effort; majkee GO.
 ```
