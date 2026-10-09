@@ -1,7 +1,7 @@
 # nablarva-X1-architecture — STATUS
 
 ```yaml
-updated: "2026-10-08 (oraculum)"
+updated: "2026-10-09 (oraculum)"
 writer: oraculum
 host: hruzam-120922
 worktree: /home/hruzam/unikuklatrix/nablarva (core)
@@ -41,7 +41,14 @@ checkpoint: >
   every agent body is a render of identity (reposoma) + project addendum/bindings, deployed like agents/skills.
   POINT 04 sent to cartan — design note for a project-named profile (collision of a global-only slot with a project
   render) on the ia-sync deploy route; proposal only.
-in_flight: check 3 probe (majkee, parallel, fresh threads) + cycle 04 design turn (cartan) — artifacts uncommitted
+  RETURN 04 (houston-nablarva profile + deploy_codex delta) HELD after majkee's challenge; RETURN 05 — no native
+  main-session selector for a project agent TOML on 0.161 (codex --agent unknown; --profile reads only CODEX_HOME); the
+  profile attempt 01a11fae came up as Cartan (file not installed; AGENTS.md carries the Cartan identity into every session).
+  CHECK 3 CHILD ROUTE PASS 2026-10-09 — majkee probe (head 01a11f8d, child 01a11f95, cli 0.162.0) per raw/probe-brief…;
+  assay witness PASS-WITH-FINDINGS (raw/witness.codex-child.2026-10-09.md) — render byte-identical incl. tail, consult card
+  shape right, finding correct, follow-up via parent kept context; bounds cooperative only; child ran gpt-5.6-terra/medium
+  inherited from the head. .codex/agents/houston.toml committed d936955. Profile route = majkee decision (open).
+in_flight: none — cartan thread on loan to trajectory(support) for tunnel tuning (no tunnel turns until majkee returns it)
 recovery_probe: >
   cd raw/houston && run README checks 1–3 (sed-extract the zsh blocks under "### 1/2/3"): all PASS = package intact, proceed
   from next; any FAIL = stop, compare blobs to README §Manifest, report to majkee before any POINT. Also git status --short
@@ -60,12 +67,11 @@ holds:
   - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook deferred to a different sitting
   - cartan — RETIRE thread 01a113e0 (76.7 %); fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
 next: >
-  majkee runs the probe — journal line in journal.host-cleanup.md, cp candidate to ~/.codex/houston.config.toml, (i) profile
-  session with card audit entry proof quoting the first stamp line AND the last instruction sentence (tail canary), (ii)
-  fresh head spawns houston (agent_type or by name) with card consult on the PROJECT.yaml question; rollout paths to
-  oraculum. Cartan RETURN 04 goes to majkee for a gavel before any ia-sync implementer row. Then oraculum spawns assay to witness (transcripts, effective permissions, exposed tools), and the
-  two artifacts are committed on a witnessed PASS. Checks 4–6 follow (architecture doc = Houston living session, majkee-invoked).
+  majkee decides (1) profile route — (a) child-only, drop RETURN 04, revise binding.codex (cards audit/sitting move to the
+  child, needs one full child-audit proof) or (b) keep RETURN 04 as the main-session route; (2) whether houston.toml pins
+  model/effort (today inherits the head, e.g. gpt-5.6-terra/medium) — a binding change either way. Then check 3 DONE and
+  checks 4–6 (architecture doc, Houston living session).
 expected: >
-  two probe transcripts from majkee (profile entry proof + child consult finding); assay witness file in raw/; on PASS
-  commit of .codex/agents/houston.toml (+ candidate as record) and STATUS CHECK 3 DONE.
+  majkee's two rulings recorded here; on (a) a binding-revision row (new forge bed, never in place) + a child-audit probe;
+  on (b) RETURN 04 implemented by a Claude implementer on ia-sync with commit/push held for majkee.
 ```
