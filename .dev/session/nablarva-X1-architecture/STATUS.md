@@ -48,7 +48,7 @@ checkpoint: >
   assay witness PASS-WITH-FINDINGS (raw/witness.codex-child.2026-10-09.md) — render byte-identical incl. tail, consult card
   shape right, finding correct, follow-up via parent kept context; bounds cooperative only; child ran gpt-5.6-terra/medium
   inherited from the head. .codex/agents/houston.toml committed d936955. Profile route = majkee decision (open).
-in_flight: none — cartan thread on loan to trajectory(support) for tunnel tuning (no tunnel turns until majkee returns it)
+in_flight: none — cartan thread 01a118ff free for turns (context compacted by majkee 2026-10-09; trajectory runs its own tunnel probe in another cwd); majkee closes his ad hoc probe threads
 recovery_probe: >
   cd raw/houston && run README checks 1–3 (sed-extract the zsh blocks under "### 1/2/3"): all PASS = package intact, proceed
   from next; any FAIL = stop, compare blobs to README §Manifest, report to majkee before any POINT. Also git status --short
