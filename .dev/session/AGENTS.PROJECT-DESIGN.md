@@ -8,7 +8,7 @@ maintainer:
   role: houston
   card: audit
   source: .germline/agents/houston/nablarva.md
-  bindings: [.germline/agents/houston/binding.claude.md, .germline/agents/houston/binding.codex.md]
+  bindings: [~/.germline/agents/houston/binding.claude.md, ~/.germline/agents/houston/binding.codex.md]
   assigned-by: majkee
   assigned: 2026-10-07
 ---
@@ -23,8 +23,8 @@ linked by [pulse.md](pulse.md). Design statements here remain proposals unless
 supported by a cited decision.
 
 The maintainer is Houston's audit card. Its [project addendum](../../.germline/agents/houston/nablarva.md)
-and [Claude](../../.germline/agents/houston/binding.claude.md) or
-[Codex](../../.germline/agents/houston/binding.codex.md) binding compose with the shared
+and [Claude](~/.germline/agents/houston/binding.claude.md) or
+[Codex](~/.germline/agents/houston/binding.codex.md) binding compose with the shared
 identity. The frontmatter records this keeper route; Majkee invokes the audit and
 commits its proposed mechanics diff.
 

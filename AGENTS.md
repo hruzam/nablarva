@@ -37,7 +37,7 @@ standing plan.md (abolished — survey receipt, 2026-08-02). `.dev/session/GLOSS
 
 ## Route by seat
 
-**Houston — project-design keeper (audit card):** Majkee invokes the audit. Its project method lives at `.germline/agents/houston/nablarva.md`, with `binding.claude.md` and `binding.codex.md` beside it and the shared identity at `~/reposoma/.germline/agents/houston/identity.md`. The audit returns wrapper-mechanics changes for Majkee to commit; `flag.md` retains authority over locks.
+**Houston — project-design keeper (audit card):** Majkee invokes the audit. Its project method lives at `.germline/agents/houston/nablarva.md`, with the vendor bindings `~/.germline/agents/houston/binding.claude.md` and `binding.codex.md` and the shared identity at `~/.germline/agents/houston/identity.md`; the audit card is `~/.germline/agents/houston/cards/audit.md`. The audit returns wrapper-mechanics changes for Majkee to commit; `flag.md` retains authority over locks.
 
 Four base seats, global roster — no domain seat pre-granted (earned, not assumed):
 - **architect** (@Houston-family) — plan + gates; owns `.dev/session/pulse.md`

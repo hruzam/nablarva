@@ -3,8 +3,10 @@ addendum: houston
 project: nablarva
 scope: project:nablarva — specialises `germline/agents/houston/identity.md` for this animal; may add paths, procedures and local method; may not override the identity or any lock in flag.md
 authority: locked L16 · /home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md @ 32b645f · full record nablarva@2ae8636:.dev/architect-now-uncanonical/{architecture-process,project-documentation,houston}.symmetry.2026-10-06.md
-state: CANDIDATE — review stage; project facts marked `inferred: atlas` REVIEWED by cartan — ACCEPT, no substantive residue (_bus/15.cartan.return.slice2.md §4.3 · _bus/17.cartan.return.md §4); the tags stay as provenance (who inferred), not as an open question
-home: this path (`.dev/session/nablarva-X0-restarted/raw/houston/project/nablarva.md`) is the WORKBENCH — deploy-inert, dies with the bed, read by nobody at runtime. Canonical home after majkee's promotion = `/home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md` (project-scope `.germline/`, beside `convergence.md` — germline README + record `houston` "lands where convergence.md lives"). Renders are composed from the canonical path and stamp it; a render stamped with a workbench path is not promotable.
+state: "CANDIDATE — review stage; project facts marked `inferred: atlas` REVIEWED by cartan — ACCEPT, no substantive residue (_bus/15.cartan.return.slice2.md §4.3 · _bus/17.cartan.return.md §4); the tags stay as provenance (who inferred), not as an open question"
+home: "`/home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md` — the only Houston file in this project. Read at runtime by the global wrappers' LOADER (walk-up from the session cwd); no project wrapper and no project binding exist (final fold 2026-10-10, majkee gavel; pre-fold copy at .dev/session/nablarva-X1-architecture/raw/archive.x0-renders/nablarva.md, commit-pin at majkee's commit)"
+updated: 2026-10-10
+stamp: 2ebbb49b
 revision: unresolved — uncommitted at authoring
 authored: 2026-10-06 · atlas-ui(harness) · assignment _bus/15 + amendment _bus/16
 ---
@@ -49,13 +51,20 @@ pointers into prunable session folders are commit-pinned (`nablarva@sha:path`).
 - **Earned mechanisms** (thresholds are proposals under `L16.7`, record `architecture-process`
   §9): none is in force. I report telemetry; I do not install machinery.
 
-## 4. Keeper — current state and the pending migration (`locked: L16.14`; writer ruled D-b)
+## 4. Keeper — current state (`locked: L16.14`)
 
-- **Today:** the wrapper's maintainer is the ad hoc seat **convergence** (`.germline/agents/convergence.md`),
-  currently seated by Cartan (wrapper frontmatter `maintainer: role: convergence · seat: Cartan`).
-  Until the migration lands, convergence keeps the wrapper and I do **not** touch it — my audit
-  card returns findings **and a proposed mechanics diff** (its own card's pen, L16.14) but never
-  applies that diff to the wrapper.
+- **Today (verified 2026-10-10):** the wrapper's keeper is my **audit card** — migrated at
+  `nablarva@31bd51e`; `PROJECT.yaml` `project-design-maintainer:` and the wrapper frontmatter
+  (`maintainer: role: houston · card: audit`) point at this addendum. My audit returns findings
+  **and a proposed mechanics diff**; majkee commits it; I never apply it to the wrapper.
+- **Convergence** (`.germline/agents/convergence.md`) is retired as keeper; the file stays as
+  history. The migration plan below is **history**, kept for provenance (the pre-fold copy is in
+  `.dev/session/nablarva-X1-architecture/raw/archive.x0-renders/nablarva.md`); it is not a live
+  procedure. Known residue: the wrapper frontmatter `bindings:` and `PROJECT.yaml:16`'s comment
+  still say the bindings sit beside this addendum — they now sit beside the global identity
+  (a `mech` finding for the next audit).
+
+*History — the migration as planned before `31bd51e`:*
 - **Migration (one writer, one scoped commit):** writer = **cartan** (`_bus/15` D-b, from
   RETURN 13 A); carrier commits under his authorship. **Prerequisites in `_bus/15`'s order:**
   composition (hashes + body equality) → fresh-runtime proof per vendor → **majkee's real audit
@@ -94,12 +103,20 @@ pointers into prunable session folders are commit-pinned (`nablarva@sha:path`).
   the machine surface. My findings use the project's terms (animal · organ · wrapper) in prose
   and exact disk case in paths.
 - **Mail:** never cite `_mail/*/inbox/` in a durable artifact.
+- **Entry here** (moved from the X0 bindings at the fold): start main sessions in the project
+  root `/home/hruzam/unikuklatrix/nablarva` (`claude --agent houston` · `codex --profile houston
+  -C /home/hruzam/unikuklatrix/nablarva`), so the saddle and this addendum load. On Codex the
+  delegated route follows the current local hierarchy when Cartan is the authorized head — local
+  policy, not a vendor requirement; neither route makes me the invoking bed's cSharp or keeper.
+- **No project wrappers:** `.claude/agents/houston.md` and `.codex/agents/houston.toml` must not
+  exist here — a project-scope wrapper would override the global one and skip the germline load.
+  Their X0 renders are archived in `.dev/session/nablarva-X1-architecture/raw/archive.x0-renders/`.
 
 ## 6. First-audit seed (`said: symmetry`, record `houston` §Re-forge — candidates @3547e3c, not findings)
 
-Verify each; distinguish age from error. Known already: the `PROJECT.yaml` `.shared/…` item is
-**stale** — `PROJECT.yaml:16` points at `.germline/agents/convergence.md` since `9421376`
-(a good first `mech`: flagged-by-age, verified-fixed). The remaining items — session-03 pulse
+Verify each; distinguish age from error. Known already: the `PROJECT.yaml` `.shared/…` item was
+**stale** at the re-forge; resolved — `PROJECT.yaml:16` pointed at `convergence.md` from
+`9421376` and names this addendum since `31bd51e` (history, not a current finding). The remaining items — session-03 pulse
 row · where `nablarva-01-design`'s GO'd design landed · L12 vs VOLATILE route naming · absolute
 host paths in a wrapper "for all runtimes" · `.majkee/` outside L12's seal — are the real
 audit's to verify. The six stale session-03 links in the wrapper (RETURN 07) were **repaired
