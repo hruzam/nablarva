@@ -6,8 +6,8 @@ authority: locked L16 · /home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md
 state: "CANDIDATE — review stage; project facts marked `inferred: atlas` REVIEWED by cartan — ACCEPT, no substantive residue (_bus/15.cartan.return.slice2.md §4.3 · _bus/17.cartan.return.md §4); the tags stay as provenance (who inferred), not as an open question"
 home: "`/home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md` — the only Houston file in this project. Read at runtime by the global wrappers' LOADER (walk-up from the session cwd); no project wrapper and no project binding exist (final fold 2026-10-10, majkee gavel; pre-fold copy at .dev/session/nablarva-X1-architecture/raw/archive.x0-renders/nablarva.md, commit-pin at majkee's commit)"
 updated: 2026-10-10
-stamp: 2ebbb49b
-revision: unresolved — uncommitted at authoring
+stamp: a6498a47
+revision: b57e199
 authored: 2026-10-06 · atlas-ui(harness) · assignment _bus/15 + amendment _bus/16
 ---
 # houston · nablarva addendum
@@ -60,9 +60,9 @@ pointers into prunable session folders are commit-pinned (`nablarva@sha:path`).
 - **Convergence** (`.germline/agents/convergence.md`) is retired as keeper; the file stays as
   history. The migration plan below is **history**, kept for provenance (the pre-fold copy is in
   `.dev/session/nablarva-X1-architecture/raw/archive.x0-renders/nablarva.md`); it is not a live
-  procedure. Known residue: the wrapper frontmatter `bindings:` and `PROJECT.yaml:16`'s comment
-  still say the bindings sit beside this addendum — they now sit beside the global identity
-  (a `mech` finding for the next audit).
+  procedure. The old residue (pointers saying the bindings sit beside this addendum) is
+  resolved at `nablarva@b57e199`: `AGENTS.md:40`, `PROJECT.yaml:16` and the wrapper's
+  `bindings:` now point at `~/.germline/agents/houston/`.
 
 *History — the migration as planned before `31bd51e`:*
 - **Migration (one writer, one scoped commit):** writer = **cartan** (`_bus/15` D-b, from
