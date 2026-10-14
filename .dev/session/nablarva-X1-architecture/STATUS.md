@@ -1,7 +1,7 @@
 # nablarva-X1-architecture — STATUS
 
 ```yaml
-updated: "2026-10-10 (oraculum)"
+updated: "2026-10-13 (oraculum)"
 writer: oraculum
 host: hruzam-120922
 worktree: /home/hruzam/unikuklatrix/nablarva (core)
@@ -68,7 +68,7 @@ checkpoint: >
   means these homes. Atlas built it (cartan REVISE folded, _bus/09); janus REVISE (12 red flags) under repair — stamp
   tokens + transcript-read PASS rule, Route lines, fresh-head rule, pointers, pins back to pending. Uncommitted in three
   repos — commit order reposoma → nablarva → ia-sync after test GO.
-in_flight: none — cartan thread 01a118ff free (ctx 35 %); tunnel.preamble.md = trajectory hotfix, left uncommitted by majkee ruling
+in_flight: none — cartan thread 01a118ff ctx 83.8 % after cycle 11 (fresh thread before next big round, majkee's call); tunnel.preamble.md = trajectory hotfix, uncommitted by majkee ruling
 recovery_probe: >
   (since the 2026-10-10 fold) raw/houston/ README checks 1–3 still PASS = frozen X0 package intact (history, not the live
   homes); .claude/ and .codex/ in nablarva hold NO houston wrapper (git status shows them moved into raw/archive.x0-renders/
@@ -84,13 +84,10 @@ holds:
   - carrier defect log for X1 = raw/tunnel-issues.2026-10-08.md (created on first defect); support vault =
     .dev/observations/nablarva-X1-architecture.trajectory.2026-10-08.md (T12→); on the first X1 turn paste turn_context
     (approval_policy, approvals_reviewer, effort) of the new thread into a note for trajectory
-  - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook deferred to a different sitting
+  - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook — reopened 2026-10-13 (tunnel option A live; subagent exemption pending)
   - cartan — RETIRE thread 01a113e0 (76.7 %); fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
 next: >
-  atlas + delta finish the janus fix rows; assay witnesses the fold (no duplicate lines, loader paths resolve, stamp tokens,
-  pointers clean); majkee runs ~/ia-sync/.dev/session/germline-01-builds-and-deploy/raw/TEST-INSTALL.houston.2026-10-10.md
-  from FRESH heads; assay checks transcripts; GO → commits reposoma → nablarva → ia-sync. Open for majkee: name sweep for
-  the global `houston` (flight/vara/oraculum call it phase-planner; codex roster lists 7). Then check 4 (sitting).
+  Houston install test GO (majkee 2026-10-13; witness ia-sync germline-01 raw/witness.install-test.assay.2026-10-13.md; rows C1–C4 X1 X2 + re-test R1 R2 PASS); pins active (reposoma raw.card.model-effort.md, uncommitted); germline edit (consult on main by explicit line, verdict scale, out-of-card write rule) deployed; addendum committed 6f3204d. Track (majkee 2026-10-13) — Q2 correction agreed (X2 read the real dir); canary line in the three Houston wrappers (trajectory, then majkee deploys); run Codex rows P1 (profile + canary), C-def (child no card line + write request), COEX (profile thread while tunnel parked, then resume) per TEST-INSTALL § R2; bash hook — tunnel option A deployed (T1–T7 pass), subagent-exempt patch drafted (raw/patch.hook-subagent-exempt.atlas.2026-10-13.md, majkee applies). Then commits (ia-sync germline-01 incl. hook + witnesses; reposoma pin card), push, home migration, MIGRATE §3 retire reposoma/.germline, name sweep + wrapper to root, check 4 (sitting).
 expected: >
-  witness file for the fold; test transcripts per row with tokens + Read evidence + effective model/effort; majkee GO.
+  P1/C-def/COEX transcripts; hook S1–S5 + live check result; majkee commits.
 ```
