@@ -75,6 +75,7 @@ recovery_probe: >
   until committed); tunnel.state.json exists in this bed and is ignored. Live Houston = ~/.germline + ia-sync wrappers.
 holds:
   - tunnel: table open since X0 (majkee); vault at this bed's path
+  - "tunnel context routine (trajectory support T23, 2026-10-17) — vault preamble = ~/.germline/tunnel/tunnel.preamble.md; when Cartan ctx passes ~70 %: tn-use <this bed> → tn-check && tun compact (majkee runs compact; carrier hook denies non-ask verbs) → then ONE ask naming exactly what to read (STATUS.md + the cited _bus file), never the full read order. Ctx growth sources: AGENTS.md re-send on change (~13 kB) + full re-orient after auto-compaction."
   - raw/houston/ = frozen X0 package (history); Houston edits happen in the germline-01 forge bed (majkee 2026-10-10)
   - reposoma: cards committed a299583; identity committed (see checkpoint); archive/ drains by other readers uncommitted (majkee)
   - Atlas = stable spawn (SendMessage); background = his card (7 spawn-notes) + oraculum's card §Waking Atlas; one named
