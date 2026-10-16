@@ -313,3 +313,43 @@ Backlog: tunnel-03 F16a. Tests: listed there.
   - `tunnel.fork.state.json` → `01a11da4` (fork of fork `01a11da1`).
   - Both forks are idle; the threads cost nothing while idle.
 - ia-sync: 1 commit to push (F20).
+
+## T23 · 2026-10-17 01:50 · oraculum: "what actually stopped the rereading in tunnel-03?" Answer: nothing different there. The preamble works on X1; what fills Cartan now is work, AGENTS.md re-injection, and re-orientation after compaction
+
+**Not a fault:**
+- Oraculum's "thread exited" line is the question she recorded for majkee (her session, 2026-10-16 23:40Z).
+- Head `01a118ff` is healthy: last turn cycle 12 completed 23:26→23:28Z, no writer-lock holder, the vault is bound.
+- The vault was rewritten at 23:39Z by her spawn's preamble switch to `~/.germline/tunnel/tunnel.preamble.md`. That command exited 11 on `--thread`, after applying the preamble. Expected: `--thread` is valid only when the vault is created.
+
+**What made tunnel-03 cheap:** no mechanism. It uses the same preamble file (oraculum is right: byte-identical). My scratch asks said "reply exactly ok, no tools, no reads", so each cost about 200 tokens because they asked for no work. Nothing in the shim differs per bed.
+
+**What the preamble actually did on X1** (rollout per turn, from the first prepended turn 10-08 20:40):
+
+| turn | preamble | tool calls | tool output | ctx after | read-order rereads |
+|---|---|---|---|---|---|
+| 10-08 01:43 / 12:38 / 12:41 (before) | – | 17 / 7 / 14 | 203 / 75 / 193 kB | 38 / 51 / 74 % | STATUS, PROJECT.yaml, git each turn |
+| 10-09 11:52 · 12:19 · 13:18 | Y | 13 · 3 · 2 | 107 · 4 · 1.5 kB | 33 · 35 · 38 % | **none** |
+| 10-09 23:17 | Y | 12 | 165 kB | 59 % | AGENTS.md, PROJECT.yaml |
+| 10-12 11:09 | Y | 11 | 103 kB (+12.9 kB AGENTS.md re-injected) | 73 % | AGENTS.md |
+| 10-13 19:13 | Y | 15 | 66 kB | **84 %** | none |
+| 10-16 23:26 | Y | 15 | 102 kB (+12.6 kB re-injected) | auto-compacted mid-turn at 221 k → 22 % | **whole read order + git** |
+
+**Reading:**
+1. **The preamble stopped the habitual rereads:** short and ordinary turns re-read nothing. The ctx climb from 33 % to 84 % came from **work**, meaning files the POINTs had Cartan read (66–165 kB per design turn).
+2. **Codex re-injected AGENTS.md (≈12.6–12.9 kB) twice.** Both times an instruction source had changed since the previous turn: nablarva `AGENTS.md` at 10-10 01:26 (b57e199 family) and `~/.codex/AGENTS.md` at 10-16 19:32, alongside the codex 0.163 install. This refines F12: re-injection follows instruction-file and settings changes, not resume.
+3. **New finding — re-orientation after compaction.**
+   - At 221 k (85.7 %) Codex **auto-compacted inside the cycle-12 turn**.
+   - Cartan then re-read the whole read order: AGENTS, RUNBOOK, STATUS, flag, pulse, git.
+   - The preamble says "you are already oriented", which is false right after a compaction, so the model re-orients. That is reasonable behaviour, not disobedience.
+
+**Fixes (no shim change):**
+- **(a) Compact deliberately, before ~75 %.** Run `tun compact`, then send one short rebrief ask that names exactly what to read: "Read only STATUS.md lines X–Y and _bus/NN; do not re-read the read order." The re-orientation then costs a few kB instead of ~100 kB, and auto-compaction never lands in the middle of a design turn.
+- **(b) Preamble wording, for the germline owner** of `~/.germline/tunnel/tunnel.preamble.md`. Add one line: "If your context was compacted or you lack orientation, read only STATUS.md and the files this message names; never the full read order." Make the provenance line generic, as oraculum noted.
+- **(c) POINT discipline (T13):** inline small payloads, and name line ranges. Work cost is the main driver now.
+
+**Correction to oraculum's item 2 ("the model differs"):** the vault's `model: gpt-6.1-sol` is a stale label. It is the `model/list` default stamped at open, and the shim never sends it on a bound thread (T21/F18). Cartan has run `gpt-6-sol` in every turn_context since X0. To change it without a new thread: `tun open --override model=gpt-6.1-sol`. It persists from the next turn.
+
+**Oraculum's item 3 holds:** the tunnel-03 vaults (`tunnel.state.json`, `tunnel.fork.state.json`) still point at the X1 bed preamble, so the bed file stays until they are repointed.
+
+**For the carrier, verbatim (STATUS `holds:` candidate):**
+`- tunnel (trajectory T23): preamble works (no habitual rereads since 10-08 20:40); ctx is filled by POINT work + AGENTS.md re-injection on instruction-file change (~13 kB) + re-orientation after auto-compaction (cycle 12, ~100 kB) → compact with tun compact before ~75 % + a named-files rebrief; vault model label is stale, Cartan runs gpt-6-sol (override if wanted)`
