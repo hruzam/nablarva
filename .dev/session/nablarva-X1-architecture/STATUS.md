@@ -1,7 +1,7 @@
 # nablarva-X1-architecture — STATUS
 
 ```yaml
-updated: "2026-10-13 (oraculum)"
+updated: "2026-10-17 (oraculum)"
 writer: oraculum
 host: hruzam-120922
 worktree: /home/hruzam/unikuklatrix/nablarva (core)
@@ -84,10 +84,10 @@ holds:
   - carrier defect log for X1 = raw/tunnel-issues.2026-10-08.md (created on first defect); support vault =
     .dev/observations/nablarva-X1-architecture.trajectory.2026-10-08.md (T12→); on the first X1 turn paste turn_context
     (approval_policy, approvals_reviewer, effort) of the new thread into a note for trajectory
-  - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook — reopened 2026-10-13 (tunnel option A live; subagent exemption pending)
+  - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook — tunnel option A + subagent exemption live (2026-10-13/14)
   - cartan — RETIRE thread 01a113e0 (76.7 %); fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
 next: >
-  Houston install test GO (majkee 2026-10-13; witness ia-sync germline-01 raw/witness.install-test.assay.2026-10-13.md; rows C1–C4 X1 X2 + re-test R1 R2 PASS); pins active (reposoma raw.card.model-effort.md, uncommitted); germline edit (consult on main by explicit line, verdict scale, out-of-card write rule) deployed; addendum committed 6f3204d. Track (majkee 2026-10-13) — Q2 correction agreed (X2 read the real dir); canary line in the three Houston wrappers (trajectory, then majkee deploys); run Codex rows P1 (profile + canary), C-def (child no card line + write request), COEX (profile thread while tunnel parked, then resume) per TEST-INSTALL § R2; bash hook — tunnel option A deployed (T1–T7 pass), subagent-exempt patch drafted (raw/patch.hook-subagent-exempt.atlas.2026-10-13.md, majkee applies). Then commits (ia-sync germline-01 incl. hook + witnesses; reposoma pin card), push, home migration, MIGRATE §3 retire reposoma/.germline, name sweep + wrapper to root, check 4 (sitting).
+  Houston install closed on office — all rows PASS (C1–C4, X1, X2, R1, R2, P1, C-def.2, C-def.claude; C-def failed then fixed by the consult card "What I do not do" chapter); witness ia-sync germline-01 raw/witness.install-test.assay.2026-10-13.md (+ addendum 2026-10-17). Pins active. Bash hook — tunnel option A + subagent exemption live. Inert Codex child sandbox key removed (deploy pending, majkee). Open — COEX row; home migration (pull reposoma, nablarva, ia-sync → MIGRATE §2 → re-run one Claude and one Codex row); MIGRATE §3 retire reposoma/.germline; inert sandbox_mode in architect/challenger/researcher TOMLs (owner decision); name sweep + wrapper to root; check 4 (Houston sitting).
 expected: >
-  P1/C-def/COEX transcripts; hook S1–S5 + live check result; majkee commits.
+  COEX transcript; home migration journal entry; majkee GO for check 4.
 ```
