@@ -1,0 +1,27 @@
+Publication checks — office, 2026-10-17
+$ sha256sum -c /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/SHA256SUMS [cwd=/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse]
+raw/README.md: OK
+raw/CONTEXT.md: OK
+raw/EXCHANGE.md: OK
+raw/FOR-NABLA.astrobley.md: OK
+raw/FOR-NABLA.oraculum.md: OK
+raw/sources.json: OK
+raw/sella-v.0.1/README.md: OK
+raw/sella-v.0.1/EXCHANGE.md: OK
+raw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK
+raw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK
+raw/sella-v.0.1/evidence.sella-v.0.1.json: OK
+raw/01_SYNC_METHOD.md: OK
+raw/02_PARSER_GATE.md: OK
+raw/04_REGISTRY.md: OK
+raw/05_WAY_OF_THINKING.md: OK
+raw/journal.2026-10-13.md: OK
+raw/journal.2026-10-16.md: OK
+PASS: exact 19-file raw digest set and no symlinks.
+PASS: every installed candidate file byte-equals its reviewed temporary source.
+PASS: original archive preserved byte-for-byte under evidence/import/files.zip.
+PASS: pulse differs only by the one prepared composer router row.
+PASS: final STATUS published after installed-byte verification; in_flight none.
+No commit, push, product implementation or runtime activation performed.
