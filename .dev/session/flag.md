@@ -180,6 +180,16 @@
   · 15 No deflection. No seat stops at "Houston must judge": it does what it can,
     records `inferred: <seat>`, names the pending check, and returns useful work.
 
+- **L8′ · Composer destination/publication — supersedes L8's location for this work**
+  (majkee, explicit instruction 2026-10-17, composer-01-parse):
+  "no applications in common, all is passed to| via ia-sync if deploy is not possible
+  another mechanism is installer or with agent : `bash /home/hruzam/ia-sync/install-pkgs/run.sh update`".
+  The composer work no longer targets applications-in-common; its publication passes
+  to or through ia-sync, using deployment where suitable and an installer or explicit
+  agent-assisted procedure otherwise. This records Majkee's ruling; it does not
+  authorize deployment now, choose the exact source subdirectory or settle the grammar.
+  The OUTPUT(A) ↔ stridularium interface boundary remains as in L8/L13.
+
 ## Named deferral thresholds (folded from abolished plan.md)
 
 - Domain seat: earned when a build-task class repeats 3× (not before)
@@ -231,6 +241,8 @@ seed §open-6 = docket 6.)
   table review
 
 ## Archived index (L15 — superseded items stay above; this lists what superseded them)
+
+- L8's applications-in-common location for composer work → superseded by L8′ (majkee, 2026-10-17); interface boundary retained.
 
 - docket 7 → CLOSED by L13 (majkee 2026-10-01): stridularium = phone app · stridulatrix = broker+CLI · termpanum = lab.
 - untabled-4 path `meshup/nabla_drafts/report.seam-probe.2026-08-01.md` → resolves by the prefix rule to `raw.nablarva/nabla-buffer-brideAndBook/report.seam-probe.2026-08-01.md` (cleanup-00-meshup, 2026-10-01).

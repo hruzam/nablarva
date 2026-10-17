@@ -1,31 +1,54 @@
 ---
 kind: status
-stamp: a723bc41
-updated: 2026-10-17 05:46 CEST
-writer: myShell · Codex, preparation on Majkee's explicit instruction
-pen: majkee
+stamp: 330d86ca
+updated: 2026-10-17 07:27 CEST
+writer: Cartan · Codex
+pen: cartan
 host: office (hruzam-120922)
-worktree: /home/hruzam/unikuklatrix/nablarva · core · f6403ea61e05e1d0641aa6802d9817ebe691503c; dirty .dev/session/composer-01-parse/ and preparation router row in .dev/session/pulse.md; unrelated untracked nablarva-X1-architecture/_bus/14.* files remain outside scope
+worktree: /home/hruzam/unikuklatrix/nablarva · core · b4fdb8fbedd317a7e887ea43ee72c84a2f8d8308; unrelated X4/X1/pulse commit observed after mount, not performed by this head. Own dirty AGENTS.md, flag.md and composer bed.
 gate: Phase 0 exit finding, brief §3
-checkpoint: Reference packet installed with 19 exact SHA256SUMS matches; preparation verified in _bus/02.inspect_composer_script.verdict.md and evidence/helper-checks.txt.
-in_flight: none
+checkpoint: Cycle 10 Janus handoff readiness cross-checked and accepted in _bus/10.cartan.verdict.md; native v2 review and actual Houston constraints verified in cycles 08/09. No grammar GO.
+in_flight: >-
+  No native body running. Cycle 11 is prepared for Majkee's fresh Claude Janus
+  launch/carry under _bus/11.cartan.point.md; no Claude process or reply observed.
+  Exact command and prompt-4 are in evidence/launch.janus.2026-10-17.md.
 recovery_probe: >-
-  cd /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse &&
-  sha256sum -c SHA256SUMS && test "$(find raw -type f | wc -l)" -eq 19 &&
-  test -z "$(find raw -type l -print)"
+  Run `cd /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse &&
+  sha256sum -c SHA256SUMS && sha256sum -c evidence/review-packet.janus.2026-10-17.sha256 &&
+  cat STATUS.md _bus/11.cartan.point.md _bus/10.cartan.verdict.md`. Inspect any later
+  carried Janus capture and head VERDICT; an absent or unchecked reply keeps this hold. Query list_agents
+  before re-addressing an observed handle; never infer child persistence.
 holds: >-
-  Code home, stack and builder runtime are unassigned; independent Phase 0 verifier is
-  unassigned. Majkee owns STATUS and the grammar gavel. Respect flag L8 when choosing
-  code home. No parser implementation before the Phase 0 grammar decision. Never
-  mutate frozen raw/, the human exchange, journals, controllers or other sessions;
-  no commit/push/deploy. raw/sources.json J01 records a different historical journal
-  observation; evidence/source-provenance.md preserves that disagreement.
-next: Majkee records the Phase 0 code home, stack and builder/verifier bindings in this STATUS.
-expected: Explicit assignments consistent with flag L8; the team can then enter through RUNBOOK without inferring permissions or implementation choices.
+  Majkee directed publication to/through ia-sync (L8′); exact source proposal
+  /home/hruzam/ia-sync/zsh/composer/, Python stdlib and fresh native Codex verifier
+  remain decisions for Majkee. Team approval is not grammar GO. Native reviews
+  precede the carried larger Claude Janus review and explicit grammar decision.
+  Houston constraints: evidence/consult.houston.2026-10-17.md, disposition in
+  _bus/09.cartan.verdict.md. Decide actual counted contract including editing cost,
+  Q3, empty/control bodies and aggregation; retain declaration-only trust boundary;
+  separate source/publication/activation and whole-app language docket; keep sole
+  STATUS, human exchange and a durable grammar home at promotion; require independent
+  functional acceptance on named interfaces/output scope, invalid-prefix rejection
+  and non-execution. No parser implementation until reviewed grammar, exact home,
+  stack and verifier decisions are recorded. No commit, push, deployment, installer
+  execution, delivery activation or later phases. raw/ remains exactly 19 pinned files.
+  Cartan alone navigates and writes STATUS; consultations are verbatim head-attributed
+  evidence/ captures, not helper-authored BUS files. No Oraculum authorization.
+  Claude is launched/carried only by Majkee; prompt limits are not sandbox proof.
+next: Majkee launches the fresh Claude Janus challenge with evidence/launch.janus.2026-10-17.md and carries its native reply unchanged to Cartan.
+expected: One anchored Janus judgment on the frozen concrete packet; Cartan captures/verifies it before bringing the actual grammar, home, stack and verifier decisions to Majkee.
 ---
 
 # STATUS — composer-01-parse
 
-Recovery probe exit 0 with 19 OK means the pinned reference is intact. Any other
-result holds entry; inspect evidence/source-provenance.md and the preparation BUS
-cycle before recovery. Preparation did not open a parser implementation cycle.
+Observed completed native targets: `/root/grammar_builder` (Astrobley; verified
+cycle 07), `/root/grammar_challenge` (challenger; cycle 08), `/root/houston_consult`
+(Houston consult; cycle 09), `/root/publication_research` (researcher; cycle 04).
+Their runtime availability must be queried again before any follow-up.
+
+Original `/root/road_follower` (explicit Luna/high, fresh initial context) has durable
+cycle-03 RETURN but was absent from the later availability query. No recovered memory
+or preserved handle is claimed. Cycle 10 used new `/root/road_follower_10` (explicit Luna/high, fresh context); its
+RETURN was checked in `_bus/10.cartan.verdict.md`. No further turn is dispatched.
+
+RUNBOOK is the fixed road; this snapshot is its only current position.

@@ -71,4 +71,7 @@ only through the reviewed-merge boundary.
 - **Boundary:** Cluster A mechanism (session clipper / processor / composer) stays in
   `applications-in-common`. The clipper `OUTPUT (A)` ↔ stridularium feed interface gets
   one boundary note when both threads run (L13).
+  Composer destination exception, majkee 2026-10-17: flag L8′ supersedes that location
+  for composer work; publication passes to or through `~/ia-sync/`, with deploy or
+  installer/agent-assisted procedure as suitable. Read L8′ before applying the older location.
 - Canon is gaveled by majkee. Agents draft; he locks.
