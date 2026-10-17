@@ -100,6 +100,7 @@
   · D5 Phone = thin lens: sessions live on the workstation; attaching advisory; detaching
     never closes a bed. Design drafted by majkee in `stridularium-00-design` + thin wrapper
     `.dev/session/AGENTS.stridularium-design.md` (beside AGENTS.PROJECT-DESIGN.md).
+    · 2026-10-17 pointer: the wrapper now lives at `docs/organs/stridularium.md`, beside `PROJECT-DESIGN.md` at the repo root (ruling 2026-10-10).
   · D6 Phone reach: on the device, app-scoped (the app and its files; operator-scoped vault
     as later extension). Toward hosts, the app controls sessions only through a host-side
     engine that hosts the processes — the app sends commands and prompts and receives
