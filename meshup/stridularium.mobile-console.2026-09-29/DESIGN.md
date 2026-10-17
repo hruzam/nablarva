@@ -3,7 +3,7 @@
 `scope: the human's door into the room (L2 stage 3) — a thin mobile lens over sessions living on the workstation; an organ with a toolbox-grade console core.`
 `status: design input only · two origins kept whole · majkee drafts the app in stridularium-00-design (L14 D5) · origin 2026-09-29 (Cartan's IDEA, earliest file)`
 `names: stridularium (L13) · k0k0nV3R / coconvergence (working name) — culture layer; disk ASCII.`
-`living draft: .dev/session/AGENTS.stridularium-design.md — this file is the fixed registry entry; it points, never duplicates.`
+`living draft: docs/organs/stridularium.md — this file is the fixed registry entry; it points, never duplicates.`
 `class: ORGAN of the animal (first with a client), not a toolbox. Code home proposed nablarva/stridularium/{android,host}; final home = nablarva-03-app-architecture.`
 
 ## Shape
@@ -27,7 +27,7 @@ Bridge (O2 lean, majkee): harden Tailscale + Termux (battery, autostart, always-
 | k0k0nV3R IDEA — console, tray, services, persistence, feasibility gates 1–5 (Galaxy baseline done 09-29) | 2026-09-29 | live, planning only | `raw/IDEA.k0k0nV3R.2026-09-29.md` |
 | stridularium note — door, DECIDED shape, bridge O2, carousel, voice, gavel feed, delta worth building | 2026-10-01 | live, input to 03 | `raw/note.stridularium.2026-10-01.md` |
 | L13 naming · L14 D5/D6 locks | 2026-10-01/02 | locked | `.dev/session/flag.md` |
-| Console core as first slice (toolbox-grade, usable before stridulatrix exists) | 2026-10-01 | proposed (oraculum) | `AGENTS.stridularium-design.md` |
+| Console core as first slice (toolbox-grade, usable before stridulatrix exists) | 2026-10-01 | proposed (oraculum) | `docs/organs/stridularium.md` |
 
 ## The tension (not resolved here)
 

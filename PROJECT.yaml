@@ -12,7 +12,7 @@ commands:                   # docs-only phase; verbs land when docket item 2 gav
   run:   "none yet"
 docs:
   architecture: docs/ARCHITECTURE.md
-  project-design: .dev/session/AGENTS.PROJECT-DESIGN.md # maintained working wrapper; draft, not canon
+  project-design: PROJECT-DESIGN.md # maintained working wrapper; draft, not canon
   project-design-maintainer: .germline/agents/houston/nablarva.md # Houston audit method; vendor bindings global at ~/.germline/agents/houston/
   decisions:    .dev/session/flag.md
 agents: [ architect, challenger, researcher, implementer ]   # four base seats; domain seats earned

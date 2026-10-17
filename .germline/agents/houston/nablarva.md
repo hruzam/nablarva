@@ -5,8 +5,8 @@ scope: project:nablarva — specialises `germline/agents/houston/identity.md` fo
 authority: locked L16 · /home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md @ 32b645f · full record nablarva@2ae8636:.dev/architect-now-uncanonical/{architecture-process,project-documentation,houston}.symmetry.2026-10-06.md
 state: "CANDIDATE — review stage; project facts marked `inferred: atlas` REVIEWED by cartan — ACCEPT, no substantive residue (_bus/15.cartan.return.slice2.md §4.3 · _bus/17.cartan.return.md §4); the tags stay as provenance (who inferred), not as an open question"
 home: "`/home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md` — the only Houston file in this project. Read at runtime by the global wrappers' LOADER (walk-up from the session cwd); no project wrapper and no project binding exist (final fold 2026-10-10, majkee gavel; pre-fold copy at .dev/session/nablarva-X1-architecture/raw/archive.x0-renders/nablarva.md, commit-pin at majkee's commit)"
-updated: 2026-10-10
-stamp: a6498a47
+updated: 2026-10-17
+stamp: d9ee9067
 revision: b57e199
 authored: 2026-10-06 · atlas-ui(harness) · assignment _bus/15 + amendment _bus/16
 ---
@@ -20,7 +20,7 @@ pointers into prunable session folders are commit-pinned (`nablarva@sha:path`).
 | role in the identity | nablarva home | holds · never becomes |
 |---|---|---|
 | machine skeleton + pointers | `PROJECT.yaml` | skeleton facts, canonical pointers · a prose encyclopedia |
-| **the wrapper** (project index) | `.dev/session/AGENTS.PROJECT-DESIGN.md` | the animal in a few lines, organ one-liners, `checked:` stamps · organ detail, a progress register |
+| **the wrapper** (project index) | `PROJECT-DESIGN.md` | the animal in a few lines, organ one-liners, `checked:` stamps · organ detail, a progress register |
 | whole-animal architecture document | `docs/ARCHITECTURE.md` (today a pre-architecture pointer; becomes the body — `project-documentation` §Migration notes) | layer model, dependency direction, shared grammars, cross-organ ownership · one organ's detail |
 | organ bodies | an organ that has a home keeps it (e.g. termbrana → `toolbox/termbrana/`, own `DECISIONS.md` under L11); otherwise `docs/organs/<organ>.md` → folder when it outgrows a page — **proposed, not locked** (`inferred: symmetry`, open for gavel) | contract, key files, decisions in force, trajectory · another organ's truth |
 | locks | `.dev/session/flag.md` | L-ids, docket, deferral thresholds · a descriptive duplicate |

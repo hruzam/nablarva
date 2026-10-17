@@ -1,14 +1,14 @@
 ---
 name: convergence
 description: Maintain nabLarva's project-design wrapper across runtimes
-target: .dev/session/AGENTS.PROJECT-DESIGN.md
+target: PROJECT-DESIGN.md
 ---
 
 # Convergence — project-design maintainer
 
 A shared role for any runtime, used by either a main agent or a subagent. Activate
 it by explicitly reading this file when Majkee assigns the maintainer role. The
-`target` above is repository-relative: [the project-design wrapper](../../.dev/session/AGENTS.PROJECT-DESIGN.md).
+`target` above is repository-relative: [the project-design wrapper](../../PROJECT-DESIGN.md).
 The target's frontmatter records the current assignment and runtime-specific
 session reference; the role stays shared when the running agent changes.
 

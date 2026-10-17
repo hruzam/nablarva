@@ -29,7 +29,7 @@
 
 Session surfaces (flag L9 + L9′): `flag.md` owns locks; `pulse.md` routes to each
 session's sole doing-state, `STATUS.md`. The working project wrapper is
-`.dev/session/AGENTS.PROJECT-DESIGN.md`, linked from `PROJECT.yaml`; it carries
+`PROJECT-DESIGN.md` (repo root), linked from `PROJECT.yaml`; it carries
 design intent and open questions. `.dev/session/dock.md` is the
 UNCANONICAL scratch — side quests land there without a blessing; never cite it as
 truth. Task-scoped work gets `.dev/session/<topic>/` dirs that die with the task. No
