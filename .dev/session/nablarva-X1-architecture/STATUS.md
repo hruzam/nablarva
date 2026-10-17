@@ -68,7 +68,7 @@ checkpoint: >
   means these homes. Atlas built it (cartan REVISE folded, _bus/09); janus REVISE (12 red flags) under repair — stamp
   tokens + transcript-read PASS rule, Route lines, fresh-head rule, pointers, pins back to pending. Uncommitted in three
   repos — commit order reposoma → nablarva → ia-sync after test GO.
-in_flight: none — cartan thread 01a118ff ctx 83.8 % after cycle 11 (fresh thread before next big round, majkee's call); tunnel.preamble.md = trajectory hotfix, uncommitted by majkee ruling
+in_flight: none — tunnel rebound 2026-10-17 to fresh Cartan thread 01a14731-648c-7a60-a34f-350278fe5897 (gpt-6.1-sol · high, workspaceWrite, preamble ~/.germline/tunnel/tunnel.preamble.md; old 01a118ff released); cycle 13 orientation done (ctx 10.9 %)
 recovery_probe: >
   (since the 2026-10-10 fold) raw/houston/ README checks 1–3 still PASS = frozen X0 package intact (history, not the live
   homes); .claude/ and .codex/ in nablarva hold NO houston wrapper (git status shows them moved into raw/archive.x0-renders/
@@ -88,7 +88,7 @@ holds:
   - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook — tunnel option A + subagent exemption live (2026-10-13/14)
   - cartan — RETIRE thread 01a113e0 (76.7 %); fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
 next: >
-  Houston install closed on office — all rows PASS (C1–C4, X1, X2, R1, R2, P1, C-def.2, C-def.claude; C-def failed then fixed by the consult card "What I do not do" chapter); witness ia-sync germline-01 raw/witness.install-test.assay.2026-10-13.md (+ addendum 2026-10-17). Pins active. Bash hook — tunnel option A + subagent exemption live. Inert Codex child sandbox key removed (deploy pending, majkee). Open — COEX row; home migration (pull reposoma, nablarva, ia-sync → MIGRATE §2 → re-run one Claude and one Codex row); MIGRATE §3 retire reposoma/.germline; inert sandbox_mode in architect/challenger/researcher TOMLs (owner decision); name sweep + wrapper to root; check 4 (Houston sitting).
+  Houston install closed on office — all rows PASS (C1–C4, X1, X2, R1, R2, P1, C-def.2, C-def.claude; C-def failed then fixed by the consult card "What I do not do" chapter); witness ia-sync germline-01 raw/witness.install-test.assay.2026-10-13.md (+ addendum 2026-10-17). Pins active. Bash hook — tunnel option A + subagent exemption live. Inert Codex child sandbox key removed and deployed (binding.codex 0c812f6c). Open — COEX row; home migration (pull reposoma, nablarva, ia-sync → MIGRATE §2 → re-run one Claude and one Codex row); MIGRATE §3 retire reposoma/.germline; inert sandbox_mode in architect/challenger/researcher TOMLs (owner decision); name sweep + wrapper to root; check 4 (Houston sitting).
 expected: >
   COEX transcript; home migration journal entry; majkee GO for check 4.
 ```
