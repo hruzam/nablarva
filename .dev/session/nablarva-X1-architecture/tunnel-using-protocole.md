@@ -131,3 +131,9 @@ Bus numbering: the next free `NN` in `_bus/` at the moment of writing (oraculum 
 atlas runs only inside an oraculum row). `resume`/`open`/`close` stay carrier-only; `open --enable` stays majkee's.
 Atlas reports every tunnel turn (NN · exit · ctx %) in its reply to oraculum, who keeps STATUS.
 
+**2026-10-17/22 (majkee rulings, recorded by oraculum from the transcript sweep 2026-10-22):**
+- Relay format (session-wide): human-carried messages use `to-<seat> from-<seat> --- <msg> ---`; the bus RETURN stays the durable reply. Adopted 2026-10-16 (oraculum proposed, majkee ratified).
+- Tunnel lifecycle: the tunnel is not a standing fixture — when maintenance costs majkee's time it closes; the seat retires to a cold-start card (CS.nablarva-x1-architecture.cartan.2026-10-17.md) and the vault rebinds to a fresh thread when needed (2026-10-17: 01a118ff → 01a14731).
+- One-off drivers: trajectory may run `tn-off` / `tn-on --enable` / `tun resume` for a rebind when majkee hands it the new thread id (granted 2026-10-17, per event); trajectory(sweep) was an authorised ask/send driver for the name-sweep row only (2026-10-17, cycle 15). Grants are per row and expire with it.
+- Context routine: see X1 STATUS holds (compact at ~70 %, one targeted ask).
+

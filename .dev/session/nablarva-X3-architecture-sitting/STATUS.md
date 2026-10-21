@@ -1,39 +1,55 @@
 # nablarva-X3-architecture-sitting — STATUS
 
 ```yaml
-updated: "2026-10-21 (oraculum)"
-writer: "oraculum · claude (this snapshot drafted by trajectory(bed) on oraculum's dispatch)"
-host: hruzam-120922
+updated: "2026-10-22 00:17 CEST"
+writer: "myShell · Codex, final launcher reconciliation explicitly requested by Majkee; fresh Claude Oraculum takes the sole runtime STATUS pen"
+host: "office · hruzam-120922"
 worktree: >
-  /home/hruzam/unikuklatrix/nablarva (core) · HEAD a272145 · dirty: this bed (untracked: RUNBOOK.md,
-  STATUS.md, raw/gavels.X4.2026-10-17.md, raw/prompt.sitting.2026-10-17.md) · .dev/session/pulse.md
-  (X4 row) · .dev/session/nablarva-X1-architecture/STATUS.md (next: pointer) · plus other heads'
-  paths not owned here (.dev/session/flag.md L8′, composer-01-parse/*)
+  /home/hruzam/unikuklatrix/nablarva · core · observed HEAD 7151611; recheck at entry.
+  Owned reconciliation: .dev/session/nablarva-X3-architecture-sitting/{RUNBOOK.md,STATUS.md,raw/review.launcher-mode-B.2026-10-22.md}.
+  Existing preprint, sitting prompt and gavel deck preserved. Foreign dirt includes
+  .dev/session/{flag.md,composer-01-parse/}, PROJECT-DESIGN.md, toolbox/termbrana/README.md
+  and the separately prepared .dev/session/nablarva-X2-builder-narative/; never absorb it.
 gate: >
   majkee GO on raw/ARCHITECTURE.draft.md, ready to promote to docs/ARCHITECTURE.md.
 checkpoint: >
-  DECK COMPLETE 2026-10-21 — all nine gavels answered by majkee via $polyp (G9 SUPPORTED, verdict map complete); four bounded briefs in raw/; bed renamed X4→X3 by majkee (historical X4 filenames intentional).
+  Deck G1–G9 complete; Mode B gaveled 2026-10-21. RUNBOOK now follows the X1 Oraculum
+  preprint: fresh Claude Oraculum MAIN, one Houston sitting CHILD, head-owned readers,
+  verbatim arc/pick relay, existing external Cartan review and fresh assay witness.
+  Agol harvest is required entry reading. Launcher review PASS is recorded in
+  raw/review.launcher-mode-B.2026-10-22.md. No arc, architecture drafts, child entry proof,
+  runtime launch, promotion or architecture GO is claimed by this reconciliation.
+  Bed opened 2026-10-17 on majkee's GO ('bed X4 ok, go'); renamed X4→X3 by majkee (39c61ec).
 in_flight: none
 recovery_probe: >
+  git -C /home/hruzam/unikuklatrix/nablarva rev-parse --short HEAD;
   git -C /home/hruzam/unikuklatrix/nablarva status --short -- .dev/session/nablarva-X3-architecture-sitting
-  .dev/session/pulse.md .dev/session/nablarva-X1-architecture/STATUS.md → `??` bed + ` M` pulse and X1
-  STATUS = opened, uncommitted; clean = committed. Then
-  grep -c ': UNANSWERED$' /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/prompt.sitting.2026-10-17.md
-  → 9 = deck not walked; 1–8 = walk stopped midway (read the deck's last filled report block); 0 = deck
-  done. ls …/raw/ showing only gavels + prompt = the sitting has not run.
+  PROJECT-DESIGN.md .dev/session/flag.md .dev/session/composer-01-parse;
+  grep -c ': UNANSWERED$' /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/prompt.sitting.2026-10-17.md.
+  Zero (grep exits 1) means the deck is answered, not that drafting ran. Inspect actual
+  raw/arc.md and draft contents plus any _bus POINT/RETURN/VERDICT and recorded child
+  entry trace. An unmatched POINT or missing entry proof is unfinished/unverified work.
+  With this checkpoint and no execution artifacts, begin R0; do not infer success from filenames.
 holds:
-  - "Houston's pen = new files in this bed's raw/ only (RUNBOOK constraints); the GAVELS block is binding and an UNANSWERED block means no drafting"
-  - "leans G2–G9 in the deck: leans confirmed by oraculum 2026-10-17; answered by majkee 2026-10-21; G1's lean is oraculum's own"
-  - "G9 answered a (SUPPORTED)"
-  - "Cartan review uses the existing X1 vault (thread 01a14731 is bed-agnostic; no rebind): POINT/RETURN files live in this bed's _bus/ and the tunnel message names their absolute paths."
-  - "live citation: pulse.md's ovitmugen-01-basement gate cites PROJECT-DESIGN.md § KEYS CODE — any thinning keeps it resolvable"
-  - "L8′ committed (fff20b8)"
-  - "no commits by seats except oraculum; majkee pushes"
-  - "launch mode B gaveled 2026-10-21 (majkee): oraculum main umbrella + Houston child on card: sitting; binding change deployed (stamps binding.claude 6181ad36 · binding.codex 437e8193 · identity 3702b18f · cards/sitting 630f58c3; ia-sync 5e5cc3b)"
-  - "child-sitting route unwitnessed — R2's entry proof (Route line + stamps incl. sitting 630f58c3, before the first answer) is its first dated witness; assay checks the child transcript"
-  - "the binding rule is prose-only on Claude (no runtime fence) — card.sitting.draft.md (G8) must carry new-files-in-raw/-only + no-spawn in its What I do not do chapter"
-  - "Agol harvest 2026-10-22 (.dev/observations/nablarva-X1-to-X3-arc.agol.2026-10-22.md) — three X3 questions resolved by oraculum in the prompt: Houston never spawns (head runs readers, quotes not summaries); diff base pinned (HEAD + hash-object, name other heads' edits); G4/G5 cited as said: majkee gavel deck, never locked:. Watch: R6 verdict-scale gap (fits vs stretches); two termbrana architecture-owner texts (composer-01 evidence/cleanup.termbrana.2026-10-21/architecture-owner.proposal.md vs Houston's organ line)."
-next: "majkee builds final RUNBOOK/STATUS from raw/preprint.runbook-status.mode-B.2026-10-21.md in myShell; then a fresh oraculum main starts from ~/reposoma/_cold-start/card/CS.nablarva-x3-architecture-sitting.oraculum.2026-10-21.md and runs R0 (verify stamps: identity 3702b18f · binding.claude 6181ad36 · binding.codex 437e8193 · sitting 630f58c3 · consult 5435b1c7 · audit e517cc86 · nablarva d9ee9067) → R1 crawls → R2 spawn Houston child on card: sitting."
+  - "Mode B: Oraculum is Claude MAIN and sole STATUS owner; Houston is ONE child on card: sitting, assigned by Majkee; no Houston spawns. Resume the same recorded child handle."
+  - "Relay arc and Majkee pick verbatim. Head supplies crawler quotes plus paths; inference never becomes source testimony by relay."
+  - "R0 rechecks live stamps against /home/hruzam/ia-sync/.dev/session/germline-01-builds-and-deploy/raw/TEST-INSTALL.houston.2026-10-10.md section 1. Preparation observed identity 3702b18f, binding.claude 6181ad36, binding.codex 437e8193, sitting 630f58c3, consult 5435b1c7, audit e517cc86, nablarva d9ee9067; these are not child-route proof."
+  - "R2 child-sitting route remains unwitnessed. Assay checks actual required reads before the first answer, Route/canary/stamps, no-spawn and new-raw-only scope on that child."
+  - "Houston pen: new raw drafts only; no docs, flag, wrapper, PROJECT.yaml, AGENTS, germline, RUNBOOK or STATUS edits. Sitting-card draft must carry that pen and no-spawn boundary."
+  - "G4/G5 cite said: majkee gavel deck STEP 4/5; no new flag L-id was created. G4/K5 reconciliation remains Houston's work. No manufactured schema, home/API, ADR-stub, editor, JSONL-home or docket-2 decision."
+  - "Pin wrapper diff base with HEAD and PROJECT-DESIGN.md working-file hash; name Composer's edits and its architecture-owner.proposal.md. Majkee decides commit order. Live KEYS CODE citation must resolve."
+  - "Agol harvest /home/hruzam/unikuklatrix/nablarva/.dev/observations/nablarva-X1-to-X3-arc.agol.2026-10-22.md is required at entry; watch R6 fits/stretches calibration and competing Termbrana owner proposals. Its candidate shared law is not adopted canon."
+  - "External Cartan review: existing thread 01a14731-648c-7a60-a34f-350278fe5897 via /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/tunnel.state.json. This is not the fresh Codex X2 head. No rebind."
+  - "Tunnel table enabled by Majkee; check actual binding/policy/exclusive writer before ask. Carrier ask/send/read/status only; open/close/resume/compact by Majkee or authorized support. TIMEOUT 1800 for design review; context near 70 percent requires operator compact and targeted rebrief."
+  - "Only Oraculum may commit owned reviewed paths under existing session authority; Majkee pushes. This preparation performs no commit, push, launch, deploy or promotion. Other heads' files remain theirs."
+  - "~/ia-sync/zsh/termbrana/ is majkee's own playground (germline programs + a little Houston consulting, 2026-10-21); its observations sit in this bed's raw/ and are processed alongside the sitting — not a Houston deliverable."
+next: >
+  Majkee launches a fresh main session with
+  cd /home/hruzam/unikuklatrix/nablarva && claude --agent oraculum
+  and supplies prompt-0 from /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/RUNBOOK.md,
+  naming /home/hruzam/reposoma/_cold-start/card/CS.nablarva-x3-architecture-sitting.oraculum.2026-10-21.md.
 expected: >
-  raw/arc.md with delta; majkee's pick; then ARCHITECTURE.draft.md, wrapper-thinning.diff, lock-proposals.md, card.sitting.draft.md.
+  Fresh Claude Oraculum reads the doorway, final launcher/current STATUS and Agol harvest,
+  adopts its sole STATUS pen and records R0's current frame/stamp check before bounded
+  R1 reads and R2's explicitly assigned Houston child. No replay of Polyp.
 ```
