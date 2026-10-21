@@ -51,3 +51,4 @@ Closure-only reading never fires for beds that stay open (X1). These rows fire o
 - `codex-houston-held-seat.cartan.2026-10-13.md` — Cartan (Codex) held-subagent release probe
 - `nablarva-X1-architecture.oraculum.2026-10-22.md` — oraculum carrier observations, X1 checks 4–6 handoff
 - `nablarva-X1-to-X3-arc.agol.2026-10-22.md` — Agol harvest #1, X1→X3 arc (synthesis, not verdict)
+- `oraculum-incarnation.oraculum.2026-10-22.md` — oraculum → next oraculum: personal impressions and scars (uncanonical)
