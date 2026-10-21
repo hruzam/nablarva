@@ -1,7 +1,7 @@
-# nablarva-X4-architecture-sitting — STATUS
+# nablarva-X3-architecture-sitting — STATUS
 
 ```yaml
-updated: "2026-10-17 (oraculum)"
+updated: "2026-10-21 (oraculum)"
 writer: "oraculum · claude (this snapshot drafted by trajectory(bed) on oraculum's dispatch)"
 host: hruzam-120922
 worktree: >
@@ -12,31 +12,26 @@ worktree: >
 gate: >
   majkee GO on raw/ARCHITECTURE.draft.md, ready to promote to docs/ARCHITECTURE.md.
 checkpoint: >
-  BED OPENED 2026-10-17 — majkee GO ("bed X4 ok, go"); RUNBOOK + STATUS + the gavel deck
-  (raw/gavels.X4.2026-10-17.md, PAD shape for $polyp, units G1–G9, all report blocks empty) + the
-  sitting prompt (raw/prompt.sitting.2026-10-17.md, GAVELS block 9× UNANSWERED) written; pulse row
-  added; X1 STATUS next: points here. Nothing committed.
+  DECK COMPLETE 2026-10-21 — all nine gavels answered by majkee via $polyp (G9 SUPPORTED, verdict map complete); four bounded briefs in raw/; bed renamed X4→X3 by majkee (historical X4 filenames intentional).
 in_flight: none
 recovery_probe: >
-  git -C /home/hruzam/unikuklatrix/nablarva status --short -- .dev/session/nablarva-X4-architecture-sitting
+  git -C /home/hruzam/unikuklatrix/nablarva status --short -- .dev/session/nablarva-X3-architecture-sitting
   .dev/session/pulse.md .dev/session/nablarva-X1-architecture/STATUS.md → `??` bed + ` M` pulse and X1
   STATUS = opened, uncommitted; clean = committed. Then
-  grep -c ': UNANSWERED$' /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-architecture-sitting/raw/prompt.sitting.2026-10-17.md
+  grep -c ': UNANSWERED$' /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/prompt.sitting.2026-10-17.md
   → 9 = deck not walked; 1–8 = walk stopped midway (read the deck's last filled report block); 0 = deck
   done. ls …/raw/ showing only gavels + prompt = the sitting has not run.
 holds:
   - "Houston's pen = new files in this bed's raw/ only (RUNBOOK constraints); the GAVELS block is binding and an UNANSWERED block means no drafting"
-  - "leans G2–G9 in the deck are marked (drafted by trajectory — oraculum to confirm); oraculum confirms or strikes them before majkee walks the deck; G1's lean is oraculum's own"
-  - "G9 was added beyond the dispatched eight (sitting card: fresh audit required unless equivalent evidence is cited) — oraculum may strike it"
+  - "leans G2–G9 in the deck: leans confirmed by oraculum 2026-10-17; answered by majkee 2026-10-21; G1's lean is oraculum's own"
+  - "G9 answered a (SUPPORTED)"
   - "Cartan review uses the existing X1 vault (thread 01a14731 is bed-agnostic; no rebind): POINT/RETURN files live in this bed's _bus/ and the tunnel message names their absolute paths."
   - "live citation: pulse.md's ovitmugen-01-basement gate cites PROJECT-DESIGN.md § KEYS CODE — any thinning keeps it resolvable"
-  - "flag.md carries an uncommitted L8′ (composer-01-parse head, 2026-10-17) — not this bed's to commit; the deck cites it by heading"
+  - "L8′ committed (fff20b8)"
   - "no commits by seats except oraculum; majkee pushes"
+  - "launch mode pending majkee gavel: (A) Houston as main per card, or (B) oraculum main as umbrella + Houston as child on card: sitting (needs binding change: sitting is main-route-only today)"
 next: >
-  leans confirmed by oraculum 2026-10-17 → majkee walks the deck with $polyp. Then oraculum commits
-  the bed opening (bed + pulse row + X1 STATUS pointer).
+  oraculum commits the reconciliation; majkee rules launch mode (A/B); then the Houston sitting runs raw/prompt.sitting.2026-10-17.md — Houston first presents raw/arc.md (delta first) + 2–3 alternatives with constraints and waits for majkee's pick.
 expected: >
-  a core commit containing .dev/session/nablarva-X4-architecture-sitting/ with no "(drafted by
-  trajectory — oraculum to confirm)" mark left in the deck; recovery_probe's git status shows those
-  paths clean.
+  raw/arc.md with delta; majkee's pick; then ARCHITECTURE.draft.md, wrapper-thinning.diff, lock-proposals.md, card.sitting.draft.md.
 ```

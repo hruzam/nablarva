@@ -1,4 +1,4 @@
-# RUNBOOK: nablarva-X4-architecture-sitting
+# RUNBOOK: nablarva-X3-architecture-sitting
 
 ```yaml
 goal: >
@@ -55,13 +55,13 @@ is done and X1 check 5 (audit from the canonical card) follows in X1.
 ## prompt-0 — oraculum
 
 ```text
-Resume nablarva-X4-architecture-sitting as cSharp + carrier. Read /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-architecture-sitting/STATUS.md, then this RUNBOOK. Row 1 first: read raw/gavels.X4.2026-10-17.md, confirm or strike every `lean: oraculum` marked "drafted by trajectory", then hand the deck to majkee for $polyp. Do not run Houston yourself; majkee launches it. Cartan only over the tunnel, after majkee opens the table on this bed. Assay witnesses row 6.
+Resume nablarva-X3-architecture-sitting as cSharp + carrier. Read /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/STATUS.md, then this RUNBOOK. Row 1 first: read raw/gavels.X4.2026-10-17.md, confirm or strike every `lean: oraculum` marked "drafted by trajectory", then hand the deck to majkee for $polyp. Do not run Houston yourself; majkee launches it. Cartan only over the tunnel, after majkee opens the table on this bed. Assay witnesses row 6.
 ```
 
 ## prompt-1 — polyp (majkee's Codex shell)
 
 ```text
-$polyp /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-architecture-sitting/raw/gavels.X4.2026-10-17.md — human-driven mode. STATUS: /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-architecture-sitting/STATUS.md (read only; status_owner is oraculum).
+$polyp /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/gavels.X4.2026-10-17.md — human-driven mode. STATUS: /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/STATUS.md (read only; status_owner is oraculum).
 ```
 
 Polyp's write boundary here: the deck's `>MAJKEE report` blocks, and after the last unit the GAVELS
@@ -76,13 +76,13 @@ Launch: `cd /home/hruzam/unikuklatrix/nablarva && claude --agent houston`.
 ## prompt-3 — cartan (tunnel ask, one line + paths)
 
 ```text
-oraculum(carrier) · X4 row 5 · review /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-architecture-sitting/raw/{ARCHITECTURE.draft.md,wrapper-thinning.diff,lock-proposals.md} against the GAVELS block in raw/prompt.sitting.2026-10-17.md and flag L16; read nothing else unless a cite sends you. RETURN with the six headings to _bus/<NN>.cartan.return.md.
+oraculum(carrier) · X4 row 5 · review /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/{ARCHITECTURE.draft.md,wrapper-thinning.diff,lock-proposals.md} against the GAVELS block in raw/prompt.sitting.2026-10-17.md and flag L16; read nothing else unless a cite sends you. RETURN with the six headings to _bus/<NN>.cartan.return.md.
 ```
 
 ## prompt-4 — assay (witness)
 
 ```text
-Witness X4 row 6. Bed: /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-architecture-sitting/. Check only: (1) every repo path cited in raw/ARCHITECTURE.draft.md and raw/lock-proposals.md resolves; (2) `git -C /home/hruzam/unikuklatrix/nablarva apply --check <bed>/raw/wrapper-thinning.diff` passes; (3) after a scratch apply, every pointer that pulse.md or a live STATUS cites into PROJECT-DESIGN.md still resolves; (4) every claim carries one of said:/inferred:/locked:/unknown: and no `locked:` cites an L-id that flag.md lacks; (5) `git status --short` shows Houston wrote nothing outside <bed>/raw/. PASS/FAIL with evidence to _bus/<NN>.assay.verdict.md. Never fix.
+Witness X4 row 6. Bed: /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/. Check only: (1) every repo path cited in raw/ARCHITECTURE.draft.md and raw/lock-proposals.md resolves; (2) `git -C /home/hruzam/unikuklatrix/nablarva apply --check <bed>/raw/wrapper-thinning.diff` passes; (3) after a scratch apply, every pointer that pulse.md or a live STATUS cites into PROJECT-DESIGN.md still resolves; (4) every claim carries one of said:/inferred:/locked:/unknown: and no `locked:` cites an L-id that flag.md lacks; (5) `git status --short` shows Houston wrote nothing outside <bed>/raw/. PASS/FAIL with evidence to _bus/<NN>.assay.verdict.md. Never fix.
 ```
 
 ## Known constraints + destructive holds

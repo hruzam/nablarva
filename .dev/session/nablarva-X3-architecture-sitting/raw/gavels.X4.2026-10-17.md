@@ -22,7 +22,7 @@
    - majkee says the question itself is wrong → `REFUTED` → STOP, return the deck to the head
 6. Sink (the one approved distilled home): after the last unit, or at a STOP, go to the GAVELS
    block of
-   `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-architecture-sitting/raw/prompt.sitting.2026-10-17.md`.
+   `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/prompt.sitting.2026-10-17.md`.
    On each answered `G<n> … : UNANSWERED` line, replace only the word `UNANSWERED` with
    `<letter> — <majkee's words verbatim>`. If his words run past three lines, write
    `<letter> — full answer: raw/gavels.X4.2026-10-17.md STEP <n>` instead. Unanswered units keep
@@ -39,7 +39,7 @@ established.
 Paths used in all commands:
 ```
 REPO /home/hruzam/unikuklatrix/nablarva
-BED  /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-architecture-sitting
+BED  /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting
 ```
 
 Precondition: the repo is at `core` HEAD `33613c4` or later. `flag.md` is live (L8′ was appended
@@ -52,7 +52,7 @@ anchor.
 ### STEP 0 — state check (read-only)
 
 ```bash
-git -C /home/hruzam/unikuklatrix/nablarva log -1 --format='%h %cs %s'; for f in docs/ARCHITECTURE.md docs/decisions/README.md docs/organs/stridularium.md PROJECT-DESIGN.md PROJECT.yaml meshup/REGISTRY.md .dev/session/flag.md .dev/session/pulse.md .germline/agents/houston/nablarva.md .dev/architect-now-uncanonical/project-documentation.symmetry.2026-10-06.md .dev/architect-now-uncanonical/architecture-process.symmetry.2026-10-06.md .dev/session/nablarva-X1-architecture/RUNBOOK.md .dev/session/nablarva-X1-architecture/STATUS.md .dev/session/nablarva-X1-architecture/raw/houston-audit.2026-10-07.md .dev/session/nablarva-X1-architecture/raw/houston-prompts.2026-10-09.md .dev/session/composer-01-parse/RUNBOOK.md toolbox/termbrana/DECISIONS.md; do [ -e "/home/hruzam/unikuklatrix/nablarva/$f" ] && echo "ok      $f" || echo "MISSING $f"; done; for f in /home/hruzam/.germline/agents/houston/cards/sitting.md /home/hruzam/reposoma/raw.settings/README.md; do [ -e "$f" ] && echo "ok      $f" || echo "MISSING $f"; done; grep -c ': UNANSWERED$' /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-architecture-sitting/raw/prompt.sitting.2026-10-17.md
+git -C /home/hruzam/unikuklatrix/nablarva log -1 --format='%h %cs %s'; for f in docs/ARCHITECTURE.md docs/decisions/README.md docs/organs/stridularium.md PROJECT-DESIGN.md PROJECT.yaml meshup/REGISTRY.md .dev/session/flag.md .dev/session/pulse.md .germline/agents/houston/nablarva.md .dev/architect-now-uncanonical/project-documentation.symmetry.2026-10-06.md .dev/architect-now-uncanonical/architecture-process.symmetry.2026-10-06.md .dev/session/nablarva-X1-architecture/RUNBOOK.md .dev/session/nablarva-X1-architecture/STATUS.md .dev/session/nablarva-X1-architecture/raw/houston-audit.2026-10-07.md .dev/session/nablarva-X1-architecture/raw/houston-prompts.2026-10-09.md .dev/session/composer-01-parse/RUNBOOK.md toolbox/termbrana/DECISIONS.md; do [ -e "/home/hruzam/unikuklatrix/nablarva/$f" ] && echo "ok      $f" || echo "MISSING $f"; done; for f in /home/hruzam/.germline/agents/houston/cards/sitting.md /home/hruzam/reposoma/raw.settings/README.md; do [ -e "$f" ] && echo "ok      $f" || echo "MISSING $f"; done; grep -c ': UNANSWERED$' /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/prompt.sitting.2026-10-17.md
 ```
 
 Expected: a commit line (`33613c4` or newer), 19 `ok` lines, then `9` (the sink is empty).
@@ -62,7 +62,27 @@ Expected: a commit line (`33613c4` or newer), 19 `ok` lines, then `9` (the sink 
 
 >MAJKEE report 0
 ```zsh
-
+fff20b8 2026-10-17 composer-01-parse: bus cycles 03–11, evidence packets (grammar v1/v2, Janus review, Houston consult, ia-sync ruling); flag L8′ composer publication via ia-sync (majkee 2026-10-17); AGENTS pointer; RUNBOOK/STATUS
+ok      docs/ARCHITECTURE.md
+ok      docs/decisions/README.md
+ok      docs/organs/stridularium.md
+ok      PROJECT-DESIGN.md
+ok      PROJECT.yaml
+ok      meshup/REGISTRY.md
+ok      .dev/session/flag.md
+ok      .dev/session/pulse.md
+ok      .germline/agents/houston/nablarva.md
+ok      .dev/architect-now-uncanonical/project-documentation.symmetry.2026-10-06.md
+ok      .dev/architect-now-uncanonical/architecture-process.symmetry.2026-10-06.md
+ok      .dev/session/nablarva-X1-architecture/RUNBOOK.md
+ok      .dev/session/nablarva-X1-architecture/STATUS.md
+ok      .dev/session/nablarva-X1-architecture/raw/houston-audit.2026-10-07.md
+ok      .dev/session/nablarva-X1-architecture/raw/houston-prompts.2026-10-09.md
+ok      .dev/session/composer-01-parse/RUNBOOK.md
+ok      toolbox/termbrana/DECISIONS.md
+ok      /home/hruzam/.germline/agents/houston/cards/sitting.md
+ok      /home/hruzam/reposoma/raw.settings/README.md
+9
 ```
 
 ---
@@ -109,7 +129,10 @@ marking honours "pending blocks dependents" without waiting.
 
 >MAJKEE report 1
 ```zsh
+b
+b, but note that X generation was created to cut little from past, where design can drift naywhere where I am not now. I even folded  animal body (bricks) and reconfigure focus on tmux|PTY (event  zellij where we can touch ceilings). AN oraculum obtained all as master print of architecture. If that menas a contra b, chosing b but with my note and `!` I want not go that cycle again when main intents were introduced.
 
+Not saying distinguished but in contradictive narative wining tmux|PTY solution. You may poin VIST : `.dev/session/nablarva-X4-vist/raw`
 ```
 
 ---
@@ -161,7 +184,40 @@ substance in cross-organ sections, so one line per organ is enough for a first d
 
 >MAJKEE report 2
 ```zsh
+a
 
+termbrana now starting from `composer-01-parse` and will continue here -> `termbrana-X1-composer-02-parse-sublime-ide`, so this part is moving little in advance, but I wanted to show part of X generation way of thinking. Please for richer context what is owed to termbrana itself?
+
+1. `composer-01-parse` is pilot, next step should be part properly named under termbrana: `termbrana-X1-composer-sourcing`
+
+2. termbrana-X1-composer-02-parse-sublime-ide -> `termbrana-X2-composer-sublime-ide` first prompt composer try to align with sublime text editor (intended is app neutral but now we need some target).
+
+3. I am sorry for that shift only renamed wrapping folders, content inside should remain as was intended.
+
+1. ` Full X1 coverage: a source-shape, reader, owner and acceptance matrix, followed by a reconciled gate or explicitly bounded sourcing gates.` -> in hands of application team and evetualy me in case that hard decission needed, which will consult with architect (houston).
+---
+2. `Source contracts`: yes need wait untill this loop is finished. in other words until germline realisation plan and fixed 'to load from' will finished, than I can check what can be send. (can you make small brainstorm note from me: 'i should have manager UI witch allows me check and load what should be sourced').
+---
+3. `shared interfaces`: for whom or what? termbrana | ovitmugen shared layer or to IDE (sublime)?
+---
+4. `IDE assumptions` : nice to have goal, whole prompt manager on place, but do not know UI sublime limitations, if need full headless only keyy biding, that is not comfortable for user, than we should inspect if not better orient on liteXL (where not sure about laravel support from comunity, main reason whty insisting on sublime where have it).
+===
+5. `- Preservation` if you are asking on flow recording (prompt sent bed): most probably `jsonl` similar like claude|codex are using in approprate vault. thinking about `.nablarva` as f.e. `.codex` to each project or centralized `~/.nablarva/<path-to-history>/`. Futire design should also load and show relation with session memmory jsonl of participating agents <glue> `~/.nablarva/<path-to-history>/. Just FYI.
+___
+
+edge between ovitmugen|termbrana as described from cartan(cSharp-composer-01=parse): ` We chose B as the direction: independent clients sharing useful mechanisms at a narrow integration boundary.
+
+ • Termbrana owns composition and remains usable without ovitmugen, a session bed or editor.
+
+ • Ovitmugen keeps view/layout and protected session-lifetime ownership.
+
+ • Termbrana may consume ovitmugen’s discovery data. That supplies no permission to send input; delivery     
+   needs checked target binding and explicit authority.
+
+ • The shared boundary’s exact owner, code home and API remain open. No common framework or carrier was      
+   approved for implementation.
+
+ This is recorded in flag L17 (.dev/session/flag.md).`
 ```
 
 ---
@@ -211,7 +267,7 @@ written, and the pointer under the same heading protects the live gate.
 
 >MAJKEE report 3
 ```zsh
-
+a
 ```
 
 ---
@@ -257,7 +313,8 @@ stridularium wrapper header · the D5 pointer · `stridularium.md` and `termbran
 
 >MAJKEE report 4
 ```zsh
-
+own
+Taking your team RESULT as GAVELED, only question, really laravel boost has README.md inside or this is now our invention? Can we have floating for MCP|vist reader concept nablarva boost *(working name)* any spare space to think in documentation, because README + res not answering if any parser will search through files or completing navigation throught indexes, but maybe README should include that, IDK, just not seeing it in. plaease ask subagent astrobley, what she would do if reader of documntation should be as same as agent (something natural for training data codex|claude as same as programmatic reader helper device for agents. worst and cleanest MCP like laravel boost has - check by deep research mechanism but file which i forgot to point I assume considered once boost design | nice to have floating design - our own invention, but ready first nice to have later).
 ```
 
 ---
@@ -303,7 +360,11 @@ shows flag plus organ ledgers failing.
 
 >MAJKEE report 5
 ```zsh
+own
+ok, your team observaytion + controller possible solution for selected agent in process chain. I would be glad if we can have fixed way of who in process needs read what. Because f.e. buidler should know more process architecture and planner more how much is aligned with project, when should be read during RUNBOKK first run or in pre-process preparation phase?
 
+gaveled.
+continue.
 ```
 
 ---
@@ -349,7 +410,8 @@ so no drift can have been measured.
 
 >MAJKEE report 6
 ```zsh
-
+a
+a- gaveled.
 ```
 
 ---
@@ -395,7 +457,8 @@ useful work with pending checks named, and docket 2's own words carve itself out
 
 >MAJKEE report 7
 ```zsh
-
+b
+b gaveled. but please, ad hoc can gshift behind boundary. I have bad experiences with perfectly normalized but to tight cage.
 ```
 
 ---
@@ -437,7 +500,8 @@ named in §9, and the forge bed still gates acceptance.
 
 >MAJKEE report 8
 ```zsh
-
+a
+a gaveled
 ```
 
 ---
@@ -484,7 +548,8 @@ its findings are the sitting's subject, and the deltas since are known and namea
 
 >MAJKEE report 9
 ```zsh
-
+a
+a gaveled, yo may give me `to-oraculum --- \n<prompt>\n ---` propmpt back.
 ```
 
 ---
@@ -493,15 +558,31 @@ its findings are the sitting's subject, and the deltas since are known and namea
 
 | step | unit | answer | branch | landed in sink |
 |---|---|---|---|---|
-| 0 | state check | — | | — |
-| 1 | G1 precondition | | | |
-| 2 | G2 scope | | | |
-| 3 | G3 KEYS CODE | | | |
-| 4 | G4 organ-body home | | | |
-| 5 | G5 decisions/ | | | |
-| 6 | G6 rhythm | | | |
-| 7 | G7 docket handling | | | |
-| 8 | G8 sitting card | | | |
-| 9 | G9 audit input | | | |
+| 0 | state check | 19 ok; 9 initially unanswered | SUPPORTED | — |
+| 1 | G1 precondition | b, amended; report 1 | RESHAPED | yes |
+| 2 | G2 scope | a, amended; report 2 | RESHAPED | yes |
+| 3 | G3 KEYS CODE | a | SUPPORTED | yes |
+| 4 | G4 organ-body home | own; report 4 | RESHAPED | yes |
+| 5 | G5 decisions/ | own; report 5 | RESHAPED | yes |
+| 6 | G6 rhythm | a | SUPPORTED | yes |
+| 7 | G7 docket handling | b, amended; report 7 | RESHAPED | yes |
+| 8 | G8 sitting card | a | SUPPORTED | yes |
+| 9 | G9 audit input | a | SUPPORTED | yes |
 
 ## parked
+
+## Path shift — 2026-10-21 · Polyp · operator-authorized
+
+- said: majkee — "run changed doc, log that shift at the end of file."
+- Observed: the former `nablarva-X4-architecture-sitting/` directory is absent; this deck,
+  RUNBOOK, STATUS and the sitting prompt are present under `nablarva-X3-architecture-sitting/`.
+- For this sitting, the deck's absolute bed/sink paths are rebound from the former X4 directory
+  to the present X3 directory. The historical X4 filename, question text, options, leans, report
+  blocks and branch rules are preserved. This note does not rename the architecture gate.
+- RUNBOOK, STATUS, pulse and other owner files are untouched; their older X4 references remain
+  an owner-reconciliation item. Oraculum retains STATUS ownership.
+- Resume at STEP 0. Only its read-only state check is executed by the driver; gavel choices
+  remain human-driven, one unit at a time.
+- STEP 0 executed 2026-10-21: core HEAD `fff20b8` descends from `33613c4`; 19 `ok` lines
+  and `9` unanswered sink entries. Raw output is in report 0 above. Branch: `SUPPORTED`;
+  next human unit is STEP 1 / G1. No gavel answer has been inferred or recorded.
