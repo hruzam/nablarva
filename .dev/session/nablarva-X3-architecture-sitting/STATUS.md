@@ -29,7 +29,7 @@ holds:
   - "live citation: pulse.md's ovitmugen-01-basement gate cites PROJECT-DESIGN.md § KEYS CODE — any thinning keeps it resolvable"
   - "L8′ committed (fff20b8)"
   - "no commits by seats except oraculum; majkee pushes"
-  - "launch mode pending majkee gavel: (A) Houston as main per card, or (B) oraculum main as umbrella + Houston as child on card: sitting (needs binding change: sitting is main-route-only today)"
+  - "launch mode B gaveled 2026-10-21 (majkee): oraculum main umbrella + Houston child on card: sitting; binding change deployed (stamps binding.claude 6181ad36 · binding.codex 437e8193 · identity 3702b18f · cards/sitting 630f58c3; ia-sync 5e5cc3b)"
 next: >
   oraculum commits the reconciliation; majkee rules launch mode (A/B); then the Houston sitting runs raw/prompt.sitting.2026-10-17.md — Houston first presents raw/arc.md (delta first) + 2–3 alternatives with constraints and waits for majkee's pick.
 expected: >
