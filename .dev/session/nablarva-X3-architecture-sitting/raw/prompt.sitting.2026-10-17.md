@@ -40,12 +40,15 @@ Inputs. Cite them, never copy. Read only what the task needs. Line numbers drift
 Write in <bed>/raw/:
 0. arc.md — the arc and 2–3 alternatives, each with its constraints, written BEFORE drafting. After majkee picks, record the pick in it as `said: majkee`.
 1. ARCHITECTURE.draft.md — the whole-animal body per L16.9: layer model · dependency direction · shared cross-organ grammars · cross-organ ownership · system-wide boundaries · the ladder stages 1–3 (L2) · organ list with homes, at G2's depth and with G4's home rule · KEYS CODE per G3 · decisions per G5 · header per G6 · open questions per G1/G7. Never one organ's detail.
-2. wrapper-thinning.diff — the J1 thinning as a unified diff against /home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md (headers `a/PROJECT-DESIGN.md` / `b/PROJECT-DESIGN.md`, repo-relative), consistent with G3/G4. You have no shell, so write it by hand. Assay will run `git apply --check`. Keep every pointer that pulse.md or a live STATUS cites resolvable. The keeper (majkee) commits it; you never apply it.
+2. wrapper-thinning.diff — the J1 thinning as a unified diff against /home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md (headers `a/PROJECT-DESIGN.md` / `b/PROJECT-DESIGN.md`, repo-relative), consistent with G3/G4. You have no shell, so write it by hand. Assay will run `git apply --check`. Keep every pointer that pulse.md or a live STATUS cites resolvable. The keeper (majkee) commits it; you never apply it. Pin the base in the diff header: `git rev-parse HEAD` and `git hash-object PROJECT-DESIGN.md` at draft time. The working tree may hold another head's uncommitted PROJECT-DESIGN.md edits (composer-01-parse) — name them if present; majkee decides commit order.
 3. lock-proposals.md — proposed lock text only, per G4 and G7. Oraculum carries it to the docket. You never write flag.md.
 4. card.sitting.draft.md — only if G8 says so, and when G8 says. It is a draft for the germline-01 forge bed, never written to ~/.germline/.
 
 Before drafting, give me the arc and 2–3 alternatives with constraints, and wait for my pick.
 
 Claim discipline (L16.11). Use `said: <source>` · `inferred: houston` · `locked: L<n>` · `unknown: <what> (docket #N if one owns it)`, never merged into one claim's authority. Mechanical claims get tested, architectural claims cite a lock or evidence, and unknowns stay unknown (L16.10). Age is a candidate, not a finding.
-Bounds. Card-bounded (L16.14). Reader spawns (field · zenith · eagle) are allowed. No executors, no assay (it is oraculum's witness), no commit. Return useful work and name pending checks (L16.15).
+
+G4 and G5 answers are majkee's gavels on the briefs' 'Subsequent disposition' sections, but no flag line exists for them: cite them as `said: majkee (gavel deck STEP 4 / STEP 5)`, never `locked:` (locked needs an L-id). Proposed lock text for them goes to lock-proposals.md. Alternatives in arc.md vary the document's shape, never the animal's direction (G1: tmux/PTY + Zellij direction stands; do not restart intent discovery).
+
+Bounds. Card-bounded (L16.14). You never spawn (mode B, binding rule 2026-10-21). Readers (field · zenith · eagle) are run by the head, oraculum: name what you need read in your reply and the head returns quotes + paths, not summaries. Treat any crawl packet's `inferred:` as inferred — never cite it as `said:`. No executors, no assay (it is oraculum's witness), no commit. Return useful work and name pending checks (L16.15).
 Done when the files exist in raw/. Reply with the list, one line per file, and what remains `unknown`.
