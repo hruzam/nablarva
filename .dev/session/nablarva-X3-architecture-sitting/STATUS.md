@@ -30,8 +30,9 @@ holds:
   - "L8′ committed (fff20b8)"
   - "no commits by seats except oraculum; majkee pushes"
   - "launch mode B gaveled 2026-10-21 (majkee): oraculum main umbrella + Houston child on card: sitting; binding change deployed (stamps binding.claude 6181ad36 · binding.codex 437e8193 · identity 3702b18f · cards/sitting 630f58c3; ia-sync 5e5cc3b)"
-next: >
-  oraculum commits the reconciliation; majkee rules launch mode (A/B); then the Houston sitting runs raw/prompt.sitting.2026-10-17.md — Houston first presents raw/arc.md (delta first) + 2–3 alternatives with constraints and waits for majkee's pick.
+  - "child-sitting route unwitnessed — R2's entry proof (Route line + stamps incl. sitting 630f58c3, before the first answer) is its first dated witness; assay checks the child transcript"
+  - "the binding rule is prose-only on Claude (no runtime fence) — card.sitting.draft.md (G8) must carry new-files-in-raw/-only + no-spawn in its What I do not do chapter"
+next: "majkee builds final RUNBOOK/STATUS from raw/preprint.runbook-status.mode-B.2026-10-21.md in myShell; then a fresh oraculum main starts from ~/reposoma/_cold-start/card/CS.nablarva-x3-architecture-sitting.oraculum.2026-10-21.md and runs R0 (verify stamps: identity 3702b18f · binding.claude 6181ad36 · binding.codex 437e8193 · sitting 630f58c3 · consult 5435b1c7 · audit e517cc86 · nablarva d9ee9067) → R1 crawls → R2 spawn Houston child on card: sitting."
 expected: >
   raw/arc.md with delta; majkee's pick; then ARCHITECTURE.draft.md, wrapper-thinning.diff, lock-proposals.md, card.sitting.draft.md.
 ```
