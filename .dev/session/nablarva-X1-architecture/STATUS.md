@@ -1,7 +1,7 @@
 # nablarva-X1-architecture — STATUS
 
 ```yaml
-updated: "2026-10-17 (oraculum)"
+updated: "2026-10-22 (oraculum)"
 writer: oraculum
 host: hruzam-120922
 worktree: /home/hruzam/unikuklatrix/nablarva (core)
@@ -74,6 +74,7 @@ recovery_probe: >
   homes); .claude/ and .codex/ in nablarva hold NO houston wrapper (git status shows them moved into raw/archive.x0-renders/
   until committed); tunnel.state.json exists in this bed and is ignored. Live Houston = ~/.germline + ia-sync wrappers.
 holds:
+  - "NOT CLOSED — checks 4–6 continue in .dev/session/nablarva-X3-architecture-sitting/ (check 4 = Houston sitting; 5 = audit after promotion; 6 = locks). Do not prune this bed before closure; its _bus/ and raw/ are evidence. Reading on events: .dev/observations/README.md § Event-triggered reading."
   - tunnel: table open since X0 (majkee); vault at this bed's path
   - "tunnel context routine (trajectory support T23, 2026-10-17) — vault preamble = ~/.germline/tunnel/tunnel.preamble.md; when Cartan ctx passes ~70 %: tn-use <this bed> → tn-check && tun compact (majkee runs compact; carrier hook denies non-ask verbs) → then ONE ask naming exactly what to read (STATUS.md + the cited _bus file), never the full read order. Ctx growth sources: AGENTS.md re-send on change (~13 kB) + full re-orient after auto-compaction."
   - raw/houston/ = frozen X0 package (history); Houston edits happen in the germline-01 forge bed (majkee 2026-10-10)

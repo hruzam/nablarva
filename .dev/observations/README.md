@@ -30,6 +30,18 @@ Why not the head herself for synthesis: the one who ran the session is the wrong
 
 Open, named: whether harvests get read is the same orphan risk one level up; the U-row landing is the current answer.
 
+## Event-triggered reading (majkee 2026-10-22; applies the G5 reading schedule)
+
+Closure-only reading never fires for beds that stay open (X1). These rows fire on an event; the named reader reads at that moment.
+
+| when (event) | who reads | what |
+|---|---|---|
+| a new head opens work on Houston or the germline | that head, at entry | ia-sync `.dev/session/germline-06-full-audit/raw/feedback.houston-install.oraculum.2026-10-21.md` · `nablarva-X1-to-X3-arc.agol.2026-10-22.md` · ia-sync `.dev/session/germline-01-builds-and-deploy/raw/witness.install-test.assay.2026-10-13.md` |
+| before a Houston sitting or audit is launched | the umbrella head (preparation, before dispatch) | `nablarva-X1-to-X3-arc.agol.2026-10-22.md` §4 · `nablarva-X1-architecture.oraculum.2026-10-22.md` · the sitting bed's STATUS `holds:` |
+| any brief touching agent config, a deploy or the tunnel | the head writing the brief, before dispatch | `nablarva-X1-architecture.oraculum.2026-10-22.md` §Structural notes · reposoma `_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-17.md` (Codex facts) |
+| a bed closes | the closer | every observation for that bed, then promote per the closure step |
+| material change to a source above | the head that notices | refresh the affected row's files, note it in the bed's STATUS |
+
 ## Index (by filename date; no other index by design)
 
 - `nablarva-X0-restarted.trajectory.2026-10-05.md` — tunnel support + issues log (T1–T11), carrier→IT note
@@ -37,4 +49,5 @@ Open, named: whether harvests get read is the same orphan risk one level up; the
 - `nablarva-X0-restarted.oraculum.2026-10-07.md` — carriage facts (11 turns, 0 refusals, 1 recovery, 1 reset), carrier faults, bought/cost, the skipped §4 manifest
 - `nablarva-X1-architecture.trajectory.2026-10-08.md` — tunnel support log, written live (T12→); handshake + state at X1 entry
 - `codex-houston-held-seat.cartan.2026-10-13.md` — Cartan (Codex) held-subagent release probe
+- `nablarva-X1-architecture.oraculum.2026-10-22.md` — oraculum carrier observations, X1 checks 4–6 handoff
 - `nablarva-X1-to-X3-arc.agol.2026-10-22.md` — Agol harvest #1, X1→X3 arc (synthesis, not verdict)
