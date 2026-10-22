@@ -1,50 +1,50 @@
 ---
 kind: status
-stamp: f080a83b
-updated: 2026-10-22 08:25 CEST
+stamp: fe4dd9c3
+updated: 2026-10-22 08:27 CEST
 writer: Cartan · Codex
 pen: cartan
 host: office (hruzam-120922)
 worktree: >-
-  /home/hruzam/unikuklatrix/nablarva · core · 32bd6f4b8a2be8ab65d2b5bd523f8e8f8c08956d;
-  Composer STATUS and retained evidence still include uncommitted work. The product
-  docs and existing full-scope X1 handoff are clean against this HEAD.
-  /home/hruzam/ia-sync · main · 0aa2ec5408b3bf0a28041b8278f1052554eacecd;
-  zsh/termbrana is clean; latest source commit e290aeed8120a7a4bbeae250dba94e56860f5d52.
-  These are local Git observations, not deployment evidence. Foreign work preserved.
+  /home/hruzam/unikuklatrix/nablarva · core · preservation commit
+  745d732c3236bb643f185457889bbd09884b1da6; this STATUS is its follow-up receipt.
+  /home/hruzam/ia-sync · main · 5c26d80aa3c90de6cafc1c47a7d199fdbcc7466d.
+  Both preservation commits were pushed and their remote branch tips verified.
+  Parser source remains e290aeed8120a7a4bbeae250dba94e56860f5d52; no source edits.
+  Other heads' dirty paths were excluded; deployment was not performed.
 gate: Phase 0 exit finding, brief §3
 checkpoint: >-
-  PARKED by Majkee, 2026-10-22. Phase0 PASS retained; cycle37 original-document
-  cleanup ACCEPT and cycle38 preservation/report ACCEPT retained. Their October21
-  checks cover941 archive members,20 new and20 old package checksums, raw19/source10
-  and the live tree at capture time. This STATUS-only reconciliation reuses those
-  findings; it does not repeat functional qualification or claim current staging
-  readiness. New X1 RUNBOOK authoring, launch and contract freeze are parked.
-in_flight: Authorized preservation commit/push only; no X1 work dispatched.
+  PARKED by Majkee, 2026-10-22. Phase0 PASS and cycles37/38 ACCEPT retained.
+  Majkee's later same-day commit/push permission has been exercised for completed
+  Composer work: Nablarva 745d732 preserves 903 paths (evidence, exact X2/X3 handoffs,
+  parked state and publication reconciliation); ia-sync 5c26d80 preserves the exact
+  G07 testing brief. All committed bytes/modes and exact path sets were checked;
+  push results and remote tips confirmed. Both immutable packages/raw19/source10
+  passed preservation checks; no functional suite or benchmark was rerun.
+  New X1 RUNBOOK authoring, launch and contract freeze remain parked.
+in_flight: none
 recovery_probe: >-
-  After Majkee's next instruction, read this STATUS, cycles37/38 VERDICT and
-  evidence/report.to-myshell.cleanup.2026-10-21.md. Preserve both immutable packages;
-  use evidence/preservation.cleanup.reconciliation.cartan.2026-10-21.json as the
-  dated post-capture baseline, not a current-tree PASS. Later commits, the October22
-  handoffs and this parking STATUS require explicit reconciliation before any
-  preservation action. Read X3's reviewed outcome through its own STATUS and check
-  the relevant G06 U3 operator dispositions before proposing a dependent X1 contract.
+  Read this STATUS and evidence/publication.reconciliation.cartan.2026-10-22.json;
+  verify the recorded preservation commits and current repository state before
+  further work. Cycles37/38 and the October21 packages remain historical checks,
+  not a current-tree staging PASS. The later STATUS and committed journal drift
+  are explicitly reconciled; this follow-up STATUS is after the preservation push.
+  X1 recovery still requires X3's reviewed outcome and Majkee's next instruction,
+  then checking the relevant G06 U3 operator dispositions before a dependent contract.
 holds: >-
   New termbrana-X1-composer-sourcing RUNBOOK authoring, launch and contract freeze
   remain parked until X3's reviewed outcome AND Majkee's next instruction; no
-  automatic resumption. Preserve the Phase0 gate, raw19, v3/v4, accepted source10,
-  prior candidates and both packages. No new design/build cycle, repeated benchmarks,
-  deployment, activation, delivery, pruning or premature closure. Majkee's later
-  2026-10-22 instruction authorizes committing and pushing completed Composer work
-  only; X1 parking remains in force.
-  Remaining preservation commits, durable qualification pins and process-observation
-  promotion are deferred work, not dispatched here. G06 U3 is available; relevant
-  operator dispositions still need checking, and audit acceptance does not adopt
-  proposed repairs. Eventual X1 scope retains common programs, germline, actual
-  vendor shapes and SPECIAL/germline-pipes. Old r3 remains a narrow checkpoint,
-  not full-scope acceptance. Architecture, pulse and foreign STATUS keep their owners.
-next: Complete the authorized preservation commit/push, then return to the existing X1 park; its release still requires X3's reviewed outcome and Majkee's next instruction.
-expected: Exact committed paths and remote identities verified, with foreign work preserved and X1 still parked; no closure inferred.
+  automatic resumption. Preserve Phase0 gate, raw19, v3/v4, accepted source10,
+  prior candidates and both packages. Commit/push permission covered completed
+  Composer preservation only; no new design/build cycle, repeated benchmarks,
+  deployment, activation, delivery, pruning or premature closure. Durable source-README
+  qualification links and process-observation promotion remain deferred. G06 U3
+  is available; relevant operator dispositions still need checking, and audit
+  acceptance does not adopt proposed repairs. Eventual X1 scope retains common
+  programs, germline, actual vendor shapes and SPECIAL/germline-pipes. Old r3 is
+  a narrow checkpoint, not full-scope acceptance. Foreign owners retain their pens.
+next: Wait for X3's reviewed outcome and Majkee's next explicit instruction; X1 stays parked after this preservation publication.
+expected: Committed preservation and an accurate parking receipt; no X1 authoring, launch, contract freeze or closure inferred.
 ---
 
 # STATUS — composer-01-parse
@@ -64,21 +64,27 @@ The [October21 contextual report](evidence/report.to-myshell.cleanup.2026-10-21.
 is historical: its uncommitted-source and X3/X4 routing statements have advanced,
 and G06 U3 is now available. Neither the report nor the frozen snapshots is rewritten.
 
-Remaining preservation and promotion work, deferred:
+Preservation completed; remaining qualification links and promotion deferred:
 
-- **Preservation commits:** reconcile the still-uncommitted Composer evidence and
-  subsequent head records against the [941-file package](evidence/preservation.phase0.cleanup/README.md),
-  [older package29](evidence/publication.phase0/README.md) and
-  [post-capture receipt](evidence/preservation.cleanup.reconciliation.cartan.2026-10-21.json).
-  Their proposed commit lists predate current Git state; do not replay them or
-  recommit already-preserved source/product changes. Exact remaining scope and
-  separate commit authority still need resolution. No new snapshot was made.
-- **Durable qualification pins:** after the remaining evidence has actual preservation
-  identities, reconcile the [source README](/home/hruzam/ia-sync/zsh/termbrana/README.md)
+- **Preservation commits completed:** Nablarva
+  `745d732c3236bb643f185457889bbd09884b1da6` preserves the completed Composer
+  evidence, both immutable packages and exact X2/X3 practitioner handoffs; ia-sync
+  `5c26d80aa3c90de6cafc1c47a7d199fdbcc7466d` preserves the G07 test-method copy.
+  Both pushes succeeded and their remote tips were independently read back.
+  The [publication reconciliation](evidence/publication.reconciliation.cartan.2026-10-22.json)
+  records exact scope and changes since the [941-file snapshot](evidence/preservation.phase0.cleanup/README.md):
+  939 captured files unchanged, expected STATUS and already-committed journal
+  changes, no missing members. [Package29](evidence/publication.phase0/README.md)
+  and the [October21 head receipt](evidence/preservation.cleanup.reconciliation.cartan.2026-10-21.json)
+  remain unchanged. This STATUS is a subsequent publication receipt, not a new snapshot.
+- **Durable qualification pins:** the evidence now has preservation commit
+  `745d732c3236bb643f185457889bbd09884b1da6`; a later authorized pass still needs to
+  reconcile the [source README](/home/hruzam/ia-sync/zsh/termbrana/README.md)
   with the accepted [exit finding](evidence/phase0.exit.cartan.2026-10-21.md),
   [independent verifier](evidence/verification.phase0/verifier.finding.md) and
   [ten-file receipt](evidence/source-copy.startup.phase0.json).
-  The source commit alone does not supply durable pins for uncommitted evidence.
+  The commit identities are available; source-README qualification links were not
+  rewritten during this preservation operation.
 - **Observation promotion:** surviving process lessons still need their durable
   `.dev/observations/` home under the existing project rule before any later
   closure/prune. Inputs already exist in the
