@@ -1,7 +1,8 @@
 # Termbrana
 
-Termbrana is a planned independent semantic observation, navigation, and replay layer
-for terminal sessions. It is Zellij-first and read-only by default.
+Termbrana's initial observer is a planned independent semantic observation, navigation,
+and replay layer for terminal sessions, Zellij-first and read-only by default. The
+composition family below is separate from this observer under flag L17.
 
 > **Status — pre-product, Milestone 0 truth spike.** This repository currently contains
 > a compiling Zellij 0.44.3 probe harness, not an installable semantic-navigation MVP.
@@ -107,6 +108,86 @@ The read-only MVP is intended to provide:
 The MVP does not include raw capture, sanitization claims, a transparent overlay, autonomous
 command injection, global interception, or provider-specific policy in the core.
 
+## Composition and explicit input direction
+
+**Said — Majkee, 2026-10-20:** a "more flexible surface above sessions", with
+"need send keys to tmux or anothe similar push type also" and text editors
+"like sublime or lite XL"; "needs pipes and and also should be accessible from
+agent assistant to inject parts there." These source words are retained here from
+Majkee's direct product-direction messages of that date.
+
+**Inferred — Astrobley, connective design reading:** composition is reusable
+independently of a RUNBOOK bed, vault or editor. Those may attach to its workspace.
+Human edits, Sublime Text/Lite XL, pipes and assistant calls can contribute prepared
+text or parts through shared composition interfaces. Contributing a draft and
+transmitting prepared output are distinct operations. Output needs explicit input/
+push adapters, including tmux keys/text or another suitable target. A shared write
+and target-binding policy must govern all clients; editing or body
+text never implies submission or authority. Concrete APIs, storage, daemon, picker,
+writer arbitration and delivery qualification remain open.
+
+The Phase 0 parser is a reusable, byte-preserving inert validator beneath
+this direction: no editor orchestration, instruction discovery/loading or sending.
+The existing Zellij observer, M0/M1/M2 gates and benchmark are unchanged. Its default
+is read-only; sending requires the separately enabled operator capability already
+defined in [product law §2.4](research/termbrana.project-definition.md#24-read-only-first).
+No adapter, writer or transmission is implemented or activated by this direction.
+Retained observations remain append-only and provenance grades are not inflated.
+
+There is a carrier seam with [flag L3/L4/L14](../../.dev/session/flag.md): tmux is
+never the room protocol or truth, and send-keys was rejected as the regulated
+injection leg because rendered screens cannot distinguish noise/final/interrupt
+([founding comparison](../../raw.nablarva/oraculum-basic-triangulation/triad.comparison.2026-07-31.md)).
+The new push request is broader product direction; later carrier qualification and
+any necessary lock reconciliation remain explicit gates. It does not approve tmux
+as regulated transport or reopen the whole relay. L17 places human-operated
+editor/pipe/tmux push outside that regulated protocol until qualified; assistant
+draft contribution grants no autonomous sending authority.
+
+**Source direction — said: Majkee, 2026-10-20:** code home
+`~/ia-sync/zsh/termbrana/composer.zsh` with family scripts; "python if fast enough."
+**Locked — L17, Majkee GO, 2026-10-20:** the reusable composition family lives at
+`~/ia-sync/zsh/termbrana/`, with a thin zsh entry and independent Python stdlib
+parser, conditional on measured responsiveness. Its [source-family README](../../../../ia-sync/zsh/termbrana/README.md)
+and [GRAMMAR.md](../../../../ia-sync/zsh/termbrana/GRAMMAR.md) describe the source-only Phase 0 interface. The existing
+Rust/WASM observer remains at `toolbox/termbrana/`; its M2 benchmark/stop-rule binds
+only that observer. This supplements L11/L12 rather than changing its host contract
+([L17/L11/L12/L16/L8′](../../.dev/session/flag.md)). Approved v4 is released only for
+Phase 0 parser implementation and independent verification; no deployment or
+later-phase activation follows.
+
+**Phase 0 qualification — 2026-10-21:** the [retained exit finding](../../.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md)
+links independent verification and the exact source receipt. This retained,
+uncommitted evidence qualifies the finite office-only parser checks (Python 3.14.7),
+not sourcing, editor integration or delivery. A durable qualification commit pin
+awaits an actual, separately authorized preservation commit.
+
+**Layering B — L17:** Termbrana composition and ovitmugen are independently useful
+clients. Any common mechanism is prospective and belongs at a narrow integration
+edge with demonstrated consumers, not a framework built by this phase. Composition
+works without ovitmugen, a RUNBOOK bed, tmux, editor or interactive shell. Ovitmugen
+keeps view/layout and protected process-lifetime ownership; discovery is not delivery
+authority. Future sending needs complete checked target binding and explicit operator
+authority through a common write/target policy. Control text and payload bytes stay
+distinct; existing tmux helpers/probe pipes establish neither packet fidelity nor
+raw-PTY provenance. Shared-layer owner/home/API and carrier qualification remain open.
+
+**Future adjustable sources — L17; Majkee direction, 2026-10-21:** common
+programs/controller tables, germline, actual vendor agent/roster/skill shapes and
+SPECIAL, including germline/pipes, are first-class generation-X sourcing requirements.
+Coverage may span additional sourcing gates; these capabilities are planned, not
+implemented. Each source needs a configurable location and format reader, preserving
+source/kind provenance. Selected text or references are prepared before composing
+the opaque body. Native activation/launching stays explicit; definitions do not
+activate themselves. No loader, picker or shared selection API is implemented here.
+
+The five continuing integration constraints are independent core/optional edges;
+observer, retained-record and provenance safety; contribution distinct from
+transmission; qualified carriers with required lock reconciliation; and explicit
+shared-layer/publication ownership. Python needs latency evidence. Locate temporary
+acceptance work and current decisions through the standing [pulse router](../../.dev/session/pulse.md)
+and its owning session's RUNBOOK/STATUS, not a durable dependency on a particular bed.
+
 ## Roadmap and gates
 
 | Milestone | State | Exit gate |
@@ -140,7 +221,10 @@ only, and every entry cites the authorizing flag line or central session brief.
 
 Termbrana deliberately has no local `AGENTS.md`, Claude/Codex roster, harness, devenv twin,
 or beacon. Development sessions run from the central nablarva harness under
-`.dev/session/toolbox-termbrana-*`, with one integration owner. Parallel agents may perform
+`.dev/session/`, with one integration owner. Historical observer beds retain
+`toolbox-termbrana-*`; operator-directed generation-X composition includes names
+such as `termbrana-X1-composer-sourcing`, each requiring its own scope and launcher
+authorization. Parallel agents may perform
 bounded, preferably read-heavy work after the applicable gate; shared conclusions and domain
 types flow through the owner or an ADR.
 
@@ -149,9 +233,7 @@ For Codex, Cartan remains the controller and routes bounded work to the global
 adds its Zellij, terminal, and PTY context through the task brief and evidence files; it
 does not clone or modify those global agent definitions.
 
-The next concrete step is the operator pad at:
-
-```text
-~/unikuklatrix/nablarva/.dev/session/
-  toolbox-termbrana-02-m0-truthspike/pad.1-m0-runtime-confirm.md
-```
+For the observer's frozen host contract and remaining qualification limits, read
+[ADR-0002](DECISIONS.md#adr-0002--m0-host-contract-frozen). Before the first M2
+adapter code, complete its required re-verification loop. Locate active work through
+the standing [pulse router](../../.dev/session/pulse.md) and the owning session's STATUS.

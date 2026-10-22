@@ -190,6 +190,31 @@
   authorize deployment now, choose the exact source subdirectory or settle the grammar.
   The OUTPUT(A) ↔ stridularium interface boundary remains as in L8/L13.
 
+- **L17 · Termbrana composition and its Phase 0 grammar** (majkee GO, 2026-10-20,
+  after Janus v4/home review, Houston layering consult and source-extension clarification):
+  Termbrana is the terminal membrane: the Zellij observer at `toolbox/termbrana/`
+  (Rust/WASM, L11/L12) plus a reusable composition family at
+  `~/ia-sync/zsh/termbrana/` (`composer.zsh` and adjacent Python stdlib). This
+  supplements L11's product scope and L12's placement for the composition family;
+  central Nablarva governance and the no-local-harness rule remain. L11's M2
+  benchmark/stop-rule binds the observer only. Python acceptance is conditional
+  on measured responsiveness. Editor/pipe/tmux push is a human-operated carrier
+  outside L3/L4's regulated room protocol until separately qualified; assistant
+  draft contribution grants no autonomous sending authority.
+  Termbrana composition and ovitmugen are independently useful clients; shared
+  mechanisms belong at a narrow integration boundary. Ovitmugen keeps view/layout
+  and protected process-lifetime ownership. Discovery is not delivery authority;
+  future transmission requires checked target binding and explicit authority.
+  Concrete shared-layer ownership/home/API and carrier qualification remain open;
+  no common framework or transport is authorized by the Phase 0 build.
+  Grammar v4 is approved: exact same-nonce end-line delimiters, opaque byte-preserved
+  body and its EOL, five required header fields, program/function excluded from
+  allowed headers. Future configurable composition sources may include controller,
+  subagent-roster, germline/vendor and SPECIAL definitions with source/kind provenance;
+  preparation precedes the body, native activation remains separate, picker remains
+  open. Release is Phase 0 parser implementation and independent verification only.
+  No commit, push, deployment, delivery or later-phase activation follows from GO.
+
 ## Named deferral thresholds (folded from abolished plan.md)
 
 - Domain seat: earned when a build-task class repeats 3× (not before)

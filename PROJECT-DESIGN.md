@@ -119,10 +119,23 @@ and pointers, not a second progress register or deployment authorization.
 
 ## 3.1. termbrana
 
+*checked: 2026-10-21*
+
+[L17](.dev/session/flag.md) includes the Zellij observer at `toolbox/termbrana/`
+and reusable composition at `~/ia-sync/zsh/termbrana/`, above session beds/vaults.
+The [Termbrana README](toolbox/termbrana/README.md#composition-and-explicit-input-direction)
+owns the approved direction, future adjustable sources and integration boundaries.
+The terminal/AI/browser/files/notes intent below remains; dashboards and sessions
+are optional, independently useful integrations.
+
+Observer technical decisions live in [DECISIONS.md](toolbox/termbrana/DECISIONS.md).
+Composition entry points, API and grammar are indexed by its
+[source-family README](../../ia-sync/zsh/termbrana/README.md).
+
  - semitransparent foil allowing one typewriting system over all (keys, shortcuts, lighter navigation for terminal inputs -> agentive UI)
  - bridge between terminal, ai session, browser (firefox), files
  - example: have file on line nr. xxx will add `NOTE<nr>` -> open appropriate buffer collector for notes -> I can attach ai session on specific notes, same should be allowed in browser by press any key I can make note with address and anchor to specific HTML part or
- - requires `instatmux` -> dashboard part with sessions
+ - optional `instatmux` dashboard/session integration; composition does not require it
  --> if to much - heavy on one toobox can be splitted to parts per scope of process.
 
 ---
