@@ -1,0 +1,76 @@
+{
+  "purpose": "diagnostic comparison only; not new acceptance budgets",
+  "rows": [
+    {
+      "label": "plain_no_site",
+      "command": [
+        "python3",
+        "-B",
+        "-S",
+        "-c",
+        "pass"
+      ],
+      "wall_ms": [
+        24.78473586961627,
+        28.659190982580185,
+        28.79405813291669,
+        29.26708199083805,
+        28.823175001889467
+      ]
+    },
+    {
+      "label": "direct_current",
+      "command": [
+        "python3",
+        "-B",
+        "/home/hruzam/ia-sync/zsh/termbrana/composer.py",
+        "check",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/corpus.mixed.md"
+      ],
+      "wall_ms": [
+        113.8319568708539,
+        144.74240271374583,
+        155.6640388444066,
+        63.79975890740752,
+        129.48938831686974
+      ]
+    },
+    {
+      "label": "direct_no_site",
+      "command": [
+        "python3",
+        "-B",
+        "-S",
+        "/home/hruzam/ia-sync/zsh/termbrana/composer.py",
+        "check",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/corpus.mixed.md"
+      ],
+      "wall_ms": [
+        137.08784524351358,
+        110.38410197943449,
+        66.90115388482809,
+        88.71369296684861,
+        128.3418880775571
+      ]
+    },
+    {
+      "label": "direct_isolated_no_site",
+      "command": [
+        "python3",
+        "-I",
+        "-B",
+        "-S",
+        "/home/hruzam/ia-sync/zsh/termbrana/composer.py",
+        "check",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/corpus.mixed.md"
+      ],
+      "wall_ms": [
+        52.95555293560028,
+        122.38162709400058,
+        135.39297599345446,
+        141.6076458990574,
+        142.5354601815343
+      ]
+    }
+  ]
+}

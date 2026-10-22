@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "unit_methods": 27,
+  "cmp_checks": 62,
+  "cli_cases_twice": 38,
+  "identical_prior_actual_outputs": 62,
+  "source_manifest_equal": true,
+  "parser_sha256": "a678c49bacc775d406de7021a869af072978ca888506112e6783a2b65660f28b",
+  "grammar_sha256": "af49004823b7e5b5b92f710196c0aa290c984feb81b8353071d6be0bfabdbc73",
+  "preserved_prior_evidence_files": {
+    "implementation.phase0": 178,
+    "correction.phase0": 180
+  },
+  "benchmark_runs": 1,
+  "performance": [
+    {
+      "label": "four_corpus_bodies",
+      "median_ms": 27.405236000000002,
+      "p95_ms": 90.669896,
+      "budget_ms": 100,
+      "status": "PASS"
+    },
+    {
+      "label": "1_MiB",
+      "median_ms": 87.466702,
+      "p95_ms": 91.795475,
+      "budget_ms": 500,
+      "status": "PASS"
+    },
+    {
+      "label": "4_MiB",
+      "median_ms": 100.477261,
+      "p95_ms": 107.344187,
+      "budget_ms": 2000,
+      "status": "PASS"
+    }
+  ],
+  "four_to_one_median_ratio": 1.1487487089658417,
+  "independent_verification": "pending"
+}

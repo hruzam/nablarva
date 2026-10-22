@@ -1,0 +1,29 @@
+test_buffered_output_failure_is_operational (test_composer.CLITests.test_buffered_output_failure_is_operational) ... ok
+test_explicit_file_io_failure_and_usage (test_composer.CLITests.test_explicit_file_io_failure_and_usage) ... ok
+test_invalid_output_exact_and_no_prefix (test_composer.CLITests.test_invalid_output_exact_and_no_prefix) ... ok
+test_success_and_safe_metadata (test_composer.CLITests.test_success_and_safe_metadata) ... ok
+test_aggregate_independent_errors_then_structural_stop (test_composer.ParserTests.test_aggregate_independent_errors_then_structural_stop) ... ok
+test_bom_offsets_and_multiple_packets_outside (test_composer.ParserTests.test_bom_offsets_and_multiple_packets_outside) ... ok
+test_byte_ownership_table_and_body_controls (test_composer.ParserTests.test_byte_ownership_table_and_body_controls) ... ok
+test_decoded_mutation_cannot_reserialize_source (test_composer.ParserTests.test_decoded_mutation_cannot_reserialize_source) ... ok
+test_end_at_eof_and_wrong_first_closer_eol (test_composer.ParserTests.test_end_at_eof_and_wrong_first_closer_eol) ... ok
+test_first_closer_insertion_and_unrecorded_intent_limit (test_composer.ParserTests.test_first_closer_insertion_and_unrecorded_intent_limit) ... ok
+test_five_required_fields_and_sorting (test_composer.ParserTests.test_five_required_fields_and_sorting) ... ok
+test_flat_scalars_no_coercion_and_json (test_composer.ParserTests.test_flat_scalars_no_coercion_and_json) ... ok
+test_header_lines_version_and_duplicates (test_composer.ParserTests.test_header_lines_version_and_duplicates) ... ok
+test_invalid_scalars_and_shape (test_composer.ParserTests.test_invalid_scalars_and_shape) ... ok
+test_lists (test_composer.ParserTests.test_lists) ... ok
+test_marker_lookalikes_are_body_data (test_composer.ParserTests.test_marker_lookalikes_are_body_data) ... ok
+test_missing_body_and_syntax_eol (test_composer.ParserTests.test_missing_body_and_syntax_eol) ... ok
+test_missing_end_and_unrepresentable_body (test_composer.ParserTests.test_missing_end_and_unrepresentable_body) ... ok
+test_no_reference_loading_or_payload_execution (test_composer.ParserTests.test_no_reference_loading_or_payload_execution) ... ok
+test_nonce_and_marker_errors (test_composer.ParserTests.test_nonce_and_marker_errors) ... ok
+test_packet_free_documents_and_outside_fences (test_composer.ParserTests.test_packet_free_documents_and_outside_fences) ... ok
+test_physical_lines_only_lf (test_composer.ParserTests.test_physical_lines_only_lf) ... ok
+test_removed_keys_whitelist_precedence (test_composer.ParserTests.test_removed_keys_whitelist_precedence) ... ok
+test_utf8_validation_precedes_structure (test_composer.ParserTests.test_utf8_validation_precedes_structure) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.774s
+
+OK

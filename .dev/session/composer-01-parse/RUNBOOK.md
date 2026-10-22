@@ -29,6 +29,10 @@ The gate above preserves STATUS's original gate. Brief §3 defines its exit find
 every corpus body round-trips byte-identical, every negative produces a diagnostic,
 and nothing executes. Later phases require their own numbered sibling sessions.
 
+This gate bounds the work of this sitting. Termbrana's reusable product direction
+lives above sessions in `toolbox/termbrana/README.md`, indexed by
+`PROJECT-DESIGN.md` §3.1; a RUNBOOK bed is an optional attachment to that surface.
+
 ## Fixed facts
 
 - The brief and prior-art pass are attributed source proposals. Their `said` and
@@ -273,6 +277,13 @@ new bounded correction/review; it does not make Janus an author or executor.
   This Nablarva bed owns preparation/evidence and grants no live deployment authority.
 - The grammar return precedes implementation. Research Q1–Q5 remain proposals/open
   questions; a phase consumes only the questions needed for its gate.
+- Majkee's carried 2026-10-19 decision is preserved verbatim in
+  evidence/challenge.janus.2026-10-19.md: v3 drops body_bytes for exact same-nonce
+  end-line framing and 4–8 [a-z0-9] nonces; body-final EOL is body data. This changes
+  the grammar candidate, not the Phase 0 gate. Native changed-section review precedes
+  the explicit GO on written v3; code home, stack and verifier are separate decisions.
+  This records that revision's decision. Later authorized revisions preserve its
+  historical artifacts; STATUS identifies the actual reviewed candidate requiring GO.
 - No composer delivery, GUI, fold writer or automatic writing in this Phase 0 gate.
 - Parse success preserves structure only: declared identity/scope/bindings grant no
   authority, open no references and emit no raw body controls to a terminal. The

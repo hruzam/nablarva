@@ -1,0 +1,56 @@
+{
+  "commands": [
+    {
+      "label": "quiet-idempotent",
+      "command": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"\nsource \"$1/base.zsh\"\n[[ ${aliases[tbc-check]} == _tbc_check && ${aliases[tbc-parse]} == _tbc_parse ]]\n[[ $_TBC_HELPER == \"$1/composer.py\" ]]",
+        "tbc-source-proof",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/handwritten.md",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/source-public-smoke.zsh"
+      ],
+      "cwd": "/tmp",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "explicit-engine",
+      "command": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"; _tbc_check \"$2\"",
+        "tbc-source-proof",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/handwritten.md",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/source-public-smoke.zsh"
+      ],
+      "cwd": "/tmp",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "public-aliases",
+      "command": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"; source \"$3\"",
+        "tbc-source-proof",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/handwritten.md",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/source-public-smoke.zsh"
+      ],
+      "cwd": "/tmp",
+      "exit": 0,
+      "stdout": "{\"packets\":[{\"nonce\":\"hand4z\",\"fields\":{\"consult\":[\"Astrobley\",\"Oraculum\"],\"context\":[\"prepared instructions\",\"prepared references\"],\"format\":\"request/0.1\",\"id\":\"directly-written-c1-example\",\"from\":\"Majkee\",\"to\":\"Cartan\",\"requested_scope\":\"read-only\"},\"span\":[169,1473],\"header_span\":[201,393],\"body_span\":[423,1444],\"frame_spans\":[[169,201],[393,423],[1444,1473]]}]}\n",
+      "stderr": ""
+    }
+  ],
+  "all_results_equal_prior": true
+}

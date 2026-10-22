@@ -1,0 +1,14 @@
+{
+  "fixed_before_measurements": true,
+  "authority": "Cycle 23 POINT; office acceptance under conditional Python GO",
+  "samples_per_input": 30,
+  "invocation": "fresh zsh -f process, source source-family/base.zsh, _tbc_check FILE; collect stdout/stderr and exit status",
+  "timed": "shell/Python startup, I/O, validation, output collection",
+  "excluded": "fixture generation",
+  "p95": "29th sorted sample of 30",
+  "budgets_ms": {"four_corpus_bodies": 100, "1_MiB": 500, "4_MiB": 2000},
+  "four_MiB_median_over_one_MiB_median_max": 5,
+  "corpus_body_bytes": 38799,
+  "not_a_grammar_size_limit": true,
+  "no_budget_relaxation": true
+}

@@ -1,0 +1,38 @@
+{
+  "author": "Astrobley",
+  "integrator": "Cartan",
+  "operation": "mechanical unchanged-byte startup qualification copy",
+  "at": "2026-10-20T23:53:11.909488+02:00",
+  "changed": {
+    "README.md": {
+      "before": "d762bd7fd95c038637961afd4b0da3d2ee9beb02f3a5a817b36043c0242bebab",
+      "after": "5bf2fa4e17254806313578d855db2fad0920c7c3704826ffd0fbc6b11d7484ae",
+      "staged": "/tmp/termbrana-startup.LRRuSZ/termbrana/README.md",
+      "destination": "/home/hruzam/ia-sync/zsh/termbrana/README.md"
+    },
+    "composer.zsh": {
+      "before": "dd7e2402c7f16e6ef4b5bdca7de67f1643424e7f3405c090eafc5782c7fd6f8f",
+      "after": "3aef419df8b2e04ded21b794b1bc4b66d921b28b6b538248fae1e13cf6b36d2e",
+      "staged": "/tmp/termbrana-startup.LRRuSZ/termbrana/composer.zsh",
+      "destination": "/home/hruzam/ia-sync/zsh/termbrana/composer.zsh"
+    },
+    "tests/test_startup.py": {
+      "before": null,
+      "after": "40a5e22cc2ecc64e3dbcefd1832482f14d80dde22914094480f9a7d8723eaaa3",
+      "staged": "/tmp/termbrana-startup.LRRuSZ/termbrana/tests/test_startup.py",
+      "destination": "/home/hruzam/ia-sync/zsh/termbrana/tests/test_startup.py"
+    }
+  },
+  "final_sha256": {
+    "GRAMMAR.md": "af49004823b7e5b5b92f710196c0aa290c984feb81b8353071d6be0bfabdbc73",
+    "README.md": "5bf2fa4e17254806313578d855db2fad0920c7c3704826ffd0fbc6b11d7484ae",
+    "base.zsh": "106afa6d2356047afdb525fdcdfbd6a769ac246540fe1c7f5b0f66156bd4cbf9",
+    "composer.py": "a678c49bacc775d406de7021a869af072978ca888506112e6783a2b65660f28b",
+    "composer.zsh": "3aef419df8b2e04ded21b794b1bc4b66d921b28b6b538248fae1e13cf6b36d2e",
+    "keyboard.zsh": "96ddab94bab9205e57cae68796a45bb67fd253d5696dbbfc67e8aa654e95b4d7",
+    "tests/acceptance.py": "9d84140a802556f6b3259822d91355df1e64bada59c2888c75c903f68967b410",
+    "tests/benchmark.py": "244c17acb0ab8081ae98cb48f5622518b8efbd5bf91caab671db3ee154f35b1b",
+    "tests/test_composer.py": "3668c1fad314eb567faf82a285cec16ab98e8a7994c26edc44d0e3b61f1cdf5a",
+    "tests/test_startup.py": "40a5e22cc2ecc64e3dbcefd1832482f14d80dde22914094480f9a7d8723eaaa3"
+  }
+}

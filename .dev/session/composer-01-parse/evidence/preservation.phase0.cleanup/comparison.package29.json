@@ -1,0 +1,245 @@
+{
+  "added": [
+    {
+      "path": ".dev/session/composer-01-parse/_bus/29.cartan.verdict.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/30.builder.return.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/30.cartan.point.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/30.cartan.verdict.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/31.cartan.point.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/31.cartan.verdict.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/32.cartan.point.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/32.cartan.verdict.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/33.builder.return.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/33.cartan.point.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/33.cartan.verdict.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/34.cartan.point.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/34.cartan.verdict.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/35.cartan.point.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/35.cartan.verdict.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/36.builder.return.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/36.cartan.point.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/36.cartan.verdict.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/37.builder.return.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/37.cartan.point.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/37.cartan.verdict.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/38.builder.return.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/_bus/38.cartan.point.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/audit.houston.termbrana-shape.2026-10-21.diff",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/audit.houston.termbrana-shape.2026-10-21.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/challenge.native-resolve-r2.2026-10-21.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/challenge.native-resolve.2026-10-21.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/PROJECT-DESIGN.before.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/README.termbrana.before.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/applied.diff",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/architecture-owner.proposal.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/before.json",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/checks.json",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/receipt.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/consult.houston.resolve.2026-10-21.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/direction.majkee.termbrana-generation-x.2026-10-21.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/handoff.termbrana-generation-x.2026-10-21.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/head.audit-checks.termbrana.2026-10-21.json",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/head.cleanup-checks.termbrana.2026-10-21.json",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/README.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.termbrana-X1-composer-sourcing.candidate.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/checks.json",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/checks.termbrana-sourcing.json",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/reviewed-v1/README.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/reviewed-v1/RUNBOOK.composer-02-resolve.candidate.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/reviewed-v1/checks.json",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/next-phase.resolve/reviewed-v1/decisions-and-intersections.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/preparation.handoff.cartan.2026-10-21.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/publication.reconciliation.cartan.2026-10-21.json",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/composer-01-parse/evidence/report.to-myshell.cleanup.2026-10-21.md",
+      "repo": "nablarva"
+    },
+    {
+      "path": ".dev/session/termbrana-X1-composer-sourcing/raw/handoff.cartan.runbook-preparation.2026-10-21.md",
+      "repo": "nablarva"
+    }
+  ],
+  "disposition": "Only captured STATUS and two accepted cleanup docs differ; additions are later Composer records plus exact X1 handoff.",
+  "modified": [
+    {
+      "after_sha256": "9efe2530d59ae94aa320b23a7c0a8176b450b1d9f02081fb528d9f9532e1d859",
+      "before_sha256": "c4e2351f88e3147bc8b12eaf3267e15fd79e71e8196b342bbf9290cc22f6e488",
+      "path": ".dev/session/composer-01-parse/STATUS.md",
+      "repo": "nablarva"
+    },
+    {
+      "after_sha256": "6ee10aa1c40a853cc6c1e6ff5dfa191999f38314058064b5543ac1392fe2c78f",
+      "before_sha256": "f2346f3d013df3b439f2b38a5064c86c47a5c2d09f8d8a3468857e2c5b052df6",
+      "path": "PROJECT-DESIGN.md",
+      "repo": "nablarva"
+    },
+    {
+      "after_sha256": "a30b152eb848ce036a0a83da200108778cb703b986f7bbf70632d2a55341b482",
+      "before_sha256": "7c77dac2a76a3fcb0ecbafa8026e1a739ff8c0c3843ed1bdb8979498de5830bb",
+      "path": "toolbox/termbrana/README.md",
+      "repo": "nablarva"
+    }
+  ],
+  "new_files": 941,
+  "old_files": 887,
+  "removed": [],
+  "unchanged": 884
+}

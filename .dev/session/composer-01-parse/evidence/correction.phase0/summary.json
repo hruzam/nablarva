@@ -1,0 +1,13 @@
+{
+  "status": "FUNCTIONAL_REGRESSION_PASS_PERFORMANCE_HOLD",
+  "unit_tests": 25,
+  "cmp_checks": 62,
+  "cli_cases": 38,
+  "performance": "FAIL",
+  "acceptance_retests": 1,
+  "no_concurrent_builder_checks": true,
+  "original_evidence_files_unchanged": 178,
+  "source_manifest_equal": true,
+  "independent_verification": "pending",
+  "budgets_unchanged": true
+}

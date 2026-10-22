@@ -1,0 +1,27 @@
+diff --git a/journal.host-cleanup.md b/journal.host-cleanup.md
+index 2ddc9f672f7bfe2f4becfd4516570e9989d6037e..8a86807c90ac81ecee6167a75edee262fa11ea24 100644
+--- a/journal.host-cleanup.md
++++ b/journal.host-cleanup.md
+@@ -10,6 +10,22 @@
+ 
+ ---
+ 
++## OFFICE — 2026-10-21 · Cartan · composer Phase 0 source verified (started 2026-10-20)
++
++Majkee GO after v4/Janus/Houston review: source-only composition family at
++`zsh/termbrana/`, thin zsh entry + stdlib Python, independently PASS. The qualified
++standalone command uses `python3 -I -S -B`; 27 unit methods, 62 byte comparisons,
++38 twice-run CLI cases and 33 independent probes pass. Fixed office performance
++budgets pass; corpus p95 92.968602 ms <=100 ms. Earlier failures remain recorded.
++Central governance: Nablarva flag L17 and Termbrana README. Exact exit evidence:
++`~/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md`.
++Configurable controller/roster/germline/vendor/SPECIAL sources remain future work.
++No commit, push, deploy, installer or shell startup wiring was performed by this
++sitting. Both hosts' live configuration stays untouched; home is unverified.
++Initial fetched origin/main matched local 286085d; Flight independently advanced
++G05 to 55e6157 during verification. Composer hashes stayed unchanged. Foreign
++G04/G06 work is preserved; no pull, rebase or stash was performed here.
++
+ ## OFFICE — 2026-10-20 · Oraculum caller contract broadened
+ 
+ `codex/agents/oraculum.toml` now accepts bounded, explicitly authorized consultations from

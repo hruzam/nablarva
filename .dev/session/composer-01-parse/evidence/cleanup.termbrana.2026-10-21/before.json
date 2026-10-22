@@ -1,0 +1,72 @@
+{
+  "before_targets": {
+    "PROJECT-DESIGN.md": "f2346f3d013df3b439f2b38a5064c86c47a5c2d09f8d8a3468857e2c5b052df6",
+    "toolbox/termbrana/README.md": "7c77dac2a76a3fcb0ecbafa8026e1a739ff8c0c3843ed1bdb8979498de5830bb"
+  },
+  "inputs": [
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+      "sha256": "f2346f3d013df3b439f2b38a5064c86c47a5c2d09f8d8a3468857e2c5b052df6"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+      "sha256": "7c77dac2a76a3fcb0ecbafa8026e1a739ff8c0c3843ed1bdb8979498de5830bb"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md",
+      "sha256": "94d0b0b1e01dfc7cead09db6b27db7b65ff9cd28c8ef8e31f39ca744e85783d8"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/docs/ARCHITECTURE.md",
+      "sha256": "99e6f0f90e79ade6fd17a0b302fa3100e0cba79c1a22b32b4dd20f46dd33d0a6"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/pulse.md",
+      "sha256": "7859cc22a3b940be5949388cfd9802ec7cc4763487191c99bc911a9880e7392d"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/STATUS.md",
+      "sha256": "2fcc591b118fd4b4fc8cb19052a2d779b1190ee3eaf4cfb1e5db660ca9c2fa85"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md",
+      "sha256": "ceb2799746a00b949f7353a5ef4837810efec4879a780425149294072f677f2c"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/RUNBOOK.md",
+      "sha256": "8ad0f145854541e8dab57ed3d14ffd044ba99fbb9b9fa7fc6a75ae465fd6192c"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/37.cartan.point.md",
+      "sha256": "5fff24a7ceafc15e5634b1a308e6dff1680f9b7616a7358bc8e6881942bf977c"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/audit.houston.termbrana-shape.2026-10-21.md",
+      "sha256": "7df82883aae60bdce9abd37b5b5f99f710eca1aeb4ff4249bdc0f882b47928a6"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/audit.houston.termbrana-shape.2026-10-21.diff",
+      "sha256": "59685c92cf3064a4dd6b4a21bdfa419d9f22c2602dc2a7fa1754d4878b65402c"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md",
+      "sha256": "e741f7ae01b9ed8cc6f457075c54d57d490fcf3682b8f7820442f0f954ef6378"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/direction.majkee.termbrana-generation-x.2026-10-21.md",
+      "sha256": "da5f853e00b69397841f271afcf87fcb407492a52b924df6c9793495c90b3d0a"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X1-composer-sourcing/raw/handoff.cartan.runbook-preparation.2026-10-21.md",
+      "sha256": "66adf1a95bbff758dbaf4102ccc05a8b015c9d65d2f36e813ddc55ab7d110d1e"
+    }
+  ],
+  "prior_evidence": {
+    "excludes": [
+      "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21"
+    ],
+    "files": 815,
+    "manifest_sha256": "2e4aff8d224239c52d68df1f94b90d3912d6741f14d01b68321b9778f4d3f05a",
+    "root": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence"
+  }
+}

@@ -1,0 +1,290 @@
+diff --git a/.dev/session/composer-01-parse/RUNBOOK.md b/.dev/session/composer-01-parse/RUNBOOK.md
+index a34c8a95681745c5f6ae6f0c72e1aa205a85211e..dc9fa9e995a5ea54060b345cc579fbb601e5a1f6 100644
+--- a/.dev/session/composer-01-parse/RUNBOOK.md
++++ b/.dev/session/composer-01-parse/RUNBOOK.md
+@@ -29,6 +29,10 @@ The gate above preserves STATUS's original gate. Brief §3 defines its exit find
+ every corpus body round-trips byte-identical, every negative produces a diagnostic,
+ and nothing executes. Later phases require their own numbered sibling sessions.
+ 
++This gate bounds the work of this sitting. Termbrana's reusable product direction
++lives above sessions in `toolbox/termbrana/README.md`, indexed by
++`PROJECT-DESIGN.md` §3.1; a RUNBOOK bed is an optional attachment to that surface.
++
+ ## Fixed facts
+ 
+ - The brief and prior-art pass are attributed source proposals. Their `said` and
+@@ -273,6 +277,13 @@ new bounded correction/review; it does not make Janus an author or executor.
+   This Nablarva bed owns preparation/evidence and grants no live deployment authority.
+ - The grammar return precedes implementation. Research Q1–Q5 remain proposals/open
+   questions; a phase consumes only the questions needed for its gate.
++- Majkee's carried 2026-10-19 decision is preserved verbatim in
++  evidence/challenge.janus.2026-10-19.md: v3 drops body_bytes for exact same-nonce
++  end-line framing and 4–8 [a-z0-9] nonces; body-final EOL is body data. This changes
++  the grammar candidate, not the Phase 0 gate. Native changed-section review precedes
++  the explicit GO on written v3; code home, stack and verifier are separate decisions.
++  This records that revision's decision. Later authorized revisions preserve its
++  historical artifacts; STATUS identifies the actual reviewed candidate requiring GO.
+ - No composer delivery, GUI, fold writer or automatic writing in this Phase 0 gate.
+ - Parse success preserves structure only: declared identity/scope/bindings grant no
+   authority, open no references and emit no raw body controls to a terminal. The
+diff --git a/.dev/session/composer-01-parse/STATUS.md b/.dev/session/composer-01-parse/STATUS.md
+index ebf38d7dfe90277f16d47942fbcf5e1436fd7c92..b0b4745a567cff81ca3a1dba16ab3b119b3d295c 100644
+--- a/.dev/session/composer-01-parse/STATUS.md
++++ b/.dev/session/composer-01-parse/STATUS.md
+@@ -1,54 +1,64 @@
+ ---
+ kind: status
+-stamp: 330d86ca
+-updated: 2026-10-17 07:27 CEST
++stamp: d98371cf
++updated: 2026-10-21 00:52 CEST
+ writer: Cartan · Codex
+ pen: cartan
+ host: office (hruzam-120922)
+-worktree: /home/hruzam/unikuklatrix/nablarva · core · b4fdb8fbedd317a7e887ea43ee72c84a2f8d8308; unrelated X4/X1/pulse commit observed after mount, not performed by this head. Own dirty AGENTS.md, flag.md and composer bed.
++worktree: >-
++  Nablarva /home/hruzam/unikuklatrix/nablarva · core · fff20b8de570e5d66381ab540d9474ddfff07750;
++  composer RUNBOOK/STATUS/BUS/evidence, flag L17 and product docs dirty.
++  ia-sync /home/hruzam/ia-sync · main · 55e615766143062fe018d29f3e914f9c785fffb5;
++  source-only zsh/termbrana and journal entry uncommitted. Other owners' G04/G06
++  and Nablarva X3/X4/VIST/IDE changes are preserved; Flight committed G05 separately.
+ gate: Phase 0 exit finding, brief §3
+-checkpoint: Cycle 10 Janus handoff readiness cross-checked and accepted in _bus/10.cartan.verdict.md; native v2 review and actual Houston constraints verified in cycles 08/09. No grammar GO.
++checkpoint: >-
++  Phase 0 exit PASS: evidence/phase0.exit.cartan.2026-10-21.md and checked native
++  finding at evidence/verification.phase0/verifier.finding.md, cycle 26 ACCEPT.
++  Requested evidence/brief.germline-contract-testing.md checked in cycle 27 ACCEPT.
++  All ten source hashes, raw19/v4 pins and approved baseline drift rechecked in
++  evidence/head.final-checks.phase0.json. Cycle 28 requested Luna raw copy verified
++  in _bus/28.cartan.verdict.md; no active delegated work.
+ in_flight: >-
+-  No native body running. Cycle 11 is prepared for Majkee's fresh Claude Janus
+-  launch/carry under _bus/11.cartan.point.md; no Claude process or reply observed.
+-  Exact command and prompt-4 are in evidence/launch.janus.2026-10-17.md.
++  Cycle 29 publication package preparation by /root/grammar_builder_v3 under
++  Majkee’s explicit preparation GO. Only evidence/publication.phase0/ and
++  29.builder.return.md may be partially written. Presence ebd09bc0b5e6462ab296d4c076cf6b1e.
+ recovery_probe: >-
+-  Run `cd /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse &&
+-  sha256sum -c SHA256SUMS && sha256sum -c evidence/review-packet.janus.2026-10-17.sha256 &&
+-  cat STATUS.md _bus/11.cartan.point.md _bus/10.cartan.verdict.md`. Inspect any later
+-  carried Janus capture and head VERDICT; an absent or unchecked reply keeps this hold. Query list_agents
+-  before re-addressing an observed handle; never infer child persistence.
++  Read this bed's evidence/phase0.exit.cartan.2026-10-21.md and cycles 26/27 verdicts.
++  From /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse run
++  sha256sum -c SHA256SUMS and sha256sum -c evidence/grammar.builder.v4.sha256;
++  compare actual /home/hruzam/ia-sync/zsh/termbrana hashes with final_sha256 in
++  evidence/source-copy.startup.phase0.json. Inspect both git diffs and current HEADs;
++  other sessions may advance shared worktrees. Any source drift requires renewed
++  scoped verification. Future tests use fresh evidence directories, never overwrite.
+ holds: >-
+-  Majkee directed publication to/through ia-sync (L8′); exact source proposal
+-  /home/hruzam/ia-sync/zsh/composer/, Python stdlib and fresh native Codex verifier
+-  remain decisions for Majkee. Team approval is not grammar GO. Native reviews
+-  precede the carried larger Claude Janus review and explicit grammar decision.
+-  Houston constraints: evidence/consult.houston.2026-10-17.md, disposition in
+-  _bus/09.cartan.verdict.md. Decide actual counted contract including editing cost,
+-  Q3, empty/control bodies and aggregation; retain declaration-only trust boundary;
+-  separate source/publication/activation and whole-app language docket; keep sole
+-  STATUS, human exchange and a durable grammar home at promotion; require independent
+-  functional acceptance on named interfaces/output scope, invalid-prefix rejection
+-  and non-execution. No parser implementation until reviewed grammar, exact home,
+-  stack and verifier decisions are recorded. No commit, push, deployment, installer
+-  execution, delivery activation or later phases. raw/ remains exactly 19 pinned files.
+-  Cartan alone navigates and writes STATUS; consultations are verbatim head-attributed
+-  evidence/ captures, not helper-authored BUS files. No Oraculum authorization.
+-  Claude is launched/carried only by Majkee; prompt limits are not sandbox proof.
+-next: Majkee launches the fresh Claude Janus challenge with evidence/launch.janus.2026-10-17.md and carries its native reply unchanged to Cartan.
+-expected: One anchored Janus judgment on the frozen concrete packet; Cartan captures/verifies it before bringing the actual grammar, home, stack and verifier decisions to Majkee.
++  Preserve the Phase 0 gate, v3/v4 and exactly 19 frozen raw files. Source is inert;
++  no config wiring, commit, push, deploy, installer, delivery, source loader, picker,
++  shared-layer build, runtime harness change or later-phase execution is authorized here.
++  Majkee now authorizes publication-package and next-phase RUNBOOK proposal preparation only.
++  Performance qualifies office/Python 3.14.7 only. Cap, picker, shared-layer owner/
++  home/API and carrier qualification remain future decisions under L3/L4/L14/L17.
++  Ovitmugen retains resource/lifetime ownership. Other sessions retain their pens.
++  Bed/router remain for review: preservation commits, promotion and prune are not
++  performed under the no-publication boundary. No skill or program was installed.
++next: Cartan checks cycle 29 package, then commissions the separate next-phase RUNBOOK proposal for review/gavel.
++expected: Exact allowlisted snapshot, hashes and reviewable per-repo changes; no stage/commit/deploy or next-phase code.
+ ---
+ 
+ # STATUS — composer-01-parse
+ 
+-Observed completed native targets: `/root/grammar_builder` (Astrobley; verified
+-cycle 07), `/root/grammar_challenge` (challenger; cycle 08), `/root/houston_consult`
+-(Houston consult; cycle 09), `/root/publication_research` (researcher; cycle 04).
+-Their runtime availability must be queried again before any follow-up.
++GO: `evidence/decision.majkee.phase0-go.2026-10-20.md`; durable product law: flag L17.
++Cartan retains the cSharp navigation/STATUS pen. Astrobley authored the source;
++fresh native `/root/phase0_verifier` (gpt-5.6-sol/high, office, fork_turns none)
++reproduced acceptance and witnessed head claims. Observed handles are not persistence
++promises; recover through their exact disk findings before any new dispatch.
+ 
+-Original `/root/road_follower` (explicit Luna/high, fresh initial context) has durable
+-cycle-03 RETURN but was absent from the later availability query. No recovered memory
+-or preserved handle is claimed. Cycle 10 used new `/root/road_follower_10` (explicit Luna/high, fresh context); its
+-RETURN was checked in `_bus/10.cartan.verdict.md`. No further turn is dispatched.
++User-requested reusable method: `evidence/brief.germline-contract-testing.md`, an
++uninstalled candidate, copied verbatim by request to
++`/home/hruzam/ia-sync/.dev/session/germline-07-make-program/raw/brief.germline-contract-testing.md`
++(cycle 28). Copy presence 63dc0d9d2038424fbbebf3dd63d1edaa detached. cSharp transfer: `evidence/experience-transfer.cartan.2026-10-21.md`.
++Owned presence f7df7a3c37a5e2bcc4fbb6630303427e detached; exact receipt:
++`evidence/presence-detach.cartan.2026-10-21.json`.
+ 
+-RUNBOOK is the fixed road; this snapshot is its only current position.
++Flight C1 response remains unchanged at:
++`/home/hruzam/ia-sync/.dev/session/germline-05-sella-germline-audit/_bus/RETURN.01.c1-composition.cartan.md`.
+diff --git a/.dev/session/flag.md b/.dev/session/flag.md
+index a9d91bfc301d060ece41265c6b8265ae711fcba7..7e9475650c487f9a9f5eaf7ba58eb833c238c322 100644
+--- a/.dev/session/flag.md
++++ b/.dev/session/flag.md
+@@ -190,6 +190,31 @@
+   authorize deployment now, choose the exact source subdirectory or settle the grammar.
+   The OUTPUT(A) ↔ stridularium interface boundary remains as in L8/L13.
+ 
++- **L17 · Termbrana composition and its Phase 0 grammar** (majkee GO, 2026-10-20,
++  after Janus v4/home review, Houston layering consult and source-extension clarification):
++  Termbrana is the terminal membrane: the Zellij observer at `toolbox/termbrana/`
++  (Rust/WASM, L11/L12) plus a reusable composition family at
++  `~/ia-sync/zsh/termbrana/` (`composer.zsh` and adjacent Python stdlib). This
++  supplements L11's product scope and L12's placement for the composition family;
++  central Nablarva governance and the no-local-harness rule remain. L11's M2
++  benchmark/stop-rule binds the observer only. Python acceptance is conditional
++  on measured responsiveness. Editor/pipe/tmux push is a human-operated carrier
++  outside L3/L4's regulated room protocol until separately qualified; assistant
++  draft contribution grants no autonomous sending authority.
++  Termbrana composition and ovitmugen are independently useful clients; shared
++  mechanisms belong at a narrow integration boundary. Ovitmugen keeps view/layout
++  and protected process-lifetime ownership. Discovery is not delivery authority;
++  future transmission requires checked target binding and explicit authority.
++  Concrete shared-layer ownership/home/API and carrier qualification remain open;
++  no common framework or transport is authorized by the Phase 0 build.
++  Grammar v4 is approved: exact same-nonce end-line delimiters, opaque byte-preserved
++  body and its EOL, five required header fields, program/function excluded from
++  allowed headers. Future configurable composition sources may include controller,
++  subagent-roster, germline/vendor and SPECIAL definitions with source/kind provenance;
++  preparation precedes the body, native activation remains separate, picker remains
++  open. Release is Phase 0 parser implementation and independent verification only.
++  No commit, push, deployment, delivery or later-phase activation follows from GO.
++
+ ## Named deferral thresholds (folded from abolished plan.md)
+ 
+ - Domain seat: earned when a build-task class repeats 3× (not before)
+diff --git a/PROJECT-DESIGN.md b/PROJECT-DESIGN.md
+index ab75c5cdb1750f41a4c42c5740b99e3e8759e93d..1bfe1d931dfce70a703e985886cb1789758b2684 100644
+--- a/PROJECT-DESIGN.md
++++ b/PROJECT-DESIGN.md
+@@ -119,10 +119,17 @@ and pointers, not a second progress register or deployment authorization.
+ 
+ ## 3.1. termbrana
+ 
++[L17](.dev/session/flag.md) includes the Zellij observer at `toolbox/termbrana/`
++and reusable composition at `~/ia-sync/zsh/termbrana/`, above session beds/vaults.
++The [Termbrana README](toolbox/termbrana/README.md#composition-and-explicit-input-direction)
++owns the approved direction, future adjustable sources and integration boundaries.
++The terminal/AI/browser/files/notes intent below remains; dashboards and sessions
++are optional, independently useful integrations.
++
+  - semitransparent foil allowing one typewriting system over all (keys, shortcuts, lighter navigation for terminal inputs -> agentive UI)
+  - bridge between terminal, ai session, browser (firefox), files
+  - example: have file on line nr. xxx will add `NOTE<nr>` -> open appropriate buffer collector for notes -> I can attach ai session on specific notes, same should be allowed in browser by press any key I can make note with address and anchor to specific HTML part or
+- - requires `instatmux` -> dashboard part with sessions
++ - optional `instatmux` dashboard/session integration; composition does not require it
+  --> if to much - heavy on one toobox can be splitted to parts per scope of process.
+ 
+ ---
+diff --git a/toolbox/termbrana/README.md b/toolbox/termbrana/README.md
+index 876a639d31e2f099d0caba1b403514c8b48e304d..4650950eb22dfd384a45519d2b20b3bd70287a85 100644
+--- a/toolbox/termbrana/README.md
++++ b/toolbox/termbrana/README.md
+@@ -1,7 +1,8 @@
+ # Termbrana
+ 
+-Termbrana is a planned independent semantic observation, navigation, and replay layer
+-for terminal sessions. It is Zellij-first and read-only by default.
++Termbrana's initial observer is a planned independent semantic observation, navigation,
++and replay layer for terminal sessions, Zellij-first and read-only by default. The
++composition family below is separate from this observer under flag L17.
+ 
+ > **Status — pre-product, Milestone 0 truth spike.** This repository currently contains
+ > a compiling Zellij 0.44.3 probe harness, not an installable semantic-navigation MVP.
+@@ -107,6 +108,78 @@ The read-only MVP is intended to provide:
+ The MVP does not include raw capture, sanitization claims, a transparent overlay, autonomous
+ command injection, global interception, or provider-specific policy in the core.
+ 
++## Composition and explicit input direction
++
++**Said — Majkee, 2026-10-20:** a "more flexible surface above sessions", with
++"need send keys to tmux or anothe similar push type also" and text editors
++"like sublime or lite XL"; "needs pipes and and also should be accessible from
++agent assistant to inject parts there." These source words are retained here from
++Majkee's direct product-direction messages of that date.
++
++**Inferred — Astrobley, connective design reading:** composition is reusable
++independently of a RUNBOOK bed, vault or editor. Those may attach to its workspace.
++Human edits, Sublime Text/Lite XL, pipes and assistant calls can contribute prepared
++text or parts through shared composition interfaces. Contributing a draft and
++transmitting prepared output are distinct operations. Output needs explicit input/
++push adapters, including tmux keys/text or another suitable target. A shared write
++and target-binding policy must govern all clients; editing or body
++text never implies submission or authority. Concrete APIs, storage, daemon, picker,
++writer arbitration and delivery qualification remain open.
++
++The Phase 0 parser is a reusable, byte-preserving inert validator beneath
++this direction: no editor orchestration, instruction discovery/loading or sending.
++The existing Zellij observer, M0/M1/M2 gates and benchmark are unchanged. Its default
++is read-only; sending requires the separately enabled operator capability already
++defined in [product law §2.4](research/termbrana.project-definition.md#24-read-only-first).
++No adapter, writer or transmission is implemented or activated by this direction.
++Retained observations remain append-only and provenance grades are not inflated.
++
++There is a carrier seam with [flag L3/L4/L14](../../.dev/session/flag.md): tmux is
++never the room protocol or truth, and send-keys was rejected as the regulated
++injection leg because rendered screens cannot distinguish noise/final/interrupt
++([founding comparison](../../raw.nablarva/oraculum-basic-triangulation/triad.comparison.2026-07-31.md)).
++The new push request is broader product direction; later carrier qualification and
++any necessary lock reconciliation remain explicit gates. It does not approve tmux
++as regulated transport or reopen the whole relay. L17 places human-operated
++editor/pipe/tmux push outside that regulated protocol until qualified; assistant
++draft contribution grants no autonomous sending authority.
++
++**Source direction — said: Majkee, 2026-10-20:** code home
++`~/ia-sync/zsh/termbrana/composer.zsh` with family scripts; "python if fast enough."
++**Locked — L17, Majkee GO, 2026-10-20:** the reusable composition family lives at
++`~/ia-sync/zsh/termbrana/`, with a thin zsh entry and independent Python stdlib
++parser, conditional on measured responsiveness. Its [source-family README](../../../../ia-sync/zsh/termbrana/README.md)
++and durable grammar describe the source-only Phase 0 interface. The existing
++Rust/WASM observer remains at `toolbox/termbrana/`; its M2 benchmark/stop-rule binds
++only that observer. This supplements L11/L12 rather than changing its host contract
++([L17/L11/L12/L16/L8′](../../.dev/session/flag.md)). Approved v4 is released only for
++Phase 0 parser implementation and independent verification; no deployment or
++later-phase activation follows.
++
++**Layering B — L17:** Termbrana composition and ovitmugen are independently useful
++clients. Any common mechanism is prospective and belongs at a narrow integration
++edge with demonstrated consumers, not a framework built by this phase. Composition
++works without ovitmugen, a RUNBOOK bed, tmux, editor or interactive shell. Ovitmugen
++keeps view/layout and protected process-lifetime ownership; discovery is not delivery
++authority. Future sending needs complete checked target binding and explicit operator
++authority through a common write/target policy. Control text and payload bytes stay
++distinct; existing tmux helpers/probe pipes establish neither packet fidelity nor
++raw-PTY provenance. Shared-layer owner/home/API and carrier qualification remain open.
++
++**Future adjustable sources — L17:** a common selection surface must accommodate
++controller tables, subagent rosters, germline/vendor definitions and SPECIAL
++collections. Each source needs a configurable location and format reader, preserving
++source/kind provenance. Selected text or references are prepared before composing
++the opaque body. Native activation/launching stays explicit; definitions do not
++activate themselves. No loader, picker or shared selection API is implemented here.
++
++The five continuing integration constraints are independent core/optional edges;
++observer, retained-record and provenance safety; contribution distinct from
++transmission; qualified carriers with required lock reconciliation; and explicit
++shared-layer/publication ownership. Python needs latency evidence. Locate temporary
++acceptance work and current decisions through the standing [pulse router](../../.dev/session/pulse.md)
++and its owning session's RUNBOOK/STATUS, not a durable dependency on a particular bed.
++
+ ## Roadmap and gates
+ 
+ | Milestone | State | Exit gate |

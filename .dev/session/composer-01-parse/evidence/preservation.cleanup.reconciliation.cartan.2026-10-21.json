@@ -1,0 +1,68 @@
+{
+  "author": "Cartan",
+  "at": "2026-10-21T04:33:38.218663+02:00",
+  "result": "PASS for immutable snapshot, report and explicitly accounted post-capture head transition; not a live staging recheck",
+  "snapshot_at_utc": "2026-10-21T02:28:58.322744+00:00",
+  "independent_archive_check": {
+    "status": "PASS",
+    "archive_members": 941,
+    "safe_names_types_hashes_sizes_modes": true,
+    "all_live_payload_bytes_match": true,
+    "raw19_source10": true,
+    "old_package_checksums": 20,
+    "old_members_unchanged": 884,
+    "expected_modified": [
+      "nablarva/.dev/session/composer-01-parse/STATUS.md",
+      "nablarva/PROJECT-DESIGN.md",
+      "nablarva/toolbox/termbrana/README.md"
+    ],
+    "added": 54,
+    "removed": 0,
+    "archive_sha256": "ed95f7dce28c60b0dfd0fc66eef00cc906afa8322c899892be3adfee05aaec0f",
+    "package_sha256": "0e302711799a6c19655419b600ca6aedc96205df3f2c607ba796e6e9ea60f521",
+    "builder_return_sha256": "c4781fe166e0a2108044fe9f6c48f6fcb0e71958cb918374e40e7760ee7148ee"
+  },
+  "unchanged_captured_members": 940,
+  "expected_changed_members": [
+    {
+      "repo": "nablarva",
+      "path": ".dev/session/composer-01-parse/STATUS.md",
+      "captured_sha256": "9efe2530d59ae94aa320b23a7c0a8176b450b1d9f02081fb528d9f9532e1d859",
+      "current_sha256": "32cc17c6bb9db3b1a5f0aece74c9acd9e218e28dd99caa873b57e2b921c326e1",
+      "mode_unchanged": true,
+      "disposition": "expected final head STATUS transition after verified capture"
+    }
+  ],
+  "unexpected_changed_members": [],
+  "post_capture_files_before_this_receipt": [
+    {
+      "repo": "nablarva",
+      "path": ".dev/session/composer-01-parse/_bus/38.cartan.verdict.md",
+      "sha256": "df19e9f018773e218ccad75814b050b2ad928c759cad659c227523f32a680aa9"
+    }
+  ],
+  "this_receipt": {
+    "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/preservation.cleanup.reconciliation.cartan.2026-10-21.json",
+    "disposition": "additional head-authored post-capture receipt; excluded from its own identity listing"
+  },
+  "git": {
+    "nablarva": {
+      "head": "fff20b8de570e5d66381ab540d9474ddfff07750",
+      "index_sha256": "4e36fcd9270f7e2ea16baf8e23532cf3e43991f2e5c8c5620d50215784abb85a",
+      "unchanged": true
+    },
+    "ia-sync": {
+      "head": "55e615766143062fe018d29f3e914f9c785fffb5",
+      "index_sha256": "47444a9ff02e1b00f6dfa40b928457424367162d4e74f3b305d796836ffd5ddb",
+      "unchanged": true
+    }
+  },
+  "report_sha256": "9785c0ccdfedd3d98d2533366e460351c91dda370c22947471dc93a622265e4f",
+  "report_links_resolve": 14,
+  "source_and_grammar_unchanged": true,
+  "g06_u3_exists": false,
+  "product_tests_rerun": false,
+  "publication_or_prune": false,
+  "journal_written_this_cleanup": false,
+  "future_publication": "Strict live recheck must detect final STATUS/verdict/receipt changes; fresh reviewed reconciliation and separate authority required before staging."
+}

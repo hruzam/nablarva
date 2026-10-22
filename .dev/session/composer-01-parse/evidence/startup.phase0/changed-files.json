@@ -1,0 +1,20 @@
+{
+  "README.md": {
+    "before": "d762bd7fd95c038637961afd4b0da3d2ee9beb02f3a5a817b36043c0242bebab",
+    "after": "5bf2fa4e17254806313578d855db2fad0920c7c3704826ffd0fbc6b11d7484ae",
+    "staged": "/tmp/termbrana-startup.LRRuSZ/termbrana/README.md",
+    "destination": "/home/hruzam/ia-sync/zsh/termbrana/README.md"
+  },
+  "composer.zsh": {
+    "before": "dd7e2402c7f16e6ef4b5bdca7de67f1643424e7f3405c090eafc5782c7fd6f8f",
+    "after": "3aef419df8b2e04ded21b794b1bc4b66d921b28b6b538248fae1e13cf6b36d2e",
+    "staged": "/tmp/termbrana-startup.LRRuSZ/termbrana/composer.zsh",
+    "destination": "/home/hruzam/ia-sync/zsh/termbrana/composer.zsh"
+  },
+  "tests/test_startup.py": {
+    "before": null,
+    "after": "40a5e22cc2ecc64e3dbcefd1832482f14d80dde22914094480f9a7d8723eaaa3",
+    "staged": "/tmp/termbrana-startup.LRRuSZ/termbrana/tests/test_startup.py",
+    "destination": "/home/hruzam/ia-sync/zsh/termbrana/tests/test_startup.py"
+  }
+}

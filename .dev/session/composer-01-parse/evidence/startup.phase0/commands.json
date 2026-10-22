@@ -1,0 +1,108 @@
+[
+  {
+    "label": "unit",
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/home/hruzam/ia-sync/zsh/termbrana",
+    "exit": 0
+  },
+  {
+    "label": "corpus",
+    "command": [
+      "python3",
+      "-B",
+      "tests/acceptance.py",
+      "--bed",
+      "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+      "--out",
+      "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/startup.phase0"
+    ],
+    "cwd": "/home/hruzam/ia-sync/zsh/termbrana",
+    "exit": 0
+  },
+  {
+    "label": "base-shell-syntax-initial",
+    "command": [
+      "zsh",
+      "-n",
+      "base.zsh",
+      "composer.zsh",
+      "keyboard.zsh"
+    ],
+    "cwd": "/home/hruzam/ia-sync/zsh/termbrana",
+    "exit": 0
+  },
+  {
+    "label": "shell-syntax-base.zsh",
+    "command": [
+      "zsh",
+      "-n",
+      "/home/hruzam/ia-sync/zsh/termbrana/base.zsh"
+    ],
+    "exit": 0
+  },
+  {
+    "label": "shell-syntax-composer.zsh",
+    "command": [
+      "zsh",
+      "-n",
+      "/home/hruzam/ia-sync/zsh/termbrana/composer.zsh"
+    ],
+    "exit": 0
+  },
+  {
+    "label": "shell-syntax-keyboard.zsh",
+    "command": [
+      "zsh",
+      "-n",
+      "/home/hruzam/ia-sync/zsh/termbrana/keyboard.zsh"
+    ],
+    "exit": 0
+  },
+  {
+    "label": "benchmark-once",
+    "command": [
+      "python3",
+      "-B",
+      "/home/hruzam/ia-sync/zsh/termbrana/tests/benchmark.py",
+      "--family",
+      "/home/hruzam/ia-sync/zsh/termbrana",
+      "--evidence",
+      "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/startup.phase0",
+      "--fixed",
+      "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/acceptance.fixed.json"
+    ],
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "exit": 0
+  },
+  {
+    "label": "frozen-sha256",
+    "command": [
+      "sha256sum",
+      "-c",
+      "SHA256SUMS"
+    ],
+    "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+    "exit": 0
+  },
+  {
+    "label": "frozen-sha256",
+    "command": [
+      "sha256sum",
+      "-c",
+      "evidence/grammar.builder.v4.sha256"
+    ],
+    "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+    "exit": 0
+  }
+]

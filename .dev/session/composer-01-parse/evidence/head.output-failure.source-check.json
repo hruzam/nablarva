@@ -1,0 +1,26 @@
+[
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "/home/hruzam/ia-sync/zsh/termbrana/composer.py",
+      "parse",
+      "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/fixtures/packet.handwritten.v4.md"
+    ],
+    "stdout_sink": "/dev/full",
+    "exit": 74,
+    "stderr": "{\"error\":\"io_or_resource_failure\"}\n"
+  },
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "/home/hruzam/ia-sync/zsh/termbrana/composer.py",
+      "check",
+      "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/fixtures/packet.handwritten.v3.md"
+    ],
+    "stdout_sink": "/dev/full",
+    "exit": 74,
+    "stderr": "{\"error\":\"io_or_resource_failure\"}\n"
+  }
+]

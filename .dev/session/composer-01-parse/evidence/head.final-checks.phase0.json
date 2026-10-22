@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-21T00:04:50.280778+02:00",
+  "author": "Cartan",
+  "kind": "final-read-only-checks",
+  "source_files": 10,
+  "baseline_paths": 131,
+  "baseline_changed": [
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md",
+    "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+    "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+    "/home/hruzam/ia-sync/journal.host-cleanup.md"
+  ],
+  "raw_files": 19,
+  "pins": [
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "SHA256SUMS"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+      "exit": 0,
+      "stdout": "raw/README.md: OK\nraw/CONTEXT.md: OK\nraw/EXCHANGE.md: OK\nraw/FOR-NABLA.astrobley.md: OK\nraw/FOR-NABLA.oraculum.md: OK\nraw/sources.json: OK\nraw/sella-v.0.1/README.md: OK\nraw/sella-v.0.1/EXCHANGE.md: OK\nraw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK\nraw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK\nraw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK\nraw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK\nraw/sella-v.0.1/evidence.sella-v.0.1.json: OK\nraw/01_SYNC_METHOD.md: OK\nraw/02_PARSER_GATE.md: OK\nraw/04_REGISTRY.md: OK\nraw/05_WAY_OF_THINKING.md: OK\nraw/journal.2026-10-13.md: OK\nraw/journal.2026-10-16.md: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "evidence/grammar.builder.v4.sha256"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+      "exit": 0,
+      "stdout": "evidence/grammar.builder.v4.md: OK\n",
+      "stderr": ""
+    }
+  ],
+  "documents": {
+    "brief.germline-contract-testing.md": {
+      "sha256": "c293d706a344e22ee0667111887bc889138fc371a8c43aef1aaa8cdcedf35bed",
+      "links": 14,
+      "valid": true
+    },
+    "phase0.exit.cartan.2026-10-21.md": {
+      "sha256": "e741f7ae01b9ed8cc6f457075c54d57d490fcf3682b8f7820442f0f954ef6378",
+      "links": 8,
+      "valid": true
+    },
+    "experience-transfer.cartan.2026-10-21.md": {
+      "sha256": "364c3edf7654b3c8026859b98e0e8ba36b36701f20175096a5cb492bf3fbdbbd",
+      "links": 0,
+      "valid": true
+    }
+  },
+  "verifier_finding_sha256": "51dc807e230e18c40dda042e583ebf092b59e2ed7cdcfb541048bdf50c51047b",
+  "tracked_whitespace": {
+    "command": [
+      "git",
+      "diff",
+      "--check",
+      "--",
+      ".dev/session/flag.md",
+      "PROJECT-DESIGN.md",
+      "toolbox/termbrana/README.md",
+      ".dev/session/composer-01-parse/STATUS.md"
+    ],
+    "exit": 0
+  },
+  "ia_sync_head": "55e615766143062fe018d29f3e914f9c785fffb5",
+  "nablarva_head": "fff20b8de570e5d66381ab540d9474ddfff07750"
+}

@@ -1,0 +1,161 @@
+{
+  "README_exact_authorized_replacements": 5,
+  "README_scope_proof": "Exact five old/new replacements and reverse byte comparison passed in initial validation before concurrent-head-addition assertion; applied delta retained unchanged.",
+  "all_other_original_bytes_unchanged": true,
+  "applied_diff": {
+    "base": "exact before copies, not git HEAD",
+    "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/applied.diff",
+    "sha256": "762e5ca316784e814ac814a95a1c4d444416676e22d76c7d179c3536f2d5e4b7"
+  },
+  "architecture_proposal": {
+    "actual_status": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/STATUS.md",
+    "applied": false,
+    "foreign_input_hashes_unchanged": true,
+    "internal_X4_names": true,
+    "owner": "actual architecture/router owners and Majkee must confirm; no replacement appointed",
+    "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/architecture-owner.proposal.md",
+    "pulse_X4_target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-architecture-sitting/STATUS.md",
+    "pulse_target_exists": false
+  },
+  "at_utc": "2026-10-21T02:17:44.482464+00:00",
+  "benchmarks_run": false,
+  "commands": [
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "SHA256SUMS"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+      "exit": 0,
+      "ok_lines": 19
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "evidence/grammar.builder.v3.sha256"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+      "exit": 0,
+      "ok_lines": 1
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "evidence/grammar.builder.v4.sha256"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+      "exit": 0,
+      "ok_lines": 1
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "PACKAGE.SHA256"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0",
+      "exit": 0,
+      "ok_lines": 20
+    }
+  ],
+  "evidence_files": {
+    "PROJECT-DESIGN.before.md": "f2346f3d013df3b439f2b38a5064c86c47a5c2d09f8d8a3468857e2c5b052df6",
+    "README.termbrana.before.md": "7c77dac2a76a3fcb0ecbafa8026e1a739ff8c0c3843ed1bdb8979498de5830bb",
+    "applied.diff": "762e5ca316784e814ac814a95a1c4d444416676e22d76c7d179c3536f2d5e4b7",
+    "architecture-owner.proposal.md": "78616167549be7f2dba85e187e23166a851c79fd35bebbfb3b94cb56c8d17c9b",
+    "before.json": "5a2f074e71c2285d4fc4438b2b57715906100270999a01b5077ce9c9464d637a",
+    "receipt.md": "be322f249b045e1a3f8b0e761e3576ec01612b2bc6558decec55e5ec191a95bd"
+  },
+  "git_mutations": false,
+  "helpers_spawned": false,
+  "new_or_changed_links": [
+    {
+      "anchor_checked": false,
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md",
+      "source": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+      "target": "toolbox/termbrana/DECISIONS.md",
+      "valid": true
+    },
+    {
+      "anchor_checked": false,
+      "resolved": "/home/hruzam/ia-sync/zsh/termbrana/README.md",
+      "source": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+      "target": "../../ia-sync/zsh/termbrana/README.md",
+      "valid": true
+    },
+    {
+      "anchor_checked": false,
+      "resolved": "/home/hruzam/ia-sync/zsh/termbrana/GRAMMAR.md",
+      "source": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+      "target": "../../../../ia-sync/zsh/termbrana/GRAMMAR.md",
+      "valid": true
+    },
+    {
+      "anchor_checked": false,
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md",
+      "source": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+      "target": "../../.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md",
+      "valid": true
+    },
+    {
+      "anchor_checked": false,
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/pulse.md",
+      "source": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+      "target": "../../.dev/session/pulse.md",
+      "valid": true
+    },
+    {
+      "anchor_checked": true,
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md",
+      "source": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+      "target": "DECISIONS.md#adr-0002--m0-host-contract-frozen",
+      "valid": true
+    }
+  ],
+  "prior_evidence": {
+    "concurrent_head_addition": {
+      "author": "Cartan; independently confirmed via native message",
+      "disposition": "new addition, not part of old815; left untouched and not frozen",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/report.to-myshell.cleanup.2026-10-21.md"
+    },
+    "excludes": [
+      "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21",
+      "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/report.to-myshell.cleanup.2026-10-21.md"
+    ],
+    "files": 815,
+    "manifest_sha256": "2e4aff8d224239c52d68df1f94b90d3912d6741f14d01b68321b9778f4d3f05a",
+    "unchanged": true
+  },
+  "product_tests_run": false,
+  "publication_or_prune": false,
+  "remaining": [
+    "source README qualification pin awaits actual authorized preservation commit",
+    "architecture/pulse incorporation is unapplied with its actual owners",
+    "generation-X sourcing coverage/contracts and G06 U3/operator dependencies remain planned"
+  ],
+  "scope": "two original documentation files and new cleanup evidence only",
+  "source_family_edited": false,
+  "source_receipt_files": 10,
+  "source_receipt_match": true,
+  "status": "PASS",
+  "targets": [
+    {
+      "after_sha256": "6ee10aa1c40a853cc6c1e6ff5dfa191999f38314058064b5543ac1392fe2c78f",
+      "before_sha256": "f2346f3d013df3b439f2b38a5064c86c47a5c2d09f8d8a3468857e2c5b052df6",
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md"
+    },
+    {
+      "after_sha256": "a30b152eb848ce036a0a83da200108778cb703b986f7bbf70632d2a55341b482",
+      "before_sha256": "7c77dac2a76a3fcb0ecbafa8026e1a739ff8c0c3843ed1bdb8979498de5830bb",
+      "path": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md"
+    }
+  ],
+  "validation_notes": [
+    "Initial prior-file count check detected815->816 due to the concurrent head report; old815 hash manifest matches after excluding that new file.",
+    "An auxiliary zero-width character-diff guard aligned shared punctuation before the insertion and rejected it; exact replacement/inverse comparison and exact saved patch are the scope proof."
+  ],
+  "wrapper_exactly_matches_reviewed_diff": true
+}

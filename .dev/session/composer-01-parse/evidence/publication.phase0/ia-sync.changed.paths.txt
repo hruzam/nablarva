@@ -1,0 +1,12 @@
+.dev/session/germline-07-make-program/raw/brief.germline-contract-testing.md
+journal.host-cleanup.md
+zsh/termbrana/GRAMMAR.md
+zsh/termbrana/README.md
+zsh/termbrana/base.zsh
+zsh/termbrana/composer.py
+zsh/termbrana/composer.zsh
+zsh/termbrana/keyboard.zsh
+zsh/termbrana/tests/acceptance.py
+zsh/termbrana/tests/benchmark.py
+zsh/termbrana/tests/test_composer.py
+zsh/termbrana/tests/test_startup.py

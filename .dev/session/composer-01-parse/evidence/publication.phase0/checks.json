@@ -1,0 +1,178 @@
+{
+  "archive_bytes": 862872,
+  "archive_members_safe_regular": true,
+  "archive_sha256": "649e789bc2d3b3ea40658339a393a4f2d289c56b1ec5fdace14ca997cf10e734",
+  "changed_path_lists_match_snapshot": true,
+  "commands": [
+    {
+      "command": [
+        "git",
+        "diff",
+        "--binary",
+        "--full-index",
+        "--no-ext-diff",
+        "--no-renames",
+        "HEAD",
+        "--",
+        ".dev/session/composer-01-parse/RUNBOOK.md",
+        ".dev/session/composer-01-parse/STATUS.md",
+        ".dev/session/flag.md",
+        "PROJECT-DESIGN.md",
+        "toolbox/termbrana/README.md"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva",
+      "exit": 0,
+      "purpose": "capture only scoped tracked changes"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--binary",
+        "--full-index",
+        "--no-ext-diff",
+        "--no-renames",
+        "HEAD",
+        "--",
+        "journal.host-cleanup.md"
+      ],
+      "cwd": "/home/hruzam/ia-sync",
+      "exit": 0,
+      "purpose": "capture only scoped tracked changes"
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0/payload.sha256"
+      ],
+      "cwd": "<temporary extracted snapshot>",
+      "exit": 0,
+      "ok_lines": 887
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "SHA256SUMS"
+      ],
+      "cwd": "<temporary extracted Nablarva bed>",
+      "exit": 0,
+      "stdout": "raw/README.md: OK\nraw/CONTEXT.md: OK\nraw/EXCHANGE.md: OK\nraw/FOR-NABLA.astrobley.md: OK\nraw/FOR-NABLA.oraculum.md: OK\nraw/sources.json: OK\nraw/sella-v.0.1/README.md: OK\nraw/sella-v.0.1/EXCHANGE.md: OK\nraw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK\nraw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK\nraw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK\nraw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK\nraw/sella-v.0.1/evidence.sella-v.0.1.json: OK\nraw/01_SYNC_METHOD.md: OK\nraw/02_PARSER_GATE.md: OK\nraw/04_REGISTRY.md: OK\nraw/05_WAY_OF_THINKING.md: OK\nraw/journal.2026-10-13.md: OK\nraw/journal.2026-10-16.md: OK\n"
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "evidence/grammar.builder.v4.sha256"
+      ],
+      "cwd": "<temporary extracted Nablarva bed>",
+      "exit": 0,
+      "stdout": "evidence/grammar.builder.v4.md: OK\n"
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "evidence/grammar.builder.v3.sha256"
+      ],
+      "cwd": "<temporary extracted Nablarva bed>",
+      "exit": 0,
+      "stdout": "evidence/grammar.builder.v3.md: OK\n"
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--whitespace=nowarn",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0/nablarva.tracked.patch"
+      ],
+      "cwd": "<temporary nablarva HEAD files>",
+      "exit": 0
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--whitespace=nowarn",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0/ia-sync.tracked.patch"
+      ],
+      "cwd": "<temporary ia-sync HEAD files>",
+      "exit": 0
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0/recheck.py"
+      ],
+      "exit": 0,
+      "stdout": "{\"status\": \"PASS\", \"payload_files\": 887, \"snapshot_at_utc\": \"2026-10-20T22:55:50.833830+00:00\", \"meaning\": \"matches captured bytes and path sets; no staging authorized\"}\n"
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "55e615766143062fe018d29f3e914f9c785fffb5:.dev/session/germline-05-sella-germline-audit/_bus/RETURN.01.c1-composition.cartan.md"
+      ],
+      "cwd": "/home/hruzam/ia-sync",
+      "exit": 0,
+      "purpose": "check already-committed C1 dependency without adding it"
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "PACKAGE.SHA256"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0",
+      "exit": 0,
+      "ok_lines": 20
+    }
+  ],
+  "committed_dependency": {
+    "head": "55e615766143062fe018d29f3e914f9c785fffb5",
+    "included_as_new_payload": false,
+    "path": ".dev/session/germline-05-sella-germline-audit/_bus/RETURN.01.c1-composition.cartan.md",
+    "repo": "ia-sync",
+    "sha256": "a2b989540f241adccc2f13d12d215d585620887aa04bec823bf2af1e78b1009a"
+  },
+  "dispositions": {
+    "modified": 6,
+    "new": 812,
+    "unchanged_reference": 69
+  },
+  "document_format_checks": "PASS",
+  "extracted_hashes_match": true,
+  "git_heads_indices_payload_unchanged": true,
+  "manifest_files": 887,
+  "payload_bytes": 25873046,
+  "per_repo": {
+    "ia-sync": {
+      "modified": 1,
+      "new": 11
+    },
+    "nablarva": {
+      "modified": 5,
+      "new": 801,
+      "unchanged_reference": 69
+    }
+  },
+  "preserved_benchmark_statuses": {
+    "correction.phase0/benchmark.json": "FAIL",
+    "implementation.phase0/benchmark.first.json": "FAIL",
+    "startup.phase0/benchmark.json": "PASS",
+    "verification.phase0/declared/benchmark.json": "PASS"
+  },
+  "publication_performed": false,
+  "raw_and_grammar_pins": "PASS",
+  "raw_count": 19,
+  "requested_brief_copy_identical": true,
+  "shared_diff_review": "RUNBOOK/STATUS, L17, product composition sections and composer journal entry only; no foreign hunks observed",
+  "snapshot_at_utc": "2026-10-20T22:55:50.833830+00:00",
+  "source_receipt_match": true,
+  "status": "PASS",
+  "tests_rerun": false
+}

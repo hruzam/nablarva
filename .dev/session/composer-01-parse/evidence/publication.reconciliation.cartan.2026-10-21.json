@@ -1,0 +1,234 @@
+{
+  "author": "Cartan",
+  "at": "2026-10-21T01:24:38.283122+02:00",
+  "result": "PASS for preserved snapshot and explicitly accounted later preparation; NOT a live staging recheck",
+  "captured_at_utc": "2026-10-20T22:55:50.833830+00:00",
+  "repositories": {
+    "ia-sync": {
+      "root": "/home/hruzam/ia-sync",
+      "head": "55e615766143062fe018d29f3e914f9c785fffb5",
+      "head_unchanged": true,
+      "index_unchanged": true
+    },
+    "nablarva": {
+      "root": "/home/hruzam/unikuklatrix/nablarva",
+      "head": "fff20b8de570e5d66381ab540d9474ddfff07750",
+      "head_unchanged": true,
+      "index_unchanged": true
+    }
+  },
+  "package_checksums_pass": [
+    "README.md",
+    "capture.py",
+    "checks.json",
+    "ia-sync.changed.paths.nul",
+    "ia-sync.changed.paths.txt",
+    "ia-sync.excluded-changes.json",
+    "ia-sync.status.captured.nul",
+    "ia-sync.tracked-modified.paths.txt",
+    "ia-sync.tracked.patch",
+    "manifest.json",
+    "nablarva.changed.paths.nul",
+    "nablarva.changed.paths.txt",
+    "nablarva.excluded-changes.json",
+    "nablarva.status.captured.nul",
+    "nablarva.tracked-modified.paths.txt",
+    "nablarva.tracked.patch",
+    "payload.sha256",
+    "payload.tar.gz",
+    "recheck.py",
+    "snapshot.json"
+  ],
+  "payload_archive_sha256": "649e789bc2d3b3ea40658339a393a4f2d289c56b1ec5fdace14ca997cf10e734",
+  "captured_members": 887,
+  "captured_members_unchanged": 886,
+  "expected_changed_members": [
+    {
+      "repo": "nablarva",
+      "path": ".dev/session/composer-01-parse/STATUS.md",
+      "captured_sha256": "c4e2351f88e3147bc8b12eaf3267e15fd79e71e8196b342bbf9290cc22f6e488",
+      "current_sha256": "41afe78167d0b659fc01e8c787872b163e47180b9131c962d41d47d91014772a",
+      "mode_unchanged": true,
+      "disposition": "expected head STATUS transition after capture"
+    }
+  ],
+  "unexpected_changed_members": [],
+  "post_capture_files": [
+    {
+      "bed_relative_path": "_bus/29.cartan.verdict.md",
+      "sha256": "39d74356f2ff0d5e1bb47606fbcc8218c01df7455418688d6ae4b19c13fc67bd",
+      "size": 1587,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/30.builder.return.md",
+      "sha256": "890a67e55e788e51cccbaa9918de88d54516e6a083f19e772b621f57a34f1f92",
+      "size": 4096,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/30.cartan.point.md",
+      "sha256": "d927c9c2998b4dcccda566532823187e5471d13c3a17382388f32445f7df07a0",
+      "size": 5300,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/30.cartan.verdict.md",
+      "sha256": "17bb248d1a5c1ee3674afea522a2aa429f43e743057553a313f184e8ebe77120",
+      "size": 1842,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/31.cartan.point.md",
+      "sha256": "1598f7302f7d85e4310d710201a0ed35c67f85613714b5bdde8a0c1fc0551d63",
+      "size": 1659,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/31.cartan.verdict.md",
+      "sha256": "ea55c6d221fd1feafaf03a0edc05266d3244fbc4d00e01f5333e8aed8ab0d44f",
+      "size": 1292,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/32.cartan.point.md",
+      "sha256": "c8194f17f4ae44e8cf2fa48b9327023c76dc7b6130e7ded299efae00ff765997",
+      "size": 2515,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/32.cartan.verdict.md",
+      "sha256": "8fec2e4d219422ae13ae737e29481090491197e544d1e6d040b073b4d72ae815",
+      "size": 2319,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/33.builder.return.md",
+      "sha256": "93ab3c3b8e3176eb57f09976654a515acf62f07519f2ec81534b976b8535502c",
+      "size": 3658,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/33.cartan.point.md",
+      "sha256": "67059b44aaaec956731d7f645a9bfce64329c68e767baabfff338088b5b8587c",
+      "size": 2888,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/33.cartan.verdict.md",
+      "sha256": "0e45450de37d216f9deb1abfdb629c56e875570e20daf2a6287bdeef08c6ad34",
+      "size": 2123,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/34.cartan.point.md",
+      "sha256": "df47ec5dfd45a983e3dc765160b0847f3147d11325c16d5c98020c47ceddbffe",
+      "size": 1628,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "_bus/34.cartan.verdict.md",
+      "sha256": "e4680efe606c9e303895563bb4113237804183faf60c30c1c1935b9bee32277b",
+      "size": 1837,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/challenge.native-resolve-r2.2026-10-21.md",
+      "sha256": "5afa21402d0325710d7277b8afb88991d4a805e37fd68160954b05324fe28e74",
+      "size": 1175,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/challenge.native-resolve.2026-10-21.md",
+      "sha256": "4982eb8dc02f13841b7cf2d1baddb2511b12889a4c5dbdfa95477bc3f27e3ef3",
+      "size": 1240,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/consult.houston.resolve.2026-10-21.md",
+      "sha256": "d0d81ff991c5ae06c0bbc22c36083225eded5030bb9da7c5492a7d19bf736fa8",
+      "size": 6067,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "sha256": "8cc5e35bd4b431d54c15de39ad3fb5ebd800076d99457b4966607e2797a86f71",
+      "size": 20659,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/next-phase.resolve/checks.json",
+      "sha256": "232c78c88c471eef75041f8071b7f8ce715a50f02978eb57c798f106b846a87c",
+      "size": 26830,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/next-phase.resolve/decisions-and-intersections.md",
+      "sha256": "d02504a0ab173eaf9d5ba6fd163b99bd167a56a17bf4501e4f4a312b5c3efcc4",
+      "size": 10761,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/next-phase.resolve/reviewed-v1/README.md",
+      "sha256": "34b9de6136f768bf20b95bbcb25a04331567bb060834eba56768ea2f3f0608fa",
+      "size": 465,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/next-phase.resolve/reviewed-v1/RUNBOOK.composer-02-resolve.candidate.md",
+      "sha256": "26b298b563ac588a30a7993d675b9d336f54643d670bb9670bb9800f3b805437",
+      "size": 17308,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/next-phase.resolve/reviewed-v1/checks.json",
+      "sha256": "c8d6d736b703f4b5ce4bc13f9e2c0607579a97ef0f9a8b05d3fc0897b3173873",
+      "size": 20888,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/next-phase.resolve/reviewed-v1/decisions-and-intersections.md",
+      "sha256": "aa15ba4d4bf0ff08aa7935e4050d9b232941a0127297e0d6c3bf2223cfa05cb9",
+      "size": 9386,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    },
+    {
+      "bed_relative_path": "evidence/preparation.handoff.cartan.2026-10-21.md",
+      "sha256": "caf606ecec3946d8861d1071823e305c68bb400b9adc7cff7a9993f4e6d6eafc",
+      "size": 4073,
+      "classification": "authorized post-capture proposal/review/head handoff"
+    }
+  ],
+  "this_receipt": "Head-authored post-capture receipt; excluded from its own hash listing. No other later artifact is implied captured.",
+  "accepted_source_pins": {
+    "GRAMMAR.md": "af49004823b7e5b5b92f710196c0aa290c984feb81b8353071d6be0bfabdbc73",
+    "README.md": "5bf2fa4e17254806313578d855db2fad0920c7c3704826ffd0fbc6b11d7484ae",
+    "base.zsh": "106afa6d2356047afdb525fdcdfbd6a769ac246540fe1c7f5b0f66156bd4cbf9",
+    "composer.py": "a678c49bacc775d406de7021a869af072978ca888506112e6783a2b65660f28b",
+    "composer.zsh": "3aef419df8b2e04ded21b794b1bc4b66d921b28b6b538248fae1e13cf6b36d2e",
+    "keyboard.zsh": "96ddab94bab9205e57cae68796a45bb67fd253d5696dbbfc67e8aa654e95b4d7",
+    "tests/acceptance.py": "9d84140a802556f6b3259822d91355df1e64bada59c2888c75c903f68967b410",
+    "tests/benchmark.py": "244c17acb0ab8081ae98cb48f5622518b8efbd5bf91caab671db3ee154f35b1b",
+    "tests/test_composer.py": "3668c1fad314eb567faf82a285cec16ab98e8a7994c26edc44d0e3b61f1cdf5a",
+    "tests/test_startup.py": "40a5e22cc2ecc64e3dbcefd1832482f14d80dde22914094480f9a7d8723eaaa3"
+  },
+  "raw_reference_count": 19,
+  "approved_grammar_preserved": true,
+  "candidate_hashes": {
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/33.builder.return.md": "93ab3c3b8e3176eb57f09976654a515acf62f07519f2ec81534b976b8535502c",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md": "8cc5e35bd4b431d54c15de39ad3fb5ebd800076d99457b4966607e2797a86f71",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md": "d02504a0ab173eaf9d5ba6fd163b99bd167a56a17bf4501e4f4a312b5c3efcc4"
+  },
+  "g06_u3_present": false,
+  "new_live_session_created": false,
+  "tests_or_benchmarks_rerun": false,
+  "owned_presence_detach": {
+    "path": "/home/hruzam/reposoma/_active/presence.ebd09bc0b5e6462ab296d4c076cf6b1e.md",
+    "attachment_id": "ebd09bc0b5e6462ab296d4c076cf6b1e",
+    "before_sha256": "11b1f05fc757f2900ed47b1f8d2e085e9d64fccca6f1f662c4355e53fb6a082e",
+    "removed": true,
+    "absent_after": true,
+    "scope": "Only this head-owned attachment; no other presence record removed"
+  },
+  "future_publication": "Fresh reviewed capture/reconciliation required before live-tree staging; old strict recheck must fail for these intentional later changes."
+}

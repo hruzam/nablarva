@@ -1,0 +1,65 @@
+{
+  "author": "Cartan",
+  "at": "2026-10-21T02:04:03.823817+02:00",
+  "result": "PASS for source identities, saved evidence arithmetic and proposed patch applicability; no functional re-run",
+  "source_files_checked": {
+    "GRAMMAR.md": "af49004823b7e5b5b92f710196c0aa290c984feb81b8353071d6be0bfabdbc73",
+    "README.md": "5bf2fa4e17254806313578d855db2fad0920c7c3704826ffd0fbc6b11d7484ae",
+    "base.zsh": "106afa6d2356047afdb525fdcdfbd6a769ac246540fe1c7f5b0f66156bd4cbf9",
+    "composer.py": "a678c49bacc775d406de7021a869af072978ca888506112e6783a2b65660f28b",
+    "composer.zsh": "3aef419df8b2e04ded21b794b1bc4b66d921b28b6b538248fae1e13cf6b36d2e",
+    "keyboard.zsh": "96ddab94bab9205e57cae68796a45bb67fd253d5696dbbfc67e8aa654e95b4d7",
+    "tests/acceptance.py": "9d84140a802556f6b3259822d91355df1e64bada59c2888c75c903f68967b410",
+    "tests/benchmark.py": "244c17acb0ab8081ae98cb48f5622518b8efbd5bf91caab671db3ee154f35b1b",
+    "tests/test_composer.py": "3668c1fad314eb567faf82a285cec16ab98e8a7994c26edc44d0e3b61f1cdf5a",
+    "tests/test_startup.py": "40a5e22cc2ecc64e3dbcefd1832482f14d80dde22914094480f9a7d8723eaaa3"
+  },
+  "raw_references": 19,
+  "package_checksums": "20/20 PASS; historical package, not live staging check",
+  "saved_acceptance": {
+    "cmp": 62,
+    "cli": 38,
+    "independent_probes": 33,
+    "timings": [
+      {
+        "input": "four_corpus_bodies",
+        "p95_ms": 92.968602,
+        "median_ms": 80.3134505,
+        "within_budget": true
+      },
+      {
+        "input": "1_MiB",
+        "p95_ms": 89.864265,
+        "median_ms": 54.562411999999995,
+        "within_budget": true
+      },
+      {
+        "input": "4_MiB",
+        "p95_ms": 106.243155,
+        "median_ms": 100.365364,
+        "within_budget": true
+      }
+    ],
+    "median_ratio": 1.839459809804596
+  },
+  "wrapper_patch": {
+    "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/audit.houston.termbrana-shape.2026-10-21.diff",
+    "sha256": "59685c92cf3064a4dd6b4a21bdfa419d9f22c2602dc2a7fa1754d4878b65402c",
+    "check_exit": 0,
+    "applied": false
+  },
+  "current_owner_paths": {
+    "architecture_observed": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting",
+    "architecture_internal_names": "still X4; Oraculum/Majkee ownership, not reconciled here",
+    "ide_observed": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X2-composer-sublime-ide/raw/termbrana-X3-sublime-ide.md",
+    "ide_sha256": "088d6dd3d3a80360b5fd1323242a2b1c21823151b496ac6cf2c30b40f1a8db35",
+    "sourcing_shell": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X1-composer-sourcing",
+    "sourcing_shell_created_by_this_head": false,
+    "sourcing_live_runbook_exists": false
+  },
+  "limits": [
+    "Foreign path observations can change; recheck before alignment.",
+    "Proposed architecture phrase prepares-and-validates must distinguish future preparation from accepted validation.",
+    "No product, benchmark, renderer, loader, carrier or deployment executed."
+  ]
+}

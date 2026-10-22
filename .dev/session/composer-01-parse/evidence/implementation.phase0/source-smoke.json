@@ -1,0 +1,68 @@
+{
+  "source_hashes": {
+    "GRAMMAR.md": "a88203748fff11ced11a7bde0508eed37f034499caab25a986eeb3c11051e11f",
+    "README.md": "d762bd7fd95c038637961afd4b0da3d2ee9beb02f3a5a817b36043c0242bebab",
+    "base.zsh": "106afa6d2356047afdb525fdcdfbd6a769ac246540fe1c7f5b0f66156bd4cbf9",
+    "composer.py": "f082365a252efe2af0d9abd1e70c5a1549a9c299e6c174367776f4cb2504462a",
+    "composer.zsh": "dd7e2402c7f16e6ef4b5bdca7de67f1643424e7f3405c090eafc5782c7fd6f8f",
+    "keyboard.zsh": "96ddab94bab9205e57cae68796a45bb67fd253d5696dbbfc67e8aa654e95b4d7",
+    "tests/acceptance.py": "9d84140a802556f6b3259822d91355df1e64bada59c2888c75c903f68967b410",
+    "tests/benchmark.py": "244c17acb0ab8081ae98cb48f5622518b8efbd5bf91caab671db3ee154f35b1b",
+    "tests/test_composer.py": "e2a2e72a458b20a79f18fef221a8edca5ac160ef341f5c9bc8e77712fcf4d5ad"
+  },
+  "manifest_equal": true,
+  "no_caches": true,
+  "commands": [
+    {
+      "label": "quiet-idempotent",
+      "command": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"\nsource \"$1/base.zsh\"\n[[ ${aliases[tbc-check]} == _tbc_check && ${aliases[tbc-parse]} == _tbc_parse ]]\n[[ $_TBC_HELPER == \"$1/composer.py\" ]]",
+        "tbc-source-proof",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/handwritten.md",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/source-public-smoke.zsh"
+      ],
+      "cwd": "/tmp",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "explicit-engine",
+      "command": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"; _tbc_check \"$2\"",
+        "tbc-source-proof",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/handwritten.md",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/source-public-smoke.zsh"
+      ],
+      "cwd": "/tmp",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "public-aliases",
+      "command": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"; source \"$3\"",
+        "tbc-source-proof",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/handwritten.md",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/source-public-smoke.zsh"
+      ],
+      "cwd": "/tmp",
+      "exit": 0,
+      "stdout": "{\"packets\":[{\"nonce\":\"hand4z\",\"fields\":{\"consult\":[\"Astrobley\",\"Oraculum\"],\"context\":[\"prepared instructions\",\"prepared references\"],\"format\":\"request/0.1\",\"id\":\"directly-written-c1-example\",\"from\":\"Majkee\",\"to\":\"Cartan\",\"requested_scope\":\"read-only\"},\"span\":[169,1473],\"header_span\":[201,393],\"body_span\":[423,1444],\"frame_spans\":[[169,201],[393,423],[1444,1473]]}]}\n",
+      "stderr": ""
+    }
+  ]
+}

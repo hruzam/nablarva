@@ -1,0 +1,381 @@
+{
+  "G1_G2_G3_unchanged": true,
+  "at_utc": "2026-10-21T00:06:35.871495+00:00",
+  "benchmarks_run": false,
+  "commands": [
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "PACKAGE.SHA256"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0",
+      "exit": 0,
+      "ok_lines": 20
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "SHA256SUMS"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+      "exit": 0,
+      "ok_lines": 19
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "evidence/grammar.builder.v3.sha256"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+      "exit": 0,
+      "ok_lines": 1
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "evidence/grammar.builder.v4.sha256"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse",
+      "exit": 0,
+      "ok_lines": 1
+    }
+  ],
+  "git_mutations": false,
+  "helpers_spawned": false,
+  "ide": {
+    "authority_tier": "attributed raw proposal only",
+    "current_path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X2-composer-sublime-ide/raw/termbrana-X3-sublime-ide.md",
+    "movement": "historical X3/intermediate paths retained in earlier captures; new material observes current X2-composer-sublime-ide",
+    "owner_recheck_required_before_launch": true,
+    "same_bytes_as_previous_raw": true,
+    "sha256": "088d6dd3d3a80360b5fd1323242a2b1c21823151b496ac6cf2c30b40f1a8db35"
+  },
+  "immutable_pins": "PASS",
+  "inputs": [
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "sha256": "8cc5e35bd4b431d54c15de39ad3fb5ebd800076d99457b4966607e2797a86f71",
+      "size": 20659
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "sha256": "d02504a0ab173eaf9d5ba6fd163b99bd167a56a17bf4501e4f4a312b5c3efcc4",
+      "size": 10761
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/checks.json",
+      "sha256": "232c78c88c471eef75041f8071b7f8ce715a50f02978eb57c798f106b846a87c",
+      "size": 26830
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md",
+      "sha256": "4da0d04d781314969bb2aefd6e643b593a631bfa7bc5c405ed325cd852e9a93b",
+      "size": 3470
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/36.cartan.point.md",
+      "sha256": "66e551b3215e2ae845a4c7abd1a29fda124952d073bd7aea16a67793c82b1b8a",
+      "size": 3026
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/35.cartan.verdict.md",
+      "sha256": "24a69d70d7c65878ef821467cef4ced99267e5bda68b8340299acfa026c6b048",
+      "size": 3516
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/audit.houston.termbrana-shape.2026-10-21.md",
+      "sha256": "7df82883aae60bdce9abd37b5b5f99f710eca1aeb4ff4249bdc0f882b47928a6",
+      "size": 19615
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/34.cartan.verdict.md",
+      "sha256": "e4680efe606c9e303895563bb4113237804183faf60c30c1c1935b9bee32277b",
+      "size": 1837
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/source-copy.startup.phase0.json",
+      "sha256": "4e3775dbc1152204c239c91dfae6988e6ffb56489c67c8bc10fa5d4df11640e4",
+      "size": 2087
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X2-composer-sublime-ide/raw/termbrana-X3-sublime-ide.md",
+      "sha256": "088d6dd3d3a80360b5fd1323242a2b1c21823151b496ac6cf2c30b40f1a8db35",
+      "size": 15275
+    }
+  ],
+  "links": [
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.termbrana-X1-composer-sourcing.candidate.md",
+      "exists": true,
+      "target": "decisions-and-intersections.termbrana-sourcing.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.termbrana-X1-composer-sourcing.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md"
+    },
+    {
+      "anchor_checked": true,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.termbrana-X1-composer-sourcing.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md#composition-and-explicit-input-direction"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.termbrana-X1-composer-sourcing.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/reposoma/raw.guides/runbook/GUIDE.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.termbrana-X1-composer-sourcing.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/reposoma/raw.guides/status/GUIDE.md"
+    },
+    {
+      "anchor_checked": true,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.termbrana-X1-composer-sourcing.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/brief.nabla.composer-build.2026-10-17.md#3-phase-frame"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.termbrana-X1-composer-sourcing.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.termbrana-X1-composer-sourcing.candidate.md",
+      "exists": true,
+      "target": "decisions-and-intersections.termbrana-sourcing.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "RUNBOOK.termbrana-X1-composer-sourcing.candidate.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "../challenge.native-resolve.2026-10-21.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "../consult.houston.resolve.2026-10-21.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "../../../flag.md"
+    },
+    {
+      "anchor_checked": true,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md#composition-and-explicit-input-direction"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/STATUS.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/decisions/DEC.01.germline-identity-and-load-contract.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/units/RESULT.U1.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/units/RESULT.U2.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/CONTROLLER.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/fn/list-pending.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/germline/README.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/germline/agents/houston/identity.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/codex/agents/astrobley.toml"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-02-guide-model-law/raw/GAVELS.program-guide-law.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X2-composer-sublime-ide/raw/termbrana-X3-sublime-ide.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "../consult.houston.layering.2026-10-20.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.termbrana-sourcing.md",
+      "exists": true,
+      "target": "../publication.phase0/README.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/README.md",
+      "exists": true,
+      "target": "RUNBOOK.termbrana-X1-composer-sourcing.candidate.md"
+    },
+    {
+      "anchor_checked": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/README.md",
+      "exists": true,
+      "target": "decisions-and-intersections.termbrana-sourcing.md"
+    }
+  ],
+  "naming": {
+    "command": [
+      "rg",
+      "-n",
+      "--hidden",
+      "--glob",
+      "!**/.hlm/**",
+      "--glob",
+      "!**/.git/**",
+      "--glob",
+      "!**/composer-01-parse/**",
+      "termbrana-X1-composer-sourcing",
+      "/home/hruzam/unikuklatrix/nablarva/.dev/session",
+      "/home/hruzam/unikuklatrix/nablarva/toolbox",
+      "/home/hruzam/ia-sync/.dev/session",
+      "/home/hruzam/ia-sync/zsh",
+      "/home/hruzam/ia-sync/germline"
+    ],
+    "exit": 1,
+    "interpretation": "scoped observations only; existing external shell acknowledged; no absence/exclusive-ownership inference",
+    "matches": [],
+    "sealed_hlm_explicitly_excluded": true
+  },
+  "normalized_comparison": {
+    "full_candidate_equals_r2": true,
+    "full_decisions_equal_r2": true,
+    "permitted_documentary_changes": [
+      "prospective home/title and prompt paths",
+      "revision/design-generation labels and operator framing",
+      "new companion filenames",
+      "observed existing empty shell instead of absent-home claim",
+      "new observed IDE path and unchanged raw-proposal tier"
+    ],
+    "protected_sections": {
+      "contract_and_acceptance": {
+        "normalized_sha256": "36dd8659a2ba455ea48e34a2cf0ebc5b31c638c558e2ea6c29d91e18ddd61f93",
+        "unchanged_after_name_normalization": true
+      },
+      "future_prompts": {
+        "normalized_sha256": "f6d874e8ef3460aac087483f90f9b646ccfa2ada0fd38ab3d42a4c4655db0796",
+        "unchanged_after_name_normalization": true
+      },
+      "gavel_rows_and_U3_dependency": {
+        "sha256": "ba9694b5c1bcb3160d01c536945247bad0da867610c18412ef7376aa42df5f61",
+        "unchanged": true
+      },
+      "road": {
+        "normalized_sha256": "3c29bf42e3fe97288e0d34fe2877915c68f1aadec5f7727970b4c31fd85155c5",
+        "unchanged_after_name_normalization": true
+      }
+    }
+  },
+  "output_document_sha256": {
+    "README.md": "3123871f666398d558540261a3b8e4b3b7ef827ef37975827e010c1a13a4cbad",
+    "RUNBOOK.termbrana-X1-composer-sourcing.candidate.md": "3f1aaec5c507b8eaba38dcd7c353e1bcd461addef667c06164b3d0c6adf03db8",
+    "decisions-and-intersections.termbrana-sourcing.md": "91e3c5244492729fd86cba5ac752482318683151dd7f0d411a67569380ce2ae3"
+  },
+  "pending_U3": {
+    "exists": false,
+    "operator_disposition_still_required": true,
+    "path": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/units/RESULT.U3.md"
+  },
+  "prior_artifacts": "must remain byte-identical; historical relative links retain original-base meaning",
+  "prior_file_sha256": {
+    "RUNBOOK.composer-02-resolve.candidate.md": "8cc5e35bd4b431d54c15de39ad3fb5ebd800076d99457b4966607e2797a86f71",
+    "checks.json": "232c78c88c471eef75041f8071b7f8ce715a50f02978eb57c798f106b846a87c",
+    "decisions-and-intersections.md": "d02504a0ab173eaf9d5ba6fd163b99bd167a56a17bf4501e4f4a312b5c3efcc4",
+    "reviewed-v1/README.md": "34b9de6136f768bf20b95bbcb25a04331567bb060834eba56768ea2f3f0608fa",
+    "reviewed-v1/RUNBOOK.composer-02-resolve.candidate.md": "26b298b563ac588a30a7993d675b9d336f54643d670bb9670bb9800f3b805437",
+    "reviewed-v1/checks.json": "c8d6d736b703f4b5ce4bc13f9e2c0607579a97ef0f9a8b05d3fc0897b3173873",
+    "reviewed-v1/decisions-and-intersections.md": "aa15ba4d4bf0ff08aa7935e4050d9b232941a0127297e0d6c3bf2223cfa05cb9"
+  },
+  "product_tests_run": false,
+  "proposed_home": {
+    "RUNBOOK_exists": false,
+    "STATUS_exists": false,
+    "entries": [
+      "raw"
+    ],
+    "exists": true,
+    "externally_created": true,
+    "files": [],
+    "mounted_by_this_cycle": false,
+    "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X1-composer-sourcing",
+    "written_by_this_cycle": false
+  },
+  "revision": 3,
+  "scope": "prospective naming/design-generation documentation only; no implementation or gavel release",
+  "source_files": 10,
+  "source_product_state_or_foreign_writes": false,
+  "source_receipt_match": true,
+  "status": "PASS",
+  "yaml": {
+    "design_generation": "X",
+    "gate_unchanged": true,
+    "parser": "PyYAML safe_load, document tooling only",
+    "participants": 6,
+    "revision": 3,
+    "state_field_absent": true,
+    "status_owner": "cartan"
+  }
+}

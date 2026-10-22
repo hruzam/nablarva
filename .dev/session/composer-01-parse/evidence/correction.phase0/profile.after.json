@@ -1,0 +1,95 @@
+{
+  "command": [
+    "zsh",
+    "-f",
+    "-c",
+    "source \"$1/base.zsh\"; _tbc_check \"$2\"",
+    "tbc-import-profile",
+    "/home/hruzam/ia-sync/zsh/termbrana",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/corpus.mixed.md"
+  ],
+  "environment": {
+    "PYTHONPROFILEIMPORTTIME": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exit": 0,
+  "wall_ms": 100.68689,
+  "cpu_ms": 95.186,
+  "top_cumulative": [
+    {
+      "self_us": 857,
+      "cumulative_us": 26557,
+      "module": "json"
+    },
+    {
+      "self_us": 1579,
+      "cumulative_us": 24247,
+      "module": "json.decoder"
+    },
+    {
+      "self_us": 1775,
+      "cumulative_us": 20677,
+      "module": "re"
+    },
+    {
+      "self_us": 2418,
+      "cumulative_us": 13163,
+      "module": "site"
+    },
+    {
+      "self_us": 2946,
+      "cumulative_us": 8480,
+      "module": "functools"
+    },
+    {
+      "self_us": 1701,
+      "cumulative_us": 6866,
+      "module": "os"
+    },
+    {
+      "self_us": 4772,
+      "cumulative_us": 5783,
+      "module": "enum"
+    },
+    {
+      "self_us": 2618,
+      "cumulative_us": 5353,
+      "module": "collections"
+    },
+    {
+      "self_us": 1661,
+      "cumulative_us": 4989,
+      "module": "encodings"
+    },
+    {
+      "self_us": 1167,
+      "cumulative_us": 3976,
+      "module": "re._compiler"
+    },
+    {
+      "self_us": 1941,
+      "cumulative_us": 3584,
+      "module": "_frozen_importlib_external"
+    },
+    {
+      "self_us": 3023,
+      "cumulative_us": 3023,
+      "module": "_collections_abc"
+    },
+    {
+      "self_us": 2489,
+      "cumulative_us": 2489,
+      "module": "_distutils_hack"
+    },
+    {
+      "self_us": 1288,
+      "cumulative_us": 2191,
+      "module": "re._parser"
+    },
+    {
+      "self_us": 1838,
+      "cumulative_us": 2023,
+      "module": "codecs"
+    }
+  ]
+}

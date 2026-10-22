@@ -1,0 +1,36 @@
+{
+  "source_sha256": "a977682c65bcd6b3c66cc67cb7c2b40a926cf4d96a7f58eb50f1a1fb0839b2ec",
+  "contract_sha256": "af49004823b7e5b5b92f710196c0aa290c984feb81b8353071d6be0bfabdbc73",
+  "verbatim_comparisons": {
+    "3": true,
+    "5": true,
+    "6": true,
+    "complete_examples": true,
+    "diagnostic_table": true
+  },
+  "editorial_replacements": [
+    [
+      "Propose one human-owned Markdown exchange",
+      "One human-owned Markdown exchange"
+    ],
+    [
+      "Q3 proposal remains composition",
+      "Q3 is composition"
+    ],
+    [
+      "This grammar-only body\nimplements neither a skeleton nor a writer.",
+      "This Phase 0 interface\nincludes neither a skeleton nor a writer."
+    ],
+    [
+      "No fixed body-size cap is selected in this candidate.",
+      "No fixed body-size cap is selected."
+    ],
+    [
+      "Check success exits 0; input data errors exit 65 (`raw/01_SYNC_METHOD.md:78\u201391`).\nOperational file/I/O/resource failure proposes exit 74 and is never success. No\ninstalled CLI or parse/byte-output interface is chosen. Invalid input returns",
+      "Check success exits 0; input data errors exit 65.\nOperational file/I/O/resource failure exits 74 and is never success.\nThe CLI and Python API are described in README.md. Invalid input returns"
+    ]
+  ],
+  "removed_historical_fixture_commentary": "The v3 examples and v3 fixture remain unchanged historical bytes. Their old\nprogram/function header lines are invalid under v4; they are not v4 positives.\n\n`evidence/fixtures/packet.handwritten.v4.md` is one literal, directly text-authored\npacket fixture by this Astrobley, with authorship recorded in outside notes. It is\nnot claimed as human-authored and its body has not been measured. No fixture\ngenerator or executable fixture code is supplied.\n\n",
+  "no_semantic_change": "Wire rules unchanged; exit 74 and check/parse interfaces selected under implementation POINT",
+  "editorial_terminal_whitespace": "Removed extra blank line at end of promoted contract; wire text unchanged"
+}
