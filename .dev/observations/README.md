@@ -52,3 +52,8 @@ Closure-only reading never fires for beds that stay open (X1). These rows fire o
 - `nablarva-X1-architecture.oraculum.2026-10-22.md` — oraculum carrier observations, X1 checks 4–6 handoff
 - `nablarva-X1-to-X3-arc.agol.2026-10-22.md` — Agol harvest #1, X1→X3 arc (synthesis, not verdict)
 - `oraculum-incarnation.oraculum.2026-10-22.md` — oraculum → next oraculum: personal impressions and scars (uncanonical)
+- `nablarva-X3-architecture-sitting.oraculum.2026-10-23.md` — X3 sitting head: first real Houston child sitting (r1→r7, 2 withdrawn), faults H1–H6 + drafter defect classes, what worked, seven rules for the drafts-handoff phase
+- `nablarva-X1-architecture.note-to-trajectory.oraculum.2026-10-23.md` — promoted verbatim at X1 closure: carrier → trajectory note (2026-10-08), first-turn turn_context + reviewer behaviour
+- `nablarva-X1-architecture.tunnel-support-pad.trajectory.2026-10-23.md` — promoted verbatim at X1 closure: pad.1 tunnel-support items A–K (D, J resolved; dispositions of the rest in dock.md)
+- `harvest.2026-10-24.agol.md` — Agol harvest #3, X1 + X3 closure; patterns P1–P7, H1 §4 forecast scored, candidates U5–U11
+- `nablarva-X1-X3-closure.oraculum.2026-10-24.md` — X1 + X3 joint closure manifest: gates, durable results, carried items, what was pruned

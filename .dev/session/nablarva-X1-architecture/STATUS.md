@@ -1,10 +1,10 @@
 # nablarva-X1-architecture — STATUS
 
 ```yaml
-updated: "2026-10-22 (oraculum)"
+updated: "2026-10-24 01:3x CEST (oraculum, X1/X3 cSharp head; clock-read 01:28)"
 writer: oraculum
 host: hruzam-120922
-worktree: /home/hruzam/unikuklatrix/nablarva (core)
+worktree: /home/hruzam/unikuklatrix/nablarva (core) · check-6 commit 2fbf867
 gate: >
   majkee records GO on the first real docs/ARCHITECTURE.md (L16.9 homes: shared cross-organ grammars + whole-animal
   architecture) written with Houston operating from its canonical homes — i.e. promotion done, keeper migration committed,
@@ -68,28 +68,35 @@ checkpoint: >
   means these homes. Atlas built it (cartan REVISE folded, _bus/09); janus REVISE (12 red flags) under repair — stamp
   tokens + transcript-read PASS rule, Route lines, fresh-head rule, pointers, pins back to pending. Uncommitted in three
   repos — commit order reposoma → nablarva → ia-sync after test GO.
-in_flight: none — tunnel rebound 2026-10-17 to fresh Cartan thread 01a14731-648c-7a60-a34f-350278fe5897 (gpt-6.1-sol · high, workspaceWrite, preamble ~/.germline/tunnel/tunnel.preamble.md; old 01a118ff released); cycle 13 orientation done (ctx 10.9 %)
+  CHECK 4 DONE 2026-10-23 — in the X3 bed (.dev/session/nablarva-X3-architecture-sitting/): said: majkee "GO on r7" (17:19);
+  promoted docs/ARCHITECTURE.md = X3 r7 byte-identical (sha256 3330b99a…), KEYS CODE moved out of the wrapper with the pointer kept
+  (nablarva@f20dda5); bed record @519a211; adopted locks L18–L21 @5e93688. All pushed by Majkee.
+  CLOSURE ROW OPENED 2026-10-23 22:17 — said: majkee "nablarva-X1-architecture should be fully closed", "close X1 (assay can confirm
+  what is missing first)", "finish , pls pending work from X1" and, on the head's plan, "agree with your pick how to do, one plea
+  only - to close tunel with trajectory" (verbatim raw/answers.majkee.closure.2026-10-23.md, with myShell's relayed inventory).
+  Rule adopted: finish the GATE (checks 5, 6, GO); every other open item gets an owner and a home (transfer).
+  TUNNEL CLOSED 2026-10-23 22:18 — trajectory, on majkee's grant: lock absent, last turn completed, no writer lock on 01a14731; shim
+  `close` exit 0; vault tunnel.state.json removed by the shim; thread 01a14731-648c-7a60-a34f-350278fe5897 kept server-side
+  (reopen = majkee `tun open --enable --thread 01a14731…`); support log T24 appended.
+  OBSERVATIONS PROMOTED 2026-10-23 — raw/note.oraculum-to-trajectory.2026-10-08.md → .dev/observations/nablarva-X1-architecture.note-to-trajectory.oraculum.2026-10-23.md
+  (body sha256 f5e48bc9… = source); raw/pad.1-tunnel-support.md → …tunnel-support-pad.trajectory.2026-10-23.md (body sha256 32443a24… = source).
+  CHECK 5 DONE 2026-10-24 — Houston main session on card: audit (majkee started it from raw/input.check5-audit.oraculum.2026-10-23.md);
+  wrote only raw/houston-audit.2026-10-23.post-promotion.{md,diff} (6 mech · 3 judge · 4 cross); classified by majkee "useful"
+  (raw/answers.majkee.check5-class.2026-10-24.md). Its stamps diff fails git apply --check at PROJECT-DESIGN.md:96 → carried in dock.md.
+  CHECK 6 DONE 2026-10-24 — flag L22 (L12 seal covers every operator vault) and L23 (L12 retired trio = nablarva.devenv), said: majkee
+  "L22 L23 adopt" + "L23 b" (cite :30–33); assay-witnessed; commit 2fbf867.
+  GATE GO 2026-10-24 01:23 — said: majkee "GO:  X1 & X3 close together." (raw/answers.majkee.go.2026-10-24.md). CLOSED.
+  Closure manifest: .dev/observations/nablarva-X1-X3-closure.oraculum.2026-10-24.md · Agol harvest #3: .dev/observations/harvest.2026-10-24.agol.md.
+  Carried: dock.md (2026-10-23 and 2026-10-24 sections) and ia-sync germline-03 raw/HANDOFF.oraculum.{x3-sitting-card,x1-carried-items}.2026-10-23.md.
+  Pulse row removed in the closure commit; the bed is pruned in the next commit (history keeps it). tunnel.preamble.md: per majkee's
+  preamble answer (the manifest records it).
+in_flight: none
 recovery_probe: >
-  (since the 2026-10-10 fold) raw/houston/ README checks 1–3 still PASS = frozen X0 package intact (history, not the live
-  homes); .claude/ and .codex/ in nablarva hold NO houston wrapper (git status shows them moved into raw/archive.x0-renders/
-  until committed); tunnel.state.json exists in this bed and is ignored. Live Houston = ~/.germline + ia-sync wrappers.
+  Closed. Read the closure manifest; every byte is in git history at the closure commit.
 holds:
-  - "NOT CLOSED — checks 4–6 continue in .dev/session/nablarva-X3-architecture-sitting/ (check 4 = Houston sitting; 5 = audit after promotion; 6 = locks). Do not prune this bed before closure; its _bus/ and raw/ are evidence. Reading on events: .dev/observations/README.md § Event-triggered reading."
-  - tunnel: table open since X0 (majkee); vault at this bed's path
-  - "tunnel context routine (trajectory support T23, 2026-10-17) — vault preamble = ~/.germline/tunnel/tunnel.preamble.md; when Cartan ctx passes ~70 %: tn-use <this bed> → tn-check && tun compact (majkee runs compact; carrier hook denies non-ask verbs) → then ONE ask naming exactly what to read (STATUS.md + the cited _bus file), never the full read order. Ctx growth sources: AGENTS.md re-send on change (~13 kB) + full re-orient after auto-compaction."
-  - raw/houston/ = frozen X0 package (history); Houston edits happen in the germline-01 forge bed (majkee 2026-10-10)
-  - reposoma: cards committed a299583; identity committed (see checkpoint); archive/ drains by other readers uncommitted (majkee)
-  - Atlas = stable spawn (SendMessage); background = his card (7 spawn-notes) + oraculum's card §Waking Atlas; one named
-    instance per sitting, sonnet for verify/re-pin, opus for a recomposing source edit
-  - raw/houston/README.md header `state:` still reads "promotion pending" — stale since check 1 but pinned in the third
-    freeze (8de7e4f4) — NOT edited in place; a corrected header = new forge bed (majkee's call, no urgency)
-  - carrier defect log for X1 = raw/tunnel-issues.2026-10-08.md (created on first defect); support vault =
-    .dev/observations/nablarva-X1-architecture.trajectory.2026-10-08.md (T12→); on the first X1 turn paste turn_context
-    (approval_policy, approvals_reviewer, effort) of the new thread into a note for trajectory
-  - agol harvest #1 parked to session end (majkee 2026-10-08) · bash whitelist hook — tunnel option A + subagent exemption live (2026-10-13/14)
-  - cartan — RETIRE thread 01a113e0 (76.7 %); fresh head re-briefs from ~/reposoma/_cold-start/card/CS.nablarva-x1-architecture.cartan.2026-10-07.md + STATUS; majkee opens the new thread on the X1 vault before POINT 03
+  - "Carried, not dropped: see the closure manifest. U4 and U5 stay explicitly UNVERIFIED (said: myShell relay)."
 next: >
-  Houston install closed on office — all rows PASS (C1–C4, X1, X2, R1, R2, P1, C-def.2, C-def.claude; C-def failed then fixed by the consult card "What I do not do" chapter); witness ia-sync germline-01 raw/witness.install-test.assay.2026-10-13.md (+ addendum 2026-10-17). Pins active. Bash hook — tunnel option A + subagent exemption live. Inert Codex child sandbox key removed and deployed (binding.codex 0c812f6c). Open — COEX row; home migration (pull reposoma, nablarva, ia-sync → MIGRATE §2 → re-run one Claude and one Codex row); MIGRATE §3 retire reposoma/.germline; inert sandbox_mode in architect/challenger/researcher TOMLs (owner decision); name sweep + wrapper to root DONE (nablarva 22cfa26, ia-sync d13dd3b; second sweep by atlas in flight); check 4 (Houston sitting) → bed nablarva-X3-architecture-sitting (opened 2026-10-17).
+  none — closed.
 expected: >
-  COEX transcript; home migration journal entry; majkee GO for check 4.
+  none — closed.
 ```

@@ -353,3 +353,14 @@ Backlog: tunnel-03 F16a. Tests: listed there.
 
 **For the carrier, verbatim (STATUS `holds:` candidate):**
 `- tunnel (trajectory T23): preamble works (no habitual rereads since 10-08 20:40); ctx is filled by POINT work + AGENTS.md re-injection on instruction-file change (~13 kB) + re-orientation after auto-compaction (cycle 12, ~100 kB) → compact with tun compact before ~75 % + a named-files rebrief; vault model label is stale, Cartan runs gpt-6-sol (override if wanted)`
+
+## T24 · 2026-10-23 22:18 · table closed — X1 vault removed (majkee, said: "close tunel with trajectory"; one-off driver grant per Rule 2 note 2026-10-17)
+
+**Done:**
+- Preconditions held: no `tunnel.state.json.lock`; `status` showed bound + enabled; `read` of the last turn `01a16595-f477-7550-a523-e5c796c2616f` was `completed` (2026-10-22 21:51Z); no writer-lock file for the thread in `~/.codex/thread-writer-locks/` (not touched).
+- Ran `close` through the shim (`TUNNEL_CODEX_STATE=<X1 vault>`, exit 0). No `ask`/`send` turn, no vault hand-edit.
+- Thread `01a14731-648c-7a60-a34f-350278fe5897` (cartan, bound 2026-10-17) was released and **still exists server-side**; not archived, not deleted.
+
+**Final vault state:** `.dev/session/nablarva-X1-architecture/tunnel.state.json` and its `.lock` are absent; `status` now exits 10 (Law 2.4 re-armed, next `open` needs `--enable`, majkee's hand).
+
+**Return to the thread:** `tun open --enable --thread 01a14731-648c-7a60-a34f-350278fe5897`, then `tun resume` once the TUI writer-lock is gone. Transcript: `~/.codex/sessions/*/*/*/rollout-*-01a14731-648c-7a60-a34f-350278fe5897.jsonl`.
