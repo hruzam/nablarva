@@ -20,7 +20,8 @@ the earlier draft from which this wrapper was brought into nablarva. Settled loc
 belong to [flag.md](.dev/session/flag.md), the standing machine contract to
 [PROJECT.yaml](PROJECT.yaml), and live work to the session `STATUS.md` files
 linked by [pulse.md](.dev/session/pulse.md). Design statements here remain proposals unless
-supported by a cited decision.
+supported by a cited decision. Whole-animal, cross-organ architecture (layer model, seams,
+shared grammars such as KEYS CODE) lives in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 The maintainer is Houston's audit card. Its [project addendum](.germline/agents/houston/nablarva.md)
 and Claude (`~/.germline/agents/houston/binding.claude.md`) or
@@ -292,51 +293,10 @@ no bond to specific `.dev/session/<specific-session>`
 
 # KEYS CODE
 
-*Added 2026-09-29 by Trajectory (ovitmugen-00-console) at majkee's request · **ACCEPTED by
-majkee 2026-09-29** (D3 in `.dev/session/ovitmugen-01-basement/raw/architecture.pipes-ui-keys.2026-09-29.md`).*
+*Moved to [docs/ARCHITECTURE.md § KEYS CODE](docs/ARCHITECTURE.md#5-keys-code) when that
+document was promoted (X3 architecture sitting, majkee G3 a). **ACCEPTED by majkee 2026-09-29**
+(D3, `nablarva@c630f0e8b1490e34458a52988342d679b24f2f5b:.dev/session/ovitmugen-01-basement/raw/architecture.pipes-ui-keys.2026-09-29.md`).*
 
-**DRY:** the meanings live only here. An organ's help points to this chapter and lists only
-its own extra keys — it never copies this table.
-
-One shortcut style for every organ's TUI: **the same key means the same thing everywhere**,
-so moving between toolboxes never means relearning. This is a grammar, not a registry:
-each organ keeps its keys in its own code; this chapter only fixes their meaning.
-
-Shell commands stay under the claviature rule (`~/ia-sync/zsh/guides/claviature.global.spec.md`,
-"derive, don't register"): families only (`ov-`, `rb-` …), the `keys` panel derives the rest.
-
-## Shared meanings (all organs)
-
-| key | meaning |
-|---|---|
-| ↑↓ · j k | move |
-| Enter | act / open the selected item |
-| q · Esc | back (close the view, never quit something running) |
-| ? | help for this view |
-| / | search |
-| a | add |
-| x x | remove — **always two presses** (first arms, second acts, any other key disarms) |
-| b | build (create what is missing) |
-| o | open / attach |
-| r | refresh |
-| T | tabs (agent tabs of the bed) |
-| 1-9 | jump to item / part N |
-
-## Reserved (never bound by an organ)
-
-- `C-a` — the ovitmugen frame prefix (frame keys: focus, split, popup, restart, tabs).
-- `C-b` — the agents' own tmux.
-- Keys a running agent needs (anything typed into an agent pane) — organs act only in
-  their own views.
-- `Alt-…` — open: may become prefix-less tab jumps (`Alt-1…9`); decide before any organ uses Alt.
-
-## Conformity today (honest check, 2026-09-29)
-
-| organ · view | follows | deviates |
-|---|---|---|
-| ovitmugen console | ↑↓ j k · Enter · q Esc · a · x x · b · o · r | ? and / not yet |
-| runbook tree | ↑↓ · Enter · q Esc · ? · r · T · 1-5 · A A (two-press) | no j k; `h` also opens help; no / (search only inside help: Ctrl-F / F) |
-| runbook buffer view (P) | q · ↑↓ | `x` removes a line with ONE press |
-| ovitmugen frame (C-a …) | reserved prefix | — |
-
-Deviations are listed, not fixed here: each fix belongs to its organ's own session.
+The shared key meanings, the reserved keys and the conformity table live only there. This
+heading stays as the stable pointer for live citations (`PROJECT-DESIGN.md § KEYS CODE`);
+organ help points to that chapter and lists only its own extra keys.
