@@ -1,0 +1,139 @@
+{
+  "captured_at": "2026-10-22T11:50:38.728419+02:00",
+  "host": "hruzam-120922",
+  "cwd": "/home/hruzam/unikuklatrix/nablarva",
+  "head": "78059da137f2b6d17192c251220d80b148aa1ac6",
+  "branch": "core",
+  "git_status_short": [
+    " M .dev/session/nablarva-X2-builder-narative/RUNBOOK.md",
+    " M .dev/session/nablarva-X2-builder-narative/STATUS.md",
+    " M .dev/session/nablarva-X2-builder-narative/raw/brief.rosters-and-team.2026-10-22.md",
+    " M .dev/session/nablarva-X3-architecture-sitting/RUNBOOK.md",
+    " M .dev/session/nablarva-X3-architecture-sitting/STATUS.md",
+    "?? .dev/session/nablarva-X2-builder-narative/_bus/",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/checks.cycle01.cartan.2026-10-22.json",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/checks.cycle03.cartan.2026-10-22.json",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/closure.manifest.cartan.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/consult.release-and-vist-boundary.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/decision.majkee.plan-go.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/disposition.x3-vectors.cartan.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/experience-transfer.cartan.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/handoff.termpanum-X0-source-contract.cartan.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/p0.entry.cartan.2026-10-22.json",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/p0.tracked-preservation.cartan.2026-10-22.json",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/question.release-and-vist-boundary.cartan.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/question.tmux-source-fidelity.cartan.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/research.tmux-source-fidelity.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/review.p5-handoff.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/review.termpanum-build-plan.2026-10-22.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/termpanum.baseline-and-research.md",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/termpanum.build-plan.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/_bus/",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw-additional-my-appology/",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/ARCHITECTURE.draft.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/ARCHITECTURE.draft.r2.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/ARCHITECTURE.draft.r3.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/answers.majkee.pick-and-q1-q8.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/arc.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/arc.pick.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/arc.r2.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/brief.preflight-and-operator-asks.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/card.sitting.draft.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/card.sitting.draft.r2.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/crawl.r1-mechanical.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/crawl.r1b-houston-reads.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/crawl.r5-r7-repin.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/crawl.v0-zip.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/evidence.houston-route.eagle.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/evidence.houston-route.r2.eagle.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/lock-proposals.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/lock-proposals.r2.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/relay.x2-answers.myshell.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/revision-log.r2.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/revision-log.r3.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/vector.to-x2.oraculum.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/vector.to-x2.r2.oraculum.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/witness.r8.assay.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/witness.r8c.assay.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/wrapper-thinning.diff",
+    "?? .dev/session/termpanum-X0-source-contract/"
+  ],
+  "authorization": "Majkee: Continue with the approved Termpanum X0 assignment from your handoff.",
+  "sources": [
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/AGENTS.md",
+      "sha256": "8f26baf8aff897785f8ba3fafae4475dfa13280b51da87c4deca8fea91d2c002"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md",
+      "sha256": "a9e73a4659ba8d7b4572344e9c0f405777d7ba5df2eb38f394749c2f4302dadc"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/pulse.md",
+      "sha256": "8051040f3d2e4d23c349c489921ba6f392f10c62218164d0506247b04a2a9d38"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT.yaml",
+      "sha256": "aac1198fe6eabd9f975928866defa1272d7d91a005f8ca6d7e303172d7d2ec96"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+      "sha256": "6ee10aa1c40a853cc6c1e6ff5dfa191999f38314058064b5543ac1392fe2c78f"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/handoff.termpanum-X0-source-contract.cartan.2026-10-22.md",
+      "sha256": "cfa123fc72dfcf8c5078f102ac7ab9f4c5d64d433565d826eba29573edfbd74d"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/decision.majkee.plan-go.2026-10-22.md",
+      "sha256": "7b5f7f279b91b21ebce80be22511c4d43131dacec854e9606aa4139441228b43"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/termpanum.build-plan.md",
+      "sha256": "4e039f9f787c3224e8bb8c63342d3cdf68027339dd51ace682db89e430c83145"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/review.termpanum-build-plan.2026-10-22.md",
+      "sha256": "007956078b864e1df4020becef5893eb9b3671b110c54a307edb435426c7fa0c"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/_bus/03.cartan.verdict.md",
+      "sha256": "cf0a8d90a5e08c01698d0e3e1a3f7808f474b1631f6971437d3a33670a499ff0"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/termpanum.baseline-and-research.md",
+      "sha256": "09efca7d06043850798578d2c2c990663cb934c8f938ad5424413660f9e8f7b8"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/research.tmux-source-fidelity.2026-10-22.md",
+      "sha256": "3abd43ac5b8f4b22cc5236f6e836c5503969356cde935482d35a7e50699075f7"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/consult.release-and-vist-boundary.2026-10-22.md",
+      "sha256": "867fd586783603e6121e992bbdc51b323e0cb99c1db00cddda12e988cf16f106"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/disposition.x3-vectors.cartan.2026-10-22.md",
+      "sha256": "efe7573dae528e8f8182eec6448e5b735c9a10f6a98f4b8e10b5795562368f7b"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/experience-transfer.cartan.2026-10-22.md",
+      "sha256": "b269bfdda32d72a34daec23b84036acd9ce349dfde634e39e627ccc2be0d322c"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/STATUS.md",
+      "sha256": "a86ef60da7b4053ff2aa0494ab68ff862a034812a49fa913a3a758d23edb2850"
+    },
+    {
+      "path": "/home/hruzam/.codex/agents/implementer.toml",
+      "sha256": "bb431c1c0bc5fda7e385c62a2e371df39c75155a9e21f476b6ed5c3fdd2792c7"
+    },
+    {
+      "path": "/home/hruzam/.codex/agents/verifier.toml",
+      "sha256": "7d3294ad8c6d0f572170f22229248767f197a7ce084e7ec90f1729cd1e3b0d30"
+    }
+  ],
+  "observations": "No termpanum or nablarva-X2 process record found in .dev/observations; X2 raw experience transfer read.",
+  "X3": "Current STATUS reports R9 presented/awaiting operator; no decision inferred from candidate drafts. X0 needs no X3 architecture GO.",
+  "effects": "Documentary only; no product, fixture, server contact, canonical/pulse/config/external writes, commits or delivery."
+}
