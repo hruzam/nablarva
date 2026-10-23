@@ -256,6 +256,20 @@
   in force; this line releases no implementation, delivery, activation or transport.
   Record: docs/ARCHITECTURE.md (X3 sitting, promoted at nablarva@f20dda5); sitting bed nablarva@519a211.
 
+- **L22 · L12 seal covers every operator vault** (majkee, X1 check 6, from Houston audit
+  2026-10-07 finding M3; adopted by majkee, X1 check-6 answer "L22 L23 adopt", 2026-10-23): L12's "`.hlm/` = operator vault:
+  tracked, sealed from agent reading" applies to every operator vault — today `.hlm/` and
+  `.majkee/` — and to any further vault majkee names. Each is tracked and sealed from agent
+  reading. The seal is the pattern, not the single path (docs/repo-unification.2026-09-02.md,
+  ADDENDUM 2026-09-03). All other L12 provisions remain in force.
+
+- **L23 · L12 qualifier — the retired trio's home** (majkee, X1 check 6, from Houston audit
+  2026-10-07 finding C1; adopted by majkee, X1 check-6 answer "L22 L23 adopt", 2026-10-23): L12's "sync.sh / deploy.sh /
+  SYNC_DISCIPLINE.md retired" names the trio that lived in `nablarva.devenv`
+  (docs/repo-unification.2026-09-02.md:52–54). It does not retire `~/ia-sync/deploy.sh` or
+  `~/ia-sync/SYNC_DISCIPLINE.md`, which are a different pair outside this retirement; ia-sync
+  retired only its own `sync.sh` (same doc :30–33). All other L12 provisions remain in force.
+
 ## Named deferral thresholds (folded from abolished plan.md)
 
 - Domain seat: earned when a build-task class repeats 3× (not before)
@@ -316,3 +330,5 @@ seed §open-6 = docket 6.)
 - docket 1 → lean recorded by L14 D2 (file plane is the spine); formal gavel pending.
 - O2 → lean recorded by L14 D5/D6 + stridularium bridge (hardened Tailscale + Termux, then mosh); transport gavel pending.
 - L17's phrase "shared mechanisms belong at a narrow integration boundary" and its phrase "no common framework or transport is authorized by the Phase 0 build" → superseded by L21 (majkee, 2026-10-23); all other L17 provisions live.
+- L12's seal wording "`.hlm/` = operator vault" → read as covering every operator vault by L22 (majkee, 2026-10-23); text stays in place.
+- L12's bare "sync.sh / deploy.sh / SYNC_DISCIPLINE.md retired" → qualified to the nablarva.devenv trio by L23 (majkee, 2026-10-23).
