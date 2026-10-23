@@ -17,6 +17,7 @@ observations_read:
   - /home/hruzam/unikuklatrix/nablarva/.dev/observations/nablarva-X0-restarted.oraculum.2026-10-07.md
   - /home/hruzam/unikuklatrix/nablarva/.dev/observations/nablarva-X0-restarted.trajectory.2026-10-05.md
   - /home/hruzam/unikuklatrix/nablarva/.dev/observations/nablarva-X1-architecture.trajectory.2026-10-08.md
+  - /home/hruzam/unikuklatrix/nablarva/.dev/observations/nablarva-X1-architecture.oraculum.2026-10-22.md
   - /home/hruzam/unikuklatrix/nablarva/.dev/observations/codex-houston-held-seat.cartan.2026-10-13.md
   - /home/hruzam/unikuklatrix/nablarva/.dev/observations/nablarva-X1-to-X3-arc.agol.2026-10-22.md
   - /home/hruzam/unikuklatrix/nablarva/.dev/observations/oraculum-incarnation.oraculum.2026-10-22.md # predecessor's impressions — uncanonical, not rules
@@ -52,6 +53,12 @@ base and foreign edits; cite G4/G5 as said: majkee rather than inventing locked:
 
 Source preflight:
  /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/preprint.runbook-status.mode-B.2026-10-21.md
+
+Latest preparation findings and Flight G06 scar applications (S1–S7) are recorded in:
+ /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/brief.preflight-and-operator-asks.2026-10-22.md
+The shared scar source is
+ /home/hruzam/ia-sync/.dev/session/germline-07-make-program/raw/SCARS.g06.flight.2026-10-22.md.
+These preparation findings do not add a session gate or global process rule.
 
 ## Sequence — preserve the preprint's row coordinates
 
@@ -121,6 +128,13 @@ requires an explicit refreshed candidate/check, not a misleading PASS on differe
   Assay reads this acceptance-evidence artifact and reruns its deterministic extraction/hash
   checks via Bash; the source working transcript is never loaded into Assay's model context.
   Missing, unreproducible or incomplete evidence stays unverified. No summary replaces proof.
+- Earlier consult/audit routes have recorded G01 witnesses at
+  /home/hruzam/ia-sync/.dev/session/germline-01-builds-and-deploy/raw/witness.install-test.assay.2026-10-13.md
+  (including its October 17 addendum), alongside
+  /home/hruzam/ia-sync/.dev/session/germline-01-builds-and-deploy/raw/TEST-INSTALL.houston.2026-10-10.md.
+  No witness for the October 21 child-sitting change was identified in those named records.
+  R2/R8 must establish evidence for the actual assigned child; this is not a claim that
+  Houston lacks all prior route evidence or that no evidence exists anywhere else.
 - Carrier Bash is bookkeeping under its existing whitelist. Send implementation/checking
   work to the proper bounded seat. Validate STATUS YAML with python3 -I via a permitted
   checking seat; do not change hooks or bypass a permission denial.
@@ -146,6 +160,12 @@ follow the current project AGENTS read order, then read
 /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/RUNBOOK.md
 and /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/STATUS.md.
 Also read /home/hruzam/unikuklatrix/nablarva/.dev/observations/nablarva-X1-to-X3-arc.agol.2026-10-22.md.
+Read /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/brief.preflight-and-operator-asks.2026-10-22.md
+for the latest bounded preparation findings; its candidate presentation aid adds no gate.
+During entry, read Composer's boundary handoff:
+/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/handoff.composer-boundaries.cartan.2026-10-22.md
+Treat it as attributed practitioner evidence, not independent acceptance or a new gate.
+Record its consumption in your existing STATUS when adopting the entry state.
 The gavel deck is complete. Start R0, not Polyp. Resolve current stamps, source identities
 and worktree ownership; record the current safe edge in your sole STATUS.
 Use /home/hruzam/ia-sync/.dev/session/germline-01-builds-and-deploy/raw/TEST-INSTALL.houston.2026-10-10.md
@@ -218,6 +238,19 @@ Validate the current STATUS YAML through a permitted python3 -I check.
 Return your native PASS/FAIL with exact commands, evidence, failures and limits. Never fix,
 spawn or write STATUS. The head records your verdict verbatim and checks its evidence.
 ```
+
+## New operator choices — optional presentation aid
+
+For a newly arising choice, the candidate at
+ /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/shape.gavel-line.2026-10-22.md
+can help make the question, options, context, costs, consequences and attributed lean
+readable without opening its sources. Keep verification pointers and a source-qualified ID;
+do not restart numbering beside existing G1–G9, reopen their answers or add a mandatory deck.
+Proposed alternatives and leans remain attributed proposals, separate from source facts.
+The candidate's T6/defer and T8 attribution ambiguities are recorded in the preparation brief;
+its tests are not an adopted acceptance gate. Once Majkee answers, record the exact receipt
+pointer in the head's existing owner surface. An unanswered presentation copy is not itself
+an authoritative pending list; historical answered receipts are preserved.
 
 ## External review transport and post-GO boundary
 
