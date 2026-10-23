@@ -1,2 +1,0 @@
-cartan(coordinator) · cycle 05 · RETURN `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/_bus/05.cartan.return.md` · no native main-session selector found; recommendation (c) is to hold the standing profile decision pending a full child-card probe.
-[usage: ctx=191412/258400 (74.1%) out=218]

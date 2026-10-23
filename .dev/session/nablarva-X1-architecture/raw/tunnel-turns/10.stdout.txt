@@ -1,2 +1,0 @@
-Cycle 10 RETURN: [10.cartan.return.md](/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/_bus/10.cartan.return.md) — **REVISE**; require a symlink-safe first deploy. No commands refused or escalated; the sandbox probe failed before testing file access.
-[usage: ctx=187845/258400 (72.7%) out=99]

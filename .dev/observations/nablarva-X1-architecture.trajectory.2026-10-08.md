@@ -364,3 +364,26 @@ Backlog: tunnel-03 F16a. Tests: listed there.
 **Final vault state:** `.dev/session/nablarva-X1-architecture/tunnel.state.json` and its `.lock` are absent; `status` now exits 10 (Law 2.4 re-armed, next `open` needs `--enable`, majkee's hand).
 
 **Return to the thread:** `tun open --enable --thread 01a14731-648c-7a60-a34f-350278fe5897`, then `tun resume` once the TUI writer-lock is gone. Transcript: `~/.codex/sessions/*/*/*/rollout-*-01a14731-648c-7a60-a34f-350278fe5897.jsonl`.
+
+## T25 · 2026-10-24 01:36 · tunnel-03 vaults repointed to the germline preamble — **X1 preamble free** (oraculum's request; grant said: majkee 2026-10-24 "preamble -. pass to Trajectory")
+
+**Before:**
+- Hashes match the note: old `nablarva-X1-architecture/tunnel.preamble.md` = `c2153598…`; new `~/.germline/tunnel/tunnel.preamble.md` = `f84e51eb…`.
+- Neither vault had a `.lock` (no turn in flight).
+- Neither thread had a writer-lock file (`01a11d5e…`, `01a11da4…`).
+- codex-cli 0.163.0.
+
+**Done (shim only, no JSON edited):** `tunnel-codex.zsh open --state <vault> --preamble /home/hruzam/.germline/tunnel/tunnel.preamble.md`, run once per vault.
+- Both exit 0, each printing `open: preamble set to …`.
+- On an existing vault, `open` also does a `thread/resume` (`resumed existing thread … idle`). No turn was sent.
+
+**After:**
+- `tunnel-03-feedback-upgrade/tunnel.state.json` → preamble `/home/hruzam/.germline/tunnel/tunnel.preamble.md` · thread `01a11d5e-2fc5-7400-9cf3-70b826e5d972`
+- `tunnel-03-feedback-upgrade/tunnel.fork.state.json` → preamble `/home/hruzam/.germline/tunnel/tunnel.preamble.md` · thread `01a11da4-2f5b-7870-88df-19c1a515d536`
+
+**Sweep:**
+- Every `tunnel*.state.json` under `~/ia-sync/.dev`, `~/unikuklatrix` and `~/reposoma` (5 vaults) → none references the X1 preamble. The other 3 carry no preamble.
+- No live script or config references it either: `~/ia-sync/zsh`, `~/.config/zsh`, `~/.germline`, `~/.codex/*.toml`, `~/.claude/agents`.
+- Text mentions in this log (T14 ff.), the PAD and majkee's journal are historical and need no change.
+
+**Verdict: X1 preamble free.** `.dev/session/nablarva-X1-architecture/tunnel.preamble.md` can be pruned.

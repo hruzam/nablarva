@@ -32,3 +32,9 @@
 
 - U4 and U5: explicitly UNVERIFIED (said: myShell relay) — in dock.md.
 - The X2 head commits its own files (two of them are pins the architecture doc still owes — dock M4) and its own observation lines in the README index.
+
+## Resolved after the closure commit ebd0dae (appended 2026-10-24 01:40, clock-read)
+
+- **Preamble** — majkee chose route a, through his living trajectory(support) ("preamble -. pass to Trajectory"). Trajectory repointed both tunnel-03 vaults to ~/.germline/tunnel/tunnel.preamble.md via the shim (`open --state … --preamble …`, exit 0, no turn sent, no hand-edit). Its sweep of 5 vaults plus the live zsh, Codex, germline and agent configs found no remaining reference: "X1 preamble free" (support log T25). X1 tunnel.preamble.md is pruned with the rest.
+- **Stamps** — Houston's r1 and r2 diffs failed `git apply --check` at PROJECT-DESIGN.md:96 (r1: blank context lines lost their space, Houston's finding; r2: cause not established). Delta generated r3 mechanically from Houston's four named edits (apply --check 0). Applied and committed: 3b4278c (said: majkee "stamps yes"). The dock bullets for the preamble and the stamps diff are deleted as resolved (dock law: "anything stale → delete, no ledger").
+- **Prune** — both beds removed in the prune commit that follows; its message names ebd0dae and 3b4278c as the preservation points.
