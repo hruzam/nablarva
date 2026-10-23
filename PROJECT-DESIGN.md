@@ -95,7 +95,7 @@ continued conversation, and compares both with exchanges between living peers.
 
 # VOLATILE
 
-*Current delivery shape · checked 2026-09-29 · maintained by Houston's audit card.*
+*Current delivery shape · checked 2026-10-23 · maintained by Houston's audit card.*
 
 Until a separate UI versus integration into a specific IDE is decided, useful
 increments continue as **zsh-layer bricks**. Session-facing tools currently fit
@@ -142,6 +142,9 @@ Composition entry points, API and grammar are indexed by its
 ---
 
 ## 3.2. ovitmugen *(tool)*
+
+*checked: 2026-10-23*
+
 - origin `instar` - phase session (taken from biological names), `tmux`
 -> tmux manager - part of runbook tool
 - reconsiliate if columns are enough layout, I assume growing needs more space, untill today it was only helper
@@ -235,6 +238,8 @@ no bond to specific `.dev/session/<specific-session>`
 
 ## 3.5. muticula *(tool)*
 
+*checked: 2026-10-23*
+
 - origin `mutex` × Latin `cuticula` (small skin) -> protective skin around work in progress
 - file-backed concurrency coordination for cooperating teams across vendors in one identified checkout
 - claim, work, explicitly hand over or release; current design gates commits to the team's live, adopted paths
@@ -258,6 +263,8 @@ no bond to specific `.dev/session/<specific-session>`
   [brief](.dev/session/toolbox-termpanum-00-brief/raw/brief-substrate-for-RUNBOOK.termpanum.2026-10-01.md)
 
 ## 3.7. stridulatrix *(broker + CLI)*
+
+*checked: 2026-10-23*
 
 - the broker and its CLI, named by [L13](.dev/session/flag.md) for voice-input reliability;
   L3 supplies the single-writer room journal, participant cursors and adapter-owned
