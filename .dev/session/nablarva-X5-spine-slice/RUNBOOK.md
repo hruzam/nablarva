@@ -162,3 +162,7 @@ fits · stretches · breaks · unclear with at most five constraints, text only.
 - Aligning the `muticula-01-qualify` pulse row — majkee's, at this bed's closure ("when spine will be finished").
 
 Wake recommendation: **@Cartan via the operator-opened table (Codex, cSharp)** — majkee's pick 13:10 CEST; multi-turn work with continuity, Codex-native implementer (astrobley) and verifier under it. Majkee opens the table and pastes prompt-0 after `architecture-X1-bookkeeping` closes. Reason recorded here per `/runbook` §3.
+
+## Pin (added at arch-X0 prune, 2026-10-24 15:30 CEST)
+
+The architecture-X0-spine-and-skin bed is preserved in git at **1ceceee** (`git show 1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/<file>`). Byte-identical copies of its basic stones — majkee's words (feed, organs, deck), the Socratic brief, the Houston consult, field r1, the inventory, decision package r1/r2 and the substrate — are in this bed at `raw/dragged.arch-x0/` (sha256 table in `README.dragged.md` there). Point at those directly; cite the pin for provenance. The v0 draft itself is at `git show 519a211` (committed copy) and in the pinned bed under raw/nabla-tmux-v0/.

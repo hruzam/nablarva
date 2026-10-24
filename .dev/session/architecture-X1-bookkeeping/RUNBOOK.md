@@ -142,3 +142,7 @@ leave L13 untouched, and remove every statement L21 superseded? Return fits · s
 - Any edit to ovitmugen, termbrana code, or any organ body file.
 
 Wake recommendation: **@Flight (project-session mode, MANNED)** — multi-line bookkeeping inside one gate with one cheap kraken (Delta) under it; the operator's hands are needed for the flag line and the commit, so Flight runs manned. Reason recorded here per `/runbook` §3.
+
+## Pin (added at arch-X0 prune, 2026-10-24 15:30 CEST)
+
+The architecture-X0-spine-and-skin bed is preserved in git at **1ceceee** (`git show 1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/<file>`). Byte-identical copies of its basic stones are in this bed at `raw/dragged.arch-x0/` (sha256 table in `README.dragged.md` there) — point at those directly; cite the pin for provenance.
