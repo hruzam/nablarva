@@ -270,6 +270,10 @@
   `~/ia-sync/SYNC_DISCIPLINE.md`, which are a different pair outside this retirement; ia-sync
   retired only its own `sync.sh` (same doc :30–33). All other L12 provisions remain in force.
 
+- **L24 · L13 cultural-name amendment** (majkee, 2026-10-25): “stridularium” is retired
+  as a cultural name. The phone organ, its body and existing paths remain; replacement name
+  pending. All other L13 provisions remain in force.
+
 ## Named deferral thresholds (folded from abolished plan.md)
 
 - Domain seat: earned when a build-task class repeats 3× (not before)
@@ -332,3 +336,4 @@ seed §open-6 = docket 6.)
 - L17's phrase "shared mechanisms belong at a narrow integration boundary" and its phrase "no common framework or transport is authorized by the Phase 0 build" → superseded by L21 (majkee, 2026-10-23); all other L17 provisions live.
 - L12's seal wording "`.hlm/` = operator vault" → read as covering every operator vault by L22 (majkee, 2026-10-23); text stays in place.
 - L12's bare "sync.sh / deploy.sh / SYNC_DISCIPLINE.md retired" → qualified to the nablarva.devenv trio by L23 (majkee, 2026-10-23).
+- L13's cultural name “stridularium” for the phone app → retired by L24 (majkee, 2026-10-25); the phone organ, body, existing paths and all other L13 provisions remain.

@@ -162,9 +162,10 @@ uncommitted evidence qualifies the finite office-only parser checks (Python 3.14
 not sourcing, editor integration or delivery. A durable qualification commit pin
 awaits an actual, separately authorized preservation commit.
 
-**Layering B — L17:** Termbrana composition and ovitmugen are independently useful
-clients. Any common mechanism is prospective and belongs at a narrow integration
-edge with demonstrated consumers, not a framework built by this phase. Composition
+**Layering B — L17, amended by L21:** Termbrana composition and ovitmugen are independently useful
+clients. See [flag L21](../../.dev/session/flag.md), adopted P5-b 2026-10-23, for shared layers
+and a coherent UI framework; implementing, activating, delivering through or adopting a transport
+for them needs its own separate release. Composition
 works without ovitmugen, a RUNBOOK bed, tmux, editor or interactive shell. Ovitmugen
 keeps view/layout and protected process-lifetime ownership; discovery is not delivery
 authority. Future sending needs complete checked target binding and explicit operator

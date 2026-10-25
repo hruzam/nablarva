@@ -234,7 +234,7 @@ no bond to specific `.dev/session/<specific-session>`
 
 ## 3.3. instarmux *(tool)*
 
-## 3.4. reposoma *(tool, not `~/reposoma` - this is substrate)*
+3.4. reposoma — removed from the organ list; see [ARCHITECTURE §7](docs/ARCHITECTURE.md#7-organs-and-their-homes).
 
 ## 3.5. muticula *(tool)*
 
@@ -279,7 +279,7 @@ no bond to specific `.dev/session/<specific-session>`
 - shape and sources: [room registry design](meshup/room.brokered-journal.2026-07-31/DESIGN.md);
   cross-vendor research: [seam design](meshup/seam.cross-vendor-relay.2026-08-05/DESIGN.md)
 
-## 3.8. stridularium *(phone app)*
+## 3.8. stridularium *(phone app — cultural name retired under L24; replacement name pending)*
 
 - the human's door to stage 3, named by [L13](.dev/session/flag.md); an organ with a proposed
   independently usable console core, not a second authority for the room
