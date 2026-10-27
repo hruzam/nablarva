@@ -1,0 +1,47 @@
+{
+  "result": "PASS",
+  "pair": "codex-codex",
+  "hello": {
+    "body": "HELLO from codex-a; word=otter",
+    "expects_reply": true,
+    "from": "codex-a",
+    "id": "444a6f7307064b06ace0505b7ebf40ab",
+    "in_reply_to": null,
+    "kind": "hello",
+    "run_id": "95deeef25e4e4dd19774c41ac2421e36",
+    "to": "codex-b",
+    "ts": "2026-10-25T20:40:15.294218+00:00"
+  },
+  "reply": {
+    "body": "HELLO codex-a, codex-b received otter",
+    "expects_reply": false,
+    "from": "codex-b",
+    "id": "cee0aee592db484b94ebcbc19cbe43d3",
+    "in_reply_to": "444a6f7307064b06ace0505b7ebf40ab",
+    "kind": "reply",
+    "run_id": "95deeef25e4e4dd19774c41ac2421e36",
+    "to": "codex-a",
+    "ts": "2026-10-25T20:40:19.150117+00:00"
+  },
+  "confirmed": {
+    "body": "I received codex-b reply mentioning otter",
+    "expects_reply": false,
+    "from": "codex-a",
+    "id": "fbe97ae48d6247618b1754e5faefe4a7",
+    "in_reply_to": "cee0aee592db484b94ebcbc19cbe43d3",
+    "kind": "confirmed",
+    "run_id": "95deeef25e4e4dd19774c41ac2421e36",
+    "to": "observer",
+    "ts": "2026-10-25T20:40:23.243594+00:00"
+  },
+  "word": "otter",
+  "screen_observations": 39,
+  "cleanup": {
+    "probe_exit": 1,
+    "probe_output": "server exited unexpectedly",
+    "stop_exit": 0
+  },
+  "cleanup_note": "Immediate probe raced server shutdown: server exited unexpectedly. Stop succeeded; subsequent stable endpoint check still owed.",
+  "protected_files_unchanged": 2150,
+  "index_unchanged": true
+}

@@ -1,0 +1,5 @@
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = "python3 /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-vist/raw/hello-world/hello.py --run /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-vist/raw/hello-world/runs/20261025-214432-e7c5b4 "
+decision = "allow"
+priority = 10

@@ -1,0 +1,28 @@
+{
+  "time": "2026-10-25T20:11:10.649943+00:00",
+  "outcome": "BLOCKED_CLAUDE_ACCESS",
+  "run": "20261025-210755-1c6235",
+  "source_sha256": "2f850ae7c70a4b362bdc127561125772b7fcefc3aa71c8f6cfd039b2dcf0883c",
+  "observed_error": "Your organization has disabled Claude subscription access for Claude Code · Use an Anthropic API key instead, or ask your admin to enable access",
+  "auth_metadata": {
+    "loggedIn": true,
+    "authMethod": "claude.ai",
+    "apiProvider": "firstParty"
+  },
+  "mail_artifacts": [],
+  "cleanup": {
+    "command": "tmux -S /tmp/nablarva-hello-20cec74c3a18.sock list-sessions",
+    "exit": 1,
+    "stderr": "no server running on /tmp/nablarva-hello-20cec74c3a18.sock"
+  },
+  "protected_files_unchanged": 2150,
+  "index_unchanged": true,
+  "raw_result_limit": "result.json says TIMEOUT because initial supervisor used a timeout default when interrupted; interruption.json and this finding record the actual early-stop cause. Original result preserved. Future code distinguishes PROVIDER_REFUSED and INTERRUPTED.",
+  "not_proved": [
+    "real HELLO exchange",
+    "reply correlation between actual CLIs",
+    "calibrated VIST states",
+    "asynchronous wakeup"
+  ],
+  "next_requirement": "Enable Claude Code access for the current subscription or explicitly select an authorized alternative authentication route, then rerun; no credentials/settings changed."
+}

@@ -1,0 +1,1 @@
+{"created": "2026-10-25T20:40:08.209780+00:00", "peers": {"cli": {"codex-a": "codex", "codex-b": "codex"}, "receiver": "codex-b", "sender": "codex-a"}, "run_id": "95deeef25e4e4dd19774c41ac2421e36", "scope": "startup-only real CLI HELLO; no bell or runtime injection"}

@@ -1,0 +1,42 @@
+# HELLO intake — Houston grounding consult
+
+Recorded by Cartan, 2026-10-23, from `/root/houston_vist_hello_intake`.
+Majkee authorized intake/cataloguing after the upload finished. Houston used `card: consult`
+and wrote nothing. The finding below is preserved verbatim; its constraints are consultation
+input, not an experiment release. The companion is `catalogue.hello-intake.cartan.2026-10-23.md`.
+
+---
+
+Route: spawned child (canary: hc-9b3f0521).
+/home/hruzam/.germline/agents/houston/identity.md · stamp: 3702b18f
+/home/hruzam/.germline/agents/houston/binding.codex.md · stamp: 437e8193
+/home/hruzam/unikuklatrix/nablarva/.germline/agents/houston/nablarva.md · stamp: d9ee9067
+/home/hruzam/.germline/agents/houston/cards/consult.md · stamp: 5435b1c7
+
+Effective cwd: `/home/hruzam/unikuklatrix/nablarva`. Card: **consult**. Observed HEAD: `78ff8b2`.
+
+**First finding — documentary lag.** The germline addendum still describes `docs/ARCHITECTURE.md` as a pre-architecture pointer and proposes homes now governed by L18. The promoted architecture itself retains its draft header and pre-L21 tension text (§2.5). Current **flag L18–L21 governs**; these older descriptions do not reopen the settled architecture.
+
+**Verdict: stretches.** `inferred: houston`: cataloguing HELLO r0+r1 as experiment-design input holds within **one PTY/tmux/Termpanum/VIST development thread**, subject to the five constraints below. Majkee’s correction makes the X2/X4 session split incidental history; it establishes no component boundary. Executable HELLO readiness remains unestablished.
+
+| Uploaded source | Catalogue and lineage | Authority |
+|---|---|---|
+| [vist-01-principle-and-applications.md](/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-vist/raw/vist-01-principle-and-applications.md:1) | Nabla/Claude, 2026-10-18: passive Antensor, neutral observations, signatures, canary, proposed envelope and applications. Observation/controller/actuator split: lines 58–95; evidence limits: 97–113, 232–247. | Imported design testimony. **L20** independently locks VIST’s observation principle and separation of authority; Antensor and the envelope remain candidates. |
+| [hello-01-contract.md](/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-vist/raw/hello-01-contract.md:1) | Nabla/Claude, 2026-10-23: two interactive seats, atomic file mail, command-enforced reply discipline, automatic bell, timeout wake-back, fake/live scenarios. Builds on temple mail, HANDSHAKE, tunnel and VIST by attribution (39–48). | Proposed experimental contract. Its “decided” marks report another conversation; the present authorization covers intake and consultation. |
+| [hello-02-addendum-r1.md](/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-vist/raw/hello-02-addendum-r1.md:170) | Explicit successor delta: session-scoped `.nablarva/.../mail/` replaces `_mail/`; `NABLA_BED` replaces `NABLA_MAIL`; bed-wide IDs; versioned signatures replace per-seat patterns; pane-PID checks; log-before-ring, archive/hash checks, catch-up; expanded operator verbs and F9–F13. Unchanged r0 provisions survive. | “Released by Majkee” is **said: imported source**, not a newly witnessed execution release. Home, deployment, schema and optional vendor-session pointers remain proposals/open choices. |
+
+`inferred: houston`: the laboratory foundations support HELLO as a **controlled stimulus whose observable consequences can be measured**. They do not make its bell an observation capability. The original brief separates fixture/operator triggers from the read-only ear and requires EXPECT → TRIGGER → OBSERVE → COMPARE ([brief:20–49](/home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termpanum-00-brief/raw/brief-substrate-for-RUNBOOK.termpanum.2026-10-01.md:20)). The historical hooks-based PTY stop rule is explicitly struck ([lab DESIGN:14](/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/DESIGN.md:14)); it cannot remove the vendor-invariant floor.
+
+Five constraints must be reconciled before selecting an executable gate:
+
+1. **Keep effects and authority distinct within the shared thread.** HELLO’s deadline policy and retry decisions are controller work; typing and Enter are actuator work. Neither becomes Termpanum/Antensor authority. L20 preserves this separation; L21 allows shared architecture but releases no implementation. More directly, r0’s automatic `send-keys` path encounters L4: [ARCHITECTURE §4.3:189–204](/home/hruzam/unikuklatrix/nablarva/docs/ARCHITECTURE.md:189) states that qualification alone cannot reopen it. Any claimed experimental exception needs Majkee’s explicit reconciliation with that lock. Imported “operator’s decision” wording does not establish it here.
+
+2. **Calibrated paint remains evidence with bounded scope.** R1’s pane PID/version binding improves r0’s command-name check, but does not yet prove intended collaborator identity, process/server incarnation, current empty input, or safe Enter handling. Identical captures establish stillness, not readiness; disappearance of the typed ID establishes a screen change, not recipient acceptance. Reconcile restart/PID reuse, stale signatures, wrapping/resizing, dialogs and changes between capture and Enter. The [onion study:80–89, 475–487, 559–569, 873–883](/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/raw/terminal-onion.study.2026-09-17.md:80) distinguishes facts, snapshots and lost semantics. VIST itself requires explicit acceptance/correlated return beyond screen evidence.
+
+3. **R1 needs explicit recovery semantics before its log can support delivery claims.** It says mail remains truth while the log retains bodies after mail drains (150–163). Those are different retention roles. A crash **after `landed` is appended but before ringing** leaves a logged, un-rung message that the “unlogged files” catch-up rule can skip; a crash after Enter but before `rung` creates another ambiguous interval. F9’s “nothing already logged repeats” does not resolve either. Torn-line handling, partial answer/archive operations, deadline races and concurrent bell starts also need a declared disposition. One writer gives append order, not proof of source causality or exactly-once action.
+
+4. **Catalogue homes and names without adopting them.** `.nablarva` runtime versus `.germline` meaning is a useful proposed boundary, consistent with keeping generated session state out of source. Its concrete home/config precedence, signature source, installation route and naming remain open. R1’s “saving straight into the home folder is fine tonight” cannot bypass L6’s reviewed promotion boundary. R0’s external bed and agent-facing instruction placement also need reconciliation with the experimental-bed rule. Pulse is a bounded active-session router under L9′; r1 cannot assume it provides historical mail-session discovery.
+
+5. **Carry X0 evidence at its accepted strength.** [Majkee’s X0 acceptance:11–35](/home/hruzam/unikuklatrix/nablarva/.dev/session/termpanum-X0-source-contract/raw/decision.majkee.packet-acceptance.2026-10-22.md:11) accepts documentary input for relay research; it supplies no D4 verdict, fixture execution or collector release. The [source contract:16–43, 95–147](/home/hruzam/unikuklatrix/nablarva/.dev/session/termpanum-X0-source-contract/raw/source-contract.md:16) specifies prospective output-only capture, independent oracles and qualification still owed. It qualifies neither HELLO input handling nor live vendor readiness. [X2’s disposition:15–35](/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/disposition.x3-vectors.cartan.2026-10-22.md:15) leaves producer topology and collector lifetime open. Preserve the original laboratory’s [seven promotion conditions and experiment boundaries (§§4.9–4.16)](/home/hruzam/unikuklatrix/nablarva/raw.nablarva/oraculum-basic-triangulation/04_LABORATORY_OBSERVABILITY_AND_EXPERIMENTS.md:217), without treating local HELLO logs as the L3 room journal or an adopted VIST envelope.
+
+Unverified: all imported vendor/runtime claims, actual CLI versions and configuration behavior, signature accuracy, Enter behavior, crash recovery and live exchange outcomes. The X4 vault currently contains the three source files and no RUNBOOK or STATUS. No files were written; no helper, fixture, server, vendor CLI, private history or external service was contacted.

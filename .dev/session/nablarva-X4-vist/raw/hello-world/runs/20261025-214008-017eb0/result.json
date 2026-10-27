@@ -1,0 +1,1 @@
+{"cleanup": {"probe_exit": 1, "probe_output": "server exited unexpectedly", "stop_exit": 0}, "ended": "2026-10-25T20:40:35.703527+00:00", "limit": "startup-only exchange; no asynchronous bell or calibrated VIST state classifier", "receipts": ["confirmed", "hello", "reply"], "result": "PASS", "socket": "/tmp/nablarva-hello-95deeef25e4e.sock", "terminal_input_sent": false}

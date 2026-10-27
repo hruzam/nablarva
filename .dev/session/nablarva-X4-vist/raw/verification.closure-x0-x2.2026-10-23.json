@@ -1,0 +1,29 @@
+{
+  "scope": "Documentary closure only; no runtime qualification",
+  "observed_head": "78ff8b22a7d17ee7cd407782166680c07964906b",
+  "baseline_files": 92,
+  "only_baseline_paths_changed": [
+    ".dev/observations/README.md",
+    ".dev/session/nablarva-X2-builder-narative/STATUS.md",
+    ".dev/session/termpanum-X0-source-contract/STATUS.md"
+  ],
+  "accepted_hashes": {
+    ".dev/session/nablarva-X2-builder-narative/raw/termpanum.build-plan.md": "4e039f9f787c3224e8bb8c63342d3cdf68027339dd51ace682db89e430c83145",
+    ".dev/session/nablarva-X2-builder-narative/raw/review.termpanum-build-plan.2026-10-22.md": "007956078b864e1df4020becef5893eb9b3671b110c54a307edb435426c7fa0c",
+    ".dev/session/termpanum-X0-source-contract/raw/source-contract.md": "7086e59527c77040be9d41ee94966f661dd751c009e5eb636590db103dd32694",
+    ".dev/session/termpanum-X0-source-contract/raw/research-disposition.md": "b2cad9dabcaa62a47440c4e235548e42f8812c0b1183febecda8d05659aebc80",
+    ".dev/session/termpanum-X0-source-contract/raw/review.packet.r2.2026-10-22.md": "9a56e8bacc69aaf1bccf9ddf706a192bd9fa36ad7dbd71a732fe1565c16f0a7a"
+  },
+  "raw_manifest_counts": {
+    "termpanum-X0-source-contract": 9,
+    "nablarva-X2-builder-narative": 26
+  },
+  "x0_premaintenance_commit_members_checked": 29,
+  "promoted_source_bodies_byte_equal": true,
+  "gate_strings_equal": true,
+  "status_yaml_parses": true,
+  "x4_remains_raw_only": true,
+  "new_record_local_links_checked": 40,
+  "new_markdown_whitespace": "PASS",
+  "source_limits": "Dated searches and runtime behavior not requalified; no full historical 21-file transition baseline reconstructed."
+}
