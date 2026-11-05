@@ -11,7 +11,7 @@ gate: >-
   jump agent tabs from either half; the halves swap left/right and up/down by key, and a
   preset is saved, applied and deleted from the console; ov-ls --json is unchanged while the
   new v1 map, events.jsonl and beds/<bed>.json appear; every ovitmugen key matches
-  AGENTS.PROJECT-DESIGN.md § KEYS CODE — with ov-selftest and rb-selftest green on office and home.
+  PROJECT-DESIGN.md § KEYS CODE — with ov-selftest and rb-selftest green on office and home.
 participant_0: [trajectory, {brand: anthropic, model: operator-selected, effort: operator-selected}, {host: office, role: cSharp head, sole writer of ovitmugen source in scope, status_owner}]
 participant_1: [delta, {brand: anthropic, model: agent-default, effort: agent-default}, {host: office, role: zero-judgment pieces spawned by trajectory, reviewed before report}]
 participant_2: [majkee, {brand: human, model: none, effort: none}, {host: office + home, role: deploy hands, live walk, gavel}]
@@ -39,7 +39,7 @@ answered the basement design D1–D5 and the layout one question per turn; this 
   (§1 layers · §2 map · §3 pipes · §6 keys · §8 D1–D5 · §9 majkee input · §10–10.1 layout · §11 reports · §12 D5).
 - D1 events.jsonl yes · D2 `~/.local/state/ovitmugen/` (machine-local, never synced) ·
   D3 shared key grammar ACCEPTED, DRY: it lives ONLY in
-  `/home/hruzam/unikuklatrix/nablarva/.dev/session/AGENTS.PROJECT-DESIGN.md` § KEYS CODE; helps point, never copy ·
+  `/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md` § KEYS CODE; helps point, never copy ·
   D4 tmux now, zellij possible behind the L0 adapter · D5 this sibling.
 - Layout default: agents ~½ (or one clean terminal) + organs ~½ (runbook…, swappable);
   horizontal agents left / organs right; vertical organs up / agents down; user swaps live by
@@ -66,7 +66,7 @@ answered the basement design D1–D5 and the layout one question per turn; this 
 You are Trajectory, cSharp head of /home/hruzam/unikuklatrix/nablarva/.dev/session/ovitmugen-01-basement/.
 Read RUNBOOK.md and STATUS.md there, then /home/hruzam/reposoma/raw.guides/runbook/res/csharp-head-protocol.md,
 then the design file named in Fixed facts (§8–§12 first) and § KEYS CODE in
-/home/hruzam/unikuklatrix/nablarva/.dev/session/AGENTS.PROJECT-DESIGN.md.
+/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md.
 Build in order B1 → B2 → B3 → layout (see STATUS next). Before each step: one notice of the exact
 files you will write. After each step: python3 /home/hruzam/ia-sync/zsh/session/ovitmugen.py selftest
 and runbook.py selftest green, then commit only your own paths and update STATUS.
@@ -91,6 +91,8 @@ output that proves it. No opinions, no scope growth.
 - ia-sync `journal.host-cleanup.md` is another writer's: propose, never edit.
 - `AGENTS.PROJECT-DESIGN.md` is maintained by the convergence seat (Cartan): append-only, never
   rewrite other chapters; commit only when no other writer's edits are pending in it.
+- 2026-10-17 pointer (append, line above unchanged): the wrapper moved to
+  `/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md` (majkee ruling 2026-10-10); § KEYS CODE moved with it.
 - No deploy, ever, by this session. Never bare `rb-unmark`; detach by exact id.
 
 ## Acceptance evidence

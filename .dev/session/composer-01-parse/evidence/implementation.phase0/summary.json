@@ -1,0 +1,13 @@
+{
+  "status": "FUNCTIONAL_EVIDENCE_PASS_PERFORMANCE_HOLD",
+  "unit_tests": 24,
+  "cmp_checks": 62,
+  "cli_cases": 38,
+  "cli_case_repeats": 2,
+  "raw_body_bytes": 38799,
+  "serialized_corpus_bytes": 39560,
+  "performance": "FAIL",
+  "performance_budgets_unchanged": true,
+  "independent_verification": "pending",
+  "home_host_performance": "unverified"
+}

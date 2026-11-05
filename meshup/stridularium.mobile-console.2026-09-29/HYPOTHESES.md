@@ -9,7 +9,7 @@ open:
   - h1: "Terminal on the phone (Cartan: native terminal, selection, key row) vs no terminal emulator on the phone (Symmetry: host renders text, phone shows cards)"
     src: raw/IDEA.k0k0nV3R.2026-09-29.md (§First experience 3) · raw/note.stridularium.2026-10-01.md (§Navigation)
   - h2: "Build order — notifier first (majkee) · buffer first (Symmetry) · console core first (oraculum): which slice proves the loop earliest?"
-    src: raw/note.stridularium.2026-10-01.md (§Open) · AGENTS.stridularium-design.md
+    src: raw/note.stridularium.2026-10-01.md (§Open) · docs/organs/stridularium.md
   - h3: "Engine contract — on-demand host helper over SSH vs authenticated service behind Tailscale Serve; today's device key forces interactive tmux and exposes no command API"
     src: raw/IDEA.k0k0nV3R.2026-09-29.md (§How to approach · §Design choices)
   - h4: "Companion over Termux (RUN_COMMAND intent) vs purpose-built shell with terminal component + SSH lib vs Termux fork"

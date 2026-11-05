@@ -1,0 +1,70 @@
+[
+  {
+    "path": ".dev/session/germline-04-wiring-plan/RUNBOOK.md",
+    "status": " M"
+  },
+  {
+    "path": ".dev/session/germline-04-wiring-plan/STATUS.md",
+    "status": " M"
+  },
+  {
+    "path": ".dev/session/germline-04-wiring-plan/raw/HANDOFF.g06-make-program.md",
+    "status": " M"
+  },
+  {
+    "path": ".dev/session/germline-04-wiring-plan/raw/CLOSE.g04-preparation.2026-10-20.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/RUNBOOK.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/STATUS.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/_bus/field.U1.return.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/_bus/field.U2.return.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/_bus/oraculum.assess.U1-U2.return.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/_bus/oraculum.unit-plan.return.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/coverage.matrix.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/decisions/DEC.01.germline-identity-and-load-contract.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/findings.g06.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/raw/SCOPE.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/units/PLAN.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/units/RESULT.U1.md",
+    "status": "??"
+  },
+  {
+    "path": ".dev/session/germline-06-full-audit/units/RESULT.U2.md",
+    "status": "??"
+  }
+]

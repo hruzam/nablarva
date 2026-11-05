@@ -14,11 +14,11 @@ gate: >-
   jump agent tabs from either half; the halves swap left/right and up/down by key, and a
   preset is saved, applied and deleted from the console; ov-ls --json is unchanged while the
   new v1 map, events.jsonl and beds/<bed>.json appear; every ovitmugen key matches
-  AGENTS.PROJECT-DESIGN.md § KEYS CODE — with ov-selftest and rb-selftest green on office and home.
+  PROJECT-DESIGN.md § KEYS CODE — with ov-selftest and rb-selftest green on office and home.
 checkpoint: >-
   Bed authored 2026-10-02 by the ovitmugen-00-console head. Design and all majkee answers
   (D1–D5, layout + addendum) are in this bed's raw/architecture.pipes-ui-keys.2026-09-29.md (moved from 00);
-  § KEYS CODE is in AGENTS.PROJECT-DESIGN.md (committed by another writer in addbe07).
+  § KEYS CODE is in PROJECT-DESIGN.md at repo root, moved 2026-10-17 (committed by another writer in addbe07).
   Nothing of 01 is built. Baseline: ov-selftest OK (office + home), runbook selftest PASS at ia-sync b435af5.
 in_flight: none
 recovery_probe: >-
@@ -32,7 +32,7 @@ holds:
   - "Carried tasks OUTSIDE this gate (from the closed 00 bed) — session-browser GUIDE res/examples.md
     (/home/hruzam/reposoma/raw.guides/session-browser/res/examples.md, teach the final TUI) ·
     pad.1-remote-cli-walk.md in this bed (majkee's PAD) · receipt navigation idea (display-only)."
-  - No deploy by this session; ia-sync journal is another writer's; AGENTS.PROJECT-DESIGN.md append-only.
+  - No deploy by this session; ia-sync journal is another writer's; PROJECT-DESIGN.md append-only.
   - Tests only on isolated tmux sockets; never send-keys into agent panes; never close a busy tab.
 next: >-
   majkee wakes a fresh Trajectory with prompt-0 of

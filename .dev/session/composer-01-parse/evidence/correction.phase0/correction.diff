@@ -1,0 +1,152 @@
+--- before/composer.py
++++ after/composer.py
+@@ -1,9 +1,7 @@
+ #!/usr/bin/env python3
+ """Termbrana request/0.1: inert bytes-in parser. Wire contract: GRAMMAR.md."""
+ 
+-from dataclasses import dataclass
+ import json
+-from pathlib import Path
+ import re
+ import sys
+ 
+@@ -16,8 +14,34 @@
+ SMART_QUOTES = "\u2018\u2019\u201c\u201d"
+ 
+ 
+-@dataclass(frozen=True)
+-class Diagnostic:
++class _FrozenRecord:
++    """Small immutable attribute records without reflection/import-time setup."""
++
++    def _initialize(self, values):
++        for name in self._record_fields:
++            object.__setattr__(self, name, values[name])
++
++    def __setattr__(self, name, value):
++        raise AttributeError(f"cannot assign to field {name!r}")
++
++    def __delattr__(self, name):
++        raise AttributeError(f"cannot delete field {name!r}")
++
++    def __eq__(self, other):
++        if type(self) is not type(other):
++            return NotImplemented
++        return all(getattr(self, name) == getattr(other, name) for name in self._record_fields)
++
++    def __hash__(self):
++        return hash(tuple(getattr(self, name) for name in self._record_fields))
++
++    def __repr__(self):
++        fields = ", ".join(f"{name}={getattr(self, name)!r}" for name in self._record_fields)
++        return f"{type(self).__name__}({fields})"
++
++
++class Diagnostic(_FrozenRecord):
++    _record_fields = ("code", "reason", "byte_offset", "line", "byte_column", "packet_nonce", "field")
+     code: str
+     reason: str
+     byte_offset: int
+@@ -26,12 +50,15 @@
+     packet_nonce: str | None
+     field: str | None
+ 
++    def __init__(self, code, reason, byte_offset, line, byte_column, packet_nonce, field):
++        self._initialize(locals())
++
+     def as_dict(self):
+         return dict(vars(self))
+ 
+ 
+-@dataclass(frozen=True)
+-class Packet:
++class Packet(_FrozenRecord):
++    _record_fields = ("nonce", "fields", "span", "header_span", "body_span", "frame_spans")
+     nonce: str
+     fields: dict
+     span: tuple[int, int]
+@@ -39,16 +66,22 @@
+     body_span: tuple[int, int]
+     frame_spans: tuple[tuple[int, int], ...]
+ 
++    def __init__(self, nonce, fields, span, header_span, body_span, frame_spans):
++        self._initialize(locals())
++
+     def metadata(self):
+         return dict(nonce=self.nonce, fields=self.fields, span=self.span,
+                     header_span=self.header_span, body_span=self.body_span,
+                     frame_spans=self.frame_spans)
+ 
+ 
+-@dataclass(frozen=True)
+-class Document:
++class Document(_FrozenRecord):
++    _record_fields = ("source", "packets")
+     source: bytes
+     packets: tuple[Packet, ...]
++
++    def __init__(self, source, packets):
++        self._initialize(locals())
+ 
+     def to_bytes(self):
+         """Copy retained spans, including all outside bytes; never serialize fields."""
+@@ -62,10 +95,13 @@
+         return b"".join(spans)
+ 
+ 
+-@dataclass(frozen=True)
+-class ParseResult:
++class ParseResult(_FrozenRecord):
++    _record_fields = ("document", "diagnostics")
+     document: Document | None
+     diagnostics: tuple[Diagnostic, ...]
++
++    def __init__(self, document, diagnostics):
++        self._initialize(locals())
+ 
+     @property
+     def packets(self):
+@@ -313,8 +349,11 @@
+         sys.stderr.write("usage: composer.py {check|parse} [FILE|-]\n")
+         return 64
+     try:
+-        data = (sys.stdin.buffer.read() if len(args) == 1 or args[1] == "-"
+-                else Path(args[1]).read_bytes())
++        if len(args) == 1 or args[1] == "-":
++            data = sys.stdin.buffer.read()
++        else:
++            with open(args[1], "rb") as source:
++                data = source.read()
+         result = parse(data)
+         if result.diagnostics:
+             sys.stdout.buffer.write(diagnostic_bytes(result.diagnostics))
+--- before/tests/test_composer.py
++++ after/tests/test_composer.py
+@@ -73,6 +73,27 @@
+         packet.fields["id"] = "mutated"
+         packet.fields["context"].append("new")
+         self.assertEqual(doc.to_bytes(), source)
++
++    def test_immutable_record_api(self):
++        diagnostic = c.Diagnostic("FIELD_INVALID", "unknown_key", 12, 2, 1, "a7b2", "program")
++        same = c.Diagnostic(code="FIELD_INVALID", reason="unknown_key", byte_offset=12,
++                            line=2, byte_column=1, packet_nonce="a7b2", field="program")
++        self.assertEqual(diagnostic, same)
++        self.assertEqual(hash(diagnostic), hash(same))
++        self.assertEqual(list(diagnostic.as_dict()),
++                         ["code", "reason", "byte_offset", "line", "byte_column", "packet_nonce", "field"])
++        self.assertEqual(repr(diagnostic), "Diagnostic(code='FIELD_INVALID', reason='unknown_key', byte_offset=12, line=2, byte_column=1, packet_nonce='a7b2', field='program')")
++        self.assertNotEqual(diagnostic, tuple(diagnostic.as_dict().values()))
++        doc, packet = self.one(frame())
++        result = c.ParseResult(document=doc, diagnostics=())
++        for record, name, value in ((diagnostic, "code", "changed"), (packet, "nonce", "other4"),
++                                    (doc, "source", b"changed"), (result, "document", None)):
++            with self.assertRaises(AttributeError):
++                setattr(record, name, value)
++            with self.assertRaises(AttributeError):
++                delattr(record, name)
++        with self.assertRaises(TypeError):
++            hash(packet)  # Mutable decoded fields remain unhashable, as before.
+ 
+     def test_bom_offsets_and_multiple_packets_outside(self):
+         first = frame(eol=b"\r\n")

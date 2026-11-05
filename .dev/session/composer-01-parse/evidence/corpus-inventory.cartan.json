@@ -1,0 +1,59 @@
+{
+  "author": "Cartan",
+  "purpose": "Read-only source-byte inventory; no parser, fixture generator or acceptance claim",
+  "items": [
+    {
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/raw/EXCHANGE.md",
+      "source_sha256": "dde73d06a5710ce1fd512bb33b21e1460c1533644510d53f3b40319ed15b7379",
+      "body_byte_start_inclusive": 0,
+      "body_byte_end_exclusive": 10307,
+      "body_bytes": 10307,
+      "body_sha256": "dde73d06a5710ce1fd512bb33b21e1460c1533644510d53f3b40319ed15b7379",
+      "first_line_1_based": 1,
+      "last_line_1_based": 159,
+      "LF": 159,
+      "CRLF": 0,
+      "ends_LF": true
+    },
+    {
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/raw/sella-v.0.1/EXCHANGE.md",
+      "source_sha256": "1d19e0077002a70fb9f12e7fee7fa29295a457a5201a8e60688943ff5a0fdffd",
+      "body_byte_start_inclusive": 0,
+      "body_byte_end_exclusive": 8459,
+      "body_bytes": 8459,
+      "body_sha256": "1d19e0077002a70fb9f12e7fee7fa29295a457a5201a8e60688943ff5a0fdffd",
+      "first_line_1_based": 1,
+      "last_line_1_based": 130,
+      "LF": 130,
+      "CRLF": 0,
+      "ends_LF": true
+    },
+    {
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/raw/sella-v.0.1/brief.oraculum.sella-v.0.1.md",
+      "source_sha256": "8299e178bf9754a1353ec1193e74930ee4161b2d06b9925ebc2dd54b5649818d",
+      "body_byte_start_inclusive": 0,
+      "body_byte_end_exclusive": 5499,
+      "body_bytes": 5499,
+      "body_sha256": "8299e178bf9754a1353ec1193e74930ee4161b2d06b9925ebc2dd54b5649818d",
+      "first_line_1_based": 1,
+      "last_line_1_based": 88,
+      "LF": 88,
+      "CRLF": 0,
+      "ends_LF": true
+    },
+    {
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/raw/journal.2026-10-16.md",
+      "source_sha256": "456d1c5eefb142beb4b07f20dcf1463d3ea0a82c690c8f0ac7f4f13b3a6b8337",
+      "body_byte_start_inclusive": 2061,
+      "body_byte_end_exclusive": 16595,
+      "body_bytes": 14534,
+      "body_sha256": "dc1590fb2f935a6ae05efd10e32847d28a9ab3831ef2d35de85d4212dd124e54",
+      "first_line_1_based": 39,
+      "last_line_1_based": 407,
+      "LF": 369,
+      "CRLF": 0,
+      "ends_LF": true
+    }
+  ],
+  "correction": "Cartan source check against builder cycle 05: journal section 1.4 ends before top-level # 2. JEV at line 408, not before section 4.1 at line 439. Earlier inventory included later chapters; corrected before reviewer handoff."
+}

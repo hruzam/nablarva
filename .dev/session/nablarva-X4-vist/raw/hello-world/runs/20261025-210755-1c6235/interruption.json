@@ -1,0 +1,6 @@
+{
+  "time": "2026-10-25T20:09:14.075023+00:00",
+  "supervisor_pid": 578507,
+  "reason": "Claude CLI reports organization disabled subscription access; stop the owned disposable test, no messages exchanged",
+  "signal": "SIGINT"
+}

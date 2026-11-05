@@ -1,0 +1,110 @@
+[
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/dev/null",
+      "/home/hruzam/ia-sync/zsh/termbrana/GRAMMAR.md"
+    ],
+    "exit": 1,
+    "diagnostics": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/dev/null",
+      "/home/hruzam/ia-sync/zsh/termbrana/README.md"
+    ],
+    "exit": 1,
+    "diagnostics": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/dev/null",
+      "/home/hruzam/ia-sync/zsh/termbrana/base.zsh"
+    ],
+    "exit": 1,
+    "diagnostics": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/dev/null",
+      "/home/hruzam/ia-sync/zsh/termbrana/composer.py"
+    ],
+    "exit": 1,
+    "diagnostics": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/dev/null",
+      "/home/hruzam/ia-sync/zsh/termbrana/composer.zsh"
+    ],
+    "exit": 1,
+    "diagnostics": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/dev/null",
+      "/home/hruzam/ia-sync/zsh/termbrana/keyboard.zsh"
+    ],
+    "exit": 1,
+    "diagnostics": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/dev/null",
+      "/home/hruzam/ia-sync/zsh/termbrana/tests/acceptance.py"
+    ],
+    "exit": 1,
+    "diagnostics": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/dev/null",
+      "/home/hruzam/ia-sync/zsh/termbrana/tests/benchmark.py"
+    ],
+    "exit": 1,
+    "diagnostics": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/dev/null",
+      "/home/hruzam/ia-sync/zsh/termbrana/tests/test_composer.py"
+    ],
+    "exit": 1,
+    "diagnostics": ""
+  }
+]

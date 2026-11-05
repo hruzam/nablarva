@@ -1,0 +1,222 @@
+{
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "-B",
+    "-X",
+    "importtime",
+    "/home/hruzam/ia-sync/zsh/termbrana/composer.py",
+    "check",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/startup.phase0/fixtures/corpus.mixed.md"
+  ],
+  "cwd": "/tmp",
+  "exit": 0,
+  "wall_ms": 82.130008,
+  "cpu_ms": 79.52800000000002,
+  "absent_modules": [
+    "site",
+    "sitecustomize",
+    "usercustomize",
+    "dataclasses",
+    "inspect",
+    "pathlib"
+  ],
+  "imports": [
+    {
+      "self_us": 622,
+      "cumulative_us": 622,
+      "module": "_io"
+    },
+    {
+      "self_us": 112,
+      "cumulative_us": 112,
+      "module": "marshal"
+    },
+    {
+      "self_us": 935,
+      "cumulative_us": 935,
+      "module": "posix"
+    },
+    {
+      "self_us": 1976,
+      "cumulative_us": 3643,
+      "module": "_frozen_importlib_external"
+    },
+    {
+      "self_us": 268,
+      "cumulative_us": 268,
+      "module": "time"
+    },
+    {
+      "self_us": 753,
+      "cumulative_us": 1021,
+      "module": "zipimport"
+    },
+    {
+      "self_us": 183,
+      "cumulative_us": 183,
+      "module": "_codecs"
+    },
+    {
+      "self_us": 1860,
+      "cumulative_us": 2042,
+      "module": "codecs"
+    },
+    {
+      "self_us": 1592,
+      "cumulative_us": 1592,
+      "module": "encodings.aliases"
+    },
+    {
+      "self_us": 1658,
+      "cumulative_us": 5290,
+      "module": "encodings"
+    },
+    {
+      "self_us": 637,
+      "cumulative_us": 637,
+      "module": "encodings.utf_8"
+    },
+    {
+      "self_us": 281,
+      "cumulative_us": 281,
+      "module": "_signal"
+    },
+    {
+      "self_us": 132,
+      "cumulative_us": 132,
+      "module": "_types"
+    },
+    {
+      "self_us": 871,
+      "cumulative_us": 1002,
+      "module": "types"
+    },
+    {
+      "self_us": 4738,
+      "cumulative_us": 5739,
+      "module": "enum"
+    },
+    {
+      "self_us": 218,
+      "cumulative_us": 218,
+      "module": "_sre"
+    },
+    {
+      "self_us": 1654,
+      "cumulative_us": 1654,
+      "module": "re._constants"
+    },
+    {
+      "self_us": 1314,
+      "cumulative_us": 2968,
+      "module": "re._parser"
+    },
+    {
+      "self_us": 416,
+      "cumulative_us": 416,
+      "module": "re._casefix"
+    },
+    {
+      "self_us": 1098,
+      "cumulative_us": 4699,
+      "module": "re._compiler"
+    },
+    {
+      "self_us": 121,
+      "cumulative_us": 121,
+      "module": "_abc"
+    },
+    {
+      "self_us": 575,
+      "cumulative_us": 695,
+      "module": "abc"
+    },
+    {
+      "self_us": 3262,
+      "cumulative_us": 3262,
+      "module": "_collections_abc"
+    },
+    {
+      "self_us": 436,
+      "cumulative_us": 436,
+      "module": "itertools"
+    },
+    {
+      "self_us": 444,
+      "cumulative_us": 444,
+      "module": "keyword"
+    },
+    {
+      "self_us": 861,
+      "cumulative_us": 861,
+      "module": "_operator"
+    },
+    {
+      "self_us": 923,
+      "cumulative_us": 1784,
+      "module": "operator"
+    },
+    {
+      "self_us": 583,
+      "cumulative_us": 583,
+      "module": "reprlib"
+    },
+    {
+      "self_us": 211,
+      "cumulative_us": 211,
+      "module": "_collections"
+    },
+    {
+      "self_us": 2640,
+      "cumulative_us": 9356,
+      "module": "collections"
+    },
+    {
+      "self_us": 179,
+      "cumulative_us": 179,
+      "module": "_functools"
+    },
+    {
+      "self_us": 1972,
+      "cumulative_us": 12201,
+      "module": "functools"
+    },
+    {
+      "self_us": 594,
+      "cumulative_us": 594,
+      "module": "copyreg"
+    },
+    {
+      "self_us": 1660,
+      "cumulative_us": 24892,
+      "module": "re"
+    },
+    {
+      "self_us": 712,
+      "cumulative_us": 712,
+      "module": "_json"
+    },
+    {
+      "self_us": 1422,
+      "cumulative_us": 2133,
+      "module": "json.scanner"
+    },
+    {
+      "self_us": 1535,
+      "cumulative_us": 28559,
+      "module": "json.decoder"
+    },
+    {
+      "self_us": 1686,
+      "cumulative_us": 1686,
+      "module": "json.encoder"
+    },
+    {
+      "self_us": 740,
+      "cumulative_us": 30984,
+      "module": "json"
+    }
+  ]
+}

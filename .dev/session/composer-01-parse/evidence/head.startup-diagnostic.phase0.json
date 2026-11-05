@@ -1,0 +1,111 @@
+{
+  "purpose": "head startup/context diagnosis, not acceptance retest",
+  "host": "hruzam-120922",
+  "samples": {
+    "python_start": {
+      "command": [
+        "python3",
+        "-B",
+        "-c",
+        "pass"
+      ],
+      "rows": [
+        {
+          "wall_ms": 42.364741675555706,
+          "cpu_ms": 41.278999999999996
+        },
+        {
+          "wall_ms": 42.78368782252073,
+          "cpu_ms": 41.69499999999999
+        },
+        {
+          "wall_ms": 44.20910496264696,
+          "cpu_ms": 43.11200000000001
+        },
+        {
+          "wall_ms": 43.21054508909583,
+          "cpu_ms": 42.087999999999994
+        },
+        {
+          "wall_ms": 42.96530596911907,
+          "cpu_ms": 41.92399999999999
+        },
+        {
+          "wall_ms": 31.519338954240084,
+          "cpu_ms": 30.755000000000006
+        },
+        {
+          "wall_ms": 43.76931395381689,
+          "cpu_ms": 42.98599999999997
+        },
+        {
+          "wall_ms": 42.95179061591625,
+          "cpu_ms": 42.05499999999998
+        },
+        {
+          "wall_ms": 42.703714687377214,
+          "cpu_ms": 41.88900000000001
+        },
+        {
+          "wall_ms": 45.20692117512226,
+          "cpu_ms": 44.183999999999976
+        }
+      ]
+    },
+    "real_check": {
+      "command": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"; _tbc_check \"$2\"",
+        "tbc-diagnostic",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/corpus.mixed.md"
+      ],
+      "rows": [
+        {
+          "wall_ms": 155.97897581756115,
+          "cpu_ms": 153.359
+        },
+        {
+          "wall_ms": 143.92594387754798,
+          "cpu_ms": 142.07399999999993
+        },
+        {
+          "wall_ms": 147.275994066149,
+          "cpu_ms": 145.42100000000002
+        },
+        {
+          "wall_ms": 158.49985601380467,
+          "cpu_ms": 155.25599999999991
+        },
+        {
+          "wall_ms": 137.15316029265523,
+          "cpu_ms": 132.82699999999997
+        },
+        {
+          "wall_ms": 52.8891496360302,
+          "cpu_ms": 52.29300000000015
+        },
+        {
+          "wall_ms": 137.47182302176952,
+          "cpu_ms": 135.5
+        },
+        {
+          "wall_ms": 144.7867709212005,
+          "cpu_ms": 142.40399999999994
+        },
+        {
+          "wall_ms": 144.8127068579197,
+          "cpu_ms": 142.48299999999998
+        },
+        {
+          "wall_ms": 145.74728813022375,
+          "cpu_ms": 143.57400000000015
+        }
+      ]
+    }
+  },
+  "loadavg": "1.11 1.39 1.24 1/4451 1152984",
+  "cpu_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=6939281841\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0"
+}

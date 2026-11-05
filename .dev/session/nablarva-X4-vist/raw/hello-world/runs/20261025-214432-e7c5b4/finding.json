@@ -1,0 +1,21 @@
+{
+  "outcome": "BLOCKED_PROVIDER_CREDIT",
+  "actual_runner_result": "INTERRUPTED",
+  "error": "Gemini API 402: prepayment credits are depleted",
+  "evidence": "screens/gemini.0d12f0a113015c1f.txt",
+  "automatic_cli_update_evidence": "screens/gemini.0d12f0a113015c1f.txt",
+  "gemini_md": "source.GEMINI.md",
+  "gemini_md_limit": "UI reports 3 GEMINI.md files; model request failed before participant execution. Instruction compliance was not tested.",
+  "receipts": [
+    "hello"
+  ],
+  "protected_files_unchanged": 2150,
+  "index_unchanged": true,
+  "auth_or_billing_changed_by_head": false,
+  "terminal_input_sent": false,
+  "cleanup": {
+    "probe_exit": 1,
+    "probe_output": "no server running on /tmp/nablarva-hello-793a62dfe3f6.sock",
+    "stop_exit": 0
+  }
+}

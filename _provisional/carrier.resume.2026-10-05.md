@@ -40,3 +40,9 @@ Which route actually ran · the challenge file exists · Cartan's RETURN exists 
 **Resume check 2026-10-05:** host hruzam-120922 · core @ e07b95f · Bash live · tunnel GUIDE + user-run read · shim selftest run (result in chat). Table NOT open; waiting for majkee's `tn-on <bed> [name] -- …` or `tun open --enable` and the vault path.
 
 **Observer (majkee 2026-10-05):** trajectory(it) — mute tunnel IT support. Carrier logs every tunnel defect at once to `raw/tunnel-issues.2026-10-05.md` (exit code · verb · time · vault · expected→observed); trajectory repairs in real time on request and collects for maintenance. Not a bus participant.
+
+**2026-10-06 — HOLD:** majkee's `.dev/architect-now-uncanonical/` triad (Symmetry, FINAL, L16 pending) redefines Houston. Round 2 held; POINT 08 asks cartan for R3 and atlas to read; majkee decides L16 landing, bed-vs-re-forge relation, tunnel timing ("path is clear"). Carrier does nothing on the tunnel until then.
+
+**2026-10-06 (majkee):** Cartan may coordinate all three living sessions over the tunnel; atlas-ui may `ask` cartan too (shared vault → exit 61 = wait). Carrier does not idle while Atlas works: rail pulses to cartan in the same `_bus/` numbering, tagged `rail: nablarva`.
+
+**2026-10-06 T5 (trajectory):** design turns `TUNNEL_CODEX_TIMEOUT=1800` (timeout kills the Codex process → turn interrupted); add turn ID to `.meta` after a successful ask (`read | jq .thread.turns[-1].id`); Cartan ctx 59.6% → plan reset at ~80% (majkee). §C8 moot. Effective policy unchanged since 13:59:38Z.

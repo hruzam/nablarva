@@ -1,0 +1,8 @@
+Candidate checks on office, 2026-10-17
+PASS: RUNBOOK, STATUS, imported card/research/brief and VERDICT frontmatter parse.
+PASS: one unchanged Phase 0 gate, majkee status owner/pen, all recovery fields.
+PASS: exact 19-file digest map; no symlinks; original manifest unchanged.
+PASS: historical git object equals journal bytes; import archive preserved.
+PASS: brief differs only by BUS packaging, attribution/stamp and scalar quoting.
+PASS: cycle 01 REVISE and cycle 02 independent ACCEPT present.
+PASS: helper syntax; 19 SHA256SUMS OK.

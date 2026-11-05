@@ -1,0 +1,5 @@
+{
+  "observed": "Initial public-alias smoke in a single zsh -c command string returned 127 because aliases were expanded before source executed",
+  "exit": 127,
+  "correction": "Harness sources a separate test command file after alias definitions; actual public aliases pass. Product bytes unchanged."
+}

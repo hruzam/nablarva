@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "python": "3.14.7 (main, Aug 10 2026, 07:46:56) [GCC 16.1.1 20260728]",
+  "source_sha256": "a678c49bacc775d406de7021a869af072978ca888506112e6783a2b65660f28b",
+  "checks": [
+    "closed required/allowed/reason sets",
+    "corpus-0-lf",
+    "corpus-0-crlf",
+    "corpus-1-lf",
+    "corpus-1-crlf",
+    "corpus-2-lf",
+    "corpus-2-crlf",
+    "corpus-3-lf",
+    "corpus-3-crlf",
+    "mixed corpus BOM/frame document",
+    "saved handwritten fixture",
+    "first closer wrong EOL",
+    "inserted end and retained true end",
+    "program unknown before value/repetition",
+    "program wrong EOL first",
+    "program line shape first",
+    "program syntax first",
+    "function unknown before value/repetition",
+    "function wrong EOL first",
+    "function line shape first",
+    "function syntax first",
+    "exactly five absent required",
+    "invalid UTF-8 suppresses grammar",
+    "BOM original byte coordinate",
+    "Unicode separators are not physical lines",
+    "bare CR in header is frame EOL error",
+    "bare CR in body is preserved",
+    "bare CR end at EOF stays body",
+    "JSON/list/string valid edges",
+    "list edge [\"x\"oops]",
+    "list edge [a,]",
+    "aggregate until structural stop",
+    "real CLI literal non-execution/input preservation/safe output"
+  ],
+  "check_count": 33,
+  "corpus_body_bytes": 38799,
+  "mixed_serialized_bytes": 39540,
+  "nonexecution_input_sha256": "e2d64c4387d2566b5b41ae45ad06e9f087f97cea46f0d22e5fdc193951cd3c90",
+  "sentinel_absent": true,
+  "commands": [
+    {
+      "argv": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"; _tbc_\"$2\" \"$3\"",
+        "verifier",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "check",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/verification.phase0/nonexecution.input.md"
+      ],
+      "mode": "check",
+      "repeat": 1,
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"; _tbc_\"$2\" \"$3\"",
+        "verifier",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "check",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/verification.phase0/nonexecution.input.md"
+      ],
+      "mode": "check",
+      "repeat": 2,
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"; _tbc_\"$2\" \"$3\"",
+        "verifier",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "parse",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/verification.phase0/nonexecution.input.md"
+      ],
+      "mode": "parse",
+      "repeat": 1,
+      "exit": 0,
+      "stdout_sha256": "33a368d9f5bc12aa0e83aa463ebdef38d290b3479cc132986d3e795641c8b6ef",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "zsh",
+        "-f",
+        "-c",
+        "source \"$1/base.zsh\"; _tbc_\"$2\" \"$3\"",
+        "verifier",
+        "/home/hruzam/ia-sync/zsh/termbrana",
+        "parse",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/verification.phase0/nonexecution.input.md"
+      ],
+      "mode": "parse",
+      "repeat": 2,
+      "exit": 0,
+      "stdout_sha256": "33a368d9f5bc12aa0e83aa463ebdef38d290b3479cc132986d3e795641c8b6ef",
+      "stderr_bytes": 0
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+{"code":"FIELD_INVALID","reason":"unknown_key","byte_offset":114,"line":7,"byte_column":1,"packet_nonce":"a7b2","field":"program"}
+{"code":"FIELD_INVALID","reason":"unknown_key","byte_offset":131,"line":8,"byte_column":1,"packet_nonce":"a7b2","field":"program"}

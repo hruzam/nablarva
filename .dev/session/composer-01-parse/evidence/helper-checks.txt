@@ -1,0 +1,161 @@
+$ sh -n /tmp/composer-01-parse.prepare.D83xlu/candidate/populate-raw.composer-01-parse.sh
+
+exit: 0
+$ sh /tmp/composer-01-parse.prepare.D83xlu/candidate/populate-raw.composer-01-parse.sh [BED=/tmp/composer-01-parse.prepare.D83xlu/candidate]
+raw/README.md: OK
+raw/CONTEXT.md: OK
+raw/EXCHANGE.md: OK
+raw/FOR-NABLA.astrobley.md: OK
+raw/FOR-NABLA.oraculum.md: OK
+raw/sources.json: OK
+raw/sella-v.0.1/README.md: OK
+raw/sella-v.0.1/EXCHANGE.md: OK
+raw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK
+raw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK
+raw/sella-v.0.1/evidence.sella-v.0.1.json: OK
+raw/01_SYNC_METHOD.md: OK
+raw/02_PARSER_GATE.md: OK
+raw/04_REGISTRY.md: OK
+raw/05_WAY_OF_THINKING.md: OK
+raw/journal.2026-10-13.md: OK
+raw/journal.2026-10-16.md: OK
+Published verified raw/.
+exit: 0
+$ sh /tmp/composer-01-parse.prepare.D83xlu/candidate/populate-raw.composer-01-parse.sh [BED=/tmp/composer-01-parse.prepare.D83xlu/candidate]
+raw/README.md: OK
+raw/CONTEXT.md: OK
+raw/EXCHANGE.md: OK
+raw/FOR-NABLA.astrobley.md: OK
+raw/FOR-NABLA.oraculum.md: OK
+raw/sources.json: OK
+raw/sella-v.0.1/README.md: OK
+raw/sella-v.0.1/EXCHANGE.md: OK
+raw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK
+raw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK
+raw/sella-v.0.1/evidence.sella-v.0.1.json: OK
+raw/01_SYNC_METHOD.md: OK
+raw/02_PARSER_GATE.md: OK
+raw/04_REGISTRY.md: OK
+raw/05_WAY_OF_THINKING.md: OK
+raw/journal.2026-10-13.md: OK
+raw/journal.2026-10-16.md: OK
+raw/ already matches the verified import; unchanged.
+exit: 0
+PASS: fresh import; exact 19 files; identical rerun preserves bytes and mtimes.
+$ sh /tmp/composer-01-parse.prepare.D83xlu/candidate/populate-raw.composer-01-parse.sh [BED=/tmp/composer-01-parse.prepare.D83xlu/fixture-bad-manifest]
+raw/README.md: FAILED
+raw/CONTEXT.md: OK
+raw/EXCHANGE.md: OK
+raw/FOR-NABLA.astrobley.md: OK
+raw/FOR-NABLA.oraculum.md: OK
+raw/sources.json: OK
+raw/sella-v.0.1/README.md: OK
+raw/sella-v.0.1/EXCHANGE.md: OK
+raw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK
+raw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK
+raw/sella-v.0.1/evidence.sella-v.0.1.json: OK
+raw/01_SYNC_METHOD.md: OK
+raw/02_PARSER_GATE.md: OK
+raw/04_REGISTRY.md: OK
+raw/05_WAY_OF_THINKING.md: OK
+raw/journal.2026-10-13.md: OK
+raw/journal.2026-10-16.md: OK
+sha256sum: WARNING: 1 computed checksum did NOT match
+exit: 1
+PASS: checksum failure leaves destination empty and clears private staging.
+$ sh /tmp/composer-01-parse.prepare.D83xlu/candidate/populate-raw.composer-01-parse.sh [BED=/tmp/composer-01-parse.prepare.D83xlu/fixture-existing-different]
+raw/README.md: OK
+raw/CONTEXT.md: OK
+raw/EXCHANGE.md: OK
+raw/FOR-NABLA.astrobley.md: OK
+raw/FOR-NABLA.oraculum.md: OK
+raw/sources.json: OK
+raw/sella-v.0.1/README.md: OK
+raw/sella-v.0.1/EXCHANGE.md: OK
+raw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK
+raw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK
+raw/sella-v.0.1/evidence.sella-v.0.1.json: OK
+raw/01_SYNC_METHOD.md: OK
+raw/02_PARSER_GATE.md: OK
+raw/04_REGISTRY.md: OK
+raw/05_WAY_OF_THINKING.md: OK
+raw/journal.2026-10-13.md: OK
+raw/journal.2026-10-16.md: OK
+Refusing to replace a different populated raw/.
+exit: 1
+PASS: different populated destination is refused and preserved.
+$ sh /tmp/composer-01-parse.prepare.D83xlu/candidate/populate-raw.composer-01-parse.sh [BED=/tmp/composer-01-parse.prepare.D83xlu/fixture-existing-extra]
+raw/README.md: OK
+raw/CONTEXT.md: OK
+raw/EXCHANGE.md: OK
+raw/FOR-NABLA.astrobley.md: OK
+raw/FOR-NABLA.oraculum.md: OK
+raw/sources.json: OK
+raw/sella-v.0.1/README.md: OK
+raw/sella-v.0.1/EXCHANGE.md: OK
+raw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK
+raw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK
+raw/sella-v.0.1/evidence.sella-v.0.1.json: OK
+raw/01_SYNC_METHOD.md: OK
+raw/02_PARSER_GATE.md: OK
+raw/04_REGISTRY.md: OK
+raw/05_WAY_OF_THINKING.md: OK
+raw/journal.2026-10-13.md: OK
+raw/journal.2026-10-16.md: OK
+Refusing to replace a different populated raw/.
+exit: 1
+PASS: an extra existing raw/ file prevents an unchanged/import success claim.
+$ sh /tmp/composer-01-parse.prepare.D83xlu/candidate/populate-raw.composer-01-parse.sh [BED=/tmp/composer-01-parse.prepare.D83xlu/fixture-symlink]
+raw/README.md: OK
+raw/CONTEXT.md: OK
+raw/EXCHANGE.md: OK
+raw/FOR-NABLA.astrobley.md: OK
+raw/FOR-NABLA.oraculum.md: OK
+raw/sources.json: OK
+raw/sella-v.0.1/README.md: OK
+raw/sella-v.0.1/EXCHANGE.md: OK
+raw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK
+raw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK
+raw/sella-v.0.1/evidence.sella-v.0.1.json: OK
+raw/01_SYNC_METHOD.md: OK
+raw/02_PARSER_GATE.md: OK
+raw/04_REGISTRY.md: OK
+raw/05_WAY_OF_THINKING.md: OK
+raw/journal.2026-10-13.md: OK
+raw/journal.2026-10-16.md: OK
+Refusing a symlink at raw/.
+exit: 1
+PASS: symlink destination refused and source raw/ preserved.
+$ sha256sum -c /tmp/composer-01-parse.prepare.D83xlu/candidate/SHA256SUMS [BED=/tmp/composer-01-parse.prepare.D83xlu/candidate]
+raw/README.md: OK
+raw/CONTEXT.md: OK
+raw/EXCHANGE.md: OK
+raw/FOR-NABLA.astrobley.md: OK
+raw/FOR-NABLA.oraculum.md: OK
+raw/sources.json: OK
+raw/sella-v.0.1/README.md: OK
+raw/sella-v.0.1/EXCHANGE.md: OK
+raw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK
+raw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK
+raw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK
+raw/sella-v.0.1/evidence.sella-v.0.1.json: OK
+raw/01_SYNC_METHOD.md: OK
+raw/02_PARSER_GATE.md: OK
+raw/04_REGISTRY.md: OK
+raw/05_WAY_OF_THINKING.md: OK
+raw/journal.2026-10-13.md: OK
+raw/journal.2026-10-16.md: OK
+exit: 0

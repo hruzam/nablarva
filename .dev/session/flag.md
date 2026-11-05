@@ -100,6 +100,7 @@
   · D5 Phone = thin lens: sessions live on the workstation; attaching advisory; detaching
     never closes a bed. Design drafted by majkee in `stridularium-00-design` + thin wrapper
     `.dev/session/AGENTS.stridularium-design.md` (beside AGENTS.PROJECT-DESIGN.md).
+    · 2026-10-17 pointer: the wrapper now lives at `docs/organs/stridularium.md`, beside `PROJECT-DESIGN.md` at the repo root (ruling 2026-10-10).
   · D6 Phone reach: on the device, app-scoped (the app and its files; operator-scoped vault
     as later extension). Toward hosts, the app controls sessions only through a host-side
     engine that hosts the processes — the app sends commands and prompts and receives
@@ -113,6 +114,165 @@
   and are listed in `## Archived index` below with what superseded them. Pulse rows leave on
   gate closure (runbook GUIDE §On gate closure) — existing law, no new rule. Reconciliation is
   ad hoc, by challenge seats; no fixed ceremony.
+
+- **L16 · Whole-animal architecture coherence** (majkee 2026-10-06; gaveled in
+  conversation after blind triangulation and the Wave↔Symmetry contrast; clauses 14–15
+  confirmed with amendment 2026-10-06; full record: the triad `architecture-process` ·
+  `project-documentation` · `houston` (`.symmetry.2026-10-06`) at
+  `nablarva@2ae8636:.dev/architect-now-uncanonical/`):
+  · 1 Authority. Majkee owns intent, canon and the gavel. Oraculum owns divergence and
+    move formation. cSharp owns session lifecycle, RUNBOOK, STATUS, integration and
+    closure. Houston is the grounding architect: whole-animal coherence, never
+    lifecycle, gavel, implementation or functional verification.
+  · 2 One session universe. Architecture work is ordinary session work. One session has
+    one `gate:`. No parallel architecture-session lifecycle.
+  · 3 Checks. A session gate may require independent implementation, verification,
+    architecture and canon checks. Architecture and canon checks are conditional; the
+    four are not four session gates.
+  · 4 Houston. One identity, three cards: `consult` (in-session grounding check, spawned
+    by head or Majkee), `audit` (whole-animal audit, spawned by Majkee), `sitting` (rare
+    whole-animal design session, spawned by Majkee).
+  · 5 Divergence boundary. Houston does not own divergence. If consult finds the
+    presented frame cannot preserve coherence, Houston names the hole and its
+    constraints; Oraculum or a sitting designs the alternative.
+  · 6 Intrinsic architecture classes. New/reopened locks, irreversible changes,
+    trust-boundary changes, fundamental ownership changes, architect-authored
+    consequential design, and any Houston `breaks` verdict require architecture
+    attention from first occurrence. Known classes land in RUNBOOK constraints; classes
+    discovered mid-session land in STATUS `holds:`. New permanent classes require
+    Majkee GO and flag.
+  · 7 Earned ceremony. Routine mandatory architecture checks, lint, PROJECT.yaml trigger
+    machinery, machine-readable envelopes, audit cadence and similar mechanisms are
+    added only after evidence earns them.
+  · 8 No autonomous loops, no self-confirmation. Every Houston invocation is bounded:
+    read → finding → return. A correction may trigger a new explicit invocation.
+    Consequential locks and architect-authored consequential design receive fresh
+    architecture eyes.
+  · 9 Documentation homes. PROJECT.yaml = machine skeleton and pointers;
+    PROJECT-DESIGN.md = thin animal wrapper and index; docs/ARCHITECTURE.md =
+    whole-animal cross-organ architecture; organ body = local contract, detail, key
+    files; flag.md = locks; pulse.md = live-session router; session = temporary work.
+  · 10 Documentation law. One home per fact. The wrapper stays thin. Organs are born
+    thin and grow only on need. Staleness is declared; age is not a finding. Mechanical
+    claims are tested mechanically; architectural claims cite locks or evidence;
+    unknowns remain unknown.
+  · 11 Epistemic provenance. `said:` = source words; `inferred: <seat>` =
+    interpretation; `locked: L<n>` = gaveled durable decision. Never merged.
+  · 12 Promotion. The head keeps the closure pen and promotes surviving deltas to the
+    correct durable home. Houston may check; Houston does not own promotion. Only
+    Majkee's GO creates a lock.
+  · 13 Houston re-forge. Houston's body is rebuilt in its own small session (majkee
+    2026-10-06: runs in `nablarva-X0-restarted`, shared with the coordination-discipline
+    trial). Acceptance: the body matches this lock and its full record, one real audit
+    has run, its output is classified useful / overreaching / missing, and no authority
+    boundary was crossed.
+  · 14 Houston's pen and keeper (amended by majkee 2026-10-06 — NOT read-only by
+    default). Houston keeps at least the capabilities of the current houston card
+    (read · grep · glob · write · spawn); write authority travels with the card and is
+    bounded to the card's task — `consult` writes only its finding, `audit` maintains
+    wrapper mechanics (pointers, `checked:` stamps, one-liners whose meaning is
+    unchanged) plus its findings, `sitting` drafts in its own session. Houston never
+    silently rewrites organ contracts, locks, project intent or implementation truth;
+    disagreement returns as a finding. Rationale: a write-less Houston would spawn for
+    every small conclusion. Convergence (`.germline/agents/convergence.md`) is an ad hoc,
+    uncanonical seat that may be retired without ceremony; when it retires, the audit
+    card keeps PROJECT-DESIGN.md.
+  · 15 No deflection. No seat stops at "Houston must judge": it does what it can,
+    records `inferred: <seat>`, names the pending check, and returns useful work.
+
+- **L8′ · Composer destination/publication — supersedes L8's location for this work**
+  (majkee, explicit instruction 2026-10-17, composer-01-parse):
+  "no applications in common, all is passed to| via ia-sync if deploy is not possible
+  another mechanism is installer or with agent : `bash /home/hruzam/ia-sync/install-pkgs/run.sh update`".
+  The composer work no longer targets applications-in-common; its publication passes
+  to or through ia-sync, using deployment where suitable and an installer or explicit
+  agent-assisted procedure otherwise. This records Majkee's ruling; it does not
+  authorize deployment now, choose the exact source subdirectory or settle the grammar.
+  The OUTPUT(A) ↔ stridularium interface boundary remains as in L8/L13.
+
+- **L17 · Termbrana composition and its Phase 0 grammar** (majkee GO, 2026-10-20,
+  after Janus v4/home review, Houston layering consult and source-extension clarification):
+  Termbrana is the terminal membrane: the Zellij observer at `toolbox/termbrana/`
+  (Rust/WASM, L11/L12) plus a reusable composition family at
+  `~/ia-sync/zsh/termbrana/` (`composer.zsh` and adjacent Python stdlib). This
+  supplements L11's product scope and L12's placement for the composition family;
+  central Nablarva governance and the no-local-harness rule remain. L11's M2
+  benchmark/stop-rule binds the observer only. Python acceptance is conditional
+  on measured responsiveness. Editor/pipe/tmux push is a human-operated carrier
+  outside L3/L4's regulated room protocol until separately qualified; assistant
+  draft contribution grants no autonomous sending authority.
+  Termbrana composition and ovitmugen are independently useful clients; shared
+  mechanisms belong at a narrow integration boundary. Ovitmugen keeps view/layout
+  and protected process-lifetime ownership. Discovery is not delivery authority;
+  future transmission requires checked target binding and explicit authority.
+  Concrete shared-layer ownership/home/API and carrier qualification remain open;
+  no common framework or transport is authorized by the Phase 0 build.
+  Grammar v4 is approved: exact same-nonce end-line delimiters, opaque byte-preserved
+  body and its EOL, five required header fields, program/function excluded from
+  allowed headers. Future configurable composition sources may include controller,
+  subagent-roster, germline/vendor and SPECIAL definitions with source/kind provenance;
+  preparation precedes the body, native activation remains separate, picker remains
+  open. Release is Phase 0 parser implementation and independent verification only.
+  No commit, push, deployment, delivery or later-phase activation follows from GO.
+
+- **L18 · Organ-body homes** (majkee, gavel deck G4 2026-10-21, own answer "Taking your team
+  RESULT as GAVELED"; adopted by majkee, R9-2a answer "a", 2026-10-23): an organ or toolbox that
+  already has a documentation home keeps it (e.g. toolbox/termbrana/ with DECISIONS.md under
+  L11; docs/organs/stridularium.md). A new body starts as a component folder whose thin README.md
+  is the entry; chapters or resources are added only on need. This is the K5 growth law's folder
+  stage entered early; line → chapter growth continues inside the entry. Existing bodies are not
+  migrated for symmetry. The wrapper and docs/ARCHITECTURE.md point at whichever home applies.
+  OPEN, not decided by this line: the parent directory for new folders, the organ/toolbox
+  taxonomy, any metadata/frontmatter schema, and any reader/MCP adapter.
+
+- **L19 · Decision homes** (majkee, gavel deck G5 2026-10-21, own answer; adopted as the
+  decision-homes half of proposal P2 by majkee's R9-2b answer "b", 2026-10-23): locks
+  stay in flag.md; product-technical rationale lives in component ledgers, each entry citing its
+  authorizing flag line or session brief (the L11 pattern, unchanged). No root ADR series is
+  opened by this line. OPEN, not decided by this line: the docs/decisions/README.md stub's
+  correction versus retirement.
+
+- **L20 · VIST as observation principle** (majkee, X3 arc answer Q3 2026-10-22; adopted by
+  majkee, R9-2c answer "a", 2026-10-23): VIST is a shared observation principle and an intended
+  protocol. Its conceptual boundaries come first; its concrete contract is developed and
+  qualified afterwards. VIST names observations; controller decisions and actuator actions remain
+  separate components with separate authority. Antensor is an implementation candidate. The event
+  envelope is proposed, not adopted. Overlaps with termpanum (observation) and stridulatrix
+  (delivery) remain visible and unassigned. Observations authorize nothing (L17: discovery is not
+  delivery authority).
+
+- **L21 · L17 amendment — one body, floating not chaotic** (majkee, R9-1 note N1 and answer A
+  "most probably `a2`", 2026-10-22; adopted by majkee, R9-2 answer "P5-b", 2026-10-23): in L17,
+  (1) the phrase "shared mechanisms belong at a narrow integration boundary" is superseded by:
+  "nabLarva is one body with an architecture; its bricks can share process, API, CLI and
+  subscription layers and call generic methods, and its UI is a coherent framework — floating,
+  not chaotic"; and
+  (2) the phrase "no common framework or transport is authorized by the Phase 0 build" is
+  superseded by: "the Phase 0 build authorizes no shared layer, framework or transport
+  implementation; designing them is architectural work, and implementing, activating, delivering
+  through or adopting a transport for any of them needs its own separate release".
+  The sentence "Termbrana composition and ovitmugen are independently useful clients" stays, and
+  a particular tool still runs without waking the whole animal. All other L17 provisions remain
+  in force; this line releases no implementation, delivery, activation or transport.
+  Record: docs/ARCHITECTURE.md (X3 sitting, promoted at nablarva@f20dda5); sitting bed nablarva@519a211.
+
+- **L22 · L12 seal covers every operator vault** (majkee, X1 check 6, from Houston audit
+  2026-10-07 finding M3; adopted by majkee, X1 check-6 answer "L22 L23 adopt", 2026-10-23): L12's "`.hlm/` = operator vault:
+  tracked, sealed from agent reading" applies to every operator vault — today `.hlm/` and
+  `.majkee/` — and to any further vault majkee names. Each is tracked and sealed from agent
+  reading. The seal is the pattern, not the single path (docs/repo-unification.2026-09-02.md,
+  ADDENDUM 2026-09-03). All other L12 provisions remain in force.
+
+- **L23 · L12 qualifier — the retired trio's home** (majkee, X1 check 6, from Houston audit
+  2026-10-07 finding C1; adopted by majkee, X1 check-6 answer "L22 L23 adopt", 2026-10-23): L12's "sync.sh / deploy.sh /
+  SYNC_DISCIPLINE.md retired" names the trio that lived in `nablarva.devenv`
+  (docs/repo-unification.2026-09-02.md:52–54). It does not retire `~/ia-sync/deploy.sh` or
+  `~/ia-sync/SYNC_DISCIPLINE.md`, which are a different pair outside this retirement; ia-sync
+  retired only its own `sync.sh` (same doc :30–33). All other L12 provisions remain in force.
+
+- **L24 · L13 cultural-name amendment** (majkee, 2026-10-25): “stridularium” is retired
+  as a cultural name. The phone organ, its body and existing paths remain; replacement name
+  pending. All other L13 provisions remain in force.
 
 ## Named deferral thresholds (folded from abolished plan.md)
 
@@ -166,8 +326,14 @@ seed §open-6 = docket 6.)
 
 ## Archived index (L15 — superseded items stay above; this lists what superseded them)
 
+- L8's applications-in-common location for composer work → superseded by L8′ (majkee, 2026-10-17); interface boundary retained.
+
 - docket 7 → CLOSED by L13 (majkee 2026-10-01): stridularium = phone app · stridulatrix = broker+CLI · termpanum = lab.
 - untabled-4 path `meshup/nabla_drafts/report.seam-probe.2026-08-01.md` → resolves by the prefix rule to `raw.nablarva/nabla-buffer-brideAndBook/report.seam-probe.2026-08-01.md` (cleanup-00-meshup, 2026-10-01).
 - L9 pulse-role clause → superseded in place by L9′ (2026-08-27); all other L9 clauses live.
 - docket 1 → lean recorded by L14 D2 (file plane is the spine); formal gavel pending.
 - O2 → lean recorded by L14 D5/D6 + stridularium bridge (hardened Tailscale + Termux, then mosh); transport gavel pending.
+- L17's phrase "shared mechanisms belong at a narrow integration boundary" and its phrase "no common framework or transport is authorized by the Phase 0 build" → superseded by L21 (majkee, 2026-10-23); all other L17 provisions live.
+- L12's seal wording "`.hlm/` = operator vault" → read as covering every operator vault by L22 (majkee, 2026-10-23); text stays in place.
+- L12's bare "sync.sh / deploy.sh / SYNC_DISCIPLINE.md retired" → qualified to the nablarva.devenv trio by L23 (majkee, 2026-10-23).
+- L13's cultural name “stridularium” for the phone app → retired by L24 (majkee, 2026-10-25); the phone organ, body, existing paths and all other L13 provisions remain.

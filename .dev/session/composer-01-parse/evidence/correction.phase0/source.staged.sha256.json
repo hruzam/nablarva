@@ -1,0 +1,11 @@
+{
+  "composer.py": "a678c49bacc775d406de7021a869af072978ca888506112e6783a2b65660f28b",
+  "base.zsh": "106afa6d2356047afdb525fdcdfbd6a769ac246540fe1c7f5b0f66156bd4cbf9",
+  "keyboard.zsh": "96ddab94bab9205e57cae68796a45bb67fd253d5696dbbfc67e8aa654e95b4d7",
+  "composer.zsh": "dd7e2402c7f16e6ef4b5bdca7de67f1643424e7f3405c090eafc5782c7fd6f8f",
+  "GRAMMAR.md": "af49004823b7e5b5b92f710196c0aa290c984feb81b8353071d6be0bfabdbc73",
+  "README.md": "d762bd7fd95c038637961afd4b0da3d2ee9beb02f3a5a817b36043c0242bebab",
+  "tests/test_composer.py": "3668c1fad314eb567faf82a285cec16ab98e8a7994c26edc44d0e3b61f1cdf5a",
+  "tests/acceptance.py": "9d84140a802556f6b3259822d91355df1e64bada59c2888c75c903f68967b410",
+  "tests/benchmark.py": "244c17acb0ab8081ae98cb48f5622518b8efbd5bf91caab671db3ee154f35b1b"
+}

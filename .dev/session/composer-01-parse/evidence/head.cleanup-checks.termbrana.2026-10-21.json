@@ -1,0 +1,45 @@
+{
+  "checked_original_paths": 860,
+  "changed": [
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+      "before": "f2346f3d013df3b439f2b38a5064c86c47a5c2d09f8d8a3468857e2c5b052df6",
+      "after": "6ee10aa1c40a853cc6c1e6ff5dfa191999f38314058064b5543ac1392fe2c78f"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+      "before": "7c77dac2a76a3fcb0ecbafa8026e1a739ff8c0c3843ed1bdb8979498de5830bb",
+      "after": "a30b152eb848ce036a0a83da200108778cb703b986f7bbf70632d2a55341b482"
+    }
+  ],
+  "added": [
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/PROJECT-DESIGN.before.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/README.termbrana.before.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/applied.diff",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/architecture-owner.proposal.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/before.json",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/receipt.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/report.to-myshell.cleanup.2026-10-21.md"
+  ],
+  "git_unchanged": true,
+  "git": {
+    "/home/hruzam/unikuklatrix/nablarva": {
+      "head": "fff20b8de570e5d66381ab540d9474ddfff07750",
+      "index_sha256": "4e36fcd9270f7e2ea16baf8e23532cf3e43991f2e5c8c5620d50215784abb85a"
+    },
+    "/home/hruzam/ia-sync": {
+      "head": "55e615766143062fe018d29f3e914f9c785fffb5",
+      "index_sha256": "47444a9ff02e1b00f6dfa40b928457424367162d4e74f3b305d796836ffd5ddb"
+    }
+  },
+  "author": "Cartan",
+  "result": "PASS for bounded documentation cleanup",
+  "exact_diff_matches_before_after": true,
+  "wrapper_matches_reviewed_houston_diff": true,
+  "new_local_links_checked": 6,
+  "adr_anchor_checked": true,
+  "patch_applies_to_exact_before_copies": true,
+  "reviewed_architecture_proposal": "Proposed only; accepted Phase0 validates, future sourcing planned; no shared owner/home/API selected.",
+  "product_tests_rerun": false,
+  "note": "One initial command exceeded the process argument limit without running; verification was repeated via bounded reads and completed. Only the two authorized originals differed among 860 prior identities."
+}

@@ -1,0 +1,111 @@
+{
+  "scope": "X4 per-file closure-transfer inventory; supplements unchanged X0/X2 manifests",
+  "entries": [
+    {
+      "file": "audit.x0-evidence.2026-10-23.md",
+      "sha256": "2a5d2063c7e44356dc2aa87e6e6acbd73d2021b1b84bae8cc0dd26f4bfeb7014",
+      "role": "independent finding",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "audit.x0-transfer.2026-10-23.md",
+      "sha256": "21bc63093e6c2ad091823b6db829eec2bcb41f62475cd71a78848cb6754e4ce7",
+      "role": "independent finding",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "audit.x2-evidence.2026-10-23.md",
+      "sha256": "412b608a20f188bf9b5541f5f9341d86b8fc3571535e86220a0af6040a3874a9",
+      "role": "independent finding",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "audit.x2-transfer.2026-10-23.md",
+      "sha256": "2d2cdc9e0e48473c292aea6a1b88310880a1400a5936d3943cd3f51d52824fc6",
+      "role": "independent finding",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "brief.x4-runbook-input.cartan.2026-10-23.md",
+      "sha256": "6c68223d8db0116ba5f9ba8cb989632fa4f9ed6377c7f24ea39d8857d1bc71ef",
+      "role": "head closure/transfer evidence",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "catalogue.hello-intake.cartan.2026-10-23.md",
+      "sha256": "c452f0ffeb2e7ca73de6f961d4333fbff9a310cb848c52c7c4ed2c422492e2f8",
+      "role": "inherited intake; unchanged",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "closure.x0-x2.cartan.2026-10-23.md",
+      "sha256": "419d4bf77154f25f21af451ef1c93638ca1af98b57ffd592953cc53a2186bcd7",
+      "role": "head closure/transfer evidence",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "closure.x0-x2.inventory.2026-10-23.json",
+      "sha256": "13b642c78f5c386f209b03060424c63e311ae12c437d15a6956a60db554c9311",
+      "role": "head closure/transfer evidence",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "consult.closure-masterfiles.2026-10-23.md",
+      "sha256": "c43e5c788371d1a7f6618fda82f639d4dc696dfaf12fc0bd4cfa4730aab4af4f",
+      "role": "independent finding",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "consult.hello-grounding.2026-10-23.md",
+      "sha256": "f4655cb6b3fc0b62bd5a96cd8ee64bc5a20bf60b8ee32b421a142e0370732dd0",
+      "role": "inherited intake; unchanged",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "handoff.x0-source-contract.cartan.2026-10-23.md",
+      "sha256": "680156bda2d89f7631302cfc3a61b32c4f278daf52dacadd4df8cd63e88c8c33",
+      "role": "head closure/transfer evidence",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "handoff.x2-termpanum.cartan.2026-10-23.md",
+      "sha256": "491d63a106277fd2f47cdc63a05272f40a27fb28e150e478da70c6df65abdf0c",
+      "role": "head closure/transfer evidence",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "hello-01-contract.md",
+      "sha256": "09e4d283164d260c216f20f85a64bdd3943a6df1efca5faa1603d9851767d7a6",
+      "role": "inherited intake; unchanged",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "hello-02-addendum-r1.md",
+      "sha256": "cb37212dca50794ffc9e169e50b9c2d4c960cb0665113b59eed5ada633669435",
+      "role": "inherited intake; unchanged",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "review.closure-transfer.2026-10-23.md",
+      "sha256": "a94d03c8d57d0e0da325826352b6f83290ea41a75a4f79ae902c9bca39286480",
+      "role": "independent finding",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "verification.closure-x0-x2.2026-10-23.json",
+      "sha256": "0c34f7e026385cf1bc8b8a5123ddd67e9c1a25e8b129d7de0c5986f692cc632c",
+      "role": "head closure/transfer evidence",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    },
+    {
+      "file": "vist-01-principle-and-applications.md",
+      "sha256": "98c2c2fd4bea9a13f6051ee08a937933925681fde0721c636e732e47323df0c8",
+      "role": "inherited intake; unchanged",
+      "keeper": "retain in X4 raw; no prune or execution authority"
+    }
+  ],
+  "self": {
+    "file": "manifest.closure-transfer.2026-10-23.json",
+    "role": "preservation control; retain; self digest intentionally omitted"
+  }
+}

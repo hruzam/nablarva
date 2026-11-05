@@ -1,0 +1,1 @@
+{"cwd": "/home/hruzam/unikuklatrix/nablarva", "socket": "/tmp/nablarva-hello-95deeef25e4e.sock", "source_sha256": "9901cd1ffdb0dfbdbbbed54aed73263821af7f8139b7a345e250e79248147da3", "started": "2026-10-25T20:40:08.212452+00:00", "supervisor_pid": 616251, "versions": {"codex": "codex-cli 0.164.0", "tmux": "tmux 3.7c"}}

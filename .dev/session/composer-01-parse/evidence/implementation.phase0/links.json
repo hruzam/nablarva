@@ -1,0 +1,58 @@
+[
+  {
+    "owner": "/home/hruzam/ia-sync/zsh/termbrana/README.md",
+    "target": "GRAMMAR.md"
+  },
+  {
+    "owner": "/home/hruzam/ia-sync/zsh/termbrana/README.md",
+    "target": "../AGENTS.md#control-panel-convention-canonical--operator-gaveled-2026-07-07--tightened-2026-07-11"
+  },
+  {
+    "owner": "/home/hruzam/ia-sync/zsh/termbrana/README.md",
+    "target": "../guides/guide-for-builder.md#architecture-rules-gaveled-2026-07-11"
+  },
+  {
+    "owner": "/home/hruzam/ia-sync/zsh/termbrana/README.md",
+    "target": "../../../unikuklatrix/nablarva/.dev/session/flag.md"
+  },
+  {
+    "owner": "/home/hruzam/ia-sync/zsh/termbrana/README.md",
+    "target": "../../../unikuklatrix/nablarva/toolbox/termbrana/README.md#composition-and-explicit-input-direction"
+  },
+  {
+    "owner": "/home/hruzam/ia-sync/zsh/termbrana/GRAMMAR.md",
+    "target": "../../../unikuklatrix/nablarva/.dev/session/flag.md"
+  },
+  {
+    "owner": "toolbox/termbrana/README.md",
+    "target": "research/termbrana.project-definition.md#24-read-only-first"
+  },
+  {
+    "owner": "toolbox/termbrana/README.md",
+    "target": "../../.dev/session/flag.md"
+  },
+  {
+    "owner": "toolbox/termbrana/README.md",
+    "target": "../../raw.nablarva/oraculum-basic-triangulation/triad.comparison.2026-07-31.md"
+  },
+  {
+    "owner": "toolbox/termbrana/README.md",
+    "target": "../../../../ia-sync/zsh/termbrana/README.md"
+  },
+  {
+    "owner": "toolbox/termbrana/README.md",
+    "target": "../../.dev/session/flag.md"
+  },
+  {
+    "owner": "toolbox/termbrana/README.md",
+    "target": "../../.dev/session/pulse.md"
+  },
+  {
+    "owner": "PROJECT-DESIGN.md",
+    "target": ".dev/session/flag.md"
+  },
+  {
+    "owner": "PROJECT-DESIGN.md",
+    "target": "toolbox/termbrana/README.md#composition-and-explicit-input-direction"
+  }
+]

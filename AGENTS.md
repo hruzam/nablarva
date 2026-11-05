@@ -29,15 +29,15 @@
 
 Session surfaces (flag L9 + L9′): `flag.md` owns locks; `pulse.md` routes to each
 session's sole doing-state, `STATUS.md`. The working project wrapper is
-`.dev/session/AGENTS.PROJECT-DESIGN.md`, linked from `PROJECT.yaml`; it carries
+`PROJECT-DESIGN.md` (repo root), linked from `PROJECT.yaml`; it carries
 design intent and open questions. `.dev/session/dock.md` is the
 UNCANONICAL scratch — side quests land there without a blessing; never cite it as
 truth. Task-scoped work gets `.dev/session/<topic>/` dirs that die with the task. No
-standing plan.md (abolished — survey receipt, 2026-08-02). `.dev/session/GLOSS.<part>.md` = the operator's learning file for one part (uncanonical like dock.md; one per part; every RUNBOOK of the part points to it). Not every work needs one — the driver ASKS "record GLOSS.<slug>.md?" when a sitting looks like it needs explaining, never assumes. Guide: reposoma `raw.guides/gloss/GUIDE.md`.
+standing plan.md (abolished — survey receipt, 2026-08-02). `.dev/session/GLOSS.<part>.md` = the operator's learning file for one part (uncanonical like dock.md; one per part; every RUNBOOK of the part points to it). Not every work needs one — the driver ASKS "record GLOSS.<slug>.md?" when a sitting looks like it needs explaining, never assumes. Guide: reposoma `raw.guides/gloss/GUIDE.md`. `.dev/observations/<slug>.<seat>.<date>.md` = the session-PROCESS record (what a session taught about running sessions — faults, carriage, support logs); outside every bed, append-only, never pruned; beds promote theirs there before prune (runbook GUIDE §On gate closure, gaveled 2026-10-07; first instance X0).
 
 ## Route by seat
 
-**Convergence — app-scheme maintainer (any runtime, agent or subagent):** at session entry, unless already settled, ask @majkee "Am I the master app-scheme maintainer?"; if yes, read `.germline/agents/convergence.md` and maintain its named target; `flag.md` retains authority over locks.
+**Houston — project-design keeper (audit card):** Majkee invokes the audit. Its project method lives at `.germline/agents/houston/nablarva.md`, with the vendor bindings `~/.germline/agents/houston/binding.claude.md` and `binding.codex.md` and the shared identity at `~/.germline/agents/houston/identity.md`; the audit card is `~/.germline/agents/houston/cards/audit.md`. The audit returns wrapper-mechanics changes for Majkee to commit; `flag.md` retains authority over locks.
 
 Four base seats, global roster — no domain seat pre-granted (earned, not assumed):
 - **architect** (@Houston-family) — plan + gates; owns `.dev/session/pulse.md`
@@ -71,4 +71,7 @@ only through the reviewed-merge boundary.
 - **Boundary:** Cluster A mechanism (session clipper / processor / composer) stays in
   `applications-in-common`. The clipper `OUTPUT (A)` ↔ stridularium feed interface gets
   one boundary note when both threads run (L13).
+  Composer destination exception, majkee 2026-10-17: flag L8′ supersedes that location
+  for composer work; publication passes to or through `~/ia-sync/`, with deploy or
+  installer/agent-assisted procedure as suitable. Read L8′ before applying the older location.
 - Canon is gaveled by majkee. Agents draft; he locks.

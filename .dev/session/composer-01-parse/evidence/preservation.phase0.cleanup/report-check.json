@@ -1,0 +1,121 @@
+{
+  "claim_limit": "Substantive artifact facts and stated owner boundaries checked; future38 verdict remains pending; report is not acceptance authority.",
+  "claims_checked": [
+    "applied wrapper and five bounded product README corrections",
+    "observer re-entry points to frozen ADR/pre-M2 condition; no runtime requalification",
+    "accepted source remains parser-only and finite office evidence",
+    "source/germline/vendor/SPECIAL including pipes remains planned coverage",
+    "architecture owner proposal unapplied; X3/internal-router X4 mismatch unchanged",
+    "exact X1 raw handoff exists; no new live launcher",
+    "U3/operator, live-binding, publication/closure and X2 reuse statements remain scoped requirements, not acceptance"
+  ],
+  "counts": {
+    "CLI_cases_twice": 38,
+    "byte_comparisons": 62,
+    "independent_extra_probes": 33,
+    "unit_methods_from_finding": 27
+  },
+  "four_to_one_ratio": 1.839459809804596,
+  "links": [
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/37.cartan.point.md",
+      "status": "existing target",
+      "target": "../_bus/37.cartan.point.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/37.cartan.verdict.md",
+      "status": "existing target",
+      "target": "../_bus/37.cartan.verdict.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/38.cartan.verdict.md",
+      "status": "future head verdict; not proof of prior PASS",
+      "target": "../_bus/38.cartan.verdict.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+      "status": "existing target",
+      "target": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md",
+      "status": "existing target",
+      "target": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md"
+    },
+    {
+      "resolved": "/home/hruzam/ia-sync/zsh/termbrana/README.md",
+      "status": "existing target",
+      "target": "/home/hruzam/ia-sync/zsh/termbrana/README.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+      "status": "existing target",
+      "target": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md",
+      "status": "existing target",
+      "target": "phase0.exit.cartan.2026-10-21.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/37.builder.return.md",
+      "status": "existing target",
+      "target": "../_bus/37.builder.return.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0/README.md",
+      "status": "existing target",
+      "target": "publication.phase0/README.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/preservation.phase0.cleanup/README.md",
+      "status": "current package completion reference; fulfilled after capture",
+      "target": "preservation.phase0.cleanup/README.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X1-composer-sourcing/raw/handoff.cartan.runbook-preparation.2026-10-21.md",
+      "status": "existing target",
+      "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X1-composer-sourcing/raw/handoff.cartan.runbook-preparation.2026-10-21.md"
+    },
+    {
+      "resolved": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/STATUS.md",
+      "status": "existing target",
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/STATUS.md"
+    },
+    {
+      "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md",
+      "status": "existing target",
+      "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md"
+    }
+  ],
+  "pending_completion_references": [
+    "future head verdict; not proof of prior PASS",
+    "current package completion reference; fulfilled after capture"
+  ],
+  "personal_journal_read": false,
+  "product_tests_rerun": false,
+  "report_edited": false,
+  "report_path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/report.to-myshell.cleanup.2026-10-21.md",
+  "report_sha256": "9785c0ccdfedd3d98d2533366e460351c91dda370c22947471dc93a622265e4f",
+  "saved_performance_recomputed": [
+    {
+      "budget_ms": 100,
+      "label": "four_corpus_bodies",
+      "median_ms": 80.3134505,
+      "p95_ms": 92.968602
+    },
+    {
+      "budget_ms": 500,
+      "label": "1_MiB",
+      "median_ms": 54.562411999999995,
+      "p95_ms": 89.864265
+    },
+    {
+      "budget_ms": 2000,
+      "label": "4_MiB",
+      "median_ms": 100.365364,
+      "p95_ms": 106.243155
+    }
+  ],
+  "status": "PASS"
+}

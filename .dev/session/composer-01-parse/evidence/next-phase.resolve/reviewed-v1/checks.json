@@ -1,0 +1,457 @@
+{
+  "approved_v4_match": true,
+  "at_utc": "2026-10-20T23:06:59.970054+00:00",
+  "benchmarks_run": false,
+  "candidate_yaml": {
+    "gate": "Fresh independent verification accepts the approved two-reader preparation contract, including identity holds, inert output, source preservation and fixed resolver performance evidence.",
+    "parser": "PyYAML safe_load (document tooling only)",
+    "participants": 6,
+    "state_field_absent": true,
+    "status_owner": "cartan",
+    "valid": true,
+    "version": "6.0.3"
+  },
+  "format_checks": "final LF; no trailing whitespace; actual links/anchors valid",
+  "future_nonexistent_locations": [
+    "/home/hruzam/ia-sync/zsh/termbrana/resolve.py",
+    "/home/hruzam/ia-sync/zsh/termbrana/tests/acceptance_resolve.py",
+    "/home/hruzam/ia-sync/zsh/termbrana/tests/test_resolve.py",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-02-resolve",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-02-resolve/RUNBOOK.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-02-resolve/STATUS.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-02-resolve/_bus/01.builder.return.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-02-resolve/_bus/01.cartan.point.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-02-resolve/_bus/02.cartan.point.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-02-resolve/_bus/03.cartan.point.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-02-resolve/_bus/04.cartan.point.md",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-02-resolve/evidence/verification.resolve/verifier.finding.md"
+  ],
+  "g06_authority": "audit/proposal; no gavel inferred",
+  "g06_result_units_present": [
+    "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/units/RESULT.U1.md",
+    "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/units/RESULT.U2.md"
+  ],
+  "heads": {
+    "ia-sync": "55e615766143062fe018d29f3e914f9c785fffb5",
+    "nablarva": "fff20b8de570e5d66381ab540d9474ddfff07750"
+  },
+  "helpers_spawned": false,
+  "immutable_package_match": true,
+  "inputs": [
+    {
+      "authority_tier": "accepted-planning-not-installed-law",
+      "path": "/home/hruzam/ia-sync/.dev/session/germline-02-guide-model-law/raw/GAVELS.program-guide-law.md",
+      "sha256": "e2c9716f3694e424e702a4d376f06ffa9105864e6dac89157084ea233b0f9b74",
+      "size": 13437
+    },
+    {
+      "authority_tier": "historical-checked-C1-return",
+      "path": "/home/hruzam/ia-sync/.dev/session/germline-05-sella-germline-audit/_bus/RETURN.01.c1-composition.cartan.md",
+      "sha256": "a2b989540f241adccc2f13d12d215d585620887aa04bec823bf2af1e78b1009a",
+      "size": 9307
+    },
+    {
+      "authority_tier": "G06-audit-proposal-not-gavel",
+      "path": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/STATUS.md",
+      "sha256": "8e10e7bd609027e324f15c7ccddb969ea6ac8b5e80a116a4f50bc08ff2775677",
+      "size": 3270
+    },
+    {
+      "authority_tier": "G06-audit-proposal-not-gavel",
+      "path": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/decisions/DEC.01.germline-identity-and-load-contract.md",
+      "sha256": "4d0da257bcce1097a88ef313f854284d5389bb3b14ef56acd88f6990f6568931",
+      "size": 5237
+    },
+    {
+      "authority_tier": "G06-audit-proposal-not-gavel",
+      "path": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/units/PLAN.md",
+      "sha256": "d8d8a79aa3248ab684b79c6e113191730d6bd2ce4efb9cbb14a6969255004bae",
+      "size": 1815
+    },
+    {
+      "authority_tier": "G06-audit-proposal-not-gavel",
+      "path": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/units/RESULT.U1.md",
+      "sha256": "c36f2aeb75aaaa99ed2b57fd5d04e744e60619b7218c4044c9704f877e7f97ba",
+      "size": 5635
+    },
+    {
+      "authority_tier": "G06-audit-proposal-not-gavel",
+      "path": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/units/RESULT.U2.md",
+      "sha256": "7c66e380cd73a891c300c179f459f22b7372187ceaf676dcd29028162386b29e",
+      "size": 5427
+    },
+    {
+      "authority_tier": "actual-vendor-native-shape-not-new-shared-contract",
+      "path": "/home/hruzam/ia-sync/codex/agents/astrobley.toml",
+      "sha256": "c49f7d32465d324ac478668b1ba63a88df2f383fafb9b639cd88c37ce4474467",
+      "size": 2690
+    },
+    {
+      "authority_tier": "current-source-assertions-with-G06-open-questions",
+      "path": "/home/hruzam/ia-sync/germline/README.md",
+      "sha256": "0b2aabb66223a34f10697d1dad7ea9a6b01d8be5a537580e66db46d2cecce4fe",
+      "size": 1718
+    },
+    {
+      "authority_tier": "current-source-assertions-with-G06-open-questions",
+      "path": "/home/hruzam/ia-sync/germline/agents/houston/cards/consult.md",
+      "sha256": "9b0aa73106497ccda4b92605bea4972e6df2ebed75765d3b9bdf14ac82dd117c",
+      "size": 2983
+    },
+    {
+      "authority_tier": "current-source-assertions-with-G06-open-questions",
+      "path": "/home/hruzam/ia-sync/germline/agents/houston/identity.md",
+      "sha256": "2aa040ee33bc8edb0db3264767d1e6ac5731ab1089ebf81f214e300b8a65bc8d",
+      "size": 10179
+    },
+    {
+      "authority_tier": "personal-uncanonical-trial-format",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/CONTROLLER.md",
+      "sha256": "a8a5fa7ce8eccda23653e943df5293c567e11cb90535739866a8c8292dc2ffcf",
+      "size": 3953
+    },
+    {
+      "authority_tier": "personal-uncanonical-trial-format",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/fn/list-pending.md",
+      "sha256": "9e173128ccc52d8a9ddd25d1964932149c4259211bedf4ddb8c4b9aadfb7fcbb",
+      "size": 1510
+    },
+    {
+      "authority_tier": "personal-uncanonical-trial-format",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/project-saddle/CONTROLLER.md",
+      "sha256": "b29f0e213c5190172a1fd99d724cb00b54bce2742e021acdad2e3b17c8876aac",
+      "size": 3399
+    },
+    {
+      "authority_tier": "shared-session-law-and-template",
+      "path": "/home/hruzam/reposoma/raw.guides/runbook/GUIDE.md",
+      "sha256": "4339f7f2b3d4c4fb741c342eed5112d0baeef9cf015d1f5f74a18394677a0080",
+      "size": 13047
+    },
+    {
+      "authority_tier": "shared-session-law-and-template",
+      "path": "/home/hruzam/reposoma/raw.guides/runbook/ast/RUNBOOK.template.txt",
+      "sha256": "8f0dc9615438f7dd5dc132445f786aa3e7a839ec8183a1e9bbc7a3957989f4e2",
+      "size": 1241
+    },
+    {
+      "authority_tier": "shared-session-law-and-template",
+      "path": "/home/hruzam/reposoma/raw.guides/runbook/res/csharp-head-protocol.md",
+      "sha256": "0722c9e205a764ec48221d56b1e80bb19da10016ec39d93137ec4950be12621e",
+      "size": 5258
+    },
+    {
+      "authority_tier": "shared-session-law-and-template",
+      "path": "/home/hruzam/reposoma/raw.guides/status/GUIDE.md",
+      "sha256": "74512734c5ee6a2b0c90d7f1a560d4d2ec3b2fc8d6d0ca23ae80ccc23fe4d445",
+      "size": 9064
+    },
+    {
+      "authority_tier": "current-session-launcher-and-position",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/RUNBOOK.md",
+      "sha256": "8ad0f145854541e8dab57ed3d14ffd044ba99fbb9b9fa7fc6a75ae465fd6192c",
+      "size": 23390
+    },
+    {
+      "authority_tier": "current-session-launcher-and-position",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md",
+      "sha256": "df693be789238a8d512b9eded30103e62b738051fc48ceb400b8f89505d97d72",
+      "size": 4255
+    },
+    {
+      "authority_tier": "current-session-launcher-and-position",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/30.cartan.point.md",
+      "sha256": "d927c9c2998b4dcccda566532823187e5471d13c3a17382388f32445f7df07a0",
+      "size": 5300
+    },
+    {
+      "authority_tier": "historical-attributed-phase-proposal",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/brief.nabla.composer-build.2026-10-17.md",
+      "sha256": "7e018c11da5219ac1e382925028526b58ea356d72a38e38be3c45b21e4a3267c",
+      "size": 7262
+    },
+    {
+      "authority_tier": "uninstalled-method-candidate",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/brief.germline-contract-testing.md",
+      "sha256": "c293d706a344e22ee0667111887bc889138fc371a8c43aef1aaa8cdcedf35bed",
+      "size": 8366
+    },
+    {
+      "authority_tier": "checked-houston-consult",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/consult.houston.layering.2026-10-20.md",
+      "sha256": "349967a301dde4ff9e6a6422176b6e246342c646bcfbc7f28b09bc78768f33fa",
+      "size": 4836
+    },
+    {
+      "authority_tier": "approved-wire-contract",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/grammar.builder.v4.md",
+      "sha256": "a977682c65bcd6b3c66cc67cb7c2b40a926cf4d96a7f58eb50f1a1fb0839b2ec",
+      "size": 36709
+    },
+    {
+      "authority_tier": "checked-predecessor-finding",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md",
+      "sha256": "e741f7ae01b9ed8cc6f457075c54d57d490fcf3682b8f7820442f0f954ef6378",
+      "size": 3768
+    },
+    {
+      "authority_tier": "immutable-checked-publication-snapshot",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0/PACKAGE.SHA256",
+      "sha256": "0dca1f582ba611f195cda83fd6b480bbd46f30016c9cdb169cc664305f26b06d",
+      "size": 1762
+    },
+    {
+      "authority_tier": "immutable-checked-publication-snapshot",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0/payload.tar.gz",
+      "sha256": "649e789bc2d3b3ea40658339a393a4f2d289c56b1ec5fdace14ca997cf10e734",
+      "size": 862872
+    },
+    {
+      "authority_tier": "project-locks",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md",
+      "sha256": "a9e73a4659ba8d7b4572344e9c0f405777d7ba5df2eb38f394749c2f4302dadc",
+      "size": 19984
+    },
+    {
+      "authority_tier": "project-locks",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/pulse.md",
+      "sha256": "7859cc22a3b940be5949388cfd9802ec7cc4763487191c99bc911a9880e7392d",
+      "size": 2791
+    },
+    {
+      "authority_tier": "owned-attributed-IDE-proposal",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X3-composer-02-parse-sublime-ide/raw/termbrana-X3-sublime-ide.md",
+      "sha256": "088d6dd3d3a80360b5fd1323242a2b1c21823151b496ac6cf2c30b40f1a8db35",
+      "size": 15275
+    },
+    {
+      "authority_tier": "project-locks",
+      "path": "/home/hruzam/unikuklatrix/nablarva/AGENTS.md",
+      "sha256": "8f26baf8aff897785f8ba3fafae4475dfa13280b51da87c4deca8fea91d2c002",
+      "size": 5672
+    },
+    {
+      "authority_tier": "working-product-direction",
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+      "sha256": "f2346f3d013df3b439f2b38a5064c86c47a5c2d09f8d8a3468857e2c5b052df6",
+      "size": 18862
+    },
+    {
+      "authority_tier": "project-locks",
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT.yaml",
+      "sha256": "aac1198fe6eabd9f975928866defa1272d7d91a005f8ca6d7e303172d7d2ec96",
+      "size": 1626
+    },
+    {
+      "authority_tier": "working-product-direction",
+      "path": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+      "sha256": "7c77dac2a76a3fcb0ecbafa8026e1a739ff8c0c3843ed1bdb8979498de5830bb",
+      "size": 13442
+    }
+  ],
+  "inputs_unchanged_during_document_checks": true,
+  "links": [
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "exists": true,
+      "target": "decisions-and-intersections.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md"
+    },
+    {
+      "anchor_valid": true,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md#composition-and-explicit-input-direction"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/reposoma/raw.guides/runbook/GUIDE.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/reposoma/raw.guides/status/GUIDE.md"
+    },
+    {
+      "anchor_valid": true,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/brief.nabla.composer-build.2026-10-17.md#3-phase-frame"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md",
+      "exists": true,
+      "target": "decisions-and-intersections.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "RUNBOOK.composer-02-resolve.candidate.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "../../../flag.md"
+    },
+    {
+      "anchor_valid": true,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md#composition-and-explicit-input-direction"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/STATUS.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/decisions/DEC.01.germline-identity-and-load-contract.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/units/RESULT.U1.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/units/RESULT.U2.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/CONTROLLER.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/fn/list-pending.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/germline/README.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/germline/agents/houston/identity.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/codex/agents/astrobley.toml"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/ia-sync/.dev/session/germline-02-guide-model-law/raw/GAVELS.program-guide-law.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X3-composer-02-parse-sublime-ide/raw/termbrana-X3-sublime-ide.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "../consult.houston.layering.2026-10-20.md"
+    },
+    {
+      "anchor_valid": false,
+      "document": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md",
+      "exists": true,
+      "target": "../publication.phase0/README.md"
+    }
+  ],
+  "name_sweep": {
+    "command": [
+      "rg",
+      "-n",
+      "--hidden",
+      "--glob",
+      "!**/.git/**",
+      "--glob",
+      "!**/publication.phase0/**",
+      "--glob",
+      "!**/next-phase.resolve/**",
+      "--glob",
+      "!**/30.cartan.point.md",
+      "--glob",
+      "!**/30.builder.return.md",
+      "composer-02-resolve",
+      "/home/hruzam/unikuklatrix/nablarva",
+      "/home/hruzam/ia-sync"
+    ],
+    "exit": 1,
+    "matches": [],
+    "note": "POINT30 and authored candidate/RETURN excluded; no prior name use found elsewhere"
+  },
+  "output_document_sha256": {
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/30.builder.return.md": "890a67e55e788e51cccbaa9918de88d54516e6a083f19e772b621f57a34f1f92",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md": "26b298b563ac588a30a7993d675b9d336f54643d670bb9670bb9800f3b805437",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/decisions-and-intersections.md": "aa15ba4d4bf0ff08aa7935e4050d9b232941a0127297e0d6c3bf2223cfa05cb9"
+  },
+  "package_checksums": {
+    "command": [
+      "sha256sum",
+      "-c",
+      "PACKAGE.SHA256"
+    ],
+    "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0",
+    "exit": 0,
+    "ok_lines": 20
+  },
+  "process_observations": [],
+  "product_tests_run": false,
+  "proposed_homes": [
+    {
+      "exists": false,
+      "future": true,
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-02-resolve"
+    },
+    {
+      "exists": false,
+      "future": true,
+      "path": "/home/hruzam/ia-sync/.dev/session/composer-02-resolve"
+    }
+  ],
+  "scope": "documentation-only candidate; no functional acceptance",
+  "six_field_return": true,
+  "source_or_state_written": false,
+  "source_receipt_files": 10,
+  "source_receipt_match": true,
+  "status": "PASS"
+}

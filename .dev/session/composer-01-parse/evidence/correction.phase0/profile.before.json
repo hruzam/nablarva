@@ -1,0 +1,95 @@
+{
+  "command": [
+    "zsh",
+    "-f",
+    "-c",
+    "source \"$1/base.zsh\"; _tbc_check \"$2\"",
+    "tbc-import-profile",
+    "/home/hruzam/ia-sync/zsh/termbrana",
+    "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/implementation.phase0/fixtures/corpus.mixed.md"
+  ],
+  "environment": {
+    "PYTHONPROFILEIMPORTTIME": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exit": 0,
+  "wall_ms": 172.2512,
+  "cpu_ms": 159.14000000000001,
+  "top_cumulative": [
+    {
+      "self_us": 6013,
+      "cumulative_us": 65568,
+      "module": "dataclasses"
+    },
+    {
+      "self_us": 9321,
+      "cumulative_us": 34741,
+      "module": "inspect"
+    },
+    {
+      "self_us": 1826,
+      "cumulative_us": 20124,
+      "module": "re"
+    },
+    {
+      "self_us": 2476,
+      "cumulative_us": 15732,
+      "module": "site"
+    },
+    {
+      "self_us": 3344,
+      "cumulative_us": 12566,
+      "module": "pathlib"
+    },
+    {
+      "self_us": 3167,
+      "cumulative_us": 10423,
+      "module": "annotationlib"
+    },
+    {
+      "self_us": 2093,
+      "cumulative_us": 9338,
+      "module": "os"
+    },
+    {
+      "self_us": 2732,
+      "cumulative_us": 8168,
+      "module": "functools"
+    },
+    {
+      "self_us": 4034,
+      "cumulative_us": 8118,
+      "module": "dis"
+    },
+    {
+      "self_us": 2002,
+      "cumulative_us": 7256,
+      "module": "ast"
+    },
+    {
+      "self_us": 4666,
+      "cumulative_us": 5632,
+      "module": "enum"
+    },
+    {
+      "self_us": 814,
+      "cumulative_us": 5568,
+      "module": "json"
+    },
+    {
+      "self_us": 1629,
+      "cumulative_us": 5267,
+      "module": "encodings"
+    },
+    {
+      "self_us": 5254,
+      "cumulative_us": 5254,
+      "module": "_ast"
+    },
+    {
+      "self_us": 2622,
+      "cumulative_us": 5250,
+      "module": "collections"
+    }
+  ]
+}

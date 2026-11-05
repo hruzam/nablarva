@@ -1,0 +1,14 @@
+{
+  "product_sha256": "f082365a252efe2af0d9abd1e70c5a1549a9c299e6c174367776f4cb2504462a",
+  "imports": [
+    "dataclasses",
+    "json",
+    "pathlib",
+    "re",
+    "sys"
+  ],
+  "forbidden_execution_calls_absent": true,
+  "parse_reference_io_absent": true,
+  "no_product_cache_files": true,
+  "limits": "Static call-path check plus unit mocks and CLI sentinel; not an OS sandbox or independent verification"
+}

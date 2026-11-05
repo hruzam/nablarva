@@ -1,0 +1,308 @@
+{
+  "archive_bytes": 970828,
+  "archive_member_modes_and_extracted_modes_match": true,
+  "archive_members_safe_regular": true,
+  "archive_sha256": "ed95f7dce28c60b0dfd0fc66eef00cc906afa8322c899892be3adfee05aaec0f",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "diff",
+        "--binary",
+        "--full-index",
+        "--no-ext-diff",
+        "--no-renames",
+        "HEAD",
+        "--",
+        ".dev/session/composer-01-parse/RUNBOOK.md",
+        ".dev/session/composer-01-parse/STATUS.md",
+        ".dev/session/flag.md",
+        "PROJECT-DESIGN.md",
+        "toolbox/termbrana/README.md"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva",
+      "exit": 0,
+      "purpose": "capture only scoped tracked changes"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--binary",
+        "--full-index",
+        "--no-ext-diff",
+        "--no-renames",
+        "HEAD",
+        "--",
+        "journal.host-cleanup.md"
+      ],
+      "cwd": "/home/hruzam/ia-sync",
+      "exit": 0,
+      "purpose": "capture only scoped tracked changes"
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/preservation.phase0.cleanup/payload.sha256"
+      ],
+      "cwd": "<temporary extracted snapshot>",
+      "exit": 0,
+      "ok_lines": 941
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "SHA256SUMS"
+      ],
+      "cwd": "<temporary extracted Nablarva bed>",
+      "exit": 0,
+      "stdout": "raw/README.md: OK\nraw/CONTEXT.md: OK\nraw/EXCHANGE.md: OK\nraw/FOR-NABLA.astrobley.md: OK\nraw/FOR-NABLA.oraculum.md: OK\nraw/sources.json: OK\nraw/sella-v.0.1/README.md: OK\nraw/sella-v.0.1/EXCHANGE.md: OK\nraw/sella-v.0.1/brief.astrobley.sella-v.0.1.md: OK\nraw/sella-v.0.1/brief.oraculum.sella-v.0.1.md: OK\nraw/sella-v.0.1/brief.myshell.sella-v.0.1.md: OK\nraw/sella-v.0.1/note.myshell.history-and-attachments.sella-v.0.1.md: OK\nraw/sella-v.0.1/evidence.sella-v.0.1.json: OK\nraw/01_SYNC_METHOD.md: OK\nraw/02_PARSER_GATE.md: OK\nraw/04_REGISTRY.md: OK\nraw/05_WAY_OF_THINKING.md: OK\nraw/journal.2026-10-13.md: OK\nraw/journal.2026-10-16.md: OK\n"
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "evidence/grammar.builder.v4.sha256"
+      ],
+      "cwd": "<temporary extracted Nablarva bed>",
+      "exit": 0,
+      "stdout": "evidence/grammar.builder.v4.md: OK\n"
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "evidence/grammar.builder.v3.sha256"
+      ],
+      "cwd": "<temporary extracted Nablarva bed>",
+      "exit": 0,
+      "stdout": "evidence/grammar.builder.v3.md: OK\n"
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--whitespace=nowarn",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/preservation.phase0.cleanup/nablarva.tracked.patch"
+      ],
+      "cwd": "<temporary nablarva HEAD files>",
+      "exit": 0
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "--whitespace=nowarn",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/preservation.phase0.cleanup/ia-sync.tracked.patch"
+      ],
+      "cwd": "<temporary ia-sync HEAD files>",
+      "exit": 0
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/preservation.phase0.cleanup/recheck.py"
+      ],
+      "exit": 0,
+      "stdout": "{\"status\": \"PASS\", \"payload_files\": 941, \"snapshot_at_utc\": \"2026-10-21T02:28:58.322744+00:00\", \"meaning\": \"matches captured bytes and path sets; no staging authorized\"}\n"
+    },
+    {
+      "command": [
+        "sha256sum",
+        "-c",
+        "PACKAGE.SHA256"
+      ],
+      "cwd": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0",
+      "exit": 0,
+      "ok_lines": 20
+    }
+  ],
+  "committed_C1_dependency": {
+    "included_as_new_payload": false,
+    "path": ".dev/session/germline-05-sella-germline-audit/_bus/RETURN.01.c1-composition.cartan.md",
+    "repo": "ia-sync",
+    "sha256": "a2b989540f241adccc2f13d12d215d585620887aa04bec823bf2af1e78b1009a"
+  },
+  "comparison_package29": {
+    "added": 54,
+    "modified": 3,
+    "removed": 0,
+    "unchanged": 884,
+    "unexpected_drift": false
+  },
+  "dispositions": {
+    "modified": 6,
+    "new": 866,
+    "unchanged_reference": 69
+  },
+  "extracted_hashes_match": true,
+  "git_heads_indices_payload_unchanged": true,
+  "historical_input_zip": {
+    "extracted_or_executed": false,
+    "initial_guard": "First capture attempt rejected this ZIP as a nested archive before writing a snapshot; no completed capture was overwritten.",
+    "matches_package29": true,
+    "path": ".dev/session/composer-01-parse/evidence/import/files.zip",
+    "scope_clarification": "Cartan clarified POINT38: exclude preservation-package nesting; retain only this exact opaque original ZIP within approved complete-bed history. Reject all other unexpected archives.",
+    "sha256": "7d7251b6ed19ba07747dd3cee72388a22b1813c13a9b62a0d44fd63b1ae70aa1",
+    "size": 11408
+  },
+  "historical_package29_dependencies": {
+    "PACKAGE.SHA256": "0dca1f582ba611f195cda83fd6b480bbd46f30016c9cdb169cc664305f26b06d",
+    "payload.tar.gz": "649e789bc2d3b3ea40658339a393a4f2d289c56b1ec5fdace14ca997cf10e734"
+  },
+  "manifest_files": 941,
+  "omissions": "Only allowlisted paths inspected; other session state, pulse, personal journal, config/runtime, sealed .hlm, and both package directories are outside payload. Foreign work is not inventoried.",
+  "payload_bytes": 26261819,
+  "per_repo": {
+    "ia-sync": {
+      "modified": 1,
+      "new": 11
+    },
+    "nablarva": {
+      "modified": 5,
+      "new": 855,
+      "unchanged_reference": 69
+    }
+  },
+  "preserved_benchmark_statuses": {
+    "correction.phase0/benchmark.json": "FAIL",
+    "implementation.phase0/benchmark.first.json": "FAIL",
+    "startup.phase0/benchmark.json": "PASS",
+    "verification.phase0/declared/benchmark.json": "PASS"
+  },
+  "publication_performed": false,
+  "raw_and_grammar_pins": "PASS",
+  "raw_count": 19,
+  "report_assessment": {
+    "claim_limit": "Substantive artifact facts and stated owner boundaries checked; future38 verdict remains pending; report is not acceptance authority.",
+    "claims_checked": [
+      "applied wrapper and five bounded product README corrections",
+      "observer re-entry points to frozen ADR/pre-M2 condition; no runtime requalification",
+      "accepted source remains parser-only and finite office evidence",
+      "source/germline/vendor/SPECIAL including pipes remains planned coverage",
+      "architecture owner proposal unapplied; X3/internal-router X4 mismatch unchanged",
+      "exact X1 raw handoff exists; no new live launcher",
+      "U3/operator, live-binding, publication/closure and X2 reuse statements remain scoped requirements, not acceptance"
+    ],
+    "counts": {
+      "CLI_cases_twice": 38,
+      "byte_comparisons": 62,
+      "independent_extra_probes": 33,
+      "unit_methods_from_finding": 27
+    },
+    "four_to_one_ratio": 1.839459809804596,
+    "links": [
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/37.cartan.point.md",
+        "status": "existing target",
+        "target": "../_bus/37.cartan.point.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/37.cartan.verdict.md",
+        "status": "existing target",
+        "target": "../_bus/37.cartan.verdict.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/38.cartan.verdict.md",
+        "status": "future head verdict; not proof of prior PASS",
+        "target": "../_bus/38.cartan.verdict.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+        "status": "existing target",
+        "target": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md",
+        "status": "existing target",
+        "target": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md"
+      },
+      {
+        "resolved": "/home/hruzam/ia-sync/zsh/termbrana/README.md",
+        "status": "existing target",
+        "target": "/home/hruzam/ia-sync/zsh/termbrana/README.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+        "status": "existing target",
+        "target": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md",
+        "status": "existing target",
+        "target": "phase0.exit.cartan.2026-10-21.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/_bus/37.builder.return.md",
+        "status": "existing target",
+        "target": "../_bus/37.builder.return.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0/README.md",
+        "status": "existing target",
+        "target": "publication.phase0/README.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/preservation.phase0.cleanup/README.md",
+        "status": "current package completion reference; fulfilled after capture",
+        "target": "preservation.phase0.cleanup/README.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X1-composer-sourcing/raw/handoff.cartan.runbook-preparation.2026-10-21.md",
+        "status": "existing target",
+        "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X1-composer-sourcing/raw/handoff.cartan.runbook-preparation.2026-10-21.md"
+      },
+      {
+        "resolved": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/STATUS.md",
+        "status": "existing target",
+        "target": "/home/hruzam/ia-sync/.dev/session/germline-06-full-audit/STATUS.md"
+      },
+      {
+        "resolved": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md",
+        "status": "existing target",
+        "target": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md"
+      }
+    ],
+    "pending_completion_references": [
+      "future head verdict; not proof of prior PASS",
+      "current package completion reference; fulfilled after capture"
+    ],
+    "personal_journal_read": false,
+    "product_tests_rerun": false,
+    "report_edited": false,
+    "report_path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/report.to-myshell.cleanup.2026-10-21.md",
+    "report_sha256": "9785c0ccdfedd3d98d2533366e460351c91dda370c22947471dc93a622265e4f",
+    "saved_performance_recomputed": [
+      {
+        "budget_ms": 100,
+        "label": "four_corpus_bodies",
+        "median_ms": 80.3134505,
+        "p95_ms": 92.968602
+      },
+      {
+        "budget_ms": 500,
+        "label": "1_MiB",
+        "median_ms": 54.562411999999995,
+        "p95_ms": 89.864265
+      },
+      {
+        "budget_ms": 2000,
+        "label": "4_MiB",
+        "median_ms": 100.365364,
+        "p95_ms": 106.243155
+      }
+    ],
+    "status": "PASS"
+  },
+  "requested_brief_copy_identical": true,
+  "shared_diff_review": "RUNBOOK/STATUS, L17, product composition sections and composer journal entry only; no foreign hunks observed",
+  "snapshot_at_utc": "2026-10-21T02:28:58.322744+00:00",
+  "source_receipt_match": true,
+  "status": "PASS",
+  "tests_rerun": false
+}

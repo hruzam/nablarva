@@ -1,0 +1,84 @@
+--- a/PROJECT-DESIGN.md
++++ b/PROJECT-DESIGN.md
+@@ -119,12 +119,18 @@
+ 
+ ## 3.1. termbrana
+ 
++*checked: 2026-10-21*
++
+ [L17](.dev/session/flag.md) includes the Zellij observer at `toolbox/termbrana/`
+ and reusable composition at `~/ia-sync/zsh/termbrana/`, above session beds/vaults.
+ The [Termbrana README](toolbox/termbrana/README.md#composition-and-explicit-input-direction)
+ owns the approved direction, future adjustable sources and integration boundaries.
+ The terminal/AI/browser/files/notes intent below remains; dashboards and sessions
+ are optional, independently useful integrations.
++
++Observer technical decisions live in [DECISIONS.md](toolbox/termbrana/DECISIONS.md).
++Composition entry points, API and grammar are indexed by its
++[source-family README](../../ia-sync/zsh/termbrana/README.md).
+ 
+  - semitransparent foil allowing one typewriting system over all (keys, shortcuts, lighter navigation for terminal inputs -> agentive UI)
+  - bridge between terminal, ai session, browser (firefox), files
+--- a/toolbox/termbrana/README.md
++++ b/toolbox/termbrana/README.md
+@@ -149,12 +149,18 @@
+ **Locked — L17, Majkee GO, 2026-10-20:** the reusable composition family lives at
+ `~/ia-sync/zsh/termbrana/`, with a thin zsh entry and independent Python stdlib
+ parser, conditional on measured responsiveness. Its [source-family README](../../../../ia-sync/zsh/termbrana/README.md)
+-and durable grammar describe the source-only Phase 0 interface. The existing
++and [GRAMMAR.md](../../../../ia-sync/zsh/termbrana/GRAMMAR.md) describe the source-only Phase 0 interface. The existing
+ Rust/WASM observer remains at `toolbox/termbrana/`; its M2 benchmark/stop-rule binds
+ only that observer. This supplements L11/L12 rather than changing its host contract
+ ([L17/L11/L12/L16/L8′](../../.dev/session/flag.md)). Approved v4 is released only for
+ Phase 0 parser implementation and independent verification; no deployment or
+ later-phase activation follows.
++
++**Phase 0 qualification — 2026-10-21:** the [retained exit finding](../../.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md)
++links independent verification and the exact source receipt. This retained,
++uncommitted evidence qualifies the finite office-only parser checks (Python 3.14.7),
++not sourcing, editor integration or delivery. A durable qualification commit pin
++awaits an actual, separately authorized preservation commit.
+ 
+ **Layering B — L17:** Termbrana composition and ovitmugen are independently useful
+ clients. Any common mechanism is prospective and belongs at a narrow integration
+@@ -166,9 +172,11 @@
+ distinct; existing tmux helpers/probe pipes establish neither packet fidelity nor
+ raw-PTY provenance. Shared-layer owner/home/API and carrier qualification remain open.
+ 
+-**Future adjustable sources — L17:** a common selection surface must accommodate
+-controller tables, subagent rosters, germline/vendor definitions and SPECIAL
+-collections. Each source needs a configurable location and format reader, preserving
++**Future adjustable sources — L17; Majkee direction, 2026-10-21:** common
++programs/controller tables, germline, actual vendor agent/roster/skill shapes and
++SPECIAL, including germline/pipes, are first-class generation-X sourcing requirements.
++Coverage may span additional sourcing gates; these capabilities are planned, not
++implemented. Each source needs a configurable location and format reader, preserving
+ source/kind provenance. Selected text or references are prepared before composing
+ the opaque body. Native activation/launching stays explicit; definitions do not
+ activate themselves. No loader, picker or shared selection API is implemented here.
+@@ -213,7 +221,10 @@
+ 
+ Termbrana deliberately has no local `AGENTS.md`, Claude/Codex roster, harness, devenv twin,
+ or beacon. Development sessions run from the central nablarva harness under
+-`.dev/session/toolbox-termbrana-*`, with one integration owner. Parallel agents may perform
++`.dev/session/`, with one integration owner. Historical observer beds retain
++`toolbox-termbrana-*`; operator-directed generation-X composition includes names
++such as `termbrana-X1-composer-sourcing`, each requiring its own scope and launcher
++authorization. Parallel agents may perform
+ bounded, preferably read-heavy work after the applicable gate; shared conclusions and domain
+ types flow through the owner or an ADR.
+ 
+@@ -222,9 +233,7 @@
+ adds its Zellij, terminal, and PTY context through the task brief and evidence files; it
+ does not clone or modify those global agent definitions.
+ 
+-The next concrete step is the operator pad at:
+-
+-```text
+-~/unikuklatrix/nablarva/.dev/session/
+-  toolbox-termbrana-02-m0-truthspike/pad.1-m0-runtime-confirm.md
+-```
++For the observer's frozen host contract and remaining qualification limits, read
++[ADR-0002](DECISIONS.md#adr-0002--m0-host-contract-frozen). Before the first M2
++adapter code, complete its required re-verification loop. Locate active work through
++the standing [pulse router](../../.dev/session/pulse.md) and the owning session's STATUS.
