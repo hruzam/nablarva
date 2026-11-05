@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-30T22:09:02.385868+01:00",
+  "scope": "fixture-only candidate; not live activation",
+  "files": {
+    "apps/session-console/README.md": "9d00780d3b699f14c03425ce244f0d80d3ba28d0353c991308789315e69cc1b2",
+    "apps/session-console/contracts/console.md": "b2d2e30bf45766366af25ba98bf4249296e2ebc5170cc7270b1476ea3a4326be",
+    "apps/session-console/contracts/storage.md": "af53c06cb088bfc59b51559f753cc2e82b772ca55f3318beaf480355aea98864",
+    "apps/session-console/host/security.py": "47ec97891673a41bb1b79e78648c53e7f96d8ce044d9af36e394166bbc4ea3c3",
+    "apps/session-console/host/server.py": "5974c05f7e70f811c65a438442b473e2116fc2f04aea19f1829f13f957313447",
+    "apps/session-console/host/sessions.py": "84f31b78327317f7586eb40a1a4761b28759fedd2c5fe292370acb7aab8be38a",
+    "apps/session-console/host/terminal_proxy.py": "6aaefe9a0e48b265b13702ed7038eda0a79911b0fd9aa2e1570aeeed57c028b2",
+    "apps/session-console/host/vault.py": "efde2a43c4f3029c8410875a3eb0f70d8fbb37c433fc34c191dca2f1345db5d2",
+    "apps/session-console/package-lock.json": "2e555923a775d1df468e6fb6b6c371144258681f3f9d83f5db8a04b384ad0a99",
+    "apps/session-console/package.json": "ca835b7c07dac7f22201127662fe73486032c9853e4a3f8fcda9cf1798644d54",
+    "apps/session-console/requirements.lock": "f9aa5c905dd8c49e1c6041b45e00f217908db09a847d0113be1eb0c5df07e502",
+    "apps/session-console/requirements.txt": "9ff2177e763edd4e9724ffbd5a78794aa24e8492245e2f9e2b3f521fdf956b74",
+    "apps/session-console/tests/test_host.py": "d5c57ea3ceb75bee1182447c8ee0d419122cf1e40e906e87755bb61b573f17b6",
+    "apps/session-console/tests/test_vault.py": "660dc963634ec9d72d509ca309e39350548391f5cac25eb0111cdd9682c0e11b",
+    "apps/session-console/web/api.js": "fb11a89d83f0941ecdbc38c6f53afcca37b7c1f1dcf3f0d63a2e2b4d0c8ef585",
+    "apps/session-console/web/app.js": "1c7fb3e67c57004a9e3f1481f536f3611c686d5a0d4c2269a0e315d192d0c132",
+    "apps/session-console/web/index.html": "0acd7c9dc6f64ce90b8ce83f747e98c43c5b33a646291b205be9db6948ed4d96",
+    "apps/session-console/web/storage.js": "615b3519cf9e42845cd4b9ccc76270a6fab8a7694f5355ce7e474a38324a8426",
+    "apps/session-console/web/styles.css": "4da197a77d20e1cee7f5158d04fcc3e110ef2a4a2f7a60d9a62fdf0a4e28293f",
+    "apps/session-console/web/terminal.js": "f54067657cfa3bbb3510105c1dcb2728c35230027998412000fd3d2964607d79"
+  }
+}

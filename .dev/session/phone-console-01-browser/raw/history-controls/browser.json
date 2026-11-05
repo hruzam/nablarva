@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-30T22:28:12.132Z",
+  "lines": {
+    "live": 300,
+    "older": 286,
+    "oldest": 271,
+    "newer": 286,
+    "returned": 300
+  },
+  "noHistoryPtyInput": true,
+  "detachCancelsPendingScroll": true,
+  "heights": {
+    "shortHeight": 304,
+    "expandedHeight": 624,
+    "shrinkHeight": 304
+  },
+  "geometry": {
+    "width": 360,
+    "scrollWidth": 360
+  },
+  "actions": [
+    "enter",
+    "pageUp",
+    "enter",
+    "pageUp",
+    "enter",
+    "pageDown",
+    "leave",
+    "enter"
+  ],
+  "pageErrors": []
+}

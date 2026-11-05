@@ -1,0 +1,29 @@
+{
+  "clock": "2026-10-25 20:40:00 CET",
+  "before_hashes": {
+    "docs/ARCHITECTURE.md": "3b9a057b5a34787a9fdc82023ab6b3fc88186bc47df9496964519938b75036f9",
+    "PROJECT-DESIGN.md": "a5733429292977c5de4ff6e3d19554e15aa46f7452e6c2164053cad151162b3f",
+    "toolbox/termbrana/README.md": "a2cf0004cc152bd201134199c50c9a0a41143b8046459d72f6cb1ded20c5778e"
+  },
+  "flag_sha256": "f408fe3250499fc800113424fa87f14f5613175f46c30d5644f748e2ba830457",
+  "changes": [
+    {
+      "id": "M3",
+      "file": "docs/ARCHITECTURE.md",
+      "old": "r8 bookkeeping candidate · promoted r7 at f20dda5 · 2026-10-25 · awaiting majkee GO",
+      "new": "r8 bookkeeping · promoted r7 at f20dda5 · majkee GO 2026-10-25 · commit pending"
+    },
+    {
+      "id": "O3",
+      "file": "docs/ARCHITECTURE.md",
+      "old": "cultural retirement requested (said: majkee, 2026-10-24, X0 organs §5–6); body and lock L13 unchanged; new name pending",
+      "new": "cultural name retired (locked: L24); phone organ, body and existing paths preserved; replacement name pending; all other L13 provisions remain in force"
+    },
+    {
+      "id": "P2",
+      "file": "PROJECT-DESIGN.md",
+      "old": "phone app — cultural retirement requested by majkee 2026-10-24; new name pending",
+      "new": "phone app — cultural name retired under L24; replacement name pending"
+    }
+  ]
+}

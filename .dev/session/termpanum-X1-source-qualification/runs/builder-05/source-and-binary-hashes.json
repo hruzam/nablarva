@@ -1,0 +1,11 @@
+{
+  "src/fixture/fixture.cpp": "a311368ece5f7c6069757e16301b98cfaa2b1210d98bbc55116c076e54eed9e0",
+  "src/collect/main.cpp": "fd8e21b1c7d54a05419bbeeb38378952e58cc8d4feaf0994584b2bfa71f14bc5",
+  "src/collect/sink.cpp": "b03573ec50cca747e3d7fe2867c08a5035ede81fa42411ae134b2c823aabd8c6",
+  "src/collect/common.hpp": "5f6df57e5be1a0168e113e287000ecf9acfea040432292f4fcd3362d10c4b32e",
+  "src/compare/compare.cpp": "f5aedacb275521c9a5032732ef6a7d94028ed938159e309aef0fefbbbbc1482d",
+  "runs/builder-05/build/tq-v4": "3ca334602f636e42c4e888b851184d0ca7cc1a9940a45f97d2fec01294bc6f07",
+  "runs/builder-05/build/tq-v3": "1658e3b10cbfe558b501b67d2fef7ba56b063243b458a5b2a9e21ff9ac0c50ae",
+  "runs/builder-05/build/tq-v1": "a5f42235b8b56b2035e48a42582dd4397089bb2b3ca073ada7bd25709781aea9",
+  "runs/builder-05/build/tq-v2": "6468eae6633116c120b229914f6129aaae49ecc5251e1a65c905dda546a2dfab"
+}

@@ -1,0 +1,14 @@
+test_busy_stale_multi_and_missing_confirmation_refuse (__main__.CandidateTests.test_busy_stale_multi_and_missing_confirmation_refuse) ... ok
+test_close_preserves_owner_patience (__main__.CandidateTests.test_close_preserves_owner_patience) ... ok
+test_command_specific_exact_name_syntax (__main__.CandidateTests.test_command_specific_exact_name_syntax) ... ok
+test_existing_owner_selftest (__main__.CandidateTests.test_existing_owner_selftest) ... ok
+test_restart_id_reuse_in_failed_create_cleanup (__main__.CandidateTests.test_restart_id_reuse_in_failed_create_cleanup) ... ok
+test_restart_id_reuse_on_detach (__main__.CandidateTests.test_restart_id_reuse_on_detach) ... ok
+test_restart_id_reuse_on_select (__main__.CandidateTests.test_restart_id_reuse_on_select) ... ok
+test_views_desktop_shape_and_detach_lifetime (__main__.CandidateTests.test_views_desktop_shape_and_detach_lifetime) ... ok
+test_wrong_capability_or_orphan_preserves_views (__main__.CandidateTests.test_wrong_capability_or_orphan_preserves_views) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 7.602s
+
+OK

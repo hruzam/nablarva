@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-10-22T07:09:30.160966+02:00",
+  "plan_sha256": "4e039f9f787c3224e8bb8c63342d3cdf68027339dd51ace682db89e430c83145",
+  "finding_sha256": "007956078b864e1df4020becef5893eb9b3671b110c54a307edb435426c7fa0c",
+  "return_sha256": "a75a8cac073a8230bc5a23e5ecd2d601eb8ed4889903426fa1eb56ac5201a5df",
+  "review_result": "PASS; all 8 criteria and Houston 1\u20135",
+  "local_plan_links": 7,
+  "baseline_source_identities": [
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md",
+      "matches_historical": true,
+      "observed": "a9e73a4659ba8d7b4572344e9c0f405777d7ba5df2eb38f394749c2f4302dadc"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+      "matches_historical": true,
+      "observed": "6ee10aa1c40a853cc6c1e6ff5dfa191999f38314058064b5543ac1392fe2c78f"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/REGISTRY.md",
+      "matches_historical": true,
+      "observed": "a6a0371e5f808f3b9d4be77d000f962eeb38922dddcbe7c05ab500d6f7ca9466"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/DESIGN.md",
+      "matches_historical": true,
+      "observed": "ff007a51b55a5e0156e4479c5b697eb65c54c37b9dc07a90f662eccc174a6f0f"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/HYPOTHESES.md",
+      "matches_historical": true,
+      "observed": "e8488edaad2ed9cd61804cbd6b03f848afd78099fa509525f677a8e016837f58"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/raw/terminal-onion.study.2026-09-17.md",
+      "matches_historical": true,
+      "observed": "c53087b6e2f35a8df51fb92ac6bc206fd43bed9319c104d2e8773fb1331c6c3e"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/raw/build-plan.unilarvatrix.2026-09-18.md",
+      "matches_historical": true,
+      "observed": "f9e2d95d148672a0beda216c3c087150346210e93ad3a047d7ff75c27d8910e8"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/extraction.driller-onion.2026-06/DESIGN.md",
+      "matches_historical": true,
+      "observed": "816e19edb907bd7a3aeba61bbb092d801078db854ea00283a1fd49aee4b6d64a"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md",
+      "matches_historical": true,
+      "observed": "94d0b0b1e01dfc7cead09db6b27db7b65ff9cd28c8ef8e31f39ca744e85783d8"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-vist/raw/vist-01-principle-and-applications.md",
+      "matches_historical": true,
+      "observed": "98c2c2fd4bea9a13f6051ee08a937933925681fde0721c636e732e47323df0c8"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/STATUS.md",
+      "matches_historical": false,
+      "observed": "04f0acdb4fe9083c70da984ab1aa504c5982ab838e38aeffdc5086898b6e1f49"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/gavels.X4.2026-10-17.md",
+      "matches_historical": true,
+      "observed": "6f70befab6bb15c7216f4cf4f5a3466a6ab789e2605379e90a4c7ddfbcf8aa1f"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/raw.nablarva/oraculum-basic-triangulation/04_LABORATORY_OBSERVABILITY_AND_EXPERIMENTS.md",
+      "matches_historical": true,
+      "observed": "db6e338459c14e2de3b0fe7ca5c4411162c1fff62771e8a13d1c22991b86a40d"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/05_WAY_OF_THINKING.md",
+      "matches_historical": true,
+      "observed": "460a71e76778f669e7d7d99a71bf808613de5351598124f09f8b1eb919380ddb"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/brief-substrate-for-RUNBOOK.termpanum.2026-10-01.md",
+      "matches_historical": true,
+      "observed": "1c3a4f42bd70849489cf01eb3c69c5816325595055ae4d2e5e52cf130155707c"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/design-chapters.for-cartan.2026-10-01.md",
+      "matches_historical": true,
+      "observed": "2fbea2e58ee4597c0f1ed41be7c8126c3623cc0aa372947845e130259c38e69c"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/note.stridularium.2026-10-01.md",
+      "matches_historical": true,
+      "observed": "3dd6320aed842a9c2d249d4626a45c0acd59afd764972905a1d73174caa36c5d"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/brief.rosters-and-team.2026-10-22.md",
+      "matches_historical": true,
+      "observed": "da070d91e63a6b3cb906d0573b0a3c9cf7f09e810e9e97e2a05c45c3e4ae9ec8"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/handoff.composer-experience.cartan.2026-10-22.md",
+      "matches_historical": true,
+      "observed": "0acc9e1dce76d9b024c229adcb9419552b7c8351bbefd3f84ec73e21cc43589f"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/research.tmux-source-fidelity.2026-10-22.md",
+      "matches_historical": true,
+      "observed": "3abd43ac5b8f4b22cc5236f6e836c5503969356cde935482d35a7e50699075f7"
+    }
+  ],
+  "status_witness": "P4 under Cartan sole pen with exact RUNBOOK gate at review time; now ready for P5 transition",
+  "successor_beds": "absent",
+  "tracked_changes_since_entry_snapshot": [
+    ".dev/session/nablarva-X2-builder-narative/STATUS.md",
+    ".dev/session/nablarva-X3-architecture-sitting/STATUS.md"
+  ],
+  "scope_limits": "No runtime qualification or D4 release. X3 changes are concurrent foreign doing-state. Untracked foreign contents were not comprehensively snapshotted; no broader byte-preservation claim."
+}

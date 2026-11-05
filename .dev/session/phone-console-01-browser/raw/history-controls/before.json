@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-30T23:26:50.846913+01:00",
+  "files": {
+    "apps/session-console/web/app.js": "6ee7a13e56df9e81150c907f9daa1a4bdb52ec95be6a9545b57f032a47ceeff5",
+    "apps/session-console/web/terminal.js": "f54067657cfa3bbb3510105c1dcb2728c35230027998412000fd3d2964607d79",
+    "apps/session-console/web/index.html": "ca147228d2f907f0bcc0947d4d473e92d7bb1eec6e82b715e157302aaaf4bde1",
+    "apps/session-console/web/styles.css": "a58d8621fb2726b85daba8fe8a5a332f69bcef78e4b20c4c8a7d5a0c481bfa2f"
+  },
+  "request": "Visible up/down terminal history controls; terminal view is short",
+  "physicalWitness": "Majkee attached to another live session successfully; specific named bed was not found"
+}

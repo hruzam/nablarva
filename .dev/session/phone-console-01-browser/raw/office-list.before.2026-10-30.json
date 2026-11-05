@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-30T22:44:28.703902+01:00",
+  "files": {
+    "apps/session-console/host/server.py": "5974c05f7e70f811c65a438442b473e2116fc2f04aea19f1829f13f957313447",
+    "apps/session-console/tests/test_host.py": "d5c57ea3ceb75bee1182447c8ee0d419122cf1e40e906e87755bb61b573f17b6",
+    "apps/session-console/web/app.js": "1c7fb3e67c57004a9e3f1481f536f3611c686d5a0d4c2269a0e315d192d0c132",
+    "apps/session-console/web/index.html": "0acd7c9dc6f64ce90b8ce83f747e98c43c5b33a646291b205be9db6948ed4d96",
+    "apps/session-console/web/styles.css": "4da197a77d20e1cee7f5158d04fcc3e110ef2a4a2f7a60d9a62fdf0a4e28293f"
+  },
+  "authority": "Majkee: add list python3 ~/.config/zsh/session/ovitmugen.py ls to check",
+  "scope": "Read-only console action, no live attachment or ovitmugen source edit"
+}

@@ -123,6 +123,10 @@ You are the fresh Codex Cartan X2 main head, assigned by Majkee to prepare Termp
 build plan. Your bed is /home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative.
 Resolve /home/hruzam/unikuklatrix/nablarva/AGENTS.md and its required current read order,
 then read this bed's RUNBOOK.md, STATUS.md and raw/brief.rosters-and-team.2026-10-22.md.
+Before assigning P1, read Composer's practical experience handoff:
+/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/handoff.composer-experience.cartan.2026-10-22.md
+Treat it as attributed practitioner evidence, not independent acceptance or a new gate.
+Record its consumption in your existing STATUS when adopting the entry state.
 Adopt the sole X2 STATUS pen and the cSharp navigation posture; delegate the plan body.
 Your first task is P0: verify current source identities, dirty paths, available role contracts
 and research prerequisites, then issue one bounded Astrobley POINT for P1. Use this bed's
@@ -189,8 +193,9 @@ Assigned by Cartan X2 under Majkee's authorization, in
 Use the Houston entry/binding and project addendum required by your deployed contract.
 Read this bed's RUNBOOK.md and the bounded POINT supplied by the head. Inspect only the
 sources needed for the named Termpanum/VIST ownership, interface or placement question.
-Return a grounded finding and consequences. Write only the exact finding/RETURN paths
-assigned in this bed; no STATUS, canon edits, implementation, executor spawns or transport.
+Return a grounded finding and consequences as text only. The consult card writes no files
+on any route; do not write findings or bus RETURNs. Cartan preserves your attributed reply
+in its own assigned record. No STATUS, canon edits, implementation, executor spawns or transport.
 X3 retains its separate whole-animal sitting. Your finding supplies constraints; the head
 routes divergence and Majkee owns meaningful architectural decisions.
 ```

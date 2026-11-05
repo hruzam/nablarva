@@ -1,0 +1,29 @@
+test_busy_stale_multi_and_missing_confirmation_refuse (__main__.CandidateTests.test_busy_stale_multi_and_missing_confirmation_refuse) ... ok
+test_close_preserves_owner_patience (__main__.CandidateTests.test_close_preserves_owner_patience) ... ovitmugen: selected target is busy/dead; end its process explicitly first
+FAIL
+test_command_specific_exact_name_syntax (__main__.CandidateTests.test_command_specific_exact_name_syntax) ... ok
+test_existing_owner_selftest (__main__.CandidateTests.test_existing_owner_selftest) ... ok
+test_restart_id_reuse_in_failed_create_cleanup (__main__.CandidateTests.test_restart_id_reuse_in_failed_create_cleanup) ... ok
+test_restart_id_reuse_on_detach (__main__.CandidateTests.test_restart_id_reuse_on_detach) ... ok
+test_restart_id_reuse_on_select (__main__.CandidateTests.test_restart_id_reuse_on_select) ... ok
+test_views_desktop_shape_and_detach_lifetime (__main__.CandidateTests.test_views_desktop_shape_and_detach_lifetime) ... ok
+test_wrong_capability_or_orphan_preserves_views (__main__.CandidateTests.test_wrong_capability_or_orphan_preserves_views) ... ok
+
+======================================================================
+FAIL: test_close_preserves_owner_patience (__main__.CandidateTests.test_close_preserves_owner_patience)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hruzam/unikuklatrix/nablarva/.dev/session/phone-console-01-browser/raw/live-adapter/check_applied.py", line 204, in test_close_preserves_owner_patience
+    self.command(['close-tab', 'bed', '--window', row['windowId'], '--pane', row['paneId'],
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  '--generation', row['generation'], '--confirm'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hruzam/unikuklatrix/nablarva/.dev/session/phone-console-01-browser/raw/live-adapter/check_applied.py", line 60, in command
+    self.assertEqual(result, 0, args)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : ['close-tab', 'bed', '--window', '@3', '--pane', '%3', '--generation', '6af19c90607050171eecc9c34e4aee4ef3801162ed912c0b7c6c0ec66ac3838b', '--confirm']
+
+----------------------------------------------------------------------
+Ran 9 tests in 7.840s
+
+FAILED (failures=1)

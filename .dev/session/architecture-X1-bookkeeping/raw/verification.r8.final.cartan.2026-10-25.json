@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "docs/ARCHITECTURE.md": "3769818addf79f39c88d25d924f78b06db15f454dd4a84fee881695a668555a3",
+    "PROJECT-DESIGN.md": "ae86ea1935277d07b38180f0d699d65369f4431c9a3749828044e4d2d4f0f363",
+    "toolbox/termbrana/README.md": "a2cf0004cc152bd201134199c50c9a0a41143b8046459d72f6cb1ded20c5778e"
+  },
+  "protected_changes": [],
+  "doc_patch_sha256": "04523e3777b3fc929150e2a0d792071289733052e6dab011f71b23b8c24f21d1",
+  "full_patch_sha256": "cb7a2748c752fa79bfdc9b26ac4141c41ce40530901ae7c951bd4c881257aa65",
+  "flag_sha256": "f408fe3250499fc800113424fa87f14f5613175f46c30d5644f748e2ba830457",
+  "index_unchanged": true,
+  "pass_checks": true,
+  "clock": "2026-10-25 20:41:25 CET"
+}

@@ -57,3 +57,7 @@ Closure-only reading never fires for beds that stay open (X1). These rows fire o
 - `nablarva-X1-architecture.tunnel-support-pad.trajectory.2026-10-23.md` — promoted verbatim at X1 closure: pad.1 tunnel-support items A–K (D, J resolved; dispositions of the rest in dock.md)
 - `harvest.2026-10-24.agol.md` — Agol harvest #3, X1 + X3 closure; patterns P1–P7, H1 §4 forecast scored, candidates U5–U11
 - `nablarva-X1-X3-closure.oraculum.2026-10-24.md` — X1 + X3 joint closure manifest: gates, durable results, carried items, what was pruned
+
+- `termpanum-X0-source-contract.cartan.2026-10-23.md` — verbatim X0 process transfer; accepted documentary gate, corpus/path corrections, existing preservation commit
+- `nablarva-X2-builder-narative.cartan.2026-10-23.md` — verbatim X2 process transfer; approval scope, termios correction, live-state hashes; uncommitted source retained
+- `harvest.2026-10-23.agol.md` — bounded X0/X2 closure harvest; U1–U4 carried to X4 authoring input

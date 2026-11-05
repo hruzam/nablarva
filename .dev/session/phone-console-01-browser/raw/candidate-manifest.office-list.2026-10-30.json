@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-30T22:46:21.867528+01:00",
+  "scope": "Fixture terminal plus read-only office inventory; live attachment remains unavailable",
+  "files": {
+    "apps/session-console/README.md": "bd9ef71805a88bcac26ed5058048fb3959e7eb9c56379d248c2b0dbc7957b368",
+    "apps/session-console/contracts/console.md": "be742f1986ff6bb30eb4182653f575160d24902828e8bd5921be0c0a9b8f0489",
+    "apps/session-console/contracts/storage.md": "af53c06cb088bfc59b51559f753cc2e82b772ca55f3318beaf480355aea98864",
+    "apps/session-console/host/security.py": "47ec97891673a41bb1b79e78648c53e7f96d8ce044d9af36e394166bbc4ea3c3",
+    "apps/session-console/host/server.py": "e7fcbf978f224938e9302f3a53fdf5e7eee1746b7445d0198c2dfc520dc5817c",
+    "apps/session-console/host/sessions.py": "84f31b78327317f7586eb40a1a4761b28759fedd2c5fe292370acb7aab8be38a",
+    "apps/session-console/host/terminal_proxy.py": "6aaefe9a0e48b265b13702ed7038eda0a79911b0fd9aa2e1570aeeed57c028b2",
+    "apps/session-console/host/vault.py": "efde2a43c4f3029c8410875a3eb0f70d8fbb37c433fc34c191dca2f1345db5d2",
+    "apps/session-console/package-lock.json": "2e555923a775d1df468e6fb6b6c371144258681f3f9d83f5db8a04b384ad0a99",
+    "apps/session-console/package.json": "ca835b7c07dac7f22201127662fe73486032c9853e4a3f8fcda9cf1798644d54",
+    "apps/session-console/requirements.lock": "f9aa5c905dd8c49e1c6041b45e00f217908db09a847d0113be1eb0c5df07e502",
+    "apps/session-console/requirements.txt": "9ff2177e763edd4e9724ffbd5a78794aa24e8492245e2f9e2b3f521fdf956b74",
+    "apps/session-console/tests/test_host.py": "8ed1f9cfb2be7c0b56778a158e584078c26dd4eecf258a46f4c3581ff477cb9f",
+    "apps/session-console/tests/test_vault.py": "660dc963634ec9d72d509ca309e39350548391f5cac25eb0111cdd9682c0e11b",
+    "apps/session-console/web/api.js": "fb11a89d83f0941ecdbc38c6f53afcca37b7c1f1dcf3f0d63a2e2b4d0c8ef585",
+    "apps/session-console/web/app.js": "607b39632cf0be0d04ecaab685281cee28657f3a0edaefda167f46ca397b1bd0",
+    "apps/session-console/web/index.html": "f59e0776421b21d01da5cd5231f96569048da2add0726aae864f7f13b5f55c60",
+    "apps/session-console/web/storage.js": "615b3519cf9e42845cd4b9ccc76270a6fab8a7694f5355ce7e474a38324a8426",
+    "apps/session-console/web/styles.css": "a58d8621fb2726b85daba8fe8a5a332f69bcef78e4b20c4c8a7d5a0c481bfa2f",
+    "apps/session-console/web/terminal.js": "f54067657cfa3bbb3510105c1dcb2728c35230027998412000fd3d2964607d79"
+  }
+}

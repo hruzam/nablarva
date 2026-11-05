@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-30T19:06:53.168163+01:00",
+  "operator_before": "terminal/panels catastrophically small; Android keyboard okay",
+  "cause": "Upstream bundled HTML omits mobile viewport; browser scales desktop layout",
+  "change": "Supported ttyd -I customized bundled HTML with device-width viewport; fontSize18 then14 per operator feedback",
+  "operator_18": "Now too large",
+  "font_current": 14,
+  "gateway_pid": 1383032,
+  "shell_ids_preserved": true,
+  "mobile_index_sha256": "97b46a6dfd948685c2f61d5689d2f1086437aae45a90cf3b4e14ceadbab2cf28",
+  "script_sha256": "2e08f6a5b4c723195c540cd815ef34e94d6eff2fd21f09b5375d4eb04c2a11de",
+  "checks": [
+    "served index exact",
+    "after first repair HTTP noauth401, WS noauth and foreign origin rejected",
+    "actual phone screenshots: desktop-shrunk then18 then14 with Android keyboard",
+    "private fixture @0 window-size smallest ->41x21; background old tab previously119x103 caused clipping"
+  ],
+  "scope": "Disposable fixture only; existing live windows untouched",
+  "review": "verification.mobile-display.md covers first18px patch; later14px tuning and smallest sizing parent verified",
+  "remaining": "User physical verdict for14px, IME, scroll and keys remains pending"
+}

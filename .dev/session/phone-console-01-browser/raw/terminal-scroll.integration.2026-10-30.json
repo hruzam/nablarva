@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-30T19:13:57.058403+01:00",
+  "font": 12,
+  "width": "Majkee confirmed Width fits",
+  "scroll_original": "Majkee reported failure",
+  "scroll_first_adapter": "Majkee confirmed failure after reload",
+  "fix": "viewport and screen are siblings; corrected terminal-root target resolution",
+  "test": "node raw/terminal-scroll.test.js PASS, including viewport sibling and gutter",
+  "adapter_sha256": "d5d05b3437500574048d97a6ddd912d235b2fd6e7a2f57cbb224c5b15a68e8f5",
+  "served_index_sha256": "665daeddab68a0618270db89252c3a9f5755796be03f87d7e80db30d969c64aa",
+  "gateway_pid": 1393747,
+  "shells_preserved": true,
+  "physical_corrected": "AWAITING operator reload/swipe",
+  "photo_request": "multiple selected images or camera -> workstation verified upload -> ask about erasing phone originals",
+  "photo_limit": "browser picker cannot erase phone originals; manual Gallery cleanup or separately reviewed native mediation required"
+}

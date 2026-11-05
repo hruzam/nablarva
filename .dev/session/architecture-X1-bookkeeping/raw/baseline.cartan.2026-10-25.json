@@ -1,0 +1,112 @@
+{
+  "head": "6b8d1d3d5543ac3edf8dfcc1e8c9dbf10dde2251",
+  "branch": "core",
+  "targets": {
+    "docs/ARCHITECTURE.md": "3330b99ad986c0ad1ff668ebc35f065cf14f7a53c68dfcea656602267c57e880",
+    "PROJECT-DESIGN.md": "a98b997c039180d08afa3eb68ca41c92d1b9870d20b53e00fad56e5b5e6c7010",
+    "toolbox/termbrana/README.md": "a30b152eb848ce036a0a83da200108778cb703b986f7bbf70632d2a55341b482"
+  },
+  "index_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "protected": {
+    ".dev/session/flag.md": "f84b08f0e119f82ae4c9a8e91749edc07af4ebc6296a2124c73ddb7928d32b04",
+    ".dev/session/pulse.md": "5b1448d8ce683a37193ee1063639bd4c752f198311741cade252786b7c93d292",
+    ".dev/session/architecture-X1-bookkeeping/RUNBOOK.md": "7deb313ec610136d6099ad923bce92c487eceaed11fbcffac392a9af70ac4fc6",
+    ".dev/observations/README.md": "8c80df18d33fe30fba02d0f7f36f86a098d8df43d7657ed7bd654c86fc468613",
+    ".dev/session/nablarva-X2-builder-narative/RUNBOOK.md": "7d1501842d93c781d9aefc7e3b4dc7663eca84350a482898bb19fdbcd0d501a1",
+    ".dev/session/nablarva-X2-builder-narative/STATUS.md": "4a2f4cf00e4768126f4e53f945890e039538c75a6795e0198075d62c22a65fa4",
+    ".dev/session/nablarva-X2-builder-narative/raw/brief.rosters-and-team.2026-10-22.md": "da070d91e63a6b3cb906d0573b0a3c9cf7f09e810e9e97e2a05c45c3e4ae9ec8",
+    ".dev/session/termpanum-X0-source-contract/STATUS.md": "bba250840c8c1ecf75b53a161211d640640af3272a4c6a0b899a6446ec7469a5",
+    ".dev/_back-log/skin-remote-controll/00_README.md": "faa92a949f61cb53eb7dbce1549ea4889671dc572eb91f5f4292943bb57efed1",
+    ".dev/_back-log/skin-remote-controll/01_LINUX_REMOTE_DESKTOP_REPORT.md": "e6c8841ab8588a8ca2e4d039c0cdc191d71e5d086989a42177a20b9a4b8ee4a0",
+    ".dev/_back-log/skin-remote-controll/02_SSH_TMUX_RELAY_ARCHITECTURE.md": "0b028b97597730bfd607070e7e664f24c1fed3c63904cec94e84854514e4e26d",
+    ".dev/_back-log/skin-remote-controll/03_NATIVE_UI_OPTIONS_BRIEF.md": "8a02bf22d13374d9879a444ee2981f4af905607aaee2b0e0a7ec0e2c9a82a271",
+    ".dev/_back-log/skin-remote-controll/04_RUSTDESK_REUSE_REPORT.md": "991a1e616e510974918eca4f0be95d2578cd1a1a63615128681dafc07bc76e29",
+    ".dev/_back-log/skin-remote-controll/05_IMPLEMENTATION_HANDOFF.md": "833c00adcea6f9e6d06ac92230d46633da673db26d3e405b15321b0a60190d0b",
+    ".dev/_back-log/skin-remote-controll/06_SOURCES_AND_EVIDENCE.md": "d6e553d08274a9a05d171b7111f392a4e73bc3b41f2b4bc54442f883c03b2b7a",
+    ".dev/observations/harvest.2026-10-23.agol.md": "3729a344692202b6bd5ba6d9d62db0a56ac96a339d46074d327b4a36a5e9daba",
+    ".dev/observations/nablarva-X2-builder-narative.cartan.2026-10-23.md": "653f7d2836580a1f54347ff1b01ba1054142da0620ee044cf2a69c7d9ddfd3df",
+    ".dev/observations/termpanum-X0-source-contract.cartan.2026-10-23.md": "d041582bf6a59f1c1a6a62f9bb610de10d7032fb9f14b7250f972dc8dcc92998",
+    ".dev/session/nablarva-X2-builder-narative/_bus/01.astrobley.return.md": "8c0bbd5d6f7cc034e27b938e92d7bd162f88f95bc3f9b53eb2e95c953e834d2f",
+    ".dev/session/nablarva-X2-builder-narative/_bus/01.cartan.point.md": "752a9b0714bb710e4c69ebbbc4e36f9237c74544d0e9366c766f046081657788",
+    ".dev/session/nablarva-X2-builder-narative/_bus/01.cartan.verdict.md": "5de16fd4e6edd07cb8035d478ddc2fed0cd88d782df4364bbb6525d86c4794ff",
+    ".dev/session/nablarva-X2-builder-narative/_bus/02.astrobley.return.md": "76c3d6f196cd5226fbf1c7f0575955039b79338182bce088bf195b09ea65a431",
+    ".dev/session/nablarva-X2-builder-narative/_bus/02.cartan.point.md": "51908a8dee5b92c856ba1cf3b0cebcaf8ff2e3b45c06b3a4aba2738fabb502fd",
+    ".dev/session/nablarva-X2-builder-narative/_bus/02.cartan.verdict.md": "7440cc396a944df8e19b5a22522f4bcf273e931db307bb2fb6bfeb72ce1bf116",
+    ".dev/session/nablarva-X2-builder-narative/_bus/03.cartan.point.md": "1391817c15fd295cbb5f4dd9e1e528326b9b7d04efdbe8dda7295a41ce079200",
+    ".dev/session/nablarva-X2-builder-narative/_bus/03.cartan.verdict.md": "cf0a8d90a5e08c01698d0e3e1a3f7808f474b1631f6971437d3a33670a499ff0",
+    ".dev/session/nablarva-X2-builder-narative/_bus/03.verifier.return.md": "a75a8cac073a8230bc5a23e5ecd2d601eb8ed4889903426fa1eb56ac5201a5df",
+    ".dev/session/nablarva-X2-builder-narative/_bus/04.cartan.point.md": "633c93e88416f9e8ec447230dca91c9476df20c450d4776d281b4d9731c41530",
+    ".dev/session/nablarva-X2-builder-narative/_bus/04.cartan.verdict.md": "5694ca112326d8d808d8dd9fe5bb1ec032544caef91678248fc941871facff21",
+    ".dev/session/nablarva-X2-builder-narative/_bus/04.verifier.return.md": "bbb2cc6fb73b7ce83bb69ca54a1a88c3d0872fc1cba6acc695bf6a634691fe21",
+    ".dev/session/nablarva-X2-builder-narative/raw/checks.cycle01.cartan.2026-10-22.json": "32d324589f3aff5d048f47bfbbf6fade369cbd4fc4d46e11466c044f5fccf617",
+    ".dev/session/nablarva-X2-builder-narative/raw/checks.cycle03.cartan.2026-10-22.json": "80db34c39f08c48704285e82858d7daa85ce8d095df2fceca3ed44f844b76d4f",
+    ".dev/session/nablarva-X2-builder-narative/raw/closure.manifest.cartan.2026-10-22.md": "f704f821f6c8b5acad66c203ebd95a41dc48c27b959b35497f1fe01ad19ede1d",
+    ".dev/session/nablarva-X2-builder-narative/raw/consult.release-and-vist-boundary.2026-10-22.md": "867fd586783603e6121e992bbdc51b323e0cb99c1db00cddda12e988cf16f106",
+    ".dev/session/nablarva-X2-builder-narative/raw/decision.majkee.plan-go.2026-10-22.md": "7b5f7f279b91b21ebce80be22511c4d43131dacec854e9606aa4139441228b43",
+    ".dev/session/nablarva-X2-builder-narative/raw/disposition.x3-vectors.cartan.2026-10-22.md": "efe7573dae528e8f8182eec6448e5b735c9a10f6a98f4b8e10b5795562368f7b",
+    ".dev/session/nablarva-X2-builder-narative/raw/experience-transfer.cartan.2026-10-22.md": "b269bfdda32d72a34daec23b84036acd9ce349dfde634e39e627ccc2be0d322c",
+    ".dev/session/nablarva-X2-builder-narative/raw/handoff.termpanum-X0-source-contract.cartan.2026-10-22.md": "cfa123fc72dfcf8c5078f102ac7ab9f4c5d64d433565d826eba29573edfbd74d",
+    ".dev/session/nablarva-X2-builder-narative/raw/p0.entry.cartan.2026-10-22.json": "a59ffbcea2ab08a0cdcf9b76ff036afbff405099206f67ed2e521a9cc95f7615",
+    ".dev/session/nablarva-X2-builder-narative/raw/p0.tracked-preservation.cartan.2026-10-22.json": "6654f0a2791087dbfd8260030d46513027808e0178e296cd43014c68d311c7f4",
+    ".dev/session/nablarva-X2-builder-narative/raw/question.release-and-vist-boundary.cartan.2026-10-22.md": "0b7033a63162c4dd30538cc9049a208737df0f6561c798543becbda6f6bc9f83",
+    ".dev/session/nablarva-X2-builder-narative/raw/question.tmux-source-fidelity.cartan.2026-10-22.md": "92152bfa225e884583f45dfbdaf4b2405774b5a95865f07ab4ae0014beff2242",
+    ".dev/session/nablarva-X2-builder-narative/raw/research.tmux-source-fidelity.2026-10-22.md": "3abd43ac5b8f4b22cc5236f6e836c5503969356cde935482d35a7e50699075f7",
+    ".dev/session/nablarva-X2-builder-narative/raw/review.p5-handoff.2026-10-22.md": "5910bf4f2e0cfab2d23a1aaad63ac4beed10370e02f46259b7f9a8a17790969f",
+    ".dev/session/nablarva-X2-builder-narative/raw/review.termpanum-build-plan.2026-10-22.md": "007956078b864e1df4020becef5893eb9b3671b110c54a307edb435426c7fa0c",
+    ".dev/session/nablarva-X2-builder-narative/raw/termpanum.baseline-and-research.md": "09efca7d06043850798578d2c2c990663cb934c8f938ad5424413660f9e8f7b8",
+    ".dev/session/nablarva-X2-builder-narative/raw/termpanum.build-plan.md": "4e039f9f787c3224e8bb8c63342d3cdf68027339dd51ace682db89e430c83145",
+    ".dev/session/nablarva-X4-vist/raw/audit.x0-evidence.2026-10-23.md": "2a5d2063c7e44356dc2aa87e6e6acbd73d2021b1b84bae8cc0dd26f4bfeb7014",
+    ".dev/session/nablarva-X4-vist/raw/audit.x0-transfer.2026-10-23.md": "21bc63093e6c2ad091823b6db829eec2bcb41f62475cd71a78848cb6754e4ce7",
+    ".dev/session/nablarva-X4-vist/raw/audit.x2-evidence.2026-10-23.md": "412b608a20f188bf9b5541f5f9341d86b8fc3571535e86220a0af6040a3874a9",
+    ".dev/session/nablarva-X4-vist/raw/audit.x2-transfer.2026-10-23.md": "2d2cdc9e0e48473c292aea6a1b88310880a1400a5936d3943cd3f51d52824fc6",
+    ".dev/session/nablarva-X4-vist/raw/brief.x4-runbook-input.cartan.2026-10-23.md": "6c68223d8db0116ba5f9ba8cb989632fa4f9ed6377c7f24ea39d8857d1bc71ef",
+    ".dev/session/nablarva-X4-vist/raw/catalogue.hello-intake.cartan.2026-10-23.md": "c452f0ffeb2e7ca73de6f961d4333fbff9a310cb848c52c7c4ed2c422492e2f8",
+    ".dev/session/nablarva-X4-vist/raw/closure.x0-x2.cartan.2026-10-23.md": "419d4bf77154f25f21af451ef1c93638ca1af98b57ffd592953cc53a2186bcd7",
+    ".dev/session/nablarva-X4-vist/raw/closure.x0-x2.inventory.2026-10-23.json": "13b642c78f5c386f209b03060424c63e311ae12c437d15a6956a60db554c9311",
+    ".dev/session/nablarva-X4-vist/raw/consult.closure-masterfiles.2026-10-23.md": "c43e5c788371d1a7f6618fda82f639d4dc696dfaf12fc0bd4cfa4730aab4af4f",
+    ".dev/session/nablarva-X4-vist/raw/consult.hello-grounding.2026-10-23.md": "f4655cb6b3fc0b62bd5a96cd8ee64bc5a20bf60b8ee32b421a142e0370732dd0",
+    ".dev/session/nablarva-X4-vist/raw/handoff.csharp-method.cartan.2026-10-24.md": "f46be8fc275d84d7a4a19bedd02f2a1b63ac999b5fb6209d3052ece6349c180f",
+    ".dev/session/nablarva-X4-vist/raw/handoff.x0-source-contract.cartan.2026-10-23.md": "680156bda2d89f7631302cfc3a61b32c4f278daf52dacadd4df8cd63e88c8c33",
+    ".dev/session/nablarva-X4-vist/raw/handoff.x2-termpanum.cartan.2026-10-23.md": "491d63a106277fd2f47cdc63a05272f40a27fb28e150e478da70c6df65abdf0c",
+    ".dev/session/nablarva-X4-vist/raw/manifest.closure-transfer.2026-10-23.json": "b9fdde6e5afc22ea94682707b74cea71429f99b152af9b41200e6d89487b3cdd",
+    ".dev/session/nablarva-X4-vist/raw/review.closure-transfer.2026-10-23.md": "a94d03c8d57d0e0da325826352b6f83290ea41a75a4f79ae902c9bca39286480",
+    ".dev/session/nablarva-X4-vist/raw/verification.closure-x0-x2.2026-10-23.json": "0c34f7e026385cf1bc8b8a5123ddd67e9c1a25e8b129d7de0c5986f692cc632c"
+  },
+  "sources": {
+    "1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md": "c9b852795c286dd869eb8b9cc43d277ef93f60ca4b74e9cf381a54c7d326640d",
+    "1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/consult.d1-observation-record.houston.2026-10-24.md": "97e8875f04492ad1298882a52061fe514cedf402c1758263b2c32a18917bf1ef",
+    "1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.organs.2026-10-24.md": "c7976342d84f01bce547301180b7befa28037333396998d9a5ce63064636fce2",
+    "1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/decision-package.r2.oraculum.2026-10-24.md": "c22b315dd164323872d02cee4c759472e1945cb453fc03d776d30a010a126d38"
+  },
+  "payable": [
+    {
+      "pin": "519a211:.dev/session/nablarva-X3-architecture-sitting/raw/answers.majkee.pick-and-q1-q8.2026-10-22.md",
+      "sha256": "46ad7c56ea703e49738996954b8602f8f4f3079cc0a3319be84766aab7ad216d"
+    },
+    {
+      "pin": "519a211:.dev/session/nablarva-X3-architecture-sitting/raw/answers.majkee.r9-1-notes.2026-10-22.md",
+      "sha256": "7ed5dd59be4c554a613ea4d5d29ecbe5c212da62390b7a0ae06e175e51902994"
+    },
+    {
+      "pin": "519a211:.dev/session/nablarva-X3-architecture-sitting/raw/answers.majkee.r9-1-abc.2026-10-22.md",
+      "sha256": "2032f27e26b1730a3b0607ee6c485942a2281e866d1d42661130e86d2bb3336e"
+    },
+    {
+      "pin": "519a211:.dev/session/nablarva-X3-architecture-sitting/raw/arc.r2.md",
+      "sha256": "7ca22a3b5cc20239c66339acd386bba86ecb113c30746bca56356cd165d81eb5"
+    },
+    {
+      "pin": "519a211:.dev/session/nablarva-X3-architecture-sitting/raw/arc.pick.2026-10-22.md",
+      "sha256": "da40442fde7bb2726ced75f3b029655bf70ef2352919c2c0139ebb0d70dd2b22"
+    },
+    {
+      "pin": "519a211:.dev/session/nablarva-X3-architecture-sitting/raw-additional-my-appology/Nabla-Tmux-Architecture-Draft-v0.md",
+      "sha256": "00251ebf6dc1d4b4b7f6b84fbee016c81b08eb0037ec9458a85b86cf704b66a0"
+    },
+    {
+      "pin": "519a211:.dev/session/nablarva-X3-architecture-sitting/raw-additional-my-appology/Nabla-Tmux-Architecture-Draft-v0.zip",
+      "sha256": "a7d28babe12277292f204fe6801d58b04087a3d3715068e1254b8683415e0ae7"
+    }
+  ],
+  "clock": "2026-10-25 20:15:42 CET"
+}

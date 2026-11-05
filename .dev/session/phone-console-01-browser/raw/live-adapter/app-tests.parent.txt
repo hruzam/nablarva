@@ -1,0 +1,95 @@
+test_dimensions_and_resize (test_host.FrameTests.test_dimensions_and_resize) ... ok
+test_valid_and_invalid_input (test_host.FrameTests.test_valid_and_invalid_input) ... ok
+test_auth_origin_host_and_csrf (test_host.HostTests.test_auth_origin_host_and_csrf) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_busy_close_is_refused (test_host.HostTests.test_busy_close_is_refused) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_guarded_close_and_stale (test_host.HostTests.test_guarded_close_and_stale) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_history_never_types_q_into_shell (test_host.HostTests.test_history_never_types_q_into_shell) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_office_listing_reports_failure_and_timeout (test_host.HostTests.test_office_listing_reports_failure_and_timeout) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_office_listing_uses_only_fixed_read_only_command (test_host.HostTests.test_office_listing_uses_only_fixed_read_only_command) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_proxy_auth_unicode_no_replay_and_detach_survival (test_host.HostTests.test_proxy_auth_unicode_no_replay_and_detach_survival) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_view_divergence_rejects_input_and_history (test_host.HostTests.test_view_divergence_rejects_input_and_history) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_websocket_auth_and_exact_origin_before_upgrade (test_host.HostTests.test_websocket_auth_and_exact_origin_before_upgrade) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_wrong_binding_cannot_start_backend (test_host.HostTests.test_wrong_binding_cannot_start_backend) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_changed_owner_marker_refuses_binding (test_owner_sessions.OwnerAdapterTests.test_changed_owner_marker_refuses_binding) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_discovery_and_disabled_lifecycle (test_owner_sessions.OwnerAdapterTests.test_discovery_and_disabled_lifecycle) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_diverged_view_refuses_input_resize_and_history (test_owner_sessions.OwnerAdapterTests.test_diverged_view_refuses_input_resize_and_history) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_history_uses_only_bound_copy_mode (test_owner_sessions.OwnerAdapterTests.test_history_uses_only_bound_copy_mode) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_pane_respawn_and_server_restart_stale_no_replay (test_owner_sessions.OwnerAdapterTests.test_pane_respawn_and_server_restart_stale_no_replay) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+FAIL
+test_selected_input_independent_view_and_detach_survival (test_owner_sessions.OwnerAdapterTests.test_selected_input_independent_view_and_detach_survival) ... /home/hruzam/unikuklatrix/nablarva/apps/session-console/host/server.py:56: NotAppKeyWarning: It is recommended to use web.AppKey instances for keys.
+https://docs.aiohttp.org/en/stable/web_advanced.html#application-s-config
+  app['sessions'], app['terminal_proxy'] = sessions, proxy
+ok
+test_reject_symlink_and_nonprivate_root (test_vault.RootTests.test_reject_symlink_and_nonprivate_root) ... ok
+test_failed_upload_leaves_no_item_or_blob (test_vault.VaultTests.test_failed_upload_leaves_no_item_or_blob) ... ok
+test_revision_and_immutable_kind (test_vault.VaultTests.test_revision_and_immutable_kind) ... ok
+test_symlink_blob_is_not_followed_and_invalid_ids_rejected (test_vault.VaultTests.test_symlink_blob_is_not_followed_and_invalid_ids_rejected) ... ok
+test_upload_verify_retry_and_download (test_vault.VaultTests.test_upload_verify_retry_and_download) ... ok
+
+======================================================================
+FAIL: test_pane_respawn_and_server_restart_stale_no_replay (test_owner_sessions.OwnerAdapterTests.test_pane_respawn_and_server_restart_stale_no_replay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hruzam/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hruzam/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/hruzam/unikuklatrix/nablarva/apps/session-console/tests/test_owner_sessions.py", line 193, in test_pane_respawn_and_server_restart_stale_no_replay
+    await self.populate()
+  File "/home/hruzam/unikuklatrix/nablarva/apps/session-console/tests/test_owner_sessions.py", line 44, in populate
+    await self.control('new-session', '-d', '-s', 'alpha', '-n', 'first',
+  File "/home/hruzam/unikuklatrix/nablarva/apps/session-console/tests/test_owner_sessions.py", line 40, in control
+    self.assertEqual(child.returncode, 0, error.decode())
+AssertionError: 1 != 0 : server exited unexpectedly
+
+
+----------------------------------------------------------------------
+Ran 23 tests in 11.208s
+
+FAILED (failures=1)

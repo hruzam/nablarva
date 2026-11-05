@@ -13,7 +13,7 @@ questions were not questions addressed to myShell.
 | Codex Astrobley · gpt-6.1-sol/high | Reconcile sources and author the Termpanum build-plan body, acceptance matrix and first-session assignment. | Exact raw plan files in its POINT; never STATUS or another writer's files. | Main P1–P3 body author. |
 | Codex researcher · gpt-5.6-terra/high | Current source/terminal/vendor evidence that affects the selected slice; source/deploy roster study already performed during launcher preparation. | Read-only consultation return; Cartan folds attributed findings into its own raw record. | Bounded uncertainty, not a standing research campaign. |
 | Fresh Codex verifier · gpt-5.6-sol/high | Check plan executability, claims and acceptance evidence independently of the body author. | Finding and own RETURN; no fixes. | P4, then new review only after material correction. |
-| Codex Houston · gpt-6.1-sol/high | Ground a consequential boundary, ownership or placement question. | Its bounded consult finding only, per deployed binding. | When L16 requires architecture attention. |
+| Codex Houston · gpt-6.1-sol/high | Ground a consequential boundary, ownership or placement question. | Text reply only; Cartan preserves the attributed finding. Consult never writes files. | When L16 requires architecture attention. |
 | Codex Oraculum · local seat `oraculum-x2-consult` · gpt-6-astra/high | Critique a difficult premise and explore alternatives. | Analysis return; no file or status pen. | Optional bounded consultation. |
 | Majkee | Preserve intent, relay sparse cross-head exchanges, decide meaningful choices and plan GO. | Operator decisions. | As the work requires. |
 
@@ -138,3 +138,12 @@ with its own honest evidence contract. A plan with no executable starting point 
 No products were built, live sessions probed, tunnels activated or deployments performed
 by this launcher preparation. Final review of these preparation files is separate from
 the future X2 plan acceptance and Majkee's gavel.
+
+## Later preparation correction — Houston consult pen
+
+2026-10-22 · myShell checked the live consult card and Codex binding after sequential
+Oraculum/Astrobley advice identified a prompt conflict. RUNBOOK prompt-4 formerly requested
+finding/RETURN file writes. It now requests a text-only reply, preserved with attribution
+by Cartan. The live consult card and binding forbid every consult write; no role definition,
+project gate or runtime permission was widened. This is a narrow source-compatibility
+correction, not fresh acceptance of the whole launcher or a runtime-route proof.

@@ -1,0 +1,7 @@
+{
+  "probe_pid": 1767493,
+  "pid_namespace": "pid:[4026531836]",
+  "uid": 1000,
+  "boot_id": "a3f7b436-c588-4553-bc38-a877a6f8c9d7",
+  "scope": "read-only escalated frame probe before runtime"
+}

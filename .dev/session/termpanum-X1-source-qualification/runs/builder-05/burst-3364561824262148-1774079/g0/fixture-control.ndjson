@@ -1,0 +1,3 @@
+{"kind":"supervisor_start","monotonic_ns":3364561841497277,"supervisor":{"pid":1780521,"pid_namespace":"pid:[4026531836]","start_ticks":"336456184","state":"R","uid":1000}}
+{"child":{"pid":1780525,"pid_namespace":"pid:[4026531836]","start_ticks":"336456184","state":"R","uid":1000},"kind":"child_start","monotonic_ns":3364561841618860}
+{"child_pid":1780525,"exit_code":0,"exited":true,"kind":"direct_child_wait","monotonic_ns":3364562175566334,"wait_status":0}

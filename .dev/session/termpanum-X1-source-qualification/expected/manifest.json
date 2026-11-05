@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "algorithm": "sha256",
+  "membership": "listed files only; manifest, evidence logs and revisions/ excluded",
+  "freeze": "Record SHA-256 of this manifest externally in witness/head acceptance before capture implementation",
+  "files": [
+    {
+      "sha256": "534e824660d11233c5b05e00c820c041590a350dd2be642a7f96f99b8d0c114a",
+      "path": "cases/burst/wire.bin"
+    },
+    {
+      "sha256": "46c000646b701869a335135506b570bbadc08b50a5b11c223965ab21c815e6cd",
+      "path": "cases/delete/wire.bin"
+    },
+    {
+      "sha256": "bea0e0e41e55860c96401882e3eca68c169a75d45a64fadf58af93ea1400c896",
+      "path": "cases/duplicate/wire.bin"
+    },
+    {
+      "sha256": "841c9f35e0cafa39183964ab54fac2f4addaa6490557ed84b3b3d873f1773c75",
+      "path": "cases/false_completion/wire.bin"
+    },
+    {
+      "sha256": "5ccf44fb600a7b2608e69a30a1e55e5dcea61e89e871c89de2348b43ca67a6ce",
+      "path": "cases/normal/wire.bin"
+    },
+    {
+      "sha256": "68da41f8a9d69e568d43494613cfc18dece0da36d9ebd5460a777483d85f9a5f",
+      "path": "cases/onlcr/wire.bin"
+    },
+    {
+      "sha256": "019322bbf66c958d07db0c674a9d7a30491fc4d0e5833259fbe3f2629bf91ed9",
+      "path": "cases/reorder/wire.bin"
+    },
+    {
+      "sha256": "272cd331f3a50cefcfb5d5d56f790879de24df2e792d6f175e23f5de9f0a5625",
+      "path": "cases/screen/screen.txt"
+    },
+    {
+      "sha256": "9dbc4820ab2e39e49dd275e098797f640a1106e363cbdc9a982d879a538fecb3",
+      "path": "cases/screen/wire.bin"
+    },
+    {
+      "sha256": "95403280b73c408e1cfcafdaffedc2d0ffe5c716d789fbaa587c4f66d829dc0f",
+      "path": "generate.cpp"
+    },
+    {
+      "sha256": "4bed47fee115dfedb5ad8d3051ade59fd4d9ed923c633d8c02652c8292b96f89",
+      "path": "observations.ndjson"
+    },
+    {
+      "sha256": "5b7dfd8af1abf1649733d74a954b438e96afa17337d56e4faaf5007b6c4dc9cb",
+      "path": "schedule.md"
+    },
+    {
+      "sha256": "272cd331f3a50cefcfb5d5d56f790879de24df2e792d6f175e23f5de9f0a5625",
+      "path": "screen.txt"
+    },
+    {
+      "sha256": "5ccf44fb600a7b2608e69a30a1e55e5dcea61e89e871c89de2348b43ca67a6ce",
+      "path": "wire.bin"
+    }
+  ]
+}

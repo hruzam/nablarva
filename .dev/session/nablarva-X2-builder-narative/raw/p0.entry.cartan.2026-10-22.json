@@ -1,0 +1,410 @@
+{
+  "captured_at": "2026-10-22T06:42:47.445848+02:00",
+  "host": "hruzam-120922",
+  "worktree": "/home/hruzam/unikuklatrix/nablarva",
+  "branch": "core",
+  "head": "32bd6f4b8a2be8ab65d2b5bd523f8e8f8c08956d",
+  "git_status_short": [
+    "M .dev/session/composer-01-parse/RUNBOOK.md",
+    " M .dev/session/composer-01-parse/STATUS.md",
+    " M .dev/session/nablarva-X2-builder-narative/RUNBOOK.md",
+    " M .dev/session/nablarva-X2-builder-narative/raw/brief.rosters-and-team.2026-10-22.md",
+    " M .dev/session/nablarva-X3-architecture-sitting/RUNBOOK.md",
+    " M .dev/session/nablarva-X3-architecture-sitting/STATUS.md",
+    "?? .dev/session/composer-01-parse/_bus/11.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/12.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/12.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/12.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/13.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/13.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/14.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/14.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/14.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/15.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/15.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/16.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/16.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/16.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/17.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/17.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/18.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/18.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/19.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/19.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/19.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/20.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/20.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/21.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/21.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/22.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/22.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/23.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/23.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/23.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/24.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/24.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/24.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/25.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/25.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/25.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/26.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/26.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/27.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/27.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/27.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/28.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/28.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/28.luna.return.md",
+    "?? .dev/session/composer-01-parse/_bus/29.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/29.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/29.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/30.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/30.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/30.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/31.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/31.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/32.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/32.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/33.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/33.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/33.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/34.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/34.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/35.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/35.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/36.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/36.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/36.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/37.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/37.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/37.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/_bus/38.builder.return.md",
+    "?? .dev/session/composer-01-parse/_bus/38.cartan.point.md",
+    "?? .dev/session/composer-01-parse/_bus/38.cartan.verdict.md",
+    "?? .dev/session/composer-01-parse/evidence/audit.houston.termbrana-shape.2026-10-21.diff",
+    "?? .dev/session/composer-01-parse/evidence/audit.houston.termbrana-shape.2026-10-21.md",
+    "?? .dev/session/composer-01-parse/evidence/baseline.phase0-go.2026-10-20.json",
+    "?? .dev/session/composer-01-parse/evidence/brief.germline-contract-testing.md",
+    "?? .dev/session/composer-01-parse/evidence/brief.sella-germline-audit.2026-10-19.md",
+    "?? .dev/session/composer-01-parse/evidence/challenge.janus.2026-10-19.md",
+    "?? .dev/session/composer-01-parse/evidence/challenge.janus.home-stack.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/challenge.native-resolve-r2.2026-10-21.md",
+    "?? .dev/session/composer-01-parse/evidence/challenge.native-resolve.2026-10-21.md",
+    "?? .dev/session/composer-01-parse/evidence/challenge.native-v3.2026-10-19.md",
+    "?? .dev/session/composer-01-parse/evidence/challenge.native-v4.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/challenge.termbrana.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/cleanup.termbrana.2026-10-21/",
+    "?? .dev/session/composer-01-parse/evidence/consult.houston.layering.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/consult.houston.resolve.2026-10-21.md",
+    "?? .dev/session/composer-01-parse/evidence/consult.houston.termbrana.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/correction.phase0/",
+    "?? .dev/session/composer-01-parse/evidence/decision-options.home-verifier.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/decision.majkee.c1.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/decision.majkee.phase0-go.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/direction.majkee.termbrana-generation-x.2026-10-21.md",
+    "?? .dev/session/composer-01-parse/evidence/direction.majkee.termbrana.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/experience-transfer.cartan.2026-10-21.md",
+    "?? .dev/session/composer-01-parse/evidence/fixtures/",
+    "?? .dev/session/composer-01-parse/evidence/grammar.builder.v3.md",
+    "?? .dev/session/composer-01-parse/evidence/grammar.builder.v3.sha256",
+    "?? .dev/session/composer-01-parse/evidence/grammar.builder.v4.md",
+    "?? .dev/session/composer-01-parse/evidence/grammar.builder.v4.sha256",
+    "?? .dev/session/composer-01-parse/evidence/handoff.termbrana-generation-x.2026-10-21.md",
+    "?? .dev/session/composer-01-parse/evidence/head.audit-checks.termbrana.2026-10-21.json",
+    "?? .dev/session/composer-01-parse/evidence/head.cleanup-checks.termbrana.2026-10-21.json",
+    "?? .dev/session/composer-01-parse/evidence/head.final-checks.phase0.json",
+    "?? .dev/session/composer-01-parse/evidence/head.output-failure.source-check.json",
+    "?? .dev/session/composer-01-parse/evidence/head.pre-return-checks.phase0.md",
+    "?? .dev/session/composer-01-parse/evidence/head.startup-diagnostic.phase0.json",
+    "?? .dev/session/composer-01-parse/evidence/head.startup-flags.phase0.json",
+    "?? .dev/session/composer-01-parse/evidence/implementation.phase0/",
+    "?? .dev/session/composer-01-parse/evidence/next-phase.resolve/",
+    "?? .dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md",
+    "?? .dev/session/composer-01-parse/evidence/point.flight.c1.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/point.flight.c1.after-direction.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/preparation.handoff.cartan.2026-10-21.md",
+    "?? .dev/session/composer-01-parse/evidence/presence-detach.cartan.2026-10-21.json",
+    "?? .dev/session/composer-01-parse/evidence/preservation.cleanup.reconciliation.cartan.2026-10-21.json",
+    "?? .dev/session/composer-01-parse/evidence/preservation.phase0.cleanup/",
+    "?? .dev/session/composer-01-parse/evidence/prompt.janus.home-stack.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/publication.phase0/",
+    "?? .dev/session/composer-01-parse/evidence/publication.reconciliation.cartan.2026-10-21.json",
+    "?? .dev/session/composer-01-parse/evidence/report.to-myshell.cleanup.2026-10-21.md",
+    "?? .dev/session/composer-01-parse/evidence/research.ovitmugen-layer.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/response.flight.c1.2026-10-20.sha256",
+    "?? .dev/session/composer-01-parse/evidence/review-packet.janus.home-stack.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/review-packet.janus.home-stack.2026-10-20.sha256",
+    "?? .dev/session/composer-01-parse/evidence/review.janus-layering.2026-10-20.sha256",
+    "?? .dev/session/composer-01-parse/evidence/reviewed-project-design.pre-go.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/reviewed-readme.termbrana.pre-go.2026-10-20.md",
+    "?? .dev/session/composer-01-parse/evidence/source-copy.correction.phase0.json",
+    "?? .dev/session/composer-01-parse/evidence/source-copy.phase0.json",
+    "?? .dev/session/composer-01-parse/evidence/source-copy.startup.phase0.json",
+    "?? .dev/session/composer-01-parse/evidence/startup.builder-v3.2026-10-19.md",
+    "?? .dev/session/composer-01-parse/evidence/startup.phase0/",
+    "?? .dev/session/composer-01-parse/evidence/verification.phase0/",
+    "?? .dev/session/nablarva-X2-builder-narative/raw/handoff.composer-experience.cartan.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/brief.preflight-and-operator-asks.2026-10-22.md",
+    "?? .dev/session/nablarva-X3-architecture-sitting/raw/handoff.composer-boundaries.cartan.2026-10-22.md"
+  ],
+  "scope": "P0 navigation evidence; no product/runtime qualification",
+  "authorization": "Majkee answered Execute prompt-0 now in this session",
+  "sources": [
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/AGENTS.md",
+      "sha256": "8f26baf8aff897785f8ba3fafae4475dfa13280b51da87c4deca8fea91d2c002",
+      "historical_sha256": "8f26baf8aff897785f8ba3fafae4475dfa13280b51da87c4deca8fea91d2c002",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT.yaml",
+      "sha256": "aac1198fe6eabd9f975928866defa1272d7d91a005f8ca6d7e303172d7d2ec96",
+      "historical_sha256": "aac1198fe6eabd9f975928866defa1272d7d91a005f8ca6d7e303172d7d2ec96",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md",
+      "sha256": "a9e73a4659ba8d7b4572344e9c0f405777d7ba5df2eb38f394749c2f4302dadc",
+      "historical_sha256": "a9e73a4659ba8d7b4572344e9c0f405777d7ba5df2eb38f394749c2f4302dadc",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/pulse.md",
+      "sha256": "8051040f3d2e4d23c349c489921ba6f392f10c62218164d0506247b04a2a9d38",
+      "historical_sha256": "8051040f3d2e4d23c349c489921ba6f392f10c62218164d0506247b04a2a9d38",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/REGISTRY.md",
+      "sha256": "a6a0371e5f808f3b9d4be77d000f962eeb38922dddcbe7c05ab500d6f7ca9466",
+      "historical_sha256": "a6a0371e5f808f3b9d4be77d000f962eeb38922dddcbe7c05ab500d6f7ca9466",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/STATUS.md",
+      "sha256": "a5c7d23e66b2252ad832b40f73caeae4f8f87044419d2680599d20993419109a",
+      "historical_sha256": "72ecf5673f0eb608c83922ef7db225fdc98fdf6d9829df11bb3180b55dee1d45",
+      "historical_comparison": "changed"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/preprint.runbook-status.mode-B.2026-10-21.md",
+      "sha256": "11ca75f306b0776ef727410d7219dde7e5e692b5d0a3029e93a7f7c9c5c3ba70",
+      "historical_sha256": "11ca75f306b0776ef727410d7219dde7e5e692b5d0a3029e93a7f7c9c5c3ba70",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-vist/raw/vist-01-principle-and-applications.md",
+      "sha256": "98c2c2fd4bea9a13f6051ee08a937933925681fde0721c636e732e47323df0c8",
+      "historical_sha256": "98c2c2fd4bea9a13f6051ee08a937933925681fde0721c636e732e47323df0c8",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/05_WAY_OF_THINKING.md",
+      "sha256": "460a71e76778f669e7d7d99a71bf808613de5351598124f09f8b1eb919380ddb",
+      "historical_sha256": "460a71e76778f669e7d7d99a71bf808613de5351598124f09f8b1eb919380ddb",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/brief-substrate-for-RUNBOOK.termpanum.2026-10-01.md",
+      "sha256": "1c3a4f42bd70849489cf01eb3c69c5816325595055ae4d2e5e52cf130155707c",
+      "historical_sha256": "1c3a4f42bd70849489cf01eb3c69c5816325595055ae4d2e5e52cf130155707c",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/design-chapters.for-cartan.2026-10-01.md",
+      "sha256": "2fbea2e58ee4597c0f1ed41be7c8126c3623cc0aa372947845e130259c38e69c",
+      "historical_sha256": "2fbea2e58ee4597c0f1ed41be7c8126c3623cc0aa372947845e130259c38e69c",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/note.stridularium.2026-10-01.md",
+      "sha256": "3dd6320aed842a9c2d249d4626a45c0acd59afd764972905a1d73174caa36c5d",
+      "historical_sha256": "3dd6320aed842a9c2d249d4626a45c0acd59afd764972905a1d73174caa36c5d",
+      "historical_comparison": "same"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/RUNBOOK.md",
+      "sha256": "7d1501842d93c781d9aefc7e3b4dc7663eca84350a482898bb19fdbcd0d501a1",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/STATUS.md",
+      "sha256": "5d8ee5eb020cb063c584ae0675f9f184397c59eb2c4cb4f8ef62c2972b3da2b8",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/brief.rosters-and-team.2026-10-22.md",
+      "sha256": "da070d91e63a6b3cb906d0573b0a3c9cf7f09e810e9e97e2a05c45c3e4ae9ec8",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/handoff.composer-experience.cartan.2026-10-22.md",
+      "sha256": "0acc9e1dce76d9b024c229adcb9419552b7c8351bbefd3f84ec73e21cc43589f",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+      "sha256": "6ee10aa1c40a853cc6c1e6ff5dfa191999f38314058064b5543ac1392fe2c78f",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md",
+      "sha256": "94d0b0b1e01dfc7cead09db6b27db7b65ff9cd28c8ef8e31f39ca744e85783d8",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/DESIGN.md",
+      "sha256": "ff007a51b55a5e0156e4479c5b697eb65c54c37b9dc07a90f662eccc174a6f0f",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/HYPOTHESES.md",
+      "sha256": "e8488edaad2ed9cd61804cbd6b03f848afd78099fa509525f677a8e016837f58",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/raw/terminal-onion.study.2026-09-17.md",
+      "sha256": "c53087b6e2f35a8df51fb92ac6bc206fd43bed9319c104d2e8773fb1331c6c3e",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/raw/build-plan.unilarvatrix.2026-09-18.md",
+      "sha256": "f9e2d95d148672a0beda216c3c087150346210e93ad3a047d7ff75c27d8910e8",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/seam.cross-vendor-relay.2026-08-05/raw/decisions.relay.2026-09-30.md",
+      "sha256": "51f05b2bc5e13c2ff5e87b4516db86e945ef430dfe6f617cf11e25cb7c35519f",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/extraction.driller-onion.2026-06/DESIGN.md",
+      "sha256": "816e19edb907bd7a3aeba61bbb092d801078db854ea00283a1fd49aee4b6d64a",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termpanum-00-brief/raw/brief-substrate-for-RUNBOOK.termpanum.2026-10-01.md",
+      "sha256": "1c3a4f42bd70849489cf01eb3c69c5816325595055ae4d2e5e52cf130155707c",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/.codex/agents/astrobley.toml",
+      "sha256": "c49f7d32465d324ac478668b1ba63a88df2f383fafb9b639cd88c37ce4474467",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/ia-sync/codex/agents/astrobley.toml",
+      "sha256": "c49f7d32465d324ac478668b1ba63a88df2f383fafb9b639cd88c37ce4474467",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/.codex/agents/researcher.toml",
+      "sha256": "b25ca97fd1c7484635277fe96e4b57f7dc4218a63e767be678f981eb62c16dd8",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/ia-sync/codex/agents/researcher.toml",
+      "sha256": "b25ca97fd1c7484635277fe96e4b57f7dc4218a63e767be678f981eb62c16dd8",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/.codex/agents/verifier.toml",
+      "sha256": "7d3294ad8c6d0f572170f22229248767f197a7ce084e7ec90f1729cd1e3b0d30",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/ia-sync/codex/agents/verifier.toml",
+      "sha256": "7d3294ad8c6d0f572170f22229248767f197a7ce084e7ec90f1729cd1e3b0d30",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/.codex/agents/houston.toml",
+      "sha256": "4d965e4212f1ddbc9d653294d3591300a8aa3762a33adf372598384b7d949b7e",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/ia-sync/codex/agents/houston.toml",
+      "sha256": "4d965e4212f1ddbc9d653294d3591300a8aa3762a33adf372598384b7d949b7e",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/.codex/agents/oraculum.toml",
+      "sha256": "1d47d1c497718e374b367631636c723523f6f8f8e55ecc24406b2f890aa8f36b",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    },
+    {
+      "path": "/home/hruzam/ia-sync/codex/agents/oraculum.toml",
+      "sha256": "1d47d1c497718e374b367631636c723523f6f8f8e55ecc24406b2f890aa8f36b",
+      "historical_sha256": null,
+      "historical_comparison": "not in historical manifest"
+    }
+  ],
+  "roles": {
+    "astrobley": {
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "source_deployed_equal": true,
+      "tool_offered": true,
+      "runtime_launch": "not attempted at snapshot; actual spawn is separate evidence"
+    },
+    "researcher": {
+      "model": "gpt-5.6-terra",
+      "effort": "high",
+      "source_deployed_equal": true,
+      "tool_offered": true,
+      "runtime_launch": "not attempted at snapshot; actual spawn is separate evidence"
+    },
+    "verifier": {
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "source_deployed_equal": true,
+      "tool_offered": true,
+      "runtime_launch": "not attempted at snapshot; actual spawn is separate evidence"
+    },
+    "houston": {
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "source_deployed_equal": true,
+      "tool_offered": true,
+      "runtime_launch": "not attempted at snapshot; actual spawn is separate evidence"
+    },
+    "oraculum": {
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "source_deployed_equal": true,
+      "tool_offered": true,
+      "runtime_launch": "not attempted at snapshot; actual spawn is separate evidence"
+    }
+  },
+  "prerequisites": {
+    "relay-00-research": "No matching bed/verdict located by scoped .dev/session + meshup/docs/wrapper search; registry says NOT opened. L14 D4 remains for dependent packages.",
+    "old_gate": "Both brief copies retain FALSIFICATION GATE; registry + lab DESIGN mark struck; extraction DESIGN attributes rejection to Majkee 2026-10-01. Body author must reconcile without reviving it.",
+    "pulse": "X2 row absent; launcher forbids pulse writes; report routing omission, leave to authorized project router owner.",
+    "toolbox_termpanum_exists": false,
+    "transport": "No tunnel authorized or used; external X3 review ID not adopted.",
+    "composer_handoff": "Read before P1; attributed practitioner evidence only, not acceptance or PTY proof."
+  },
+  "ownership": "Cartan owns X2 STATUS, navigation/test records and bus POINT/VERDICT; Astrobley will own named plan bodies. Foreign dirty files preserved."
+}

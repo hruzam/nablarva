@@ -1,0 +1,42 @@
+{
+  "kind": "implementation-checks-not-independent-qualification",
+  "host": "hruzam-120922",
+  "date": "2026-10-30",
+  "runtime": "/tmp/pc-trial-j6j1id09",
+  "binary": "/tmp/phone-console-ttyd-1.7.7/ttyd",
+  "version": "1.7.7-40e79c7",
+  "binary_sha256": "8a217c968aba172e0dbf3f34447218dc015bc4d5e59bf51db2f2cd12b7be4f55",
+  "source_archive_sha256": "039dd995229377caee919898b7bd54484accec3bba49c118e2d5cd6ec51e3650",
+  "gateway_script_sha256": "64eebcce0128fbdf7db98e093273884eeb861dcc6dac07c780ec7109111d214e",
+  "probe_script_sha256": "17ddf1269c18471cd4f1678116d87467c10ee18f7c9593fc69d1a3bc657b7509",
+  "checks": [
+    {"command": "python3 -m py_compile .dev/session/phone-console-01-browser/raw/trial/gateway.py .dev/session/phone-console-01-browser/raw/trial/probe.py", "exit": 0},
+    {"command": "python3 .dev/session/phone-console-01-browser/raw/trial/probe.py /tmp/pc-trial-j6j1id09", "sandbox": "socket permission denied before HTTP; rerun escalated", "exit_escalated": 0}
+  ],
+  "observed": {
+    "http / missing": 401,
+    "http / wrong": 401,
+    "http / valid": 200,
+    "http /token missing": 401,
+    "http /token wrong": 401,
+    "http /token valid": 200,
+    "ws missing auth": false,
+    "ws wrong auth": false,
+    "ws foreign origin": false,
+    "ws wrong port": false,
+    "ws missing origin": false,
+    "ws valid": true,
+    "ws different scheme limitation": true,
+    "paste without Enter": "no file created",
+    "explicit Enter Unicode": {"bytes": 29, "exact": true},
+    "reconnect": {"same_pane_pid": true, "pane_pid": "1366479"},
+    "independent selection": ["desktop:0", "phone:1"]
+  },
+  "limitations": [
+    "No physical Android keyboard, IME, scroll, clipboard, screen-off, native CLI permission or usability PASS claimed.",
+    "No uncertain-input delivery acknowledgement/replay guarantee supplied by ttyd.",
+    "Origin scheme is not checked by ttyd 1.7.7 -O; exact HTTPS Origin must be enforced at the eventual trusted boundary.",
+    "No install or rollback execution qualification; parent owns the launched runtime and phone reverse mapping.",
+    "Credentials and token contents intentionally excluded. Keep runtime state.json private and outside git."
+  ]
+}

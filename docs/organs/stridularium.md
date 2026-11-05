@@ -7,7 +7,9 @@ registry: meshup/stridularium.mobile-console.2026-09-29/DESIGN.md (fixed entry; 
 created: 2026-10-02 · oraculum (journal 2026-10-01 §1 item 7 · TASK 2) · skeleton only, by majkee's lean
 ---
 
-# stridularium — design wrapper
+# Phone organ — design wrapper
+
+The cultural name “stridularium” is retired under L24; this existing path remains.
 
 ## What it is (one paragraph)
 
@@ -22,9 +24,10 @@ and receives output — nothing more by design; never Android functions outside 
 
 ## Names
 
-stridularium (L13, the organ) · k0k0nV3R / coconvergence (working name, Cartan's seat, 2026-09-29) — culture
-layer. Disk stays ASCII: slug `stridularium.mobile-console.2026-09-29`; code home proposed
-`nablarva/stridularium/{android,host}` — final home is `nablarva-03-app-architecture`'s to fix.
+Historical names: stridularium (L13; cultural name retired by L24) and k0k0nV3R /
+coconvergence (Cartan's working name, 2026-09-29). Existing registry paths remain.
+The earlier `stridularium/{android,host}` placement was a native-app proposal, not
+an implemented tree; the closed session 03 does not own the current browser pilot.
 
 ## Canon it rides on
 
@@ -45,7 +48,25 @@ Live list: `meshup/stridularium.mobile-console.2026-09-29/HYPOTHESES.md`. The on
 two origins: Cartan's *native terminal on the phone* vs Symmetry's *host renders text, phone shows cards, no
 terminal emulator*. Not resolved here.
 
-## To be filled in `stridularium-00-design` (majkee)
+## Experimental browser console
 
-shape of the first slice · console-first vs notifier-first vs buffer-first · engine contract (host helper
-over SSH vs service behind Tailscale Serve) · persistence contract · which device is the measure.
+An experimental browser-console core exists at [apps/session-console](../../apps/session-console/README.md).
+It supports disposable fixtures and an explicitly configured live ovitmugen
+adapter through the reviewed owner interface. The office loopback/USB pilot can
+select and attach existing single-pane sessions; full physical qualification remains
+open. Native Android remains a retained later option. The historical
+`stridularium-00-design` plan is not the current implementation route.
+
+Sessions stay on the workstation. Paste and Enter are explicit separate actions;
+uncertain input is never replayed, and detach preserves underlying process lifetime.
+Unsent drafts are browser-local; the temporary tray expires, while saved prompts
+and files use a dedicated workstation vault with explicit revisions and verified
+uploads. Gallery batches and camera capture use browser file selection. Verified
+uploads may be followed by manual Gallery cleanup; the browser cannot erase phone
+originals. Camera behaviour and the full pilot still require qualification.
+
+Build/run instructions live in the component README; its [console contract](../../apps/session-console/contracts/console.md)
+[live amendment](../../apps/session-console/contracts/live.md) and
+[storage contract](../../apps/session-console/contracts/storage.md) own the exact
+interfaces. This is a loopback/USB qualification candidate, not an installed
+tailnet HTTPS service or a room-delivery implementation.

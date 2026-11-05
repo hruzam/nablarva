@@ -1,0 +1,7 @@
+{"case":"healthy","coverage":"complete_declared_interval","bytes":"exact","frames":"0..N-1_once_in_order","semantic_completion":"unknown","acceptance":"unknown","turn_end":"unknown"}
+{"case":"false_completion","coverage":"complete_declared_interval","quiet":"5s_independently_timed","alive":"direct_child_proof","semantic_completion":"unknown","acceptance":"unknown","turn_end":"unknown","exit":"direct_wait_only_after_quiet"}
+{"case":"failure","coverage":"incomplete_or_gap_or_error_or_measured_narrowed","clean_success":false,"semantic_completion":"unknown"}
+{"case":"late_attach","coverage":"prefix_absent","semantic_completion":"unknown"}
+{"case":"reconnect","coverage":"discontinuous_until_rebind","semantic_completion":"unknown"}
+{"case":"identity_reuse","incarnation":"new_or_unknown","inherited_freshness":false,"semantic_completion":"unknown"}
+{"case":"invalid_bundle","result":"reject_nonzero_with_reason","semantic_completion":"unknown"}

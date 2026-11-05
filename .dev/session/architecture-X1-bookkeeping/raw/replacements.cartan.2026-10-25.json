@@ -1,0 +1,290 @@
+[
+  {
+    "id": "M3",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 3,
+    "end": 3,
+    "old": "`checked: 2026-10-22` · `state: DRAFT r7 for majkee GO — not promoted; promotion target docs/ARCHITECTURE.md (L16.9)`\n",
+    "new": "`checked: 2026-10-25` · `state: r8 bookkeeping candidate · promoted r7 at f20dda5 · 2026-10-25 · awaiting majkee GO`\n",
+    "source": "M3; git show f20dda5:docs/ARCHITECTURE.md equals baseline; clock 2026-10-25 20:15:42 CET"
+  },
+  {
+    "id": "C1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 92,
+    "end": 104,
+    "old": "5. **Clients are independent; shared mechanisms sit at a narrow edge.** locked: L17 — composition\n   and ovitmugen are independently useful clients. Concrete shared-layer ownership/home/API remains\n   open, and no common framework or transport is authorized by the Phase 0 build. Termbrana must\n   work with nabLarva absent (said: toolbox/termbrana/README.md §Product direction).\n   **Direction (said: majkee R9-1 N1):** \"I will take in advance nablarva as body with\n   architecture - bricks can share process|api|cli|subscription layers and call generic methods\";\n   \"when particular tool is needed, than is no reason wake whole nablarva animal\"; \"UI should be\n   coherent 'framework' not only group of worse findable bashes (-> aliases) and locked tmux-pane\n   cages\". On L17's phrase: \"No common framework - I meaned to use little original angle of sight:\n   floating yes, chaotic not\" (said: majkee R9-1 A). **The tension is named and left unresolved\n   here.** The direction allows shared process/API/CLI/subscription layers and a coherent UI\n   framework. L17 places shared mechanisms at a narrow integration boundary. P5 in the lock\n   proposals offers a reading (P5-a) or an amendment (P5-b). L17 holds unchanged until a GO names one of them.\n",
+    "new": "5. **One body; independently useful clients.** Composition and ovitmugen remain independently\n   useful clients (locked: L17). See flag L21, adopted P5-b 2026-10-23: bricks may share\n   process/API/CLI/subscription layers and generic methods, with a coherent UI framework —\n   floating, not chaotic. The Phase 0 build authorizes no shared-layer, framework or transport\n   implementation; designing them is architectural work, and implementation, activation,\n   delivery or transport adoption needs its own separate release (locked: L21).\n   Termbrana must work with nabLarva absent (said: toolbox/termbrana/README.md §Product direction).\n",
+    "source": "flag L17 retained clause; L21 exact two replacement clauses"
+  },
+  {
+    "id": "C1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 150,
+    "end": 154,
+    "old": "- VIST is a shared observation principle and an intended protocol: conceptual boundaries come\n  first, then a concrete contract is developed and qualified (said: majkee Q3).\n- VIST names *observations*. Controller decisions and actuator actions stay separate components\n  (said: majkee Q3; VIST brief §Where VIST sits).\n- Antensor is an implementation candidate (said: majkee Q3). Its event envelope is proposed.\n",
+    "new": "- VIST is a shared observation principle and an intended protocol: conceptual boundaries come\n  first, then a concrete contract is developed and qualified (locked: L20).\n- VIST names *observations*. Controller decisions and actuator actions stay separate components\n  with separate authority (locked: L20).\n- Antensor is an implementation candidate; the event envelope is proposed, not adopted (locked: L20).\n",
+    "source": "flag L20"
+  },
+  {
+    "id": "C1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 159,
+    "end": 160,
+    "old": "- The overlaps with termpanum (observe) and stridulatrix (deliver) stay visible here; no ownership\n  is assigned (said: majkee Q3).\n",
+    "new": "- The overlaps with termpanum (observe) and stridulatrix (deliver) stay visible and unassigned\n  (locked: L20).\n",
+    "source": "flag L20"
+  },
+  {
+    "id": "C1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 236,
+    "end": 240,
+    "old": "- `inferred: houston`: there are two axes, run/use independence (L17) and build/install coherence\n  (Q5), and both can hold. Whether build coherence implies any shared runtime mechanism is open. If\n  it does, L17's narrow-edge rule applies.\n- Majkee's later one-body direction (shared process/API/CLI/subscription layers, a coherent UI\n  framework) and its tension with L17 are in §2 item 5 (said: majkee R9-1 N1; proposal P5).\n",
+    "new": "- `inferred: houston`: there are two axes, run/use independence (L17) and build/install coherence\n  (Q5), and both can hold. Whether build coherence implies any shared runtime mechanism is open.\n  The shared-layer direction and its separate implementation release are now governed by\n  flag L21 (adopted P5-b, 2026-10-23); see §2 item 5.\n",
+    "source": "flag L21; existing inference retained with stale rule removed"
+  },
+  {
+    "id": "C1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 343,
+    "end": 343,
+    "old": "One line per organ (said: majkee G2 a). The home rule (said: majkee, gavel deck STEP 4):\n",
+    "new": "One line per organ (said: majkee G2 a). The home rule (locked: L18):\n",
+    "source": "flag L18 enumerates next four bullets and folder-growth explanation"
+  },
+  {
+    "id": "C1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 377,
+    "end": 380,
+    "old": "- **Where decisions live** (said: majkee, gavel deck STEP 5): locks in\n  [flag.md](../.dev/session/flag.md); product-technical rationale in component ledgers, each entry\n  citing its authorizing flag line **or session brief** (locked: L11 pattern, e.g.\n  `../toolbox/termbrana/DECISIONS.md`). No root ADR series is opened.\n",
+    "new": "- **Where decisions live** (locked: L19): locks in\n  [flag.md](../.dev/session/flag.md); product-technical rationale in component ledgers, each entry\n  citing its authorizing flag line **or session brief** (L11 pattern, e.g.\n  `../toolbox/termbrana/DECISIONS.md`). No root ADR series is opened.\n",
+    "source": "flag L19"
+  },
+  {
+    "id": "C1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 439,
+    "end": 439,
+    "old": "| X5 | one `nabla <pipe> <verb>` router | L17 independent clients · majkee R9-1 N1 direction and proposal P5 (§2 item 5) |\n",
+    "new": "| X5 | one `nabla <pipe> <verb>` router | L17 independent clients · flag L21 (adopted P5-b, 2026-10-23); a concrete router remains open (§2 item 5) |\n",
+    "source": "flag L21 does not select router"
+  },
+  {
+    "id": "C1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 458,
+    "end": 458,
+    "old": "- majkee's one-body direction against L17's narrow edge (R9-1 N1; proposal P5)\n",
+    "new": "- concrete shared-layer design under L21 (P5-b adopted 2026-10-23; §2 item 5)\n",
+    "source": "flag L21"
+  },
+  {
+    "id": "C4",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 381,
+    "end": 382,
+    "old": "- **The root stub** `decisions/README.md` still promises that gaveled items land there, which\n  contradicts the line above. Its correction versus retirement is `unknown:` and not decided here.\n",
+    "new": "- **The stub under docs/** `decisions/README.md` still promises that gaveled items land there,\n  which contradicts the line above. Its correction versus retirement is `unknown:` and not decided here.\n",
+    "source": "actual docs/decisions/README.md; L19 leaves disposition open"
+  },
+  {
+    "id": "O1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 366,
+    "end": 366,
+    "old": "| **instarmux** | `unknown:` organ or placeholder (PROJECT-DESIGN §3.3 empty) | `unknown:` |\n",
+    "new": "| **instarmux** | the skin — UI only if zsh + tmux + the simplified way are not enough; Slint a candidate under it (said: majkee, 2026-10-24, X0 organs §7; deck X0-6) | `unknown:` |\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.organs.2026-10-24.md §7–8; nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-6"
+  },
+  {
+    "id": "O2",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 367,
+    "end": 367,
+    "old": "| **reposoma (tool)** | `unknown:` organ or placeholder (PROJECT-DESIGN §3.4 empty) | `unknown:` |\n",
+    "new": "",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.organs.2026-10-24.md §7–8"
+  },
+  {
+    "id": "O2",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 368,
+    "end": 368,
+    "old": "\n",
+    "new": "\nreposoma is an older RAG project; `~/reposoma/` is the pre-RAG common store, not an organ (said: majkee, 2026-10-24, X0 organs §8).\n\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.organs.2026-10-24.md §7–8"
+  },
+  {
+    "id": "O3",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 364,
+    "end": 364,
+    "old": "| **stridularium** | the phone app, the human's door (locked: L13) | body [`organs/stridularium.md`](organs/stridularium.md) · code home proposed `stridularium/{android,host}` (said: same) |\n",
+    "new": "| **stridularium** | the phone app, the human's door (locked: L13); cultural retirement requested (said: majkee, 2026-10-24, X0 organs §5–6); body and lock L13 unchanged; new name pending | body [`organs/stridularium.md`](organs/stridularium.md) · code home proposed `stridularium/{android,host}` (said: same) |\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.organs.2026-10-24.md §5–6; flag L13"
+  },
+  {
+    "id": "O3",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 463,
+    "end": 463,
+    "old": "- stridularium's name: \"if we will use **stridulatrix** as broker, stridularium as phone app needs new name\" (said: majkee R9-1 N4). L13 is a lock; this document renames nothing.\n",
+    "new": "- stridularium: cultural retirement requested (said: majkee, 2026-10-24, X0 organs §5–6); body and lock L13 unchanged; new name pending. This document renames nothing.\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.organs.2026-10-24.md §5–6"
+  },
+  {
+    "id": "O4",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 370,
+    "end": 372,
+    "old": "- **VIST** — observation principle and intended protocol (said: majkee Q3).\n- **Antensor** — implementation candidate.\n- **Nablarva Boost** — open reader concept.\n",
+    "new": "- **VIST** — observation principle and intended protocol (locked: L20); protocol name only,\n  not an organ (said: majkee, 2026-10-24, X0 organs §9).\n- **Antensor** — implementation candidate: translator of important termpanum outputs to the body\n  (said: majkee, 2026-10-24, X0 organs §9).\n- **Nablarva Boost** — open reader concept; working name, rename pending (Laravel Boost collision;\n  said: majkee, 2026-10-24, X0 organs §9).\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.organs.2026-10-24.md §9; flag L20"
+  },
+  {
+    "id": "S1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 138,
+    "end": 138,
+    "old": "| **deliver / write into a session** | `unknown:` — proposed: stridulatrix (said: PROJECT-DESIGN §3.7) | agents · humans | L3 S5 · L4 · L14 D1/D4/D7 · L17 | rejected mechanisms stay dead: send-keys injection, git-as-wire (locked: L4) | regulated adapter-owned PTY delivery (locked: L3 S5, unbuilt), after the relay research verdict (locked: L14 D4) | relay architecture, locked only after blind triangulation (locked: L14 D7) · doorbell mechanism, alternatives welcome (said: majkee R9-1 N3) · classifier · VIST actuator · human tmux/editor/pipe push qualification (4.3) |\n",
+    "new": "| **deliver / write into a session** | stridulatrix — working split (said: majkee, 2026-10-24, architecture-X0 deck X0-2) | agents · humans | L3 S5 · L4 · L14 D1/D4/D7 · L17 | rejected mechanisms stay dead: send-keys injection, git-as-wire (locked: L4) | regulated adapter-owned PTY delivery (locked: L3 S5, unbuilt), after the relay research verdict (locked: L14 D4) | relay architecture, locked only after blind triangulation (locked: L14 D7) · doorbell mechanism, alternatives welcome (said: majkee R9-1 N3) · classifier · VIST actuator · human tmux/editor/pipe push qualification (4.3) |\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-2"
+  },
+  {
+    "id": "S1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 165,
+    "end": 165,
+    "old": "**4.2 Compose.**\n",
+    "new": "**4.2 Compose.**\n- Working split (said: majkee, 2026-10-24, architecture-X0 deck X0-2): termbrana composes\n  and submits, ending at a packet file in the bus; stridulatrix sends. Termbrana never writes\n  into a session, and stridulatrix never composes. This is planned, not a delivery release.\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-2; organs §4–5"
+  },
+  {
+    "id": "S1",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 189,
+    "end": 189,
+    "old": "**4.3 Deliver.**\n",
+    "new": "**4.3 Deliver.**\n- Working split (said: majkee, 2026-10-24, architecture-X0 deck X0-2): stridulatrix owns sending,\n  the room journal, cursors, adapters, receipts and the process/API boundary; the traffic view\n  is a journal projection. L3 supplies the single-writer journal and adapter constraints.\n  Stridulatrix requests a pane; ovitmugen performs the lifetime action under L17. These planned\n  responsibilities release no delivery or spawning mechanism.\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-2; organs §4–5; L3/L17 constraints"
+  },
+  {
+    "id": "S2",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 136,
+    "end": 136,
+    "old": "| **observe** | `unknown:` — termpanum is the observation **lab** by name (locked: L13, name only) | VIST candidates · views · humans | L13 · L14 D1 · L17 · said: majkee Q3 | read-only stance: never types or injects (said: PROJECT-DESIGN §3.6) | termpanum build plan, documentary first (said: X2 plan, uncommitted) · VIST contract | producer topology (said: cartan-x2 X2-1, \"unspecified\") · VIST ↔ termpanum overlap (4.1) |\n",
+    "new": "| **observe** | seam owner `unknown:`; shared-substrate component has interim steward X5 head (§4.1); termpanum is the observation **lab** by name (locked: L13, name only) | VIST candidates · views · humans | L13 · L14 D1 · L17 · L20 · said: majkee, 2026-10-24, architecture-X0 deck X0-3 | read-only stance: never types or injects (said: PROJECT-DESIGN §3.6) | termpanum build plan, documentary first (said: X2 plan, uncommitted) · VIST contract · shared-substrate component (§4.1) | producer topology (said: cartan-x2 X2-1, \"unspecified\") · VIST ↔ termpanum overlap (4.1) |\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-3; consult constraints"
+  },
+  {
+    "id": "S2",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 163,
+    "end": 163,
+    "old": "- Organ-local records are allowed without animal-level compatibility (said: cartan-x2 X2-2).\n",
+    "new": "- Organ-local records are allowed without animal-level compatibility (said: cartan-x2 X2-2).\n- The address registry and shared observation record form a planned shared-substrate component,\n  independent of any organ's liveness; lab records remain separate. Its interim steward is the\n  X5 head (U-steward); the permanent owner is open (said: majkee, 2026-10-24, architecture-X0\n  deck X0-3). It is not owned by ovitmugen, termpanum or stridulatrix.\n- Five constraints accompany that design (`inferred: houston`, consult 2026-10-24):\n  1. Each file has one serialized writing process; split per instance or serialize the writes.\n  2. Admit the cross-organ owner gap: X5's steward is interim; shared-layer implementation needs\n     its own release under L21 (2), and L20's overlaps stay unassigned.\n  3. Timestamp merging is a reader-side stage-1 view, not truth or total order; no envelope is\n     adopted, docket 8 stays open, and the rule does not extend across hosts.\n  4. The observation record never becomes room truth or delivery authority; a room fact enters\n     through the journal's single writer. No reader acts on it to deliver, close a pane or admit.\n  5. CLI hooks are optional vendor-feature producers writing their own observation files; hook\n     → bus stays parked. Building or running a producer needs a separate release.\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-3; nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/consult.d1-observation-record.houston.2026-10-24.md five constraints"
+  },
+  {
+    "id": "S2",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 374,
+    "end": 374,
+    "old": "\n",
+    "new": "\nPlanned shared-substrate component: address registry + shared observation record (§4.1), own thin\nfolder per L18; disk name after the X5 P1 duplicate/cross-interference sweep. Interim steward:\nX5 head (U-steward), permanent owner open (said: majkee, 2026-10-24, architecture-X0 deck X0-3).\n\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-3; flag L18; RUNBOOK S2"
+  },
+  {
+    "id": "S2",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 457,
+    "end": 457,
+    "old": "- the shared layer's owner/home/API (L17)\n",
+    "new": "- the shared layer's permanent owner and API; interim steward = X5 head (U-steward, §4.1), config-resolved home in §4.8\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-3/4; existing open item narrowed"
+  },
+  {
+    "id": "S3",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 145,
+    "end": 145,
+    "old": "| **configuration · roles** | `unknown:` | the operator · projects · agents | said: majkee R9-1 N2 (direction) | — | a registry/config/settings layer (routes, project-local settings, key bindings) and a manageable app with admin/user/super-admin + agentive layer (said: majkee R9-1 N2) | design, role model, schema, home and owner (4.8) |\n",
+    "new": "| **configuration · roles** | `unknown:` | the operator · projects · agents | said: majkee R9-1 N2; 2026-10-24, architecture-X0 deck X0-4 | — | a registry/config/settings layer (routes, project-local settings, key bindings) and a manageable app with admin/user/super-admin + agentive layer (said: majkee R9-1 N2); substrate homes and config rule (§4.8) | design, role model, schema and owner (4.8) |\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-4"
+  },
+  {
+    "id": "S3",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 247,
+    "end": 248,
+    "old": "- This is recorded as direction only. This document chooses no role model, configuration schema,\n  home or owner.\n",
+    "new": "- Substrate home (said: majkee, 2026-10-24, architecture-X0 deck X0-4; X0 organs §1):\n  `<project>/.nablarva/` for project-scoped state (address registry, observation-record segments,\n  bed-local settings), plus `~/.nablarva/` for machine defaults. Layout and config rule travel\n  together: no path in a script; resolve paths from nabLarva settings.\n- The configuration mechanism, role model, schema and owner remain open. This home direction\n  neither chooses the room store/topology nor releases implementation.\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-4; organs §1"
+  },
+  {
+    "id": "S3",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 445,
+    "end": 445,
+    "old": "| X11 | substrate at XDG paths | L3 S8 · O3 · docket 5 · said: majkee R9-1 N10 lean: a CLI tree `~/.nablarva` OR `<project>/.nablarva`; both open |\n",
+    "new": "| X11 | substrate at XDG paths | superseded working direction: project state `<project>/.nablarva/` + machine defaults `~/.nablarva/`, via settings (said: majkee, 2026-10-24, architecture-X0 deck X0-4; §4.8); L3 S8, O3 and docket 5 remain |\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-4"
+  },
+  {
+    "id": "S3",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 462,
+    "end": 462,
+    "old": "- the per-project process vault home, `~/.nablarva` or `<project>/.nablarva` (said: majkee R9-1 N10, lean; both open)\n",
+    "new": "- the configuration mechanism for the selected substrate homes (§4.8; said: majkee, 2026-10-24, architecture-X0 deck X0-4)\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md X0-4"
+  },
+  {
+    "id": "P1",
+    "file": "PROJECT-DESIGN.md",
+    "start": 237,
+    "end": 237,
+    "old": "## 3.4. reposoma *(tool, not `~/reposoma` - this is substrate)*\n",
+    "new": "3.4. reposoma — removed from the organ list; see [ARCHITECTURE §7](docs/ARCHITECTURE.md#7-organs-and-their-homes).\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.organs.2026-10-24.md §7–8; tombstone keeps section numbering without organ heading"
+  },
+  {
+    "id": "P2",
+    "file": "PROJECT-DESIGN.md",
+    "start": 282,
+    "end": 282,
+    "old": "## 3.8. stridularium *(phone app)*\n",
+    "new": "## 3.8. stridularium *(phone app — cultural retirement requested by majkee 2026-10-24; new name pending)*\n",
+    "source": "nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.organs.2026-10-24.md §5–6"
+  },
+  {
+    "id": "C2",
+    "file": "toolbox/termbrana/README.md",
+    "start": 165,
+    "end": 168,
+    "old": "**Layering B — L17:** Termbrana composition and ovitmugen are independently useful\nclients. Any common mechanism is prospective and belongs at a narrow integration\nedge with demonstrated consumers, not a framework built by this phase. Composition\nworks without ovitmugen, a RUNBOOK bed, tmux, editor or interactive shell. Ovitmugen\n",
+    "new": "**Layering B — L17, amended by L21:** Termbrana composition and ovitmugen are independently useful\nclients. See [flag L21](../../.dev/session/flag.md), adopted P5-b 2026-10-23, for shared layers\nand a coherent UI framework; implementing, activating, delivering through or adopting a transport\nfor them needs its own separate release. Composition\nworks without ovitmugen, a RUNBOOK bed, tmux, editor or interactive shell. Ovitmugen\n",
+    "source": "flag L21 replaces narrow edge/framework phrases; retained L17 independent clients"
+  },
+  {
+    "id": "M4",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 430,
+    "end": 431,
+    "old": "is said: nablarva.v0 against the cited locks. Detail is in the X3 arc, `raw/arc.r2.md` §3 (pin owed at\npromotion).\n",
+    "new": "is said: nablarva.v0 against the cited locks. Detail is in the X3 arc,\n`nablarva@519a211:.dev/session/nablarva-X3-architecture-sitting/raw/arc.r2.md` §3.\n",
+    "source": "baseline payable blob checks"
+  },
+  {
+    "id": "M4",
+    "file": "docs/ARCHITECTURE.md",
+    "start": 473,
+    "end": 481,
+    "old": "**Pins owed before promotion.** These were uncommitted at drafting and are cited by sha256 or path only:\n- Majkee's arc answers: `.dev/session/nablarva-X3-architecture-sitting/raw/answers.majkee.pick-and-q1-q8.2026-10-22.md` (Message A = partial pick; Message B = shape B + Q1–Q8). It is absent from `78059da`.\n- Majkee's R9-1 answers: `.dev/session/nablarva-X3-architecture-sitting/raw/answers.majkee.r9-1-notes.2026-10-22.md` and `answers.majkee.r9-1-abc.2026-10-22.md`.\n- nablarva.v0 (file Nabla-Tmux-Architecture-Draft-v0): .md `00251ebf6dc1d4b4b7f6b84fbee016c81b08eb0037ec9458a85b86cf704b66a0`; zip `a7d28babe12277292f204fe6801d58b04087a3d3715068e1254b8683415e0ae7`.\n- X2 `termpanum.build-plan.md`: `4e039f9f787c3224e8bb8c63342d3cdf68027339dd51ace682db89e430c83145`.\n- X2 `disposition.x3-vectors.cartan.2026-10-22.md`: `efe7573d…68f7b`.\n- X3 `arc.r2.md` and `arc.pick.2026-10-22.md`: Houston's own raw drafts.\n\nA promoted document must not point into a prunable session folder without these pins.\n",
+    "new": "**Pins paid in r8.** These X3 sources, uncommitted at r7 drafting, are verified at `519a211`:\n- `nablarva@519a211:.dev/session/nablarva-X3-architecture-sitting/raw/answers.majkee.pick-and-q1-q8.2026-10-22.md` · sha256 `46ad7c56ea703e49738996954b8602f8f4f3079cc0a3319be84766aab7ad216d`.\n- `nablarva@519a211:.dev/session/nablarva-X3-architecture-sitting/raw/answers.majkee.r9-1-notes.2026-10-22.md` · sha256 `7ed5dd59be4c554a613ea4d5d29ecbe5c212da62390b7a0ae06e175e51902994`.\n- `nablarva@519a211:.dev/session/nablarva-X3-architecture-sitting/raw/answers.majkee.r9-1-abc.2026-10-22.md` · sha256 `2032f27e26b1730a3b0607ee6c485942a2281e866d1d42661130e86d2bb3336e`.\n- `nablarva@519a211:.dev/session/nablarva-X3-architecture-sitting/raw/arc.r2.md` · sha256 `7ca22a3b5cc20239c66339acd386bba86ecb113c30746bca56356cd165d81eb5`.\n- `nablarva@519a211:.dev/session/nablarva-X3-architecture-sitting/raw/arc.pick.2026-10-22.md` · sha256 `da40442fde7bb2726ced75f3b029655bf70ef2352919c2c0139ebb0d70dd2b22`.\n- `nablarva@519a211:.dev/session/nablarva-X3-architecture-sitting/raw-additional-my-appology/Nabla-Tmux-Architecture-Draft-v0.md` · sha256 `00251ebf6dc1d4b4b7f6b84fbee016c81b08eb0037ec9458a85b86cf704b66a0`.\n- `nablarva@519a211:.dev/session/nablarva-X3-architecture-sitting/raw-additional-my-appology/Nabla-Tmux-Architecture-Draft-v0.zip` · sha256 `a7d28babe12277292f204fe6801d58b04087a3d3715068e1254b8683415e0ae7`.\n\n**X0 ruling sources.** Verified at `1ceceee`; X0-n means the deck block and X0 organs §n the organ walk:\n- `nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.deck.2026-10-24.md`.\n- `nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/consult.d1-observation-record.houston.2026-10-24.md`.\n- `nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/answers.majkee.organs.2026-10-24.md`.\n- `nablarva@1ceceee:.dev/session/architecture-X0-spine-and-skin/raw/decision-package.r2.oraculum.2026-10-24.md`.\n\n**Pins owed — X2 head.** These remain path/hash citations pending that head's preservation commit:\n- X2 `termpanum.build-plan.md`: `4e039f9f787c3224e8bb8c63342d3cdf68027339dd51ace682db89e430c83145`.\n- X2 `disposition.x3-vectors.cartan.2026-10-22.md`: `efe7573d…68f7b`.\n\nThe two X2 pins remain an explicit preservation debt; no pin is inferred from file presence.\n",
+    "source": "seven payable blobs checked with git cat-file -e/show; four X0 copies byte-compared; X2 debt retained"
+  }
+]

@@ -1,41 +1,17 @@
 ---
-updated: 2026-10-24 13:10 CEST
-writer: flight-x1 · (authored initial by oraculum(arch-X0) under /runbook; the declared status_owner takes the pen at wake)
+updated: 2026-10-25 20:48:18 CET
+writer: cartan-x1 · codex · sole execution STATUS pen
 host: office (hruzam-120922)
-worktree: >-
-  /home/hruzam/unikuklatrix/nablarva · core · HEAD fe64b09 · dirty: .dev/observations/README.md,
-  .dev/session/pulse.md (arch-X0 rows), untracked Cartan material under nablarva-X2-*,
-  termpanum-X0-*, nablarva-X4-vist/raw, .dev/_back-log/, and the untracked beds
-  architecture-X0-spine-and-skin, architecture-X1-bookkeeping, nablarva-X5-spine-slice.
-  Ask majkee whose before staging anything.
-gate: >-
-  Majkee records GO on one reviewed diff — docs/ARCHITECTURE.md r8 (C1, M3, M4 payable pins, C4,
-  §7 organ table, §9 stale lines, the X0 decisions as `said: majkee`), PROJECT-DESIGN.md §3.4
-  removal + §3.8 one-cell touch, toolbox/termbrana/README.md C2 — every changed line mapped to one
-  item of the edit list, Houston `card: consult` returning fits or stretches with no break — and
-  commits it himself together with his one flag.md line retiring "stridularium" as a cultural name.
-checkpoint: >-
-  Bed authored (RUNBOOK.md + this STATUS) by oraculum(arch-X0) on majkee's word 2026-10-24 13:10
-  CEST ("X1+X5 authorized"). No seat has entered. No doc edited. Edit-list anchors are from
-  2026-10-24 greps and unverified against the bytes.
+worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD cb08d6f45ee86f0daa5fd41727efee827da483cd; four target files clean; X1 session preparation/evidence dirty; foreign .dev/observations/, X2, termpanum-X0 STATUS, X4 raw/, .dev/_back-log/ preserved (baseline inventory).
+gate: 'Majkee records GO on one reviewed diff — docs/ARCHITECTURE.md r8 (C1, M3, M4 payable pins, C4, §7 organ table, §9 stale lines, the X0 decisions as `said: majkee`), PROJECT-DESIGN.md §3.4 removal + §3.8 one-cell touch, toolbox/termbrana/README.md C2 — every changed line mapped to one item of the edit list, Houston `card: consult` returning fits or stretches with no break — and commits it himself together with his one flag.md line retiring "stridularium" as a cultural name.'
+checkpoint: 'GATE COMPLETE: Majkee GO and explicit agent flag/commit authority recorded in answers .3/.4/.5; Houston final2 fits. Commit cb08d6f45ee86f0daa5fd41727efee827da483cd contains exactly the three reviewed docs plus flag, all four blobs match final manifest. raw/verification.commit.cartan.2026-10-25.json. No push.'
 in_flight: none
-recovery_probe: >-
-  `git -C /home/hruzam/unikuklatrix/nablarva diff --stat -- docs/ARCHITECTURE.md PROJECT-DESIGN.md
-  toolbox/termbrana/README.md` → empty = nothing started; non-empty = delta's edit ran partially
-  or fully: compare hunks to the RUNBOOK edit list before continuing. `ls _bus/ raw/` → absent =
-  no POINT issued yet.
-holds: >-
-  flag.md is majkee's pen only · no commit/push by any seat but majkee · foreign dirty paths are
-  never absorbed, staged or reverted · no rename (L13) · no `locked:` tag past its lock text ·
-  `.hlm/` `.majkee/` never read (L22) · pulse.md row removed only at closure on majkee's word.
-next: >-
-  Majkee wakes @Flight (project-session mode, MANNED) with RUNBOOK prompt-0; Flight verifies the
-  edit-list anchors against current bytes and writes raw/anchors.<date>.md.
-expected: >-
-  raw/anchors.<date>.md exists with one verified (file, line, quoted anchor) per edit-list id, or
-  a named miss; STATUS rewritten by flight-x1 with in_flight/next advanced.
+recovery_probe: In /home/hruzam/unikuklatrix/nablarva inspect git show --name-only cb08d6f45ee86f0daa5fd41727efee827da483cd and compare git show cb08d6f45ee86f0daa5fd41727efee827da483cd:<path> SHA-256 values to raw/commit-manifest.r8.cartan.2026-10-25.json. raw/verification.commit.cartan.2026-10-25.json records all four matching blobs. Target working diffs and index are empty. Session closure/pulse removal have not occurred.
+holds: Gate complete; pulse row removal and session closure/prune still require Majkee word · no push/deploy · preserve foreign dirty paths and uncommitted session evidence · no vault reads.
+next: Majkee directs session closure when ready; pulse row removal and any preservation/prune remain a separate authorized step.
+expected: Explicit closure instruction before pulse removal or pruning; verified commit remains the gate evidence.
 ---
 
 # architecture-X1-bookkeeping — STATUS
 
-Sole doing-state for this bed's gate (flag L9′). Narrative lives in `raw/`; locks in `flag.md`.
+Sole doing-state for this gate (L9′).

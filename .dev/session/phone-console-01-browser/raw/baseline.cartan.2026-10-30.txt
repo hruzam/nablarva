@@ -1,0 +1,62 @@
+ M .dev/observations/README.md
+ M .dev/session/architecture-X1-bookkeeping/RUNBOOK.md
+ M .dev/session/architecture-X1-bookkeeping/STATUS.md
+ M .dev/session/nablarva-X2-builder-narative/RUNBOOK.md
+ M .dev/session/nablarva-X2-builder-narative/STATUS.md
+ M .dev/session/nablarva-X2-builder-narative/raw/brief.rosters-and-team.2026-10-22.md
+ M .dev/session/pulse.md
+ M .dev/session/termpanum-X0-source-contract/STATUS.md
+?? .dev/_back-log/
+?? .dev/observations/harvest.2026-10-23.agol.md
+?? .dev/observations/nablarva-X2-builder-narative.cartan.2026-10-23.md
+?? .dev/observations/termpanum-X0-source-contract.cartan.2026-10-23.md
+?? .dev/session/architecture-X1-bookkeeping/_bus/
+?? .dev/session/architecture-X1-bookkeeping/raw/anchors.2026-10-25.md
+?? .dev/session/architecture-X1-bookkeeping/raw/answers.majkee.x1.2026-10-25.1.md
+?? .dev/session/architecture-X1-bookkeeping/raw/answers.majkee.x1.2026-10-25.2.md
+?? .dev/session/architecture-X1-bookkeeping/raw/answers.majkee.x1.2026-10-25.3.md
+?? .dev/session/architecture-X1-bookkeeping/raw/answers.majkee.x1.2026-10-25.4.md
+?? .dev/session/architecture-X1-bookkeeping/raw/answers.majkee.x1.2026-10-25.5.md
+?? .dev/session/architecture-X1-bookkeeping/raw/baseline.cartan.2026-10-25.json
+?? .dev/session/architecture-X1-bookkeeping/raw/commit-manifest.r8.cartan.2026-10-25.json
+?? .dev/session/architecture-X1-bookkeeping/raw/consult.r8.final.houston.2026-10-25.md
+?? .dev/session/architecture-X1-bookkeeping/raw/consult.r8.final2.houston.2026-10-25.md
+?? .dev/session/architecture-X1-bookkeeping/raw/consult.r8.houston.2026-10-25.md
+?? .dev/session/architecture-X1-bookkeeping/raw/deck.majkee.x1.2026-10-25.md
+?? .dev/session/architecture-X1-bookkeeping/raw/diff.r8.2026-10-25.patch
+?? .dev/session/architecture-X1-bookkeeping/raw/diff.r8.final-with-flag.2026-10-25.patch
+?? .dev/session/architecture-X1-bookkeeping/raw/diff.r8.final.2026-10-25.patch
+?? .dev/session/architecture-X1-bookkeeping/raw/diff.r8.final2-with-flag.2026-10-25.patch
+?? .dev/session/architecture-X1-bookkeeping/raw/diff.r8.final2.2026-10-25.patch
+?? .dev/session/architecture-X1-bookkeeping/raw/disposition.final-consult.cartan.2026-10-25.md
+?? .dev/session/architecture-X1-bookkeeping/raw/expected.cartan.2026-10-25.md
+?? .dev/session/architecture-X1-bookkeeping/raw/finalization.cartan.2026-10-25.json
+?? .dev/session/architecture-X1-bookkeeping/raw/finalization.cycle04.cartan.2026-10-25.json
+?? .dev/session/architecture-X1-bookkeeping/raw/preparation.codex.2026-10-25.md
+?? .dev/session/architecture-X1-bookkeeping/raw/replacements.cartan.2026-10-25.json
+?? .dev/session/architecture-X1-bookkeeping/raw/verification.commit.cartan.2026-10-25.json
+?? .dev/session/architecture-X1-bookkeeping/raw/verification.r8.cartan.2026-10-25.json
+?? .dev/session/architecture-X1-bookkeeping/raw/verification.r8.final.cartan.2026-10-25.json
+?? .dev/session/architecture-X1-bookkeeping/raw/verification.r8.final2.cartan.2026-10-25.json
+?? .dev/session/nablarva-X2-builder-narative/_bus/
+?? .dev/session/nablarva-X2-builder-narative/raw/checks.cycle01.cartan.2026-10-22.json
+?? .dev/session/nablarva-X2-builder-narative/raw/checks.cycle03.cartan.2026-10-22.json
+?? .dev/session/nablarva-X2-builder-narative/raw/closure.manifest.cartan.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/consult.release-and-vist-boundary.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/decision.majkee.plan-go.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/disposition.x3-vectors.cartan.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/experience-transfer.cartan.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/handoff.termpanum-X0-source-contract.cartan.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/p0.entry.cartan.2026-10-22.json
+?? .dev/session/nablarva-X2-builder-narative/raw/p0.tracked-preservation.cartan.2026-10-22.json
+?? .dev/session/nablarva-X2-builder-narative/raw/question.release-and-vist-boundary.cartan.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/question.tmux-source-fidelity.cartan.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/research.tmux-source-fidelity.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/review.p5-handoff.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/review.termpanum-build-plan.2026-10-22.md
+?? .dev/session/nablarva-X2-builder-narative/raw/termpanum.baseline-and-research.md
+?? .dev/session/nablarva-X2-builder-narative/raw/termpanum.build-plan.md
+?? .dev/session/nablarva-X5-spine-slice/raw/handoff.entry.cartan.2026-10-25.md
+?? .dev/session/phone-console-01-browser/
+?? .dev/session/termpanum-X1-source-qualification/
+?? meshup/stridularium.mobile-console.2026-09-29/raw/test-schedule.oraculum.2026-10-30.md

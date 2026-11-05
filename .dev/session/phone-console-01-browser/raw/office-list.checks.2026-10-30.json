@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-30T22:46:21.867993+01:00",
+  "unitTests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "cwd": "apps/session-console",
+    "result": "PASS",
+    "tests": 17,
+    "durationSeconds": 1.446
+  },
+  "build": "npm run build PASS",
+  "syntax": "node --check web/app.js PASS",
+  "browser": "office-list.browser.2026-10-30.json",
+  "runtime": {
+    "pid": 1703875,
+    "execSession": 36201,
+    "port": 18790,
+    "basePaneIdentitiesPreserved": true
+  },
+  "ownerSourceUnchanged": true,
+  "independentReview": "PASS; verification.office-list.md",
+  "independentReviewCaveat": "First suite run had transient existing fixture-close409; focused and full17-test rerun pass. Physical Firefox touch witness pending."
+}

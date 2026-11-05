@@ -1,0 +1,139 @@
+{
+  "checked_at": "2026-10-22T06:53:38.097541+02:00",
+  "baseline_sha256": "09efca7d06043850798578d2c2c990663cb934c8f938ad5424413660f9e8f7b8",
+  "return_sha256": "8c0bbd5d6f7cc034e27b938e92d7bd162f88f95bc3f9b53eb2e95c953e834d2f",
+  "local_links_checked": 36,
+  "missing_links": [],
+  "source_identities": [
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md",
+      "expected": "a9e73a4659ba8d7b4572344e9c0f405777d7ba5df2eb38f394749c2f4302dadc",
+      "observed": "a9e73a4659ba8d7b4572344e9c0f405777d7ba5df2eb38f394749c2f4302dadc",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md",
+      "expected": "6ee10aa1c40a853cc6c1e6ff5dfa191999f38314058064b5543ac1392fe2c78f",
+      "observed": "6ee10aa1c40a853cc6c1e6ff5dfa191999f38314058064b5543ac1392fe2c78f",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/REGISTRY.md",
+      "expected": "a6a0371e5f808f3b9d4be77d000f962eeb38922dddcbe7c05ab500d6f7ca9466",
+      "observed": "a6a0371e5f808f3b9d4be77d000f962eeb38922dddcbe7c05ab500d6f7ca9466",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/DESIGN.md",
+      "expected": "ff007a51b55a5e0156e4479c5b697eb65c54c37b9dc07a90f662eccc174a6f0f",
+      "observed": "ff007a51b55a5e0156e4479c5b697eb65c54c37b9dc07a90f662eccc174a6f0f",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/HYPOTHESES.md",
+      "expected": "e8488edaad2ed9cd61804cbd6b03f848afd78099fa509525f677a8e016837f58",
+      "observed": "e8488edaad2ed9cd61804cbd6b03f848afd78099fa509525f677a8e016837f58",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/raw/terminal-onion.study.2026-09-17.md",
+      "expected": "c53087b6e2f35a8df51fb92ac6bc206fd43bed9319c104d2e8773fb1331c6c3e",
+      "observed": "c53087b6e2f35a8df51fb92ac6bc206fd43bed9319c104d2e8773fb1331c6c3e",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/lab.observability-probes.2026-08-01/raw/build-plan.unilarvatrix.2026-09-18.md",
+      "expected": "f9e2d95d148672a0beda216c3c087150346210e93ad3a047d7ff75c27d8910e8",
+      "observed": "f9e2d95d148672a0beda216c3c087150346210e93ad3a047d7ff75c27d8910e8",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/meshup/extraction.driller-onion.2026-06/DESIGN.md",
+      "expected": "816e19edb907bd7a3aeba61bbb092d801078db854ea00283a1fd49aee4b6d64a",
+      "observed": "816e19edb907bd7a3aeba61bbb092d801078db854ea00283a1fd49aee4b6d64a",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md",
+      "expected": "94d0b0b1e01dfc7cead09db6b27db7b65ff9cd28c8ef8e31f39ca744e85783d8",
+      "observed": "94d0b0b1e01dfc7cead09db6b27db7b65ff9cd28c8ef8e31f39ca744e85783d8",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-vist/raw/vist-01-principle-and-applications.md",
+      "expected": "98c2c2fd4bea9a13f6051ee08a937933925681fde0721c636e732e47323df0c8",
+      "observed": "98c2c2fd4bea9a13f6051ee08a937933925681fde0721c636e732e47323df0c8",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/STATUS.md",
+      "expected": "0dba8cff808ed55805f3416e94179222ed955829726dec6a55f45dcdb5272a6f",
+      "observed": "591b9c41cb69ae37382476f61d0e201c83f87223716ef4f80fbbef338052d34d",
+      "matches": false
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/gavels.X4.2026-10-17.md",
+      "expected": "6f70befab6bb15c7216f4cf4f5a3466a6ab789e2605379e90a4c7ddfbcf8aa1f",
+      "observed": "6f70befab6bb15c7216f4cf4f5a3466a6ab789e2605379e90a4c7ddfbcf8aa1f",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/raw.nablarva/oraculum-basic-triangulation/04_LABORATORY_OBSERVABILITY_AND_EXPERIMENTS.md",
+      "expected": "db6e338459c14e2de3b0fe7ca5c4411162c1fff62771e8a13d1c22991b86a40d",
+      "observed": "db6e338459c14e2de3b0fe7ca5c4411162c1fff62771e8a13d1c22991b86a40d",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/05_WAY_OF_THINKING.md",
+      "expected": "460a71e76778f669e7d7d99a71bf808613de5351598124f09f8b1eb919380ddb",
+      "observed": "460a71e76778f669e7d7d99a71bf808613de5351598124f09f8b1eb919380ddb",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/brief-substrate-for-RUNBOOK.termpanum.2026-10-01.md",
+      "expected": "1c3a4f42bd70849489cf01eb3c69c5816325595055ae4d2e5e52cf130155707c",
+      "observed": "1c3a4f42bd70849489cf01eb3c69c5816325595055ae4d2e5e52cf130155707c",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/design-chapters.for-cartan.2026-10-01.md",
+      "expected": "2fbea2e58ee4597c0f1ed41be7c8126c3623cc0aa372947845e130259c38e69c",
+      "observed": "2fbea2e58ee4597c0f1ed41be7c8126c3623cc0aa372947845e130259c38e69c",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/note.stridularium.2026-10-01.md",
+      "expected": "3dd6320aed842a9c2d249d4626a45c0acd59afd764972905a1d73174caa36c5d",
+      "observed": "3dd6320aed842a9c2d249d4626a45c0acd59afd764972905a1d73174caa36c5d",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/brief.rosters-and-team.2026-10-22.md",
+      "expected": "da070d91e63a6b3cb906d0573b0a3c9cf7f09e810e9e97e2a05c45c3e4ae9ec8",
+      "observed": "da070d91e63a6b3cb906d0573b0a3c9cf7f09e810e9e97e2a05c45c3e4ae9ec8",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/handoff.composer-experience.cartan.2026-10-22.md",
+      "expected": "0acc9e1dce76d9b024c229adcb9419552b7c8351bbefd3f84ec73e21cc43589f",
+      "observed": "0acc9e1dce76d9b024c229adcb9419552b7c8351bbefd3f84ec73e21cc43589f",
+      "matches": true
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/research.tmux-source-fidelity.2026-10-22.md",
+      "expected": "3abd43ac5b8f4b22cc5236f6e836c5503969356cde935482d35a7e50699075f7",
+      "observed": "3abd43ac5b8f4b22cc5236f6e836c5503969356cde935482d35a7e50699075f7",
+      "matches": true
+    }
+  ],
+  "return_heading_check": "six exact fields",
+  "brief_copies": "identical",
+  "tracked_changes_since_snapshot": [
+    ".dev/session/nablarva-X2-builder-narative/STATUS.md",
+    ".dev/session/nablarva-X3-architecture-sitting/STATUS.md"
+  ],
+  "failed_strict_snapshot_check": "Parent strict equality check failed because X3 advanced after worker return: 0dba8cff -> 591b9c41. Earlier comparison also failed on a5c7d23e -> 0dba8cff. Both were observed concurrency, not silently passed.",
+  "X3_live_checkpoint": "  Deck G1\u2013G9 complete; Mode B gaveled 2026-10-21. Entry reads done by the fresh Claude Oraculum\n  MAIN: cold-start card, AGENTS, flag, pulse, RUNBOOK, STATUS, Agol harvest, preflight brief,\n  incarnation impressions, gavel deck reports 0\u20139, sitting prompt, Mode B preprint, and Composer's\n  boundary handoff (consumed as attributed practitioner evidence, no gate \u2014 per prompt-0).\n  R0 DONE 06:48 \u2014 all seven live stamps match TEST-INSTALL \u00a71 (identity 3702b18f \u00b7 binding.claude 6181ad36 \u00b7\n  binding.codex 437e8193 \u00b7 sitting 630f58c3 \u00b7 consult 5435b1c7 \u00b7 audit e517cc86 \u00b7 nablarva d9ee9067).\n  Deployed ~/.claude/agents/houston.md sha256 553dfe4f\u2026 equals ~/ia-sync/claude/agents/houston.md;\n  Route canary cl-e1a94c37; pins opus \u00b7 high; tools Read/Grep/Glob/Write/Agent (spawn is fenced by\n  card only \u2014 R8 must witness no-spawn). Deployed cards/sitting.md (34fe2073\u2026) and binding.claude.md\n  (2e8bc57c\u2026) equal their ~/ia-sync/germline/ sources. Binding child-sitting rule (a)\u2013(c) read and\n  matched by prompt-1. Wrapper base: PROJECT-DESIGN.md clean vs HEAD, blob 74e94d5519be6a2de1565ad686ab16cdff6c64c2,\n  sha256 6ee10aa1c40a853cc6c1e6ff5dfa191999f38314058064b5543ac1392fe2c78f (equals Composer handoff 05:48);\n  no Composer wrapper edits pending now \u2014 re-pin at draft time. Head runtime: declared fable \u00b7 high\n  (RUNBOOK participant_1); observed claude-opus-5-5 \u00b7 high \u2014 a declared-vs-observed finding, not a block.\n  Agol's three questions are answered by the current prompt/RUNBOOK (no Houston spawns; pinned base;\n  G4/G5 as said: majkee). Stamps are not child-route proof.\n  R1 DONE 06:50 \u2014 eagle wrote raw/crawl.r1-mechanical.2026-10-22.md (571 lines, commands + verbatim outputs;\n  audit base fe32a29 2026-10-07; no errors) and validated this STATUS YAML via python3 -I (OK). Head spot-checked\n  \u00a71\u2013\u00a75 against its own R0 values. Design reads are left to Houston (it has Read/Grep/Glob); R1 supplies only\n  what needs a shell, so no synthesis layer sits between source and draft.\n  R2 SPAWNED 06:51 \u2014 ONE Houston child, prompt-1 verbatim plus a labelled R1-inputs block (crawl path, Composer\n  handoff, R0 facts, Agol \u00a74 as inferred-only). No arc, drafts, entry proof, promotion or GO yet.\n  Bed opened 2026-10-17 on majkee's GO; renamed X4\u2192X3 by majkee (39c61ec).\n",
+  "disposition": "19 stable identities match; live X3 historical hash retained, latest checkpoint inspected: R1 done/R2 child spawned, no arc/draft/GO. No plan dependency released.",
+  "limits": "Planning/source claims checked; no runtime qualification; mutable X3 position is time-scoped."
+}

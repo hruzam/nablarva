@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-30T22:14:32.260Z",
+  "mode": "live",
+  "listedTargets": 52,
+  "target": {
+    "bed": "phone-console-01-browser",
+    "windowId": "@175",
+    "paneId": "%174",
+    "program": "codex"
+  },
+  "realOutputBytes": 7137,
+  "inputFrames": 4,
+  "terminalReplies": [
+    "1b5b3f313b3263",
+    "1b5b3e303b3237363b3063",
+    "1b5d31303b7267623a653565352f653965392f656665661b5c",
+    "1b5d31313b7267623a313831382f316331632f323432341b5c"
+  ],
+  "deliberateKeystrokes": 0,
+  "desktopSelectionUnchanged": true,
+  "panePidsPreserved": true,
+  "geometry": {
+    "viewport": 360,
+    "document": 360
+  },
+  "dimensions": {
+    "before": "109x51",
+    "attached": "43x17",
+    "after": "109x51"
+  },
+  "pageErrors": []
+}

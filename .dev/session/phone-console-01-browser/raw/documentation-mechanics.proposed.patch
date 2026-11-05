@@ -1,0 +1,50 @@
+--- a/docs/ARCHITECTURE.md
++++ b/docs/ARCHITECTURE.md
+@@ -132,7 +132,7 @@
+ | **deliver / write into a session** | stridulatrix — working split (said: majkee, 2026-10-24, architecture-X0 deck X0-2) | agents · humans | L3 S5 · L4 · L14 D1/D4/D7 · L17 | rejected mechanisms stay dead: send-keys injection, git-as-wire (locked: L4) | regulated adapter-owned PTY delivery (locked: L3 S5, unbuilt), after the relay research verdict (locked: L14 D4) | relay architecture, locked only after blind triangulation (locked: L14 D7) · doorbell mechanism, alternatives welcome (said: majkee R9-1 N3) · classifier · VIST actuator · human tmux/editor/pipe push qualification (4.3) |
+ | **view · layout · process lifetime** | ovitmugen for view/layout and protected process lifetime (locked: L17) | humans · phone · observer views | L17 · L14 D5 | detaching never closes a bed (locked: L14 D5) | — | collector process lifetime (said: cartan-x2 X2-3, "unspecified") · brick spawn/close vs ovitmugen (4.4) |
+ | **room truth** | the journal's single writer — the broker, named stridulatrix (name locked: L13; "L3 supplies the single-writer room journal" under stridulatrix, said: PROJECT-DESIGN §3.7) | all participants via cursors | L3 S1–S3, S8 | design constraints settled (locked: L3): single-writer journal · per-participant cursor projections · **private = in-ledger visibility boundary** (S3) · **room state on neutral ground** (S8) | journal, cursors | lifecycle `unknown: docket #4` · store `unknown: docket #5` · room topology `unknown: O3` · event vocabulary `unknown: docket #8` (4.5) |
+-| **human door** | stridularium (locked: L13) | the human | L14 D5/D6 · L8/L8′/L13 (OUTPUT(A) boundary) | thin lens; app-scoped reach; host-side engine (locked: L14 D5/D6) | `stridularium-00-design` (said: docs/organs/stridularium.md) | native terminal vs rendered cards (said: same) · OUTPUT(A) ↔ stridularium feed (4.2) |
++| **human door** | stridularium (locked: L13) | the human | L14 D5/D6 · L8/L8′/L13 (OUTPUT(A) boundary) | thin lens; app-scoped reach; host-side engine (locked: L14 D5/D6) | [phone body](organs/stridularium.md) and experimental fixture-only [browser candidate](../apps/session-console/README.md) (observed: component entry) | native terminal vs rendered cards (said: same) · OUTPUT(A) ↔ stridularium feed (4.2) |
+ | **cross-host** | — | stage 2 | L3 S7 · O2 | same protocol over SSH to one central broker (locked: L3 S7) | — | transport `unknown: O2` (lean recorded in flag Archived index; current practice tailnet + SSH, alternatives open — said: majkee R9-1 N9) |
+ | **checkout coordination** | muticula | cooperating teams | — | — | claim · work · hand over (said: PROJECT-DESIGN §3.5) | enforcement coverage (said: muticula-01 gate, pulse.md) |
+ | **context sourcing · reading** | `unknown:` — a controller/function under the eventual sourcing program (said: majkee G5, direction) | builders · verifiers · planners · Houston · Termbrana/IDE clients | L16 · said: majkee G4/G5 | reading schedule: preparation before RUNBOOK, recipient reading at entry, refresh on change (said: majkee, gavel deck STEP 5 "gaveled") | Nablarva Boost reader concept, typed source descriptors (said: boost brief, open design) | reader schema · program home/API · navigation surface (4.6) |
+@@ -380,7 +380,7 @@
+ | **ovitmugen** | tmux frame and session view manager (said: PROJECT-DESIGN §3.2); view/layout + protected process lifetime (locked: L17) | code `~/ia-sync/zsh/session/ovitmugen.*` (observed); whether `zsh/session/` stays its code home is open (said: majkee R9-1 N11) · body: interim in PROJECT-DESIGN §3.2 (said: majkee Q2); body home `unknown:` |
+ | **termpanum** | observation lab (locked: L13, name); the read-only ear (said: PROJECT-DESIGN §3.6) | proposed `toolbox/termpanum/` (said: PROJECT-DESIGN §3.6) — not created |
+ | **stridulatrix** | broker and CLI (locked: L13) | `unknown:` (said: PROJECT-DESIGN §3.7) · design `../meshup/room.brokered-journal.2026-07-31/` |
+-| **stridularium** | the phone app, the human's door (locked: L13); cultural name retired (locked: L24); phone organ, body and existing paths preserved; replacement name pending; all other L13 provisions remain in force | body [`organs/stridularium.md`](organs/stridularium.md) · code home proposed `stridularium/{android,host}` (said: same) |
++| **stridularium** | the phone app, the human's door (locked: L13); cultural name retired (locked: L24); phone organ, body and existing paths preserved; replacement name pending; all other L13 provisions remain in force | body [`organs/stridularium.md`](organs/stridularium.md) · experimental fixture-only [browser component](../apps/session-console/README.md); native `stridularium/{android,host}` placement remains deferred |
+ | **muticula** | file-backed concurrency coordination in one checkout (said: PROJECT-DESIGN §3.5) | `unknown:` |
+ | **instarmux** | the skin — UI only if zsh + tmux + the simplified way are not enough; Slint a candidate under it (said: majkee, 2026-10-24, X0 organs §7; deck X0-6) | `unknown:` |
+ 
+--- a/PROJECT-DESIGN.md
++++ b/PROJECT-DESIGN.md
+@@ -97,8 +97,9 @@
+ 
+ *Current delivery shape · checked 2026-10-23 · maintained by Houston's audit card.*
+ 
+-Until a separate UI versus integration into a specific IDE is decided, useful
+-increments continue as **zsh-layer bricks**. Session-facing tools currently fit
++The existing shell-facing increments continue as **zsh-layer bricks**. The
++experimental [phone browser component](apps/session-console/README.md) has its own
++build/run entry and is not deployed through the zsh copy route. Session-facing tools currently fit
+ `~/ia-sync/zsh/session/`; nabLarva may be delivered in this early phase through
+ `~/ia-sync/`, the **surgical table**. Each task retains its own source, promotion and
+ deployment authority. A future app-source/installation model is still a proposal.
+@@ -290,11 +291,13 @@
+ - console versus rendered cards, voice input, per-target buffers, carousel,
+   breadcrumbs and bridge choices remain design input. The two origins disagree
+   about a native terminal on the phone; this fold preserves that open question.
+-  `stridularium/{android,host}` is a home proposal for session 03, not a created tree
++  The [living phone wrapper](docs/organs/stridularium.md) now points to the existing
++  fixture-only browser component; native Android placement remains deferred
+ - [registry design and origins](meshup/stridularium.mobile-console.2026-09-29/DESIGN.md)
+   → [living phone wrapper](docs/organs/stridularium.md) →
+   [open hypotheses](meshup/stridularium.mobile-console.2026-09-29/HYPOTHESES.md).
+-  Majkee drafts the app in stridularium-00-design when that gate opens
++  The current browser slice is implemented only for disposable fixtures; live owner
++  interfaces and full pilot qualification remain open.
+ 
+ ---
+ 

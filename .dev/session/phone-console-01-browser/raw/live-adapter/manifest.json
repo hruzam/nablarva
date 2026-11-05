@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-30T23:12:43.080213+01:00",
+  "scope": "Authorized live attachment, localhost/USB only",
+  "files": {
+    "apps/session-console/README.md": "0b49145998fe8b3dceac7bbb1eba676d3f95c9e269438498cf37ce74bfaf013c",
+    "apps/session-console/contracts/console.md": "ff4d09a8fbcb5453eac5be5e106683a991f73fe48c78c59ad257795d525caba7",
+    "apps/session-console/contracts/storage.md": "af53c06cb088bfc59b51559f753cc2e82b772ca55f3318beaf480355aea98864",
+    "apps/session-console/host/security.py": "47ec97891673a41bb1b79e78648c53e7f96d8ce044d9af36e394166bbc4ea3c3",
+    "apps/session-console/host/server.py": "f04345b77c9ee2a5678849fa5ba319e73b5bf80520e4c7afbdb691d16d4c3d9a",
+    "apps/session-console/host/sessions.py": "7d479799c1d95df29482ab4a817c79778b4d6077d3af720ae455b66d91440281",
+    "apps/session-console/host/terminal_proxy.py": "63d3de2024de0a098b068ca11e32984c11e30a81992acde3459f6f0aa3f40e9c",
+    "apps/session-console/host/vault.py": "efde2a43c4f3029c8410875a3eb0f70d8fbb37c433fc34c191dca2f1345db5d2",
+    "apps/session-console/package-lock.json": "2e555923a775d1df468e6fb6b6c371144258681f3f9d83f5db8a04b384ad0a99",
+    "apps/session-console/package.json": "ca835b7c07dac7f22201127662fe73486032c9853e4a3f8fcda9cf1798644d54",
+    "apps/session-console/requirements.lock": "f9aa5c905dd8c49e1c6041b45e00f217908db09a847d0113be1eb0c5df07e502",
+    "apps/session-console/requirements.txt": "9ff2177e763edd4e9724ffbd5a78794aa24e8492245e2f9e2b3f521fdf956b74",
+    "apps/session-console/tests/test_host.py": "8ed1f9cfb2be7c0b56778a158e584078c26dd4eecf258a46f4c3581ff477cb9f",
+    "apps/session-console/tests/test_vault.py": "660dc963634ec9d72d509ca309e39350548391f5cac25eb0111cdd9682c0e11b",
+    "apps/session-console/web/api.js": "fb11a89d83f0941ecdbc38c6f53afcca37b7c1f1dcf3f0d63a2e2b4d0c8ef585",
+    "apps/session-console/web/app.js": "6ee7a13e56df9e81150c907f9daa1a4bdb52ec95be6a9545b57f032a47ceeff5",
+    "apps/session-console/web/index.html": "ca147228d2f907f0bcc0947d4d473e92d7bb1eec6e82b715e157302aaaf4bde1",
+    "apps/session-console/web/storage.js": "615b3519cf9e42845cd4b9ccc76270a6fab8a7694f5355ce7e474a38324a8426",
+    "apps/session-console/web/styles.css": "a58d8621fb2726b85daba8fe8a5a332f69bcef78e4b20c4c8a7d5a0c481bfa2f",
+    "apps/session-console/web/terminal.js": "f54067657cfa3bbb3510105c1dcb2728c35230027998412000fd3d2964607d79",
+    "apps/session-console/contracts/live.md": "060f05558f8b512dcaf005139aeece26d79b47aaeb0b02693c33bca4ec716e82",
+    "apps/session-console/host/owner_sessions.py": "cd9eab17fd3b0244152490f250f455294adf9da89152dec311ef3f63bb6debb1",
+    "apps/session-console/tests/test_owner_sessions.py": "f62bc474a86f58e153751f8ed147258ddd17106f8b4ebac642f027b5b0426633",
+    "apps/session-console/dist/app.js": "7f177f9c421d42328059c75c847e87e56472f99e9b101d969d098bba0451fd85",
+    "apps/session-console/dist/app.css": "36aed5140ad38ba603111753b11c211f09eedef98ce62f59884bf4b01e5a2c0c",
+    "/home/hruzam/ia-sync/zsh/session/ovitmugen.py": "cb3bf0d9b44133159f2c194c646dbb968d32d340d64cb8a2c9c1d46dfb957f40"
+  }
+}

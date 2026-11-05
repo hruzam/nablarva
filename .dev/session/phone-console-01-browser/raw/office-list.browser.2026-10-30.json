@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-30T21:45:57.599Z",
+  "liveReadOnlyListing": true,
+  "lineCount": 77,
+  "widths": [
+    {
+      "viewport": 360,
+      "client": 328,
+      "scroll": 328,
+      "wrapped": true,
+      "scrollable": true
+    },
+    {
+      "viewport": 412,
+      "client": 370,
+      "scroll": 370,
+      "wrapped": true,
+      "scrollable": true
+    }
+  ],
+  "fixtureSelectionUnchanged": true,
+  "timeoutRetryPassed": true,
+  "pageErrors": []
+}

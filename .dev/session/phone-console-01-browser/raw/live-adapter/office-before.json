@@ -1,0 +1,7 @@
+{
+  "base": "phone-console-01-browser",
+  "desktopWindow": "@175",
+  "panes": "@175:%174:1358514",
+  "windowSize": "109x51",
+  "sourceSha": "cb3bf0d9b44133159f2c194c646dbb968d32d340d64cb8a2c9c1d46dfb957f40"
+}

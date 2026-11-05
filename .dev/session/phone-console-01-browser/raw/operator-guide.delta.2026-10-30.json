@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-30T22:24:12.761604+01:00",
+  "changes": [
+    {
+      "path": "apps/session-console/README.md",
+      "before": "9d00780d3b699f14c03425ce244f0d80d3ba28d0353c991308789315e69cc1b2",
+      "after": "0eb6f03f32f0fc52ed78f2f5233b922a3f394e250fdb4705bc6d8a4fb5470dde"
+    }
+  ],
+  "scope": "Documentation only; frozen runtime sources unchanged. No new test run required.",
+  "brief": "raw/assistant-brief.2026-10-30.md",
+  "activation": "none"
+}

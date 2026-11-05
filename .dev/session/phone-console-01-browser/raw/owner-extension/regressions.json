@@ -1,0 +1,26 @@
+{
+  "scope": "review-only owner API draft; in-memory patch, uniquely named isolated tmux sockets",
+  "source_sha256_before_and_after": "97dba115a36abf216ab6f5deabda601ce82e395cdd285a1b52aca7568f5a3125",
+  "final_patch_sha256": "5af6027b58cf222733b28622af8992d0b3f1dafe7569b9ebc9060d0934b35fa6",
+  "command": "python3 .dev/session/phone-console-01-browser/raw/owner-extension/check_candidate.py",
+  "environment": "office; tmux 3.7c; escalated because sandbox denies socket access",
+  "final_result": {"exit": 0, "tests": 9, "seconds": 8.489, "result": "PASS"},
+  "checks": [
+    "busy/stale/multi-pane/missing-confirm close refusals",
+    "transient child held until existing owner close loop enters, then released; patience preserved",
+    "command-specific exact-name set-option =NAME: and kill-session =NAME syntax",
+    "existing owner selftest returns zero, including last-tab refusal and prior lifecycle guards",
+    "restart and deliberate numeric view-ID reuse during failed-create cleanup: no replacement kill issued",
+    "restart and deliberate numeric view-ID reuse immediately before detach: unrelated replacement survives",
+    "restart and deliberate numeric view-ID reuse immediately before select: unrelated selection unchanged",
+    "independent views, desktop --left fixed, ls report key shape unchanged, detach preserves base pane PIDs",
+    "wrong token/arbitrary --left refuses; missing base preserves orphan phone view and pane PIDs"
+  ],
+  "retained_failures": [
+    {"revision": "initial illustrative patch", "patch_sha256": "6e78d8ae6861a010f2092098a095385b8998a9b2e6613ab90120c8f02e1bc0eb", "result": "independent HOLD", "reason": "numeric session-ID mutation/cleanup race and early idle check bypassing owner patience; verification.md records full finding"},
+    {"revision": "first exact-name amendment", "result": "FAIL; 5 failures and 1 error in 8 tests on implementation run", "reasons": ["set-option -t =NAME lacked required colon context on tmux 3.7c", "transient sleep fixture could finish before initial observation", "restart injection assertion did not fail clearly when create failed before reaching the injection"]},
+    {"revision": "corrected exact-name amendment", "result": "PASS; 9 tests", "corrections": ["set-option uses =NAME: after dedicated real-socket syntax proof", "gate-controlled transient process is released only inside owner patience loop", "create-failure regression explicitly checks restart injection was reached"]}
+  ],
+  "not_claimed": ["shared source application", "deployment", "phone/live activation", "home qualification", "atomic check-to-tmux-operation guarantee"],
+  "remaining": "independent amended review plus Majkee/Trajectory source-pen decision"
+}

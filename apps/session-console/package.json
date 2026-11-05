@@ -1,0 +1,1 @@
+{"name":"session-console-pilot","private":true,"type":"module","scripts":{"build":"esbuild web/app.js --bundle --format=esm --outdir=dist --loader:.css=css"},"dependencies":{"@xterm/xterm":"5.4.0","@xterm/addon-fit":"0.9.0"},"devDependencies":{"esbuild":"0.28.2"}}

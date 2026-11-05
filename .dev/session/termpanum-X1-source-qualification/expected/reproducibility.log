@@ -1,0 +1,11 @@
+generator /tmp/termpanum-x1-oracle-regeneration: exit 0
+cmp of all 11 generated files: exit 0
+ 262144 wire.bin
+4194304 cases/burst/wire.bin
+ 262656 cases/onlcr/wire.bin
+ 261120 cases/delete/wire.bin
+ 263168 cases/duplicate/wire.bin
+ 262144 cases/reorder/wire.bin
+5505536 total
+ 46 30 30 30 30 30 30 3a 00 0d 0a 5c 1b 5b 33 31
+ 6d 52

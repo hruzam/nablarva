@@ -1,47 +1,41 @@
 # termpanum-X0-source-contract — STATUS
 
 ```yaml
-updated: "2026-10-22 18:02 CEST"
-writer: "cartan-termpanum-x0 · Codex; sole STATUS pen"
+updated: "2026-10-23 23:34 CEST"
+writer: "Cartan · Codex; closure/navigation owner"
 host: "office · hruzam-120922"
 worktree: >
-  /home/hruzam/unikuklatrix/nablarva · core · HEAD 78059da.
-  Dirty: this untracked .dev/session/termpanum-X0-source-contract/ bed and the X2/X3 paths
-  listed in raw/entry.cartan.2026-10-22.json, which also records source identities.
-  X2 and X3 remain foreign preserved work. Head owns X0 navigation/STATUS/POINT/VERDICT;
-  implementer owns exactly the two bodies and its RETURN.
+  /home/hruzam/unikuklatrix/nablarva · core · observed HEAD 78ff8b22a7d17ee7cd407782166680c07964906b.
+  Dirty closure paths: this STATUS; .dev/session/nablarva-X4-vist/raw/; .dev/observations/README.md;
+  .dev/observations/termpanum-X0-source-contract.cartan.2026-10-23.md;
+  .dev/observations/nablarva-X2-builder-narative.cartan.2026-10-23.md;
+  .dev/observations/harvest.2026-10-23.agol.md; counterpart closing STATUS.
+  Existing foreign dirty paths are inventoried in ../nablarva-X4-vist/raw/closure.x0-x2.inventory.2026-10-23.json
+  and preserved. No stage/commit/push.
 gate: Majkee accepts the independently checked documentary packet as ready input for the applicable `relay-00-research` decision.
 checkpoint: >
-  GATE MET. Majkee explicitly accepts the documentary packet as relay-research decision input;
-  exact words and accepted identities: raw/decision.majkee.packet-acceptance.2026-10-22.md.
-  Independent packet PASS and checked head disposition remain in raw/review.packet.r2.2026-10-22.md
-  and _bus/05.cartan.verdict.md. Full evidence retained per raw/closure.manifest.cartan.2026-10-22.md.
-  Closure independently witnessed PASS in raw/review.closure.2026-10-22.md and head-checked in
-  _bus/06.cartan.verdict.md; all 21 pre-existing evidence/launcher/BUS files retain their bytes.
-  Frozen source-contract SHA: 7086e59527c77040be9d41ee94966f661dd751c009e5eb636590db103dd32694.
-  Frozen research-disposition SHA: b2cad9dabcaa62a47440c4e235548e42f8812c0b1183febecda8d05659aebc80.
-  Earlier FAIL and all BUS records are retained unchanged. Narrow ADOPT remains a recommendation;
-  no approved-plan amendment, D4 verdict, fixture/Q or collector/C execution release is supplied.
-in_flight: >
-  None. Both delegates returned and idle; no successor, fixture or product work is open.
+  CLOSED, original gate MET; evidence retained in place. Accepted packet remains byte-identical; all 29 pre-maintenance files match existing commit 78ff8b2.
+  Two independent session liaisons confirm no original work remains. Closure, checked identities,
+  keeper dispositions and master-file consultation: ../nablarva-X4-vist/raw/closure.x0-x2.cartan.2026-10-23.md.
+  Process transfer is promoted verbatim to ../../observations/termpanum-X0-source-contract.cartan.2026-10-23.md;
+  originals remain immutable historical evidence. Handoff: ../nablarva-X4-vist/raw/handoff.x0-source-contract.cartan.2026-10-23.md.
+in_flight: none — original work complete; closure-transfer records written; no runtime work opened.
 recovery_probe: >
-  Read raw/decision.majkee.packet-acceptance.2026-10-22.md, raw/review.closure.2026-10-22.md
-  and _bus/06.cartan.verdict.md; compare actual body hashes above and actual raw files to
-  raw/closure.manifest.cartan.2026-10-22.md. Matching bytes/coverage confirm retained closure;
-  this gate needs no new search or writer restart.
+  Read ../nablarva-X4-vist/raw/closure.x0-x2.cartan.2026-10-23.md and
+  ../nablarva-X4-vist/raw/review.closure-transfer.2026-10-23.md, then verify actual accepted hashes
+  and source retention against ../nablarva-X4-vist/raw/verification.closure-x0-x2.2026-10-23.json.
+  Read the finding's actual disposition, not mere presence. Missing or changed closure evidence
+  requires documentary recovery; do not restart the achieved gate or launch a fixture.
 holds:
-  - "Documentary only. No fixture/product/observer effects or running-server contact; no external, canon/pulse/config/foreign-session writes, private histories, transport, stage/commit/push/deploy."
-  - "X0 packet acceptance is input to the applicable relay research decision; it does not issue a D4 verdict or release Q/C."
-  - "Producer/co-producer and collector-lifetime ownership, shared contracts/homes/language/publication and operational admission remain open; C has no animal-consumer compatibility requirement."
-  - "X3 GO is not required. Its candidate architecture is not adopted here; cross-head questions go through Majkee."
-  - "No mandatory multi-envelope mapping or new vendor sweep is added to the approved assignment."
-  - "X0 has no pulse row at entry; accepted assignment excludes pulse edits. STATUS remains this gate's sole doing-state; routing omission is surfaced without widening the pen."
-  - "Preserve X2 evidence and all foreign changes. No successor/fixture automatically opens from this documentary gate."
-  - "Retain the complete X0 bed. No commit, promotion or prune is performed; process keeper promotion is owed before any later authorized prune."
+  - "Retain complete X0/X2 beds. X2 approved evidence lacks a preservation commit; no fabricated pins or prune."
+  - "Gate acceptance remains documentary/planning only: no D4 verdict, Q/C or HELLO execution, L4 exception, shared API or ownership release."
+  - "Approved plan and historical raw/BUS bytes remain frozen. A concrete material successor amendment needs its own author/review/decision."
+  - "X4 is the agreed consolidated documentary vault, not a replacement for L14's locked relay mapping; no X4 RUNBOOK/STATUS is opened."
+  - "Existing master-document corrections belong to their X1/X3 or keeper route; no canon, foreign-session, live/config/deploy edits through this closure."
 next: >
-  Stop at the met X0 gate and retain the complete bed pending Majkee's separate relay-decision
-  or preservation assignment. No X0 production/review work or automatic successor remains.
+  None for this closed gate. Majkee carries ../nablarva-X4-vist/raw/handoff.x0-source-contract.cartan.2026-10-23.md
+  and ../nablarva-X4-vist/raw/brief.x4-runbook-input.cartan.2026-10-23.md to the next author.
 expected: >
-  Accepted packet, review history and closure records remain available at their current paths;
-  narrow ADOPT remains a recommendation and no fixture/collector execution is authorized.
+  Original evidence remains readable and unchanged; successor work uses the transferred packet
+  and explicit release conditions. No further X0/X2 production or GO is owed.
 ```
