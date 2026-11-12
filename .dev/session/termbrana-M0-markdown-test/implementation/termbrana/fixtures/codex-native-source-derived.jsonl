@@ -1,0 +1,6 @@
+{"timestamp":"2026-11-06T09:00:00.000000Z","ordinal":0,"type":"session_meta","payload":{"session_id":"11111111-1111-4111-8111-111111111111","id":"11111111-1111-4111-8111-111111111111","timestamp":"2026-11-06T09:00:00.000000Z","cwd":"/synthetic/codex-native","originator":"codex_cli","cli_version":"0.166.0","source":"cli","history_mode":"paginated"}}
+{"timestamp":"2026-11-06T09:00:01.000000Z","ordinal":1,"type":"event_msg","payload":{"type":"user_message","message":"Summarize this fixture."}}
+{"timestamp":"2026-11-06T09:00:02.000000Z","ordinal":2,"type":"event_msg","payload":{"type":"agent_message","message":"It is a public-source-derived synthetic rollout.","phase":"final_answer"}}
+{"timestamp":"2026-11-06T09:00:03.000000Z","ordinal":3,"type":"response_item","payload":{"type":"message","id":"msg_synthetic_duplicate_candidate","role":"assistant","content":[{"type":"output_text","text":"This alternate representation is intentionally not rendered."}]}}
+{"timestamp":"2026-11-06T09:00:04.000000Z","ordinal":4,"type":"event_msg","payload":{"type":"context_compacted"}}
+{"timestamp":"2026-11-06T09:00:05.000000Z","ordinal":5,"type":"event_msg","payload":{"type":"token_count","info":null,"rate_limits":null}}

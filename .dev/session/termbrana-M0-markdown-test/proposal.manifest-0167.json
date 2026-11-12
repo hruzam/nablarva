@@ -1,0 +1,213 @@
+{
+  "root": "/tmp/termbrana-publication-xqxu1cfh",
+  "source_bed": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test",
+  "baseline_root": "/home/hruzam/ia-sync/zsh/termbrana",
+  "baseline_git_head": "9cf52694b5af2fa2aede1d61a36a4ae59746a44a",
+  "patch": "/tmp/termbrana-publication-xqxu1cfh/proposal.source-wiring.patch",
+  "patch_sha256": "531430d95521bb1cb49a9820bfc7a1ed338326ee1cd49bfa13ef577c1b2934a3",
+  "changed_files": [
+    {
+      "path": "zsh/termbrana/README.md",
+      "before_sha256": "5bf2fa4e17254806313578d855db2fad0920c7c3704826ffd0fbc6b11d7484ae",
+      "candidate_sha256": "5e38edeb48a1f552d3c42da26e062cf7d444913ae78d31a5bdb20bf463fa4a75",
+      "source": "proposed documentation/wiring amendment",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/base.zsh",
+      "before_sha256": "106afa6d2356047afdb525fdcdfbd6a769ac246540fe1c7f5b0f66156bd4cbf9",
+      "candidate_sha256": "5ccf7dfa23a767421613ac094eec7ac4a09ff0e4404df5147d32df61b916e85c",
+      "source": "proposed documentation/wiring amendment",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/claude_adapter.py",
+      "before_sha256": null,
+      "candidate_sha256": "9bc05b572e0a641c538baab00bd76d96a2cf5a48354092d3d82de5cb5107dd72",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/claude_adapter.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/codex_native.py",
+      "before_sha256": null,
+      "candidate_sha256": "f413735f11868e4ca4d527657f341fd6862fa9e274ddea591c26af7a906de999",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/codex_native.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/collector.py",
+      "before_sha256": null,
+      "candidate_sha256": "26e9a3dc066b0a2e227878995572b47b9f7a0fdb888390dff42106eca22cd565",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/collector.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/fixtures/claude-2.1.286.expected.md",
+      "before_sha256": null,
+      "candidate_sha256": "ddec8422bffd9bff2dacabeadf3b4a7cb516e4bc50664a9977dac00ebbc1c04d",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/fixtures/claude-2.1.286.expected.md",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/fixtures/claude-2.1.286.synthetic.jsonl",
+      "before_sha256": null,
+      "candidate_sha256": "27f339910346ab6bc11f75b28db35bc0dc83b5f534e63e1998c65e6b691250f4",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/fixtures/claude-2.1.286.synthetic.jsonl",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/fixtures/codex-0.166.expected.md",
+      "before_sha256": null,
+      "candidate_sha256": "c10bef0141bf6d89d81dffff52e1fd6e014f16b04355d21fd1290f20ca5dc203",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/fixtures/codex-0.166.expected.md",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/fixtures/codex-0.166.synthetic.jsonl",
+      "before_sha256": null,
+      "candidate_sha256": "2b7c0d762fb174b64121ac48108d5e7a406c5a0c75f81f79421992590a222584",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/fixtures/codex-0.166.synthetic.jsonl",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/fixtures/codex-approval.synthetic.expected.md",
+      "before_sha256": null,
+      "candidate_sha256": "86d2e6ecac55fde24253ae13d6d4f992a51b75a0ff01c0eedfac2eb5886e30c7",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/fixtures/codex-approval.synthetic.expected.md",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/fixtures/codex-approval.synthetic.jsonl",
+      "before_sha256": null,
+      "candidate_sha256": "04169cf120cfbadd689974f1fbda636475a2f41de8ed9cbbb988ca9d72f8a174",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/fixtures/codex-approval.synthetic.jsonl",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/fixtures/codex-native-0.167.expected.md",
+      "before_sha256": null,
+      "candidate_sha256": "7e2d5c7fe4ece1e938d94d3d3e8b724a9f1525ee82ef38624d4a51c9a9c23e8a",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/fixtures/codex-native-0.167.expected.md",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/fixtures/codex-native-0.167.jsonl",
+      "before_sha256": null,
+      "candidate_sha256": "58f0844188ccd668e7bb22100bed98bc939209c3ddb9929a164db95450c5bbc5",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/fixtures/codex-native-0.167.jsonl",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/fixtures/codex-native-source-derived.expected.md",
+      "before_sha256": null,
+      "candidate_sha256": "afe785060c5df505801698c8129e6abb2e86f7a67ea6e22c34970ff62c7fae4b",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/fixtures/codex-native-source-derived.expected.md",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/fixtures/codex-native-source-derived.jsonl",
+      "before_sha256": null,
+      "candidate_sha256": "1ccbde5f9fd991fc0cd25818082ea61071b90afabab3c7ec43f74162ea4da550",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/fixtures/codex-native-source-derived.jsonl",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/keyboard.zsh",
+      "before_sha256": "96ddab94bab9205e57cae68796a45bb67fd253d5696dbbfc67e8aa654e95b4d7",
+      "candidate_sha256": "83ef69a1f3554d627293f0731418aba2a5718964a2b862ddc7f8d1849750c01d",
+      "source": "proposed documentation/wiring amendment",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/transcript-tests/test_claude_adapter.py",
+      "before_sha256": null,
+      "candidate_sha256": "b1433bdd30ee9bfcd6494cffe4aa3bd2b91908f09cf8fc9db40d94ccae8d28a8",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/tests/test_claude_adapter.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/transcript-tests/test_codex_completed.py",
+      "before_sha256": null,
+      "candidate_sha256": "6e8540aa42fccec4d3bf3aafdc1779f4ce4dda3885f999653d17b78e3ff3cc56",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/tests/test_codex_completed.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/transcript-tests/test_codex_native.py",
+      "before_sha256": null,
+      "candidate_sha256": "4160e157b41d9ce5692e11aa707ee3ef4ee9e05fce11c4709f009fe19df1beb7",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/tests/test_codex_native.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/transcript-tests/test_codex_native_integration.py",
+      "before_sha256": null,
+      "candidate_sha256": "4721f093c66be90137e05ee7b85f4bb44c8bac78c901184f3bf294c497919c97",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/tests/test_codex_native_integration.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/transcript-tests/test_collector.py",
+      "before_sha256": null,
+      "candidate_sha256": "8cc3d09e95f9d70283dfe193a3da3e14ca8ff9f79e2735138c45d1238f6a91a9",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/tests/test_collector.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/transcript-tests/test_integration.py",
+      "before_sha256": null,
+      "candidate_sha256": "0d2fffcfae9e6394d963bc508e1104c9271553c209fcca4f95de358c9e5df3a2",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/tests/test_integration.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/transcript-tests/test_layout.py",
+      "before_sha256": null,
+      "candidate_sha256": "a8eaef46d539a1591d456e8839ccded9731e9081692e60e2a2ec6bc4c105cf91",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/tests/test_layout.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/transcript-tests/test_transcript.py",
+      "before_sha256": null,
+      "candidate_sha256": "293f7644ef496147be68c7090fdad71646ccda99b90d737bec9898eaa8635404",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/tests/test_transcript.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/transcript.py",
+      "before_sha256": null,
+      "candidate_sha256": "b03806ad557a8e6a6eaf1f291f320753193b45ac06bc72973c923be8f0abe422",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/transcript.py",
+      "mode": "0o644"
+    },
+    {
+      "path": "zsh/termbrana/transcript.zsh",
+      "before_sha256": null,
+      "candidate_sha256": "8db4ea119bec325d42024ebcc6850763d8162b1d18abd78e13e87d6bf760fe7e",
+      "source": "/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/transcript.zsh",
+      "mode": "0o644"
+    }
+  ],
+  "apply_check": "pass",
+  "applied_tree_byte_match": "pass",
+  "activation": "none; source proposal only",
+  "limits": [
+    "L8/L8-prime permanent placement unresolved",
+    "normal-profile activation and deployment not performed",
+    "native full-history fidelity and Claude support remain unqualified"
+  ],
+  "baseline_files": {
+    "zsh/termbrana/GRAMMAR.md": "af49004823b7e5b5b92f710196c0aa290c984feb81b8353071d6be0bfabdbc73",
+    "zsh/termbrana/base.zsh": "106afa6d2356047afdb525fdcdfbd6a769ac246540fe1c7f5b0f66156bd4cbf9",
+    "zsh/termbrana/README.md": "5bf2fa4e17254806313578d855db2fad0920c7c3704826ffd0fbc6b11d7484ae",
+    "zsh/termbrana/keyboard.zsh": "96ddab94bab9205e57cae68796a45bb67fd253d5696dbbfc67e8aa654e95b4d7",
+    "zsh/termbrana/composer.zsh": "3aef419df8b2e04ded21b794b1bc4b66d921b28b6b538248fae1e13cf6b36d2e",
+    "zsh/termbrana/composer.py": "a678c49bacc775d406de7021a869af072978ca888506112e6783a2b65660f28b",
+    "zsh/termbrana/tests/benchmark.py": "244c17acb0ab8081ae98cb48f5622518b8efbd5bf91caab671db3ee154f35b1b",
+    "zsh/termbrana/tests/test_composer.py": "3668c1fad314eb567faf82a285cec16ab98e8a7994c26edc44d0e3b61f1cdf5a",
+    "zsh/termbrana/tests/test_startup.py": "40a5e22cc2ecc64e3dbcefd1832482f14d80dde22914094480f9a7d8723eaaa3",
+    "zsh/termbrana/tests/acceptance.py": "9d84140a802556f6b3259822d91355df1e64bada59c2888c75c903f68967b410"
+  },
+  "ia_sync_baseline_still_matches": true
+}

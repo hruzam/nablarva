@@ -1,0 +1,16 @@
+# Reconciliation · 2026-11-06
+
+Recovery probe: three raw SHA-256 hashes match STATUS; candidate and evidence are present as previously recorded. The worktree contains the amended controls, prior untracked candidate and evidence only as shown by `git status --short --untracked-files=all`. The five earlier tests are historical, not amended-gate qualification.
+
+- **Keep:** all four synthetic fixture/expectation files, capability comparison and continuity finding. The IDs in fixtures are synthetic and do not qualify native identities. Keep the parser's multiline/unknown/partial and duplicate-ID tests as reusable starting points.
+- **Adapt:** the old `render`/`pin` implementation binds a map to a live source and publishes two files independently. Replace that behavior with immutable source/render/map bundles, serialized publication and snapshot-bound pins. Add explicit refresh and foreground collection. Keep shell sourcing inert. Adapt tests that expect source loss to invalidate historical reading.
+- **Revert:** no specific external effect has been identified as attributable and obsolete. Prior work used disposable temporary directories and read-only inspection; `codex --version` emitted a read-only PATH-alias warning, with no successful write established. This is based on the available execution record, not a host-wide audit. Do not touch the existing Sublime installation, pin queue, native histories or other host state. No outside-tree cleanup was performed.
+- **Host witness:** sandbox output overrides can test mechanics; the authorized actual `~/.nablarva/` path and Sublime/native-session interactions require separate host evidence.
+
+## Frozen amended stage-one expectations
+
+Before adapting the renderer: a snapshot retains the exact complete source prefix and records its digest, provenance, identity and renderer version alongside its view and map. The selected record resolves to its correct line after rebuilding from the retained source even when the original is missing. Original source replacement, shortening, changed prefix or mismatched identity prevents automatic carry-forward but leaves the old snapshot readable. An unobserved same-inode truncate/regrow restoring the same prefix is not detectably different from append and is disclosed. An incomplete tail is excluded; malformed complete records are diagnosed. A serialized publisher commits a complete bundle by one atomic pointer switch; interrupted or competing publication leaves readers with a complete, internally consistent committed bundle. Fixture IDs do not prove native identity.
+
+## Subsequent research-scope breach
+
+A delegated read-only schema check recursively searched the Codex state directory for rollout/event strings despite an explicit instruction not to read native histories. The worker reports that native-history excerpts entered its tool/conversation trace; they were not used as evidence and the worker reports no files written, deleted or changed. It also attempted an unauthenticated GitHub tag lookup and received a read-only filesystem warning from `codex --version`. The search itself and trace exposure cannot be undone by a filesystem rewind. No history excerpts or paths are copied into this bed. Future checks must target exact public source paths or operator-provided sanitized fixtures, not the state directory.

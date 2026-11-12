@@ -1,0 +1,124 @@
+{
+  "apply-check": {
+    "command": [
+      "git",
+      "apply",
+      "--check",
+      "/tmp/termbrana-publication-final-0uma2vyz/proposal.source-wiring.patch"
+    ],
+    "exit": 0
+  },
+  "apply": {
+    "command": [
+      "git",
+      "apply",
+      "/tmp/termbrana-publication-final-0uma2vyz/proposal.source-wiring.patch"
+    ],
+    "exit": 0
+  },
+  "composer-tests": {
+    "command": [
+      "python3",
+      "-I",
+      "-S",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana",
+    "exit": 0,
+    "tail": [
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 27 tests in 0.845s",
+      "",
+      "OK"
+    ]
+  },
+  "transcript-tests": {
+    "command": [
+      "python3",
+      "-I",
+      "-S",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "transcript-tests",
+      "-v"
+    ],
+    "cwd": "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana",
+    "exit": 0,
+    "tail": [
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 59 tests in 7.517s",
+      "",
+      "OK"
+    ]
+  },
+  "syntax-base.zsh": {
+    "command": [
+      "zsh",
+      "-n",
+      "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana/base.zsh"
+    ],
+    "cwd": "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana",
+    "exit": 0,
+    "tail": []
+  },
+  "syntax-keyboard.zsh": {
+    "command": [
+      "zsh",
+      "-n",
+      "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana/keyboard.zsh"
+    ],
+    "cwd": "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana",
+    "exit": 0,
+    "tail": []
+  },
+  "syntax-composer.zsh": {
+    "command": [
+      "zsh",
+      "-n",
+      "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana/composer.zsh"
+    ],
+    "cwd": "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana",
+    "exit": 0,
+    "tail": []
+  },
+  "syntax-transcript.zsh": {
+    "command": [
+      "zsh",
+      "-n",
+      "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana/transcript.zsh"
+    ],
+    "cwd": "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana",
+    "exit": 0,
+    "tail": []
+  },
+  "python-parse": {
+    "exit": 0
+  },
+  "source-inert": {
+    "command": [
+      "/usr/bin/zsh",
+      "-f",
+      "-c",
+      "source \"$1/base.zsh\"; source \"$1/base.zsh\"; (( $+functions[_tbc_check] && $+functions[_tbv_render] && $+functions[_tbv_watch] )); [[ ${aliases[tbc-check]} == _tbc_check && ${aliases[tbv-render]} == _tbv_render ]]",
+      "publication-source-check",
+      "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana"
+    ],
+    "cwd": "/tmp/termbrana-publication-final-0uma2vyz/candidate/zsh/termbrana",
+    "exit": 0,
+    "tail": []
+  },
+  "source-hash-stability": {
+    "exit": 0
+  }
+}

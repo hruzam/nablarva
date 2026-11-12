@@ -1,0 +1,31 @@
+{
+  "trial_root": "/tmp/nablarva-observer-opening-uctmaxw_",
+  "normal_ipc_hidden": true,
+  "actual_zsh_opener": true,
+  "fixture_plugin_installed": false,
+  "openings": [
+    {
+      "record": "item-user-003",
+      "window": 3,
+      "view": 26,
+      "path": "/tmp/nablarva-observer-opening-uctmaxw_/cache/snapshots/9884710c74325eae632a8f2c/read.md",
+      "line": 25,
+      "heading": "## 3. user \u00b7 2026-11-05T20:01:00Z \u00b7 item-user-003",
+      "new_window": true
+    },
+    {
+      "record": "item-user-001",
+      "window": 4,
+      "view": 39,
+      "path": "/tmp/nablarva-observer-opening-uctmaxw_/cache/snapshots/9884710c74325eae632a8f2c/read.md",
+      "line": 11,
+      "heading": "## 1. user \u00b7 2026-11-05T20:00:00Z \u00b7 item-user-001",
+      "new_window": true
+    }
+  ],
+  "instance": "8e6beed744b04425b4b4e950ca7435ff",
+  "sublime_build": "4215",
+  "python_version": "3.14.6",
+  "passed": true,
+  "disposable_process_stopped": true
+}

@@ -1,0 +1,2 @@
+{"timestamp":"2026-11-05T20:00:00Z","type":"event_msg","payload":{"id":"user-approval-demo","type":"user_message","message":"Show the request.","thread_id":"thread-approval-demo","session_id":"session-approval-demo","branch_id":"main"}}
+{"timestamp":"2026-11-05T20:00:01Z","type":"event_msg","payload":{"id":"approval-demo-1","type":"synthetic_approval_request","message":"Run harmless synthetic operation?","thread_id":"thread-approval-demo","session_id":"session-approval-demo","branch_id":"main"}}

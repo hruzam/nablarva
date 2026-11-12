@@ -1,26 +1,56 @@
 # STATUS: termbrana-M0-markdown-test
 
 ```yaml
-updated: 2026-11-05 10:02 CET
+updated: 2026-11-09
 writer: Cartan · Codex
 host: home · hruzam
 worktree: >-
-  /home/hruzam/unikuklatrix/nablarva · core · d50b0a0ed32661416e3e4ac5ac2cfe593b509b13 ·
-  planning changes in .dev/session/pulse.md and
-  .dev/session/termbrana-M0-markdown-test/{RUNBOOK.md,STATUS.md};
-  pre-existing untracked .dev/session/termbrana-M0-markdown-test/raw/sublime-pin-install-handoff.cartan.2026-11-05.md belongs to Cartan's handoff.
+  /home/hruzam/unikuklatrix/nablarva · core · f525e558aa5a7186f3cbc4abc60f53f72c37023b ·
+  RUNBOOK.md, STATUS.md and ../pulse.md modified; untracked bed artifacts include
+  implementation/termbrana/, REPORT.md, PAD, benchmark, capability and evidence
+  files, proposal and raw verifier/Houston returns. See recovery probe for exact paths.
 gate: >-
   Majkee records GO or STOP on an independently verified home-host transcript-view
   experiment for Codex and Claude, demonstrating zsh selection and Sublime opening,
-  source-bookmark fidelity across rebuild and append/resume, truthful interactive
+  snapshot-bound bookmarks across rebuild, validated carry-forward on append/resume,
+  automatic cache collection with explicit reading-view refresh, truthful interactive
   approval references, native-session independence, measured performance, and a
   reviewed ia-sync source-wiring and publication proposal with capability limits.
 checkpoint: >-
-  Launcher and initial position authored from Majkee's accepted proposal and three
-  raw inputs. Existing zsh family and deploy path inspected read-only; experimental
-  implementation and operator UI qualification have not started. YAML, gate/router
-  agreement and original raw-input digests checked. No executor active.
-in_flight: none
+  Synthetic home workflow passed PAD STEP 16. The 0.167 completed-text adapter
+  and refresh-interruption recovery pass independent review; the final suite has
+  59 passing tests, including independently checked Claude malformed-input and
+  duplicate-ID performance fixes. See raw/verdict.claude-performance.md,
+  evidence.codex-0167.md and raw/verdict.codex-0167-refresh.md. The refreshed
+  latest publication candidate passes independent package review; see
+  proposal.publication-review2.md and raw/verdict.publication-review2.md. Fresh Houston
+  consult is raw/houston.transcript-0167.md. Majkee witnessed Codex 0.167
+  collection, bookmark refresh and native-session independence in PAD 17–23.
+  Claude fidelity and complete native history remain unqualified.
+in_flight: >-
+  Majkee reports PAD STEP 17's separate Codex session started and replied in
+  /tmp/nablarva-native-JQfnzz. Supplied thread ID 01a1b58c-fd98-7d13-ba68-5d1f98acc6d9
+  and directory match the metadata index; the exact rollout parses as two
+  expected exchanges. Majkee confirmed both in the open Sublime view at the
+  user heading. The native-test cache is /tmp/nablarva-native-view-mf7s3v06/cache.
+  PAD STEP 19's follow-up and expected reply are present in that exact rollout;
+  its already-open snapshot remains older. An explicit collector invocation
+  published snapshot d19afe1c22becfa96fb30f61 with four exchanges in the same
+  temporary cache. Majkee confirmed that the newer window shows the follow-up
+  and the earlier view remains unchanged. Bounded watcher session 12068 is
+  running against the explicit test source; latest b0a24f356e8b961db527955c
+  contains six exchanges, selected d19afe1c22becfa96fb30f61 retains four,
+  and both availability flags were true. Explicit refresh then validated
+  carry-forward and selected b0a24f356e8b961db527955c at the second user
+  bookmark. Majkee confirmed the third test appears in the refreshed file.
+  The verified bounded watcher PID 1713656 was stopped and is absent; Majkee
+  closed the test Sublime windows and confirmed a native reply afterward.
+  The separate native Codex process remains running. PAD STEP 24 may start a
+  separate Claude test session with a printed explicit ID and /tmp directory;
+  await Majkee's report, do not retry or inspect unrelated histories. Watcher output is
+  /tmp/nablarva-native-view-mf7s3v06/watcher.jsonl. Do not stop Codex. This
+  non-layout cache has no reading-file layout.
+  Ia-sync and host configuration remain untouched.
 recovery_probe: |
   git -C /home/hruzam/unikuklatrix/nablarva status --short
   git -C /home/hruzam/unikuklatrix/nablarva diff -- .dev/session/pulse.md .dev/session/termbrana-M0-markdown-test
@@ -45,24 +75,30 @@ recovery_probe: |
       if p.is_file():
           print('\n--- ' + str(p) + ' ---\n' + p.read_text())
   PY
-  # Matching raw hashes, control-only changes, no additional artifacts and the parked
-  # STATUS support the initial no-start checkpoint. Any new artifact, changed input,
-  # STATUS transition or uncertain effect requires content review and updated recovery
-  # before work; do not infer completion from file presence or absence alone.
+  ls -ld /home/hruzam/.nablarva/nablarva-3ca44d762f78/termbrana-M0-markdown-test/cache.ui-witness-20261106 /home/hruzam/.nablarva/nablarva-3ca44d762f78/termbrana-M0-markdown-test/read.ui-witness-20261106.md 2>&1
+  ls -ld /home/hruzam/.nablarva/nablarva-3ca44d762f78/termbrana-M0-markdown-test/cache.approval-witness-20261106 /home/hruzam/.nablarva/nablarva-3ca44d762f78/termbrana-M0-markdown-test/read.approval-witness-20261106.md 2>&1
+  ls -l /home/hruzam/.nablarva/nablarva-3ca44d762f78/termbrana-M0-markdown-test/source.collector-witness-20261106.jsonl 2>&1
+  ls -ld /home/hruzam/.nablarva/nablarva-3ca44d762f78/termbrana-M0-markdown-test/cache.collector-witness-20261106 /home/hruzam/.nablarva/nablarva-3ca44d762f78/termbrana-M0-markdown-test/read.collector-witness-20261106.md 2>&1
+  ps -eo pid=,args= | rg 'collector.py watch.*nablarva-native-JQfnzz' || true
+  tail -n 1 /tmp/nablarva-native-view-mf7s3v06/watcher.jsonl 2>&1
+  # Inspect PAD STEP 17 receipt and ask Majkee whether the separate test session
+  # started, its temporary directory and whether it remains open before any retry.
+  # Do not scan native history or terminate unrelated processes. The append exists.
+  # Inspect layout.json, current.json, selected.json and the referenced bundle map,
+  # retained source and reading content against evidence.home.md; do not recreate or
+  # overwrite either named witness path without reconciling their current contents.
+  # Verify raw hashes and inspect actual diffs against the amended contract.
+  # The old continuity reproduction documents a detection limit, not a current PASS.
+  # Review candidate/evidence contents before adapting; file presence proves no result.
 holds:
-  - Only the declared experimental implementation and evidence scope is released when Majkee wakes Cartan; no executor is started by this planning session.
+  - Only the declared experimental implementation and evidence scope is released.
   - Permanent placement under L8/L8′ needs disposition before promotion; no ia-sync, host-config, live plugin, installation or deployment writes are released.
   - Preserve all existing raw inputs and other participants' work; no production pin claims, session injection, approval forwarding or private-log publication.
   - Runtime home writes require effective filesystem permission; override-only tests cannot qualify the selected temporary layout.
   - Native UI, both vendor adapters, approval evidence and weak-host performance remain unverified; reboot cleanup and automatic paging remain deferred.
-next: >-
-  Majkee wakes Cartan in Medusa posture on GPT-6.1-Terra, high effort, in
-  /home/hruzam/unikuklatrix/nablarva and gives it prompt-0 from
-  /home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/RUNBOOK.md.
-expected: >-
-  Cartan reads both controls, reconciles the read-only recovery probe and records
-  one bounded fixture-qualification action in STATUS before implementation.
+  - The universal regrow-detection hold is superseded by the approved snapshot contract; unobserved byte-identical regrow remains undetectable. Synthetic identities do not qualify native fidelity.
+  - Rewind only attributable obsolete experiment effects after before/after inspection; preserve useful fixtures, original evidence, unrelated changes and the existing Sublime installation.
+  - A research worker's over-broad read exposed native-history excerpts in its tool trace; no excerpts were copied to artifacts. Do not repeat the search; see evidence.reconciliation.md.
+next: Majkee performs PAD STEP 24, reporting the Claude test directory, explicit session ID and result.
+expected: A separate Claude session replies to the fictional prompt and remains open without exposing unrelated history.
 ```
-
-Initial snapshot initialized by Oraculum under Majkee's explicit Octopus assignment.
-`writer` names the declared continuing STATUS owner; Cartan has not been activated.

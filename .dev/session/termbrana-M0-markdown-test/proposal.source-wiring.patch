@@ -1,0 +1,1286 @@
+--- a/zsh/termbrana/transcript.py
++++ b/zsh/termbrana/transcript.py
+@@ -0,0 +1,627 @@
++#!/usr/bin/env python3
++"""Create immutable synthetic Codex transcript snapshots."""
++
++import argparse
++import fcntl
++import hashlib
++import importlib.util
++import json
++import os
++from pathlib import Path
++import shutil
++import subprocess
++import tempfile
++
++RENDERER_VERSION = "0.2-stage1"
++CONVERSATION_TYPES = {"user_message": "user", "agent_message": "assistant"}
++CLAUDE_ADAPTER_PATH = Path(__file__).with_name("claude_adapter.py")
++CODEX_NATIVE_ADAPTER_PATH = Path(__file__).with_name("codex_native.py")
++SYNTHETIC_EVENT_FORMAT = "synthetic-event-jsonl"
++CODEX_NATIVE_FORMAT = "codex-rollout-0.166"
++
++
++class SourceError(ValueError):
++    pass
++
++
++def digest(data: bytes) -> str:
++    return hashlib.sha256(data).hexdigest()
++
++
++def normalized_context(context: dict | None) -> dict:
++    """Compare legacy synthetic metadata without rewriting its immutable map."""
++    normalized = dict(context or {})
++    normalized.setdefault("input_format", SYNTHETIC_EVENT_FORMAT)
++    return normalized
++
++
++def contexts_equal(left: dict | None, right: dict | None) -> bool:
++    return normalized_context(left) == normalized_context(right)
++
++
++def snapshot_context(context: dict) -> dict:
++    """Retain legacy synthetic snapshot keys while keeping native format explicit."""
++    key = normalized_context(context)
++    if key["input_format"] == SYNTHETIC_EVENT_FORMAT:
++        key.pop("input_format")
++    return key
++
++
++def read_snapshot(source: Path) -> tuple[bytes, dict]:
++    resolved = source.resolve(strict=True)
++    with resolved.open("rb") as handle:
++        before = os.fstat(handle.fileno())
++        data = handle.read()
++        after = os.fstat(handle.fileno())
++    fields = ("st_dev", "st_ino", "st_size", "st_mtime_ns")
++    if any(getattr(before, field) != getattr(after, field) for field in fields):
++        raise SourceError("source changed while reading; retry from a stable snapshot")
++    return data, {
++        "path": str(resolved), "device": before.st_dev, "inode": before.st_ino,
++        "snapshot_sha256": digest(data), "snapshot_bytes": len(data),
++    }
++
++
++def load_codex(data: bytes):
++    records, unsupported, offset = [], [], 0
++    deferred_partial = False
++    for number, line in enumerate(data.splitlines(keepends=True), 1):
++        line_offset = offset
++        if not line.endswith(b"\n"):
++            deferred_partial = True
++            break
++        offset += len(line)
++        try:
++            event = json.loads(line)
++        except json.JSONDecodeError as exc:
++            raise SourceError(f"malformed complete JSONL record at line {number}: {exc.msg}") from exc
++        payload = event.get("payload") if event.get("type") == "event_msg" else None
++        if not isinstance(payload, dict):
++            unsupported.append({"line": number, "offset": line_offset, "reason": "not_event_msg"})
++            continue
++        kind, record_id = payload.get("type"), payload.get("id")
++        if kind == "synthetic_approval_request":
++            unsupported.append({
++                "kind": "approval_request", "id": record_id, "type": kind,
++                "timestamp": event.get("timestamp"), "request": payload.get("message"),
++                "source_line": number, "source_offset": line_offset,
++                "approval_outcome": "unknown", "schema": "fictional_synthetic_fixture",
++            })
++            continue
++        if kind not in CONVERSATION_TYPES:
++            unsupported.append({"id": record_id, "type": kind, "line": number, "offset": line_offset})
++            continue
++        required = (record_id, payload.get("message"), payload.get("thread_id"), payload.get("session_id"), payload.get("branch_id"))
++        if not all(isinstance(value, str) and value for value in required):
++            raise SourceError(f"incomplete conversation identity at line {number}")
++        if any(record["id"] == record_id for record in records):
++            raise SourceError(f"duplicate source record identity at line {number}: {record_id}")
++        records.append({
++            "id": record_id, "role": CONVERSATION_TYPES[kind], "timestamp": event.get("timestamp"),
++            "body": payload["message"], "line": number, "offset": line_offset,
++            "thread_id": payload["thread_id"], "session_id": payload["session_id"], "branch_id": payload["branch_id"],
++        })
++    if not records:
++        raise SourceError("source contains no conversation records")
++    identity = {key: records[0][key] for key in ("thread_id", "session_id", "branch_id")}
++    if any(any(record[key] != value for key, value in identity.items()) for record in records):
++        raise SourceError("source mixes conversation identities")
++    return records, unsupported, deferred_partial, offset, identity
++
++
++def load_claude(data: bytes):
++    spec = importlib.util.spec_from_file_location("termbrana_claude_adapter", CLAUDE_ADAPTER_PATH)
++    if spec is None or spec.loader is None:
++        raise SourceError("unable to load adjacent Claude adapter")
++    adapter = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(adapter)
++    try:
++        parsed = adapter.parse(data)
++    except adapter.SourceError as exc:
++        raise SourceError(str(exc)) from exc
++    locations, offset = {}, 0
++    for number, line in enumerate(data.splitlines(keepends=True), 1):
++        if not line.endswith(b"\n"):
++            break
++        record = json.loads(line)
++        uuid = record.get("uuid") if isinstance(record, dict) else None
++        if isinstance(uuid, str):
++            locations[uuid] = {"line": number, "offset": offset}
++        offset += len(line)
++    records, disclosures = [], list(parsed["disclosures"])
++    for exchange in parsed["exchanges"]:
++        location = locations.get(exchange["uuid"])
++        if location is None:
++            raise SourceError(f"missing source location for exchange: {exchange['uuid']}")
++        records.append({
++            "id": exchange["uuid"], "role": exchange["role"], "timestamp": exchange["timestamp"],
++            "body": exchange["body"], "line": location["line"], "offset": location["offset"],
++        })
++        if exchange["omitted_content"]:
++            disclosures.append({
++                "kind": "omitted_content", "uuid": exchange["uuid"],
++                "types": exchange["omitted_content"], "semantics": "unqualified",
++            })
++    identity = {
++        "session_id": parsed["session_id"],
++        "branch_id": "unqualified",
++        "thread_id": "unqualified",
++    }
++    deferred_partial = any(item.get("kind") == "incomplete_final_line" for item in disclosures)
++    return records, disclosures, deferred_partial, offset, identity
++
++
++def load_codex_native(data: bytes):
++    """Adapt the public rollout subset without claiming qualified native support."""
++    spec = importlib.util.spec_from_file_location("termbrana_codex_native", CODEX_NATIVE_ADAPTER_PATH)
++    if spec is None or spec.loader is None:
++        raise SourceError("unable to load adjacent Codex native adapter")
++    adapter = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(adapter)
++    try:
++        parsed = adapter.parse(data)
++    except adapter.SourceError as exc:
++        raise SourceError(str(exc)) from exc
++    records = []
++    for exchange in parsed["exchanges"]:
++        pin = exchange["pin"]
++        records.append({
++            "id": exchange["id"], "role": exchange["role"], "timestamp": exchange["timestamp"],
++            "body": exchange["body"], "line": pin["source_line"], "offset": pin["source_offset"],
++            "native_pin": pin,
++        })
++    return records, parsed["disclosures"], parsed["deferred_partial"], parsed["complete_bytes"], parsed["identity"]
++
++
++def load_vendor(vendor: str, data: bytes, input_format: str = SYNTHETIC_EVENT_FORMAT):
++    if vendor == "codex" and input_format == SYNTHETIC_EVENT_FORMAT:
++        return load_codex(data)
++    if vendor == "codex" and input_format == CODEX_NATIVE_FORMAT:
++        return load_codex_native(data)
++    if vendor == "claude-code" and input_format == SYNTHETIC_EVENT_FORMAT:
++        return load_claude(data)
++    raise SourceError(f"unsupported vendor/input format: {vendor}/{input_format}")
++
++
++def history_state(vendor: str, input_format: str, disclosures: list[dict]) -> dict:
++    """State the strongest claim this renderer may make about captured history."""
++    if vendor != "codex" or input_format != CODEX_NATIVE_FORMAT:
++        return {"state": "synthetic_fixture", "full_history_claim": False}
++    blockers = {
++        "context_compaction", "compacted_history", "fork_or_history_base", "thread_rolled_back",
++    }
++    found = [item["kind"] for item in disclosures if item.get("kind") in blockers]
++    return {
++        "state": "incomplete" if found else "snapshot_only",
++        "full_history_claim": False,
++        "native_qualification": "unqualified_without_isolated_operator_rollout",
++        "incomplete_reasons": found,
++        "carry_forward_allowed": not found,
++    }
++
++
++def disclosure_line(item: dict) -> str:
++    pin = item.get("pin") if isinstance(item.get("pin"), dict) else {}
++    identifier = item.get("id") or item.get("uuid") or pin.get("id") or "no-id"
++    kind = item.get("type") or item.get("kind") or item.get("reason") or "unknown"
++    suffix = " · approval outcome unknown" if item.get("approval_outcome") == "unknown" else ""
++    return f"- {identifier} · {kind}{suffix}"
++
++
++def render_markdown(vendor, records, unsupported, deferred_partial, identity, cached_source, provenance, history=None):
++    native = history is not None and history.get("state") in {"snapshot_only", "incomplete"}
++    title = "# Transcript view (native source-derived snapshot)" if native else "# Transcript view (synthetic Stage 1)"
++    lines = [title, "", "```text", f"vendor={vendor}", f"renderer={RENDERER_VERSION}"]
++    if native:
++        lines += [
++            f"history_state={history['state']}",
++            "full_history_claim=false",
++            f"native_qualification={history['native_qualification']}",
++        ]
++    lines += [f"{key}={value}" for key, value in identity.items()]
++    lines += ["```", ""]
++    pins = {}
++    for ordinal, record in enumerate(records, 1):
++        line_number = "\n".join(lines).count("\n") + 2
++        lines += [f"## {ordinal}. {record['role']} · {record['timestamp']} · {record['id']}", "", record["body"], ""]
++        pins[record["id"]] = {
++            "ordinal": ordinal, "markdown_line": line_number,
++            "source_line": record["line"], "source_offset": record["offset"],
++            "role": record["role"], "timestamp": record["timestamp"],
++            "snippet": " ".join(record["body"].split())[:80],
++        }
++        if "native_pin" in record:
++            pins[record["id"]]["native_pin"] = record["native_pin"]
++    if unsupported:
++        lines += ["## Disclosed unsupported records", ""]
++        for item in unsupported:
++            lines.append(disclosure_line(item))
++            if item.get("kind") == "approval_request":
++                lines += [
++                    f"  - request: {item.get('request')}",
++                    f"  - observed at: {item.get('timestamp')}",
++                    f"  - cached source: {cached_source}:{item['source_line']}",
++                    f"  - original provenance: {provenance['path']}",
++                    "  - outcome: unknown; historical record only, not a live pending approval.",
++                ]
++        lines += [""]
++    if deferred_partial:
++        lines += ["## Deferred incomplete final record", "", "- The final unterminated JSONL line is not rendered.", ""]
++    if native and history["state"] == "incomplete":
++        lines += [
++            "## Native history limitation", "",
++            "- This snapshot is incomplete; inherited or compacted context is not reconstructed.",
++            "- It must not be presented as the complete conversation history.",
++            "",
++        ]
++    return "\n".join(lines).encode(), pins
++
++
++def atomic_write(target: Path, data: bytes) -> None:
++    target.parent.mkdir(parents=True, exist_ok=True)
++    fd, temporary = tempfile.mkstemp(prefix=f".{target.name}.", dir=target.parent)
++    try:
++        with os.fdopen(fd, "wb") as handle:
++            handle.write(data)
++            handle.flush()
++            os.fsync(handle.fileno())
++        os.replace(temporary, target)
++    except BaseException:
++        try:
++            os.unlink(temporary)
++        except FileNotFoundError:
++            pass
++        raise
++
++
++def safe_cache(source: Path, cache: Path) -> Path:
++    cache_path = cache.resolve(strict=False)
++    if source == cache_path or source.is_relative_to(cache_path):
++        raise SourceError("cache must not be the source file or an ancestor of it")
++    return cache_path
++
++
++def safe_token(value: str, field: str) -> str:
++    if not value or any(character not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for character in value):
++        raise SourceError(f"{field} must contain only letters, digits, hyphen, or underscore")
++    return value
++
++
++def project_slug(project: str) -> str:
++    resolved = Path(project).resolve(strict=False)
++    stem = "".join(character.lower() if character.isalnum() else "-" for character in resolved.name).strip("-") or "project"
++    return f"{stem}-{digest(str(resolved).encode())[:12]}"
++
++
++def prepare_layout(home: Path, context: dict, bed: str, agentive_session: str, source: Path) -> tuple[Path, Path]:
++    bed = safe_token(bed, "bed")
++    agentive_session = safe_token(agentive_session, "agentive session")
++    project = str(Path(context["project"]).resolve(strict=False))
++    root = home.resolve(strict=False) / project_slug(project) / bed
++    cache = root / f"cache.{agentive_session}"
++    reading = root / f"read.{agentive_session}.md"
++    source_path = source.resolve(strict=True)
++    cache = safe_cache(source_path, cache)
++    if any(path.resolve(strict=False) == source_path for path in (cache / "layout.json", reading)):
++        raise SourceError("generated layout path aliases the input source")
++    expected = {
++        "project": project, "bed": bed, "agentive_session": agentive_session,
++        "vendor": context["vendor"], "vendor_version": context["vendor_version"],
++        "input_format": context.get("input_format", SYNTHETIC_EVENT_FORMAT),
++        "cache": str(cache), "reading": str(reading),
++    }
++    metadata = cache / "layout.json"
++    if metadata.is_file():
++        try:
++            actual = json.loads(metadata.read_text())
++        except (OSError, json.JSONDecodeError) as exc:
++            raise SourceError(f"layout cache metadata is unreadable: {exc}") from exc
++        if not contexts_equal(actual, expected):
++            raise SourceError("layout cache identity collision")
++    elif cache.exists() and any(cache.iterdir()):
++        raise SourceError("layout cache exists without identity metadata")
++    else:
++        cache.mkdir(parents=True, exist_ok=True)
++        atomic_write(metadata, (json.dumps(expected, sort_keys=True) + "\n").encode())
++    return cache, reading
++
++
++def layout_metadata(cache: Path) -> dict | None:
++    path = cache / "layout.json"
++    if not path.is_file():
++        return None
++    try:
++        return json.loads(path.read_text())
++    except (OSError, json.JSONDecodeError) as exc:
++        raise SourceError(f"layout cache metadata is unreadable: {exc}") from exc
++
++
++def initialize_selected_snapshot(cache: Path, snapshot: str) -> None:
++    selected = cache / "selected.json"
++    with (cache / ".publish.lock").open("a+b") as lock:
++        fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
++        if not selected.exists():
++            map_path = cache / "snapshots" / snapshot / "map.json"
++            pointer = {"snapshot": snapshot, "map_sha256": digest(map_path.read_bytes())}
++            atomic_write(selected, (json.dumps(pointer, sort_keys=True) + "\n").encode())
++        fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
++
++
++def materialize_selected_reading(cache: Path) -> Path | None:
++    layout = layout_metadata(cache)
++    if layout is None:
++        return None
++    bundle, _ = resolve_reading_bundle(cache, None)
++    reading = Path(layout["reading"])
++    atomic_write(reading, (bundle / "read.md").read_bytes())
++    return reading
++
++
++def bundle_map(bundle: Path) -> dict:
++    data = json.loads((bundle / "map.json").read_text())
++    for name in ("source.jsonl", "read.md"):
++        actual = (bundle / name).read_bytes()
++        expected = data["files"][name]
++        if len(actual) != expected["bytes"] or digest(actual) != expected["sha256"]:
++            raise SourceError(f"snapshot bundle is inconsistent: {name}")
++    return data
++
++
++def inspect_source(source: Path, context: dict) -> dict:
++    """Read one stable vendor source without publishing a bundle."""
++    source_bytes, provenance = read_snapshot(source)
++    vendor = context.get("vendor")
++    if not isinstance(vendor, str):
++        raise SourceError("context requires vendor")
++    input_format = context.get("input_format", SYNTHETIC_EVENT_FORMAT)
++    records, disclosures, deferred_partial, boundary, identity = load_vendor(vendor, source_bytes, input_format)
++    return {
++        "source_bytes": source_bytes,
++        "retained": source_bytes[:boundary],
++        "provenance": provenance,
++        "records": records,
++        "disclosures": disclosures,
++        "deferred_partial": deferred_partial,
++        "boundary": boundary,
++        "identity": identity,
++        "history": history_state(vendor, input_format, disclosures),
++    }
++
++
++def snapshot_key(provenance: dict, retained: bytes, identity: dict, context: dict, deferred_partial: bool) -> str:
++    capture = {
++        "renderer": RENDERER_VERSION,
++        "source": provenance,
++        "retained_sha256": digest(retained),
++        "identity": identity,
++        "context": snapshot_context(context),
++        "deferred_partial_final_line": deferred_partial,
++    }
++    return digest(json.dumps(capture, sort_keys=True, separators=(",", ":")).encode())[:24]
++
++
++def publish(source: Path, cache: Path, context: dict) -> dict:
++    inspected = inspect_source(source, context)
++    provenance = inspected["provenance"]
++    cache = safe_cache(Path(provenance["path"]), cache)
++    vendor = context["vendor"]
++    retained = inspected["retained"]
++    records, unsupported, retained_partial, boundary, identity = load_vendor(
++        vendor, retained, context.get("input_format", SYNTHETIC_EVENT_FORMAT)
++    )
++    if retained_partial or boundary != len(retained):
++        raise SourceError("retained source is not a complete-record snapshot")
++    deferred_partial = inspected["deferred_partial"]
++    snapshot_id = snapshot_key(provenance, retained, identity, context, deferred_partial)
++    snapshots, lock_path = cache / "snapshots", cache / ".publish.lock"
++    target = snapshots / snapshot_id
++    markdown, pins = render_markdown(
++        vendor, records, unsupported, False, identity,
++        target / "source.jsonl", provenance, inspected["history"],
++    )
++    cache.mkdir(parents=True, exist_ok=True)
++    with lock_path.open("a+b") as lock:
++        fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
++        if not target.exists():
++            snapshots.mkdir(parents=True, exist_ok=True)
++            staging = Path(tempfile.mkdtemp(prefix=".staging-", dir=snapshots))
++            try:
++                (staging / "source.jsonl").write_bytes(retained)
++                (staging / "read.md").write_bytes(markdown)
++                metadata = {
++                    "snapshot": snapshot_id, "renderer": RENDERER_VERSION, "vendor": vendor,
++                    "context": context,
++                    "source": provenance,
++                    "retained": {"bytes": len(retained), "sha256": digest(retained), "complete_boundary": boundary},
++                    "identity": identity, "deferred_partial_final_line": deferred_partial,
++                    "history": inspected["history"],
++                    "capture_state": {"deferred_incomplete_tail": deferred_partial},
++                    "unsupported": unsupported, "pins": pins,
++                    "approval_references": [item for item in unsupported if item.get("kind") == "approval_request"],
++                    "files": {
++                        "source.jsonl": {"bytes": len(retained), "sha256": digest(retained)},
++                        "read.md": {"bytes": len(markdown), "sha256": digest(markdown)},
++                    },
++                    "continuity_limit": "Byte-identical same-inode truncate/regrow restoring the retained prefix is indistinguishable from append without a native generation identity.",
++                }
++                (staging / "map.json").write_text(json.dumps(metadata, indent=2, sort_keys=True) + "\n")
++                for entry in staging.iterdir():
++                    with entry.open("rb") as handle:
++                        os.fsync(handle.fileno())
++                os.replace(staging, target)
++            except BaseException:
++                shutil.rmtree(staging, ignore_errors=True)
++                raise
++        metadata = bundle_map(target)
++        pointer = {"snapshot": snapshot_id, "map_sha256": digest((target / "map.json").read_bytes())}
++        atomic_write(cache / "current.json", (json.dumps(pointer, sort_keys=True) + "\n").encode())
++        fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
++    return {"cache": str(cache.resolve()), "snapshot": snapshot_id, "read": str((target / "read.md").resolve()), "map": str((target / "map.json").resolve()), "records": len(metadata["pins"]), "context": metadata["context"]}
++
++
++def rebuild_bundle(bundle: Path) -> bytes:
++    """Render a retained bundle without consulting its original source."""
++    data = bundle_map(bundle)
++    retained = (bundle / "source.jsonl").read_bytes()
++    records, disclosures, deferred_partial, boundary, identity = load_vendor(
++        data["vendor"], retained, data["context"].get("input_format", SYNTHETIC_EVENT_FORMAT)
++    )
++    if deferred_partial or boundary != len(retained):
++        raise SourceError("retained bundle source is incomplete")
++    return render_markdown(
++        data["vendor"], records, disclosures, False, identity,
++        bundle / "source.jsonl", data["source"], data.get("history"),
++    )[0]
++
++
++def resolve_bundle(cache: Path, snapshot: str | None) -> tuple[Path, dict]:
++    if snapshot is None:
++        pointer = json.loads((cache / "current.json").read_text())
++        snapshot = pointer["snapshot"]
++        map_path = cache / "snapshots" / snapshot / "map.json"
++        if digest(map_path.read_bytes()) != pointer["map_sha256"]:
++            raise SourceError("current pointer does not match its snapshot map")
++    bundle = cache / "snapshots" / snapshot
++    return bundle, bundle_map(bundle)
++
++
++def resolve_reading_bundle(cache: Path, snapshot: str | None) -> tuple[Path, dict]:
++    if snapshot is not None:
++        return resolve_bundle(cache, snapshot)
++    selected = cache / "selected.json"
++    if not selected.is_file():
++        return resolve_bundle(cache, None)
++    try:
++        pointer = json.loads(selected.read_text())
++        selected_snapshot = pointer["snapshot"]
++        map_path = cache / "snapshots" / selected_snapshot / "map.json"
++    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
++        raise SourceError(f"selected reading pointer is invalid: {exc}") from exc
++    try:
++        matches = digest(map_path.read_bytes()) == pointer.get("map_sha256")
++    except OSError as exc:
++        raise SourceError(f"selected reading snapshot is unavailable: {exc}") from exc
++    if not matches:
++        raise SourceError("selected reading pointer does not match its snapshot map")
++    return resolve_bundle(cache, selected_snapshot)
++
++
++def carry_forward(source: Path, cache: Path, snapshot: str) -> dict:
++    bundle, previous = resolve_bundle(cache, snapshot)
++    current, provenance = read_snapshot(source)
++    old = previous["source"]
++    if (provenance["path"], provenance["device"], provenance["inode"]) != (old["path"], old["device"], old["inode"]):
++        raise SourceError("carry-forward blocked: source identity changed")
++    retained = (bundle / "source.jsonl").read_bytes()
++    if len(current) < len(retained):
++        raise SourceError("carry-forward blocked: source shortened")
++    if current[:len(retained)] != retained:
++        raise SourceError("carry-forward blocked: captured prefix changed")
++    history = previous.get("history", {})
++    if not history.get("carry_forward_allowed", True):
++        raise SourceError("carry-forward blocked: native source history is incomplete")
++    _, _, _, _, identity = load_vendor(
++        previous["context"]["vendor"], current,
++        previous["context"].get("input_format", SYNTHETIC_EVENT_FORMAT),
++    )
++    if identity != previous["identity"]:
++        raise SourceError("carry-forward blocked: conversation identity changed")
++    return {"from_snapshot": snapshot, "source": provenance, "carry_forward": True}
++
++
++def selection(cache: Path, snapshot: str | None) -> dict:
++    _, data = resolve_reading_bundle(cache, snapshot)
++    entries = []
++    for record_id, pin in sorted(data["pins"].items(), key=lambda item: item[1]["ordinal"]):
++        entries.append({
++            "number": pin["ordinal"], "record": record_id, "line": pin["markdown_line"],
++            "role": pin["role"], "timestamp": pin["timestamp"], "snippet": pin["snippet"],
++        })
++    return {"snapshot": data["snapshot"], "entries": entries}
++
++
++def open_record(cache: Path, snapshot: str | None, record: str) -> dict:
++    bundle, data = resolve_reading_bundle(cache, snapshot)
++    pin = data["pins"].get(record)
++    if pin is None:
++        raise SourceError("open blocked: source record is absent from this snapshot")
++    target = f"{bundle / 'read.md'}:{pin['markdown_line']}"
++    try:
++        subprocess.run(["subl", "-n", target], check=True)
++    except (OSError, subprocess.CalledProcessError) as exc:
++        raise SourceError(f"editor open failed for {target}: {exc}") from exc
++    return {"opened": target, "snapshot": data["snapshot"], "source_record_id": record}
++
++
++def main() -> int:
++    parser = argparse.ArgumentParser(description=__doc__)
++    command = parser.add_subparsers(dest="command", required=True)
++    render_parser = command.add_parser("render")
++    render_parser.add_argument("--vendor", required=True, choices=("codex", "claude-code"))
++    render_parser.add_argument("--vendor-version", required=True)
++    render_parser.add_argument("--input-format", choices=(SYNTHETIC_EVENT_FORMAT, CODEX_NATIVE_FORMAT), default=SYNTHETIC_EVENT_FORMAT)
++    render_parser.add_argument("--project", required=True, type=Path)
++    render_parser.add_argument("--source", required=True, type=Path)
++    render_parser.add_argument("--out", type=Path, help="disposable cache root")
++    render_parser.add_argument("--home", type=Path, help="runtime home; defaults to ~/.nablarva in layout mode")
++    render_parser.add_argument("--bed", help="task bed slug for layout mode")
++    render_parser.add_argument("--agentive-session", help="safe vendor conversation/branch identifier for layout mode")
++    pin_parser = command.add_parser("pin")
++    pin_parser.add_argument("--cache", required=True, type=Path)
++    pin_parser.add_argument("--snapshot")
++    pin_parser.add_argument("--record", required=True)
++    select_parser = command.add_parser("select")
++    select_parser.add_argument("--cache", required=True, type=Path)
++    select_parser.add_argument("--snapshot")
++    open_parser = command.add_parser("open")
++    open_parser.add_argument("--cache", required=True, type=Path)
++    open_parser.add_argument("--snapshot")
++    open_parser.add_argument("--record", required=True)
++    carry_parser = command.add_parser("carry-forward")
++    carry_parser.add_argument("--source", required=True, type=Path)
++    carry_parser.add_argument("--cache", required=True, type=Path)
++    carry_parser.add_argument("--snapshot", required=True)
++    args = parser.parse_args()
++    try:
++        if args.command == "render":
++            context = {
++                "project": str(args.project.resolve(strict=False)),
++                "vendor": args.vendor,
++                "vendor_version": args.vendor_version,
++                "input_format": args.input_format,
++            }
++            if args.out is not None:
++                if args.home is not None or args.bed is not None or args.agentive_session is not None:
++                    raise SourceError("--out cannot be combined with layout arguments")
++                cache = args.out
++            else:
++                if args.bed is None or args.agentive_session is None:
++                    raise SourceError("layout mode requires --bed and --agentive-session")
++                home = args.home or (Path.home() / ".nablarva")
++                cache, _ = prepare_layout(home, context, args.bed, args.agentive_session, args.source)
++            result = publish(args.source, cache, context)
++            if layout_metadata(cache) is not None:
++                initialize_selected_snapshot(cache, result["snapshot"])
++            reading = materialize_selected_reading(cache)
++            if reading is not None:
++                result["reading"] = str(reading)
++        elif args.command == "pin":
++            bundle, data = resolve_reading_bundle(args.cache, args.snapshot)
++            pin = data["pins"].get(args.record)
++            if pin is None:
++                raise SourceError("pin invalid: source record is absent from this snapshot")
++            result = {"vendor": data["vendor"], "snapshot": data["snapshot"], "context": data["context"], "identity": data["identity"], "source_record_id": args.record, "read": str((bundle / "read.md").resolve()), **pin}
++        elif args.command == "select":
++            result = selection(args.cache, args.snapshot)
++        elif args.command == "open":
++            result = open_record(args.cache, args.snapshot, args.record)
++        else:
++            result = carry_forward(args.source, args.cache, args.snapshot)
++        print(json.dumps(result, sort_keys=True))
++    except (OSError, ValueError, SourceError) as exc:
++        parser.error(str(exc))
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+--- a/zsh/termbrana/codex_native.py
++++ b/zsh/termbrana/codex_native.py
+@@ -0,0 +1,229 @@
++#!/usr/bin/env python3
++"""Conservative reader for Codex 0.166.0 public rollout JSONL.
++
++This is deliberately separate from ``transcript.py``.  It reads only bytes supplied
++by its caller and models the public, tagged rollout envelope; it neither discovers nor
++opens a Codex home directory.  Native qualification still requires an isolated
++operator-produced rollout from the target build.
++
++Sources (tag rust-v0.166.0):
++* codex-rs/rollout/src/lib.rs: ``RolloutLine`` and the canonical decoder.
++* codex-rs/history/src/rollout_payload.rs: the ``type``/``payload`` item wire form.
++* codex-rs/protocol/src/protocol.rs: ``SessionMeta`` and message event payloads.
++"""
++
++import json
++
++
++class SourceError(ValueError):
++    """The supplied bytes cannot be read under this deliberately narrow contract."""
++
++
++CONVERSATION_EVENTS = {"user_message": "user", "agent_message": "assistant"}
++SUPPORTED_HISTORY_MODES = {"legacy", "paginated"}
++
++
++def _require_string(value, field, line):
++    if not isinstance(value, str) or not value:
++        raise SourceError(f"missing {field} at line {line}")
++    return value
++
++
++def _location(line, offset, ordinal, thread_id):
++    """Return an explicit snapshot-bound reader pin.
++
++    A paginated ordinal locates a record in this captured rollout, but it is not a
++    universal durable identity: a revert can retain a stable thread ID while writing
++    a distinct rollout ID.  Carrying an ordinal into another snapshot therefore
++    requires separately validated capture continuity.  Legacy history has no native
++    per-item identifier at all.
++    """
++    if ordinal is not None:
++        return {
++            "id": f"snapshot:thread:{thread_id}:ordinal:{ordinal}",
++            "kind": "snapshot_bound_rollout_ordinal",
++            "thread_id": thread_id,
++            "ordinal": ordinal,
++            "snapshot_bound": True,
++            "carry_forward_requires": "validated_capture_continuity",
++            "source_line": line,
++            "source_offset": offset,
++        }
++    return {
++        "id": f"snapshot:line:{line}:offset:{offset}",
++        "kind": "snapshot_relative_position",
++        "snapshot_relative": True,
++        "carry_forward_requires": "validated_capture_continuity",
++        "source_line": line,
++        "source_offset": offset,
++    }
++
++
++def _parse_meta(payload, line):
++    if not isinstance(payload, dict):
++        raise SourceError(f"session_meta payload must be an object at line {line}")
++    history_mode = payload.get("history_mode", "legacy")
++    if history_mode not in SUPPORTED_HISTORY_MODES:
++        raise SourceError(f"unsupported session_meta.history_mode at line {line}: {history_mode!r}")
++    return {
++        "thread_id": _require_string(payload.get("id"), "session_meta.id", line),
++        "session_id": _require_string(payload.get("session_id"), "session_meta.session_id", line),
++        "forked_from_id": payload.get("forked_from_id"),
++        "attached_thread": payload.get("attached_thread", False),
++        "forked_from_ordinal_exclusive": payload.get("forked_from_ordinal_exclusive"),
++        "parent_thread_id": payload.get("parent_thread_id"),
++        "history_mode": history_mode,
++        "history_base": payload.get("history_base"),
++        "subagent_history_start_ordinal": payload.get("subagent_history_start_ordinal"),
++    }
++
++
++def parse(data: bytes) -> dict:
++    """Parse a source-derived subset of a Codex rollout JSONL snapshot.
++
++    Only complete ``event_msg`` user/agent text events become exchanges.  Every other
++    native representation stays visible as a disclosure rather than being guessed as
++    a user-visible message.  In particular, ``response_item`` is not rendered: it
++    can be an alternate persisted representation, but this reader cannot establish
++    duplicate semantics from the file alone.
++    """
++    exchanges, disclosures, seen_pins = [], [], set()
++    meta, offset, complete_records = None, 0, 0
++    deferred_partial = False
++
++    for line_number, raw_line in enumerate(data.splitlines(keepends=True), 1):
++        line_offset = offset
++        if not raw_line.endswith(b"\n"):
++            deferred_partial = True
++            disclosures.append({
++                "kind": "incomplete_final_line",
++                "source_line": line_number,
++                "source_offset": line_offset,
++                "semantics": "not parsed or rendered",
++            })
++            break
++        offset += len(raw_line)
++        try:
++            record = json.loads(raw_line)
++        except json.JSONDecodeError as exc:
++            raise SourceError(f"malformed complete JSONL record at line {line_number}: {exc.msg}") from exc
++        if not isinstance(record, dict):
++            raise SourceError(f"rollout record must be an object at line {line_number}")
++        timestamp = _require_string(record.get("timestamp"), "rollout timestamp", line_number)
++        ordinal = record.get("ordinal")
++        if ordinal is not None and (not isinstance(ordinal, int) or isinstance(ordinal, bool) or ordinal < 0):
++            raise SourceError(f"invalid rollout ordinal at line {line_number}")
++
++        kind, payload = record.get("type"), record.get("payload")
++        if complete_records == 0:
++            if kind != "session_meta":
++                raise SourceError("rollout must begin with session_meta")
++            meta = _parse_meta(payload, line_number)
++        elif kind == "session_meta":
++            raise SourceError(f"duplicate session_meta at line {line_number}")
++        complete_records += 1
++
++        if meta["history_mode"] == "paginated" and ordinal is None:
++            raise SourceError(f"paginated rollout record missing ordinal at line {line_number}")
++        pin = _location(line_number, line_offset, ordinal, meta["thread_id"])
++        if pin["id"] in seen_pins:
++            raise SourceError(f"duplicate rollout position at line {line_number}: {pin['id']}")
++        seen_pins.add(pin["id"])
++
++        if kind == "session_meta":
++            continue
++        if kind == "response_item":
++            disclosures.append({
++                "kind": "potential_duplicate_representation",
++                "native_type": "response_item",
++                "response_item_type": payload.get("type") if isinstance(payload, dict) else None,
++                "pin": pin,
++                "semantics": "not rendered; relation to event_msg is unknown",
++            })
++            continue
++        if kind == "compacted":
++            disclosures.append({
++                "kind": "compacted_history",
++                "pin": pin,
++                "semantics": "not rendered; prior context may have been replaced",
++            })
++            continue
++        if kind != "event_msg" or not isinstance(payload, dict):
++            disclosures.append({
++                "kind": "unsupported_rollout_item",
++                "native_type": kind,
++                "pin": pin,
++                "semantics": "not rendered",
++            })
++            continue
++
++        event_type = payload.get("type")
++        if event_type == "thread_rolled_back":
++            disclosures.append({
++                "kind": "thread_rolled_back",
++                "pin": pin,
++                "semantics": "not rendered; persisted rollback removes earlier user turns",
++            })
++            continue
++        if event_type == "context_compacted":
++            disclosures.append({
++                "kind": "context_compaction",
++                "pin": pin,
++                "semantics": "not rendered; adapter does not reconstruct replaced context",
++            })
++            continue
++        role = CONVERSATION_EVENTS.get(event_type)
++        if role is None:
++            disclosures.append({
++                "kind": "unsupported_event",
++                "event_type": event_type,
++                "pin": pin,
++                "semantics": "not rendered",
++            })
++            continue
++        message = payload.get("message")
++        if not isinstance(message, str):
++            raise SourceError(f"{event_type}.message must be a string at line {line_number}")
++        exchanges.append({
++            "id": pin["id"],
++            "role": role,
++            "body": message,
++            "timestamp": timestamp,
++            "pin": pin,
++            "phase": payload.get("phase"),
++        })
++
++    if meta is None:
++        raise SourceError("source contains no complete rollout metadata")
++    if not exchanges:
++        raise SourceError("source contains no supported conversation events")
++    lineage_present = (
++        meta["forked_from_id"] is not None
++        or meta["attached_thread"] is True
++        or meta["forked_from_ordinal_exclusive"] is not None
++        or meta["parent_thread_id"] is not None
++        or meta["history_base"] is not None
++        or meta["subagent_history_start_ordinal"] is not None
++    )
++    if lineage_present:
++        disclosures.append({
++            "kind": "fork_or_history_base",
++            "thread_id": meta["thread_id"],
++            "forked_from_id": meta["forked_from_id"],
++            "attached_thread": meta["attached_thread"],
++            "forked_from_ordinal_exclusive": meta["forked_from_ordinal_exclusive"],
++            "parent_thread_id": meta["parent_thread_id"],
++            "history_base": meta["history_base"],
++            "subagent_history_start_ordinal": meta["subagent_history_start_ordinal"],
++            "semantics": "lineage/inherited history disclosed; this adapter does not merge another rollout",
++        })
++    return {
++        "vendor": "codex",
++        "vendor_version": "0.166.0-source-derived",
++        "identity": meta,
++        "exchanges": exchanges,
++        "disclosures": disclosures,
++        "deferred_partial": deferred_partial,
++        "complete_bytes": offset,
++        "native_qualification": "unqualified_without_isolated_operator_rollout",
++    }
+--- a/zsh/termbrana/claude_adapter.py
++++ b/zsh/termbrana/claude_adapter.py
+@@ -0,0 +1,83 @@
++"""Synthetic Claude Code 2.1.286 fixture adapter.
++
++The native transcript schema is not qualified. This module only parses explicitly
++supplied bytes matching the frozen synthetic fixture and keeps unknown semantics visible.
++"""
++
++import json
++
++
++class SourceError(ValueError):
++    pass
++
++
++def _body(record):
++    message = record.get("message")
++    if not isinstance(message, dict):
++        raise SourceError(f"missing message object: {record.get('uuid', 'no-uuid')}")
++    content = message.get("content")
++    if isinstance(content, str):
++        return content, []
++    if isinstance(content, list):
++        texts = [part.get("text") for part in content if isinstance(part, dict) and part.get("type") == "text"]
++        omitted = [part.get("type", "object_without_type") if isinstance(part, dict) else "non_object" for part in content if not isinstance(part, dict) or part.get("type") != "text"]
++        if texts and all(isinstance(text, str) for text in texts):
++            return "\n".join(texts), omitted
++    raise SourceError(f"unsupported message content: {record.get('uuid', 'no-uuid')}")
++
++
++def parse(data: bytes) -> dict:
++    """Return main-line exchanges and explicit disclosures for synthetic fixture bytes."""
++    exchanges, disclosures = [], []
++    session_id = None
++    last_uuid = None
++    seen = set()
++    for line_number, raw_line in enumerate(data.splitlines(keepends=True), 1):
++        if not raw_line.endswith(b"\n"):
++            disclosures.append({"kind": "incomplete_final_line", "line": line_number})
++            break
++        try:
++            record = json.loads(raw_line)
++        except json.JSONDecodeError as exc:
++            raise SourceError(f"malformed complete JSONL record at line {line_number}: {exc.msg}") from exc
++        if not isinstance(record, dict):
++            raise SourceError(f"non-object record at line {line_number}")
++        current_session = record.get("sessionId")
++        if not isinstance(current_session, str) or not current_session:
++            raise SourceError(f"missing session identity at line {line_number}")
++        if session_id is None:
++            session_id = current_session
++        elif session_id != current_session:
++            raise SourceError("source mixes session identities")
++        kind, uuid = record.get("type"), record.get("uuid")
++        if isinstance(uuid, str):
++            if uuid in seen:
++                raise SourceError(f"duplicate source UUID at line {line_number}: {uuid}")
++            seen.add(uuid)
++        if kind == "last-prompt":
++            source_uuid = record.get("sourceUuid")
++            disclosures.append({"kind": "duplicate_representation", "uuid": uuid, "source_uuid": source_uuid})
++            continue
++        if kind == "permission-mode":
++            disclosures.append({"kind": "permission_mode", "mode": record.get("permissionMode"), "approval_outcome": "unknown"})
++            continue
++        if kind not in {"user", "assistant"}:
++            disclosures.append({"kind": "unsupported", "type": kind, "uuid": uuid, "semantics": "unknown"})
++            continue
++        if not isinstance(uuid, str) or not uuid:
++            raise SourceError(f"missing exchange UUID at line {line_number}")
++        parent = record.get("parentUuid")
++        if not exchanges:
++            main_line = parent is None
++        else:
++            main_line = parent == last_uuid
++        body, omitted = _body(record)
++        exchange = {"uuid": uuid, "role": kind, "timestamp": record.get("timestamp"), "body": body, "omitted_content": omitted}
++        if not main_line:
++            disclosures.append({"kind": "alternate_branch", "uuid": uuid, "parent_uuid": parent, "main_line_resolution": "refused"})
++            continue
++        exchanges.append(exchange)
++        last_uuid = uuid
++    if session_id is None or not exchanges:
++        raise SourceError("source contains no canonical exchanges")
++    return {"vendor": "claude-code", "vendor_version": "2.1.286", "session_id": session_id, "exchanges": exchanges, "disclosures": disclosures, "native_schema": "unqualified"}
+--- a/zsh/termbrana/collector.py
++++ b/zsh/termbrana/collector.py
+@@ -0,0 +1,274 @@
++#!/usr/bin/env python3
++"""Foreground collection for immutable transcript snapshots.
++
++This module only polls an explicitly supplied file.  It neither discovers nor resumes
++native sessions, starts an editor, nor runs after its command exits.
++"""
++
++import argparse
++import importlib.util
++import json
++from pathlib import Path
++import time
++
++
++_TRANSCRIPT_PATH = Path(__file__).with_name("transcript.py")
++_TRANSCRIPT_SPEC = importlib.util.spec_from_file_location("termbrana_transcript", _TRANSCRIPT_PATH)
++if _TRANSCRIPT_SPEC is None or _TRANSCRIPT_SPEC.loader is None:
++    raise RuntimeError("unable to load adjacent transcript engine")
++transcript = importlib.util.module_from_spec(_TRANSCRIPT_SPEC)
++_TRANSCRIPT_SPEC.loader.exec_module(transcript)
++
++
++class CollectionError(ValueError):
++    pass
++
++
++def _selection_path(cache: Path) -> Path:
++    return cache / "selected.json"
++
++
++def _write_selection(cache: Path, snapshot: str, record: str | None = None) -> None:
++    bundle, metadata = transcript.resolve_bundle(cache, snapshot)
++    del bundle
++    payload = {
++        "snapshot": snapshot,
++        "map_sha256": transcript.digest((cache / "snapshots" / snapshot / "map.json").read_bytes()),
++        "identity": metadata["identity"],
++    }
++    if record is not None:
++        payload["record"] = record
++    transcript.atomic_write(
++        _selection_path(cache),
++        (json.dumps(payload, sort_keys=True) + "\n").encode(),
++    )
++
++
++def _select_and_materialize(cache: Path, snapshot: str, record: str | None = None) -> Path | None:
++    """Commit selection and its layout reading file together, or restore selection."""
++    pointer = _selection_path(cache)
++    previous = pointer.read_bytes() if pointer.is_file() else None
++    _write_selection(cache, snapshot, record)
++    try:
++        return transcript.materialize_selected_reading(cache)
++    except (OSError, ValueError, transcript.SourceError):
++        if previous is None:
++            try:
++                pointer.unlink()
++            except FileNotFoundError:
++                pass
++        else:
++            transcript.atomic_write(pointer, previous)
++        raise
++
++
++def _selection(cache: Path, fallback: str) -> dict:
++    path = _selection_path(cache)
++    if not path.is_file():
++        _select_and_materialize(cache, fallback)
++        return json.loads(path.read_text())
++    selection = json.loads(path.read_text())
++    snapshot = selection.get("snapshot")
++    if not isinstance(snapshot, str) or not snapshot:
++        raise CollectionError("selected snapshot pointer is invalid")
++    map_path = cache / "snapshots" / snapshot / "map.json"
++    if not map_path.is_file() or transcript.digest(map_path.read_bytes()) != selection.get("map_sha256"):
++        raise CollectionError("selected snapshot pointer does not match its bundle")
++    return selection
++
++
++def status(cache: Path) -> dict:
++    _, latest = transcript.resolve_bundle(cache, None)
++    latest_snapshot = latest["snapshot"]
++    selected_pointer = _selection(cache, latest_snapshot)
++    selected_snapshot = selected_pointer["snapshot"]
++    _, selected = transcript.resolve_bundle(cache, selected_snapshot)
++    selected_records = len(selected["pins"])
++    same_source = (
++        latest["source"]["path"],
++        latest["source"]["device"],
++        latest["source"]["inode"],
++    ) == (
++        selected["source"]["path"],
++        selected["source"]["device"],
++        selected["source"]["inode"],
++    )
++    same_conversation = latest["identity"] == selected["identity"]
++    same_context = transcript.contexts_equal(latest.get("context"), selected.get("context"))
++    selected_carryable = selected.get("history", {}).get("carry_forward_allowed", True)
++    latest_carryable = latest.get("history", {}).get("carry_forward_allowed", True)
++    latest_retained = (cache / "snapshots" / latest_snapshot / "source.jsonl").read_bytes()
++    selected_retained = (cache / "snapshots" / selected_snapshot / "source.jsonl").read_bytes()
++    complete_prefix_extended = (
++        len(latest_retained) > len(selected_retained)
++        and latest_retained.startswith(selected_retained)
++    )
++    return {
++        "selected_snapshot": selected_snapshot,
++        "latest_snapshot": latest_snapshot,
++        "selected_read": str((cache / "snapshots" / selected_snapshot / "read.md").resolve()),
++        "latest_read": str((cache / "snapshots" / latest_snapshot / "read.md").resolve()),
++        "selected_record": selected_pointer.get("record"),
++        "new_snapshot_available": latest_snapshot != selected_snapshot,
++        "new_records_available": (
++            latest_snapshot != selected_snapshot
++            and same_source
++            and same_conversation
++            and same_context
++            and complete_prefix_extended
++            and selected_carryable
++            and latest_carryable
++        ),
++        "selected_records": selected_records,
++        "latest_records": len(latest["pins"]),
++    }
++
++
++def _complete_prefix_unchanged(source: Path, cache: Path, context: dict, snapshot: str | None = None) -> bool:
++    """Whether a same-source poll adds no complete records to one retained bundle."""
++    _, latest = transcript.resolve_bundle(cache, snapshot)
++    if not transcript.contexts_equal(latest.get("context"), context):
++        return False
++    inspected = transcript.inspect_source(source, context)
++    provenance = inspected["provenance"]
++    old = latest["source"]
++    if (provenance["path"], provenance["device"], provenance["inode"]) != (
++        old["path"], old["device"], old["inode"],
++    ):
++        return False
++    if inspected["identity"] != latest["identity"]:
++        return False
++    return transcript.digest(inspected["retained"]) == latest["retained"]["sha256"]
++
++
++def collect_once(source: Path, cache: Path, context: dict) -> dict:
++    """Capture one complete-prefix snapshot without moving the reading selection."""
++    if (cache / "current.json").is_file() and _complete_prefix_unchanged(source, cache, context):
++        return {"published_snapshot": None, "complete_prefix_unchanged": True, **status(cache)}
++    published = transcript.publish(source, cache, context)
++    current = status(cache)
++    return {"published_snapshot": published["snapshot"], "complete_prefix_unchanged": False, **current}
++
++
++def _published_carries_selected(cache: Path, selected_snapshot: str, published_snapshot: str, context: dict) -> bool:
++    selected_bundle, selected = transcript.resolve_bundle(cache, selected_snapshot)
++    published_bundle, published = transcript.resolve_bundle(cache, published_snapshot)
++    if not transcript.contexts_equal(selected.get("context"), context):
++        return False
++    if not transcript.contexts_equal(published.get("context"), context):
++        return False
++    if selected["identity"] != published["identity"]:
++        return False
++    if not selected.get("history", {}).get("carry_forward_allowed", True):
++        return False
++    if not published.get("history", {}).get("carry_forward_allowed", True):
++        return False
++    old = selected["source"]
++    new = published["source"]
++    if (old["path"], old["device"], old["inode"]) != (new["path"], new["device"], new["inode"]):
++        return False
++    retained = (selected_bundle / "source.jsonl").read_bytes()
++    candidate = (published_bundle / "source.jsonl").read_bytes()
++    return len(candidate) >= len(retained) and candidate.startswith(retained)
++
++
++def refresh(source: Path, cache: Path, context: dict, record: str | None) -> dict:
++    """Move the selected view only after validating carry-forward from that selection."""
++    before = status(cache)
++    if record is None:
++        return {**before, "refreshed": False, "reason": "refresh blocked: no bookmark selected"}
++    _, selected = transcript.resolve_bundle(cache, before["selected_snapshot"])
++    if record not in selected["pins"]:
++        return {**before, "refreshed": False, "reason": "refresh blocked: bookmark is absent from selected snapshot"}
++    try:
++        carried = transcript.carry_forward(source, cache, before["selected_snapshot"])
++    except transcript.SourceError as exc:
++        return {**before, "refreshed": False, "reason": str(exc)}
++    except OSError as exc:
++        return {**before, "refreshed": False, "reason": f"refresh unavailable: source is missing or unreadable: {exc}"}
++    if _complete_prefix_unchanged(source, cache, context, before["selected_snapshot"]):
++        return {**before, "refreshed": False, "reason": "no newer complete records"}
++    published = transcript.publish(source, cache, context)
++    if not _published_carries_selected(cache, before["selected_snapshot"], published["snapshot"], context):
++        return {**status(cache), "refreshed": False, "reason": "refresh blocked: source changed during capture"}
++    _, latest = transcript.resolve_bundle(cache, published["snapshot"])
++    if record not in latest["pins"]:
++        return {**status(cache), "refreshed": False, "reason": "refresh blocked: bookmark is absent from newer snapshot"}
++    try:
++        reading = _select_and_materialize(cache, published["snapshot"], record)
++    except (OSError, ValueError, transcript.SourceError) as exc:
++        return {**status(cache), "refreshed": False, "reason": f"refresh blocked: selected reading update failed: {exc}"}
++    return {
++        **status(cache),
++        "refreshed": True,
++        "carry_forward": carried["carry_forward"],
++        "reading_materialized": str(reading) if reading is not None else None,
++    }
++
++
++def watch(source: Path, cache: Path, context: dict, interval: float, cycles: int):
++    if interval <= 0:
++        raise CollectionError("interval must be positive")
++    if cycles < 1:
++        raise CollectionError("cycles must be at least one")
++    for cycle in range(cycles):
++        try:
++            yield {"cycle": cycle + 1, "ok": True, **collect_once(source, cache, context)}
++        except (OSError, ValueError, transcript.SourceError) as exc:
++            yield {"cycle": cycle + 1, "ok": False, "reason": str(exc)}
++        if cycle + 1 < cycles:
++            time.sleep(interval)
++
++
++def main() -> int:
++    parser = argparse.ArgumentParser(description=__doc__)
++    commands = parser.add_subparsers(dest="command", required=True)
++    for name in ("collect", "refresh"):
++        command = commands.add_parser(name)
++        command.add_argument("--source", required=True, type=Path)
++        command.add_argument("--cache", required=True, type=Path)
++        command.add_argument("--project", required=True, type=Path)
++        command.add_argument("--vendor", required=True, choices=("codex", "claude-code"))
++        command.add_argument("--vendor-version", required=True)
++        command.add_argument("--input-format", choices=(transcript.SYNTHETIC_EVENT_FORMAT, transcript.CODEX_NATIVE_FORMAT), default=transcript.SYNTHETIC_EVENT_FORMAT)
++        if name == "refresh":
++            command.add_argument("--record")
++    status_parser = commands.add_parser("status")
++    status_parser.add_argument("--cache", required=True, type=Path)
++    watch_parser = commands.add_parser("watch")
++    watch_parser.add_argument("--source", required=True, type=Path)
++    watch_parser.add_argument("--cache", required=True, type=Path)
++    watch_parser.add_argument("--project", required=True, type=Path)
++    watch_parser.add_argument("--vendor", required=True, choices=("codex", "claude-code"))
++    watch_parser.add_argument("--vendor-version", required=True)
++    watch_parser.add_argument("--input-format", choices=(transcript.SYNTHETIC_EVENT_FORMAT, transcript.CODEX_NATIVE_FORMAT), default=transcript.SYNTHETIC_EVENT_FORMAT)
++    watch_parser.add_argument("--interval", required=True, type=float)
++    watch_parser.add_argument("--cycles", required=True, type=int)
++    args = parser.parse_args()
++    try:
++        context = None
++        if args.command in {"collect", "refresh", "watch"}:
++            context = {
++                "project": str(args.project.resolve(strict=False)),
++                "vendor": args.vendor,
++                "vendor_version": args.vendor_version,
++                "input_format": args.input_format,
++            }
++        if args.command == "collect":
++            result = collect_once(args.source, args.cache, context)
++        elif args.command == "refresh":
++            result = refresh(args.source, args.cache, context, args.record)
++        elif args.command == "status":
++            result = status(args.cache)
++        elif args.command == "watch":
++            for cycle in watch(args.source, args.cache, context, args.interval, args.cycles):
++                print(json.dumps(cycle, sort_keys=True), flush=True)
++            return 0
++        print(json.dumps(result, sort_keys=True))
++    except (OSError, ValueError, CollectionError, transcript.SourceError) as exc:
++        parser.error(str(exc))
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+--- a/zsh/termbrana/transcript.zsh
++++ b/zsh/termbrana/transcript.zsh
+@@ -0,0 +1,36 @@
++# Transcript view engine: source-relative, quiet, and inert until invoked.
++# Use --input-format codex-rollout-0.166 only for an explicitly supplied native rollout.
++if (( ! ${+_tbv_dir} )); then
++  typeset -gr _tbv_dir="${${(%):-%N}:A:h}"
++fi
++_tbv_render() {
++  python3 -I -S -B "$_tbv_dir/transcript.py" render "$@"
++}
++
++_tbv_pin() {
++  python3 -I -S -B "$_tbv_dir/transcript.py" pin "$@"
++}
++
++_tbv_select() {
++  python3 -I -S -B "$_tbv_dir/transcript.py" select "$@"
++}
++
++_tbv_open() {
++  python3 -I -S -B "$_tbv_dir/transcript.py" open "$@"
++}
++
++_tbv_collect() {
++  python3 -I -S -B "$_tbv_dir/collector.py" collect "$@"
++}
++
++_tbv_refresh() {
++  python3 -I -S -B "$_tbv_dir/collector.py" refresh "$@"
++}
++
++_tbv_status() {
++  python3 -I -S -B "$_tbv_dir/collector.py" status "$@"
++}
++
++_tbv_watch() {
++  python3 -I -S -B "$_tbv_dir/collector.py" watch "$@"
++}
+--- a/zsh/termbrana/base.zsh
++++ b/zsh/termbrana/base.zsh
+@@ -3,3 +3,4 @@
+ # Parent law: ../AGENTS.md, control-panel convention.
+ source "${${(%):-%N}:A:h}/keyboard.zsh"
+ source "${${(%):-%N}:A:h}/composer.zsh"
++source "${${(%):-%N}:A:h}/transcript.zsh"
+--- a/zsh/termbrana/keyboard.zsh
++++ b/zsh/termbrana/keyboard.zsh
+@@ -2,3 +2,12 @@
+ # No PHP Composer aliases; no deployment/config wiring in Phase 0.
+ alias tbc-check='_tbc_check'
+ alias tbc-parse='_tbc_parse'
++# Experimental transcript aliases.
++alias tbv-render='_tbv_render'
++alias tbv-pin='_tbv_pin'
++alias tbv-select='_tbv_select'
++alias tbv-open='_tbv_open'
++alias tbv-collect='_tbv_collect'
++alias tbv-refresh='_tbv_refresh'
++alias tbv-status='_tbv_status'
++alias tbv-watch='_tbv_watch'

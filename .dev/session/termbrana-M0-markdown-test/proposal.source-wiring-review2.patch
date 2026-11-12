@@ -1,0 +1,2989 @@
+diff --git a/zsh/termbrana/README.md b/zsh/termbrana/README.md
+index 3682f83..8ad99d6 100644
+--- a/zsh/termbrana/README.md
++++ b/zsh/termbrana/README.md
+@@ -111,3 +111,56 @@ corpus bodies (38,799 body bytes) <=100 ms; 1 MiB <=500 ms; 4 MiB <=2 s and medi
+ <=5 times 1 MiB median. Serialized sizes and all samples are reported separately.
+ These are implementation acceptance budgets, never body-size limits. Results do
+ not qualify another host or authorize deployment; independent verification follows.
++
++
++## Experimental transcript view — conditional publication candidate
++
++This candidate adds a separate transcript reader behind the same source-only
++signpost and keyboard. Permanent processor placement under Nablarva L8/L8′,
++final qualification and reviewed publication/activation remain pending. It is
++not enabled by a host startup file or a service. Composition behavior and its
++request grammar remain independent.
++
++After explicitly sourcing this directory's `base.zsh`, `tbv-render`, `tbv-select`,
++`tbv-pin`, `tbv-open`, `tbv-collect`, `tbv-status`, `tbv-refresh` and `tbv-watch`
++call the adjacent stdlib Python helpers. For noninteractive use, invoke the
++corresponding `_tbv_*` function after source, as for the composer examples above.
++`transcript.py --help` and `collector.py --help` describe their explicit inputs.
++Sourcing starts no Python, scan, collector, editor or native session. `open` is an
++explicit editor action; `watch` is an explicitly started bounded foreground poll.
++
++The default `synthetic-event-jsonl` format is a fictional fixture contract, not
++native history support. Explicit `codex-rollout-0.166` and `codex-rollout-0.167`
++formats read separately versioned, source-derived text subsets; the 0.167 subset
++reads completed message items and checks producer-version metadata. A single
++explicit disposable Codex 0.167 capture has been parsed; complete history,
++inherited branches, compaction reconstruction and live approval answerability
++are not qualified. Claude JSONL remains an unqualified synthetic
++fixture adapter. There is no native session discovery, resume, input injection
++or approval forwarding. Historical approval evidence cannot establish a current
++pending decision; unavailable outcomes remain unknown.
++
++Snapshots retain a complete captured prefix, deterministic Markdown and mapping.
++Bookmarks bind to an immutable snapshot; validated exact-prefix continuity is
++required for carry-forward. Observable replacement, shortening or mutation
++blocks carry-forward. An unobserved same-inode rewrite restoring identical bytes
++cannot be distinguished from append. Collection leaves the selected reading
++stable until explicit refresh. A crash between selected-pointer and derived-copy
++writes is detected by implicit engine readers and repaired by collector
++status/collect/refresh; these are not atomic multi-file writes. An already-open
++file may still display its earlier captured content until explicitly reopened.
++
++The task-scoped `~/.nablarva/<project>/<bed>/cache.<session>` and
++`read.<session>.md` layout is an experimental operator exception; it is not a
++standing configuration decision. Snapshots can be the last retained source
++behind bookmarks. No automatic eviction or reboot cleanup is implemented.
++
++Transcript fixtures and checks are separate from composer tests:
++
++```sh
++python3 -I -S -B -m unittest discover -s transcript-tests -v
++```
++
++The Sublime observation connector is separate development tooling and is not
++included in this publication candidate. Programmatic path/text/caret checks do
++not prove visual rendering, native history fidelity or operator usability.
+diff --git a/zsh/termbrana/base.zsh b/zsh/termbrana/base.zsh
+index e2aefd1..8600c79 100644
+--- a/zsh/termbrana/base.zsh
++++ b/zsh/termbrana/base.zsh
+@@ -3,3 +3,4 @@
+ # Parent law: ../AGENTS.md, control-panel convention.
+ source "${${(%):-%N}:A:h}/keyboard.zsh"
+ source "${${(%):-%N}:A:h}/composer.zsh"
++source "${${(%):-%N}:A:h}/transcript.zsh"
+diff --git a/zsh/termbrana/claude_adapter.py b/zsh/termbrana/claude_adapter.py
+new file mode 100644
+index 0000000..a4d8e62
+--- /dev/null
++++ b/zsh/termbrana/claude_adapter.py
+@@ -0,0 +1,85 @@
++"""Synthetic Claude Code 2.1.286 fixture adapter.
++
++The native transcript schema is not qualified. This module only parses explicitly
++supplied bytes matching the frozen synthetic fixture and keeps unknown semantics visible.
++"""
++
++import json
++
++
++class SourceError(ValueError):
++    pass
++
++
++def _body(record):
++    message = record.get("message")
++    if not isinstance(message, dict):
++        raise SourceError(f"missing message object: {record.get('uuid', 'no-uuid')}")
++    content = message.get("content")
++    if isinstance(content, str):
++        return content, []
++    if isinstance(content, list):
++        texts = [part.get("text") for part in content if isinstance(part, dict) and part.get("type") == "text"]
++        omitted = [part.get("type", "object_without_type") if isinstance(part, dict) else "non_object" for part in content if not isinstance(part, dict) or part.get("type") != "text"]
++        if texts and all(isinstance(text, str) for text in texts):
++            return "\n".join(texts), omitted
++    raise SourceError(f"unsupported message content: {record.get('uuid', 'no-uuid')}")
++
++
++def parse(data: bytes) -> dict:
++    """Return main-line exchanges and explicit disclosures for synthetic fixture bytes."""
++    exchanges, disclosures = [], []
++    session_id = None
++    last_uuid = None
++    seen = set()
++    for line_number, raw_line in enumerate(data.splitlines(keepends=True), 1):
++        if not raw_line.endswith(b"\n"):
++            disclosures.append({"kind": "incomplete_final_line", "line": line_number})
++            break
++        try:
++            record = json.loads(raw_line)
++        except UnicodeDecodeError as exc:
++            raise SourceError(f"invalid UTF-8 in complete JSONL record at line {line_number}") from exc
++        except json.JSONDecodeError as exc:
++            raise SourceError(f"malformed complete JSONL record at line {line_number}: {exc.msg}") from exc
++        if not isinstance(record, dict):
++            raise SourceError(f"non-object record at line {line_number}")
++        current_session = record.get("sessionId")
++        if not isinstance(current_session, str) or not current_session:
++            raise SourceError(f"missing session identity at line {line_number}")
++        if session_id is None:
++            session_id = current_session
++        elif session_id != current_session:
++            raise SourceError("source mixes session identities")
++        kind, uuid = record.get("type"), record.get("uuid")
++        if isinstance(uuid, str):
++            if uuid in seen:
++                raise SourceError(f"duplicate source UUID at line {line_number}: {uuid}")
++            seen.add(uuid)
++        if kind == "last-prompt":
++            source_uuid = record.get("sourceUuid")
++            disclosures.append({"kind": "duplicate_representation", "uuid": uuid, "source_uuid": source_uuid})
++            continue
++        if kind == "permission-mode":
++            disclosures.append({"kind": "permission_mode", "mode": record.get("permissionMode"), "approval_outcome": "unknown"})
++            continue
++        if kind not in {"user", "assistant"}:
++            disclosures.append({"kind": "unsupported", "type": kind, "uuid": uuid, "semantics": "unknown"})
++            continue
++        if not isinstance(uuid, str) or not uuid:
++            raise SourceError(f"missing exchange UUID at line {line_number}")
++        parent = record.get("parentUuid")
++        if not exchanges:
++            main_line = parent is None
++        else:
++            main_line = parent == last_uuid
++        body, omitted = _body(record)
++        exchange = {"uuid": uuid, "role": kind, "timestamp": record.get("timestamp"), "body": body, "omitted_content": omitted}
++        if not main_line:
++            disclosures.append({"kind": "alternate_branch", "uuid": uuid, "parent_uuid": parent, "main_line_resolution": "refused"})
++            continue
++        exchanges.append(exchange)
++        last_uuid = uuid
++    if session_id is None or not exchanges:
++        raise SourceError("source contains no canonical exchanges")
++    return {"vendor": "claude-code", "vendor_version": "2.1.286", "session_id": session_id, "exchanges": exchanges, "disclosures": disclosures, "native_schema": "unqualified"}
+diff --git a/zsh/termbrana/codex_native.py b/zsh/termbrana/codex_native.py
+new file mode 100644
+index 0000000..92c2010
+--- /dev/null
++++ b/zsh/termbrana/codex_native.py
+@@ -0,0 +1,306 @@
++#!/usr/bin/env python3
++"""Conservative, explicitly versioned reader for Codex public rollout JSONL.
++
++This is deliberately separate from ``transcript.py``.  It reads only bytes supplied
++by its caller and models the public, tagged rollout envelope; it neither discovers nor
++opens a Codex home directory.  Native qualification still requires an isolated
++operator-produced rollout from the target build.
++
++Sources (tag rust-v0.166.0):
++* codex-rs/rollout/src/lib.rs: ``RolloutLine`` and the canonical decoder.
++* codex-rs/history/src/rollout_payload.rs: the ``type``/``payload`` item wire form.
++* codex-rs/protocol/src/protocol.rs: ``SessionMeta`` and message event payloads.
++
++The explicit 0.167.0 subset additionally follows rust-v0.167.0
++``protocol/src/{protocol,items,user_input}.rs`` completed-item text definitions.
++It renders completed items only; alternate event/response representations stay
++disclosed and do not become a second copy of a message.
++"""
++
++import json
++
++
++class SourceError(ValueError):
++    """The supplied bytes cannot be read under this deliberately narrow contract."""
++
++
++CONVERSATION_EVENTS = {"user_message": "user", "agent_message": "assistant"}
++SUPPORTED_HISTORY_MODES = {"legacy", "paginated"}
++
++
++def _require_string(value, field, line):
++    if not isinstance(value, str) or not value:
++        raise SourceError(f"missing {field} at line {line}")
++    return value
++
++
++def _location(line, offset, ordinal, thread_id):
++    """Return an explicit snapshot-bound reader pin.
++
++    A paginated ordinal locates a record in this captured rollout, but it is not a
++    universal durable identity: a revert can retain a stable thread ID while writing
++    a distinct rollout ID.  Carrying an ordinal into another snapshot therefore
++    requires separately validated capture continuity.  Legacy history has no native
++    per-item identifier at all.
++    """
++    if ordinal is not None:
++        return {
++            "id": f"snapshot:thread:{thread_id}:ordinal:{ordinal}",
++            "kind": "snapshot_bound_rollout_ordinal",
++            "thread_id": thread_id,
++            "ordinal": ordinal,
++            "snapshot_bound": True,
++            "carry_forward_requires": "validated_capture_continuity",
++            "source_line": line,
++            "source_offset": offset,
++        }
++    return {
++        "id": f"snapshot:line:{line}:offset:{offset}",
++        "kind": "snapshot_relative_position",
++        "snapshot_relative": True,
++        "carry_forward_requires": "validated_capture_continuity",
++        "source_line": line,
++        "source_offset": offset,
++    }
++
++
++def _parse_meta(payload, line):
++    if not isinstance(payload, dict):
++        raise SourceError(f"session_meta payload must be an object at line {line}")
++    history_mode = payload.get("history_mode", "legacy")
++    if history_mode not in SUPPORTED_HISTORY_MODES:
++        raise SourceError(f"unsupported session_meta.history_mode at line {line}: {history_mode!r}")
++    meta = {
++        "thread_id": _require_string(payload.get("id"), "session_meta.id", line),
++        "session_id": _require_string(payload.get("session_id"), "session_meta.session_id", line),
++        "forked_from_id": payload.get("forked_from_id"),
++        "attached_thread": payload.get("attached_thread", False),
++        "forked_from_ordinal_exclusive": payload.get("forked_from_ordinal_exclusive"),
++        "parent_thread_id": payload.get("parent_thread_id"),
++        "history_mode": history_mode,
++        "history_base": payload.get("history_base"),
++        "subagent_history_start_ordinal": payload.get("subagent_history_start_ordinal"),
++    }
++    if payload.get("cli_version") is not None:
++        meta["producer_version"] = payload["cli_version"]
++    return meta
++
++
++def parse(data: bytes, contract_version: str = "0.166.0") -> dict:
++    """Parse a source-derived subset of a Codex rollout JSONL snapshot.
++
++    Only the selected version's complete text representation becomes exchanges. Every other
++    native representation stays visible as a disclosure rather than being guessed as
++    a user-visible message.  In particular, ``response_item`` is not rendered: it
++    can be an alternate persisted representation, but this reader cannot establish
++    duplicate semantics from the file alone.
++    """
++    if contract_version not in {"0.166.0", "0.167.0"}:
++        raise SourceError("unsupported Codex adapter contract version")
++    exchanges, disclosures, seen_pins = [], [], set()
++    completed_items = {}
++    meta, offset, complete_records = None, 0, 0
++    deferred_partial = False
++
++    for line_number, raw_line in enumerate(data.splitlines(keepends=True), 1):
++        line_offset = offset
++        if not raw_line.endswith(b"\n"):
++            deferred_partial = True
++            disclosures.append({
++                "kind": "incomplete_final_line",
++                "source_line": line_number,
++                "source_offset": line_offset,
++                "semantics": "not parsed or rendered",
++            })
++            break
++        offset += len(raw_line)
++        try:
++            record = json.loads(raw_line)
++        except json.JSONDecodeError as exc:
++            raise SourceError(f"malformed complete JSONL record at line {line_number}: {exc.msg}") from exc
++        if not isinstance(record, dict):
++            raise SourceError(f"rollout record must be an object at line {line_number}")
++        timestamp = _require_string(record.get("timestamp"), "rollout timestamp", line_number)
++        ordinal = record.get("ordinal")
++        if ordinal is not None and (not isinstance(ordinal, int) or isinstance(ordinal, bool) or ordinal < 0):
++            raise SourceError(f"invalid rollout ordinal at line {line_number}")
++
++        kind, payload = record.get("type"), record.get("payload")
++        if complete_records == 0:
++            if kind != "session_meta":
++                raise SourceError("rollout must begin with session_meta")
++            meta = _parse_meta(payload, line_number)
++            producer = meta.get("producer_version")
++            if producer is not None and producer != contract_version:
++                raise SourceError("session_meta.cli_version does not match adapter contract")
++            if contract_version == "0.167.0" and producer is None:
++                raise SourceError("0.167 adapter requires session_meta.cli_version")
++        elif kind == "session_meta":
++            raise SourceError(f"duplicate session_meta at line {line_number}")
++        complete_records += 1
++
++        if meta["history_mode"] == "paginated" and ordinal is None:
++            raise SourceError(f"paginated rollout record missing ordinal at line {line_number}")
++        pin = _location(line_number, line_offset, ordinal, meta["thread_id"])
++        if pin["id"] in seen_pins:
++            raise SourceError(f"duplicate rollout position at line {line_number}: {pin['id']}")
++        seen_pins.add(pin["id"])
++
++        if kind == "session_meta":
++            continue
++        if kind == "response_item":
++            disclosures.append({
++                "kind": "potential_duplicate_representation",
++                "native_type": "response_item",
++                "response_item_type": payload.get("type") if isinstance(payload, dict) else None,
++                "pin": pin,
++                "semantics": "not rendered; relation to event_msg is unknown",
++            })
++            continue
++        if kind == "compacted":
++            disclosures.append({
++                "kind": "compacted_history",
++                "pin": pin,
++                "semantics": "not rendered; prior context may have been replaced",
++            })
++            continue
++        if kind != "event_msg" or not isinstance(payload, dict):
++            disclosures.append({
++                "kind": "unsupported_rollout_item",
++                "native_type": kind,
++                "pin": pin,
++                "semantics": "not rendered",
++            })
++            continue
++
++        event_type = payload.get("type")
++        if contract_version == "0.167.0" and event_type == "item_completed":
++            if payload.get("thread_id") != meta["thread_id"]:
++                raise SourceError(f"completed item thread mismatch at line {line_number}")
++            turn = _require_string(payload.get("turn_id"), "item_completed.turn_id", line_number)
++            item = payload.get("item")
++            if not isinstance(item, dict):
++                raise SourceError(f"completed item must be an object at line {line_number}")
++            item_type = item.get("type")
++            if item_type == "ContextCompaction":
++                disclosures.append({"kind": "context_compaction", "pin": pin,
++                                    "semantics": "completed compaction; context reconstruction unavailable"})
++                continue
++            role = {"UserMessage": "user", "AgentMessage": "assistant"}.get(item_type)
++            if role is None:
++                disclosures.append({"kind": "unsupported_completed_item", "item_type": item_type,
++                                    "pin": pin, "semantics": "not rendered"})
++                continue
++            item_id = _require_string(item.get("id"), "item.id", line_number)
++            content = item.get("content")
++            if not isinstance(content, list):
++                raise SourceError(f"completed item content must be a list at line {line_number}")
++            expected_text_type = "text" if role == "user" else "Text"
++            texts, omitted = [], []
++            for chunk in content:
++                if not isinstance(chunk, dict):
++                    raise SourceError(f"completed item content must contain objects at line {line_number}")
++                if chunk.get("type") == expected_text_type:
++                    if not isinstance(chunk.get("text"), str):
++                        raise SourceError(f"completed item text must be a string at line {line_number}")
++                    texts.append(chunk["text"])
++                else:
++                    omitted.append(chunk.get("type"))
++            fingerprint = json.dumps({"turn": turn, "item": item}, sort_keys=True)
++            if item_id in completed_items:
++                if completed_items[item_id] != fingerprint:
++                    raise SourceError(f"conflicting completed item identity at line {line_number}")
++                disclosures.append({"kind": "duplicate_completed_item", "item_id": item_id,
++                                    "pin": pin, "semantics": "identical item rendered once"})
++                continue
++            completed_items[item_id] = fingerprint
++            if omitted:
++                disclosures.append({"kind": "omitted_content", "types": omitted,
++                                    "pin": pin, "semantics": "non-text content not rendered"})
++            extra = sorted(key for key in item if key not in {"type", "id", "content", "phase", "client_id"}
++                           and item[key] is not None)
++            if extra:
++                disclosures.append({"kind": "unsupported_item_metadata", "fields": extra,
++                                    "pin": pin, "semantics": "not rendered"})
++            if not texts:
++                continue
++            pin.update({"native_item_id": item_id, "turn_id": turn})
++            if item.get("phase") is not None:
++                pin["native_phase"] = item["phase"]
++            exchanges.append({"id": pin["id"], "role": role, "body": "\n".join(texts),
++                              "timestamp": timestamp, "pin": pin, "phase": item.get("phase")})
++            continue
++        if event_type == "thread_rolled_back":
++            disclosures.append({
++                "kind": "thread_rolled_back",
++                "pin": pin,
++                "semantics": "not rendered; persisted rollback removes earlier user turns",
++            })
++            continue
++        if event_type == "context_compacted":
++            disclosures.append({
++                "kind": "context_compaction",
++                "pin": pin,
++                "semantics": "not rendered; adapter does not reconstruct replaced context",
++            })
++            continue
++        role = CONVERSATION_EVENTS.get(event_type)
++        if contract_version == "0.167.0" and role is not None:
++            disclosures.append({"kind": "potential_duplicate_representation", "event_type": event_type,
++                                "pin": pin, "semantics": "only completed items rendered in 0.167 contract"})
++            continue
++        if role is None:
++            disclosures.append({
++                "kind": "unsupported_event",
++                "event_type": event_type,
++                "pin": pin,
++                "semantics": "not rendered",
++            })
++            continue
++        message = payload.get("message")
++        if not isinstance(message, str):
++            raise SourceError(f"{event_type}.message must be a string at line {line_number}")
++        exchanges.append({
++            "id": pin["id"],
++            "role": role,
++            "body": message,
++            "timestamp": timestamp,
++            "pin": pin,
++            "phase": payload.get("phase"),
++        })
++
++    if meta is None:
++        raise SourceError("source contains no complete rollout metadata")
++    if not exchanges:
++        raise SourceError("source contains no supported conversation events")
++    lineage_present = (
++        meta["forked_from_id"] is not None
++        or meta["attached_thread"] is True
++        or meta["forked_from_ordinal_exclusive"] is not None
++        or meta["parent_thread_id"] is not None
++        or meta["history_base"] is not None
++        or meta["subagent_history_start_ordinal"] is not None
++    )
++    if lineage_present:
++        disclosures.append({
++            "kind": "fork_or_history_base",
++            "thread_id": meta["thread_id"],
++            "forked_from_id": meta["forked_from_id"],
++            "attached_thread": meta["attached_thread"],
++            "forked_from_ordinal_exclusive": meta["forked_from_ordinal_exclusive"],
++            "parent_thread_id": meta["parent_thread_id"],
++            "history_base": meta["history_base"],
++            "subagent_history_start_ordinal": meta["subagent_history_start_ordinal"],
++            "semantics": "lineage/inherited history disclosed; this adapter does not merge another rollout",
++        })
++    return {
++        "vendor": "codex",
++        "vendor_version": meta.get("producer_version"),
++        "adapter_contract": contract_version + "-source-derived",
++        "identity": meta,
++        "exchanges": exchanges,
++        "disclosures": disclosures,
++        "deferred_partial": deferred_partial,
++        "complete_bytes": offset,
++        "native_qualification": "unqualified_without_isolated_operator_rollout",
++    }
+diff --git a/zsh/termbrana/collector.py b/zsh/termbrana/collector.py
+new file mode 100644
+index 0000000..b312678
+--- /dev/null
++++ b/zsh/termbrana/collector.py
+@@ -0,0 +1,291 @@
++#!/usr/bin/env python3
++"""Foreground collection for immutable transcript snapshots.
++
++This module only polls an explicitly supplied file.  It neither discovers nor resumes
++native sessions, starts an editor, nor runs after its command exits.
++"""
++
++import argparse
++import importlib.util
++import json
++from pathlib import Path
++import time
++
++
++_TRANSCRIPT_PATH = Path(__file__).with_name("transcript.py")
++_TRANSCRIPT_SPEC = importlib.util.spec_from_file_location("termbrana_transcript", _TRANSCRIPT_PATH)
++if _TRANSCRIPT_SPEC is None or _TRANSCRIPT_SPEC.loader is None:
++    raise RuntimeError("unable to load adjacent transcript engine")
++transcript = importlib.util.module_from_spec(_TRANSCRIPT_SPEC)
++_TRANSCRIPT_SPEC.loader.exec_module(transcript)
++
++
++class CollectionError(ValueError):
++    pass
++
++
++def _selection_path(cache: Path) -> Path:
++    return cache / "selected.json"
++
++
++def _write_selection(cache: Path, snapshot: str, record: str | None = None) -> None:
++    bundle, metadata = transcript.resolve_bundle(cache, snapshot)
++    del bundle
++    payload = {
++        "snapshot": snapshot,
++        "map_sha256": transcript.digest((cache / "snapshots" / snapshot / "map.json").read_bytes()),
++        "identity": metadata["identity"],
++    }
++    if record is not None:
++        payload["record"] = record
++    transcript.atomic_write(
++        _selection_path(cache),
++        (json.dumps(payload, sort_keys=True) + "\n").encode(),
++    )
++
++
++def _select_and_materialize(cache: Path, snapshot: str, record: str | None = None) -> Path | None:
++    """Commit pointer, then derive its reading copy under the selection lock.
++
++    A hard interruption can separate these writes. Implicit readers reject the
++    mismatch and status/collect/refresh repair the copy from the committed pointer.
++    """
++    with transcript.selection_lock(cache):
++        return _select_and_materialize_locked(cache, snapshot, record)
++
++
++def _select_and_materialize_locked(cache: Path, snapshot: str, record: str | None = None) -> Path | None:
++    pointer = _selection_path(cache)
++    previous = pointer.read_bytes() if pointer.is_file() else None
++    _write_selection(cache, snapshot, record)
++    try:
++        return transcript.materialize_selected_reading(cache, selection_locked=True)
++    except (OSError, ValueError, transcript.SourceError):
++        if previous is None:
++            try:
++                pointer.unlink()
++            except FileNotFoundError:
++                pass
++        else:
++            transcript.atomic_write(pointer, previous)
++        raise
++
++
++def _selection(cache: Path, fallback: str) -> dict:
++    with transcript.selection_lock(cache):
++        return _selection_locked(cache, fallback)
++
++
++def _selection_locked(cache: Path, fallback: str) -> dict:
++    path = _selection_path(cache)
++    if not path.is_file():
++        _select_and_materialize_locked(cache, fallback)
++        return json.loads(path.read_text())
++    selection = json.loads(path.read_text())
++    snapshot = selection.get("snapshot")
++    if not isinstance(snapshot, str) or not snapshot:
++        raise CollectionError("selected snapshot pointer is invalid")
++    map_path = cache / "snapshots" / snapshot / "map.json"
++    if not map_path.is_file() or transcript.digest(map_path.read_bytes()) != selection.get("map_sha256"):
++        raise CollectionError("selected snapshot pointer does not match its bundle")
++    bundle, _ = transcript.resolve_bundle(cache, snapshot)
++    if not transcript.reading_materialization_matches(cache, bundle):
++        transcript.materialize_selected_reading(cache, selection_locked=True)
++    return selection
++
++
++def status(cache: Path) -> dict:
++    _, latest = transcript.resolve_bundle(cache, None)
++    latest_snapshot = latest["snapshot"]
++    selected_pointer = _selection(cache, latest_snapshot)
++    selected_snapshot = selected_pointer["snapshot"]
++    _, selected = transcript.resolve_bundle(cache, selected_snapshot)
++    selected_records = len(selected["pins"])
++    same_source = (
++        latest["source"]["path"],
++        latest["source"]["device"],
++        latest["source"]["inode"],
++    ) == (
++        selected["source"]["path"],
++        selected["source"]["device"],
++        selected["source"]["inode"],
++    )
++    same_conversation = latest["identity"] == selected["identity"]
++    same_context = transcript.contexts_equal(latest.get("context"), selected.get("context"))
++    selected_carryable = selected.get("history", {}).get("carry_forward_allowed", True)
++    latest_carryable = latest.get("history", {}).get("carry_forward_allowed", True)
++    latest_retained = (cache / "snapshots" / latest_snapshot / "source.jsonl").read_bytes()
++    selected_retained = (cache / "snapshots" / selected_snapshot / "source.jsonl").read_bytes()
++    complete_prefix_extended = (
++        len(latest_retained) > len(selected_retained)
++        and latest_retained.startswith(selected_retained)
++    )
++    return {
++        "selected_snapshot": selected_snapshot,
++        "latest_snapshot": latest_snapshot,
++        "selected_read": str((cache / "snapshots" / selected_snapshot / "read.md").resolve()),
++        "latest_read": str((cache / "snapshots" / latest_snapshot / "read.md").resolve()),
++        "selected_record": selected_pointer.get("record"),
++        "new_snapshot_available": latest_snapshot != selected_snapshot,
++        "new_records_available": (
++            latest_snapshot != selected_snapshot
++            and same_source
++            and same_conversation
++            and same_context
++            and complete_prefix_extended
++            and selected_carryable
++            and latest_carryable
++        ),
++        "selected_records": selected_records,
++        "latest_records": len(latest["pins"]),
++    }
++
++
++def _complete_prefix_unchanged(source: Path, cache: Path, context: dict, snapshot: str | None = None) -> bool:
++    """Whether a same-source poll adds no complete records to one retained bundle."""
++    _, latest = transcript.resolve_bundle(cache, snapshot)
++    if not transcript.contexts_equal(latest.get("context"), context):
++        return False
++    inspected = transcript.inspect_source(source, context)
++    provenance = inspected["provenance"]
++    old = latest["source"]
++    if (provenance["path"], provenance["device"], provenance["inode"]) != (
++        old["path"], old["device"], old["inode"],
++    ):
++        return False
++    if inspected["identity"] != latest["identity"]:
++        return False
++    return transcript.digest(inspected["retained"]) == latest["retained"]["sha256"]
++
++
++def collect_once(source: Path, cache: Path, context: dict) -> dict:
++    """Capture one complete-prefix snapshot without moving the reading selection."""
++    if (cache / "current.json").is_file() and _complete_prefix_unchanged(source, cache, context):
++        return {"published_snapshot": None, "complete_prefix_unchanged": True, **status(cache)}
++    published = transcript.publish(source, cache, context)
++    current = status(cache)
++    return {"published_snapshot": published["snapshot"], "complete_prefix_unchanged": False, **current}
++
++
++def _published_carries_selected(cache: Path, selected_snapshot: str, published_snapshot: str, context: dict) -> bool:
++    selected_bundle, selected = transcript.resolve_bundle(cache, selected_snapshot)
++    published_bundle, published = transcript.resolve_bundle(cache, published_snapshot)
++    if not transcript.contexts_equal(selected.get("context"), context):
++        return False
++    if not transcript.contexts_equal(published.get("context"), context):
++        return False
++    if selected["identity"] != published["identity"]:
++        return False
++    if not selected.get("history", {}).get("carry_forward_allowed", True):
++        return False
++    if not published.get("history", {}).get("carry_forward_allowed", True):
++        return False
++    old = selected["source"]
++    new = published["source"]
++    if (old["path"], old["device"], old["inode"]) != (new["path"], new["device"], new["inode"]):
++        return False
++    retained = (selected_bundle / "source.jsonl").read_bytes()
++    candidate = (published_bundle / "source.jsonl").read_bytes()
++    return len(candidate) >= len(retained) and candidate.startswith(retained)
++
++
++def refresh(source: Path, cache: Path, context: dict, record: str | None) -> dict:
++    """Move the selected view only after validating carry-forward from that selection."""
++    before = status(cache)
++    if record is None:
++        return {**before, "refreshed": False, "reason": "refresh blocked: no bookmark selected"}
++    _, selected = transcript.resolve_bundle(cache, before["selected_snapshot"])
++    if record not in selected["pins"]:
++        return {**before, "refreshed": False, "reason": "refresh blocked: bookmark is absent from selected snapshot"}
++    try:
++        carried = transcript.carry_forward(source, cache, before["selected_snapshot"])
++    except transcript.SourceError as exc:
++        return {**before, "refreshed": False, "reason": str(exc)}
++    except OSError as exc:
++        return {**before, "refreshed": False, "reason": f"refresh unavailable: source is missing or unreadable: {exc}"}
++    if _complete_prefix_unchanged(source, cache, context, before["selected_snapshot"]):
++        return {**before, "refreshed": False, "reason": "no newer complete records"}
++    published = transcript.publish(source, cache, context)
++    if not _published_carries_selected(cache, before["selected_snapshot"], published["snapshot"], context):
++        return {**status(cache), "refreshed": False, "reason": "refresh blocked: source changed during capture"}
++    _, latest = transcript.resolve_bundle(cache, published["snapshot"])
++    if record not in latest["pins"]:
++        return {**status(cache), "refreshed": False, "reason": "refresh blocked: bookmark is absent from newer snapshot"}
++    try:
++        reading = _select_and_materialize(cache, published["snapshot"], record)
++    except (OSError, ValueError, transcript.SourceError) as exc:
++        return {**status(cache), "refreshed": False, "reason": f"refresh blocked: selected reading update failed: {exc}"}
++    return {
++        **status(cache),
++        "refreshed": True,
++        "carry_forward": carried["carry_forward"],
++        "reading_materialized": str(reading) if reading is not None else None,
++    }
++
++
++def watch(source: Path, cache: Path, context: dict, interval: float, cycles: int):
++    if interval <= 0:
++        raise CollectionError("interval must be positive")
++    if cycles < 1:
++        raise CollectionError("cycles must be at least one")
++    for cycle in range(cycles):
++        try:
++            yield {"cycle": cycle + 1, "ok": True, **collect_once(source, cache, context)}
++        except (OSError, ValueError, transcript.SourceError) as exc:
++            yield {"cycle": cycle + 1, "ok": False, "reason": str(exc)}
++        if cycle + 1 < cycles:
++            time.sleep(interval)
++
++
++def main() -> int:
++    parser = argparse.ArgumentParser(description=__doc__)
++    commands = parser.add_subparsers(dest="command", required=True)
++    for name in ("collect", "refresh"):
++        command = commands.add_parser(name)
++        command.add_argument("--source", required=True, type=Path)
++        command.add_argument("--cache", required=True, type=Path)
++        command.add_argument("--project", required=True, type=Path)
++        command.add_argument("--vendor", required=True, choices=("codex", "claude-code"))
++        command.add_argument("--vendor-version", required=True)
++        command.add_argument("--input-format", choices=(transcript.SYNTHETIC_EVENT_FORMAT, *transcript.CODEX_NATIVE_FORMATS), default=transcript.SYNTHETIC_EVENT_FORMAT)
++        if name == "refresh":
++            command.add_argument("--record")
++    status_parser = commands.add_parser("status")
++    status_parser.add_argument("--cache", required=True, type=Path)
++    watch_parser = commands.add_parser("watch")
++    watch_parser.add_argument("--source", required=True, type=Path)
++    watch_parser.add_argument("--cache", required=True, type=Path)
++    watch_parser.add_argument("--project", required=True, type=Path)
++    watch_parser.add_argument("--vendor", required=True, choices=("codex", "claude-code"))
++    watch_parser.add_argument("--vendor-version", required=True)
++    watch_parser.add_argument("--input-format", choices=(transcript.SYNTHETIC_EVENT_FORMAT, *transcript.CODEX_NATIVE_FORMATS), default=transcript.SYNTHETIC_EVENT_FORMAT)
++    watch_parser.add_argument("--interval", required=True, type=float)
++    watch_parser.add_argument("--cycles", required=True, type=int)
++    args = parser.parse_args()
++    try:
++        context = None
++        if args.command in {"collect", "refresh", "watch"}:
++            context = {
++                "project": str(args.project.resolve(strict=False)),
++                "vendor": args.vendor,
++                "vendor_version": args.vendor_version,
++                "input_format": args.input_format,
++            }
++        if args.command == "collect":
++            result = collect_once(args.source, args.cache, context)
++        elif args.command == "refresh":
++            result = refresh(args.source, args.cache, context, args.record)
++        elif args.command == "status":
++            result = status(args.cache)
++        elif args.command == "watch":
++            for cycle in watch(args.source, args.cache, context, args.interval, args.cycles):
++                print(json.dumps(cycle, sort_keys=True), flush=True)
++            return 0
++        print(json.dumps(result, sort_keys=True))
++    except (OSError, ValueError, CollectionError, transcript.SourceError) as exc:
++        parser.error(str(exc))
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+diff --git a/zsh/termbrana/fixtures/claude-2.1.286.expected.md b/zsh/termbrana/fixtures/claude-2.1.286.expected.md
+new file mode 100644
+index 0000000..31de0d8
+--- /dev/null
++++ b/zsh/termbrana/fixtures/claude-2.1.286.expected.md
+@@ -0,0 +1,55 @@
++# Frozen expectation: Claude Code 2.1.286 synthetic source
++
++This fixture is synthetic. It does not assert that every field or the `summary`
++record occurs in a native Claude Code 2.1.286 transcript. The 2026-11-05 research
++handoff observed retained JSONL records with `assistant`, `user`, `last-prompt`,
++`mode`, `permission-mode`, and `queue-operation` types, and `sessionId` on relevant
++records. It did not establish native branch, compaction, or stock pending-approval
++schemas. Those fields are deliberately adversarial test input, not observed history.
++
++```text
++vendor=claude-code
++vendor_version=2.1.286
++session_id=claude-session-demo-01
++```
++
++## Canonical main-line exchanges
++
++The main-line projection contains exactly four exchanges, in source order. The
++duplicate user text remains distinct because the source UUID differs.
++
++| Ordinal | Source UUID | Role | Timestamp | Required body |
++| --- | --- | --- | --- | --- |
++| 1 | `claude-user-001` | user | `2026-11-05T20:10:00.000Z` | `Show me the selected exchange.` |
++| 2 | `claude-assistant-002` | assistant | `2026-11-05T20:10:03.000Z` | Full multiline content including its fenced `text` block and blank lines. |
++| 3 | `claude-user-004` | user | `2026-11-05T20:11:00.000Z` | `Show me the selected exchange.` |
++| 4 | `claude-assistant-005` | assistant | `2026-11-05T20:11:03.000Z` | `This duplicate-looking prompt has a different source UUID.` |
++
++The literal code content of ordinal 2 is:
++
++```text
++line one
++line two
++```
++
++## Required distinction and disclosure
++
++- `claude-last-prompt-003` is a duplicate representation of `claude-user-001` by its
++  explicit `sourceUuid`. It must not render as a second user exchange.
++- `claude-summary-006` is an unsupported synthetic compaction marker. The renderer
++  reports its source UUID and leaves compaction semantics explicitly unknown; it must
++  not merge, delete, or rewrite the four canonical exchanges.
++- `claude-user-007` is a synthetic alternate branch because its parent points to
++  `claude-user-004`, not the main-line assistant. It must be separately disclosed and
++  must not be silently mixed into the main line. Native branch reconstruction remains
++  unqualified until an operator-approved isolated native session supplies evidence.
++- `permission-mode` reports only the recorded mode. It is not an approval request,
++  resolution, or proof that an approval is currently answerable. The approval outcome
++  for this fixture is **unknown**.
++- `claude-queue-009` is non-conversation metadata and must not become an exchange.
++
++## Pin expectation
++
++Pins for ordinal 1 and 3 must preserve their different source UUIDs despite identical
++text. A pin for a synthetic branch item must include branch status or refuse main-line
++resolution. Text similarity is never a fallback.
+diff --git a/zsh/termbrana/fixtures/claude-2.1.286.synthetic.jsonl b/zsh/termbrana/fixtures/claude-2.1.286.synthetic.jsonl
+new file mode 100644
+index 0000000..123b9f3
+--- /dev/null
++++ b/zsh/termbrana/fixtures/claude-2.1.286.synthetic.jsonl
+@@ -0,0 +1,9 @@
++{"type":"user","uuid":"claude-user-001","parentUuid":null,"sessionId":"claude-session-demo-01","timestamp":"2026-11-05T20:10:00.000Z","message":{"role":"user","content":"Show me the selected exchange."}}
++{"type":"assistant","uuid":"claude-assistant-002","parentUuid":"claude-user-001","sessionId":"claude-session-demo-01","timestamp":"2026-11-05T20:10:03.000Z","message":{"role":"assistant","content":[{"type":"text","text":"A multiline response follows:\n\n```text\nline one\nline two\n```\n\nEnd of response."}]}}
++{"type":"last-prompt","uuid":"claude-last-prompt-003","sessionId":"claude-session-demo-01","timestamp":"2026-11-05T20:10:04.000Z","message":"Show me the selected exchange.","sourceUuid":"claude-user-001"}
++{"type":"user","uuid":"claude-user-004","parentUuid":"claude-assistant-002","sessionId":"claude-session-demo-01","timestamp":"2026-11-05T20:11:00.000Z","message":{"role":"user","content":"Show me the selected exchange."}}
++{"type":"assistant","uuid":"claude-assistant-005","parentUuid":"claude-user-004","sessionId":"claude-session-demo-01","timestamp":"2026-11-05T20:11:03.000Z","message":{"role":"assistant","content":[{"type":"text","text":"This duplicate-looking prompt has a different source UUID."}]}}
++{"type":"summary","uuid":"claude-summary-006","parentUuid":"claude-assistant-005","sessionId":"claude-session-demo-01","timestamp":"2026-11-05T20:11:04.000Z","summary":"Synthetic compaction marker; semantics intentionally unqualified.","isCompactSummary":true}
++{"type":"user","uuid":"claude-user-007","parentUuid":"claude-user-004","sessionId":"claude-session-demo-01","timestamp":"2026-11-05T20:11:30.000Z","message":{"role":"user","content":"A synthetic alternate branch starts here."},"branchLabel":"alternate"}
++{"type":"permission-mode","sessionId":"claude-session-demo-01","timestamp":"2026-11-05T20:11:31.000Z","permissionMode":"default"}
++{"type":"queue-operation","uuid":"claude-queue-009","sessionId":"claude-session-demo-01","timestamp":"2026-11-05T20:11:32.000Z","operation":"enqueue","detail":"Synthetic non-conversation representation."}
+diff --git a/zsh/termbrana/fixtures/codex-0.166.expected.md b/zsh/termbrana/fixtures/codex-0.166.expected.md
+new file mode 100644
+index 0000000..e0935fe
+--- /dev/null
++++ b/zsh/termbrana/fixtures/codex-0.166.expected.md
+@@ -0,0 +1,47 @@
++# Frozen expectation: Codex CLI 0.166.0 synthetic source
++
++This expectation is authored before renderer implementation. It applies only to
++`codex-0.166.synthetic.jsonl`, whose explicit source identity is:
++
++```text
++vendor=codex
++vendor_version=0.166.0
++thread_id=thread-demo-01
++session_id=session-demo-01
++branch_id=branch-main
++```
++
++## Canonical exchanges
++
++The projection contains exactly these four exchanges in source order. Source record
++IDs are identity; the two identical user texts remain distinct exchanges.
++
++| Ordinal | Source record | Role | Timestamp | Required body |
++| --- | --- | --- | --- | --- |
++| 1 | `item-user-001` | user | `2026-11-05T20:00:00Z` | `Please show the selected exchange.` |
++| 2 | `item-assistant-002` | assistant | `2026-11-05T20:00:02Z` | The full multiline body, including one blank line before and after the fenced Python block. |
++| 3 | `item-user-003` | user | `2026-11-05T20:01:00Z` | `Please show the selected exchange.` |
++| 4 | `item-assistant-004` | assistant | `2026-11-05T20:01:03Z` | `The second matching prompt is a distinct source record.` |
++
++The fenced content in exchange 2 is literal presentation content:
++
++```python
++print('hello')
++```
++
++## Required omissions and diagnostics
++
++- `item-tool-005` is a non-conversation representation. It does not become a fifth
++  exchange or duplicate an assistant message. The renderer may disclose it as an
++  omitted representation.
++- `item-unknown-006` is a complete, unsupported vendor record. The renderer reports
++  it by its exact source ID and type `future_vendor_event`; it does not invent text.
++- The trailing `item-partial-007` has no valid closing JSON object. The renderer defers
++  it, records the last complete boundary after `item-unknown-006`, and does not emit an
++  error that changes the first four exchanges.
++
++## Pin expectation
++
++A pin for ordinal 1 and a pin for ordinal 3 must differ at least by source record
++identity (`item-user-001` versus `item-user-003`), even though their roles and message
++text match. Neither pin may be resolved by text similarity.
+diff --git a/zsh/termbrana/fixtures/codex-0.166.synthetic.jsonl b/zsh/termbrana/fixtures/codex-0.166.synthetic.jsonl
+new file mode 100644
+index 0000000..fd17ee2
+--- /dev/null
++++ b/zsh/termbrana/fixtures/codex-0.166.synthetic.jsonl
+@@ -0,0 +1,7 @@
++{"timestamp":"2026-11-05T20:00:00Z","type":"event_msg","payload":{"id":"item-user-001","type":"user_message","message":"Please show the selected exchange.","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}
++{"timestamp":"2026-11-05T20:00:02Z","type":"event_msg","payload":{"id":"item-assistant-002","type":"agent_message","message":"Here is a fenced example:\n\n```python\nprint('hello')\n```\n\nThe blank lines and fence are part of this exchange.","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}
++{"timestamp":"2026-11-05T20:01:00Z","type":"event_msg","payload":{"id":"item-user-003","type":"user_message","message":"Please show the selected exchange.","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}
++{"timestamp":"2026-11-05T20:01:03Z","type":"event_msg","payload":{"id":"item-assistant-004","type":"agent_message","message":"The second matching prompt is a distinct source record.","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}
++{"timestamp":"2026-11-05T20:01:04Z","type":"event_msg","payload":{"id":"item-tool-005","type":"exec_command_begin","command":"printf synthetic","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}
++{"timestamp":"2026-11-05T20:01:05Z","type":"event_msg","payload":{"id":"item-unknown-006","type":"future_vendor_event","detail":"must be disclosed, never guessed","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}
++{"timestamp":"2026-11-05T20:01:06Z","type":"event_msg","payload":{"id":"item-partial-007","type":"agent_message","message":"This final record is deliberately incomplete"
+\ No newline at end of file
+diff --git a/zsh/termbrana/fixtures/codex-approval.synthetic.expected.md b/zsh/termbrana/fixtures/codex-approval.synthetic.expected.md
+new file mode 100644
+index 0000000..d35ee31
+--- /dev/null
++++ b/zsh/termbrana/fixtures/codex-approval.synthetic.expected.md
+@@ -0,0 +1,3 @@
++# Synthetic approval expectation
++
++This is a fictional presentation test, not proof of native Codex approval schema or live state. For the fixture's historical request `approval-demo-1`, render the observed request text, timestamp and a file:line reference to the exact retained `source.jsonl` line in the immutable snapshot. Label that address as cached source and separately disclose original source provenance. The outcome is unknown unless an independently qualified, correlated resolution is present. Never label the request currently pending or offer a decision control. A reader must still find the cached source after original-source removal.
+diff --git a/zsh/termbrana/fixtures/codex-approval.synthetic.jsonl b/zsh/termbrana/fixtures/codex-approval.synthetic.jsonl
+new file mode 100644
+index 0000000..b3d3bb7
+--- /dev/null
++++ b/zsh/termbrana/fixtures/codex-approval.synthetic.jsonl
+@@ -0,0 +1,2 @@
++{"timestamp":"2026-11-05T20:00:00Z","type":"event_msg","payload":{"id":"user-approval-demo","type":"user_message","message":"Show the request.","thread_id":"thread-approval-demo","session_id":"session-approval-demo","branch_id":"main"}}
++{"timestamp":"2026-11-05T20:00:01Z","type":"event_msg","payload":{"id":"approval-demo-1","type":"synthetic_approval_request","message":"Run harmless synthetic operation?","thread_id":"thread-approval-demo","session_id":"session-approval-demo","branch_id":"main"}}
+diff --git a/zsh/termbrana/fixtures/codex-native-0.167.expected.md b/zsh/termbrana/fixtures/codex-native-0.167.expected.md
+new file mode 100644
+index 0000000..879651c
+--- /dev/null
++++ b/zsh/termbrana/fixtures/codex-native-0.167.expected.md
+@@ -0,0 +1,20 @@
++# Frozen invented Codex 0.167 completed-item expectations
++
++These are invented identities and text, frozen before parser implementation.
++Source contract: rust-v0.167.0 `protocol/src/protocol.rs` ItemCompletedEvent,
++`protocol/src/items.rs` TurnItem, UserMessageItem and AgentMessageItem, and
++`protocol/src/user_input.rs` UserInput. No native session content is copied here.
++
++- Explicit input format: `codex-rollout-0.167`; metadata producer `0.167.0`.
++- Render three exchanges, in order: user `Repeat this prompt.`, assistant
++  `First line.\n\n```python\nprint('fixture')\n````, user `Repeat this prompt.`.
++- Native item IDs `u-one`, `a-one`, `u-two` remain distinct provenance; bookmarks
++  remain snapshot-bound rollout positions and require validated prefix continuity.
++- Ignore response-item and legacy-event alternate representations with disclosures.
++- An identical repeated completed item ID renders once and is disclosed; changed
++  content under the same item ID is rejected. Do not deduplicate by message text.
++- Image input is disclosed as omitted content. A completed compaction blocks
++  carry-forward; unsupported tool items stay disclosed rather than rendered.
++- An incomplete final record is deferred. Wrong/missing producer version, wrong
++  event thread, malformed text, missing item identity and missing turn are errors.
++- This fixture proves only the explicit text subset, not complete native fidelity.
+diff --git a/zsh/termbrana/fixtures/codex-native-0.167.jsonl b/zsh/termbrana/fixtures/codex-native-0.167.jsonl
+new file mode 100644
+index 0000000..9f47886
+--- /dev/null
++++ b/zsh/termbrana/fixtures/codex-native-0.167.jsonl
+@@ -0,0 +1,9 @@
++{"timestamp":"t0","ordinal":0,"type":"session_meta","payload":{"id":"fixture-thread-167","session_id":"fixture-session-167","history_mode":"paginated","cli_version":"0.167.0"}}
++{"timestamp":"t1","ordinal":1,"type":"event_msg","payload":{"type":"item_completed","thread_id":"fixture-thread-167","turn_id":"turn-one","item":{"type":"UserMessage","id":"u-one","content":[{"type":"text","text":"Repeat this prompt.","text_elements":[]}]}}}
++{"timestamp":"t2","ordinal":2,"type":"response_item","payload":{"type":"message","role":"user","content":[{"type":"input_text","text":"Repeat this prompt."}]}}
++{"timestamp":"t3","ordinal":3,"type":"event_msg","payload":{"type":"agent_message","message":"First line.\n\n```python\nprint('fixture')\n```"}}
++{"timestamp":"t4","ordinal":4,"type":"event_msg","payload":{"type":"item_completed","thread_id":"fixture-thread-167","turn_id":"turn-one","item":{"type":"AgentMessage","id":"a-one","phase":"final_answer","content":[{"type":"Text","text":"First line.\n\n```python\nprint('fixture')\n```"}]}}}
++{"timestamp":"t5","ordinal":5,"type":"event_msg","payload":{"type":"item_completed","thread_id":"fixture-thread-167","turn_id":"turn-one","item":{"type":"AgentMessage","id":"a-one","phase":"final_answer","content":[{"type":"Text","text":"First line.\n\n```python\nprint('fixture')\n```"}]}}}
++{"timestamp":"t6","ordinal":6,"type":"event_msg","payload":{"type":"item_completed","thread_id":"fixture-thread-167","turn_id":"turn-two","item":{"type":"UserMessage","id":"u-two","content":[{"type":"text","text":"Repeat this prompt.","text_elements":[]},{"type":"image","image_url":"fixture://not-fetched"}]}}}
++{"timestamp":"t7","ordinal":7,"type":"event_msg","payload":{"type":"item_completed","thread_id":"fixture-thread-167","turn_id":"turn-two","item":{"type":"ContextCompaction","id":"compact-one"}}}
++{"timestamp":"t8","ordinal":8,"type":"event_msg","payload":{"type":"item_completed","thread_id":"fixture-thread-167","turn_id":"turn-two","item":{"type":"CommandExecution","id":"tool-one"}}}
+diff --git a/zsh/termbrana/fixtures/codex-native-source-derived.expected.md b/zsh/termbrana/fixtures/codex-native-source-derived.expected.md
+new file mode 100644
+index 0000000..28c085b
+--- /dev/null
++++ b/zsh/termbrana/fixtures/codex-native-source-derived.expected.md
+@@ -0,0 +1,41 @@
++# Codex 0.166.0 source-derived fixture — expected adapter result
++
++This fixture is synthetic; it is shaped only from public source at tag
++`rust-v0.166.0`. It is not a qualification of any host's native history.
++
++## Identity
++
++- `thread_id` and `session_id` are both `11111111-1111-4111-8111-111111111111`.
++- `history_mode` is `paginated`; each complete record therefore has its native
++  rollout ordinal, but that pin is snapshot-bound. Carrying it forward requires
++  validated capture continuity because revert can use another rollout for the
++  same stable thread ID.
++- The adapter does not invent `branch_id`. A fork is represented by native
++  `forked_from_id` and `history_base`, when present.
++
++## Render-eligible exchanges
++
++1. `user` — `Summarize this fixture.` — pin
++   `snapshot:thread:11111111-1111-4111-8111-111111111111:ordinal:1`.
++2. `assistant` — `It is a public-source-derived synthetic rollout.` — pin
++   `snapshot:thread:11111111-1111-4111-8111-111111111111:ordinal:2`.
++
++## Mandatory disclosures
++
++- The `response_item` at ordinal 3 is a potential duplicate representation. It
++  is not rendered because its relationship to `event_msg` is not provable from
++  this source snapshot.
++- The `context_compacted` event at ordinal 4 is disclosed, not reconstructed.
++- The `token_count` event at ordinal 5 is unsupported presentation data.
++
++An unterminated final JSONL line is separately tested and deferred rather than
++parsed; it is not included in this otherwise-valid frozen fixture.
++
++## Public-source basis
++
++- The tagged rollout decoder reads `timestamp`, optional `ordinal`, and a
++  flattened item envelope: <https://raw.githubusercontent.com/openai/codex/rust-v0.166.0/codex-rs/rollout/src/lib.rs>.
++- The wire enum uses `type` plus `payload`: <https://raw.githubusercontent.com/openai/codex/rust-v0.166.0/codex-rs/history/src/rollout_payload.rs>.
++- `SessionMeta` defines session/thread lineage and history fields, while
++  `AgentMessageEvent` / `UserMessageEvent` define `message`:
++  <https://raw.githubusercontent.com/openai/codex/rust-v0.166.0/codex-rs/protocol/src/protocol.rs>.
+diff --git a/zsh/termbrana/fixtures/codex-native-source-derived.jsonl b/zsh/termbrana/fixtures/codex-native-source-derived.jsonl
+new file mode 100644
+index 0000000..d214cfe
+--- /dev/null
++++ b/zsh/termbrana/fixtures/codex-native-source-derived.jsonl
+@@ -0,0 +1,6 @@
++{"timestamp":"2026-11-06T09:00:00.000000Z","ordinal":0,"type":"session_meta","payload":{"session_id":"11111111-1111-4111-8111-111111111111","id":"11111111-1111-4111-8111-111111111111","timestamp":"2026-11-06T09:00:00.000000Z","cwd":"/synthetic/codex-native","originator":"codex_cli","cli_version":"0.166.0","source":"cli","history_mode":"paginated"}}
++{"timestamp":"2026-11-06T09:00:01.000000Z","ordinal":1,"type":"event_msg","payload":{"type":"user_message","message":"Summarize this fixture."}}
++{"timestamp":"2026-11-06T09:00:02.000000Z","ordinal":2,"type":"event_msg","payload":{"type":"agent_message","message":"It is a public-source-derived synthetic rollout.","phase":"final_answer"}}
++{"timestamp":"2026-11-06T09:00:03.000000Z","ordinal":3,"type":"response_item","payload":{"type":"message","id":"msg_synthetic_duplicate_candidate","role":"assistant","content":[{"type":"output_text","text":"This alternate representation is intentionally not rendered."}]}}
++{"timestamp":"2026-11-06T09:00:04.000000Z","ordinal":4,"type":"event_msg","payload":{"type":"context_compacted"}}
++{"timestamp":"2026-11-06T09:00:05.000000Z","ordinal":5,"type":"event_msg","payload":{"type":"token_count","info":null,"rate_limits":null}}
+diff --git a/zsh/termbrana/keyboard.zsh b/zsh/termbrana/keyboard.zsh
+index 9b37469..b000488 100644
+--- a/zsh/termbrana/keyboard.zsh
++++ b/zsh/termbrana/keyboard.zsh
+@@ -2,3 +2,13 @@
+ # No PHP Composer aliases; no deployment/config wiring in Phase 0.
+ alias tbc-check='_tbc_check'
+ alias tbc-parse='_tbc_parse'
++
++# Transcript view keyboard: aliases and comments only; default format is synthetic-event-jsonl.
++alias tbv-render='_tbv_render'
++alias tbv-pin='_tbv_pin'
++alias tbv-select='_tbv_select'
++alias tbv-open='_tbv_open'
++alias tbv-collect='_tbv_collect'
++alias tbv-refresh='_tbv_refresh'
++alias tbv-status='_tbv_status'
++alias tbv-watch='_tbv_watch'
+diff --git a/zsh/termbrana/transcript-tests/test_claude_adapter.py b/zsh/termbrana/transcript-tests/test_claude_adapter.py
+new file mode 100644
+index 0000000..dfe42fd
+--- /dev/null
++++ b/zsh/termbrana/transcript-tests/test_claude_adapter.py
+@@ -0,0 +1,57 @@
++import importlib.util
++from pathlib import Path
++import unittest
++
++
++HERE = Path(__file__).resolve().parents[1]
++FIXTURE = HERE / "fixtures/claude-2.1.286.synthetic.jsonl"
++SPEC = importlib.util.spec_from_file_location("claude_adapter", HERE / "claude_adapter.py")
++ADAPTER = importlib.util.module_from_spec(SPEC)
++SPEC.loader.exec_module(ADAPTER)
++
++
++class ClaudeAdapterTest(unittest.TestCase):
++    def test_frozen_main_line_and_disclosures(self):
++        result = ADAPTER.parse(FIXTURE.read_bytes())
++        self.assertEqual(result["native_schema"], "unqualified")
++        self.assertEqual([item["uuid"] for item in result["exchanges"]], ["claude-user-001", "claude-assistant-002", "claude-user-004", "claude-assistant-005"])
++        self.assertIn("```text\nline one\nline two\n```", result["exchanges"][1]["body"])
++        self.assertEqual(result["exchanges"][0]["body"], result["exchanges"][2]["body"])
++        disclosures = {item["kind"]: item for item in result["disclosures"]}
++        self.assertEqual(disclosures["duplicate_representation"]["source_uuid"], "claude-user-001")
++        self.assertEqual(disclosures["permission_mode"]["approval_outcome"], "unknown")
++        self.assertEqual(disclosures["alternate_branch"]["main_line_resolution"], "refused")
++        self.assertEqual(result["exchanges"][1]["omitted_content"], [])
++
++    def test_duplicate_uuid_and_malformed_records_fail(self):
++        duplicate = FIXTURE.read_bytes().replace(b"claude-user-004", b"claude-user-001", 1)
++        with self.assertRaisesRegex(ADAPTER.SourceError, "duplicate source UUID"):
++            ADAPTER.parse(duplicate)
++        with self.assertRaisesRegex(ADAPTER.SourceError, "malformed complete JSONL"):
++            ADAPTER.parse(FIXTURE.read_bytes() + b"{bad}\n")
++
++    def test_incomplete_tail_and_non_text_content_are_disclosed(self):
++        incomplete = ADAPTER.parse(FIXTURE.read_bytes() + b'{"type":"user"')
++        self.assertEqual(incomplete["disclosures"][-1]["kind"], "incomplete_final_line")
++        mixed = FIXTURE.read_bytes().replace(
++            b'{"type":"text","text":"A multiline response follows:',
++            b'{"type":"image","url":"synthetic"},{"type":"text","text":"A multiline response follows:',
++            1,
++        )
++        result = ADAPTER.parse(mixed)
++        self.assertEqual(result["exchanges"][1]["omitted_content"], ["image"])
++
++    def test_invalid_utf8_complete_record_fails_but_partial_tail_is_deferred(self):
++        complete = FIXTURE.read_bytes()
++        line_number = len(complete.splitlines()) + 1
++        malformed = b'{"invalid":"\xff"}'
++        with self.assertRaisesRegex(ADAPTER.SourceError, f"invalid UTF-8 in complete JSONL record at line {line_number}"):
++            ADAPTER.parse(complete + malformed + b"\n")
++        baseline = ADAPTER.parse(complete)
++        partial = ADAPTER.parse(complete + malformed)
++        self.assertEqual(partial["exchanges"], baseline["exchanges"])
++        self.assertEqual(partial["disclosures"][-1], {"kind": "incomplete_final_line", "line": line_number})
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/zsh/termbrana/transcript-tests/test_codex_completed.py b/zsh/termbrana/transcript-tests/test_codex_completed.py
+new file mode 100644
+index 0000000..278b1e5
+--- /dev/null
++++ b/zsh/termbrana/transcript-tests/test_codex_completed.py
+@@ -0,0 +1,104 @@
++import importlib.util
++import json
++from pathlib import Path
++import subprocess
++import tempfile
++import unittest
++
++ROOT = Path(__file__).resolve().parents[1]
++
++
++def load(name):
++    spec = importlib.util.spec_from_file_location(name, ROOT / (name + ".py"))
++    module = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(module)
++    return module
++
++
++adapter = load("codex_native")
++transcript = load("transcript")
++FIXTURE = ROOT / "fixtures/codex-native-0.167.jsonl"
++
++
++class CompletedItemsTests(unittest.TestCase):
++    def rows(self):
++        return [json.loads(line) for line in FIXTURE.read_text().splitlines()]
++
++    def encode(self, rows):
++        return ("\n".join(json.dumps(row) for row in rows) + "\n").encode()
++
++    def parse(self, rows=None):
++        return adapter.parse(FIXTURE.read_bytes() if rows is None else self.encode(rows), "0.167.0")
++
++    def test_frozen_completed_subset_and_duplicate_identity(self):
++        result = self.parse()
++        self.assertEqual([x["role"] for x in result["exchanges"]], ["user", "assistant", "user"])
++        self.assertEqual([x["pin"]["native_item_id"] for x in result["exchanges"]], ["u-one", "a-one", "u-two"])
++        self.assertEqual(result["exchanges"][0]["body"], result["exchanges"][2]["body"])
++        self.assertEqual(result["exchanges"][1]["body"], "First line.\n\n```python\nprint('fixture')\n```")
++        kinds = [x["kind"] for x in result["disclosures"]]
++        self.assertIn("duplicate_completed_item", kinds)
++        self.assertIn("omitted_content", kinds)
++        self.assertIn("context_compaction", kinds)
++        self.assertEqual(result["vendor_version"], "0.167.0")
++        self.assertEqual(result["adapter_contract"], "0.167.0-source-derived")
++
++    def test_version_mismatch_missing_version_and_wrong_format_rejected(self):
++        with self.assertRaisesRegex(adapter.SourceError, "version"):
++            adapter.parse(FIXTURE.read_bytes())
++        for version in (None, "0.168.0"):
++            rows = self.rows()
++            rows[0]["payload"]["cli_version"] = version
++            with self.assertRaisesRegex(adapter.SourceError, "version"):
++                self.parse(rows)
++
++    def test_bad_message_identity_and_shapes_rejected(self):
++        for mutate in (
++            lambda p: p.update(thread_id="other"),
++            lambda p: p.pop("turn_id"),
++            lambda p: p["item"].pop("id"),
++            lambda p: p["item"]["content"][0].update(text=42),
++        ):
++            rows = self.rows()
++            mutate(rows[1]["payload"])
++            with self.assertRaises(adapter.SourceError):
++                self.parse(rows)
++
++    def test_conflicting_completed_id_rejected_and_partial_tail_deferred(self):
++        rows = self.rows()
++        rows[5]["payload"]["item"]["content"][0]["text"] = "conflict"
++        with self.assertRaisesRegex(adapter.SourceError, "conflicting completed item"):
++            self.parse(rows)
++        parsed = adapter.parse(FIXTURE.read_bytes() + b'{"unfinished":', "0.167.0")
++        self.assertTrue(parsed["deferred_partial"])
++
++    def test_renderer_records_producer_and_blocks_compacted_refresh(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            root = Path(tmp)
++            context = {"project": str(root), "vendor": "codex", "vendor_version": "0.167.0", "input_format": "codex-rollout-0.167"}
++            output = transcript.publish(FIXTURE, root / "cache", context)
++            metadata = json.loads(Path(output["map"]).read_text())
++            self.assertEqual(metadata["identity"]["producer_version"], "0.167.0")
++            self.assertFalse(metadata["history"]["carry_forward_allowed"])
++            self.assertFalse(metadata["history"]["full_history_claim"])
++            context["vendor_version"] = "0.166.0"
++            with self.assertRaisesRegex(transcript.SourceError, "vendor version"):
++                transcript.inspect_source(FIXTURE, context)
++
++    def test_explicit_cli_format_is_supported_by_renderer_and_collector(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            root = Path(tmp)
++            common = ["--source", str(FIXTURE), "--vendor", "codex", "--vendor-version", "0.167.0",
++                      "--input-format", "codex-rollout-0.167", "--project", str(root)]
++            rendered = subprocess.run(["python3", "-I", "-S", "-B", str(ROOT / "transcript.py"), "render",
++                                       *common, "--out", str(root / "render")], capture_output=True, text=True)
++            self.assertEqual(rendered.returncode, 0, rendered.stderr)
++            self.assertEqual(json.loads(rendered.stdout)["records"], 3)
++            collected = subprocess.run(["python3", "-I", "-S", "-B", str(ROOT / "collector.py"), "collect",
++                                        *common, "--cache", str(root / "collect")], capture_output=True, text=True)
++            self.assertEqual(collected.returncode, 0, collected.stderr)
++            self.assertEqual(json.loads(collected.stdout)["latest_records"], 3)
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/zsh/termbrana/transcript-tests/test_codex_native.py b/zsh/termbrana/transcript-tests/test_codex_native.py
+new file mode 100644
+index 0000000..cb080a4
+--- /dev/null
++++ b/zsh/termbrana/transcript-tests/test_codex_native.py
+@@ -0,0 +1,87 @@
++import importlib.util
++import json
++from pathlib import Path
++import unittest
++
++
++ROOT = Path(__file__).resolve().parents[1]
++ADAPTER_PATH = ROOT / "codex_native.py"
++FIXTURE = ROOT / "fixtures" / "codex-native-source-derived.jsonl"
++
++spec = importlib.util.spec_from_file_location("codex_native", ADAPTER_PATH)
++adapter = importlib.util.module_from_spec(spec)
++assert spec.loader is not None
++spec.loader.exec_module(adapter)
++
++
++class CodexNativeTests(unittest.TestCase):
++    def test_source_derived_fixture_preserves_native_identity_and_pins(self):
++        parsed = adapter.parse(FIXTURE.read_bytes())
++        thread_id = "11111111-1111-4111-8111-111111111111"
++        self.assertEqual(parsed["identity"]["thread_id"], thread_id)
++        self.assertEqual(parsed["identity"]["session_id"], thread_id)
++        self.assertEqual(parsed["identity"]["history_mode"], "paginated")
++        self.assertEqual([item["role"] for item in parsed["exchanges"]], ["user", "assistant"])
++        self.assertEqual(parsed["exchanges"][0]["body"], "Summarize this fixture.")
++        self.assertEqual(parsed["exchanges"][1]["pin"]["ordinal"], 2)
++        pin = parsed["exchanges"][1]["pin"]
++        self.assertEqual(parsed["exchanges"][1]["id"], f"snapshot:thread:{thread_id}:ordinal:2")
++        self.assertEqual(pin["kind"], "snapshot_bound_rollout_ordinal")
++        self.assertTrue(pin["snapshot_bound"])
++        self.assertEqual(pin["carry_forward_requires"], "validated_capture_continuity")
++        self.assertFalse(parsed["deferred_partial"])
++        self.assertEqual(parsed["native_qualification"], "unqualified_without_isolated_operator_rollout")
++
++    def test_unsupported_duplicate_and_compaction_stay_visible(self):
++        disclosures = adapter.parse(FIXTURE.read_bytes())["disclosures"]
++        self.assertEqual(
++            [item["kind"] for item in disclosures],
++            ["potential_duplicate_representation", "context_compaction", "unsupported_event"],
++        )
++        self.assertEqual(disclosures[0]["response_item_type"], "message")
++        self.assertEqual(disclosures[1]["pin"]["kind"], "snapshot_bound_rollout_ordinal")
++
++    def test_legacy_positions_are_explicitly_snapshot_relative(self):
++        data = (
++            b'{"timestamp":"t0","type":"session_meta","payload":{"id":"thread","session_id":"session","history_mode":"legacy"}}\n'
++            b'{"timestamp":"t1","type":"event_msg","payload":{"type":"user_message","message":"hello"}}\n'
++        )
++        parsed = adapter.parse(data)
++        pin = parsed["exchanges"][0]["pin"]
++        self.assertEqual(pin["kind"], "snapshot_relative_position")
++        self.assertTrue(pin["snapshot_relative"])
++        self.assertEqual(pin["carry_forward_requires"], "validated_capture_continuity")
++        self.assertNotIn("branch_id", parsed["identity"])
++
++    def test_paginated_record_without_ordinal_is_rejected(self):
++        data = (
++            b'{"timestamp":"t0","ordinal":0,"type":"session_meta","payload":{"id":"thread","session_id":"session","history_mode":"paginated"}}\n'
++            b'{"timestamp":"t1","type":"event_msg","payload":{"type":"user_message","message":"hello"}}\n'
++        )
++        with self.assertRaisesRegex(adapter.SourceError, "missing ordinal"):
++            adapter.parse(data)
++
++    def test_unterminated_final_line_is_deferred(self):
++        data = (
++            b'{"timestamp":"t0","type":"session_meta","payload":{"id":"thread","session_id":"session","history_mode":"legacy"}}\n'
++            b'{"timestamp":"t1","type":"event_msg","payload":{"type":"user_message","message":"hello"}}\n'
++            b'{"timestamp":"unfinished"'
++        )
++        parsed = adapter.parse(data)
++        self.assertTrue(parsed["deferred_partial"])
++        self.assertEqual(parsed["disclosures"][-1]["kind"], "incomplete_final_line")
++
++    def test_fork_lineage_is_disclosed_without_merging_other_history(self):
++        meta = {"id": "child", "session_id": "root", "history_mode": "legacy", "forked_from_id": "parent", "history_base": {"thread_id": "parent", "end_ordinal_exclusive": 2, "end_byte_offset": 99}}
++        data = "\n".join((
++            json.dumps({"timestamp": "t0", "type": "session_meta", "payload": meta}),
++            json.dumps({"timestamp": "t1", "type": "event_msg", "payload": {"type": "user_message", "message": "child only"}}),
++            "",
++        )).encode()
++        disclosure = adapter.parse(data)["disclosures"][-1]
++        self.assertEqual(disclosure["kind"], "fork_or_history_base")
++        self.assertEqual(disclosure["forked_from_id"], "parent")
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/zsh/termbrana/transcript-tests/test_codex_native_integration.py b/zsh/termbrana/transcript-tests/test_codex_native_integration.py
+new file mode 100644
+index 0000000..1e1354d
+--- /dev/null
++++ b/zsh/termbrana/transcript-tests/test_codex_native_integration.py
+@@ -0,0 +1,192 @@
++import json
++import importlib.util
++from pathlib import Path
++import subprocess
++import tempfile
++import unittest
++
++
++HERE = Path(__file__).resolve().parents[1]
++FIXTURE = HERE / "fixtures" / "codex-native-source-derived.jsonl"
++TRANSCRIPT = HERE / "transcript.py"
++COLLECTOR = HERE / "collector.py"
++NATIVE_FORMAT = "codex-rollout-0.166"
++SYNTHETIC = HERE / "fixtures" / "codex-0.166.synthetic.jsonl"
++
++
++class CodexNativeIntegrationTests(unittest.TestCase):
++    def transcript_module(self):
++        spec = importlib.util.spec_from_file_location("termbrana_transcript_legacy", TRANSCRIPT)
++        module = importlib.util.module_from_spec(spec)
++        assert spec.loader is not None
++        spec.loader.exec_module(module)
++        return module
++
++    def command(self, program, *args, check=True):
++        return subprocess.run(
++            ["python3", "-I", "-S", "-B", str(program), *map(str, args)],
++            text=True, capture_output=True, check=check,
++        )
++
++    def render_args(self, source, cache, project):
++        return (
++            "render", "--vendor", "codex", "--vendor-version", "0.166.0",
++            "--input-format", NATIVE_FORMAT, "--project", project,
++            "--source", source, "--out", cache,
++        )
++
++    def collect_args(self, source, cache, project):
++        return (
++            "collect", "--source", source, "--cache", cache, "--project", project,
++            "--vendor", "codex", "--vendor-version", "0.166.0",
++            "--input-format", NATIVE_FORMAT,
++        )
++
++    def test_native_format_is_explicit_and_preserves_snapshot_bound_source_pins(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            result = json.loads(self.command(
++                TRANSCRIPT, *self.render_args(FIXTURE, root / "cache", root / "project")
++            ).stdout)
++            bundle = Path(result["map"]).parent
++            metadata = json.loads((bundle / "map.json").read_text())
++            read = (bundle / "read.md").read_text()
++            record_id = "snapshot:thread:11111111-1111-4111-8111-111111111111:ordinal:2"
++            pin = metadata["pins"][record_id]
++            self.assertEqual(metadata["context"]["input_format"], NATIVE_FORMAT)
++            self.assertEqual(metadata["history"]["state"], "incomplete")
++            self.assertFalse(metadata["history"]["full_history_claim"])
++            self.assertEqual(pin["source_line"], 3)
++            self.assertEqual(pin["native_pin"]["kind"], "snapshot_bound_rollout_ordinal")
++            self.assertEqual(pin["native_pin"]["carry_forward_requires"], "validated_capture_continuity")
++            self.assertIn("full_history_claim=false", read)
++            self.assertIn("native_qualification=unqualified_without_isolated_operator_rollout", read)
++            self.assertIn("It must not be presented as the complete conversation history.", read)
++
++    def test_native_incomplete_history_is_not_refreshable(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache, project = root / "rollout.jsonl", root / "cache", root / "project"
++            source.write_bytes(FIXTURE.read_bytes())
++            first = json.loads(self.command(COLLECTOR, *self.collect_args(source, cache, project)).stdout)
++            record = "snapshot:thread:11111111-1111-4111-8111-111111111111:ordinal:1"
++            refreshed = json.loads(self.command(
++                COLLECTOR,
++                "refresh", "--source", source, "--cache", cache, "--project", project,
++                "--vendor", "codex", "--vendor-version", "0.166.0",
++                "--input-format", NATIVE_FORMAT, "--record", record,
++            ).stdout)
++            self.assertFalse(refreshed["refreshed"])
++            self.assertEqual(refreshed["reason"], "carry-forward blocked: native source history is incomplete")
++            self.assertEqual(refreshed["selected_snapshot"], first["selected_snapshot"])
++
++    def test_native_format_cannot_be_used_for_an_existing_synthetic_fixture(self):
++        synthetic = HERE / "fixtures" / "codex-0.166.synthetic.jsonl"
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            failed = self.command(
++                TRANSCRIPT, *self.render_args(synthetic, root / "cache", root / "project"), check=False
++            )
++            self.assertNotEqual(failed.returncode, 0)
++            self.assertIn("rollout must begin with session_meta", failed.stderr)
++
++    def native_source(self, meta_extra=None, events=None):
++        meta = {
++            "session_id": "root", "id": "thread", "history_mode": "legacy",
++        }
++        meta.update(meta_extra or {})
++        rows = [{"timestamp": "t0", "type": "session_meta", "payload": meta}]
++        rows.extend(events or [{"timestamp": "t1", "type": "event_msg", "payload": {"type": "user_message", "message": "hello"}}])
++        return ("\n".join(json.dumps(row) for row in rows) + "\n").encode()
++
++    def assert_native_history_marker_blocks_refresh(self, meta_extra=None, events=None, reason=None):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache, project = root / "rollout.jsonl", root / "cache", root / "project"
++            source.write_bytes(self.native_source(meta_extra, events))
++            first = json.loads(self.command(COLLECTOR, *self.collect_args(source, cache, project)).stdout)
++            bundle = cache / "snapshots" / first["selected_snapshot"]
++            metadata = json.loads((bundle / "map.json").read_text())
++            self.assertEqual(metadata["history"]["state"], "incomplete")
++            self.assertIn(reason, metadata["history"]["incomplete_reasons"])
++            record = next(iter(metadata["pins"]))
++            refreshed = json.loads(self.command(
++                COLLECTOR,
++                "refresh", "--source", source, "--cache", cache, "--project", project,
++                "--vendor", "codex", "--vendor-version", "0.166.0",
++                "--input-format", NATIVE_FORMAT,
++                "--record", record,
++            ).stdout)
++            self.assertFalse(refreshed["refreshed"])
++            self.assertEqual(refreshed["reason"], "carry-forward blocked: native source history is incomplete")
++
++    def test_parent_thread_lineage_blocks_native_refresh(self):
++        self.assert_native_history_marker_blocks_refresh({"parent_thread_id": "parent"}, reason="fork_or_history_base")
++
++    def test_fork_ordinal_lineage_blocks_native_refresh(self):
++        self.assert_native_history_marker_blocks_refresh({"forked_from_ordinal_exclusive": 2}, reason="fork_or_history_base")
++
++    def test_subagent_history_start_blocks_native_refresh(self):
++        self.assert_native_history_marker_blocks_refresh({"subagent_history_start_ordinal": 2}, reason="fork_or_history_base")
++
++    def test_zero_ordinal_lineage_boundaries_block_refresh_but_attached_false_does_not_hide_them(self):
++        self.assert_native_history_marker_blocks_refresh(
++            {
++                "forked_from_ordinal_exclusive": 0,
++                "subagent_history_start_ordinal": 0,
++                "attached_thread": False,
++            },
++            reason="fork_or_history_base",
++        )
++
++    def test_rollback_marker_blocks_native_refresh(self):
++        events = [
++            {"timestamp": "t1", "type": "event_msg", "payload": {"type": "user_message", "message": "hello"}},
++            {"timestamp": "t2", "type": "event_msg", "payload": {"type": "thread_rolled_back", "num_turns": 1}},
++        ]
++        self.assert_native_history_marker_blocks_refresh(events=events, reason="thread_rolled_back")
++
++    def test_unknown_native_history_mode_is_rejected(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source = root / "rollout.jsonl"
++            source.write_bytes(self.native_source({"history_mode": "future_mode"}))
++            failed = self.command(
++                TRANSCRIPT, *self.render_args(source, root / "cache", root / "project"), check=False
++            )
++            self.assertNotEqual(failed.returncode, 0)
++            self.assertIn("unsupported session_meta.history_mode", failed.stderr)
++
++    def test_legacy_synthetic_layout_and_map_compare_as_default_format_without_rewrite(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source = root / "synthetic.jsonl"
++            source.write_bytes(SYNTHETIC.read_bytes().rsplit(b"\n", 1)[0] + b"\n")
++            module = self.transcript_module()
++            legacy = {"project": str(root / "project"), "vendor": "codex", "vendor_version": "0.166.0"}
++            current = {**legacy, "input_format": "synthetic-event-jsonl"}
++            cache, _ = module.prepare_layout(root / "home", legacy, "bed", "session", source)
++            first = module.publish(source, cache, legacy)
++            legacy_map = json.loads(Path(first["map"]).read_text())
++            self.assertNotIn("input_format", legacy_map["context"])
++            reused_cache, _ = module.prepare_layout(root / "home", current, "bed", "session", source)
++            self.assertEqual(reused_cache, cache)
++            repeated = module.publish(source, cache, current)
++            self.assertEqual(repeated["snapshot"], first["snapshot"])
++            module.initialize_selected_snapshot(cache, first["snapshot"])
++            source.write_bytes(source.read_bytes() + b'{"timestamp":"2026-11-05T20:02:00Z","type":"event_msg","payload":{"id":"item-user-008","type":"user_message","message":"new","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}\n')
++            second = module.publish(source, cache, current)
++            self.assertTrue(module.contexts_equal(legacy_map["context"], current))
++            collector_spec = importlib.util.spec_from_file_location("termbrana_collector_legacy", COLLECTOR)
++            collector = importlib.util.module_from_spec(collector_spec)
++            assert collector_spec.loader is not None
++            collector_spec.loader.exec_module(collector)
++            state = collector.status(cache)
++            self.assertTrue(state["new_records_available"])
++            refreshed = collector.refresh(source, cache, current, "item-user-003")
++            self.assertTrue(refreshed["refreshed"])
++            self.assertEqual(refreshed["latest_snapshot"], second["snapshot"])
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/zsh/termbrana/transcript-tests/test_collector.py b/zsh/termbrana/transcript-tests/test_collector.py
+new file mode 100644
+index 0000000..6485501
+--- /dev/null
++++ b/zsh/termbrana/transcript-tests/test_collector.py
+@@ -0,0 +1,298 @@
++import json
++import importlib.util
++import os
++from pathlib import Path
++import subprocess
++import tempfile
++import time
++import unittest
++from unittest import mock
++
++
++HERE = Path(__file__).resolve().parents[1]
++FIXTURE = HERE / "fixtures/codex-0.166.synthetic.jsonl"
++CLAUDE_FIXTURE = HERE / "fixtures/claude-2.1.286.synthetic.jsonl"
++PROGRAM = HERE / "collector.py"
++
++
++class CollectorTest(unittest.TestCase):
++    def command(self, *args, check=True):
++        return subprocess.run(
++            ["python3", "-I", "-S", "-B", str(PROGRAM), *map(str, args)],
++            text=True,
++            capture_output=True,
++            check=check,
++        )
++
++    def append_record(self, source):
++        source.write_bytes(
++            source.read_bytes()
++            + b'{"timestamp":"2026-11-05T20:02:00Z","type":"event_msg","payload":{"id":"item-user-008","type":"user_message","message":"new","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}\n'
++        )
++
++    def complete_fixture(self):
++        raw = FIXTURE.read_bytes()
++        return raw[:raw.rfind(b"\n") + 1]
++
++    def collect_args(self, source, cache, vendor="codex", version="0.166.0"):
++        return ("--source", source, "--cache", cache, "--project", "/project/demo", "--vendor", vendor, "--vendor-version", version)
++
++    def refresh_args(self, source, cache, record="item-user-003"):
++        return (*self.collect_args(source, cache), "--record", record)
++
++    def module(self):
++        spec = importlib.util.spec_from_file_location("stage1_collector", PROGRAM)
++        module = importlib.util.module_from_spec(spec)
++        spec.loader.exec_module(module)
++        return module
++
++    def test_collect_keeps_selected_snapshot_until_explicit_refresh(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            first = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            self.assertEqual(first["selected_snapshot"], first["latest_snapshot"])
++            self.append_record(source)
++            second = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            self.assertNotEqual(second["selected_snapshot"], second["latest_snapshot"])
++            self.assertTrue(second["new_records_available"])
++            self.assertEqual(second["selected_read"], first["selected_read"])
++            refreshed = json.loads(self.command("refresh", *self.refresh_args(source, cache)).stdout)
++            self.assertTrue(refreshed["refreshed"])
++            self.assertEqual(refreshed["selected_snapshot"], refreshed["latest_snapshot"])
++
++    def test_partial_tail_does_not_make_new_records_available(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            first = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            source.write_bytes(source.read_bytes() + b'{"unfinished"')
++            second = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            self.assertEqual(second["latest_snapshot"], first["latest_snapshot"])
++            self.assertFalse(second["new_records_available"])
++            self.assertTrue(second["complete_prefix_unchanged"])
++            refreshed = json.loads(self.command("refresh", *self.refresh_args(source, cache)).stdout)
++            self.assertFalse(refreshed["refreshed"])
++            self.assertEqual(refreshed["reason"], "no newer complete records")
++
++    def test_refresh_failure_keeps_selected_snapshot_and_watch_is_bounded(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            first = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            source.write_bytes(b"short\n")
++            refreshed = json.loads(self.command("refresh", *self.refresh_args(source, cache)).stdout)
++            self.assertFalse(refreshed["refreshed"])
++            self.assertEqual(refreshed["selected_snapshot"], first["selected_snapshot"])
++            watched = self.command("watch", *self.collect_args(source, cache), "--interval", "0.001", "--cycles", "2")
++            results = [json.loads(line) for line in watched.stdout.splitlines()]
++            self.assertEqual(len(results), 2)
++            self.assertTrue(all(not result["ok"] for result in results))
++
++    def test_refresh_missing_source_keeps_selected_snapshot(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            first = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            source.unlink()
++            refreshed = json.loads(self.command("refresh", *self.refresh_args(source, cache)).stdout)
++            self.assertFalse(refreshed["refreshed"])
++            self.assertIn("source is missing or unreadable", refreshed["reason"])
++            self.assertEqual(refreshed["selected_snapshot"], first["selected_snapshot"])
++
++    def test_refresh_without_bookmark_leaves_selection_unchanged(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            first = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            self.append_record(source)
++            self.command("collect", *self.collect_args(source, cache))
++            result = json.loads(self.command("refresh", *self.collect_args(source, cache)).stdout)
++            self.assertFalse(result["refreshed"])
++            self.assertEqual(result["reason"], "refresh blocked: no bookmark selected")
++            self.assertEqual(result["selected_snapshot"], first["selected_snapshot"])
++
++    def test_complete_metadata_append_is_available_without_new_exchange(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            first = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            source.write_bytes(source.read_bytes() + b'{"timestamp":"2026-11-05T20:02:00Z","type":"event_msg","payload":{"id":"item-tool-008","type":"exec_command_begin","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}\n')
++            second = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            self.assertTrue(second["new_snapshot_available"])
++            self.assertTrue(second["new_records_available"])
++            self.assertEqual(second["selected_records"], first["selected_records"])
++            self.assertEqual(second["latest_records"], first["latest_records"])
++
++    def test_refresh_revalidates_the_bundle_published_after_its_precheck(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            first = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            self.append_record(source)
++            module = self.module()
++            context = {"project": "/project/demo", "vendor": "codex", "vendor_version": "0.166.0"}
++            original_publish = module.transcript.publish
++
++            def publish_after_replacement(current_source, current_cache, current_context):
++                replacement = root / "replacement.jsonl"
++                replacement.write_bytes(source.read_bytes())
++                os.replace(replacement, source)
++                return original_publish(current_source, current_cache, current_context)
++
++            with mock.patch.object(module.transcript, "publish", side_effect=publish_after_replacement):
++                refreshed = module.refresh(source, cache, context, "item-user-003")
++            self.assertFalse(refreshed["refreshed"])
++            self.assertEqual(refreshed["reason"], "refresh blocked: source changed during capture")
++            self.assertEqual(refreshed["selected_snapshot"], first["selected_snapshot"])
++
++    def test_context_change_publishes_without_calling_records_new(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            first = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            second = json.loads(self.command(
++                "collect", *self.collect_args(source, cache, version="0.167.0")
++            ).stdout)
++            self.assertIsNotNone(second["published_snapshot"])
++            self.assertNotEqual(second["latest_snapshot"], first["latest_snapshot"])
++            self.assertFalse(second["new_records_available"])
++
++    def test_replaced_source_never_labels_records_new(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            self.command("collect", *self.collect_args(source, cache))
++            replacement = root / "replacement.jsonl"
++            replacement.write_bytes(
++                self.complete_fixture()
++                + b'{"timestamp":"2026-11-05T20:02:00Z","type":"event_msg","payload":{"id":"item-user-008","type":"user_message","message":"new","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}\n'
++            )
++            replacement.replace(source)
++            current = json.loads(self.command("collect", *self.collect_args(source, cache)).stdout)
++            self.assertTrue(current["new_snapshot_available"])
++            self.assertFalse(current["new_records_available"])
++
++    def test_claude_vendor_collects_explicit_synthetic_fixture(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "claude.jsonl", root / "cache"
++            source.write_bytes(CLAUDE_FIXTURE.read_bytes())
++            result = json.loads(self.command(
++                "collect", *self.collect_args(source, cache, vendor="claude-code", version="2.1.286")
++            ).stdout)
++            self.assertEqual(result["selected_records"], 4)
++            bundle = cache / "snapshots" / result["selected_snapshot"]
++            metadata = json.loads((bundle / "map.json").read_text())
++            self.assertEqual(metadata["context"]["vendor"], "claude-code")
++
++    def test_layout_reading_is_initialized_and_moves_only_on_refresh(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source = root / "source.jsonl"
++            source.write_bytes(self.complete_fixture())
++            module = self.module()
++            context = {"project": str(root / "project"), "vendor": "codex", "vendor_version": "0.166.0"}
++            cache, reading = module.transcript.prepare_layout(root / "home", context, "bed", "session", source)
++            first = module.collect_once(source, cache, context)
++            self.assertEqual(reading.read_bytes(), (cache / "snapshots" / first["selected_snapshot"] / "read.md").read_bytes())
++            initial = reading.read_bytes()
++            self.append_record(source)
++            second = module.collect_once(source, cache, context)
++            self.assertNotEqual(second["latest_snapshot"], second["selected_snapshot"])
++            self.assertEqual(reading.read_bytes(), initial)
++            refreshed = module.refresh(source, cache, context, "item-user-003")
++            self.assertTrue(refreshed["refreshed"])
++            self.assertEqual(reading.read_bytes(), (cache / "snapshots" / refreshed["selected_snapshot"] / "read.md").read_bytes())
++            self.assertEqual(Path(refreshed["reading_materialized"]), reading)
++
++    def test_layout_materialization_failure_restores_selection(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source = root / "source.jsonl"
++            source.write_bytes(self.complete_fixture())
++            module = self.module()
++            context = {"project": str(root / "project"), "vendor": "codex", "vendor_version": "0.166.0"}
++            cache, reading = module.transcript.prepare_layout(root / "home", context, "bed", "session", source)
++            first = module.collect_once(source, cache, context)
++            pointer = (cache / "selected.json").read_bytes()
++            old_reading = reading.read_bytes()
++            self.append_record(source)
++            module.collect_once(source, cache, context)
++            with mock.patch.object(module.transcript, "materialize_selected_reading", side_effect=OSError("read blocked")):
++                refreshed = module.refresh(source, cache, context, "item-user-003")
++            self.assertFalse(refreshed["refreshed"])
++            self.assertIn("selected reading update failed", refreshed["reason"])
++            self.assertEqual((cache / "selected.json").read_bytes(), pointer)
++            self.assertEqual(reading.read_bytes(), old_reading)
++            self.assertEqual(refreshed["selected_snapshot"], first["selected_snapshot"])
++
++    def test_abrupt_refresh_exit_is_detected_and_retry_repairs_reading(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source = root / "source.jsonl"
++            source.write_bytes(self.complete_fixture())
++            module = self.module()
++            context = {"project": str(root / "project"), "vendor": "codex", "vendor_version": "0.166.0"}
++            cache, reading = module.transcript.prepare_layout(root / "home", context, "bed", "session", source)
++            first = module.collect_once(source, cache, context)
++            initial = reading.read_bytes()
++            self.append_record(source)
++            module.collect_once(source, cache, context)
++            # Die after selected.json commits but before the derived reading copy.
++            child = '''import importlib.util,json,os,sys
++from pathlib import Path
++spec=importlib.util.spec_from_file_location("collector_crash",sys.argv[1])
++m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
++m.transcript.materialize_selected_reading=lambda *a,**k: os._exit(79)
++m.refresh(Path(sys.argv[2]),Path(sys.argv[3]),json.loads(sys.argv[4]),"item-user-003")
++'''
++            died = subprocess.run(["python3", "-I", "-S", "-B", "-c", child, str(PROGRAM), str(source), str(cache), json.dumps(context)])
++            self.assertEqual(died.returncode, 79)
++            selected = json.loads((cache / "selected.json").read_text())["snapshot"]
++            self.assertNotEqual(selected, first["selected_snapshot"])
++            self.assertEqual(reading.read_bytes(), initial)
++            with self.assertRaisesRegex(module.transcript.SourceError, "inconsistent.*recover"):
++                module.transcript.resolve_reading_bundle(cache, None)
++            # An explicit retained snapshot is independently readable during recovery.
++            module.transcript.resolve_reading_bundle(cache, first["selected_snapshot"])
++            retry = module.refresh(source, cache, context, "item-user-003")
++            self.assertFalse(retry["refreshed"])
++            self.assertEqual(retry["reason"], "no newer complete records")
++            self.assertEqual(reading.read_bytes(), (cache / "snapshots" / selected / "read.md").read_bytes())
++            self.assertEqual(module.transcript.resolve_reading_bundle(cache, None)[1]["snapshot"], selected)
++            unchanged_mtime = reading.stat().st_mtime_ns
++            module.collect_once(source, cache, context)
++            self.assertEqual(reading.stat().st_mtime_ns, unchanged_mtime)
++
++    def test_watch_flushes_a_cycle_before_it_exits(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            process = subprocess.Popen(
++                ["python3", "-I", "-S", "-B", str(PROGRAM), "watch", *map(str, self.collect_args(source, cache)), "--interval", "0.2", "--cycles", "2"],
++                text=True,
++                stdout=subprocess.PIPE,
++                stderr=subprocess.PIPE,
++            )
++            first = process.stdout.readline()
++            self.assertTrue(first)
++            self.assertIsNone(process.poll())
++            self.assertTrue(json.loads(first)["ok"])
++            remaining, errors = process.communicate(timeout=2)
++            self.assertEqual(process.returncode, 0, errors)
++            self.assertEqual(len(remaining.splitlines()), 1)
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/zsh/termbrana/transcript-tests/test_integration.py b/zsh/termbrana/transcript-tests/test_integration.py
+new file mode 100644
+index 0000000..9ef957d
+--- /dev/null
++++ b/zsh/termbrana/transcript-tests/test_integration.py
+@@ -0,0 +1,131 @@
++import json
++import importlib.util
++from pathlib import Path
++import subprocess
++import tempfile
++import unittest
++
++
++HERE = Path(__file__).resolve().parents[1]
++PROGRAM = HERE / "transcript.py"
++COLLECTOR = HERE / "collector.py"
++BASE = HERE / "base.zsh"
++CLAUDE = HERE / "fixtures/claude-2.1.286.synthetic.jsonl"
++APPROVAL = HERE / "fixtures/codex-approval.synthetic.jsonl"
++CODEX = HERE / "fixtures/codex-0.166.synthetic.jsonl"
++
++
++class IntegrationTest(unittest.TestCase):
++    def command(self, *args, check=True):
++        return subprocess.run(
++            ["python3", "-I", "-S", "-B", str(PROGRAM), *map(str, args)],
++            text=True, capture_output=True, check=check,
++        )
++
++    def render(self, vendor, version, source, project, cache):
++        return json.loads(self.command(
++            "render", "--vendor", vendor, "--vendor-version", version,
++            "--project", project, "--source", source, "--out", cache,
++        ).stdout)
++
++    def collector(self, *args):
++        return json.loads(subprocess.run(
++            ["python3", "-I", "-S", "-B", str(COLLECTOR), *map(str, args)],
++            text=True, capture_output=True, check=True,
++        ).stdout)
++
++    def module(self):
++        spec = importlib.util.spec_from_file_location("integration_transcript", PROGRAM)
++        module = importlib.util.module_from_spec(spec)
++        spec.loader.exec_module(module)
++        return module
++
++    def test_claude_bundle_keeps_uuid_offsets_and_unqualified_semantics(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, project, cache = root / "claude.jsonl", root / "project", root / "cache"
++            project.mkdir()
++            source.write_bytes(CLAUDE.read_bytes())
++            result = self.render("claude-code", "2.1.286", source, project, cache)
++            metadata = json.loads(Path(result["map"]).read_text())
++            body = Path(result["read"]).read_text()
++            pin = metadata["pins"]["claude-user-004"]
++            self.assertEqual(metadata["context"]["project"], str(project.resolve()))
++            self.assertEqual(metadata["identity"]["branch_id"], "unqualified")
++            self.assertEqual(pin["source_offset"], CLAUDE.read_bytes().find(b'{"type":"user","uuid":"claude-user-004"'))
++            self.assertIn("duplicate_representation", body)
++            self.assertIn("approval outcome unknown", body)
++            selector = json.loads(self.command("select", "--cache", cache).stdout)
++            self.assertEqual(selector["entries"][2]["record"], "claude-user-004")
++            self.assertEqual(selector["entries"][2]["role"], "user")
++            self.assertEqual(selector["entries"][2]["snippet"], "Show me the selected exchange.")
++
++    def test_approval_reference_points_to_retained_source_after_original_loss(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, project, cache = root / "approval.jsonl", root / "project", root / "cache"
++            project.mkdir()
++            source.write_bytes(APPROVAL.read_bytes())
++            result = self.render("codex", "0.166.0", source, project, cache)
++            source.unlink()
++            metadata = json.loads(Path(result["map"]).read_text())
++            body = Path(result["read"]).read_text()
++            reference = metadata["approval_references"][0]
++            cached_source = Path(result["map"]).parent / "source.jsonl"
++            self.assertEqual(reference["id"], "approval-demo-1")
++            self.assertTrue(cached_source.is_file())
++            self.assertIn(f"cached source: {cached_source}:2", body)
++            self.assertIn("outcome: unknown; historical record only, not a live pending approval.", body)
++            self.assertIn(str(source.resolve()), body)
++            self.assertEqual(self.module().rebuild_bundle(Path(result["map"]).parent), Path(result["read"]).read_bytes())
++
++    def test_read_commands_stay_on_selected_snapshot_until_refresh(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, project, cache = root / "source.jsonl", root / "project", root / "cache"
++            project.mkdir()
++            raw = CODEX.read_bytes()
++            source.write_bytes(raw[:raw.rfind(b"\n") + 1])
++            first = self.collector("collect", "--source", source, "--cache", cache, "--project", project, "--vendor", "codex", "--vendor-version", "0.166.0")
++            source.write_bytes(source.read_bytes() + b'{"timestamp":"2026-11-05T20:02:00Z","type":"event_msg","payload":{"id":"item-user-008","type":"user_message","message":"new","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}\n')
++            second = self.collector("collect", "--source", source, "--cache", cache, "--project", project, "--vendor", "codex", "--vendor-version", "0.166.0")
++            self.assertNotEqual(first["selected_snapshot"], second["latest_snapshot"])
++            selected = json.loads(self.command("select", "--cache", cache).stdout)
++            latest = json.loads(self.command("select", "--cache", cache, "--snapshot", second["latest_snapshot"]).stdout)
++            selected_pin = json.loads(self.command("pin", "--cache", cache, "--record", "item-user-003").stdout)
++            self.assertEqual(selected["snapshot"], first["selected_snapshot"])
++            self.assertEqual(selected_pin["snapshot"], first["selected_snapshot"])
++            self.assertEqual(latest["snapshot"], second["latest_snapshot"])
++            self.assertEqual(len(selected["entries"]), 4)
++            self.assertEqual(len(latest["entries"]), 5)
++
++    def test_claude_omitted_content_is_disclosed_in_bundle(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, project, cache = root / "claude.jsonl", root / "project", root / "cache"
++            project.mkdir()
++            source.write_bytes(CLAUDE.read_bytes().replace(
++                b'{"type":"text","text":"A multiline response follows:',
++                b'{"type":"image","url":"synthetic"},{"type":"text","text":"A multiline response follows:',
++                1,
++            ))
++            result = self.render("claude-code", "2.1.286", source, project, cache)
++            metadata = json.loads(Path(result["map"]).read_text())
++            body = Path(result["read"]).read_text()
++            disclosure = next(item for item in metadata["unsupported"] if item["kind"] == "omitted_content")
++            self.assertEqual(disclosure["uuid"], "claude-assistant-002")
++            self.assertEqual(disclosure["types"], ["image"])
++            self.assertIn("claude-assistant-002 · omitted_content", body)
++
++    def test_shell_surface_is_quiet_and_exposes_explicit_commands(self):
++        run = subprocess.run(
++            ["zsh", "-f", "-c", 'source "$1"; source "$1"; whence -w _tbv_select _tbv_open _tbv_collect _tbv_refresh _tbv_watch', "tbv", str(BASE)],
++            text=True, capture_output=True, check=True,
++        )
++        self.assertIn("_tbv_open: function", run.stdout)
++        self.assertIn("_tbv_collect: function", run.stdout)
++        self.assertEqual(run.stderr, "")
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/zsh/termbrana/transcript-tests/test_layout.py b/zsh/termbrana/transcript-tests/test_layout.py
+new file mode 100644
+index 0000000..0b3dbc4
+--- /dev/null
++++ b/zsh/termbrana/transcript-tests/test_layout.py
+@@ -0,0 +1,112 @@
++import hashlib
++import importlib.util
++import json
++from pathlib import Path
++import subprocess
++import tempfile
++import unittest
++
++
++HERE = Path(__file__).resolve().parents[1]
++PROGRAM = HERE / "transcript.py"
++FIXTURE = HERE / "fixtures/codex-0.166.synthetic.jsonl"
++
++
++class LayoutTest(unittest.TestCase):
++    def command(self, *args, check=True):
++        return subprocess.run(
++            ["python3", "-I", "-S", "-B", str(PROGRAM), *map(str, args)],
++            text=True, capture_output=True, check=check,
++        )
++
++    def module(self):
++        spec = importlib.util.spec_from_file_location("layout_transcript", PROGRAM)
++        module = importlib.util.module_from_spec(spec)
++        spec.loader.exec_module(module)
++        return module
++
++    def complete_fixture(self):
++        raw = FIXTURE.read_bytes()
++        return raw[:raw.rfind(b"\n") + 1]
++
++    def render_layout(self, source, project, home, version="0.166.0"):
++        return json.loads(self.command(
++            "render", "--vendor", "codex", "--vendor-version", version,
++            "--project", project, "--source", source, "--home", home,
++            "--bed", "termbrana-M0-markdown-test", "--agentive-session", "session-001",
++        ).stdout)
++
++    def test_layout_uses_collision_resistant_project_slug_and_identity_metadata(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            home = root / "runtime-home"
++            one, two = root / "one" / "same-name", root / "two" / "same-name"
++            one.mkdir(parents=True)
++            two.mkdir(parents=True)
++            source_one, source_two = one / "source.jsonl", two / "source.jsonl"
++            source_one.write_bytes(self.complete_fixture())
++            source_two.write_bytes(self.complete_fixture())
++            first = self.render_layout(source_one, one, home)
++            second = self.render_layout(source_two, two, home)
++            first_cache, second_cache = Path(first["cache"]), Path(second["cache"])
++            self.assertNotEqual(first_cache, second_cache)
++            self.assertEqual(first_cache.name, "cache.session-001")
++            self.assertEqual(first_cache.parent.name, "termbrana-M0-markdown-test")
++            self.assertEqual(Path(first["reading"]).name, "read.session-001.md")
++            metadata = json.loads((first_cache / "layout.json").read_text())
++            self.assertEqual(metadata["project"], str(one.resolve()))
++            self.assertEqual(metadata["vendor_version"], "0.166.0")
++            collision = self.command(
++                "render", "--vendor", "codex", "--vendor-version", "0.167.0",
++                "--project", one, "--source", source_one, "--home", home,
++                "--bed", "termbrana-M0-markdown-test", "--agentive-session", "session-001",
++                check=False,
++            )
++            self.assertIn("layout cache identity collision", collision.stderr)
++
++    def test_layout_reading_stays_selected_until_materialized_refresh(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            home, project, source = root / "runtime-home", root / "project", root / "source.jsonl"
++            project.mkdir()
++            source.write_bytes(self.complete_fixture())
++            first = self.render_layout(source, project, home)
++            cache, reading = Path(first["cache"]), Path(first["reading"])
++            original = reading.read_bytes()
++            module = self.module()
++            self.assertTrue((cache / "selected.json").is_file())
++            source.write_bytes(source.read_bytes() + b'{"timestamp":"2026-11-05T20:02:00Z","type":"event_msg","payload":{"id":"item-user-008","type":"user_message","message":"new","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}\n')
++            latest = self.render_layout(source, project, home)
++            self.assertEqual(reading.read_bytes(), original)
++            self.assertEqual(module.materialize_selected_reading(cache), reading)
++            self.assertEqual(reading.read_bytes(), original)
++            latest_map = Path(latest["map"])
++            module.atomic_write(
++                cache / "selected.json",
++                (json.dumps({"snapshot": latest["snapshot"], "map_sha256": hashlib.sha256(latest_map.read_bytes()).hexdigest()}) + "\n").encode(),
++            )
++            module.materialize_selected_reading(cache)
++            self.assertIn(b"item-user-008", reading.read_bytes())
++
++    def test_generated_reading_alias_is_rejected_before_layout_writes(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            home, project = root / "runtime-home", root / "project"
++            project.mkdir()
++            module = self.module()
++            layout_root = home / module.project_slug(str(project.resolve())) / "termbrana-M0-markdown-test"
++            layout_root.mkdir(parents=True)
++            source = layout_root / "read.session-001.md"
++            source.write_bytes(self.complete_fixture())
++            run = self.command(
++                "render", "--vendor", "codex", "--vendor-version", "0.166.0",
++                "--project", project, "--source", source, "--home", home,
++                "--bed", "termbrana-M0-markdown-test", "--agentive-session", "session-001",
++                check=False,
++            )
++            self.assertIn("generated layout path aliases the input source", run.stderr)
++            self.assertFalse((layout_root / "cache.session-001").exists())
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/zsh/termbrana/transcript-tests/test_transcript.py b/zsh/termbrana/transcript-tests/test_transcript.py
+new file mode 100644
+index 0000000..f78bed6
+--- /dev/null
++++ b/zsh/termbrana/transcript-tests/test_transcript.py
+@@ -0,0 +1,209 @@
++import json
++import importlib.util
++import os
++from pathlib import Path
++import subprocess
++import tempfile
++import unittest
++from unittest import mock
++
++
++HERE = Path(__file__).resolve().parents[1]
++FIXTURE = HERE / "fixtures/codex-0.166.synthetic.jsonl"
++PROGRAM = HERE / "transcript.py"
++
++
++class TranscriptTest(unittest.TestCase):
++    def command(self, *args, check=True):
++        return subprocess.run(["python3", "-I", "-S", "-B", str(PROGRAM), *map(str, args)], text=True, capture_output=True, check=check)
++
++    def render(self, source, cache, project=None):
++        project = project or Path(source).parent
++        return json.loads(self.command(
++            "render", "--vendor", "codex", "--vendor-version", "0.166.0",
++            "--project", project, "--source", source, "--out", cache,
++        ).stdout)
++
++    def complete_fixture(self):
++        raw = FIXTURE.read_bytes()
++        return raw[:raw.rfind(b"\n") + 1]
++
++    def module(self):
++        spec = importlib.util.spec_from_file_location("stage1_transcript", PROGRAM)
++        module = importlib.util.module_from_spec(spec)
++        spec.loader.exec_module(module)
++        return module
++
++    def test_frozen_conversation_creates_immutable_bundle(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            result = self.render(FIXTURE, root / "cache")
++            bundle = root / "cache" / "snapshots" / result["snapshot"]
++            body = (bundle / "read.md").read_text()
++            metadata = json.loads((bundle / "map.json").read_text())
++            self.assertEqual(result["records"], 4)
++            self.assertEqual((bundle / "source.jsonl").read_bytes(), self.complete_fixture())
++            self.assertEqual(metadata["context"]["vendor_version"], "0.166.0")
++            self.assertEqual(body.count("Please show the selected exchange."), 2)
++            self.assertIn("```python\nprint('hello')\n```", body)
++            self.assertIn("item-unknown-006 · future_vendor_event", body)
++            self.assertNotIn("Deferred incomplete final record", body)
++            self.assertTrue(metadata["capture_state"]["deferred_incomplete_tail"])
++            self.assertEqual(metadata["pins"]["item-user-003"]["markdown_line"], body.splitlines().index("## 3. user · 2026-11-05T20:01:00Z · item-user-003") + 1)
++
++    def test_cold_rebuild_uses_retained_source_not_dropped_tail(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(FIXTURE.read_bytes())
++            result = self.render(source, cache, root / "project")
++            source.unlink()
++            bundle = Path(result["map"]).parent
++            rebuilt = self.module().rebuild_bundle(bundle)
++            self.assertEqual(rebuilt, (bundle / "read.md").read_bytes())
++
++    def test_snapshot_pin_survives_original_source_loss(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(FIXTURE.read_bytes())
++            result = self.render(source, cache)
++            source.unlink()
++            pin = json.loads(self.command("pin", "--cache", cache, "--snapshot", result["snapshot"], "--record", "item-user-003").stdout)
++            self.assertEqual(pin["source_record_id"], "item-user-003")
++            self.assertTrue(Path(pin["read"]).is_file())
++
++    def test_carry_forward_accepts_append_and_blocks_observable_discontinuities(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache = root / "source.jsonl", root / "cache"
++            source.write_bytes(self.complete_fixture())
++            result = self.render(source, cache)
++            source.write_bytes(source.read_bytes() + b'{"timestamp":"2026-11-05T20:02:00Z","type":"event_msg","payload":{"id":"item-user-008","type":"user_message","message":"new","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}\n')
++            carried = json.loads(self.command("carry-forward", "--source", source, "--cache", cache, "--snapshot", result["snapshot"]).stdout)
++            self.assertTrue(carried["carry_forward"])
++            source.write_bytes(b"short\n")
++            shortened = self.command("carry-forward", "--source", source, "--cache", cache, "--snapshot", result["snapshot"], check=False)
++            self.assertIn("source shortened", shortened.stderr)
++            source.write_bytes(self.complete_fixture().replace(b"selected exchange", b"altered  exchange", 1))
++            mutated = self.command("carry-forward", "--source", source, "--cache", cache, "--snapshot", result["snapshot"], check=False)
++            self.assertIn("captured prefix changed", mutated.stderr)
++            replacement = root / "replacement.jsonl"
++            replacement.write_bytes(self.complete_fixture())
++            os.replace(replacement, source)
++            replaced = self.command("carry-forward", "--source", source, "--cache", cache, "--snapshot", result["snapshot"], check=False)
++            self.assertIn("source identity changed", replaced.stderr)
++
++    def test_pointer_resolves_complete_bundle_and_ignores_staging(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            cache = root / "cache"
++            first = self.render(FIXTURE, cache)
++            (cache / "snapshots" / ".staging-interrupted").mkdir()
++            second = self.render(FIXTURE, cache)
++            self.assertEqual(first["snapshot"], second["snapshot"])
++            current = json.loads((cache / "current.json").read_text())
++            self.assertEqual(current["snapshot"], first["snapshot"])
++            pin = self.command("pin", "--cache", cache, "--record", "item-user-001")
++            self.assertIn(first["snapshot"], pin.stdout)
++
++    def test_distinct_capture_contexts_and_partial_state_never_collide(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            cache = root / "cache"
++            left, right = root / "left", root / "right"
++            left.mkdir()
++            right.mkdir()
++            left_source, right_source = left / "source.jsonl", right / "source.jsonl"
++            left_source.write_bytes(self.complete_fixture())
++            right_source.write_bytes(self.complete_fixture())
++            first = self.render(left_source, cache, left)
++            repeat = self.render(left_source, cache, left)
++            other = self.render(right_source, cache, right)
++            self.assertEqual(first["snapshot"], repeat["snapshot"])
++            self.assertNotEqual(first["snapshot"], other["snapshot"])
++            left_source.write_bytes(FIXTURE.read_bytes())
++            partial = self.render(left_source, cache, left)
++            self.assertNotEqual(first["snapshot"], partial["snapshot"])
++            partial_map = json.loads(Path(partial["map"]).read_text())
++            self.assertTrue(partial_map["deferred_partial_final_line"])
++
++    def test_concurrent_publishers_leave_a_complete_current_bundle(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            cache = root / "cache"
++            sources = []
++            for name in ("one", "two"):
++                project = root / name
++                project.mkdir()
++                source = project / "source.jsonl"
++                source.write_bytes(FIXTURE.read_bytes())
++                sources.append((project, source))
++            commands = [
++                ["python3", "-I", "-S", "-B", str(PROGRAM), "render", "--vendor", "codex", "--vendor-version", "0.166.0", "--project", str(project), "--source", str(source), "--out", str(cache)]
++                for project, source in sources
++            ]
++            processes = [subprocess.Popen(command, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE) for command in commands]
++            results = [process.communicate() for process in processes]
++            self.assertTrue(all(process.returncode == 0 for process in processes), results)
++            current = json.loads((cache / "current.json").read_text())
++            bundle = cache / "snapshots" / current["snapshot"]
++            metadata = json.loads((bundle / "map.json").read_text())
++            self.assertEqual((bundle / "read.md").read_bytes().__len__(), metadata["files"]["read.md"]["bytes"])
++
++    def test_interrupted_before_pointer_preserves_previous_snapshot(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source, cache, project = root / "source.jsonl", root / "cache", root / "project"
++            project.mkdir()
++            source.write_bytes(self.complete_fixture())
++            first = self.render(source, cache, project)
++            source.write_bytes(source.read_bytes() + b'{"timestamp":"2026-11-05T20:02:00Z","type":"event_msg","payload":{"id":"item-user-008","type":"user_message","message":"new","thread_id":"thread-demo-01","session_id":"session-demo-01","branch_id":"branch-main"}}\n')
++            module = self.module()
++            context = {"project": str(project.resolve()), "vendor": "codex", "vendor_version": "0.166.0"}
++            with mock.patch.object(module, "atomic_write", side_effect=OSError("interrupted")):
++                with self.assertRaises(OSError):
++                    module.publish(source, cache, context)
++            current = json.loads((cache / "current.json").read_text())
++            self.assertEqual(current["snapshot"], first["snapshot"])
++            pin = self.command("pin", "--cache", cache, "--record", "item-user-001")
++            self.assertIn(first["snapshot"], pin.stdout)
++
++    def test_cache_cannot_alias_source_or_ancestor(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            source = root / "source.jsonl"
++            source.write_bytes(FIXTURE.read_bytes())
++            same = self.command("render", "--vendor", "codex", "--vendor-version", "0.166.0", "--project", root, "--source", source, "--out", source, check=False)
++            self.assertIn("cache must not", same.stderr)
++            ancestor = self.command("render", "--vendor", "codex", "--vendor-version", "0.166.0", "--project", root, "--source", source, "--out", root, check=False)
++            self.assertIn("cache must not", ancestor.stderr)
++
++    def test_complete_malformed_line_and_duplicate_identity_fail(self):
++        with tempfile.TemporaryDirectory() as temporary:
++            root = Path(temporary)
++            malformed = root / "bad.jsonl"
++            malformed.write_bytes(FIXTURE.read_bytes().replace(b'{"timestamp":"2026-11-05T20:01:06Z"', b"{bad\n", 1))
++            bad = self.command("render", "--vendor", "codex", "--vendor-version", "0.166.0", "--project", root, "--source", malformed, "--out", root / "bad-cache", check=False)
++            self.assertIn("malformed complete JSONL", bad.stderr)
++            duplicate = root / "duplicate.jsonl"
++            duplicate.write_bytes(FIXTURE.read_bytes().replace(b"item-user-003", b"item-user-001"))
++            duplicate_run = self.command("render", "--vendor", "codex", "--vendor-version", "0.166.0", "--project", root, "--source", duplicate, "--out", root / "duplicate-cache", check=False)
++            self.assertIn("duplicate source record identity", duplicate_run.stderr)
++
++    def test_duplicate_after_long_unique_prefix_preserves_order_and_error(self):
++        module = self.module()
++        ids = [f"unique-{i}" for i in range(300)]
++        lines = [json.dumps({"type": "event_msg", "payload": {
++            "type": "user_message", "id": record_id, "message": "same body",
++            "thread_id": "thread", "session_id": "session", "branch_id": "main",
++        }}).encode() + b"\n" for record_id in ids]
++        records, _, _, _, _ = module.load_codex(b"".join(lines))
++        self.assertEqual([record["id"] for record in records], ids)
++        with self.assertRaises(module.SourceError) as raised:
++            module.load_codex(b"".join(lines + [lines[0]]))
++        self.assertEqual(str(raised.exception), "duplicate source record identity at line 301: unique-0")
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/zsh/termbrana/transcript.py b/zsh/termbrana/transcript.py
+new file mode 100644
+index 0000000..ca8fce6
+--- /dev/null
++++ b/zsh/termbrana/transcript.py
+@@ -0,0 +1,655 @@
++#!/usr/bin/env python3
++"""Create immutable synthetic Codex transcript snapshots."""
++
++import argparse
++from contextlib import contextmanager, nullcontext
++import fcntl
++import hashlib
++import importlib.util
++import json
++import os
++from pathlib import Path
++import shutil
++import subprocess
++import tempfile
++
++RENDERER_VERSION = "0.2-stage1"
++CONVERSATION_TYPES = {"user_message": "user", "agent_message": "assistant"}
++CLAUDE_ADAPTER_PATH = Path(__file__).with_name("claude_adapter.py")
++CODEX_NATIVE_ADAPTER_PATH = Path(__file__).with_name("codex_native.py")
++SYNTHETIC_EVENT_FORMAT = "synthetic-event-jsonl"
++CODEX_NATIVE_FORMAT = "codex-rollout-0.166"
++CODEX_COMPLETED_FORMAT = "codex-rollout-0.167"
++CODEX_NATIVE_FORMATS = (CODEX_NATIVE_FORMAT, CODEX_COMPLETED_FORMAT)
++
++
++class SourceError(ValueError):
++    pass
++
++
++def digest(data: bytes) -> str:
++    return hashlib.sha256(data).hexdigest()
++
++
++def normalized_context(context: dict | None) -> dict:
++    """Compare legacy synthetic metadata without rewriting its immutable map."""
++    normalized = dict(context or {})
++    normalized.setdefault("input_format", SYNTHETIC_EVENT_FORMAT)
++    return normalized
++
++
++def contexts_equal(left: dict | None, right: dict | None) -> bool:
++    return normalized_context(left) == normalized_context(right)
++
++
++def snapshot_context(context: dict) -> dict:
++    """Retain legacy synthetic snapshot keys while keeping native format explicit."""
++    key = normalized_context(context)
++    if key["input_format"] == SYNTHETIC_EVENT_FORMAT:
++        key.pop("input_format")
++    return key
++
++
++def read_snapshot(source: Path) -> tuple[bytes, dict]:
++    resolved = source.resolve(strict=True)
++    with resolved.open("rb") as handle:
++        before = os.fstat(handle.fileno())
++        data = handle.read()
++        after = os.fstat(handle.fileno())
++    fields = ("st_dev", "st_ino", "st_size", "st_mtime_ns")
++    if any(getattr(before, field) != getattr(after, field) for field in fields):
++        raise SourceError("source changed while reading; retry from a stable snapshot")
++    return data, {
++        "path": str(resolved), "device": before.st_dev, "inode": before.st_ino,
++        "snapshot_sha256": digest(data), "snapshot_bytes": len(data),
++    }
++
++
++def load_codex(data: bytes):
++    records, unsupported, offset = [], [], 0
++    seen_ids = set()
++    deferred_partial = False
++    for number, line in enumerate(data.splitlines(keepends=True), 1):
++        line_offset = offset
++        if not line.endswith(b"\n"):
++            deferred_partial = True
++            break
++        offset += len(line)
++        try:
++            event = json.loads(line)
++        except json.JSONDecodeError as exc:
++            raise SourceError(f"malformed complete JSONL record at line {number}: {exc.msg}") from exc
++        payload = event.get("payload") if event.get("type") == "event_msg" else None
++        if not isinstance(payload, dict):
++            unsupported.append({"line": number, "offset": line_offset, "reason": "not_event_msg"})
++            continue
++        kind, record_id = payload.get("type"), payload.get("id")
++        if kind == "synthetic_approval_request":
++            unsupported.append({
++                "kind": "approval_request", "id": record_id, "type": kind,
++                "timestamp": event.get("timestamp"), "request": payload.get("message"),
++                "source_line": number, "source_offset": line_offset,
++                "approval_outcome": "unknown", "schema": "fictional_synthetic_fixture",
++            })
++            continue
++        if kind not in CONVERSATION_TYPES:
++            unsupported.append({"id": record_id, "type": kind, "line": number, "offset": line_offset})
++            continue
++        required = (record_id, payload.get("message"), payload.get("thread_id"), payload.get("session_id"), payload.get("branch_id"))
++        if not all(isinstance(value, str) and value for value in required):
++            raise SourceError(f"incomplete conversation identity at line {number}")
++        if record_id in seen_ids:
++            raise SourceError(f"duplicate source record identity at line {number}: {record_id}")
++        seen_ids.add(record_id)
++        records.append({
++            "id": record_id, "role": CONVERSATION_TYPES[kind], "timestamp": event.get("timestamp"),
++            "body": payload["message"], "line": number, "offset": line_offset,
++            "thread_id": payload["thread_id"], "session_id": payload["session_id"], "branch_id": payload["branch_id"],
++        })
++    if not records:
++        raise SourceError("source contains no conversation records")
++    identity = {key: records[0][key] for key in ("thread_id", "session_id", "branch_id")}
++    if any(any(record[key] != value for key, value in identity.items()) for record in records):
++        raise SourceError("source mixes conversation identities")
++    return records, unsupported, deferred_partial, offset, identity
++
++
++def load_claude(data: bytes):
++    spec = importlib.util.spec_from_file_location("termbrana_claude_adapter", CLAUDE_ADAPTER_PATH)
++    if spec is None or spec.loader is None:
++        raise SourceError("unable to load adjacent Claude adapter")
++    adapter = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(adapter)
++    try:
++        parsed = adapter.parse(data)
++    except adapter.SourceError as exc:
++        raise SourceError(str(exc)) from exc
++    locations, offset = {}, 0
++    for number, line in enumerate(data.splitlines(keepends=True), 1):
++        if not line.endswith(b"\n"):
++            break
++        record = json.loads(line)
++        uuid = record.get("uuid") if isinstance(record, dict) else None
++        if isinstance(uuid, str):
++            locations[uuid] = {"line": number, "offset": offset}
++        offset += len(line)
++    records, disclosures = [], list(parsed["disclosures"])
++    for exchange in parsed["exchanges"]:
++        location = locations.get(exchange["uuid"])
++        if location is None:
++            raise SourceError(f"missing source location for exchange: {exchange['uuid']}")
++        records.append({
++            "id": exchange["uuid"], "role": exchange["role"], "timestamp": exchange["timestamp"],
++            "body": exchange["body"], "line": location["line"], "offset": location["offset"],
++        })
++        if exchange["omitted_content"]:
++            disclosures.append({
++                "kind": "omitted_content", "uuid": exchange["uuid"],
++                "types": exchange["omitted_content"], "semantics": "unqualified",
++            })
++    identity = {
++        "session_id": parsed["session_id"],
++        "branch_id": "unqualified",
++        "thread_id": "unqualified",
++    }
++    deferred_partial = any(item.get("kind") == "incomplete_final_line" for item in disclosures)
++    return records, disclosures, deferred_partial, offset, identity
++
++
++def load_codex_native(data: bytes, contract_version: str = "0.166.0"):
++    """Adapt the public rollout subset without claiming qualified native support."""
++    spec = importlib.util.spec_from_file_location("termbrana_codex_native", CODEX_NATIVE_ADAPTER_PATH)
++    if spec is None or spec.loader is None:
++        raise SourceError("unable to load adjacent Codex native adapter")
++    adapter = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(adapter)
++    try:
++        parsed = adapter.parse(data, contract_version)
++    except adapter.SourceError as exc:
++        raise SourceError(str(exc)) from exc
++    records = []
++    for exchange in parsed["exchanges"]:
++        pin = exchange["pin"]
++        records.append({
++            "id": exchange["id"], "role": exchange["role"], "timestamp": exchange["timestamp"],
++            "body": exchange["body"], "line": pin["source_line"], "offset": pin["source_offset"],
++            "native_pin": pin,
++        })
++    return records, parsed["disclosures"], parsed["deferred_partial"], parsed["complete_bytes"], parsed["identity"]
++
++
++def load_vendor(vendor: str, data: bytes, input_format: str = SYNTHETIC_EVENT_FORMAT):
++    if vendor == "codex" and input_format == SYNTHETIC_EVENT_FORMAT:
++        return load_codex(data)
++    if vendor == "codex" and input_format in CODEX_NATIVE_FORMATS:
++        return load_codex_native(data, "0.167.0" if input_format == CODEX_COMPLETED_FORMAT else "0.166.0")
++    if vendor == "claude-code" and input_format == SYNTHETIC_EVENT_FORMAT:
++        return load_claude(data)
++    raise SourceError(f"unsupported vendor/input format: {vendor}/{input_format}")
++
++
++def history_state(vendor: str, input_format: str, disclosures: list[dict]) -> dict:
++    """State the strongest claim this renderer may make about captured history."""
++    if vendor != "codex" or input_format not in CODEX_NATIVE_FORMATS:
++        return {"state": "synthetic_fixture", "full_history_claim": False}
++    blockers = {
++        "context_compaction", "compacted_history", "fork_or_history_base", "thread_rolled_back",
++    }
++    found = [item["kind"] for item in disclosures if item.get("kind") in blockers]
++    return {
++        "state": "incomplete" if found else "snapshot_only",
++        "full_history_claim": False,
++        "native_qualification": "unqualified_without_isolated_operator_rollout",
++        "incomplete_reasons": found,
++        "carry_forward_allowed": not found,
++    }
++
++
++def disclosure_line(item: dict) -> str:
++    pin = item.get("pin") if isinstance(item.get("pin"), dict) else {}
++    identifier = item.get("id") or item.get("uuid") or pin.get("id") or "no-id"
++    kind = item.get("type") or item.get("kind") or item.get("reason") or "unknown"
++    suffix = " · approval outcome unknown" if item.get("approval_outcome") == "unknown" else ""
++    return f"- {identifier} · {kind}{suffix}"
++
++
++def render_markdown(vendor, records, unsupported, deferred_partial, identity, cached_source, provenance, history=None):
++    native = history is not None and history.get("state") in {"snapshot_only", "incomplete"}
++    title = "# Transcript view (native source-derived snapshot)" if native else "# Transcript view (synthetic Stage 1)"
++    lines = [title, "", "```text", f"vendor={vendor}", f"renderer={RENDERER_VERSION}"]
++    if native:
++        lines += [
++            f"history_state={history['state']}",
++            "full_history_claim=false",
++            f"native_qualification={history['native_qualification']}",
++        ]
++    lines += [f"{key}={value}" for key, value in identity.items()]
++    lines += ["```", ""]
++    pins = {}
++    for ordinal, record in enumerate(records, 1):
++        line_number = "\n".join(lines).count("\n") + 2
++        lines += [f"## {ordinal}. {record['role']} · {record['timestamp']} · {record['id']}", "", record["body"], ""]
++        pins[record["id"]] = {
++            "ordinal": ordinal, "markdown_line": line_number,
++            "source_line": record["line"], "source_offset": record["offset"],
++            "role": record["role"], "timestamp": record["timestamp"],
++            "snippet": " ".join(record["body"].split())[:80],
++        }
++        if "native_pin" in record:
++            pins[record["id"]]["native_pin"] = record["native_pin"]
++    if unsupported:
++        lines += ["## Disclosed unsupported records", ""]
++        for item in unsupported:
++            lines.append(disclosure_line(item))
++            if item.get("kind") == "approval_request":
++                lines += [
++                    f"  - request: {item.get('request')}",
++                    f"  - observed at: {item.get('timestamp')}",
++                    f"  - cached source: {cached_source}:{item['source_line']}",
++                    f"  - original provenance: {provenance['path']}",
++                    "  - outcome: unknown; historical record only, not a live pending approval.",
++                ]
++        lines += [""]
++    if deferred_partial:
++        lines += ["## Deferred incomplete final record", "", "- The final unterminated JSONL line is not rendered.", ""]
++    if native and history["state"] == "incomplete":
++        lines += [
++            "## Native history limitation", "",
++            "- This snapshot is incomplete; inherited or compacted context is not reconstructed.",
++            "- It must not be presented as the complete conversation history.",
++            "",
++        ]
++    return "\n".join(lines).encode(), pins
++
++
++def atomic_write(target: Path, data: bytes) -> None:
++    target.parent.mkdir(parents=True, exist_ok=True)
++    fd, temporary = tempfile.mkstemp(prefix=f".{target.name}.", dir=target.parent)
++    try:
++        with os.fdopen(fd, "wb") as handle:
++            handle.write(data)
++            handle.flush()
++            os.fsync(handle.fileno())
++        os.replace(temporary, target)
++    except BaseException:
++        try:
++            os.unlink(temporary)
++        except FileNotFoundError:
++            pass
++        raise
++
++
++def safe_cache(source: Path, cache: Path) -> Path:
++    cache_path = cache.resolve(strict=False)
++    if source == cache_path or source.is_relative_to(cache_path):
++        raise SourceError("cache must not be the source file or an ancestor of it")
++    return cache_path
++
++
++def safe_token(value: str, field: str) -> str:
++    if not value or any(character not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for character in value):
++        raise SourceError(f"{field} must contain only letters, digits, hyphen, or underscore")
++    return value
++
++
++def project_slug(project: str) -> str:
++    resolved = Path(project).resolve(strict=False)
++    stem = "".join(character.lower() if character.isalnum() else "-" for character in resolved.name).strip("-") or "project"
++    return f"{stem}-{digest(str(resolved).encode())[:12]}"
++
++
++def prepare_layout(home: Path, context: dict, bed: str, agentive_session: str, source: Path) -> tuple[Path, Path]:
++    bed = safe_token(bed, "bed")
++    agentive_session = safe_token(agentive_session, "agentive session")
++    project = str(Path(context["project"]).resolve(strict=False))
++    root = home.resolve(strict=False) / project_slug(project) / bed
++    cache = root / f"cache.{agentive_session}"
++    reading = root / f"read.{agentive_session}.md"
++    source_path = source.resolve(strict=True)
++    cache = safe_cache(source_path, cache)
++    if any(path.resolve(strict=False) == source_path for path in (cache / "layout.json", reading)):
++        raise SourceError("generated layout path aliases the input source")
++    expected = {
++        "project": project, "bed": bed, "agentive_session": agentive_session,
++        "vendor": context["vendor"], "vendor_version": context["vendor_version"],
++        "input_format": context.get("input_format", SYNTHETIC_EVENT_FORMAT),
++        "cache": str(cache), "reading": str(reading),
++    }
++    metadata = cache / "layout.json"
++    if metadata.is_file():
++        try:
++            actual = json.loads(metadata.read_text())
++        except (OSError, json.JSONDecodeError) as exc:
++            raise SourceError(f"layout cache metadata is unreadable: {exc}") from exc
++        if not contexts_equal(actual, expected):
++            raise SourceError("layout cache identity collision")
++    elif cache.exists() and any(cache.iterdir()):
++        raise SourceError("layout cache exists without identity metadata")
++    else:
++        cache.mkdir(parents=True, exist_ok=True)
++        atomic_write(metadata, (json.dumps(expected, sort_keys=True) + "\n").encode())
++    return cache, reading
++
++
++def layout_metadata(cache: Path) -> dict | None:
++    path = cache / "layout.json"
++    if not path.is_file():
++        return None
++    try:
++        return json.loads(path.read_text())
++    except (OSError, json.JSONDecodeError) as exc:
++        raise SourceError(f"layout cache metadata is unreadable: {exc}") from exc
++
++
++def initialize_selected_snapshot(cache: Path, snapshot: str) -> None:
++    selected = cache / "selected.json"
++    with selection_lock(cache):
++        if not selected.exists():
++            map_path = cache / "snapshots" / snapshot / "map.json"
++            pointer = {"snapshot": snapshot, "map_sha256": digest(map_path.read_bytes())}
++            atomic_write(selected, (json.dumps(pointer, sort_keys=True) + "\n").encode())
++
++
++@contextmanager
++def selection_lock(cache: Path):
++    with (cache / ".selection.lock").open("a+b") as lock:
++        fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
++        yield
++
++
++def reading_materialization_matches(cache: Path, bundle: Path) -> bool:
++    layout = layout_metadata(cache)
++    if layout is None:
++        return True
++    reading = Path(layout["reading"])
++    return reading.is_file() and reading.read_bytes() == (bundle / "read.md").read_bytes()
++
++
++def materialize_selected_reading(cache: Path, *, selection_locked: bool = False) -> Path | None:
++    """Repair the derived copy from the committed pointer; no multi-file atomicity claim."""
++    with nullcontext() if selection_locked else selection_lock(cache):
++        layout = layout_metadata(cache)
++        if layout is None:
++            return None
++        bundle, _ = resolve_reading_bundle(cache, None, validate_materialized=False)
++        reading = Path(layout["reading"])
++        if not reading_materialization_matches(cache, bundle):
++            atomic_write(reading, (bundle / "read.md").read_bytes())
++        return reading
++
++
++def bundle_map(bundle: Path) -> dict:
++    data = json.loads((bundle / "map.json").read_text())
++    for name in ("source.jsonl", "read.md"):
++        actual = (bundle / name).read_bytes()
++        expected = data["files"][name]
++        if len(actual) != expected["bytes"] or digest(actual) != expected["sha256"]:
++            raise SourceError(f"snapshot bundle is inconsistent: {name}")
++    return data
++
++
++def inspect_source(source: Path, context: dict) -> dict:
++    """Read one stable vendor source without publishing a bundle."""
++    source_bytes, provenance = read_snapshot(source)
++    vendor = context.get("vendor")
++    if not isinstance(vendor, str):
++        raise SourceError("context requires vendor")
++    input_format = context.get("input_format", SYNTHETIC_EVENT_FORMAT)
++    if vendor == "codex" and input_format in CODEX_NATIVE_FORMATS:
++        expected_version = "0.167.0" if input_format == CODEX_COMPLETED_FORMAT else "0.166.0"
++        if context.get("vendor_version") != expected_version:
++            raise SourceError("vendor version does not match explicit native input format")
++    records, disclosures, deferred_partial, boundary, identity = load_vendor(vendor, source_bytes, input_format)
++    return {
++        "source_bytes": source_bytes,
++        "retained": source_bytes[:boundary],
++        "provenance": provenance,
++        "records": records,
++        "disclosures": disclosures,
++        "deferred_partial": deferred_partial,
++        "boundary": boundary,
++        "identity": identity,
++        "history": history_state(vendor, input_format, disclosures),
++    }
++
++
++def snapshot_key(provenance: dict, retained: bytes, identity: dict, context: dict, deferred_partial: bool) -> str:
++    capture = {
++        "renderer": RENDERER_VERSION,
++        "source": provenance,
++        "retained_sha256": digest(retained),
++        "identity": identity,
++        "context": snapshot_context(context),
++        "deferred_partial_final_line": deferred_partial,
++    }
++    return digest(json.dumps(capture, sort_keys=True, separators=(",", ":")).encode())[:24]
++
++
++def publish(source: Path, cache: Path, context: dict) -> dict:
++    inspected = inspect_source(source, context)
++    provenance = inspected["provenance"]
++    cache = safe_cache(Path(provenance["path"]), cache)
++    vendor = context["vendor"]
++    retained = inspected["retained"]
++    records, unsupported, retained_partial, boundary, identity = load_vendor(
++        vendor, retained, context.get("input_format", SYNTHETIC_EVENT_FORMAT)
++    )
++    if retained_partial or boundary != len(retained):
++        raise SourceError("retained source is not a complete-record snapshot")
++    deferred_partial = inspected["deferred_partial"]
++    snapshot_id = snapshot_key(provenance, retained, identity, context, deferred_partial)
++    snapshots, lock_path = cache / "snapshots", cache / ".publish.lock"
++    target = snapshots / snapshot_id
++    markdown, pins = render_markdown(
++        vendor, records, unsupported, False, identity,
++        target / "source.jsonl", provenance, inspected["history"],
++    )
++    cache.mkdir(parents=True, exist_ok=True)
++    with lock_path.open("a+b") as lock:
++        fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
++        if not target.exists():
++            snapshots.mkdir(parents=True, exist_ok=True)
++            staging = Path(tempfile.mkdtemp(prefix=".staging-", dir=snapshots))
++            try:
++                (staging / "source.jsonl").write_bytes(retained)
++                (staging / "read.md").write_bytes(markdown)
++                metadata = {
++                    "snapshot": snapshot_id, "renderer": RENDERER_VERSION, "vendor": vendor,
++                    "context": context,
++                    "source": provenance,
++                    "retained": {"bytes": len(retained), "sha256": digest(retained), "complete_boundary": boundary},
++                    "identity": identity, "deferred_partial_final_line": deferred_partial,
++                    "history": inspected["history"],
++                    "capture_state": {"deferred_incomplete_tail": deferred_partial},
++                    "unsupported": unsupported, "pins": pins,
++                    "approval_references": [item for item in unsupported if item.get("kind") == "approval_request"],
++                    "files": {
++                        "source.jsonl": {"bytes": len(retained), "sha256": digest(retained)},
++                        "read.md": {"bytes": len(markdown), "sha256": digest(markdown)},
++                    },
++                    "continuity_limit": "Byte-identical same-inode truncate/regrow restoring the retained prefix is indistinguishable from append without a native generation identity.",
++                }
++                (staging / "map.json").write_text(json.dumps(metadata, indent=2, sort_keys=True) + "\n")
++                for entry in staging.iterdir():
++                    with entry.open("rb") as handle:
++                        os.fsync(handle.fileno())
++                os.replace(staging, target)
++            except BaseException:
++                shutil.rmtree(staging, ignore_errors=True)
++                raise
++        metadata = bundle_map(target)
++        pointer = {"snapshot": snapshot_id, "map_sha256": digest((target / "map.json").read_bytes())}
++        atomic_write(cache / "current.json", (json.dumps(pointer, sort_keys=True) + "\n").encode())
++        fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
++    return {"cache": str(cache.resolve()), "snapshot": snapshot_id, "read": str((target / "read.md").resolve()), "map": str((target / "map.json").resolve()), "records": len(metadata["pins"]), "context": metadata["context"]}
++
++
++def rebuild_bundle(bundle: Path) -> bytes:
++    """Render a retained bundle without consulting its original source."""
++    data = bundle_map(bundle)
++    retained = (bundle / "source.jsonl").read_bytes()
++    records, disclosures, deferred_partial, boundary, identity = load_vendor(
++        data["vendor"], retained, data["context"].get("input_format", SYNTHETIC_EVENT_FORMAT)
++    )
++    if deferred_partial or boundary != len(retained):
++        raise SourceError("retained bundle source is incomplete")
++    return render_markdown(
++        data["vendor"], records, disclosures, False, identity,
++        bundle / "source.jsonl", data["source"], data.get("history"),
++    )[0]
++
++
++def resolve_bundle(cache: Path, snapshot: str | None) -> tuple[Path, dict]:
++    if snapshot is None:
++        pointer = json.loads((cache / "current.json").read_text())
++        snapshot = pointer["snapshot"]
++        map_path = cache / "snapshots" / snapshot / "map.json"
++        if digest(map_path.read_bytes()) != pointer["map_sha256"]:
++            raise SourceError("current pointer does not match its snapshot map")
++    bundle = cache / "snapshots" / snapshot
++    return bundle, bundle_map(bundle)
++
++
++def resolve_reading_bundle(cache: Path, snapshot: str | None, *, validate_materialized: bool = True) -> tuple[Path, dict]:
++    if snapshot is not None:
++        return resolve_bundle(cache, snapshot)
++    selected = cache / "selected.json"
++    if not selected.is_file():
++        return resolve_bundle(cache, None)
++    try:
++        pointer = json.loads(selected.read_text())
++        selected_snapshot = pointer["snapshot"]
++        map_path = cache / "snapshots" / selected_snapshot / "map.json"
++    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
++        raise SourceError(f"selected reading pointer is invalid: {exc}") from exc
++    try:
++        matches = digest(map_path.read_bytes()) == pointer.get("map_sha256")
++    except OSError as exc:
++        raise SourceError(f"selected reading snapshot is unavailable: {exc}") from exc
++    if not matches:
++        raise SourceError("selected reading pointer does not match its snapshot map")
++    bundle, metadata = resolve_bundle(cache, selected_snapshot)
++    if validate_materialized and not reading_materialization_matches(cache, bundle):
++        raise SourceError("selected reading copy is inconsistent; run collector status to recover")
++    return bundle, metadata
++
++
++def carry_forward(source: Path, cache: Path, snapshot: str) -> dict:
++    bundle, previous = resolve_bundle(cache, snapshot)
++    current, provenance = read_snapshot(source)
++    old = previous["source"]
++    if (provenance["path"], provenance["device"], provenance["inode"]) != (old["path"], old["device"], old["inode"]):
++        raise SourceError("carry-forward blocked: source identity changed")
++    retained = (bundle / "source.jsonl").read_bytes()
++    if len(current) < len(retained):
++        raise SourceError("carry-forward blocked: source shortened")
++    if current[:len(retained)] != retained:
++        raise SourceError("carry-forward blocked: captured prefix changed")
++    history = previous.get("history", {})
++    if not history.get("carry_forward_allowed", True):
++        raise SourceError("carry-forward blocked: native source history is incomplete")
++    _, _, _, _, identity = load_vendor(
++        previous["context"]["vendor"], current,
++        previous["context"].get("input_format", SYNTHETIC_EVENT_FORMAT),
++    )
++    if identity != previous["identity"]:
++        raise SourceError("carry-forward blocked: conversation identity changed")
++    return {"from_snapshot": snapshot, "source": provenance, "carry_forward": True}
++
++
++def selection(cache: Path, snapshot: str | None) -> dict:
++    _, data = resolve_reading_bundle(cache, snapshot)
++    entries = []
++    for record_id, pin in sorted(data["pins"].items(), key=lambda item: item[1]["ordinal"]):
++        entries.append({
++            "number": pin["ordinal"], "record": record_id, "line": pin["markdown_line"],
++            "role": pin["role"], "timestamp": pin["timestamp"], "snippet": pin["snippet"],
++        })
++    return {"snapshot": data["snapshot"], "entries": entries}
++
++
++def open_record(cache: Path, snapshot: str | None, record: str) -> dict:
++    bundle, data = resolve_reading_bundle(cache, snapshot)
++    pin = data["pins"].get(record)
++    if pin is None:
++        raise SourceError("open blocked: source record is absent from this snapshot")
++    target = f"{bundle / 'read.md'}:{pin['markdown_line']}"
++    try:
++        subprocess.run(["subl", "-n", target], check=True)
++    except (OSError, subprocess.CalledProcessError) as exc:
++        raise SourceError(f"editor open failed for {target}: {exc}") from exc
++    return {"opened": target, "snapshot": data["snapshot"], "source_record_id": record}
++
++
++def main() -> int:
++    parser = argparse.ArgumentParser(description=__doc__)
++    command = parser.add_subparsers(dest="command", required=True)
++    render_parser = command.add_parser("render")
++    render_parser.add_argument("--vendor", required=True, choices=("codex", "claude-code"))
++    render_parser.add_argument("--vendor-version", required=True)
++    render_parser.add_argument("--input-format", choices=(SYNTHETIC_EVENT_FORMAT, *CODEX_NATIVE_FORMATS), default=SYNTHETIC_EVENT_FORMAT)
++    render_parser.add_argument("--project", required=True, type=Path)
++    render_parser.add_argument("--source", required=True, type=Path)
++    render_parser.add_argument("--out", type=Path, help="disposable cache root")
++    render_parser.add_argument("--home", type=Path, help="runtime home; defaults to ~/.nablarva in layout mode")
++    render_parser.add_argument("--bed", help="task bed slug for layout mode")
++    render_parser.add_argument("--agentive-session", help="safe vendor conversation/branch identifier for layout mode")
++    pin_parser = command.add_parser("pin")
++    pin_parser.add_argument("--cache", required=True, type=Path)
++    pin_parser.add_argument("--snapshot")
++    pin_parser.add_argument("--record", required=True)
++    select_parser = command.add_parser("select")
++    select_parser.add_argument("--cache", required=True, type=Path)
++    select_parser.add_argument("--snapshot")
++    open_parser = command.add_parser("open")
++    open_parser.add_argument("--cache", required=True, type=Path)
++    open_parser.add_argument("--snapshot")
++    open_parser.add_argument("--record", required=True)
++    carry_parser = command.add_parser("carry-forward")
++    carry_parser.add_argument("--source", required=True, type=Path)
++    carry_parser.add_argument("--cache", required=True, type=Path)
++    carry_parser.add_argument("--snapshot", required=True)
++    args = parser.parse_args()
++    try:
++        if args.command == "render":
++            context = {
++                "project": str(args.project.resolve(strict=False)),
++                "vendor": args.vendor,
++                "vendor_version": args.vendor_version,
++                "input_format": args.input_format,
++            }
++            if args.out is not None:
++                if args.home is not None or args.bed is not None or args.agentive_session is not None:
++                    raise SourceError("--out cannot be combined with layout arguments")
++                cache = args.out
++            else:
++                if args.bed is None or args.agentive_session is None:
++                    raise SourceError("layout mode requires --bed and --agentive-session")
++                home = args.home or (Path.home() / ".nablarva")
++                cache, _ = prepare_layout(home, context, args.bed, args.agentive_session, args.source)
++            result = publish(args.source, cache, context)
++            if layout_metadata(cache) is not None:
++                initialize_selected_snapshot(cache, result["snapshot"])
++            reading = materialize_selected_reading(cache)
++            if reading is not None:
++                result["reading"] = str(reading)
++        elif args.command == "pin":
++            bundle, data = resolve_reading_bundle(args.cache, args.snapshot)
++            pin = data["pins"].get(args.record)
++            if pin is None:
++                raise SourceError("pin invalid: source record is absent from this snapshot")
++            result = {"vendor": data["vendor"], "snapshot": data["snapshot"], "context": data["context"], "identity": data["identity"], "source_record_id": args.record, "read": str((bundle / "read.md").resolve()), **pin}
++        elif args.command == "select":
++            result = selection(args.cache, args.snapshot)
++        elif args.command == "open":
++            result = open_record(args.cache, args.snapshot, args.record)
++        else:
++            result = carry_forward(args.source, args.cache, args.snapshot)
++        print(json.dumps(result, sort_keys=True))
++    except (OSError, ValueError, SourceError) as exc:
++        parser.error(str(exc))
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+diff --git a/zsh/termbrana/transcript.zsh b/zsh/termbrana/transcript.zsh
+new file mode 100644
+index 0000000..ac587a5
+--- /dev/null
++++ b/zsh/termbrana/transcript.zsh
+@@ -0,0 +1,36 @@
++# Transcript view engine: source-relative, quiet, and inert until invoked.
++# Native rollouts require an explicit matching --input-format codex-rollout-0.166 or codex-rollout-0.167.
++if (( ! ${+_tbv_dir} )); then
++  typeset -gr _tbv_dir="${${(%):-%N}:A:h}"
++fi
++_tbv_render() {
++  python3 -I -S -B "$_tbv_dir/transcript.py" render "$@"
++}
++
++_tbv_pin() {
++  python3 -I -S -B "$_tbv_dir/transcript.py" pin "$@"
++}
++
++_tbv_select() {
++  python3 -I -S -B "$_tbv_dir/transcript.py" select "$@"
++}
++
++_tbv_open() {
++  python3 -I -S -B "$_tbv_dir/transcript.py" open "$@"
++}
++
++_tbv_collect() {
++  python3 -I -S -B "$_tbv_dir/collector.py" collect "$@"
++}
++
++_tbv_refresh() {
++  python3 -I -S -B "$_tbv_dir/collector.py" refresh "$@"
++}
++
++_tbv_status() {
++  python3 -I -S -B "$_tbv_dir/collector.py" status "$@"
++}
++
++_tbv_watch() {
++  python3 -I -S -B "$_tbv_dir/collector.py" watch "$@"
++}

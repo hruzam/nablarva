@@ -1,0 +1,95 @@
+{
+  "trial_root": "/tmp/nablarva-observer-audit-1dqgagbg",
+  "checks": {
+    "unnamed": "pass",
+    "unsaved_vs_disk": "pass",
+    "duplicate_titles_windows": "pass",
+    "focus_selection_scroll_preserved": "pass",
+    "unicode_ranges": "pass",
+    "multiple_selections": "pass",
+    "truncation": "pass",
+    "reorder": "pass",
+    "clone_selection_identity": "pass",
+    "revision_conflict": "pass",
+    "closed_view": "pass",
+    "concurrent_20": "pass",
+    "large_buffer_bounded": "pass",
+    "incremental_readiness_and_consumption": "pass",
+    "incomplete_output_deadline": "pass",
+    "restart_invalidates_instance": "pass"
+  },
+  "instance": "80c45cf76dcf43b7b8ef91c9aacef60e",
+  "sublime_build": "4215",
+  "python_version": "3.14.6",
+  "cold_ms": 1491.58,
+  "reorder_evidence": {
+    "before": [
+      {
+        "view": 38,
+        "group": 0,
+        "index": 0
+      },
+      {
+        "view": 40,
+        "group": 0,
+        "index": 1
+      }
+    ],
+    "after": [
+      {
+        "view": 40,
+        "group": 0,
+        "index": 0
+      },
+      {
+        "view": 38,
+        "group": 0,
+        "index": 1
+      }
+    ],
+    "target_view": 38,
+    "destination_index": 1,
+    "explicit_read_view": 38
+  },
+  "experiment_runs": [
+    {
+      "run_id": "d2bfa4037b5b460995f34c74d6741e3c",
+      "script_exit": 0,
+      "observed_window": 3,
+      "observed_view": 38,
+      "target_matches": false
+    },
+    {
+      "run_id": "b07886931b2345aeb8316d9c8d150e71",
+      "script_exit": 0,
+      "observed_window": 4,
+      "observed_view": 39,
+      "target_matches": true
+    }
+  ],
+  "transcript_observation": {
+    "duplicate_prompt_selections": [
+      {
+        "record": "item-user-001",
+        "line": 11,
+        "view": 43
+      },
+      {
+        "record": "item-user-003",
+        "line": 25,
+        "view": 43
+      }
+    ],
+    "explicit_fixture_refresh_observed": true,
+    "real_open_navigation_exercised": false,
+    "scope": "copied rendered fixture; fixture directly positions caret and changes buffer"
+  },
+  "latency": {
+    "samples": 30,
+    "median_ms": 76.24,
+    "p95_ms": 89.93,
+    "read_response_bytes": 1736
+  },
+  "restart_ms": 1037.34,
+  "disposable_process_stopped": true
+}

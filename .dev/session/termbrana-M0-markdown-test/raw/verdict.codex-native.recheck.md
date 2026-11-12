@@ -1,0 +1,12 @@
+VERDICT: FAIL
+TASK: Reverify corrected Codex 0.166 parser against the prior interim findings, all documented lineage variants, rollback carry-forward, unknown history modes, synthetic compatibility, and immutable snapshots.
+
+RAN: Full candidate suite: `python3 -I -S -B -m unittest discover -s .dev/session/termbrana-M0-markdown-test/implementation/termbrana/tests -v` (49 passed); all zsh files through `zsh -n`; `git diff --check`; shared composer suite (27 passed); independent synthetic matrix covering six lineage fields, zero-valued ordinals, rollback, both compaction forms, invalid history modes, and end-to-end carry-forward.
+
+EVIDENCE: Previous findings are corrected for `parent_thread_id`, positive `forked_from_ordinal_exclusive`, positive `subagent_history_start_ordinal`, rollback, and unknown modes. Rollback and compaction now produce incomplete history and block carry-forward. Legacy synthetic metadata compatibility and prior immutable-snapshot tests remain green. Revision hashes: `codex_native.py` `c82286fdfdaf20a2b0eb0aaaa2b1e240fb8529ab3b48a8354a52c34ff67d61ac`; `transcript.py` `a11b189f2c59af61a8927c044927fc22b00d7887b3710989028b99cad829df06`; `collector.py` `0beda74ca3bb2dd3ecfa61b8cd681c9dda068c65032f720a01b84696e66765bd`; native integration tests `1cd8cd926b26f68b298c10b2c4eeebf50ce0ff710153454ef5a4717669a1410b`.
+
+FAILURES: Lineage disclosure still fails for valid ordinal zero. [codex_native.py](/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/implementation/termbrana/codex_native.py:204) tests values with `not in (None, False)`; Python equates integer `0` with `False`. Consequently `forked_from_ordinal_exclusive: 0` and `subagent_history_start_ordinal: 0` produce no lineage disclosure, `state=snapshot_only`, and `carry_forward_allowed=true`. Both fields are tagged `Option<u64>`, so zero is representable and must not be silently erased.
+
+REPRODUCE: Parse a paginated synthetic rollout whose `session_meta` contains `forked_from_ordinal_exclusive:0` or `subagent_history_start_ordinal:0`, followed by one user event. Pass its disclosures to `transcript.history_state("codex", "codex-rollout-0.166", ...)`; observe empty disclosures and `carry_forward_allowed: true`. Publish it, append an assistant event, and call `carry_forward()`; it succeeds. Replacing zero with `2` produces `fork_or_history_base` and blocks carry-forward.
+
+RESIDUAL RISK: Native Codex fidelity, real histories, runtime-home behavior, and GUI/host interaction remain unverified by scope.

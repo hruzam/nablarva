@@ -1,0 +1,7 @@
+# Claude interface evidence
+
+[Claude Code's session documentation](https://code.claude.com/docs/en/sessions) describes `/export` as a human-readable transcript and warns its JSONL entries are internal and version-dependent. The current [Agent SDK reference](https://code.claude.com/docs/en/agent-sdk/typescript) and [sessions guide](https://code.claude.com/docs/en/agent-sdk/sessions) document `listSessions()` and `getSessionMessages()` for structured session metadata and historical user/assistant messages. The returned history API does not itself establish a live approval request or source-line navigation; fork and compaction coverage require qualification.
+
+A read-only module-resolution check in this project returned `TypeScript SDK not resolvable from project`. Python `-I -S` returned no `claude_agent_sdk` module; that establishes absence only from the isolated no-site Python environment, not from every Python installation. No dependency was installed. The SDK is a possible supported reader, not qualified against installed Claude Code 2.1.286 by this check, and adding it would change the RUNBOOK's stdlib/no-install scope. No such change is authorized by this evidence.
+
+The existing fixture parser remains synthetic and must not be treated as a qualified native adapter. The native-session witness must use an operator-created isolated test session and retain private histories locally; public documents and fixtures alone cannot establish version-specific behavior.

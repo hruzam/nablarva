@@ -1,0 +1,3 @@
+# Synthetic approval expectation
+
+This is a fictional presentation test, not proof of native Codex approval schema or live state. For the fixture's historical request `approval-demo-1`, render the observed request text, timestamp and a file:line reference to the exact retained `source.jsonl` line in the immutable snapshot. Label that address as cached source and separately disclose original source provenance. The outcome is unknown unless an independently qualified, correlated resolution is present. Never label the request currently pending or offer a decision control. A reader must still find the cached source after original-source removal.

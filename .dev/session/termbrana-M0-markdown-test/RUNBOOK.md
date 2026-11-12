@@ -9,7 +9,8 @@ goal: >-
 gate: >-
   Majkee records GO or STOP on an independently verified home-host transcript-view
   experiment for Codex and Claude, demonstrating zsh selection and Sublime opening,
-  source-bookmark fidelity across rebuild and append/resume, truthful interactive
+  snapshot-bound bookmarks across rebuild, validated carry-forward on append/resume,
+  automatic cache collection with explicit reading-view refresh, truthful interactive
   approval references, native-session independence, measured performance, and a
   reviewed ia-sync source-wiring and publication proposal with capability limits.
 participant_1: [Cartan, {brand: Codex, model: gpt-6.1-terra, effort: high}, {host: home, role: working head and integration owner}]
@@ -35,6 +36,15 @@ The gate is a qualification decision, not production deployment. STOP preserves 
 useful report of the failed capability; incomplete tests are not a PASS.
 
 ## Fixed direction and authority
+
+- Said: Majkee, 2026-11-06, approves snapshot-bound bookmarks, automatic collection
+  and explicit movement of the reading view, and requests updating this existing
+  RUNBOOK. This is an explicit in-place amendment for this session, overriding the
+  usual fixed-RUNBOOK/numbered-successor procedure for this change only. It does not
+  authorize future silent gate changes. Cartan retains execution and STATUS ownership.
+- The prior universal truncate/regrow detection promise is superseded by the
+  continuity contract below. Preserve `evidence.stage1-continuity.md` as evidence of
+  the observation limit; do not rewrite the old result into a new acceptance PASS.
 
 - Said: Majkee, 2026-11-05, accepted the file-first proposal and requested this
   Octopus launcher. Explicit selection plus a stable full-history snapshot is the
@@ -111,33 +121,62 @@ explicit vendor/source + explicit conversation/exchange choice
    compaction semantics; successful JSON decoding is insufficient. Disclose omitted,
    unknown and unsupported content. Preserve text, multiline/code boundaries and
    provenance without rendering duplicate representations as duplicate exchanges.
-3. Pins address vendor + specific conversation/branch + source record. A Markdown
-   line is derived for one rendering. Use native identities where qualified; offset
-   fallback must revalidate source continuity. Detect mutation, truncation,
-   replacement and truncate/regrow; never relocate by similar text. Codex's current
-   protocol can share sessionId across forked threads; verify installed semantics.
-4. Defer an incomplete final record, diagnose malformed complete records, and record
-   renderer version, source generation and last complete boundary. Compare incremental
-   results against full rebuilds. Generated output and its map must represent the same
-   generation, with one serialized publisher. No half-written reading file is exposed.
-5. Default to a stable snapshot while reading. Explicit refresh re-resolves the same
-   source bookmark, or reports loss; new output must not silently move the reader.
-   Automatic tailing/paging and viewport restoration are later work. Full-history
-   snapshot costs are measured before inventing a cache service or editor integration.
+3. Bind each bookmark to an immutable cached snapshot, vendor, specific
+   conversation/branch and source record (or validated offset inside that snapshot).
+   A Markdown line is derived for that snapshot/rendering. Retain the complete source
+   prefix needed to reproduce it, its content digest, provenance and renderer version;
+   native record IDs need vendor qualification. Snapshot identity identifies captured
+   content, not an otherwise unobserved native file generation.
+   Carry a bookmark forward only after checking the source identity/branch and exact
+   previously captured complete prefix against the new capture. Never match by similar
+   text. Observable replacement, shortening, prefix mutation, identity mismatch or
+   missing source blocks automatic carry-forward, but does not invalidate a retained,
+   intact historical snapshot. Report the condition and require explicit new selection.
+   An unobserved same-inode truncate/regrow restoring identical bytes is indistinguishable
+   from append under this contract. Disclose that limit; do not require or claim detection.
+   A local UUID, timestamps or watcher events alone do not establish native generation.
+4. Defer an incomplete final record and diagnose malformed complete records. One JSONL
+   line need not equal one visible message; the adapter determines presentation units.
+   Capture a bounded complete prefix; validate consistency before publishing and retry
+   or report uncertainty on concurrent changes. Store captured source, Markdown and
+   map as one immutable snapshot bundle, with one serialized publisher. Publish only
+   complete bundles through an atomic manifest/pointer switch; readers resolve one
+   bundle identity and never combine files from different generations. Compare
+   incremental results with full rebuilds of the same captured bytes. An interrupted
+   publisher must leave the previous committed snapshot usable.
+5. After explicit invocation for an explicit source, collect new complete records
+   automatically into new cache snapshots. Use a bounded foreground watch command with
+   a documented polling interval as the minimal dependency-free implementation; file
+   notifications are optional hints, never continuity evidence. Shell sourcing starts
+   nothing. No login service, persistent daemon, native-session attachment or discovery.
+   Expose latest-snapshot versus selected-snapshot state through the CLI, including
+   "new messages available" when the adapter establishes that fact; otherwise say
+   "new records available". No editor plugin/status-bar integration is required.
+   Keep the selected reading file and open snapshot unchanged while collection runs.
+   Explicit refresh selects a complete newer snapshot and re-resolves the bookmark,
+   or reports why carry-forward is unavailable. Do not silently relocate the reader.
+   Keep the former snapshot available while retained; automatic paging and viewport
+   restoration remain later work. Stopping the collector must not stop the native CLI.
+   Measure idle polling and growing-history cost before adding optimization machinery.
 6. An approval block shows the observed request, timestamp, source reference and
    correlated resolution when known; otherwise outcome unknown. Missing evidence is
    not a negative decision. Historical text never claims current answerability.
-7. Minimum interaction: a generated approval reference opens its exact local source
-   location using the existing editor file-address mechanism. Use a synthetic or
+7. Minimum interaction: a generated approval reference opens its exact retained
+   source location in the immutable snapshot using the existing editor file-address
+   mechanism. Label the cached source and original provenance distinctly. An original
+   live-source link may be offered only after revalidation; do not silently redirect
+   a stale reference into a changed original. Use a synthetic or
    sanitized source in the UI witness. Witness this feature in Sublime; a formatted
    path alone is not an interaction PASS. Navigation to an already-running native
    session is a separate optional capability, requiring checked target identity and
    an existing view-only action. If unavailable, show that honestly; do not invent a
    working button, approve/deny control, shell link, transport or app-server resume.
 8. Keep generated text separate from operator notes. Bookmarks may reference notes,
-   but this session builds no note service. Derived cache is disposable only while its
-   retained source supports rebuild. Missing source must be visible. No reboot cleanup,
-   retention daemon or deletion of native history belongs to this gate.
+   but this session builds no note service. A snapshot retains the captured source
+   needed for its own rebuild; original-source loss must be visible and blocks refresh,
+   while cached historical reading remains available. Deleting a retained snapshot can
+   remove the last copy behind its bookmarks: do not call that lossless disposal.
+   No reboot cleanup, automatic eviction or deletion of native history belongs to this gate.
 
 ### Existing Sublime pin seam
 
@@ -155,6 +194,72 @@ Resolve source/live facts, do not normalize their histories. Do not claim/consum
 clear or rewrite the production pin queue, invoke its tmux-send path, install a
 plugin or alter keymaps. Source inspection and the existing open-target action suffice.
 
+### Planned development tool: Sublime-to-CLI observation connector
+
+Said: Majkee, 2026-11-06, supplied
+`/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/raw/termbrana-sublime-cli-implementer.md`
+and requested adding this tool to the development portfolio. Adopt its observation
+use case as a planned tool: run an experiment, inspect the actual Sublime result,
+compare with expectations, fix through the existing development tools, then rerun.
+The supplied brief is a proposed implementation contract with attributed upstream
+research; it is not evidence that an executable or plugin is installed or qualified.
+`termbrana-editor` remains a provisional command name pending the naming sweep.
+
+Keep this connector separate from the transcript renderer. Its prospective interface
+inventories windows/views and reads live buffer text, selections and view state by
+explicit instance/window/view identity. In particular, disk reads cannot establish
+unsaved buffer content. Read operations must preserve focus, selection and scroll.
+Do not read unrelated open buffers merely because inventory exposes them; use explicit
+synthetic test targets and retain only scoped, sanitized evidence.
+
+Use the raw brief as the bounded connector-build input. Its first qualification is
+one deliberately wrong-target or stale-buffer experiment, followed by a correction
+and a new run proving the intended view and content. Require run correlation, explicit
+handles, readiness deadlines, revision/truncation metadata, duplicate-window tests,
+restart invalidation and measured latency. Inspect an existing bridge before choosing
+reuse versus a small purpose-built reader; the brief's upstream claims require local
+revision and capability checks. A read-only CLI wrapper does not constrain mutation
+or execution endpoints exposed separately by its backend.
+
+For this transcript experiment, a qualified connector can supply evidence of actual
+buffer text, target view, caret/selection and viewport state, including refresh staying
+put until requested. It cannot by itself qualify visual rendering, native transcript
+fidelity, native-session independence or live approval answerability. Keep operator
+or screenshot evidence where the claim requires it; never forward historical approvals.
+
+Connector implementation/installation is a separately bounded work item using the
+supplied brief, with its own file ownership, disposable-profile trial, reversible
+installation/removal plan and host qualification. Adding it to this portfolio does
+not release live-plugin edits under the current transcript gate. Do not introduce it
+as a new prerequisite for Cartan's in-flight verification or abandon the existing PAD.
+If a qualified installation becomes available, Cartan may record its exact revision,
+configuration and scoped observations as supplemental evidence before relying on it.
+
+## Reconcile the earlier candidate and execution environment
+
+On resume, inventory the candidate and any task-attributable effects outside the
+experimental tree before changing them. Reuse valid fixtures, adapter work and tests;
+retire only obsolete assumptions, code paths and expectations from the old contract.
+Preserve raw inputs, the capability comparison and the original continuity finding.
+The five reported synthetic passes are historical evidence, not qualification of this
+amendment or native fidelity. Add the same-prefix regrow case as a documented detection
+limit, and test observable discontinuities separately. Serialized publication remains
+required implementation work, not an architectural blocker by itself.
+
+Majkee's rewind instruction permits reverting unnecessary effects of this experiment
+if Cartan made them outside the sandbox. Establish exact paths and before/after evidence
+first; restore only attributable obsolete changes without disturbing newer or unrelated
+work. Do not use broad reset/clean, delete caches or histories indiscriminately, or
+reverse the pre-existing Sublime installation. If attribution is uncertain, report
+that specific path and continue unaffected work. Respect effective filesystem permissions;
+this instruction does not grant deployment or new host configuration changes.
+
+Use disposable output overrides for parser, snapshot, collector and shell qualification.
+Sandbox limits do not block those independent tasks. Actual ~/.nablarva layout, Sublime
+interaction and native-session independence require separate real host witnesses; prepare
+exact PAD steps for Majkee when access or GUI control is unavailable. Never replace a
+missing host witness with a sandbox PASS or widen permissions implicitly.
+
 ## prompt-0 — Cartan, working head
 
 ```text
@@ -165,16 +270,21 @@ Read /home/hruzam/unikuklatrix/nablarva/AGENTS.md and its required read order,
 and /home/hruzam/reposoma/raw.guides/status/GUIDE.md.
 You are Cartan, sole status_owner and integration owner. Resolve actual host,
 worktree, permissions and overlapping work, then run the STATUS recovery probe.
-Read the three raw inputs named in References and only the source/canon needed.
+Read the three original raw inputs and the planned connector section; read the
+connector brief when evaluating that tool, plus only the source/canon needed.
 Use the surgical-coding skill for implementation. Check native export/navigation
 and installed vendor versions first; retain an existing facility if it meets the
 gate. Do not re-run broad research or consume real transcript/pin stores casually.
 
 Own this bed's STATUS, evidence, UI PAD and final REPORT; preserve existing raw files.
-Stage 1: qualify one synthetic fixture, canonical projection and stable pins, using
-explicit vendor/source. Freeze expected exchanges before implementation results.
-Stage 2: qualify both installed vendor adapters, adversarial identity/lifecycle
-cases, the selector and inert zsh surface. Use sanitized fixtures; isolated native
+First reconcile the earlier candidate and effects under this RUNBOOK's reconciliation
+section; record the attributable keep/adapt/revert decisions in evidence.
+Stage 1: reuse the frozen synthetic fixture, qualify canonical projection, immutable
+snapshot bundles and snapshot-bound bookmarks using explicit vendor/source. Freeze
+amended expectations before comparing implementation results.
+Stage 2: qualify both installed vendor adapters, observable discontinuities, validated
+carry-forward, automatic foreground collection and explicit reading-view refresh,
+plus the selector and inert zsh surface. Use sanitized fixtures; isolated native
 sessions require the operator's involvement, and native histories stay host-local.
 Stage 3: prepare a short operator PAD, run home-host Sublime interaction and native
 session-independence checks with Majkee, and measure small/large fixture costs.
@@ -251,7 +361,10 @@ Open /home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/
 With Cartan, follow the prepared UI PAD in that same bed on home. Use disposable
 native sessions and redacted/synthetic approval material. Witness the intended
 exchange in a new Sublime window, the approval source-reference action, duplicate
-prompt disambiguation, and the CLI still answering after the editor closes.
+prompt disambiguation, and the CLI still answering after the editor closes. While
+collection runs, append new conversation content: witness availability reporting with
+the open snapshot unchanged, then explicit refresh to the newer snapshot. Stop the
+collector and confirm that the native session remains usable.
 Make any real permission decision only in the native CLI. Record what you actually
 saw; a screenshot or old prompt alone does not prove live answerability.
 Review REPORT.md and the independent returns in this bed; record GO or STOP on the
@@ -277,8 +390,9 @@ single gate. A GO accepts this qualification, not automatic publication or deplo
   the raw research as attributed evidence and preserve its unknowns.
 - Existing files under raw/ belong to their authors. In particular preserve the
   untracked Cartan Sublime handoff. Do not absorb its installer bookkeeping repair.
-- Cleanup on reboot, background watchers, automatic paging, note service and
-  autonomous native-session discovery/attachment remain later work.
+- Cleanup on reboot, automatic eviction, persistent background services, automatic
+  paging, note service and autonomous native-session discovery/attachment remain
+  later work. Explicitly started foreground automatic collection is in this gate.
 
 ## Acceptance evidence
 
@@ -286,18 +400,20 @@ single gate. A GO accepts this qualification, not automatic publication or deplo
 |---|---|
 | Existing facilities and boundaries | Installed versions, native export/navigation comparison, exact source inputs, existing pin-plugin inspection, naming sweep and retired-by-native condition. |
 | Conversation fidelity | Per-vendor/version fixtures with frozen expected conversation, multiline/code, duplicate-looking prompts, duplicate representations, unsupported records, partial final line, malformed complete line and branch/compaction cases. |
-| Stable pins | Correct source-to-line mapping after cold rebuild, append and resume; isolation across two conversations and colliding project basenames; explicit failure after invalidating mutation/truncation/replacement/regrow or source loss. |
+| Snapshot bookmarks and carry-forward | Correct mapping within a retained snapshot after cold rebuild; validated carry-forward on append/resume; isolation across conversations and colliding project basenames. Observable shortening, replacement, prefix mutation, identity mismatch or source loss blocks carry-forward while retained history stays readable. Same-prefix unobserved regrow is explicitly recorded as undetectable, not claimed as caught. |
+| Automatic collection and explicit refresh | Complete appended records become available within the documented polling interval plus processing time; partial tails wait; no duplicate exchanges on repeated polls. Open snapshot and selected reading file stay unchanged until explicit refresh. Test collector restart, concurrent publication, interrupted publication and unchanged-source polling; readers see only complete matching bundles. No automatic native-session or editor activation. |
 | zsh entry | Direct Python and source-relative shell invocation agree; keyboard has aliases/comments only; repeated source has no I/O/process/editor effects; ordinary errors are actionable; composer regression checks remain green if shared files are proposed for promotion. |
 | Temporary layout | Witness the authorized project/bed/agentive-session layout, collision checks, metadata/source-map consistency, complete publication and cache rebuild. An override-only test cannot qualify the actual temporary home. |
 | Editor interaction | Operator witnesses new window and correct exchange, including already-open-file case; actual approval source-reference navigation; source-vs-editor pin distinction; native CLI continues and survives view closure. |
 | Approval truth | Request/time/provenance, correlated resolution or explicit unknown; no live-pending claim from history alone; unavailable source fields and native target navigation clearly marked. |
-| Performance | On home, record fixture bytes/turns and small/large cold full-render time, warm pin lookup and peak memory with exact commands. Record the operator's usable/unusable judgment; do not import composer budgets or fabricate a paging threshold. |
+| Performance | On home, record fixture bytes/turns and small/large cold full-render time, warm pin lookup, idle polling cost, append-to-availability latency and peak memory with exact commands. Record the operator's usable/unusable judgment; do not import composer budgets or fabricate a paging threshold. |
 | Review and return | Independent verifier result, fresh Houston finding, disposition of every material finding, concrete ia-sync source/wiring/activation proposal and Majkee GO/STOP. |
 
 Cartan stores redacted evidence in this bed on demand and returns one REPORT with
 adopt / reject / operator decision clearly separated. It includes exact commands,
 input/output fixture pair, working pin, lifecycle/approval capability matrix and
-timings. Unavailable runtime/GUI evidence remains UNVERIFIED and prevents a GO
+timings. Report snapshot retention and the unobservable-rewrite limit explicitly.
+Unavailable runtime/GUI evidence remains UNVERIFIED and prevents a GO
 claim for that capability. Follow the shared closure law; promotion, observations
 and pruning are separately authorized effects, never an automatic cleanup step.
 
@@ -308,6 +424,7 @@ and pruning are separately authorized effects, never an automatic cleanup step.
 - `/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md` and `/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md` — separate observer and composition contracts.
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/raw/termbrana-M0-transcript-view.cli-handoff.md` — Wave's proposal, not a build release by itself.
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/raw/majkee-cartan-log.md` — versioned approval findings and explicit gaps.
+- `/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/raw/termbrana-sublime-cli-implementer.md` — operator-supplied proposed editor-observation tool; separate from transcript rendering and not yet qualified.
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-M0-markdown-test/raw/sublime-pin-install-handoff.cartan.2026-11-05.md` — existing source/install map; preserved operator-supplied handoff.
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/05_WAY_OF_THINKING.md` — conventional pattern, solved practice, open edges and case-specific invention.
 - `/home/hruzam/ia-sync/zsh/termbrana/README.md`, `/home/hruzam/ia-sync/zsh/termbrana/base.zsh`, `/home/hruzam/ia-sync/zsh/termbrana/keyboard.zsh`, `/home/hruzam/ia-sync/zsh/termbrana/composer.zsh` — existing source-only family.
