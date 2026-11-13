@@ -31,6 +31,9 @@ wording wins: (1) candidate ≠ qualified route, and my "native doors for 3 of 4
 the ladder's "one later retry" needs a released limit, expiry and revalidation. (3) enqueue ≠ submission ≠ consumption. (4) no tmux =
 not "absent". (5) the hook copy is unqualified. His auditor qualifier (read / run approved checks / never mutate) replaces my "no execution".
 Also from h01: a copy ring needs a payload the adapter grammar accepts. My `[copy h01]` was refused 30. That was my request's flaw.
+h01 record: poke = `codex queue` ✓ (no relay). Copy = clean refusal 30, file fallback ✓. Work ✓ (nonce match). Done ring = **cartan's own
+labelled manual notice** into Claude pane %3 (majkee was away; allowed after a clean refusal, backlog §4.9). It submitted on the first
+try in Claude. Not an adapter success, not counted. Lesson: a bell payload must be in the adapter's grammar, or the bell isn't automatic.
 Git in nablarva is L12: plain `git pull`/`push`, **never `--rebase`**.
 
 Source bed (evidence, read-only for you): `~/ia-sync/.dev/session/vistMini-01-tests/`. `_bus/01–05`, `reports/`,
