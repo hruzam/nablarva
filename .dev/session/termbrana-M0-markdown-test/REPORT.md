@@ -20,6 +20,13 @@ automatic collection, explicit bookmark refresh and a further reply after
 watcher shutdown and test-window closure; see `evidence.codex-0167.md` and PAD
 steps 17–23. This does not qualify the full native schema or Claude.
 
+The explicit Claude 2.1.323 completed-text subset now passes an independent
+recheck and the combined suite has 70 passing tests; see
+`evidence.claude-native-21323.md`. One authorized test source parsed as two
+messages. Its owner-private local cache retains the complete source, including
+internal records omitted from the view; the Sublime witness is pending. The
+publication proposal predates this Claude adapter and is stale again.
+
 ## Capability matrix
 
 | Capability | Current evidence | Status |

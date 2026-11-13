@@ -1,5 +1,6 @@
 # Transcript view engine: source-relative, quiet, and inert until invoked.
 # Native rollouts require an explicit matching --input-format codex-rollout-0.166 or codex-rollout-0.167.
+# Claude's observed text subset requires --input-format claude-jsonl-2.1.323.
 if (( ! ${+_tbv_dir} )); then
   typeset -gr _tbv_dir="${${(%):-%N}:A:h}"
 fi

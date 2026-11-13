@@ -638,5 +638,78 @@ sharing credentials or retrying automatically.
 > MAJKEE report 24
 
 ```text
+Test directory: /tmp/nablarva-claude-native-i97BFz
+Test session ID: 76b3407f-6d42-4007-a0bc-f362e31aa8b0
+Majkee saw the expected reply. The session was initially closed, then Majkee
+reopened it with `claude --resume` and reported leaving it open.
+```
+
+### STEP 25 — inspect the Claude test conversation
+
+**Why:** Check that the real Claude test prompt and reply appear in Sublime,
+at the user heading, while the native Claude session stays open.
+
+Cartan rendered the explicitly identified test source into an owner-private
+local cache and opened its first user record. Snapshot `30eadeecabcbd1f24d9d0260`
+opened at line 17. The cache retains the entire source, including internal
+records omitted from the visible transcript; its directory and files were
+checked for owner-only permissions and must not be published or transported.
+
+Majkee: does the new Sublime window show the fictional prompt and
+`Claude native witness ready.` reply, with the caret at the user heading?
+Leave the Claude test terminal open.
+
+> MAJKEE report 25
+
+```text
+Majkee confirmed that the input and output, including his prompt, are visible
+in the Sublime view. Caret position was not separately confirmed.
+```
+
+### STEP 26 — test Claude collection while reading
+
+**Why:** Check that an explicitly started watcher notices a new Claude exchange
+while the open snapshot remains fixed. Cartan started a bounded watcher on the
+explicitly identified test source; its initial polls succeeded and selected
+snapshot is `30eadeecabcbd1f24d9d0260`.
+
+Majkee: in the same Claude test terminal, send `Please reply exactly: Second
+Claude witness ready.` Report whether the reply appears. Leave Claude and the
+Sublime view open.
+
+> MAJKEE report 26
+
+```text
+Majkee reports that Claude replied. The explicitly started watcher recorded
+new records and a new snapshot: the selected initial snapshot retained two
+exchanges while the latest snapshot advanced to four. The watcher stayed
+within the private test cache.
+```
+
+### STEP 27 — refresh the Claude bookmark
+
+**Why:** Check that an explicit refresh carries the first Claude user message
+to a newer snapshot after the watcher sees a second exchange. Cartan performs
+the refresh; the original snapshot remains available.
+
+Refresh returned `refreshed: true`, `carry_forward: true`, and selected
+snapshot `5731e099a0d9a1ec012eff08` with the original user record. Cartan
+opened the refreshed snapshot at line 17. A file-level check found the second
+fictional phrase in the new snapshot and absent from the old one; it does not
+claim a visual witness or a layout-mode materialized reading-file update.
+
+### STEP 28 — Claude independence after reader closure
+
+**Why:** Check that Claude remains usable after the explicitly started watcher
+and the generated reader window stop. Cartan stopped the verified watcher PID
+3921129 with SIGTERM; it exited while the test Claude process remained running.
+
+Majkee: close the Claude test snapshot windows in Sublime, then in the same
+Claude terminal send `Please reply exactly: Claude session still works.` Report
+whether the reply appears. Keep the Claude session open.
+
+> MAJKEE report 28
+
+```text
 pending
 ```

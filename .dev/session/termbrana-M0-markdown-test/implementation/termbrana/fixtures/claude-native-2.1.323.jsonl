@@ -1,0 +1,9 @@
+{"type":"mode","sessionId":"fictional-session","mode":"normal"}
+{"type":"file-history-snapshot","messageId":"fictional-message","snapshot":{},"isSnapshotUpdate":false}
+{"type":"user","uuid":"fictional-user-1","parentUuid":null,"sessionId":"fictional-session","cwd":"/synthetic/claude-project","version":"2.1.323","isSidechain":false,"timestamp":"2026-11-13T10:00:00Z","message":{"role":"user","content":"Please show the selected exchange."}}
+{"type":"attachment","uuid":"fictional-attachment-1","parentUuid":"fictional-user-1","sessionId":"fictional-session","cwd":"/synthetic/claude-project","version":"2.1.323","isSidechain":false,"attachment":{"type":"environment","content":"invented omitted context"}}
+{"type":"api-request-blob","sessionId":"fictional-session","message":{"role":"assistant","content":"This nested representation must never render."}}
+{"type":"attachment","uuid":"fictional-attachment-2","parentUuid":"fictional-attachment-1","sessionId":"fictional-session","cwd":"/synthetic/claude-project","version":"2.1.323","isSidechain":false,"attachment":{"type":"prompt_snapshot","content":"invented omitted snapshot"}}
+{"type":"assistant","uuid":"fictional-assistant-1","parentUuid":"fictional-attachment-2","sessionId":"fictional-session","cwd":"/synthetic/claude-project","version":"2.1.323","isSidechain":false,"timestamp":"2026-11-13T10:00:02Z","message":{"role":"assistant","stop_reason":"end_turn","content":[{"type":"text","text":"A multiline response:\n```text\nline one\nline two\n```"}]}}
+{"type":"system","subtype":"turn_duration","uuid":"fictional-duration-1","parentUuid":"fictional-assistant-1","sessionId":"fictional-session","cwd":"/synthetic/claude-project","version":"2.1.323","isSidechain":false,"durationMs":20}
+{"type":"last-prompt","sessionId":"fictional-session","leafUuid":"fictional-duration-1","lastPrompt":"Please show the selected exchange."}

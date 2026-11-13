@@ -21,6 +21,7 @@ SYNTHETIC_EVENT_FORMAT = "synthetic-event-jsonl"
 CODEX_NATIVE_FORMAT = "codex-rollout-0.166"
 CODEX_COMPLETED_FORMAT = "codex-rollout-0.167"
 CODEX_NATIVE_FORMATS = (CODEX_NATIVE_FORMAT, CODEX_COMPLETED_FORMAT)
+CLAUDE_NATIVE_FORMAT = "claude-jsonl-2.1.323"
 
 
 class SourceError(ValueError):
@@ -114,14 +115,14 @@ def load_codex(data: bytes):
     return records, unsupported, deferred_partial, offset, identity
 
 
-def load_claude(data: bytes):
+def load_claude(data: bytes, native: bool = False):
     spec = importlib.util.spec_from_file_location("termbrana_claude_adapter", CLAUDE_ADAPTER_PATH)
     if spec is None or spec.loader is None:
         raise SourceError("unable to load adjacent Claude adapter")
     adapter = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(adapter)
     try:
-        parsed = adapter.parse(data)
+        parsed = adapter.parse_native(data) if native else adapter.parse(data)
     except adapter.SourceError as exc:
         raise SourceError(str(exc)) from exc
     locations, offset = {}, 0
@@ -152,6 +153,9 @@ def load_claude(data: bytes):
         "branch_id": "unqualified",
         "thread_id": "unqualified",
     }
+    if native:
+        identity.update({"producer_version": parsed["vendor_version"],
+                         "project": parsed["cwd"], "adapter_contract": parsed["adapter_contract"]})
     deferred_partial = any(item.get("kind") == "incomplete_final_line" for item in disclosures)
     return records, disclosures, deferred_partial, offset, identity
 
@@ -185,11 +189,17 @@ def load_vendor(vendor: str, data: bytes, input_format: str = SYNTHETIC_EVENT_FO
         return load_codex_native(data, "0.167.0" if input_format == CODEX_COMPLETED_FORMAT else "0.166.0")
     if vendor == "claude-code" and input_format == SYNTHETIC_EVENT_FORMAT:
         return load_claude(data)
+    if vendor == "claude-code" and input_format == CLAUDE_NATIVE_FORMAT:
+        return load_claude(data, native=True)
     raise SourceError(f"unsupported vendor/input format: {vendor}/{input_format}")
 
 
 def history_state(vendor: str, input_format: str, disclosures: list[dict]) -> dict:
     """State the strongest claim this renderer may make about captured history."""
+    if vendor == "claude-code" and input_format == CLAUDE_NATIVE_FORMAT:
+        return {"state": "snapshot_only", "full_history_claim": False,
+                "native_qualification": "unqualified_complete_history",
+                "incomplete_reasons": [], "carry_forward_allowed": True}
     if vendor != "codex" or input_format not in CODEX_NATIVE_FORMATS:
         return {"state": "synthetic_fixture", "full_history_claim": False}
     blockers = {
@@ -210,7 +220,8 @@ def disclosure_line(item: dict) -> str:
     identifier = item.get("id") or item.get("uuid") or pin.get("id") or "no-id"
     kind = item.get("type") or item.get("kind") or item.get("reason") or "unknown"
     suffix = " · approval outcome unknown" if item.get("approval_outcome") == "unknown" else ""
-    return f"- {identifier} · {kind}{suffix}"
+    count = f" · count={item['count']}" if isinstance(item.get("count"), int) else ""
+    return f"- {identifier} · {kind}{count}{suffix}"
 
 
 def render_markdown(vendor, records, unsupported, deferred_partial, identity, cached_source, provenance, history=None):
@@ -399,7 +410,11 @@ def inspect_source(source: Path, context: dict) -> dict:
         expected_version = "0.167.0" if input_format == CODEX_COMPLETED_FORMAT else "0.166.0"
         if context.get("vendor_version") != expected_version:
             raise SourceError("vendor version does not match explicit native input format")
+    if vendor == "claude-code" and input_format == CLAUDE_NATIVE_FORMAT and context.get("vendor_version") != "2.1.323":
+        raise SourceError("vendor version does not match explicit native input format")
     records, disclosures, deferred_partial, boundary, identity = load_vendor(vendor, source_bytes, input_format)
+    if vendor == "claude-code" and input_format == CLAUDE_NATIVE_FORMAT and str(Path(context["project"]).resolve(strict=False)) != identity["project"]:
+        raise SourceError("project does not match native source identity")
     return {
         "source_bytes": source_bytes,
         "retained": source_bytes[:boundary],
@@ -587,7 +602,7 @@ def main() -> int:
     render_parser = command.add_parser("render")
     render_parser.add_argument("--vendor", required=True, choices=("codex", "claude-code"))
     render_parser.add_argument("--vendor-version", required=True)
-    render_parser.add_argument("--input-format", choices=(SYNTHETIC_EVENT_FORMAT, *CODEX_NATIVE_FORMATS), default=SYNTHETIC_EVENT_FORMAT)
+    render_parser.add_argument("--input-format", choices=(SYNTHETIC_EVENT_FORMAT, *CODEX_NATIVE_FORMATS, CLAUDE_NATIVE_FORMAT), default=SYNTHETIC_EVENT_FORMAT)
     render_parser.add_argument("--project", required=True, type=Path)
     render_parser.add_argument("--source", required=True, type=Path)
     render_parser.add_argument("--out", type=Path, help="disposable cache root")

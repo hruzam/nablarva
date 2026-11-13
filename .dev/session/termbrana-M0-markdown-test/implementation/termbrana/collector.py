@@ -247,7 +247,7 @@ def main() -> int:
         command.add_argument("--project", required=True, type=Path)
         command.add_argument("--vendor", required=True, choices=("codex", "claude-code"))
         command.add_argument("--vendor-version", required=True)
-        command.add_argument("--input-format", choices=(transcript.SYNTHETIC_EVENT_FORMAT, *transcript.CODEX_NATIVE_FORMATS), default=transcript.SYNTHETIC_EVENT_FORMAT)
+        command.add_argument("--input-format", choices=(transcript.SYNTHETIC_EVENT_FORMAT, *transcript.CODEX_NATIVE_FORMATS, transcript.CLAUDE_NATIVE_FORMAT), default=transcript.SYNTHETIC_EVENT_FORMAT)
         if name == "refresh":
             command.add_argument("--record")
     status_parser = commands.add_parser("status")
@@ -258,7 +258,7 @@ def main() -> int:
     watch_parser.add_argument("--project", required=True, type=Path)
     watch_parser.add_argument("--vendor", required=True, choices=("codex", "claude-code"))
     watch_parser.add_argument("--vendor-version", required=True)
-    watch_parser.add_argument("--input-format", choices=(transcript.SYNTHETIC_EVENT_FORMAT, *transcript.CODEX_NATIVE_FORMATS), default=transcript.SYNTHETIC_EVENT_FORMAT)
+    watch_parser.add_argument("--input-format", choices=(transcript.SYNTHETIC_EVENT_FORMAT, *transcript.CODEX_NATIVE_FORMATS, transcript.CLAUDE_NATIVE_FORMAT), default=transcript.SYNTHETIC_EVENT_FORMAT)
     watch_parser.add_argument("--interval", required=True, type=float)
     watch_parser.add_argument("--cycles", required=True, type=int)
     args = parser.parse_args()

@@ -1,7 +1,7 @@
 # STATUS: termbrana-M0-markdown-test
 
 ```yaml
-updated: 2026-11-09
+updated: 2026-11-13
 writer: Cartan · Codex
 host: home · hruzam
 worktree: >-
@@ -19,7 +19,7 @@ gate: >-
 checkpoint: >-
   Synthetic home workflow passed PAD STEP 16. The 0.167 completed-text adapter
   and refresh-interruption recovery pass independent review; the final suite has
-  59 passing tests, including independently checked Claude malformed-input and
+  70 passing tests, including independently checked Claude native subset and
   duplicate-ID performance fixes. See raw/verdict.claude-performance.md,
   evidence.codex-0167.md and raw/verdict.codex-0167-refresh.md. The refreshed
   latest publication candidate passes independent package review; see
@@ -45,9 +45,23 @@ in_flight: >-
   bookmark. Majkee confirmed the third test appears in the refreshed file.
   The verified bounded watcher PID 1713656 was stopped and is absent; Majkee
   closed the test Sublime windows and confirmed a native reply afterward.
-  The separate native Codex process remains running. PAD STEP 24 may start a
-  separate Claude test session with a printed explicit ID and /tmp directory;
-  await Majkee's report, do not retry or inspect unrelated histories. Watcher output is
+  PAD STEP 24's explicit Claude test source is
+  /home/hruzam/.claude/projects/-tmp-nablarva-claude-native-i97BFz/76b3407f-6d42-4007-a0bc-f362e31aa8b0.jsonl.
+  Its session ID and cwd match, and its expected fictional prompt and reply are
+  present. Majkee saw the reply and reports reopening the session. A bounded
+  worker implemented a native 2.1.323 subset against invented fixtures; the
+  independent recheck passed. Private Claude test cache
+  /tmp/nablarva-claude-view-5jo5eqmz/cache retains the complete source, including
+  internal records, and must stay local. Majkee confirmed its prompt and reply
+  appear in Sublime. Bounded Claude watcher session 30689 is running with
+  private logs under /tmp/nablarva-claude-view-5jo5eqmz; Majkee reports a new
+  reply, and the watcher reported latest 5731e099a0d9a1ec012eff08 with four
+  exchanges while selected 30eadeecabcbd1f24d9d0260 remained at two. Explicit
+  refresh validated carry-forward, selected the newer snapshot and opened it
+  in Sublime. Verified bounded watcher PID 3921129 was stopped; Claude remained
+  running. PAD STEP 28 requests the operator's follow-up after closing the view;
+  do not signal Claude or inject into the
+  session or inspect unrelated histories. Watcher output is
   /tmp/nablarva-native-view-mf7s3v06/watcher.jsonl. Do not stop Codex. This
   non-layout cache has no reading-file layout.
   Ia-sync and host configuration remain untouched.
@@ -81,6 +95,8 @@ recovery_probe: |
   ls -ld /home/hruzam/.nablarva/nablarva-3ca44d762f78/termbrana-M0-markdown-test/cache.collector-witness-20261106 /home/hruzam/.nablarva/nablarva-3ca44d762f78/termbrana-M0-markdown-test/read.collector-witness-20261106.md 2>&1
   ps -eo pid=,args= | rg 'collector.py watch.*nablarva-native-JQfnzz' || true
   tail -n 1 /tmp/nablarva-native-view-mf7s3v06/watcher.jsonl 2>&1
+  ps -eo pid=,args= | rg 'collector.py watch.*nablarva-claude-native-i97BFz' || true
+  tail -n 1 /tmp/nablarva-claude-view-5jo5eqmz/watcher.jsonl 2>&1
   # Inspect PAD STEP 17 receipt and ask Majkee whether the separate test session
   # started, its temporary directory and whether it remains open before any retry.
   # Do not scan native history or terminate unrelated processes. The append exists.
@@ -99,6 +115,6 @@ holds:
   - The universal regrow-detection hold is superseded by the approved snapshot contract; unobserved byte-identical regrow remains undetectable. Synthetic identities do not qualify native fidelity.
   - Rewind only attributable obsolete experiment effects after before/after inspection; preserve useful fixtures, original evidence, unrelated changes and the existing Sublime installation.
   - A research worker's over-broad read exposed native-history excerpts in its tool trace; no excerpts were copied to artifacts. Do not repeat the search; see evidence.reconciliation.md.
-next: Majkee performs PAD STEP 24, reporting the Claude test directory, explicit session ID and result.
-expected: A separate Claude session replies to the fictional prompt and remains open without exposing unrelated history.
+next: Majkee closes the Claude test views and sends the fictional follow-up in PAD STEP 28.
+expected: Claude replies after both watcher shutdown and reader-view closure.
 ```
