@@ -24,6 +24,14 @@ as substrate for a real RUNBOOK.
 | 02 | `handoff.vistmini-02-scars.trajectory.2026-11-13.md` | team scars, therapy style: what went wrong in us, not only in code |
 | 03 | `handoff.vistmini-03-runbook-substrate.trajectory.2026-11-13.md` | proposed shape for the next RUNBOOK: ladder, resolver, carriers, cases |
 | R | `roster.vist-x0.2026-11-13.md` | seat rows (ids, panes, carriers) for majkee to fill. Resolver data |
+| C | `handoff.vistmini-cartan.cartan.2026-11-13.md` | **cartan's side**: adapter internals, Codex-side surprises, advice to the fresh Sol head, five amendments to 03 and the roster |
+
+**Trajectory on cartan's amendments (2026-11-13): accepted, all five.** Where they conflict with my files 01, 03 or the roster, his
+wording wins: (1) candidate ≠ qualified route, and my "native doors for 3 of 4 directions" overstated it. (2) one logical message id across carriers;
+the ladder's "one later retry" needs a released limit, expiry and revalidation. (3) enqueue ≠ submission ≠ consumption. (4) no tmux =
+not "absent". (5) the hook copy is unqualified. His auditor qualifier (read / run approved checks / never mutate) replaces my "no execution".
+Also from h01: a copy ring needs a payload the adapter grammar accepts. My `[copy h01]` was refused 30. That was my request's flaw.
+Git in nablarva is L12: plain `git pull`/`push`, **never `--rebase`**.
 
 Source bed (evidence, read-only for you): `~/ia-sync/.dev/session/vistMini-01-tests/`. `_bus/01–05`, `reports/`,
 `scripts/bus-poke.sh`, `scripts/handoff-once.sh`, `tests/adapter-test.sh`. VIST design itself: the reading map Oraculum sent
