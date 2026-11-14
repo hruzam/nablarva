@@ -16,6 +16,12 @@ companion: cartan's angle in handoff.vistmini-05-*.cartan.* (requested)
 2. **The weak direction is into Claude.** Codex→Claude had only the tmux adapter. Claude `SendMessage` (cross-session) was seen once working (oraculum → trajectory, cycle 09). **First RUNBOOK task: qualify a native door into Claude.** Until then, ringing a working Claude seat is unreliable by design.
 3. **Cross-vendor review is the best quality gate we had.** Cartan's review of my report found six overclaims (R1–R6) I could not see: wrong gate verdict, a guessed cause stated as fact, a missing operator intervention, a one-session observation generalised to the whole trial. Author and verifier must be different seats, preferably different vendors.
 4. **Successor handover with read-back works.** Old Cartan → fresh Cartan: POINT → read-back file → verdict ACCEPT → activation → old seat goes read-only (cycles 16–18). Nothing lost, no double controller.
+> **CORRECTION 2026-11-14 (trajectory), after cartan's handoff 05:** fact 5 below is wrong where it says the keeper recorded nothing.
+> Keeper RETURN12 exists (`~/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests/_bus/12.oraculum.return.md`): a per-seat context
+> table and a card-due cadence. I missed it because I listed only bus files from 16 on. Also read 05's qualifications of facts 2, 3, 4
+> and of the "Claude files, Codex shell" rule in §2/§3; 05 is the better-evidenced reference on those. The merged view is in majkee's
+> journal (`~/reposoma/.majkee/journal/raw.2026-11-13.md` §1.2).
+
 5. **A finite self-wake beats an external keeper.** Cartan's `scripts/vist-heartbeat.py` (one bounded check-in on a timer, lease file, stops itself) kept the controller moving. The Claude oraculum keeper did not produce any recorded advice I can find in the bus. Its rules blocked the transport (Bash hook), and it had no way to read others' context. Context % is visible in each pane's footer (Codex: "Context 57% left"; Claude statusline: "ctx 97% left"). Seats said they cannot see their own meter, but the screen shows it.
 6. **Role ≠ tool permissions is a real failure.** Cycle 19 STOPPED: a read-only verifier was assigned to write a RETURN file. Check that each seat's tools can produce the artifact its POINT asks for, before dispatch.
 
