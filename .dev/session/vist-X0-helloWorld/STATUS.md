@@ -1,22 +1,21 @@
 ---
-updated: 2026-11-14 11:02 UTC
+updated: 2026-11-14 11:03 UTC
 writer: nablarva.cartan · codex · sole activated controller
 host: home (hruzam)
-worktree: /home/hruzam/unikuklatrix/nablarva · core · basef00eb48; own STATUS and two administrative evidence
-  files; foreign modified raw/decision.majkee.witness.2026-11-14.md preserved/excluded.
+worktree: '/home/hruzam/unikuklatrix/nablarva · core · administrative check/feedback published in bc8908913bd36bbb41b9dc624a955843ec3040ec;
+  snapshot commit: git rev-parse HEAD. Foreign modified raw/decision.majkee.witness.2026-11-14.md remains excluded.'
 gate: 'Majkee accepts an independently reviewed, observation-first preparation packet for VIST X0: a source-pinned
   historical C04 r1/r2 timeline distinguishing native activity, reported observation, carrier acceptance and
   receiver receipt; an explicit meaning, uncertainty and independent oracle for each layer; a six-row carry-over
   qualification plan naming fixtures/missingness and operation-specific authority; and an accountable team
   with a workable review-output contract. No live experiment, envelope adoption or transport/shared-layer implementation
   is implied by this packet.'
-checkpoint: 'Current operator request handled: native transient file-only check ran once at2026-11-14T10:58:33Z,
-  zero aged missing RETURNS/verdicts, inactive afterwards. One labelled manual feedback pointer to Trajectory
-  submitted/composer-cleared at11:00:50Z; consumption unproven, ack none. Evidence raw/check.stuck.nablarva-cartan.2026-11-14.json
-  and raw/feedback.controller.nablarva-cartan.2026-11-14.md. Earlier deferral is historical, superseded for
-  this administrative request.'
-in_flight: Scoped publication of completed administrative check/feedback evidence and STATUS may be partial.
-  No peer send or timer remains pending; never repeat the feedback pointer.
+checkpoint: 'Published and remote-verified bc89089: one bounded file-only check ran/stopped, zero aged missing
+  RETURN/verdict files, and one requested manual feedback pointer submitted/composer-cleared to Trajectory.
+  Receipt/lease are in /tmp/vist-x0-admin-7pkuf96i; public outcomes in raw/check.stuck.nablarva-cartan.2026-11-14.json
+  and raw/feedback.controller.nablarva-cartan.2026-11-14.md. Consumption unproven; no retry. Reviewed packet0614a16
+  unchanged; Majkee acceptance OPEN.'
+in_flight: none
 recovery_probe: Read the administrative evidence files; inspect host-local /tmp/vist-x0-admin-7pkuf96i/lease.json
   and manual-feedback.json before any send/timer action. Lease checks=1/active=false and receipt submitted_composer_clear
   mean completed, not a resend trigger. Rehash raw/preparation.review-input.01.2026-11-14.json; inspect git
@@ -28,10 +27,10 @@ holds: 'L12: core, no rebase, serial owned-path Git. L20/L21: documentary prepar
   look first, label/log once; never after uncertainty until reconciliation. One requested administrative poke
   completed; no timer/worker/send pending. Do not repeat it. Outside witness/support keep their assigned boundaries;
   foreign witness-decision update is outside this integration.'
-next: Publish only completed check/feedback evidence and STATUS, verify remote and frozen packet, then wait
-  for Majkee ACCEPT/REVISE/STOP on the prepared RUNBOOK packet.
-expected: Published administrative outcomes; timer stopped and no duplicate feedback send; documentary gate
-  still awaits Majkee decision.
+next: Majkee records ACCEPT, REVISE or STOP on the prepared, independently reviewed RUNBOOK packet; controller
+  records the exact decision and follows its scope.
+expected: An attributable operator decision on the documentary gate. Administrative check/feedback is complete;
+  no duplicate poke or ongoing timer.
 pen: nablarva.cartan since 810cf1d (explicit ACTIVATE; thread01a1d582-c6ce-74f1-9e66-44715424aa2c); outgoing01a1d58a
   continuity support only
 operator_desk: 'Trajectory06352fda (reported current relay); successor unbound. Duty: record exact Majkee words
