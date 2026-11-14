@@ -1,0 +1,13 @@
+{
+  "kind": "bounded-controller-file-check",
+  "observed_utc": "2026-11-14T10:58:33.041826+00:00",
+  "owner": "nablarva.cartan",
+  "max_checks": 1,
+  "threshold_seconds": 60,
+  "expired": false,
+  "automatic_sends": false,
+  "aged_points_without_return": [],
+  "aged_returns_without_verdict": [],
+  "limit": "File observations only; quiet/file presence establishes no native identity, consumption or completion.",
+  "status_age_seconds": 80.523
+}
