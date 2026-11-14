@@ -1,4 +1,5 @@
 ---
+superseded: "Current staffing/routing and trial disposition: ../RUNBOOK.md, ../STATUS.md and /home/hruzam/ia-sync/ARCHIVE.md; body retained as historical substrate, not execution authority."
 kind: handoff
 date: 2026-11-13
 brand: claude

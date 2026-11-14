@@ -1,4 +1,5 @@
 ---
+superseded: "Current staffing/routing and trial disposition: ../RUNBOOK.md, ../STATUS.md and /home/hruzam/ia-sync/ARCHIVE.md; body retained as historical substrate, not execution authority."
 kind: roster
 bed: ~/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/
 owner: majkee (fills ids and addresses). Seats read it. Only the head proposes changes.
