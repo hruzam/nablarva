@@ -1,0 +1,33 @@
+{
+  "kind": "frozen-documentary-review-input",
+  "cycle": "01",
+  "frozen_utc": "2026-11-14T07:57:21.904807+00:00",
+  "author": "nablarva.cartan",
+  "files": [
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/RUNBOOK.md",
+      "sha256": "9081d35315b83f3d67b70bc2040db7840eabd3d6f2599eef952c974a9739add3",
+      "bytes": 8460
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/raw/preparation.sources.2026-11-14.json",
+      "sha256": "8fec1428a24dc1e9b385e4eb4dc6cb315c4e1c2e38b3f38c828092b21fdc18c0",
+      "bytes": 11113
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/raw/preparation.c04-timeline.2026-11-14.md",
+      "sha256": "066eedeb495681cdcd7bb71549a5e135c53e40072c4f55902f3b342ce5897150",
+      "bytes": 5819
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/raw/preparation.qualification-matrix.2026-11-14.md",
+      "sha256": "1fb34f3d61e3a8e92cd1d8be69e69e3ad612dac1c655a5de35c3cc07663fda71",
+      "bytes": 8208
+    },
+    {
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/raw/preparation.receiver-policy.2026-11-14.md",
+      "sha256": "6f694eefd3b058212c5470e277736c777c0ea267ced72a87a8a6a206fedb93d8",
+      "bytes": 2506
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "kind": "documentary-source-pins",
+  "observed_utc": "2026-11-14T07:53:33.724411+00:00",
+  "scope": "Existing sources only; no replay, raw-screen copying, live input or executable schema adoption.",
+  "sources": [
+    {
+      "id": "locks",
+      "repository": "/home/hruzam/unikuklatrix/nablarva",
+      "revision": "810cf1d71eaf128e2b7ce282174f49faaf0a1a85",
+      "git_path": ".dev/session/flag.md",
+      "bytes": 25296,
+      "sha256": "ce64462043d944e9a1051841d582bd026bd5aa4f5981e4b662c6eed77b1ee5c3",
+      "readable_path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md",
+      "readable_sha256": "ce64462043d944e9a1051841d582bd026bd5aa4f5981e4b662c6eed77b1ee5c3",
+      "readable_equals_source": true
+    },
+    {
+      "id": "plan",
+      "repository": "/home/hruzam/unikuklatrix/nablarva",
+      "revision": "32dadb341de9107666e174cb648df0739f9c47d9",
+      "git_path": ".dev/session/vist-X0-helloWorld/raw/plan.runbook-and-team.cartan-trajectory.2026-11-14.md",
+      "bytes": 8644,
+      "sha256": "5454e9374a442775e0ce393ceadb24dc371720966123224b9039b28a8468979f",
+      "readable_path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/raw/plan.runbook-and-team.cartan-trajectory.2026-11-14.md",
+      "readable_sha256": "5454e9374a442775e0ce393ceadb24dc371720966123224b9039b28a8468979f",
+      "readable_equals_source": true
+    },
+    {
+      "id": "carryover",
+      "repository": "/home/hruzam/unikuklatrix/nablarva",
+      "revision": "a66851a0fbd158d9bbc5a9e1c96149adf7c353ae",
+      "git_path": ".dev/session/vist-X0-helloWorld/raw/preregister.vistmini-carryover.cartan.2026-11-14.md",
+      "bytes": 6667,
+      "sha256": "61d4a035a5aa0fd6c9149faf271fe53a431d4537e93591677120c738157ee952",
+      "readable_path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/raw/preregister.vistmini-carryover.cartan.2026-11-14.md",
+      "readable_sha256": "61d4a035a5aa0fd6c9149faf271fe53a431d4537e93591677120c738157ee952",
+      "readable_equals_source": true
+    },
+    {
+      "id": "activation",
+      "repository": "/home/hruzam/unikuklatrix/nablarva",
+      "revision": "810cf1d71eaf128e2b7ce282174f49faaf0a1a85",
+      "git_path": ".dev/session/vist-X0-helloWorld/raw/activation.controller.nablarva-cartan.2026-11-14.md",
+      "bytes": 4533,
+      "sha256": "3dd89edef6e9293dbede828b262832aa53fb3fe72457c92b12346977ae077fcd",
+      "readable_path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/raw/activation.controller.nablarva-cartan.2026-11-14.md",
+      "readable_sha256": "3dd89edef6e9293dbede828b262832aa53fb3fe72457c92b12346977ae077fcd",
+      "readable_equals_source": true
+    },
+    {
+      "id": "cases",
+      "repository": "/home/hruzam/ia-sync",
+      "revision": "511b7a2af7776102f66834b74636c3abba757647",
+      "git_path": ".dev/session/vistMini-01-tests/reports/cartan.cases-08.2026-11-13.md",
+      "bytes": 56851,
+      "sha256": "363850b7da8cb2e2347ac9395c72de9837248a3aecdabbb1b2655601ad6b79cf",
+      "readable_path": "/home/hruzam/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests/reports/cartan.cases-08.2026-11-13.md",
+      "readable_sha256": "363850b7da8cb2e2347ac9395c72de9837248a3aecdabbb1b2655601ad6b79cf",
+      "readable_equals_source": true
+    },
+    {
+      "id": "accepted-report",
+      "repository": "/home/hruzam/ia-sync",
+      "revision": "3584a02d5be8dd2f0a1168e9e2b39621a747b9d8",
+      "git_path": ".dev/session/vistMini-01-tests/reports/trial-report.vistmini-01.md",
+      "bytes": 11963,
+      "sha256": "dc219b62e304b48f02c98117f258b25be0a86061520ed289892f17a337e72d39",
+      "readable_path": "/home/hruzam/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests/reports/trial-report.vistmini-01.md",
+      "readable_sha256": "fd1b1e20bb0d9e3192b77e1f7582da60a404bbc14644a426df39983428cc7b5d",
+      "readable_equals_source": false,
+      "readable_difference": "Retired readable report includes later operator disposition; accepted experimental bytes are the immutable3584a02 Git blob."
+    },
+    {
+      "id": "report-review",
+      "repository": "/home/hruzam/ia-sync",
+      "revision": "511b7a2af7776102f66834b74636c3abba757647",
+      "git_path": ".dev/session/vistMini-01-tests/_bus/16.next-cartan.return.md",
+      "bytes": 3227,
+      "sha256": "050a5dafe33cdce693f990ec9a7fea123d4c352cec3c9152df0985e71faee066",
+      "readable_path": "/home/hruzam/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests/_bus/16.next-cartan.return.md",
+      "readable_sha256": "050a5dafe33cdce693f990ec9a7fea123d4c352cec3c9152df0985e71faee066",
+      "readable_equals_source": true
+    },
+    {
+      "id": "inventory",
+      "repository": "/home/hruzam/ia-sync",
+      "revision": "50ccc21d92e13aa57452bcc54f639262f07ba749",
+      "git_path": ".dev/session/vistMini-01-tests/reports/vist.offline-fixture-inventory.2026-11-13.md",
+      "bytes": 22497,
+      "sha256": "e1c0307df33b4c5faed8c50c3a8f580e5b9ab26311d5314c48ffe20ac6976768",
+      "readable_path": "/home/hruzam/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests/reports/vist.offline-fixture-inventory.2026-11-13.md",
+      "readable_sha256": "e1c0307df33b4c5faed8c50c3a8f580e5b9ab26311d5314c48ffe20ac6976768",
+      "readable_equals_source": true
+    },
+    {
+      "id": "inventory-review20",
+      "repository": "/home/hruzam/ia-sync",
+      "revision": "57240f54af1e83fc9bb16209581e31749318e8d1",
+      "git_path": ".dev/session/vistMini-01-tests/_bus/20.inventory-review.return.md",
+      "bytes": 4410,
+      "sha256": "534355f8ecb0436b53993d0980d5859ac99c3f61865b43d5a40c647ee2cfca16",
+      "readable_path": "/home/hruzam/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests/_bus/20.inventory-review.return.md",
+      "readable_sha256": "534355f8ecb0436b53993d0980d5859ac99c3f61865b43d5a40c647ee2cfca16",
+      "readable_equals_source": true
+    },
+    {
+      "id": "inventory-verdict20",
+      "repository": "/home/hruzam/ia-sync",
+      "revision": "57240f54af1e83fc9bb16209581e31749318e8d1",
+      "git_path": ".dev/session/vistMini-01-tests/_bus/20.cartan.verdict.md",
+      "bytes": 2871,
+      "sha256": "d403b48ed97b1b1600c26ac207f4f93314ddd6f626b679c680b9e46d3341da7e",
+      "readable_path": "/home/hruzam/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests/_bus/20.cartan.verdict.md",
+      "readable_sha256": "d403b48ed97b1b1600c26ac207f4f93314ddd6f626b679c680b9e46d3341da7e",
+      "readable_equals_source": true
+    },
+    {
+      "id": "inventory-review21",
+      "repository": "/home/hruzam/ia-sync",
+      "revision": "57240f54af1e83fc9bb16209581e31749318e8d1",
+      "git_path": ".dev/session/vistMini-01-tests/_bus/21.inventory-review.return.md",
+      "bytes": 1635,
+      "sha256": "d24829f8b4a98de2e107934350ce39d70cb06b1fadeb3dd828f9bab81ccef0d1",
+      "readable_path": "/home/hruzam/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests/_bus/21.inventory-review.return.md",
+      "readable_sha256": "d24829f8b4a98de2e107934350ce39d70cb06b1fadeb3dd828f9bab81ccef0d1",
+      "readable_equals_source": true
+    },
+    {
+      "id": "inventory-verdict21",
+      "repository": "/home/hruzam/ia-sync",
+      "revision": "57240f54af1e83fc9bb16209581e31749318e8d1",
+      "git_path": ".dev/session/vistMini-01-tests/_bus/21.cartan.verdict.md",
+      "bytes": 1369,
+      "sha256": "b2e0b55d342b48b3a35a3b82a7cc3464de34f5ca8ce748f43c78e2cc3c539433",
+      "readable_path": "/home/hruzam/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests/_bus/21.cartan.verdict.md",
+      "readable_sha256": "b2e0b55d342b48b3a35a3b82a7cc3464de34f5ca8ce748f43c78e2cc3c539433",
+      "readable_equals_source": true
+    },
+    {
+      "id": "decision",
+      "repository": "/home/hruzam/ia-sync",
+      "revision": "57240f54af1e83fc9bb16209581e31749318e8d1",
+      "git_path": ".dev/session/vistMini-01-tests/_bus/22.trajectory.majkee-decision.md",
+      "bytes": 1285,
+      "sha256": "4869476d08d0717d123c570d187c08b76159db4faefbb1bf503757977a3bcee8",
+      "readable_path": "/home/hruzam/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests/_bus/22.trajectory.majkee-decision.md",
+      "readable_sha256": "4869476d08d0717d123c570d187c08b76159db4faefbb1bf503757977a3bcee8",
+      "readable_equals_source": true
+    },
+    {
+      "id": "retirement",
+      "repository": "/home/hruzam/ia-sync",
+      "revision": "93a933f3ae95814281e7fc6a7767de90d165135a",
+      "git_path": ".dev/records/vist/2026-11-14/CLOSE.md",
+      "bytes": 4395,
+      "sha256": "082f44938973c330c9e8120bcb28b2d2ffe4761fab1ab808d2926a008e8e30b5",
+      "readable_path": "/home/hruzam/ia-sync/.dev/records/vist/2026-11-14/CLOSE.md",
+      "readable_sha256": "082f44938973c330c9e8120bcb28b2d2ffe4761fab1ab808d2926a008e8e30b5",
+      "readable_equals_source": true
+    }
+  ],
+  "local_c04_inputs": [
+    {
+      "path": "/tmp/vc08r1.tkz50zbf/results.jsonl",
+      "bytes": 15255,
+      "sha256": "e2778f5aeb1cd837e7485573940fcfe2c33b940583e9988ccee41a00406c05cf",
+      "custody": "home-local; observed readable now, not imported or backed up by this packet"
+    },
+    {
+      "path": "/tmp/vc08r1.tkz50zbf/codex-receipts.json",
+      "bytes": 1382,
+      "sha256": "43b6971dac2547c2bf91d97782ad7595b8f889270d3825fd5b644bee5baef799",
+      "custody": "home-local; observed readable now, not imported or backed up by this packet"
+    },
+    {
+      "path": "/tmp/vc08r1.tkz50zbf/04-busy-before-queued.meta",
+      "bytes": 162,
+      "sha256": "57c466f793c75774369f4ac2aeb6625043eee4f411e40d94f2e2e77faeb890d8",
+      "custody": "home-local; observed readable now, not imported or backed up by this packet"
+    },
+    {
+      "path": "/tmp/vc08r1.tkz50zbf/04-after.meta",
+      "bytes": 156,
+      "sha256": "34890c12d5e7e30c1c00ae285fbf301e931cd129bde187a02aafd69924e75fb3",
+      "custody": "home-local; observed readable now, not imported or backed up by this packet"
+    },
+    {
+      "path": "/tmp/vc08r2.kk50sqqh/results.jsonl",
+      "bytes": 16603,
+      "sha256": "3dbbb0d66b1c51b58806de9314796227171ba06a48ebc977bd3959374224fccc",
+      "custody": "home-local; observed readable now, not imported or backed up by this packet"
+    },
+    {
+      "path": "/tmp/vc08r2.kk50sqqh/codex-receipts.json",
+      "bytes": 1215,
+      "sha256": "de083ee61e4244863d32f034f9fdca4aa90f8156a5a912c6a6b3a6840c909587",
+      "custody": "home-local; observed readable now, not imported or backed up by this packet"
+    },
+    {
+      "path": "/tmp/vc08r2.kk50sqqh/04-busy-before.meta",
+      "bytes": 162,
+      "sha256": "019a3fb5ebaf35ae6e05b4ec0a37def4d0ce8a047c764b91299cd395eada2845",
+      "custody": "home-local; observed readable now, not imported or backed up by this packet"
+    },
+    {
+      "path": "/tmp/vc08r2.kk50sqqh/04-after.meta",
+      "bytes": 155,
+      "sha256": "5f5ffdd8dc2898988b011f5cb63a7d99920fe2c3faf22ef17d1a61336d5cddb2",
+      "custody": "home-local; observed readable now, not imported or backed up by this packet"
+    }
+  ],
+  "local_limit": "Selected native receipt extracts, not a new audit of complete histories. Source hashes establish bytes, not correctness or durable custody."
+}
