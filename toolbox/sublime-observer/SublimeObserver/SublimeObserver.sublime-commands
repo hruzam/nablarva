@@ -1,0 +1,3 @@
+[
+	{ "caption": "Sublime Observer: Share This View (toggle)", "command": "sublime_observer_toggle_share" },
+]

@@ -1,0 +1,40 @@
+{
+ "self_pid": 647061,
+ "direct_child": 647062,
+ "started_pids_running": [
+  647062,
+  647064
+ ],
+ "started_exes": {
+  "647062": "/usr/bin/sleep",
+  "647064": "/usr/bin/sleep"
+ },
+ "grandchild_reparented_into_tree": [
+  647064
+ ],
+ "foreign_pid": 1,
+ "foreign_in_mine": false,
+ "proc_of_foreign_returns": null,
+ "proc_path_foreign": "refused: refusing to read /proc/1: not a process this trial started",
+ "gone_foreign": "refused: pid 1 is not a process this trial started",
+ "mine_with_guard": [],
+ "gone_after_sigterm": {
+  "647062": true,
+  "647064": true
+ },
+ "operator_editors": "not probed (step 5b): the trial reads no process it did not start",
+ "proc_access": {
+  "proc_entries_opened_or_listed": [
+   "647062",
+   "647064",
+   "self"
+  ],
+  "pinned_started_pids": [
+   647062,
+   647064
+  ],
+  "entries_not_self_and_not_started": [],
+  "note": "audit hook covers open/os.listdir/os.scandir; readlink is not an audit event, every readlink goes through _proc_path (refuses unpinned pids)"
+ },
+ "verdict": "CONFINED"
+}

@@ -24,3 +24,10 @@ Reading:
   The plan stays a proposal for everything else; this file is the decision for this one seat.
 - Hook repair: majkee says "we will repair together". That is his intent, **not yet a go-ahead for any agent to edit the hook**.
   witness waits for majkee's own word on who edits and when. The proposed edit is in `raw/brief.witness.trajectory.2026-11-14.md`.
+
+**Update, majkee verbatim (2026-11-14, later):**
+
+> yes, witness can hand the hook repair to delta - provided.
+
+So: witness may hand the hook edit to delta, scoped to the brief's proposal: remove the stale vist-deliver case, add read-only tmux only
+(`capture-pane -p`, `list-*`, `display -p`, `show`). Nothing else in the hook changes.

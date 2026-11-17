@@ -1,0 +1,146 @@
+{
+ "trial_root": "/tmp/sublime-observer-x1-trial-0ezpj3vq",
+ "publish_root": "/tmp/sublime-observer-x1-trial-0ezpj3vq/pub/sublime-observer",
+ "portable": "/tmp/nablarva-observer-4215/portable",
+ "checks": {},
+ "instances": [
+  {
+   "tag": "x0",
+   "sublime_pid": 1943897,
+   "plugin_host_pid": 1944416,
+   "alive": false,
+   "startup_ms": 6187.2,
+   "identity": {
+    "sublime_text": {
+     "pid": 1943897,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 1943842
+    },
+    "plugin_host": {
+     "pid": 1944416,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 1943897 /tmp/nablarva-observer-4215/portable/sublime_text 17:1944332 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 1943897
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 1943839
+   }
+  },
+  {
+   "tag": "x1",
+   "sublime_pid": 1945290,
+   "plugin_host_pid": 1945802,
+   "alive": false,
+   "startup_ms": 6145.8,
+   "identity": {
+    "sublime_text": {
+     "pid": 1945290,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 1945236
+    },
+    "plugin_host": {
+     "pid": 1945802,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 1945290 /tmp/nablarva-observer-4215/portable/sublime_text 17:1945716 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 1945290
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 1945226
+   }
+  },
+  {
+   "tag": "x2",
+   "sublime_pid": 1946699,
+   "plugin_host_pid": 1947216,
+   "alive": false,
+   "startup_ms": 6248.4,
+   "identity": {
+    "sublime_text": {
+     "pid": 1946699,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 1946646
+    },
+    "plugin_host": {
+     "pid": 1947216,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 1946699 /tmp/nablarva-observer-4215/portable/sublime_text 17:1947131 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 1946699
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 1946643
+   }
+  }
+ ],
+ "notes": [
+  "A/B: on_exit disabled in the trial copy of publisher.py",
+  "A/B: on_exit disabled in the trial copy of publisher.py",
+  "A/B: on_exit disabled in the trial copy of publisher.py"
+ ],
+ "operator_editor_before": [
+  {
+   "pid": 1590799,
+   "exe": "/opt/sublime_text/sublime_text",
+   "ns_net": "net:[4026531833]",
+   "ns_mnt": "mnt:[4026531832]",
+   "cmdline": "/opt/sublime_text/sublime_text --detached",
+   "ppid": 1342
+  }
+ ],
+ "started_at": 1794749145.7088873,
+ "exit_diagnostic": [
+  {
+   "plugin_host_exit_s": 0.07,
+   "sublime_exit_s": 0.15
+  },
+  {
+   "plugin_host_exit_s": 0.09,
+   "sublime_exit_s": 0.15
+  },
+  {
+   "plugin_host_exit_s": 0.09,
+   "sublime_exit_s": 0.15
+  }
+ ],
+ "cleanup": {
+  "disposable_processes_before_cleanup_signal": [],
+  "disposable_processes_after": [],
+  "operator_editor_after": [
+   {
+    "pid": 1590799,
+    "exe": "/opt/sublime_text/sublime_text",
+    "ns_net": "net:[4026531833]",
+    "ns_mnt": "mnt:[4026531832]",
+    "cmdline": "/opt/sublime_text/sublime_text --detached",
+    "ppid": 1342
+   }
+  ],
+  "run_user_sublime_observer_exists": false,
+  "portable_data_packages_after": [
+   "Observer",
+   "User",
+   "sublime-mcp"
+  ]
+ },
+ "finished_at": 1794749241.18559
+}

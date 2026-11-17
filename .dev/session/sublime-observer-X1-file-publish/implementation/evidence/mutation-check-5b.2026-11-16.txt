@@ -1,0 +1,59 @@
+PRE5B_TESTS = /tmp/claude-1000/-home-hruzam-ia-sync/4ab201b8-3687-47d5-96ce-e6cdb522bacc/scratchpad/pre5b/tests
+baseline-noop => OK
+r1a heartbeat-ignores-pending-revocation => FAILED (failures=5)
+    caught by test_heartbeat_in_flight_at_revoke_stamps_a_time_before_it
+    caught by test_heartbeat_queued_before_unshare_does_not_refresh_the_revoked_capture
+    caught by test_heartbeats_resume_after_removal_and_an_unrelated_share_reads_again
+    caught by test_no_heartbeat_while_a_revocation_is_pending_and_again_after_removal
+    expected catcher test_heartbeat_queued_before_unshare_does_not_refresh_the_revoked_capture PRESENT
+r1b revoke-does-not-mark-pending => FAILED (failures=4)
+    caught by test_heartbeat_in_flight_at_revoke_stamps_a_time_before_it
+    caught by test_heartbeat_queued_before_unshare_does_not_refresh_the_revoked_capture
+    caught by test_heartbeats_resume_after_removal_and_an_unrelated_share_reads_again
+    caught by test_no_heartbeat_while_a_revocation_is_pending_and_again_after_removal
+    expected catcher test_heartbeat_queued_before_unshare_does_not_refresh_the_revoked_capture PRESENT
+r1c clock-read-after-the-pending-check => FAILED (failures=2)
+    caught by test_heartbeat_in_flight_at_revoke_stamps_a_time_before_it
+    expected catcher test_heartbeat_in_flight_at_revoke_stamps_a_time_before_it PRESENT
+r1d pending-never-cleared-after-removal => FAILED (failures=2)
+    caught by test_heartbeats_resume_after_removal_and_an_unrelated_share_reads_again
+    caught by test_no_heartbeat_while_a_revocation_is_pending_and_again_after_removal
+    expected catcher test_heartbeats_resume_after_removal_and_an_unrelated_share_reads_again PRESENT
+r1e pending-check-uses-the-permanent-revoked-set => FAILED (failures=2)
+    caught by test_heartbeats_resume_after_removal_and_an_unrelated_share_reads_again
+    caught by test_no_heartbeat_while_a_revocation_is_pending_and_again_after_removal
+    expected catcher test_heartbeats_resume_after_removal_and_an_unrelated_share_reads_again PRESENT
+r4a event-file-name-unguarded => FAILED (errors=6)
+    caught by test_raising_file_name_at_the_poll_revokes
+    caught by test_raising_file_name_on_events_revokes_and_does_not_propagate
+    expected catcher test_raising_file_name_on_events_revokes_and_does_not_propagate PRESENT
+r4b poll-exception-not-revoked => FAILED (failures=1)
+    caught by test_raising_file_name_at_the_poll_revokes
+    expected catcher test_raising_file_name_at_the_poll_revokes PRESENT
+s1 publish-ignores-revocation => FAILED (failures=4)
+    caught by test_queued_publish_then_unshare_close_or_sealed_save_writes_nothing
+    caught by test_queued_publish_then_unshare_with_removal_failure
+    caught by test_revoke_discards_a_publish_that_was_queued_before
+    caught by test_unshare_removes_dir_and_index_entry_and_never_resurrects
+    expected catcher test_queued_publish_then_unshare_close_or_sealed_save_writes_nothing PRESENT
+    same mutation, PRE-5B version of that test only: OK
+s2 contended-start-raises-instead-of-refusing => FAILED (failures=4, errors=5)
+    caught by test_holder_with_a_stale_heartbeat_keeps_the_root
+    caught by test_load_beside_a_never_unloaded_previous_load_refuses
+    caught by test_lock_file_unlinked_by_a_finishing_holder_is_not_a_second_lock
+    caught by test_resumed_old_owner_and_a_new_start_never_both_publish
+    caught by test_second_publisher_beside_live_one_refuses
+    caught by test_second_store_in_the_same_process_is_refused
+    caught by test_shutdown_never_unlinks_a_lock_file_it_does_not_hold
+    caught by test_simultaneous_start_in_processes_one_owner
+    caught by test_simultaneous_start_in_threads_one_owner
+    expected catcher test_simultaneous_start_in_threads_one_owner PRESENT
+    same mutation, PRE-5B version of that test only: OK
+s3 shutdown-unlink-without-holds-path => FAILED (failures=1, errors=1)
+    caught by test_shutdown_never_unlinks_a_lock_file_it_does_not_hold
+    expected catcher test_shutdown_never_unlinks_a_lock_file_it_does_not_hold PRESENT
+    PRE-5B: no such test existed
+baseline-trial-noop => CONFINED; foreign /proc entries: []
+t1 scan-every-pid-again => NOT CONFINED; foreign /proc entries: ["<listing of /proc>"]
+t2 proc-path-guard-removed => NOT CONFINED; foreign /proc entries: ["649499"]
+t3 no-child-subreaper => NOT CONFINED; foreign /proc entries: []

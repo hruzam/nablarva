@@ -1,0 +1,25 @@
+trial root /tmp/sublime-observer-x1-trial-5mdhxuf9
+check 18 pass  heartbeat interval and stale bound read from the package settings (2b)
+check  1 pass  build and plugin Python host
+check  2 pass  share a saved synthetic view
+check 16 pass  status marker as the API reports it
+check  3 pass  unsaved edit: new revision, retention
+check  4 pass  caret move and scroll rewrite state only
+check  5 pass  two shared views (same file, two windows)
+check  8 pass  publishing does not change focus, selection or viewport
+check  9 pass  sealed-path refusal
+check  7 pass  unshare and close cleanup
+check 13 pass  non-BMP characters versus Python len
+check 14 pass  typing impact with a ~200k buffer
+check 15 pass  continuous edits: maximum delay holds
+check  6 pass  unshared view publishes nothing while another view publishes (2b)
+check 10 pass  plugin reload
+check 11 pass  crash: kill -9 of the editor only (orphan plugin host), restart
+check 11b pass  crash: editor and plugin hosts killed together, residue persists, restart removes it before publishing (2b)
+check 12 pass  second instance beside a live publisher refuses
+check 17 error graceful editor exit removes the publication (extra)
+check 18@hb5 pass  heartbeat override reaches the publisher (2b)
+check 11@hb5 pass  crash: editor only killed, at the alternative heartbeat (2b)
+check 11b@hb5 pass  crash: editor and plugin hosts together, at the alternative heartbeat (2b)
+report /home/hruzam/unikuklatrix/nablarva/.dev/session/sublime-observer-X1-file-publish/implementation/evidence/disposable-trial-5b.2026-11-16.json
+trial root removed: True

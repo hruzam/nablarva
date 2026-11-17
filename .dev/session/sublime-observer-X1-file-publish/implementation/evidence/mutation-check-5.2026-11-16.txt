@@ -1,0 +1,69 @@
+baseline-noop => OK
+a1 lock-not-taken => FAILED (failures=8)
+    caught by test_holder_with_a_stale_heartbeat_keeps_the_root
+    caught by test_load_beside_a_never_unloaded_previous_load_refuses
+    caught by test_lock_file_unlinked_by_a_finishing_holder_is_not_a_second_lock
+    caught by test_resumed_old_owner_and_a_new_start_never_both_publish
+    caught by test_second_publisher_beside_live_one_refuses
+    caught by test_second_store_in_the_same_process_is_refused
+    caught by test_simultaneous_start_in_processes_one_owner
+    caught by test_simultaneous_start_in_threads_one_owner
+a2 no-inode-check-after-lock => FAILED (errors=1)
+    caught by test_lock_file_unlinked_by_a_finishing_holder_is_not_a_second_lock
+a3 residue-cleaned-before-lock => FAILED (failures=6, errors=5)
+    caught by test_holder_with_a_stale_heartbeat_keeps_the_root
+    caught by test_load_beside_a_never_unloaded_previous_load_refuses
+    caught by test_lock_file_unlinked_by_a_finishing_holder_is_not_a_second_lock
+    caught by test_residue_without_a_lock_holder_is_removed_even_if_it_looks_live
+    caught by test_restart_after_a_dead_holder_cleans_its_residue
+    caught by test_resumed_old_owner_and_a_new_start_never_both_publish
+    caught by test_second_publisher_beside_live_one_refuses
+    caught by test_second_store_in_the_same_process_is_refused
+    caught by test_simultaneous_start_in_processes_one_owner
+    caught by test_simultaneous_start_in_threads_one_owner
+    caught by test_unreadable_publisher_is_refused_not_cleaned
+a4 unreadable-publisher-cleaned => FAILED (failures=1)
+    caught by test_unreadable_publisher_is_refused_not_cleaned
+b1 text-name-without-share-id => FAILED (failures=7, errors=3)
+    caught by test_bad_json_and_vanished_files_are_recorded_not_fatal
+    caught by test_caret_only_change_rewrites_state_only
+    caught by test_caret_only_change_skips_text_read
+    caught by test_eventless_selection_change_is_published_by_poll
+    caught by test_modes_even_with_permissive_umask
+    caught by test_naive_reader_finds_no_file_instead_of_another_shares_text
+    caught by test_named_text_exists_at_the_moment_state_is_replaced
+    caught by test_revision_change_and_retention_current_plus_previous
+    caught by test_share_edit_unshare_and_root_removal_are_recorded
+    caught by test_text_exists_and_is_named_by_state
+b2 reader-unpinned-and-no-second-read => FAILED (failures=3)
+    caught by test_reader_never_pairs_new_state_with_old_text
+    caught by test_reader_rule_never_pairs_across_shares
+    caught by test_second_state_read_rejects_a_superseded_pair
+b3 reader-no-second-state-read => FAILED (failures=2)
+    caught by test_reader_never_pairs_new_state_with_old_text
+    caught by test_second_state_read_rejects_a_superseded_pair
+b4 reader-no-share-id-check => FAILED (failures=1)
+    caught by test_state_must_name_the_share_current_points_at
+c1 unshare-does-not-revoke => FAILED (failures=2)
+    caught by test_queued_publish_then_unshare_with_removal_failure
+    caught by test_unshare_removes_dir_and_index_entry_and_never_resurrects
+c2 removal-failure-not-fail-closed => FAILED (failures=2, errors=1)
+    caught by test_failed_directory_removal_stops_publishing_and_reads_not_live_at_once
+    caught by test_queued_publish_then_unshare_with_removal_failure
+    caught by test_when_nothing_can_be_removed_the_heartbeat_stops_and_staleness_takes_over
+c3 stop-leaves-publisher-json => FAILED (errors=2)
+    caught by test_failed_directory_removal_stops_publishing_and_reads_not_live_at_once
+    caught by test_queued_publish_then_unshare_with_removal_failure
+c4 no-path-check-on-events => FAILED (failures=1)
+    caught by test_path_change_without_event_revokes_at_the_poll
+c5 save-not-forced => FAILED (failures=1)
+    caught by test_save_re_resolves_a_symlink_retargeted_into_a_vault
+d1 update-without-remove-destination => FAILED (failures=1)
+    caught by test_update_never_writes_through_a_hard_link
+e1 unresolvable-path-allowed => FAILED (failures=1, errors=1)
+    caught by test_unresolvable_path_is_refused
+e2 index-before-current-removal => FAILED (failures=2)
+    caught by test_removal_order
+    caught by test_second_share_removes_current_before_the_index
+e3 encoding-replacement-unflagged => FAILED (failures=1)
+    caught by test_encoding_replacement_is_flagged

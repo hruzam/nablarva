@@ -1,0 +1,1619 @@
+{
+ "trial_root": "/tmp/sublime-observer-x1-trial-g6ouknar",
+ "publish_root": "/tmp/sublime-observer-x1-trial-g6ouknar/pub/sublime-observer",
+ "portable": "/tmp/nablarva-observer-4215/portable",
+ "checks": {},
+ "instances": [
+  {
+   "tag": "e1",
+   "sublime_pid": 2751313,
+   "plugin_host_pid": 2751823,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-g6ouknar/data-e1",
+   "startup_ms": 6124.2,
+   "identity": {
+    "sublime_text": {
+     "pid": 2751313,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 2751262
+    },
+    "plugin_host": {
+     "pid": 2751823,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2751313 /tmp/nablarva-observer-4215/portable/sublime_text 17:2751738 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 2751313
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 2751255,
+    "disposable_processes_at_start": [
+     {
+      "pid": 2751313,
+      "ppid": 2751262,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 2751738,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 2751823,
+      "ppid": 2751313,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "inventory_before_exit": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": true,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "stopped_by": "exit command",
+   "exit_s": 0.16
+  },
+  {
+   "tag": "e2",
+   "sublime_pid": 2751910,
+   "plugin_host_pid": 2752434,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-g6ouknar/data-e2",
+   "startup_ms": 6299.6,
+   "identity": {
+    "sublime_text": {
+     "pid": 2751910,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532705]",
+     "ns_mnt": "mnt:[4026532582]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 2751856
+    },
+    "plugin_host": {
+     "pid": 2752434,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532705]",
+     "ns_mnt": "mnt:[4026532582]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2751910 /tmp/nablarva-observer-4215/portable/sublime_text 17:2752348 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 2751910
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 2751853,
+    "disposable_processes_at_start": [
+     {
+      "pid": 2751910,
+      "ppid": 2751856,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 2752348,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 2752434,
+      "ppid": 2751910,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "stopped_by": "SIGKILL of the editor only (crash check, orphan plugin host)"
+  },
+  {
+   "tag": "e2r",
+   "sublime_pid": 2754236,
+   "plugin_host_pid": 2754762,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-g6ouknar/data-e2",
+   "startup_ms": 5951.5,
+   "identity": {
+    "sublime_text": {
+     "pid": 2754236,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 2754182
+    },
+    "plugin_host": {
+     "pid": 2754762,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2754236 /tmp/nablarva-observer-4215/portable/sublime_text 17:2754676 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 2754236
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 2754179,
+    "disposable_processes_at_start": [
+     {
+      "pid": 2754236,
+      "ppid": 2754182,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 2754676,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 2754762,
+      "ppid": 2754236,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "inventory_before_exit": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": false,
+     "views": [
+      {
+       "view": 25,
+       "buffer": 52,
+       "fixture": false,
+       "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e2/dirty.md",
+       "name": "",
+       "dirty": true,
+       "scratch": false,
+       "loading": false,
+       "size": 38
+      },
+      {
+       "view": 26,
+       "buffer": 53,
+       "fixture": false,
+       "file_name": null,
+       "name": "crash synthetic",
+       "dirty": false,
+       "scratch": true,
+       "loading": false,
+       "size": 6
+      }
+     ],
+     "sheets": 2
+    },
+    {
+     "window": 4,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 5,
+     "fixture": true,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "exit_ignored": {
+    "inventory_20s_after_exit": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 4,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 5,
+      "fixture": true,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": false,
+      "views": [
+       {
+        "view": 25,
+        "buffer": 52,
+        "fixture": false,
+        "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e2/dirty.md",
+        "name": "",
+        "dirty": true,
+        "scratch": false,
+        "loading": false,
+        "size": 38
+       },
+       {
+        "view": 26,
+        "buffer": 53,
+        "fixture": false,
+        "file_name": null,
+        "name": "crash synthetic",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 6
+       }
+      ],
+      "sheets": 2
+     }
+    ],
+    "processes": [
+     {
+      "pid": 2754236,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+      "ns_net": "net:[4026532461]",
+      "ns_mnt": "mnt:[4026532460]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+      "ppid": 2754182
+     },
+     {
+      "pid": 2754676,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler",
+      "ns_net": "net:[4026532461]",
+      "ns_mnt": "mnt:[4026532460]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/crash_handler --no-rate-limit --database=/tmp/nablarva-observer-4215/portable/Data/Crash Reports --metrics-dir=/tmp/nablarva-observer-4215/portable/Data/Crash Repo",
+      "ppid": 1342
+     },
+     {
+      "pid": 2754762,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+      "ns_net": "net:[4026532461]",
+      "ns_mnt": "mnt:[4026532460]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2754236 /tmp/nablarva-observer-4215/portable/sublime_text 17:2754676 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+      "ppid": 2754236
+     }
+    ],
+    "data_local": [
+     "Session.sublime_session"
+    ],
+    "crash_reports": [
+     "attachments",
+     "completed",
+     "new",
+     "pending",
+     "settings.dat"
+    ]
+   },
+   "stopped_by": "SIGTERM after exit command did not finish in 20 s"
+  },
+  {
+   "tag": "e3",
+   "sublime_pid": 2755945,
+   "plugin_host_pid": 2756464,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-g6ouknar/data-e3",
+   "startup_ms": 6178.0,
+   "identity": {
+    "sublime_text": {
+     "pid": 2755945,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532462]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 2755892
+    },
+    "plugin_host": {
+     "pid": 2756464,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532462]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2755945 /tmp/nablarva-observer-4215/portable/sublime_text 17:2756379 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 2755945
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 2755885,
+    "disposable_processes_at_start": [
+     {
+      "pid": 2755945,
+      "ppid": 2755892,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 2756379,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 2756464,
+      "ppid": 2755945,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "kill_together": {
+    "stopped_then_killed": [
+     2756464,
+     2755945
+    ],
+    "plugin_hosts": [
+     {
+      "pid": 2756464,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+      "ns_net": "net:[4026532462]",
+      "ns_mnt": "mnt:[4026532461]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2755945 /tmp/nablarva-observer-4215/portable/sublime_text 17:2756379 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+      "ppid": 2755945
+     }
+    ]
+   },
+   "stopped_by": "SIGSTOP+SIGKILL of editor and plugin hosts together (crash check)"
+  },
+  {
+   "tag": "e3r",
+   "sublime_pid": 2758085,
+   "plugin_host_pid": 2758621,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-g6ouknar/data-e3",
+   "startup_ms": 5980.7,
+   "identity": {
+    "sublime_text": {
+     "pid": 2758085,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 2758031
+    },
+    "plugin_host": {
+     "pid": 2758621,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2758085 /tmp/nablarva-observer-4215/portable/sublime_text 17:2758533 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 2758085
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 2758028,
+    "disposable_processes_at_start": [
+     {
+      "pid": 2758085,
+      "ppid": 2758031,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 2758533,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 2758621,
+      "ppid": 2758085,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "inventory_before_exit": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": false,
+     "views": [
+      {
+       "view": 25,
+       "buffer": 52,
+       "fixture": false,
+       "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e3/dirty.md",
+       "name": "",
+       "dirty": true,
+       "scratch": false,
+       "loading": false,
+       "size": 38
+      },
+      {
+       "view": 26,
+       "buffer": 53,
+       "fixture": false,
+       "file_name": null,
+       "name": "crash synthetic",
+       "dirty": false,
+       "scratch": true,
+       "loading": false,
+       "size": 6
+      }
+     ],
+     "sheets": 2
+    },
+    {
+     "window": 4,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 5,
+     "fixture": true,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "exit_ignored": {
+    "inventory_20s_after_exit": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 4,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 5,
+      "fixture": true,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": false,
+      "views": [
+       {
+        "view": 25,
+        "buffer": 52,
+        "fixture": false,
+        "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e3/dirty.md",
+        "name": "",
+        "dirty": true,
+        "scratch": false,
+        "loading": false,
+        "size": 38
+       },
+       {
+        "view": 26,
+        "buffer": 53,
+        "fixture": false,
+        "file_name": null,
+        "name": "crash synthetic",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 6
+       }
+      ],
+      "sheets": 2
+     }
+    ],
+    "processes": [
+     {
+      "pid": 2758085,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+      "ns_net": "net:[4026532461]",
+      "ns_mnt": "mnt:[4026532460]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+      "ppid": 2758031
+     },
+     {
+      "pid": 2758533,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler",
+      "ns_net": "net:[4026532461]",
+      "ns_mnt": "mnt:[4026532460]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/crash_handler --no-rate-limit --database=/tmp/nablarva-observer-4215/portable/Data/Crash Reports --metrics-dir=/tmp/nablarva-observer-4215/portable/Data/Crash Repo",
+      "ppid": 1342
+     },
+     {
+      "pid": 2758621,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+      "ns_net": "net:[4026532461]",
+      "ns_mnt": "mnt:[4026532460]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2758085 /tmp/nablarva-observer-4215/portable/sublime_text 17:2758533 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+      "ppid": 2758085
+     }
+    ],
+    "data_local": [
+     "Session.sublime_session"
+    ],
+    "crash_reports": [
+     "attachments",
+     "completed",
+     "new",
+     "pending",
+     "settings.dat"
+    ]
+   },
+   "stopped_by": "SIGTERM after exit command did not finish in 20 s"
+  },
+  {
+   "tag": "e4",
+   "sublime_pid": 2759698,
+   "plugin_host_pid": 2760210,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-g6ouknar/data-e4",
+   "startup_ms": 6134.4,
+   "identity": {
+    "sublime_text": {
+     "pid": 2759698,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532462]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 2759644
+    },
+    "plugin_host": {
+     "pid": 2760210,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532462]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2759698 /tmp/nablarva-observer-4215/portable/sublime_text 17:2760126 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 2759698
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 2759641,
+    "disposable_processes_at_start": [
+     {
+      "pid": 2759698,
+      "ppid": 2759644,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 2760126,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 2760210,
+      "ppid": 2759698,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "kill_together": {
+    "stopped_then_killed": [
+     2760210,
+     2759698
+    ],
+    "plugin_hosts": [
+     {
+      "pid": 2760210,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+      "ns_net": "net:[4026532462]",
+      "ns_mnt": "mnt:[4026532461]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2759698 /tmp/nablarva-observer-4215/portable/sublime_text 17:2760126 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+      "ppid": 2759698
+     }
+    ]
+   },
+   "stopped_by": "SIGSTOP+SIGKILL of editor and plugin hosts together (crash check)"
+  },
+  {
+   "tag": "e4r",
+   "sublime_pid": 2761922,
+   "plugin_host_pid": 2762470,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-g6ouknar/data-e4",
+   "startup_ms": 5932.3,
+   "identity": {
+    "sublime_text": {
+     "pid": 2761922,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 2761866
+    },
+    "plugin_host": {
+     "pid": 2762470,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532461]",
+     "ns_mnt": "mnt:[4026532460]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2761922 /tmp/nablarva-observer-4215/portable/sublime_text 17:2762390 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 2761922
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 2761861,
+    "disposable_processes_at_start": [
+     {
+      "pid": 2761922,
+      "ppid": 2761866,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 2762390,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 2762470,
+      "ppid": 2761922,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "inventory_before_exit": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": false,
+     "views": [
+      {
+       "view": 25,
+       "buffer": 52,
+       "fixture": false,
+       "file_name": null,
+       "name": "crash synthetic",
+       "dirty": false,
+       "scratch": true,
+       "loading": false,
+       "size": 6
+      }
+     ],
+     "sheets": 1
+    },
+    {
+     "window": 4,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 5,
+     "fixture": true,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "stopped_by": "exit command",
+   "exit_s": 0.16
+  },
+  {
+   "tag": "e5",
+   "sublime_pid": 2762582,
+   "plugin_host_pid": 2763095,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-g6ouknar/data-e5",
+   "startup_ms": 6187.8,
+   "identity": {
+    "sublime_text": {
+     "pid": 2762582,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532515]",
+     "ns_mnt": "mnt:[4026532462]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 2762531
+    },
+    "plugin_host": {
+     "pid": 2763095,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532515]",
+     "ns_mnt": "mnt:[4026532462]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2762582 /tmp/nablarva-observer-4215/portable/sublime_text 17:2763010 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 2762582
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 2762524,
+    "disposable_processes_at_start": [
+     {
+      "pid": 2762582,
+      "ppid": 2762531,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 2763010,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 2763095,
+      "ppid": 2762582,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "inventory_before_exit": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": true,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "stopped_by": "exit command",
+   "exit_s": 0.16
+  },
+  {
+   "tag": "e5r",
+   "sublime_pid": 2763196,
+   "plugin_host_pid": 2763718,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-g6ouknar/data-e5",
+   "startup_ms": 5960.3,
+   "identity": {
+    "sublime_text": {
+     "pid": 2763196,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532516]",
+     "ns_mnt": "mnt:[4026532462]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 2763142
+    },
+    "plugin_host": {
+     "pid": 2763718,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532516]",
+     "ns_mnt": "mnt:[4026532462]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2763196 /tmp/nablarva-observer-4215/portable/sublime_text 17:2763640 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+     "ppid": 2763196
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 2763139,
+    "disposable_processes_at_start": [
+     {
+      "pid": 2763196,
+      "ppid": 2763142,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 2763640,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 2763718,
+      "ppid": 2763196,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "inventory_before_exit": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": true,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "stopped_by": "exit command",
+   "exit_s": 0.16
+  }
+ ],
+ "notes": [],
+ "operator_editor_before": [
+  {
+   "pid": 1590799,
+   "exe": "/opt/sublime_text/sublime_text",
+   "ns_net": "net:[4026531833]",
+   "ns_mnt": "mnt:[4026531832]",
+   "cmdline": "/opt/sublime_text/sublime_text --detached",
+   "ppid": 1342
+  }
+ ],
+ "started_at": 1794774119.3053029,
+ "heartbeat": {
+  "heartbeat_s": 5.0,
+  "stale_after_s": 15.0,
+  "stale_factor": 3,
+  "source": "package settings",
+  "package_settings_heartbeat_s": 5
+ },
+ "exit_diagnostic_2b": [
+  {
+   "scenario": "S1 fresh profile, exit",
+   "inventory_at_start": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "exit": {
+    "label": "first start",
+    "stopped_by": "exit command",
+    "exit_s": 0.16,
+    "stop_total_s": 0.2,
+    "inventory_before_exit": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": true,
+      "views": [],
+      "sheets": 0
+     }
+    ],
+    "exit_ignored": null
+   }
+  },
+  {
+   "scenario": "S2 crash (editor only) after a dirty file-backed view, restart, exit",
+   "inventory_at_start": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "crash": {
+    "inventory_before_crash": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": true,
+      "views": [
+       {
+        "view": 26,
+        "buffer": 55,
+        "fixture": true,
+        "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e2/dirty.md",
+        "name": "",
+        "dirty": true,
+        "scratch": false,
+        "loading": false,
+        "size": 38
+       },
+       {
+        "view": 27,
+        "buffer": 58,
+        "fixture": true,
+        "file_name": null,
+        "name": "crash synthetic",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 6
+       }
+      ],
+      "sheets": 2
+     }
+    ],
+    "killed_at": 1794774177.5050795,
+    "local_after_crash": {
+     "Auto Save Session.sublime_session": {
+      "size": 9496,
+      "mtime": 1794774161.3
+     }
+    },
+    "crash_reports": [
+     "attachments",
+     "completed",
+     "new",
+     "pending",
+     "settings.dat"
+    ],
+    "pre_crash_wait_s": 45.0
+   },
+   "inventory_after_restart": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": false,
+     "views": [
+      {
+       "view": 25,
+       "buffer": 52,
+       "fixture": false,
+       "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e2/dirty.md",
+       "name": "",
+       "dirty": true,
+       "scratch": false,
+       "loading": false,
+       "size": 38
+      },
+      {
+       "view": 26,
+       "buffer": 53,
+       "fixture": false,
+       "file_name": null,
+       "name": "crash synthetic",
+       "dirty": false,
+       "scratch": true,
+       "loading": false,
+       "size": 6
+      }
+     ],
+     "sheets": 2
+    },
+    {
+     "window": 4,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "local_after_restart": {
+    "Auto Save Session.sublime_session": {
+     "size": 9496,
+     "mtime": 1794774161.3
+    }
+   },
+   "exit": {
+    "label": "restart after crash",
+    "stopped_by": "SIGTERM after exit command did not finish in 20 s",
+    "exit_s": null,
+    "stop_total_s": 20.18,
+    "inventory_before_exit": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": false,
+      "views": [
+       {
+        "view": 25,
+        "buffer": 52,
+        "fixture": false,
+        "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e2/dirty.md",
+        "name": "",
+        "dirty": true,
+        "scratch": false,
+        "loading": false,
+        "size": 38
+       },
+       {
+        "view": 26,
+        "buffer": 53,
+        "fixture": false,
+        "file_name": null,
+        "name": "crash synthetic",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 6
+       }
+      ],
+      "sheets": 2
+     },
+     {
+      "window": 4,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 5,
+      "fixture": true,
+      "views": [],
+      "sheets": 0
+     }
+    ],
+    "exit_ignored": {
+     "inventory_20s_after_exit": [
+      {
+       "window": 2,
+       "fixture": false,
+       "views": [],
+       "sheets": 0
+      },
+      {
+       "window": 4,
+       "fixture": false,
+       "views": [],
+       "sheets": 0
+      },
+      {
+       "window": 5,
+       "fixture": true,
+       "views": [],
+       "sheets": 0
+      },
+      {
+       "window": 3,
+       "fixture": false,
+       "views": [
+        {
+         "view": 25,
+         "buffer": 52,
+         "fixture": false,
+         "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e2/dirty.md",
+         "name": "",
+         "dirty": true,
+         "scratch": false,
+         "loading": false,
+         "size": 38
+        },
+        {
+         "view": 26,
+         "buffer": 53,
+         "fixture": false,
+         "file_name": null,
+         "name": "crash synthetic",
+         "dirty": false,
+         "scratch": true,
+         "loading": false,
+         "size": 6
+        }
+       ],
+       "sheets": 2
+      }
+     ],
+     "processes": [
+      {
+       "pid": 2754236,
+       "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+       "ns_net": "net:[4026532461]",
+       "ns_mnt": "mnt:[4026532460]",
+       "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+       "ppid": 2754182
+      },
+      {
+       "pid": 2754676,
+       "exe": "/tmp/nablarva-observer-4215/portable/crash_handler",
+       "ns_net": "net:[4026532461]",
+       "ns_mnt": "mnt:[4026532460]",
+       "cmdline": "/tmp/nablarva-observer-4215/portable/crash_handler --no-rate-limit --database=/tmp/nablarva-observer-4215/portable/Data/Crash Reports --metrics-dir=/tmp/nablarva-observer-4215/portable/Data/Crash Repo",
+       "ppid": 1342
+      },
+      {
+       "pid": 2754762,
+       "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+       "ns_net": "net:[4026532461]",
+       "ns_mnt": "mnt:[4026532460]",
+       "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2754236 /tmp/nablarva-observer-4215/portable/sublime_text 17:2754676 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+       "ppid": 2754236
+      }
+     ],
+     "data_local": [
+      "Session.sublime_session"
+     ],
+     "crash_reports": [
+      "attachments",
+      "completed",
+      "new",
+      "pending",
+      "settings.dat"
+     ]
+    }
+   }
+  },
+  {
+   "scenario": "S3 crash (editor+hosts) after a dirty file-backed view, restart, exit",
+   "inventory_at_start": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "crash": {
+    "inventory_before_crash": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": true,
+      "views": [
+       {
+        "view": 26,
+        "buffer": 55,
+        "fixture": true,
+        "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e3/dirty.md",
+        "name": "",
+        "dirty": true,
+        "scratch": false,
+        "loading": false,
+        "size": 38
+       },
+       {
+        "view": 27,
+        "buffer": 58,
+        "fixture": true,
+        "file_name": null,
+        "name": "crash synthetic",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 6
+       }
+      ],
+      "sheets": 2
+     }
+    ],
+    "killed_at": 1794774271.6461508,
+    "local_after_crash": {
+     "Auto Save Session.sublime_session": {
+      "size": 9496,
+      "mtime": 1794774255.43
+     }
+    },
+    "crash_reports": [
+     "attachments",
+     "completed",
+     "new",
+     "pending",
+     "settings.dat"
+    ],
+    "pre_crash_wait_s": 45.0
+   },
+   "inventory_after_restart": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": false,
+     "views": [
+      {
+       "view": 25,
+       "buffer": 52,
+       "fixture": false,
+       "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e3/dirty.md",
+       "name": "",
+       "dirty": true,
+       "scratch": false,
+       "loading": false,
+       "size": 38
+      },
+      {
+       "view": 26,
+       "buffer": 53,
+       "fixture": false,
+       "file_name": null,
+       "name": "crash synthetic",
+       "dirty": false,
+       "scratch": true,
+       "loading": false,
+       "size": 6
+      }
+     ],
+     "sheets": 2
+    },
+    {
+     "window": 4,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "local_after_restart": {
+    "Auto Save Session.sublime_session": {
+     "size": 9496,
+     "mtime": 1794774255.43
+    }
+   },
+   "exit": {
+    "label": "restart after crash",
+    "stopped_by": "SIGTERM after exit command did not finish in 20 s",
+    "exit_s": null,
+    "stop_total_s": 20.18,
+    "inventory_before_exit": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": false,
+      "views": [
+       {
+        "view": 25,
+        "buffer": 52,
+        "fixture": false,
+        "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e3/dirty.md",
+        "name": "",
+        "dirty": true,
+        "scratch": false,
+        "loading": false,
+        "size": 38
+       },
+       {
+        "view": 26,
+        "buffer": 53,
+        "fixture": false,
+        "file_name": null,
+        "name": "crash synthetic",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 6
+       }
+      ],
+      "sheets": 2
+     },
+     {
+      "window": 4,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 5,
+      "fixture": true,
+      "views": [],
+      "sheets": 0
+     }
+    ],
+    "exit_ignored": {
+     "inventory_20s_after_exit": [
+      {
+       "window": 2,
+       "fixture": false,
+       "views": [],
+       "sheets": 0
+      },
+      {
+       "window": 4,
+       "fixture": false,
+       "views": [],
+       "sheets": 0
+      },
+      {
+       "window": 5,
+       "fixture": true,
+       "views": [],
+       "sheets": 0
+      },
+      {
+       "window": 3,
+       "fixture": false,
+       "views": [
+        {
+         "view": 25,
+         "buffer": 52,
+         "fixture": false,
+         "file_name": "/tmp/sublime-observer-x1-trial-g6ouknar/synthetic/e3/dirty.md",
+         "name": "",
+         "dirty": true,
+         "scratch": false,
+         "loading": false,
+         "size": 38
+        },
+        {
+         "view": 26,
+         "buffer": 53,
+         "fixture": false,
+         "file_name": null,
+         "name": "crash synthetic",
+         "dirty": false,
+         "scratch": true,
+         "loading": false,
+         "size": 6
+        }
+       ],
+       "sheets": 2
+      }
+     ],
+     "processes": [
+      {
+       "pid": 2758085,
+       "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+       "ns_net": "net:[4026532461]",
+       "ns_mnt": "mnt:[4026532460]",
+       "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+       "ppid": 2758031
+      },
+      {
+       "pid": 2758533,
+       "exe": "/tmp/nablarva-observer-4215/portable/crash_handler",
+       "ns_net": "net:[4026532461]",
+       "ns_mnt": "mnt:[4026532460]",
+       "cmdline": "/tmp/nablarva-observer-4215/portable/crash_handler --no-rate-limit --database=/tmp/nablarva-observer-4215/portable/Data/Crash Reports --metrics-dir=/tmp/nablarva-observer-4215/portable/Data/Crash Repo",
+       "ppid": 1342
+      },
+      {
+       "pid": 2758621,
+       "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+       "ns_net": "net:[4026532461]",
+       "ns_mnt": "mnt:[4026532460]",
+       "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 2758085 /tmp/nablarva-observer-4215/portable/sublime_text 17:2758533 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/po",
+       "ppid": 2758085
+      }
+     ],
+     "data_local": [
+      "Session.sublime_session"
+     ],
+     "crash_reports": [
+      "attachments",
+      "completed",
+      "new",
+      "pending",
+      "settings.dat"
+     ]
+    }
+   }
+  },
+  {
+   "scenario": "S4 crash (editor+hosts) with scratch views only, restart, exit",
+   "inventory_at_start": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "crash": {
+    "inventory_before_crash": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": true,
+      "views": [
+       {
+        "view": 26,
+        "buffer": 55,
+        "fixture": true,
+        "file_name": null,
+        "name": "crash synthetic",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 6
+       }
+      ],
+      "sheets": 1
+     }
+    ],
+    "killed_at": 1794774360.3929057,
+    "local_after_crash": {
+     "Auto Save Session.sublime_session": {
+      "size": 8282,
+      "mtime": 1794774344.48
+     }
+    },
+    "crash_reports": [
+     "attachments",
+     "completed",
+     "new",
+     "pending",
+     "settings.dat"
+    ],
+    "pre_crash_wait_s": 45.0
+   },
+   "inventory_after_restart": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": false,
+     "views": [
+      {
+       "view": 25,
+       "buffer": 52,
+       "fixture": false,
+       "file_name": null,
+       "name": "crash synthetic",
+       "dirty": false,
+       "scratch": true,
+       "loading": false,
+       "size": 6
+      }
+     ],
+     "sheets": 1
+    },
+    {
+     "window": 4,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "local_after_restart": {
+    "Auto Save Session.sublime_session": {
+     "size": 8282,
+     "mtime": 1794774344.48
+    }
+   },
+   "exit": {
+    "label": "restart after crash",
+    "stopped_by": "exit command",
+    "exit_s": 0.16,
+    "stop_total_s": 0.2,
+    "inventory_before_exit": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": false,
+      "views": [
+       {
+        "view": 25,
+        "buffer": 52,
+        "fixture": false,
+        "file_name": null,
+        "name": "crash synthetic",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 6
+       }
+      ],
+      "sheets": 1
+     },
+     {
+      "window": 4,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 5,
+      "fixture": true,
+      "views": [],
+      "sheets": 0
+     }
+    ],
+    "exit_ignored": null
+   }
+  },
+  {
+   "scenario": "S5 clean exit, restart on the same profile, exit",
+   "inventory_at_start": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "first_exit": {
+    "label": "first start",
+    "stopped_by": "exit command",
+    "exit_s": 0.16,
+    "stop_total_s": 0.2,
+    "inventory_before_exit": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": true,
+      "views": [],
+      "sheets": 0
+     }
+    ],
+    "exit_ignored": null
+   },
+   "local_after_clean_exit": {
+    "Session.sublime_session": {
+     "size": 4495,
+     "mtime": 1794774374.7
+    }
+   },
+   "inventory_after_restart": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "exit": {
+    "label": "restart after clean exit",
+    "stopped_by": "exit command",
+    "exit_s": 0.16,
+    "stop_total_s": 0.2,
+    "inventory_before_exit": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": true,
+      "views": [],
+      "sheets": 0
+     }
+    ],
+    "exit_ignored": null
+   }
+  }
+ ],
+ "cleanup": {
+  "disposable_processes_before_cleanup_signal": [],
+  "disposable_processes_after": [],
+  "operator_editor_after": [
+   {
+    "pid": 1590799,
+    "exe": "/opt/sublime_text/sublime_text",
+    "ns_net": "net:[4026531833]",
+    "ns_mnt": "mnt:[4026531832]",
+    "cmdline": "/opt/sublime_text/sublime_text --detached",
+    "ppid": 1342
+   }
+  ],
+  "run_user_sublime_observer_exists": false,
+  "portable_data_packages_after": [
+   "Observer",
+   "User",
+   "sublime-mcp"
+  ]
+ },
+ "finished_at": 1794774382.702154,
+ "summary": {}
+}

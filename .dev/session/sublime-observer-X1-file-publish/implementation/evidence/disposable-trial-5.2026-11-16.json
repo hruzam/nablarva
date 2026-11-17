@@ -1,0 +1,2483 @@
+{
+ "trial_root": "/tmp/sublime-observer-x1-trial-ltjabjsd",
+ "publish_root": "/tmp/sublime-observer-x1-trial-ltjabjsd/pub/sublime-observer",
+ "portable": "/tmp/nablarva-observer-4215/portable",
+ "checks": {
+  "18": {
+   "name": "heartbeat interval and stale bound read from the package settings (2b)",
+   "result": "pass",
+   "observed": {
+    "expected_from_settings": {
+     "heartbeat_s": 1.0,
+     "stale_after_s": 3.0,
+     "stale_factor": 3,
+     "source": "package settings",
+     "package_settings_heartbeat_s": 1
+    },
+    "publisher_json": {
+     "heartbeat_interval_s": 1.0,
+     "stale_after_s": 3.0
+    },
+    "measured_intervals_s": [
+     1.001,
+     1.001,
+     1.0,
+     1.0
+    ],
+    "elapsed_s": 0.0
+   }
+  },
+  "1": {
+   "name": "build and plugin Python host",
+   "result": "pass",
+   "observed": {
+    "fixture_build": "4215",
+    "fixture_python": "3.14.6",
+    "publisher_json": {
+     "contract_version": 1,
+     "epoch": "8e64238c5998425f943505cc9c9dfe4e",
+     "heartbeat_at": 1794822905.080847,
+     "heartbeat_interval_s": 1.0,
+     "pid": 231505,
+     "plugin_python": "3.14.6",
+     "stale_after_s": 3.0,
+     "started_at": 1794822905.080847,
+     "sublime_build": "4215"
+    },
+    "plugin_host_exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+    "packages_path": "/tmp/nablarva-observer-4215/portable/Data/Packages",
+    "proc_visible_in_sandbox": true,
+    "python_version_pin": "3.8",
+    "elapsed_s": 0.0
+   }
+  },
+  "2": {
+   "name": "share a saved synthetic view",
+   "result": "pass",
+   "observed": {
+    "modes": {
+     "./": "0o700",
+     "./index.json": "0o600",
+     "./publisher.json": "0o600",
+     "./publisher.lock": "0o600",
+     "views/": "0o700",
+     "views/e61d3c4cc9ec48b5921a08c2a4b62cf9/": "0o700",
+     "views/e61d3c4cc9ec48b5921a08c2a4b62cf9/state.json": "0o600",
+     "views/e61d3c4cc9ec48b5921a08c2a4b62cf9/text.e61d3c4cc9ec48b5921a08c2a4b62cf9.0": "0o600"
+    },
+    "current": "views/e61d3c4cc9ec48b5921a08c2a4b62cf9",
+    "state_text_file": "text.e61d3c4cc9ec48b5921a08c2a4b62cf9.0",
+    "revision": 0,
+    "dirty": false,
+    "reader_text_matches_disk_text": true,
+    "index": {
+     "contract_version": 1,
+     "epoch": "8e64238c5998425f943505cc9c9dfe4e",
+     "shared": [
+      {
+       "buffer": 55,
+       "path": "/tmp/sublime-observer-x1-trial-ltjabjsd/synthetic/A/same.md",
+       "share_id": "e61d3c4cc9ec48b5921a08c2a4b62cf9",
+       "state": "views/e61d3c4cc9ec48b5921a08c2a4b62cf9/state.json",
+       "title": "same.md",
+       "view": 26,
+       "window": 3
+      }
+     ],
+     "updated_at": 1794822909.8068013
+    },
+    "elapsed_s": 0.001
+   }
+  },
+  "16": {
+   "name": "status marker as the API reports it",
+   "result": "pass",
+   "observed": {
+    "status_api_value_A": "Observer: SHARED",
+    "status_api_value_unshared_U": "",
+    "rendering": "not observed: headless virtual display, API value only",
+    "elapsed_s": 0.011
+   }
+  },
+  "3": {
+   "name": "unsaved edit: new revision, retention",
+   "result": "pass",
+   "observed": {
+    "revisions": [
+     0,
+     1,
+     2
+    ],
+    "texts_after_first": [
+     "text.e61d3c4cc9ec48b5921a08c2a4b62cf9.0",
+     "text.e61d3c4cc9ec48b5921a08c2a4b62cf9.1"
+    ],
+    "texts_after_second": [
+     "text.e61d3c4cc9ec48b5921a08c2a4b62cf9.1",
+     "text.e61d3c4cc9ec48b5921a08c2a4b62cf9.2"
+    ],
+    "state_text_file": "text.e61d3c4cc9ec48b5921a08c2a4b62cf9.2",
+    "dirty": true,
+    "disk_unchanged": true,
+    "elapsed_s": 0.342
+   }
+  },
+  "4": {
+   "name": "caret move and scroll rewrite state only",
+   "result": "pass",
+   "observed": {
+    "seq": [
+     3,
+     4,
+     5
+    ],
+    "selections": [
+     {
+      "a": 5,
+      "b": 5,
+      "empty": true,
+      "end": [
+       0,
+       5
+      ],
+      "start": [
+       0,
+       5
+      ]
+     },
+     {
+      "a": 20,
+      "b": 40,
+      "empty": false,
+      "end": [
+       2,
+       3
+      ],
+      "start": [
+       1,
+       7
+      ]
+     }
+    ],
+    "viewport_before": [
+     0.0,
+     0.0
+    ],
+    "viewport_after": [
+     0.0,
+     900.0
+    ],
+    "fixture_viewport": [
+     0.0,
+     900.0
+    ],
+    "visible_region": {
+     "begin": 1117,
+     "end": 1788
+    },
+    "text_inode_unchanged": true,
+    "scroll_to_state_ms": 494.4,
+    "texts": [
+     "text.e61d3c4cc9ec48b5921a08c2a4b62cf9.1",
+     "text.e61d3c4cc9ec48b5921a08c2a4b62cf9.2"
+    ],
+    "caret": {
+     "selection_event_count_before": 2,
+     "selection_event_count_after": 2,
+     "caret_to_state_ms": 298.7,
+     "state_seq_after_2s": 4,
+     "state_selections_after_2s": [
+      {
+       "a": 5,
+       "b": 5,
+       "empty": true,
+       "end": [
+        0,
+        5
+       ],
+       "start": [
+        0,
+        5
+       ]
+      },
+      {
+       "a": 20,
+       "b": 40,
+       "empty": false,
+       "end": [
+        2,
+        3
+       ],
+       "start": [
+        1,
+        7
+       ]
+      }
+     ]
+    },
+    "elapsed_s": 0.805
+   }
+  },
+  "5": {
+   "name": "two shared views (same file, two windows)",
+   "result": "pass",
+   "observed": {
+    "index": [
+     {
+      "buffer": 55,
+      "path": "/tmp/sublime-observer-x1-trial-ltjabjsd/synthetic/A/same.md",
+      "share_id": "e61d3c4cc9ec48b5921a08c2a4b62cf9",
+      "state": "views/e61d3c4cc9ec48b5921a08c2a4b62cf9/state.json",
+      "title": "same.md",
+      "view": 26,
+      "window": 3
+     },
+     {
+      "buffer": 88,
+      "path": "/tmp/sublime-observer-x1-trial-ltjabjsd/synthetic/A/same.md",
+      "share_id": "60cca234ee2447c6a4a9732ab6ef508d",
+      "state": "views/60cca234ee2447c6a4a9732ab6ef508d/state.json",
+      "title": "same.md",
+      "view": 40,
+      "window": 4
+     }
+    ],
+    "current_present": false,
+    "same_buffer": false,
+    "sid_b": "60cca234ee2447c6a4a9732ab6ef508d",
+    "elapsed_s": 0.0
+   }
+  },
+  "8": {
+   "name": "publishing does not change focus, selection or viewport",
+   "result": "pass",
+   "observed": {
+    "differences": [],
+    "before": {
+     "active_window": 4,
+     "windows": {
+      "3": {
+       "active_view": 26
+      },
+      "4": {
+       "active_view": 40
+      }
+     },
+     "views": {
+      "26": {
+       "window": 3,
+       "sel": [
+        [
+         5,
+         5
+        ],
+        [
+         20,
+         40
+        ]
+       ],
+       "viewport_position": [
+        0.0,
+        900.0
+       ],
+       "visible_region": [
+        1117,
+        1788
+       ],
+       "change_count": 2,
+       "status": "Observer: SHARED"
+      },
+      "27": {
+       "window": 3,
+       "sel": [
+        [
+         0,
+         65
+        ]
+       ],
+       "viewport_position": [
+        0.0,
+        0.0
+       ],
+       "visible_region": [
+        0,
+        65
+       ],
+       "change_count": 1,
+       "status": ""
+      },
+      "40": {
+       "window": 4,
+       "sel": [
+        [
+         0,
+         0
+        ]
+       ],
+       "viewport_position": [
+        0.0,
+        0.0
+       ],
+       "visible_region": [
+        0,
+        671
+       ],
+       "change_count": 0,
+       "status": "Observer: SHARED"
+      }
+     },
+     "ok": true
+    },
+    "after": {
+     "active_window": 4,
+     "windows": {
+      "3": {
+       "active_view": 26
+      },
+      "4": {
+       "active_view": 40
+      }
+     },
+     "views": {
+      "26": {
+       "window": 3,
+       "sel": [
+        [
+         5,
+         5
+        ],
+        [
+         20,
+         40
+        ]
+       ],
+       "viewport_position": [
+        0.0,
+        900.0
+       ],
+       "visible_region": [
+        1117,
+        1788
+       ],
+       "change_count": 3,
+       "status": "Observer: SHARED"
+      },
+      "27": {
+       "window": 3,
+       "sel": [
+        [
+         0,
+         65
+        ]
+       ],
+       "viewport_position": [
+        0.0,
+        0.0
+       ],
+       "visible_region": [
+        0,
+        65
+       ],
+       "change_count": 1,
+       "status": ""
+      },
+      "40": {
+       "window": 4,
+       "sel": [
+        [
+         0,
+         0
+        ]
+       ],
+       "viewport_position": [
+        0.0,
+        0.0
+       ],
+       "visible_region": [
+        0,
+        671
+       ],
+       "change_count": 0,
+       "status": "Observer: SHARED"
+      }
+     },
+     "ok": true
+    },
+    "elapsed_s": 1.632
+   }
+  },
+  "9": {
+   "name": "sealed-path refusal",
+   "result": "pass",
+   "observed": {
+    ".majkee/x.md": {
+     "view": 41,
+     "shared": false,
+     "status": ""
+    },
+    "proj/.env.test": {
+     "view": 42,
+     "shared": false,
+     "status": ""
+    },
+    "index_unchanged": true,
+    "elapsed_s": 0.985
+   }
+  },
+  "7": {
+   "name": "unshare and close cleanup",
+   "result": "pass",
+   "observed": {
+    "after_unshare_index": [
+     {
+      "buffer": 88,
+      "path": "/tmp/sublime-observer-x1-trial-ltjabjsd/synthetic/A/same.md",
+      "share_id": "60cca234ee2447c6a4a9732ab6ef508d",
+      "state": "views/60cca234ee2447c6a4a9732ab6ef508d/state.json",
+      "title": "same.md",
+      "view": 40,
+      "window": 4
+     }
+    ],
+    "after_unshare_current": "views/60cca234ee2447c6a4a9732ab6ef508d",
+    "a_dir_removed": true,
+    "after_close_index": [],
+    "b_dir_removed": true,
+    "status_A_after_unshare": "",
+    "views_dir": [],
+    "elapsed_s": 0.538
+   }
+  },
+  "13": {
+   "name": "non-BMP characters versus Python len",
+   "result": "pass",
+   "observed": {
+    "python_len_input": 10,
+    "utf16_units_input": 14,
+    "size_chars": 10,
+    "published_chars": 10,
+    "python_len_published": 10,
+    "published_equals_input": true,
+    "probe_cap2": {
+     "size": 10,
+     "len_substr": 10,
+     "codepoints_gt_ffff": 4,
+     "utf16_units": 14,
+     "capped_text": "A\ud83d\ude00",
+     "capped_len": 2,
+     "cap": 2,
+     "rowcol_end": [
+      2,
+      0
+     ],
+     "ok": true
+    },
+    "probe_cap3": {
+     "size": 10,
+     "len_substr": 10,
+     "codepoints_gt_ffff": 4,
+     "utf16_units": 14,
+     "capped_text": "A\ud83d\ude00B",
+     "capped_len": 3,
+     "cap": 3,
+     "rowcol_end": [
+      2,
+      0
+     ],
+     "ok": true
+    },
+    "selections": [
+     {
+      "a": 0,
+      "b": 10,
+      "empty": false,
+      "end": [
+       2,
+       0
+      ],
+      "start": [
+       0,
+       0
+      ]
+     }
+    ],
+    "elapsed_s": 0.113
+   }
+  },
+  "14": {
+   "name": "typing impact with a ~200k buffer",
+   "result": "pass",
+   "observed": {
+    "buffer_chars": 199900,
+    "main_thread_capture": {
+     "with_text": {
+      "n": 30,
+      "median_ms": 1.129,
+      "p95_ms": 1.472,
+      "max_ms": 1.515
+     },
+     "state_only": {
+      "n": 30,
+      "median_ms": 0.612,
+      "p95_ms": 0.718,
+      "max_ms": 0.752
+     },
+     "size": 199900,
+     "ok": true
+    },
+    "edit_to_state_replace_ms": {
+     "n": 30,
+     "median_ms": 152.95,
+     "p95_ms": 153.77,
+     "min_ms": 151.5,
+     "max_ms": 154.03
+    },
+    "edit_to_harness_observed_ms": {
+     "n": 30,
+     "median_ms": 154.94,
+     "p95_ms": 156.08,
+     "min_ms": 153.01,
+     "max_ms": 156.4
+    },
+    "final_state": {
+     "size_chars": 199930,
+     "published_chars": 199930,
+     "truncated": false,
+     "cap": 200000
+    },
+    "method": "t_edit = time.time() in the editor right after the insert command; state replacement = st_mtime of state.json (tmpfs, coarse kernel clock); includes the 150 ms trailing debounce by design. Capture = perf_counter around publisher.capture_view on the plugin-host main thread, 30 runs.",
+    "elapsed_s": 12.561
+   }
+  },
+  "15": {
+   "name": "continuous edits: maximum delay holds",
+   "result": "pass",
+   "observed": {
+    "edits": 51,
+    "burst_s": 2.594,
+    "publications_during_burst": 2,
+    "max_gap_ms": 1038.0,
+    "gaps_ms": [
+     1000.0,
+     1038.0,
+     556.2
+    ],
+    "final_revision_published": 52,
+    "last_edit_revision": 52,
+    "trailing_publish_after_last_edit_ms": 149.8,
+    "elapsed_s": 4.089
+   }
+  },
+  "6": {
+   "name": "unshared view publishes nothing while another view publishes (2b)",
+   "result": "pass",
+   "observed": {
+    "shared_view_P": 47,
+    "share_id_P": "f203c06a4cfb4252b3a2808c64b46d3c",
+    "unshared_view_Q": 48,
+    "unshared_buffer_Q": 112,
+    "old_unshared_view_U": 27,
+    "markers": [
+     "UNSHARED-MARKER-d60c5a9474074c19809125302efbba04",
+     "UNSHARED-Q-MARKER-4419be8aa7a74df6906ce537b0093b58"
+    ],
+    "forbidden_ids": {
+     "view": [
+      27,
+      48
+     ],
+     "buffer": [
+      58,
+      112
+     ]
+    },
+    "scans": [
+     {
+      "label": "before Q opened",
+      "hits": [],
+      "files": 5
+     },
+     {
+      "label": "Q opened",
+      "hits": [],
+      "files": 5
+     },
+     {
+      "label": "Q written",
+      "hits": [],
+      "files": 5
+     },
+     {
+      "label": "Q edited",
+      "hits": [],
+      "files": 5
+     },
+     {
+      "label": "Q selection moved",
+      "hits": [],
+      "files": 5
+     },
+     {
+      "label": "Q scrolled",
+      "hits": [],
+      "files": 5
+     },
+     {
+      "label": "Q settling",
+      "hits": [],
+      "files": 5
+     },
+     {
+      "label": "Q settling",
+      "hits": [],
+      "files": 6
+     },
+     {
+      "label": "Q settling",
+      "hits": [],
+      "files": 6
+     },
+     {
+      "label": "Q settling",
+      "hits": [],
+      "files": 6
+     },
+     {
+      "label": "Q settling",
+      "hits": [],
+      "files": 6
+     },
+     {
+      "label": "Q settled",
+      "hits": [],
+      "files": 6
+     },
+     {
+      "label": "final, after P burst",
+      "hits": [],
+      "files": 6
+     }
+    ],
+    "files_scanned_total": 71,
+    "hits": [],
+    "index_views": [
+     47
+    ],
+    "view_dirs": [
+     "f203c06a4cfb4252b3a2808c64b46d3c"
+    ],
+    "q_editor_events_seen_by_fixture": {
+     "on_modified": 2,
+     "on_selection_modified": 2
+    },
+    "q_scroll": {
+     "viewport_position": [
+      0.0,
+      2000.0
+     ],
+     "ok": true
+    },
+    "p_text_is_only_P_content": true,
+    "p_seq_before_Q_window": 44,
+    "p_seq_after_Q_window": 49,
+    "q_window_s": 2.573,
+    "p_distinct_seqs_inside_Q_window": [
+     44,
+     45,
+     46
+    ],
+    "p_states": [
+     {
+      "label": "before Q opened",
+      "t": 1794822931.7502038,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q opened",
+      "t": 1794822931.7620366,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q written",
+      "t": 1794822931.7796009,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q edited",
+      "t": 1794822931.7912724,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q selection moved",
+      "t": 1794822931.807998,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q scrolled",
+      "t": 1794822931.8196058,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822931.8203917,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822931.9208071,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822932.0211701,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822932.1215737,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822932.2219744,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822932.3232234,
+      "seq": 44,
+      "revision": 1
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822932.4236913,
+      "seq": 45,
+      "revision": 21
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822932.5240688,
+      "seq": 45,
+      "revision": 21
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822932.6244955,
+      "seq": 45,
+      "revision": 21
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822932.7248726,
+      "seq": 45,
+      "revision": 21
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822932.8259184,
+      "seq": 45,
+      "revision": 21
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822932.9263172,
+      "seq": 45,
+      "revision": 21
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822933.026736,
+      "seq": 45,
+      "revision": 21
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822933.1271398,
+      "seq": 45,
+      "revision": 21
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822933.2275867,
+      "seq": 45,
+      "revision": 21
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822933.3287716,
+      "seq": 45,
+      "revision": 21
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822933.429174,
+      "seq": 46,
+      "revision": 41
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822933.529596,
+      "seq": 46,
+      "revision": 41
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822933.6300833,
+      "seq": 46,
+      "revision": 41
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822933.7305534,
+      "seq": 46,
+      "revision": 41
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822933.8316205,
+      "seq": 46,
+      "revision": 41
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822933.9320395,
+      "seq": 46,
+      "revision": 41
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822934.032442,
+      "seq": 46,
+      "revision": 41
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822934.132749,
+      "seq": 46,
+      "revision": 41
+     },
+     {
+      "label": "Q settling",
+      "t": 1794822934.2330148,
+      "seq": 46,
+      "revision": 41
+     },
+     {
+      "label": "Q settled",
+      "t": 1794822934.333827,
+      "seq": 46,
+      "revision": 41
+     },
+     {
+      "label": "final, after P burst",
+      "t": 1794822937.6373363,
+      "seq": 49,
+      "revision": 98
+     }
+    ],
+    "p_burst_edits": 97,
+    "p_final_revision": 98,
+    "p_last_edit_revision": 98,
+    "burst_deadline": 1794822936.3453612,
+    "elapsed_s": 6.39
+   }
+  },
+  "10": {
+   "name": "plugin reload",
+   "result": "pass",
+   "observed": {
+    "epoch_before": "8e64238c5998425f943505cc9c9dfe4e",
+    "epoch_after": "29064f0ccd8341398cf171505dc25046",
+    "runtime_after": {
+     "epoch": "29064f0ccd8341398cf171505dc25046",
+     "publishing": true,
+     "refusal": null,
+     "shared_views": [],
+     "root": "/tmp/sublime-observer-x1-trial-ltjabjsd/pub/sublime-observer"
+    },
+    "views_dir_after": [],
+    "old_share_dir_exists": false,
+    "status_after_reload": "",
+    "elapsed_s": 0.727
+   }
+  },
+  "11": {
+   "name": "crash: kill -9 of the editor only (orphan plugin host), restart",
+   "result": "pass",
+   "observed": {
+    "mode": "editor only killed (orphan plugin host)",
+    "heartbeat_s": 1.0,
+    "stale_after_s": 3.0,
+    "publisher_json_interval": [
+     1.0,
+     3.0
+    ],
+    "killed_sublime_pid": 230979,
+    "plugin_hosts_at_kill": [
+     231505
+    ],
+    "killed_at": 1794822938.5258331,
+    "heartbeat_age_at_kill_s": 0.691,
+    "inferred_live_window_s": 2.309,
+    "disposable_processes_right_after_kill": [
+     {
+      "pid": 231505,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ],
+    "tree_right_after_kill": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/60316c4aa64947fdabe5a3810059dff8/",
+     "views/60316c4aa64947fdabe5a3810059dff8/state.json",
+     "views/60316c4aa64947fdabe5a3810059dff8/text.60316c4aa64947fdabe5a3810059dff8.1"
+    ],
+    "reader_timeline": {
+     "changes": [
+      {
+       "t_after_kill_s": 0.13,
+       "publisher": "live",
+       "heartbeat_age_s": 0.821,
+       "read_current": "capture presented: epoch 29064f0c revision 1 text_chars 16",
+       "current_state_json_on_disk": true
+      },
+      {
+       "t_after_kill_s": 2.358,
+       "publisher": "not live: heartbeat is stale",
+       "heartbeat_age_s": null,
+       "read_current": "NotLive: heartbeat is stale",
+       "current_state_json_on_disk": true
+      }
+     ],
+     "reader_first_not_live_s": 2.358,
+     "sample_interval_s": 0.05
+    },
+    "reader_still_live_window_s": 2.358,
+    "tree_after_reader_not_live": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/60316c4aa64947fdabe5a3810059dff8/",
+     "views/60316c4aa64947fdabe5a3810059dff8/state.json",
+     "views/60316c4aa64947fdabe5a3810059dff8/text.60316c4aa64947fdabe5a3810059dff8.1"
+    ],
+    "orphan_plugin_host_exited_after_s": 7.19,
+    "root_exists_after_orphan_exit": false,
+    "residue_before_restart": [],
+    "restart_started_after_kill_s": 7.19,
+    "epoch_before": "29064f0ccd8341398cf171505dc25046",
+    "epoch_after_restart": "a5502786a651482db5e1a87d73596dd3",
+    "new_publisher_pid": 233434,
+    "new_plugin_host_pid": 233434,
+    "tree_after_restart": [
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/"
+    ],
+    "reader_after_restart": "Unavailable: current is absent (zero or several shares)",
+    "reader_publisher_after_restart": {
+     "epoch": "a5502786a651482db5e1a87d73596dd3",
+     "pid": 233434
+    },
+    "restart_clean": true,
+    "elapsed_s": 13.533
+   }
+  },
+  "11b": {
+   "name": "crash: editor and plugin hosts killed together, residue persists, restart removes it before publishing (2b)",
+   "result": "pass",
+   "observed": {
+    "mode": "editor and plugin hosts killed together",
+    "heartbeat_s": 1.0,
+    "stale_after_s": 3.0,
+    "publisher_json_interval": [
+     1.0,
+     3.0
+    ],
+    "killed_sublime_pid": 232913,
+    "plugin_hosts_at_kill": [
+     233434
+    ],
+    "killed_at": 1794822952.073419,
+    "heartbeat_age_at_kill_s": 0.457,
+    "inferred_live_window_s": 2.543,
+    "disposable_processes_right_after_kill": [],
+    "tree_right_after_kill": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/b2f67a4a62324193953412c57fac80aa/",
+     "views/b2f67a4a62324193953412c57fac80aa/state.json",
+     "views/b2f67a4a62324193953412c57fac80aa/text.b2f67a4a62324193953412c57fac80aa.1"
+    ],
+    "reader_timeline": {
+     "changes": [
+      {
+       "t_after_kill_s": 0.133,
+       "publisher": "live",
+       "heartbeat_age_s": 0.59,
+       "read_current": "capture presented: epoch a5502786 revision 1 text_chars 17",
+       "current_state_json_on_disk": true
+      },
+      {
+       "t_after_kill_s": 2.566,
+       "publisher": "not live: heartbeat is stale",
+       "heartbeat_age_s": null,
+       "read_current": "NotLive: heartbeat is stale",
+       "current_state_json_on_disk": true
+      }
+     ],
+     "reader_first_not_live_s": 2.566,
+     "sample_interval_s": 0.05
+    },
+    "reader_still_live_window_s": 2.566,
+    "tree_after_reader_not_live": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/b2f67a4a62324193953412c57fac80aa/",
+     "views/b2f67a4a62324193953412c57fac80aa/state.json",
+     "views/b2f67a4a62324193953412c57fac80aa/text.b2f67a4a62324193953412c57fac80aa.1"
+    ],
+    "plugin_hosts_alive_after_kill": [],
+    "tree_before_restart": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/b2f67a4a62324193953412c57fac80aa/",
+     "views/b2f67a4a62324193953412c57fac80aa/state.json",
+     "views/b2f67a4a62324193953412c57fac80aa/text.b2f67a4a62324193953412c57fac80aa.1"
+    ],
+    "residue_before_restart": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/b2f67a4a62324193953412c57fac80aa/",
+     "views/b2f67a4a62324193953412c57fac80aa/state.json",
+     "views/b2f67a4a62324193953412c57fac80aa/text.b2f67a4a62324193953412c57fac80aa.1"
+    ],
+    "residue_state_epoch": "a5502786a651482db5e1a87d73596dd3",
+    "restart_started_after_kill_s": 5.08,
+    "epoch_before": "a5502786a651482db5e1a87d73596dd3",
+    "epoch_after_restart": "d0e8424272b5465cb1355c9c54aefa64",
+    "new_publisher_pid": 234193,
+    "new_plugin_host_pid": 234193,
+    "tree_after_restart": [
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/"
+    ],
+    "reader_after_restart": "Unavailable: current is absent (zero or several shares)",
+    "reader_publisher_after_restart": {
+     "epoch": "d0e8424272b5465cb1355c9c54aefa64",
+     "pid": 234193
+    },
+    "restart_clean": true,
+    "inotify_events": [
+     {
+      "n": 0,
+      "read_at": 1794822962.9941757,
+      "dir": ".",
+      "name": "current",
+      "mask": [
+       "DELETE"
+      ]
+     },
+     {
+      "n": 1,
+      "read_at": 1794822962.9941757,
+      "dir": ".",
+      "name": "index.json",
+      "mask": [
+       "DELETE"
+      ]
+     },
+     {
+      "n": 2,
+      "read_at": 1794822962.994268,
+      "dir": "views/b2f67a4a62324193953412c57fac80aa",
+      "name": "state.json",
+      "mask": [
+       "DELETE"
+      ]
+     },
+     {
+      "n": 3,
+      "read_at": 1794822962.994268,
+      "dir": "views/b2f67a4a62324193953412c57fac80aa",
+      "name": "text.b2f67a4a62324193953412c57fac80aa.1",
+      "mask": [
+       "DELETE"
+      ]
+     },
+     {
+      "n": 4,
+      "read_at": 1794822962.994268,
+      "dir": "views/b2f67a4a62324193953412c57fac80aa",
+      "name": "",
+      "mask": [
+       "DELETE_SELF"
+      ]
+     },
+     {
+      "n": 5,
+      "read_at": 1794822962.994268,
+      "dir": "views/b2f67a4a62324193953412c57fac80aa",
+      "name": "",
+      "mask": [
+       "IGNORED"
+      ]
+     },
+     {
+      "n": 6,
+      "read_at": 1794822962.994268,
+      "dir": "views",
+      "name": "b2f67a4a62324193953412c57fac80aa",
+      "mask": [
+       "DELETE",
+       "ISDIR"
+      ]
+     },
+     {
+      "n": 7,
+      "read_at": 1794822962.994268,
+      "dir": "views",
+      "name": "",
+      "mask": [
+       "DELETE_SELF"
+      ]
+     },
+     {
+      "n": 8,
+      "read_at": 1794822962.994268,
+      "dir": "views",
+      "name": "",
+      "mask": [
+       "IGNORED"
+      ]
+     },
+     {
+      "n": 9,
+      "read_at": 1794822962.994268,
+      "dir": ".",
+      "name": "views",
+      "mask": [
+       "DELETE",
+       "ISDIR"
+      ]
+     },
+     {
+      "n": 10,
+      "read_at": 1794822962.9943273,
+      "dir": ".",
+      "name": "publisher.json",
+      "mask": [
+       "DELETE"
+      ]
+     },
+     {
+      "n": 11,
+      "read_at": 1794822962.9943273,
+      "dir": ".",
+      "name": "views",
+      "mask": [
+       "CREATE",
+       "ISDIR"
+      ]
+     },
+     {
+      "n": 12,
+      "read_at": 1794822962.9944496,
+      "dir": ".",
+      "name": ".tmp-publisher.json-c0d13df345be4d4ba1d5102f7e45d7b5",
+      "mask": [
+       "CREATE"
+      ]
+     },
+     {
+      "n": 13,
+      "read_at": 1794822962.9944496,
+      "dir": ".",
+      "name": ".tmp-publisher.json-c0d13df345be4d4ba1d5102f7e45d7b5",
+      "mask": [
+       "MOVED_FROM"
+      ]
+     },
+     {
+      "n": 14,
+      "read_at": 1794822962.9944496,
+      "dir": ".",
+      "name": "publisher.json",
+      "mask": [
+       "MOVED_TO"
+      ]
+     },
+     {
+      "n": 15,
+      "read_at": 1794822962.9945483,
+      "dir": ".",
+      "name": ".tmp-index.json-6ce7aa7f93194d9f879ba20012876cd2",
+      "mask": [
+       "CREATE"
+      ]
+     },
+     {
+      "n": 16,
+      "read_at": 1794822962.9945483,
+      "dir": ".",
+      "name": ".tmp-index.json-6ce7aa7f93194d9f879ba20012876cd2",
+      "mask": [
+       "MOVED_FROM"
+      ]
+     },
+     {
+      "n": 17,
+      "read_at": 1794822962.9945483,
+      "dir": ".",
+      "name": "index.json",
+      "mask": [
+       "MOVED_TO"
+      ]
+     }
+    ],
+    "residue_removal": {
+     "residue_paths": [
+      "current",
+      "index.json",
+      "publisher.json",
+      "views/",
+      "views/b2f67a4a62324193953412c57fac80aa/",
+      "views/b2f67a4a62324193953412c57fac80aa/state.json",
+      "views/b2f67a4a62324193953412c57fac80aa/text.b2f67a4a62324193953412c57fac80aa.1"
+     ],
+     "deleted_event_index": {
+      "current": 0,
+      "index.json": 1,
+      "views/b2f67a4a62324193953412c57fac80aa/state.json": 2,
+      "views/b2f67a4a62324193953412c57fac80aa/text.b2f67a4a62324193953412c57fac80aa.1": 3,
+      "views/b2f67a4a62324193953412c57fac80aa/": 6,
+      "views/": 9,
+      "publisher.json": 10
+     },
+     "not_seen_deleted": [],
+     "lock_file_in_residue": true,
+     "last_residue_delete_event": 10,
+     "first_create_or_moved_to_event": 11,
+     "all_residue_removed_before_anything_new": true,
+     "first_new_event": {
+      "n": 11,
+      "read_at": 1794822962.9943273,
+      "dir": ".",
+      "name": "views",
+      "mask": [
+       "CREATE",
+       "ISDIR"
+      ]
+     }
+    },
+    "residue_state_epoch_was_dead_epoch": true,
+    "elapsed_s": 11.511
+   }
+  },
+  "12": {
+   "name": "second instance beside a live publisher refuses",
+   "result": "pass",
+   "observed": {
+    "second_runtime": {
+     "epoch": "26f378ef6bba41a6a044f3cc916fb37a",
+     "publishing": false,
+     "refusal": "another publisher holds /tmp/sublime-observer-x1-trial-ltjabjsd/pub/sublime-observer/publisher.lock (publisher.json names pid 234193); this instance does not publish",
+     "shared_views": [],
+     "root": null
+    },
+    "second_share_attempt": {
+     "shared": false,
+     "status": "",
+     "ok": true
+    },
+    "epoch_kept": true,
+    "first_heartbeat_continues": true,
+    "second_pids": {
+     "sublime": 234275,
+     "plugin_host": 234791
+    },
+    "elapsed_s": 7.585
+   }
+  },
+  "17": {
+   "name": "graceful editor exit removes the publication (extra)",
+   "result": "pass",
+   "observed": {
+    "root_exists_after_graceful_exit": false,
+    "sandbox_exited_after_s": 20.18,
+    "root_removed_after_s": 22.68,
+    "plugin_host_exited_after_s": 22.73,
+    "elapsed_s": 22.85
+   }
+  },
+  "18@hb5": {
+   "name": "heartbeat override reaches the publisher (2b)",
+   "result": "pass",
+   "observed": {
+    "expected": {
+     "heartbeat_s": 5.0,
+     "stale_after_s": 15.0,
+     "stale_factor": 3,
+     "source": "User settings override in the disposable profile",
+     "package_settings_heartbeat_s": 1
+    },
+    "publisher_json": {
+     "heartbeat_interval_s": 5.0,
+     "stale_after_s": 15.0
+    },
+    "measured_intervals_s": [
+     5.001,
+     5.001,
+     5.0
+    ],
+    "elapsed_s": 16.006
+   }
+  },
+  "11@hb5": {
+   "name": "crash: editor only killed, at the alternative heartbeat (2b)",
+   "result": "pass",
+   "observed": {
+    "mode": "editor only killed (orphan plugin host)",
+    "heartbeat_s": 5.0,
+    "stale_after_s": 15.0,
+    "publisher_json_interval": [
+     5.0,
+     15.0
+    ],
+    "killed_sublime_pid": 235649,
+    "plugin_hosts_at_kill": [
+     236173
+    ],
+    "killed_at": 1794823016.3588955,
+    "heartbeat_age_at_kill_s": 1.213,
+    "inferred_live_window_s": 13.787,
+    "disposable_processes_right_after_kill": [
+     {
+      "pid": 236173,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ],
+    "tree_right_after_kill": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/14a6dd02333e4bd19c1e6fb314301dad/",
+     "views/14a6dd02333e4bd19c1e6fb314301dad/state.json",
+     "views/14a6dd02333e4bd19c1e6fb314301dad/text.14a6dd02333e4bd19c1e6fb314301dad.1"
+    ],
+    "reader_timeline": {
+     "changes": [
+      {
+       "t_after_kill_s": 0.131,
+       "publisher": "live",
+       "heartbeat_age_s": 1.344,
+       "read_current": "capture presented: epoch 8f3f5167 revision 1 text_chars 16",
+       "current_state_json_on_disk": true
+      },
+      {
+       "t_after_kill_s": 4.442,
+       "publisher": "not live: no publisher.json",
+       "heartbeat_age_s": null,
+       "read_current": "NotLive: no publisher.json",
+       "current_state_json_on_disk": false
+      }
+     ],
+     "reader_first_not_live_s": 4.442,
+     "sample_interval_s": 0.05
+    },
+    "reader_still_live_window_s": 4.442,
+    "tree_after_reader_not_live": null,
+    "orphan_plugin_host_exited_after_s": 5.95,
+    "root_exists_after_orphan_exit": false,
+    "residue_before_restart": [],
+    "restart_started_after_kill_s": 5.95,
+    "epoch_before": "8f3f5167c3684fa79f451b0cbc1b7a10",
+    "epoch_after_restart": "7220c6108c9b4d118eec04a540c34f1f",
+    "new_publisher_pid": 237483,
+    "new_plugin_host_pid": 237483,
+    "tree_after_restart": [
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/"
+    ],
+    "reader_after_restart": "Unavailable: current is absent (zero or several shares)",
+    "reader_publisher_after_restart": {
+     "epoch": "7220c6108c9b4d118eec04a540c34f1f",
+     "pid": 237483
+    },
+    "restart_clean": true,
+    "elapsed_s": 12.361
+   }
+  },
+  "11b@hb5": {
+   "name": "crash: editor and plugin hosts together, at the alternative heartbeat (2b)",
+   "result": "pass",
+   "observed": {
+    "mode": "editor and plugin hosts killed together",
+    "heartbeat_s": 5.0,
+    "stale_after_s": 15.0,
+    "publisher_json_interval": [
+     5.0,
+     15.0
+    ],
+    "killed_sublime_pid": 236967,
+    "plugin_hosts_at_kill": [
+     237483
+    ],
+    "killed_at": 1794823028.7100968,
+    "heartbeat_age_at_kill_s": 0.5,
+    "inferred_live_window_s": 14.5,
+    "disposable_processes_right_after_kill": [],
+    "tree_right_after_kill": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/1329bba23c6540d987718059a7a862c7/",
+     "views/1329bba23c6540d987718059a7a862c7/state.json",
+     "views/1329bba23c6540d987718059a7a862c7/text.1329bba23c6540d987718059a7a862c7.1"
+    ],
+    "reader_timeline": {
+     "changes": [
+      {
+       "t_after_kill_s": 0.15,
+       "publisher": "live",
+       "heartbeat_age_s": 0.65,
+       "read_current": "capture presented: epoch 7220c610 revision 1 text_chars 17",
+       "current_state_json_on_disk": true
+      },
+      {
+       "t_after_kill_s": 14.505,
+       "publisher": "not live: heartbeat is stale",
+       "heartbeat_age_s": null,
+       "read_current": "NotLive: heartbeat is stale",
+       "current_state_json_on_disk": true
+      }
+     ],
+     "reader_first_not_live_s": 14.505,
+     "sample_interval_s": 0.05
+    },
+    "reader_still_live_window_s": 14.505,
+    "tree_after_reader_not_live": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/1329bba23c6540d987718059a7a862c7/",
+     "views/1329bba23c6540d987718059a7a862c7/state.json",
+     "views/1329bba23c6540d987718059a7a862c7/text.1329bba23c6540d987718059a7a862c7.1"
+    ],
+    "plugin_hosts_alive_after_kill": [],
+    "tree_before_restart": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/1329bba23c6540d987718059a7a862c7/",
+     "views/1329bba23c6540d987718059a7a862c7/state.json",
+     "views/1329bba23c6540d987718059a7a862c7/text.1329bba23c6540d987718059a7a862c7.1"
+    ],
+    "residue_before_restart": [
+     "current@",
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/",
+     "views/1329bba23c6540d987718059a7a862c7/",
+     "views/1329bba23c6540d987718059a7a862c7/state.json",
+     "views/1329bba23c6540d987718059a7a862c7/text.1329bba23c6540d987718059a7a862c7.1"
+    ],
+    "residue_state_epoch": "7220c6108c9b4d118eec04a540c34f1f",
+    "restart_started_after_kill_s": 17.02,
+    "epoch_before": "7220c6108c9b4d118eec04a540c34f1f",
+    "epoch_after_restart": "8305da74e38c4c668447ef1575097576",
+    "new_publisher_pid": 238634,
+    "new_plugin_host_pid": 238634,
+    "tree_after_restart": [
+     "index.json",
+     "publisher.json",
+     "publisher.lock",
+     "views/"
+    ],
+    "reader_after_restart": "Unavailable: current is absent (zero or several shares)",
+    "reader_publisher_after_restart": {
+     "epoch": "8305da74e38c4c668447ef1575097576",
+     "pid": 238634
+    },
+    "restart_clean": true,
+    "inotify_events": [
+     {
+      "n": 0,
+      "read_at": 1794823051.688809,
+      "dir": ".",
+      "name": "current",
+      "mask": [
+       "DELETE"
+      ]
+     },
+     {
+      "n": 1,
+      "read_at": 1794823051.688809,
+      "dir": ".",
+      "name": "index.json",
+      "mask": [
+       "DELETE"
+      ]
+     },
+     {
+      "n": 2,
+      "read_at": 1794823051.68892,
+      "dir": "views/1329bba23c6540d987718059a7a862c7",
+      "name": "state.json",
+      "mask": [
+       "DELETE"
+      ]
+     },
+     {
+      "n": 3,
+      "read_at": 1794823051.68892,
+      "dir": "views/1329bba23c6540d987718059a7a862c7",
+      "name": "text.1329bba23c6540d987718059a7a862c7.1",
+      "mask": [
+       "DELETE"
+      ]
+     },
+     {
+      "n": 4,
+      "read_at": 1794823051.6889522,
+      "dir": "views/1329bba23c6540d987718059a7a862c7",
+      "name": "",
+      "mask": [
+       "DELETE_SELF"
+      ]
+     },
+     {
+      "n": 5,
+      "read_at": 1794823051.6889522,
+      "dir": "views/1329bba23c6540d987718059a7a862c7",
+      "name": "",
+      "mask": [
+       "IGNORED"
+      ]
+     },
+     {
+      "n": 6,
+      "read_at": 1794823051.6889522,
+      "dir": "views",
+      "name": "1329bba23c6540d987718059a7a862c7",
+      "mask": [
+       "DELETE",
+       "ISDIR"
+      ]
+     },
+     {
+      "n": 7,
+      "read_at": 1794823051.6889522,
+      "dir": "views",
+      "name": "",
+      "mask": [
+       "DELETE_SELF"
+      ]
+     },
+     {
+      "n": 8,
+      "read_at": 1794823051.6889522,
+      "dir": "views",
+      "name": "",
+      "mask": [
+       "IGNORED"
+      ]
+     },
+     {
+      "n": 9,
+      "read_at": 1794823051.6889522,
+      "dir": ".",
+      "name": "views",
+      "mask": [
+       "DELETE",
+       "ISDIR"
+      ]
+     },
+     {
+      "n": 10,
+      "read_at": 1794823051.6890018,
+      "dir": ".",
+      "name": "publisher.json",
+      "mask": [
+       "DELETE"
+      ]
+     },
+     {
+      "n": 11,
+      "read_at": 1794823051.6890018,
+      "dir": ".",
+      "name": "views",
+      "mask": [
+       "CREATE",
+       "ISDIR"
+      ]
+     },
+     {
+      "n": 12,
+      "read_at": 1794823051.6891067,
+      "dir": ".",
+      "name": ".tmp-publisher.json-66e3196bab4f45c0b18ce9a83da34979",
+      "mask": [
+       "CREATE"
+      ]
+     },
+     {
+      "n": 13,
+      "read_at": 1794823051.6891305,
+      "dir": ".",
+      "name": ".tmp-publisher.json-66e3196bab4f45c0b18ce9a83da34979",
+      "mask": [
+       "MOVED_FROM"
+      ]
+     },
+     {
+      "n": 14,
+      "read_at": 1794823051.6891305,
+      "dir": ".",
+      "name": "publisher.json",
+      "mask": [
+       "MOVED_TO"
+      ]
+     },
+     {
+      "n": 15,
+      "read_at": 1794823051.6892047,
+      "dir": ".",
+      "name": ".tmp-index.json-0c336965704c434a9e68ae70616eac1b",
+      "mask": [
+       "CREATE"
+      ]
+     },
+     {
+      "n": 16,
+      "read_at": 1794823051.6892047,
+      "dir": ".",
+      "name": ".tmp-index.json-0c336965704c434a9e68ae70616eac1b",
+      "mask": [
+       "MOVED_FROM"
+      ]
+     },
+     {
+      "n": 17,
+      "read_at": 1794823051.6892047,
+      "dir": ".",
+      "name": "index.json",
+      "mask": [
+       "MOVED_TO"
+      ]
+     }
+    ],
+    "residue_removal": {
+     "residue_paths": [
+      "current",
+      "index.json",
+      "publisher.json",
+      "views/",
+      "views/1329bba23c6540d987718059a7a862c7/",
+      "views/1329bba23c6540d987718059a7a862c7/state.json",
+      "views/1329bba23c6540d987718059a7a862c7/text.1329bba23c6540d987718059a7a862c7.1"
+     ],
+     "deleted_event_index": {
+      "current": 0,
+      "index.json": 1,
+      "views/1329bba23c6540d987718059a7a862c7/state.json": 2,
+      "views/1329bba23c6540d987718059a7a862c7/text.1329bba23c6540d987718059a7a862c7.1": 3,
+      "views/1329bba23c6540d987718059a7a862c7/": 6,
+      "views/": 9,
+      "publisher.json": 10
+     },
+     "not_seen_deleted": [],
+     "lock_file_in_residue": true,
+     "last_residue_delete_event": 10,
+     "first_create_or_moved_to_event": 11,
+     "all_residue_removed_before_anything_new": true,
+     "first_new_event": {
+      "n": 11,
+      "read_at": 1794823051.6890018,
+      "dir": ".",
+      "name": "views",
+      "mask": [
+       "CREATE",
+       "ISDIR"
+      ]
+     }
+    },
+    "residue_state_epoch_was_dead_epoch": true,
+    "elapsed_s": 23.599
+   }
+  }
+ },
+ "instances": [
+  {
+   "tag": "a",
+   "sublime_pid": 230979,
+   "plugin_host_pid": 231505,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-ltjabjsd/data-a",
+   "startup_ms": 6469.0,
+   "identity": {
+    "sublime_text": {
+     "pid": 230979,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532515]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 230920
+    },
+    "plugin_host": {
+     "pid": 231505,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532515]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 230979 /tmp/nablarva-observer-4215/portable/sublime_text 17:231421 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/port",
+     "ppid": 230979
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 230913,
+    "disposable_processes_at_start": [
+     {
+      "pid": 230979,
+      "ppid": 230920,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 231421,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 231505,
+      "ppid": 230979,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "stopped_by": "SIGKILL of the editor only (crash check, orphan plugin host)"
+  },
+  {
+   "tag": "a-restart",
+   "sublime_pid": 232913,
+   "plugin_host_pid": 233434,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-ltjabjsd/data-a",
+   "startup_ms": 5916.9,
+   "identity": {
+    "sublime_text": {
+     "pid": 232913,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532706]",
+     "ns_mnt": "mnt:[4026532704]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 232856
+    },
+    "plugin_host": {
+     "pid": 233434,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532706]",
+     "ns_mnt": "mnt:[4026532704]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 232913 /tmp/nablarva-observer-4215/portable/sublime_text 17:233346 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/port",
+     "ppid": 232913
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 232853,
+    "disposable_processes_at_start": [
+     {
+      "pid": 232913,
+      "ppid": 232856,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 233346,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 233434,
+      "ppid": 232913,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "kill_together": {
+    "stopped_then_killed": [
+     233434,
+     232913
+    ],
+    "plugin_hosts": [
+     {
+      "pid": 233434,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+      "ns_net": "net:[4026532706]",
+      "ns_mnt": "mnt:[4026532704]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 232913 /tmp/nablarva-observer-4215/portable/sublime_text 17:233346 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/port",
+      "ppid": 232913
+     }
+    ]
+   },
+   "stopped_by": "SIGSTOP+SIGKILL of editor and plugin hosts together (crash check)"
+  },
+  {
+   "tag": "a2-restart",
+   "sublime_pid": 233674,
+   "plugin_host_pid": 234193,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-ltjabjsd/data-a",
+   "startup_ms": 5879.8,
+   "identity": {
+    "sublime_text": {
+     "pid": 233674,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532515]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 233622
+    },
+    "plugin_host": {
+     "pid": 234193,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532515]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 233674 /tmp/nablarva-observer-4215/portable/sublime_text 17:234108 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/port",
+     "ppid": 233674
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 233619,
+    "disposable_processes_at_start": [
+     {
+      "pid": 233674,
+      "ppid": 233622,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 234108,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 234193,
+      "ppid": 233674,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "inventory_before_exit": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": false,
+     "views": [
+      {
+       "view": 25,
+       "buffer": 52,
+       "fixture": false,
+       "file_name": "/tmp/sublime-observer-x1-trial-ltjabjsd/synthetic/A/same.md",
+       "name": "",
+       "dirty": true,
+       "scratch": false,
+       "loading": false,
+       "size": 9633
+      },
+      {
+       "view": 26,
+       "buffer": 53,
+       "fixture": false,
+       "file_name": null,
+       "name": "shared publishing synthetic",
+       "dirty": false,
+       "scratch": true,
+       "loading": false,
+       "size": 81
+      },
+      {
+       "view": 27,
+       "buffer": 54,
+       "fixture": false,
+       "file_name": null,
+       "name": "unshared synthetic Q",
+       "dirty": false,
+       "scratch": true,
+       "loading": false,
+       "size": 18058
+      },
+      {
+       "view": 28,
+       "buffer": 55,
+       "fixture": false,
+       "file_name": null,
+       "name": "unshared synthetic",
+       "dirty": false,
+       "scratch": true,
+       "loading": false,
+       "size": 65
+      }
+     ],
+     "sheets": 4
+    },
+    {
+     "window": 4,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 5,
+     "fixture": true,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "exit_ignored": {
+    "inventory_20s_after_exit": [
+     {
+      "window": 2,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 4,
+      "fixture": false,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 5,
+      "fixture": true,
+      "views": [],
+      "sheets": 0
+     },
+     {
+      "window": 3,
+      "fixture": false,
+      "views": [
+       {
+        "view": 25,
+        "buffer": 52,
+        "fixture": false,
+        "file_name": "/tmp/sublime-observer-x1-trial-ltjabjsd/synthetic/A/same.md",
+        "name": "",
+        "dirty": true,
+        "scratch": false,
+        "loading": false,
+        "size": 9633
+       },
+       {
+        "view": 26,
+        "buffer": 53,
+        "fixture": false,
+        "file_name": null,
+        "name": "shared publishing synthetic",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 81
+       },
+       {
+        "view": 27,
+        "buffer": 54,
+        "fixture": false,
+        "file_name": null,
+        "name": "unshared synthetic Q",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 18058
+       },
+       {
+        "view": 28,
+        "buffer": 55,
+        "fixture": false,
+        "file_name": null,
+        "name": "unshared synthetic",
+        "dirty": false,
+        "scratch": true,
+        "loading": false,
+        "size": 65
+       }
+      ],
+      "sheets": 4
+     }
+    ],
+    "processes": [
+     {
+      "pid": 233674,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+      "ns_net": "net:[4026532515]",
+      "ns_mnt": "mnt:[4026532461]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+      "ppid": 233622
+     },
+     {
+      "pid": 234108,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler",
+      "ns_net": "net:[4026532515]",
+      "ns_mnt": "mnt:[4026532461]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/crash_handler --no-rate-limit --database=/tmp/nablarva-observer-4215/portable/Data/Crash Reports --metrics-dir=/tmp/nablarva-observer-4215/portable/Data/Crash Repo",
+      "ppid": 1342
+     },
+     {
+      "pid": 234193,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+      "ns_net": "net:[4026532515]",
+      "ns_mnt": "mnt:[4026532461]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 233674 /tmp/nablarva-observer-4215/portable/sublime_text 17:234108 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/port",
+      "ppid": 233674
+     }
+    ],
+    "data_local": [
+     "Session.sublime_session"
+    ],
+    "crash_reports": [
+     "attachments",
+     "completed",
+     "new",
+     "pending",
+     "settings.dat"
+    ]
+   },
+   "stopped_by": "SIGTERM after exit command did not finish in 20 s"
+  },
+  {
+   "tag": "b",
+   "sublime_pid": 234275,
+   "plugin_host_pid": 234791,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-ltjabjsd/data-b",
+   "startup_ms": 6151.5,
+   "identity": {
+    "sublime_text": {
+     "pid": 234275,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532713]",
+     "ns_mnt": "mnt:[4026532712]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 234225
+    },
+    "plugin_host": {
+     "pid": 234791,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532713]",
+     "ns_mnt": "mnt:[4026532712]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 234275 /tmp/nablarva-observer-4215/portable/sublime_text 17:234706 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/port",
+     "ppid": 234275
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 234218,
+    "disposable_processes_at_start": [
+     {
+      "pid": 233674,
+      "ppid": 233622,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 234108,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 234193,
+      "ppid": 233674,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     },
+     {
+      "pid": 234275,
+      "ppid": 234225,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 234706,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 234791,
+      "ppid": 234275,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "inventory_before_exit": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    },
+    {
+     "window": 3,
+     "fixture": true,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "stopped_by": "exit command",
+   "exit_s": 0.16
+  },
+  {
+   "tag": "h",
+   "sublime_pid": 235649,
+   "plugin_host_pid": 236173,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-ltjabjsd/data-h",
+   "startup_ms": 6297.1,
+   "identity": {
+    "sublime_text": {
+     "pid": 235649,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532516]",
+     "ns_mnt": "mnt:[4026532515]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 235598
+    },
+    "plugin_host": {
+     "pid": 236173,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532516]",
+     "ns_mnt": "mnt:[4026532515]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 235649 /tmp/nablarva-observer-4215/portable/sublime_text 17:236087 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/port",
+     "ppid": 235649
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 235591,
+    "disposable_processes_at_start": [
+     {
+      "pid": 235649,
+      "ppid": 235598,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 236087,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 236173,
+      "ppid": 235649,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "stopped_by": "SIGKILL of the editor only (crash check, orphan plugin host)"
+  },
+  {
+   "tag": "h-restart",
+   "sublime_pid": 236967,
+   "plugin_host_pid": 237483,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-ltjabjsd/data-h",
+   "startup_ms": 5945.2,
+   "identity": {
+    "sublime_text": {
+     "pid": 236967,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532515]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 236914
+    },
+    "plugin_host": {
+     "pid": 237483,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532515]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 236967 /tmp/nablarva-observer-4215/portable/sublime_text 17:237394 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/port",
+     "ppid": 236967
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 236906,
+    "disposable_processes_at_start": [
+     {
+      "pid": 236967,
+      "ppid": 236914,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 237394,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 237483,
+      "ppid": 236967,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "kill_together": {
+    "stopped_then_killed": [
+     237483,
+     236967
+    ],
+    "plugin_hosts": [
+     {
+      "pid": 237483,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+      "ns_net": "net:[4026532515]",
+      "ns_mnt": "mnt:[4026532461]",
+      "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 236967 /tmp/nablarva-observer-4215/portable/sublime_text 17:237394 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/port",
+      "ppid": 236967
+     }
+    ]
+   },
+   "stopped_by": "SIGSTOP+SIGKILL of editor and plugin hosts together (crash check)"
+  },
+  {
+   "tag": "h2-restart",
+   "sublime_pid": 238110,
+   "plugin_host_pid": 238634,
+   "alive": false,
+   "data_dir": "/tmp/sublime-observer-x1-trial-ltjabjsd/data-h",
+   "startup_ms": 6002.2,
+   "identity": {
+    "sublime_text": {
+     "pid": 238110,
+     "exe": "/tmp/nablarva-observer-4215/portable/sublime_text",
+     "ns_net": "net:[4026532515]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/sublime_text --multiinstance --new-window --background",
+     "ppid": 238054
+    },
+    "plugin_host": {
+     "pid": 238634,
+     "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14",
+     "ns_net": "net:[4026532515]",
+     "ns_mnt": "mnt:[4026532461]",
+     "cmdline": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14 238110 /tmp/nablarva-observer-4215/portable/sublime_text 17:238552 true /tmp/nablarva-observer-4215/portable/Data /tmp/nablarva-observer-4215/port",
+     "ppid": 238110
+    },
+    "harness_ns_net": "net:[4026531833]",
+    "separate_net_ns": true,
+    "binary_inode_match": true,
+    "bwrap_pid": 238050,
+    "disposable_processes_at_start": [
+     {
+      "pid": 238110,
+      "ppid": 238054,
+      "exe": "/tmp/nablarva-observer-4215/portable/sublime_text"
+     },
+     {
+      "pid": 238552,
+      "ppid": 1342,
+      "exe": "/tmp/nablarva-observer-4215/portable/crash_handler"
+     },
+     {
+      "pid": 238634,
+      "ppid": 238110,
+      "exe": "/tmp/nablarva-observer-4215/portable/plugin_host-3.14"
+     }
+    ]
+   },
+   "inventory_before_exit": [
+    {
+     "window": 2,
+     "fixture": false,
+     "views": [],
+     "sheets": 0
+    }
+   ],
+   "stopped_by": "exit command",
+   "exit_s": 0.16
+  }
+ ],
+ "notes": [],
+ "operator_editor_before": "skipped: X1_NO_OPERATOR_PROBES=1",
+ "started_at": 1794822898.658099,
+ "heartbeat": {
+  "heartbeat_s": 1.0,
+  "stale_after_s": 3.0,
+  "stale_factor": 3,
+  "source": "package settings",
+  "package_settings_heartbeat_s": 1
+ },
+ "source_root": "/home/hruzam/unikuklatrix/nablarva/toolbox/sublime-observer",
+ "payload_files": [
+  ".python-version",
+  "SublimeObserver.sublime-commands",
+  "SublimeObserver.sublime-settings",
+  "contract.py",
+  "publisher.py"
+ ],
+ "installed_into_disposable_packages": [
+  ".python-version",
+  "SublimeObserver.sublime-commands",
+  "SublimeObserver.sublime-settings",
+  "contract.py",
+  "publisher.py"
+ ],
+ "installed_equals_payload": true,
+ "heartbeat_cadence": {
+  "beats": [
+   [
+    1794822905.1466715,
+    1794822905.080847
+   ],
+   [
+    1794822906.1030712,
+    1794822906.0817914
+   ],
+   [
+    1794822907.1102562,
+    1794822907.0826204
+   ],
+   [
+    1794822908.1170876,
+    1794822908.0824194
+   ],
+   [
+    1794822909.1237016,
+    1794822909.082227
+   ]
+  ],
+  "intervals_s": [
+   1.001,
+   1.001,
+   1.0,
+   1.0
+  ],
+  "write_lag_s": [
+   0.021,
+   0.028,
+   0.035,
+   0.041
+  ],
+  "clock_offset_at_start_s": 0.066
+ },
+ "diag_check4": {
+  "selection_event_count_before": 2,
+  "selection_event_count_after": 2,
+  "caret_to_state_ms": 298.7,
+  "state_seq_after_2s": 4,
+  "state_selections_after_2s": [
+   {
+    "a": 5,
+    "b": 5,
+    "empty": true,
+    "end": [
+     0,
+     5
+    ],
+    "start": [
+     0,
+     5
+    ]
+   },
+   {
+    "a": 20,
+    "b": 40,
+    "empty": false,
+    "end": [
+     2,
+     3
+    ],
+    "start": [
+     1,
+     7
+    ]
+   }
+  ]
+ },
+ "heartbeat_alt": {
+  "heartbeat_s": 5.0,
+  "stale_after_s": 15.0,
+  "stale_factor": 3,
+  "source": "User settings override in the disposable profile",
+  "package_settings_heartbeat_s": 1
+ },
+ "cleanup": {
+  "disposable_processes_before_cleanup_signal": [],
+  "disposable_processes_after": [],
+  "operator_editor_after": "skipped: X1_NO_OPERATOR_PROBES=1",
+  "run_user_sublime_observer_exists": "skipped: X1_NO_OPERATOR_PROBES=1",
+  "portable_data_packages_after": [
+   "Observer",
+   "User",
+   "sublime-mcp"
+  ]
+ },
+ "finished_at": 1794823053.8964376,
+ "summary": {
+  "18": "pass",
+  "1": "pass",
+  "2": "pass",
+  "16": "pass",
+  "3": "pass",
+  "4": "pass",
+  "5": "pass",
+  "8": "pass",
+  "9": "pass",
+  "7": "pass",
+  "13": "pass",
+  "14": "pass",
+  "15": "pass",
+  "6": "pass",
+  "10": "pass",
+  "11": "pass",
+  "11b": "pass",
+  "12": "pass",
+  "17": "pass",
+  "18@hb5": "pass",
+  "11@hb5": "pass",
+  "11b@hb5": "pass"
+ }
+}

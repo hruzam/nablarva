@@ -1,0 +1,82 @@
+# step 4a unit tests — home, 2026-11-15T23:10:36+01:00
+# python3 -I -S -B -m unittest discover -s /home/hruzam/unikuklatrix/nablarva/toolbox/sublime-observer/tests -v
+test_cap_and_truncated_are_explicit (test_contract.ConsistencyTests.test_cap_and_truncated_are_explicit) ... ok
+test_caret_only_change_rewrites_state_only (test_contract.ConsistencyTests.test_caret_only_change_rewrites_state_only) ... ok
+test_loading_publishes_no_text_and_says_so (test_contract.ConsistencyTests.test_loading_publishes_no_text_and_says_so) ... ok
+test_named_text_exists_at_the_moment_state_is_replaced (test_contract.ConsistencyTests.test_named_text_exists_at_the_moment_state_is_replaced) ... ok
+test_no_temp_files_left (test_contract.ConsistencyTests.test_no_temp_files_left) ... ok
+test_revision_change_and_retention_current_plus_previous (test_contract.ConsistencyTests.test_revision_change_and_retention_current_plus_previous) ... ok
+test_text_exists_and_is_named_by_state (test_contract.ConsistencyTests.test_text_exists_and_is_named_by_state) ... ok
+test_current_only_for_exactly_one_share (test_contract.CurrentAndCleanupTests.test_current_only_for_exactly_one_share) ... ok
+test_shutdown_leaves_another_epochs_publication (test_contract.CurrentAndCleanupTests.test_shutdown_leaves_another_epochs_publication) ... ok
+test_shutdown_removes_this_epoch_files (test_contract.CurrentAndCleanupTests.test_shutdown_removes_this_epoch_files) ... ok
+test_unshare_removes_dir_and_index_entry_and_never_resurrects (test_contract.CurrentAndCleanupTests.test_unshare_removes_dir_and_index_entry_and_never_resurrects) ... ok
+test_maximum_delay_bounds_continuous_typing (test_contract.DebouncerTests.test_maximum_delay_bounds_continuous_typing) ... ok
+test_trailing_debounce (test_contract.DebouncerTests.test_trailing_debounce) ... ok
+test_alive_pid_with_stale_heartbeat_is_residue (test_contract.LivenessTests.test_alive_pid_with_stale_heartbeat_is_residue) ... ok
+test_dead_epoch_residue_is_removed (test_contract.LivenessTests.test_dead_epoch_residue_is_removed) ... ok
+test_heartbeat_refreshes (test_contract.LivenessTests.test_heartbeat_refreshes) ... ok
+test_live_bound_follows_the_planted_interval_at_the_1s_default (test_contract.LivenessTests.test_live_bound_follows_the_planted_interval_at_the_1s_default) ... ok
+test_live_publisher_is_left_alone (test_contract.LivenessTests.test_live_publisher_is_left_alone) ... ok
+test_real_dead_pid_via_proc (test_contract.LivenessTests.test_real_dead_pid_via_proc) ... ok
+test_unreadable_publisher_is_refused_not_cleaned (test_contract.LivenessTests.test_unreadable_publisher_is_refused_not_cleaned) ... ok
+test_modes_even_with_permissive_umask (test_contract.ModeTests.test_modes_even_with_permissive_umask) ... ok
+test_concurrent_reader_sees_only_consistent_pairs (test_contract.ReaderTests.test_concurrent_reader_sees_only_consistent_pairs) ... ok
+test_read_current_refuses_stale_publisher (test_contract.ReaderTests.test_read_current_refuses_stale_publisher) ... ok
+test_reader_never_pairs_new_state_with_old_text (test_contract.ReaderTests.test_reader_never_pairs_new_state_with_old_text) ... ok
+test_explicit_root_needs_private_base (test_contract.RootTests.test_explicit_root_needs_private_base) ... ok
+test_symlinked_base_and_foreign_root_refused (test_contract.RootTests.test_symlinked_base_and_foreign_root_refused) ... ok
+test_xdg_used_only_when_absolute_and_private (test_contract.RootTests.test_xdg_used_only_when_absolute_and_private) ... ok
+test_sealed_paths (test_contract.SealedTests.test_sealed_paths) ... ok
+test_symlink_into_vault_is_sealed (test_contract.SealedTests.test_symlink_into_vault_is_sealed) ... ok
+test_order_errors_and_close (test_contract.WriterTests.test_order_errors_and_close) ... ok
+test_bad_base_refuses_without_crash (test_publisher.LifecycleTests.test_bad_base_refuses_without_crash) ... ok
+test_graceful_exit_cleans_like_unload (test_publisher.LifecycleTests.test_graceful_exit_cleans_like_unload) ... ok
+test_reload_cleans_own_previous_epoch (test_publisher.LifecycleTests.test_reload_cleans_own_previous_epoch) ... ok
+test_second_publisher_beside_live_one_refuses (test_publisher.LifecycleTests.test_second_publisher_beside_live_one_refuses) ... ok
+test_settings_validation_falls_back (test_publisher.LifecycleTests.test_settings_validation_falls_back) ... ok
+test_unload_removes_epoch_files_and_markers_and_stops_timers (test_publisher.LifecycleTests.test_unload_removes_epoch_files_and_markers_and_stops_timers) ... ok
+test_publishing_never_changes_view_focus_selection_or_scroll (test_publisher.NoReachTests.test_publishing_never_changes_view_focus_selection_or_scroll) ... ok
+test_unshared_view_is_never_read (test_publisher.NoReachTests.test_unshared_view_is_never_read) ... ok
+test_cap_and_truncated (test_publisher.ShareTests.test_cap_and_truncated) ... ok
+test_close_cleans_up (test_publisher.ShareTests.test_close_cleans_up) ... ok
+test_each_share_gets_new_share_id (test_publisher.ShareTests.test_each_share_gets_new_share_id) ... ok
+test_save_as_into_vault_unshares (test_publisher.ShareTests.test_save_as_into_vault_unshares) ... ok
+test_sealed_paths_refused_with_status_message (test_publisher.ShareTests.test_sealed_paths_refused_with_status_message) ... ok
+test_share_marks_view_and_publishes_then_unshare_cleans (test_publisher.ShareTests.test_share_marks_view_and_publishes_then_unshare_cleans) ... ok
+test_untitled_view_shares_with_null_path (test_publisher.ShareTests.test_untitled_view_shares_with_null_path) ... ok
+test_caret_only_change_skips_text_read (test_publisher.TriggerTests.test_caret_only_change_skips_text_read) ... ok
+test_change_during_capture_is_retried_not_published (test_publisher.TriggerTests.test_change_during_capture_is_retried_not_published) ... ok
+test_debounce_with_maximum_delay_under_continuous_typing (test_publisher.TriggerTests.test_debounce_with_maximum_delay_under_continuous_typing) ... ok
+test_edit_publishes_new_text (test_publisher.TriggerTests.test_edit_publishes_new_text) ... ok
+test_eventless_selection_change_is_published_by_poll (test_publisher.TriggerTests.test_eventless_selection_change_is_published_by_poll) ... ok
+test_heartbeat_timer (test_publisher.TriggerTests.test_heartbeat_timer) ... ok
+test_load_completion_publishes_text (test_publisher.TriggerTests.test_load_completion_publishes_text) ... ok
+test_viewport_poll_publishes_state_only (test_publisher.TriggerTests.test_viewport_poll_publishes_state_only) ... ok
+test_contract_module_has_no_sublime_import (test_static.StaticTests.test_contract_module_has_no_sublime_import) ... ok
+test_no_transport_or_process_imports (test_static.StaticTests.test_no_transport_or_process_imports) ... ok
+test_no_view_changing_listing_or_signalling_calls (test_static.StaticTests.test_no_view_changing_listing_or_signalling_calls) ... ok
+test_one_palette_entry (test_static.StaticTests.test_one_palette_entry) ... ok
+test_package_layout (test_static.StaticTests.test_package_layout) ... ok
+test_python_38_grammar (test_static.StaticTests.test_python_38_grammar) ... ok
+test_settings_defaults_match_contract (test_static.StaticTests.test_settings_defaults_match_contract) ... ok
+test_current_pointing_outside_is_not_followed (test_witness_recorder.ContainmentTests.test_current_pointing_outside_is_not_followed) ... ok
+test_reader_is_guarded_against_a_text_file_that_escapes (test_witness_recorder.ContainmentTests.test_reader_is_guarded_against_a_text_file_that_escapes) ... ok
+test_symlinked_view_dir_and_fifo_are_not_entered (test_witness_recorder.ContainmentTests.test_symlinked_view_dir_and_fifo_are_not_entered) ... ok
+test_bad_json_and_vanished_files_are_recorded_not_fatal (test_witness_recorder.ErrorTests.test_bad_json_and_vanished_files_are_recorded_not_fatal) ... ok
+test_stale_heartbeat_is_reported_by_the_reader (test_witness_recorder.ErrorTests.test_stale_heartbeat_is_reported_by_the_reader) ... ok
+test_json_escaped_form_is_found (test_witness_recorder.ForbiddenTests.test_json_escaped_form_is_found) ... ok
+test_planted_string_is_reported_with_the_file_name_and_loudly (test_witness_recorder.ForbiddenTests.test_planted_string_is_reported_with_the_file_name_and_loudly) ... ok
+test_text_is_never_stored (test_witness_recorder.ForbiddenTests.test_text_is_never_stored) ... ok
+test_refuses_dangling_symlink_out (test_witness_recorder.RefusalTests.test_refuses_dangling_symlink_out) ... ok
+test_refuses_empty_forbid (test_witness_recorder.RefusalTests.test_refuses_empty_forbid) ... ok
+test_refuses_existing_out (test_witness_recorder.RefusalTests.test_refuses_existing_out) ... ok
+test_refuses_out_under_root_even_before_the_root_exists (test_witness_recorder.RefusalTests.test_refuses_out_under_root_even_before_the_root_exists) ... ok
+test_keepalive_when_nothing_changes (test_witness_recorder.TimelineTests.test_keepalive_when_nothing_changes) ... ok
+test_share_edit_unshare_and_root_removal_are_recorded (test_witness_recorder.TimelineTests.test_share_edit_unshare_and_root_removal_are_recorded) ... ok
+
+----------------------------------------------------------------------
+Ran 74 tests in 3.981s
+
+OK
+# exit 0

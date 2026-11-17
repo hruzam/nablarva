@@ -1,0 +1,15 @@
+# bash /home/hruzam/unikuklatrix/nablarva/.dev/session/sublime-observer-X1-file-publish/implementation/evidence/mutation-check.sh  (2026-11-15T14:28:05+01:00)
+baseline-noop => OK
+no-max-delay => FAILED (failures=2)
+state-before-text => FAILED (failures=2)
+keep-only-current => FAILED (failures=2, errors=1)
+no-share-guard => OK
+current-for-many => FAILED (failures=2)
+no-seal-check => FAILED (failures=1)
+always-read-text => FAILED (failures=3)
+live-ignored => FAILED (failures=2)
+no-revision-guard => FAILED (failures=1)
+no-fchmod => OK
+no-resurrect-guard => FAILED (failures=1)
+poll-ignores-selection => FAILED (failures=2)
+no-on-exit => FAILED (failures=1)

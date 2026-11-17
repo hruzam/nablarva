@@ -1,0 +1,22 @@
+// SublimeObserver -- publishes ONLY views you share with the toggle command.
+// Published files are readable by every process running as your user;
+// sharing is not per-agent isolation.
+{
+	// Publication root. null = $XDG_RUNTIME_DIR/sublime-observer when that is a
+	// private 0700 directory, else /run/user/<uid>/sublime-observer.
+	// An explicit value must be absolute; its parent must be a 0700 directory you own.
+	"root": null,
+
+	// Characters published per text file; larger buffers set "truncated": true.
+	"cap_chars": 200000,
+
+	// Trailing debounce and the maximum delay continuous typing may cause.
+	"debounce_ms": 150,
+	"max_delay_ms": 1000,
+
+	// Sublime has no scroll event: shared views (only) are polled for viewport changes.
+	"viewport_poll_ms": 500,
+
+	// publisher.json heartbeat_at refresh; readers treat 3x this as "publisher not live".
+	"heartbeat_s": 5,
+}
