@@ -1,0 +1,34 @@
+{
+  "result": "PASS",
+  "head": "d50b0a0ed32661416e3e4ac5ac2cfe593b509b13",
+  "manifest_sources_unchanged": 83,
+  "preexisting_beds": 32,
+  "inventory_reproduced_from_tmp": true,
+  "independent_reader_hashes_matched": 8,
+  "local_source_deltas_from_HEAD": [
+    ".dev/session/pulse.md"
+  ],
+  "supplemental_sources": [
+    {
+      "path": "docs/repo-unification.2026-09-02.md",
+      "sha256": "3d239c956a3f843dd51f00a7cc3012b28b4a04d99e728b91f76c3a3b8ed1c34f",
+      "matches_HEAD": true
+    },
+    {
+      "path": ".dev/session/termpanum-X0-source-contract/raw/source-contract.md",
+      "sha256": "7086e59527c77040be9d41ee94966f661dd751c009e5eb636590db103dd32694",
+      "matches_HEAD": true
+    },
+    {
+      "path": ".dev/session/nablarva-02-pipe-qualification/raw/fold.relay-seam-round2.2026-09-13.md",
+      "sha256": "614b4376e5c2ce1336fec6639cd593548be725b2e3df12b9ab009c0095704d00",
+      "matches_HEAD": true
+    }
+  ],
+  "historical_source": {
+    "pin": "78059da:.dev/session/nablarva-X3-architecture-sitting/raw/brief.nablarva-boost-reader-concept.2026-10-21.md",
+    "sha256": "f38947d0980eca1391908c15dbf783cf3c7f2f9c2b521aad0b8a14a8b2f8d4ac"
+  },
+  "gate_and_navigation_checks": "PASS",
+  "limits": "Mechanical source/navigation checks; no runtime, exhaustive orphan or effort benchmark."
+}

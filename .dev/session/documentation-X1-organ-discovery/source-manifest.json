@@ -1,0 +1,2555 @@
+{
+  "purpose": "pilot corpus and lexical candidates, not relevance or authority",
+  "head": "d50b0a0ed32661416e3e4ac5ac2cfe593b509b13",
+  "working_changes": [
+    "M .dev/session/pulse.md",
+    "?? .dev/session/documentation-X1-organ-discovery/"
+  ],
+  "scope": "declared project entries; other beds top-level Markdown; raw Markdown fallback where entry absent",
+  "beds": [
+    {
+      "slug": "animal-2",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": []
+    },
+    {
+      "slug": "architecture-X1-bookkeeping",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/architecture-X1-bookkeeping/RUNBOOK.md",
+        ".dev/session/architecture-X1-bookkeeping/STATUS.md"
+      ]
+    },
+    {
+      "slug": "composer-01-parse",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/composer-01-parse/CS.composer-01-parse.builder.2026-10-17.md",
+        ".dev/session/composer-01-parse/RUNBOOK.md",
+        ".dev/session/composer-01-parse/STATUS.md",
+        ".dev/session/composer-01-parse/brief.nabla.composer-build.2026-10-17.md",
+        ".dev/session/composer-01-parse/research.nabla.composer-prior-art.2026-10-17.md"
+      ]
+    },
+    {
+      "slug": "harvest",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": []
+    },
+    {
+      "slug": "muticula-01-qualify",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/muticula-01-qualify/RUNBOOK.md",
+        ".dev/session/muticula-01-qualify/STATUS.md"
+      ]
+    },
+    {
+      "slug": "nablarva-00",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/nablarva-00/README.md"
+      ]
+    },
+    {
+      "slug": "nablarva-00-",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": []
+    },
+    {
+      "slug": "nablarva-00-main-design-signpost",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": []
+    },
+    {
+      "slug": "nablarva-02-pipe-qualification",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/nablarva-02-pipe-qualification/RUNBOOK.md",
+        ".dev/session/nablarva-02-pipe-qualification/STATUS.md",
+        ".dev/session/nablarva-02-pipe-qualification/pad.1-baseline-carry.md",
+        ".dev/session/nablarva-02-pipe-qualification/pad.2-sitting-1.md"
+      ]
+    },
+    {
+      "slug": "nablarva-03-app-architecture",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/nablarva-03-app-architecture/README.md"
+      ]
+    },
+    {
+      "slug": "nablarva-X0-restarted",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/nablarva-X0-restarted/README.md"
+      ]
+    },
+    {
+      "slug": "nablarva-X2-builder-narative",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/nablarva-X2-builder-narative/RUNBOOK.md",
+        ".dev/session/nablarva-X2-builder-narative/STATUS.md"
+      ]
+    },
+    {
+      "slug": "nablarva-X4-vist",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/nablarva-X4-vist/raw/audit.x0-evidence.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/audit.x0-transfer.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/audit.x2-evidence.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/audit.x2-transfer.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/brief.x4-runbook-input.cartan.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/catalogue.hello-intake.cartan.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/closure.x0-x2.cartan.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/consult.closure-masterfiles.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/consult.hello-grounding.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/handoff.csharp-method.cartan.2026-10-24.md",
+        ".dev/session/nablarva-X4-vist/raw/handoff.csharp-method.oraculum.2026-10-24.md",
+        ".dev/session/nablarva-X4-vist/raw/handoff.x0-source-contract.cartan.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/handoff.x2-termpanum.cartan.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/hello-01-contract.md",
+        ".dev/session/nablarva-X4-vist/raw/hello-02-addendum-r1.md",
+        ".dev/session/nablarva-X4-vist/raw/review.closure-transfer.2026-10-23.md",
+        ".dev/session/nablarva-X4-vist/raw/vist-01-principle-and-applications.md"
+      ]
+    },
+    {
+      "slug": "nablarva-X5-spine-slice",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/nablarva-X5-spine-slice/RUNBOOK.md",
+        ".dev/session/nablarva-X5-spine-slice/STATUS.md"
+      ]
+    },
+    {
+      "slug": "nablarva-communication-protocole",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/nablarva-communication-protocole/raw/LLM-esperanto.md"
+      ]
+    },
+    {
+      "slug": "ovitmugen-01-basement",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/ovitmugen-01-basement/RUNBOOK.md",
+        ".dev/session/ovitmugen-01-basement/STATUS.md",
+        ".dev/session/ovitmugen-01-basement/pad.1-remote-cli-walk.md"
+      ]
+    },
+    {
+      "slug": "phone-console-01-browser",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/phone-console-01-browser/RUNBOOK.md",
+        ".dev/session/phone-console-01-browser/STATUS.md"
+      ]
+    },
+    {
+      "slug": "promptbook-coder-foil",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/promptbook-coder-foil/observation.md"
+      ]
+    },
+    {
+      "slug": "recovery",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/recovery/RESURRECTION.broken-discussion.6378-TYLER.2026-08-07.md"
+      ]
+    },
+    {
+      "slug": "relay-contract",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": []
+    },
+    {
+      "slug": "skill-report-test",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/skill-report-test/CS.tyler.6378.2026-08-06.md",
+        ".dev/session/skill-report-test/journal.tyler.md",
+        ".dev/session/skill-report-test/raw.synth.phase1.6378.md"
+      ]
+    },
+    {
+      "slug": "termbrana-M0-markdown-test",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/termbrana-M0-markdown-test/raw/majkee-cartan-log.md",
+        ".dev/session/termbrana-M0-markdown-test/raw/termbrana-M0-transcript-view.cli-handoff.md"
+      ]
+    },
+    {
+      "slug": "termbrana-X1-composer-sourcing",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/termbrana-X1-composer-sourcing/raw/handoff.cartan.runbook-preparation.2026-10-21.md"
+      ]
+    },
+    {
+      "slug": "termbrana-X2-composer-sublime-ide",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/termbrana-X2-composer-sublime-ide/raw/termbrana-X3-sublime-ide.md"
+      ]
+    },
+    {
+      "slug": "termpanum-X0-source-contract",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/termpanum-X0-source-contract/RUNBOOK.md",
+        ".dev/session/termpanum-X0-source-contract/STATUS.md"
+      ]
+    },
+    {
+      "slug": "termpanum-X1-source-qualification",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/termpanum-X1-source-qualification/RUNBOOK.md",
+        ".dev/session/termpanum-X1-source-qualification/STATUS.md"
+      ]
+    },
+    {
+      "slug": "test",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": []
+    },
+    {
+      "slug": "toolbox-ommatermia-00-brief",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/toolbox-ommatermia-00-brief/raw/brief-substrate-for-RUNBOOK.ommatermia.2026-09-04.md",
+        ".dev/session/toolbox-ommatermia-00-brief/raw/seed.assymetry-triangulated-by-symmetry.graphical-sensing-boundary.2026-09-03.md",
+        ".dev/session/toolbox-ommatermia-00-brief/raw/seed.graphical-sensing-boundary.2026-09-03.md"
+      ]
+    },
+    {
+      "slug": "toolbox-termbrana-01-brief",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/toolbox-termbrana-01-brief/brief.md",
+        ".dev/session/toolbox-termbrana-01-brief/evidence.host-versions.md",
+        ".dev/session/toolbox-termbrana-01-brief/pad.1-host-bringup.md",
+        ".dev/session/toolbox-termbrana-01-brief/research.epoch.host-versions.2026-08-15.md"
+      ]
+    },
+    {
+      "slug": "toolbox-termbrana-02-m0-truthspike",
+      "has_runbook": true,
+      "has_STATUS": false,
+      "has_legacy_status": true,
+      "sources": [
+        ".dev/session/toolbox-termbrana-02-m0-truthspike/CS.termbrana-readme.2026-08-24.md",
+        ".dev/session/toolbox-termbrana-02-m0-truthspike/RUNBOOK.md",
+        ".dev/session/toolbox-termbrana-02-m0-truthspike/handoff.md",
+        ".dev/session/toolbox-termbrana-02-m0-truthspike/pad.1-m0-runtime-confirm.md",
+        ".dev/session/toolbox-termbrana-02-m0-truthspike/status.md"
+      ]
+    },
+    {
+      "slug": "toolbox-termpanum-00-brief",
+      "has_runbook": false,
+      "has_STATUS": false,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/toolbox-termpanum-00-brief/raw/brief-substrate-for-RUNBOOK.termpanum.2026-10-01.md"
+      ]
+    },
+    {
+      "slug": "voice-relay-00-probe",
+      "has_runbook": true,
+      "has_STATUS": true,
+      "has_legacy_status": false,
+      "sources": [
+        ".dev/session/voice-relay-00-probe/RUNBOOK.md",
+        ".dev/session/voice-relay-00-probe/STATUS.md"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": ".dev/session/architecture-X1-bookkeeping/RUNBOOK.md",
+      "sha256": "7deb313ec610136d6099ad923bce92c487eceaed11fbcffac392a9af70ac4fc6",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 11,
+          "text": "  removal + §3.8 one-cell touch, toolbox/termbrana/README.md C2 — every changed line mapped to one"
+        },
+        {
+          "line": 30,
+          "text": "Three documents say things the flag no longer says. docs/ARCHITECTURE.md header still reads \"DRAFT r7 — not promoted\" though r7 was promoted at f20dda5; §2 item 5 and §9 still treat L17's edge as undecided though L21 adopted P5-b on 2026-10-23; the §7 organ table lists reposoma as an organ (it is an older RAG project) and leaves instarmux `unknown:` (it is the skin). The architecture-X0 briefing ("
+        },
+        {
+          "line": 52,
+          "text": "| S1 | `docs/ARCHITECTURE.md` §4 seam ledger, compose + deliver rows (or a new §4.x note) | the working split: termbrana composes + submits, ends at a packet file in the bus; stridulatrix sends (journal L3 S1, cursors, adapters S5, receipts, process/API boundary); termbrana never writes into a session; stridulatrix never composes; stridulatrix requests a pane, ovitmugen performs (L17) — `said: maj"
+        },
+        {
+          "line": 57,
+          "text": "| C2 | `toolbox/termbrana/README.md` §\"Layering B — L17\", §Composition | replace the superseded L17 phrase (\"narrow integration edge … not a framework\") with a pointer to flag L21 | dock C2 |"
+        },
+        {
+          "line": 120,
+          "text": "toolbox/termbrana/README.md. Check against your held-back list and sweep every changed locked:"
+        },
+        {
+          "line": 157,
+          "text": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md, plus your own exact"
+        },
+        {
+          "line": 171,
+          "text": "PROJECT-DESIGN.md toolbox/termbrana/README.md, its scoped --stat, and expected versus observed"
+        },
+        {
+          "line": 229,
+          "text": "- Any edit to ovitmugen, termbrana code, or any organ body file."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/architecture-X1-bookkeeping/STATUS.md",
+      "sha256": "7d3781780d523639493c3021488fff3cbcd4f35f980902fe89f64b578f4adef3",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 6,
+          "text": "gate: 'Majkee records GO on one reviewed diff — docs/ARCHITECTURE.md r8 (C1, M3, M4 payable pins, C4, §7 organ table, §9 stale lines, the X0 decisions as `said: majkee`), PROJECT-DESIGN.md §3.4 removal + §3.8 one-cell touch, toolbox/termbrana/README.md C2 — every changed line mapped to one item of the edit list, Houston `card: consult` returning fits or stretches with no break — and commits it him"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/composer-01-parse/CS.composer-01-parse.builder.2026-10-17.md",
+      "sha256": "d8593d8977e0aacf085ad38657f65206db0822ff5aad17189a7b2691cc21b9b2",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 5,
+          "text": "seat: <majkee assigns — composer builder>"
+        },
+        {
+          "line": 9,
+          "text": "task: Build the prompt composer phase by phase, starting with Phase 0."
+        },
+        {
+          "line": 10,
+          "text": "resume: Read this card and run its FIRST STEP; then ~/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md → brief.nabla.composer-build.2026-10-17.md → research.nabla.composer-prior-art.2026-10-17.md → only the raw/ sources the brief's phase row names; await majkee's go."
+        },
+        {
+          "line": 14,
+          "text": "runbook: ~/unikuklatrix/nablarva/.dev/session/composer-01-parse/brief.nabla.composer-build.2026-10-17.md §3"
+        },
+        {
+          "line": 16,
+          "text": "  - ~/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md"
+        },
+        {
+          "line": 17,
+          "text": "  - ~/unikuklatrix/nablarva/.dev/session/composer-01-parse/brief.nabla.composer-build.2026-10-17.md"
+        },
+        {
+          "line": 18,
+          "text": "  - ~/unikuklatrix/nablarva/.dev/session/composer-01-parse/research.nabla.composer-prior-art.2026-10-17.md"
+        },
+        {
+          "line": 19,
+          "text": "  - ~/unikuklatrix/nablarva/.dev/session/composer-01-parse/SHA256SUMS"
+        },
+        {
+          "line": 22,
+          "text": "# Composer builder — bed opening"
+        },
+        {
+          "line": 26,
+          "text": "You are the composer's builder in a fresh session. Nothing from an earlier conversation carries"
+        },
+        {
+          "line": 39,
+          "text": "packet: composer-01-parse/first-step"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/composer-01-parse/RUNBOOK.md",
+      "sha256": "8ad0f145854541e8dab57ed3d14ffd044ba99fbb9b9fa7fc6a75ae465fd6192c",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 6,
+          "text": "participant_3: [inspect_composer_script, {brand: Codex, model: inherited-runtime, effort: inherited-runtime}, host: office, role: independent preparation researcher]"
+        },
+        {
+          "line": 23,
+          "text": "# RUNBOOK — composer-01-parse"
+        },
+        {
+          "line": 32,
+          "text": "This gate bounds the work of this sitting. Termbrana's reusable product direction"
+        },
+        {
+          "line": 33,
+          "text": "lives above sessions in `toolbox/termbrana/README.md`, indexed by"
+        },
+        {
+          "line": 124,
+          "text": "Read /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/RUNBOOK.md,"
+        },
+        {
+          "line": 125,
+          "text": "then /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md."
+        },
+        {
+          "line": 153,
+          "text": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md."
+        },
+        {
+          "line": 155,
+          "text": "Read /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/CS.composer-01-parse.builder.2026-10-17.md."
+        },
+        {
+          "line": 157,
+          "text": "cd /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse && sha256sum -c SHA256SUMS"
+        },
+        {
+          "line": 180,
+          "text": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/RUNBOOK.md,"
+        },
+        {
+          "line": 181,
+          "text": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md,"
+        },
+        {
+          "line": 206,
+          "text": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/RUNBOOK.md,"
+        },
+        {
+          "line": 207,
+          "text": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md,"
+        },
+        {
+          "line": 248,
+          "text": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/RUNBOOK.md,"
+        },
+        {
+          "line": 249,
+          "text": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md and"
+        },
+        {
+          "line": 250,
+          "text": "/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/brief.nabla.composer-build.2026-10-17.md."
+        },
+        {
+          "line": 274,
+          "text": "- Flag L8′ records Majkee's 2026-10-17 correction: composer publication passes to or"
+        },
+        {
+          "line": 287,
+          "text": "- No composer delivery, GUI, fold writer or automatic writing in this Phase 0 gate."
+        },
+        {
+          "line": 290,
+          "text": "  composer adaptations are not a drop-in replacement for the bus envelope."
+        },
+        {
+          "line": 315,
+          "text": "- /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md — current position."
+        },
+        {
+          "line": 316,
+          "text": "- /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/brief.nabla.composer-build.2026-10-17.md — Phase 0 scope and corpus."
+        },
+        {
+          "line": 317,
+          "text": "- /home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/research.nabla.composer-prior-art.2026-10-17.md — adopted requirements, risks and open questions."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/composer-01-parse/STATUS.md",
+      "sha256": "4855cf86242e79a5e05f7b4cf2358ebadf9b4cccc5703969704a2aad294d4a84",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 19,
+          "text": "  Composer work: Nablarva 745d732 preserves 903 paths (evidence, exact X2/X3 handoffs,"
+        },
+        {
+          "line": 35,
+          "text": "  New termbrana-X1-composer-sourcing RUNBOOK authoring, launch and contract freeze"
+        },
+        {
+          "line": 39,
+          "text": "  Composer preservation only; no new design/build cycle, repeated benchmarks,"
+        },
+        {
+          "line": 50,
+          "text": "# STATUS — composer-01-parse"
+        },
+        {
+          "line": 70,
+          "text": "  `745d732c3236bb643f185457889bbd09884b1da6` preserves the completed Composer"
+        },
+        {
+          "line": 82,
+          "text": "  reconcile the [source README](/home/hruzam/ia-sync/zsh/termbrana/README.md)"
+        },
+        {
+          "line": 93,
+          "text": "  [X2 practitioner handoff](/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/handoff.composer-experience.cartan.2026-10-22.md) /"
+        },
+        {
+          "line": 94,
+          "text": "  [X3 boundary handoff](/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/handoff.composer-boundaries.cartan.2026-10-22.md)."
+        },
+        {
+          "line": 97,
+          "text": "The existing [full-scope X1 preparation handoff](/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X1-composer-sourcing/raw/handoff.cartan.runbook-preparation.2026-10-21.md)"
+        },
+        {
+          "line": 99,
+          "text": "[Majkee's generation-X direction](evidence/direction.majkee.termbrana-generation-x.2026-10-21.md)."
+        },
+        {
+          "line": 107,
+          "text": "decomposition, controller/table stamp and pin ownership, applicable source-owner"
+        },
+        {
+          "line": 110,
+          "text": "open. Keep the exact [architecture-owner proposal](evidence/cleanup.termbrana.2026-10-21/architecture-owner.proposal.md)"
+        },
+        {
+          "line": 115,
+          "text": "Flight's [C1 response](/home/hruzam/ia-sync/.dev/session/germline-05-sella-germline-audit/_bus/RETURN.01.c1-composition.cartan.md)"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/composer-01-parse/brief.nabla.composer-build.2026-10-17.md",
+      "sha256": "7e018c11da5219ac1e382925028526b58ea356d72a38e38be3c45b21e4a3267c",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 8,
+          "text": "bed: ~/unikuklatrix/nablarva/.dev/session/composer-01-parse"
+        },
+        {
+          "line": 9,
+          "text": "reader: the composer builder (seat assigned by majkee)"
+        },
+        {
+          "line": 13,
+          "text": "# Prompt composer — builder brief"
+        },
+        {
+          "line": 17,
+          "text": "`research.nabla.composer-prior-art.2026-10-17.md`. Where a `raw/` file covers something, it wins"
+        },
+        {
+          "line": 27,
+          "text": "composer reads them at their homes, never from `raw/` (A11)."
+        },
+        {
+          "line": 37,
+          "text": "| D2 | This brief is a thin layer over `raw/`: decisions, phases, prior art. | A consolidated extract of the sella set: a second copy that drifts (day-square rule one, \"point, never restate\"; the Termbrana-02 failure). | said: format left to Nabla, 2026-10-17 |"
+        },
+        {
+          "line": 40,
+          "text": "| D5 | The composer's handoff artifact is a cold-start card in the existing CS shape. | A new handoff format. | inferred: Majkee named the card the inter-session glue |"
+        },
+        {
+          "line": 44,
+          "text": "| D9 | Every composer sign starts its own line. | Inline signs with `\"`-escaped `&&`. What `&&` triggers is still open (Q4). | inferred |"
+        },
+        {
+          "line": 46,
+          "text": "| D11 | When delivery unparks, it goes through the bus gate and door; \"confirm bash\" only through the door, with pane capture and prompt-string match. | Direct send-keys from the composer. | inferred |"
+        },
+        {
+          "line": 47,
+          "text": "| D12 | Role binding selects among sessions registered in tmux (`04_REGISTRY`: definitions vs liveness). | A composer-side list of live agents. | inferred |"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/composer-01-parse/research.nabla.composer-prior-art.2026-10-17.md",
+      "sha256": "88f912d1b5cd7639eabf087ca4ac3a418a950eedccd9299198bcb408736a935c",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 7,
+          "text": "scope: the prompt composer (sella-v.0.1 workbench), Phases 0–4"
+        },
+        {
+          "line": 11,
+          "text": "# Composer — prior-art pass"
+        },
+        {
+          "line": 13,
+          "text": "SCOPE: the prompt composer, Phases 0–4."
+        },
+        {
+          "line": 36,
+          "text": "  goes to the composer's own files."
+        },
+        {
+          "line": 50,
+          "text": "- **A9** Proposed, pending Q1: the prompt carries path and packet id, not the stamp. The composer"
+        },
+        {
+          "line": 55,
+          "text": "- **A11** `raw/` is for reading while building. At runtime the composer reads owner files at their homes."
+        },
+        {
+          "line": 70,
+          "text": "- **Q2** \"Point, never restate\": enforced in render, so the composer never inlines a pointed file,"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/flag.md",
+      "sha256": "ce64462043d944e9a1051841d582bd026bd5aa4f5981e4b662c6eed77b1ee5c3",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 32,
+          "text": "- **L8 · Boundary**: Cluster A mechanism (clipper/processor/composer) stays in"
+        },
+        {
+          "line": 45,
+          "text": "- **L11 · Toolbox termbrana — founding set A1–A5** (majkee 2026-08-15, session"
+        },
+        {
+          "line": 46,
+          "text": "  `toolbox-termbrana-01-brief`; @Mirror graceful-fail → @Janus REVISE folded): Wave-r0"
+        },
+        {
+          "line": 48,
+          "text": "  termbrana's Rust is forced by the Zellij WASM boundary and does NOT pre-decide docket"
+        },
+        {
+          "line": 49,
+          "text": "  2. Own repo `~/unikuklatrix/termbrana/` = **TOOLBOX repo, not a temple project**"
+        },
+        {
+          "line": 53,
+          "text": "  `termbrana/DECISIONS.md` = product-technical ADRs only, every entry citing its"
+        },
+        {
+          "line": 60,
+          "text": "  `.dev/session/toolbox-termbrana-01-brief/brief.md` + `evidence.host-versions.md`."
+        },
+        {
+          "line": 70,
+          "text": "  files claimed Termbrana's next action; durable synthesis and evidence are at"
+        },
+        {
+          "line": 75,
+          "text": "  termbrana unified into ONE repo (nablarva). Plain `git pull`/`push` on `core` — never"
+        },
+        {
+          "line": 77,
+          "text": "  worktree`. sync.sh / deploy.sh / SYNC_DISCIPLINE.md retired. termbrana lives at"
+        },
+        {
+          "line": 78,
+          "text": "  `toolbox/termbrana/` (subtree, history preserved); its law 2.3 \"standalone first\" is"
+        },
+        {
+          "line": 183,
+          "text": "- **L8′ · Composer destination/publication — supersedes L8's location for this work**"
+        },
+        {
+          "line": 184,
+          "text": "  (majkee, explicit instruction 2026-10-17, composer-01-parse):"
+        },
+        {
+          "line": 187,
+          "text": "  The composer work no longer targets applications-in-common; its publication passes"
+        },
+        {
+          "line": 193,
+          "text": "- **L17 · Termbrana composition and its Phase 0 grammar** (majkee GO, 2026-10-20,"
+        },
+        {
+          "line": 195,
+          "text": "  Termbrana is the terminal membrane: the Zellij observer at `toolbox/termbrana/`"
+        },
+        {
+          "line": 196,
+          "text": "  (Rust/WASM, L11/L12) plus a reusable composition family at"
+        },
+        {
+          "line": 197,
+          "text": "  `~/ia-sync/zsh/termbrana/` (`composer.zsh` and adjacent Python stdlib). This"
+        },
+        {
+          "line": 198,
+          "text": "  supplements L11's product scope and L12's placement for the composition family;"
+        },
+        {
+          "line": 204,
+          "text": "  Termbrana composition and ovitmugen are independently useful clients; shared"
+        },
+        {
+          "line": 212,
+          "text": "  allowed headers. Future configurable composition sources may include controller,"
+        },
+        {
+          "line": 220,
+          "text": "  already has a documentation home keeps it (e.g. toolbox/termbrana/ with DECISIONS.md under"
+        },
+        {
+          "line": 254,
+          "text": "  The sentence \"Termbrana composition and ovitmugen are independently useful clients\" stays, and"
+        },
+        {
+          "line": 309,
+          "text": "(seed §open-2 — composer needed at all? — is Cluster A playground scope, see L8;"
+        },
+        {
+          "line": 329,
+          "text": "- L8's applications-in-common location for composer work → superseded by L8′ (majkee, 2026-10-17); interface boundary retained."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/muticula-01-qualify/RUNBOOK.md",
+      "sha256": "8ba4bf28cd6c75c696585c7f868659a1e1bd5493e5512a80b14ed9bd5782ed2c",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/muticula-01-qualify/STATUS.md",
+      "sha256": "920fbb94da3be43f2e542c714359284fb420c3af465fdd18207761e292d3baa4",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-00/README.md",
+      "sha256": "c3b4dc136e99b57a30607336a2f149ef1cb4a6c6ba17c30af12f8ec19a8b15b2",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-02-pipe-qualification/RUNBOOK.md",
+      "sha256": "c1248e0d21f0b8e18c648ef7763e0a751bb924f919ac1ede9d42ace4c337fcdf",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-02-pipe-qualification/STATUS.md",
+      "sha256": "8938b35f6e9dfa42bb8f14b7816b86c72011e209017fedf1393280aed6e105d8",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-02-pipe-qualification/pad.1-baseline-carry.md",
+      "sha256": "e7f0325fcb43d30fbd04c3d125604b8456e0b74c1a528e0ee1bfdcc4b38083ba",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-02-pipe-qualification/pad.2-sitting-1.md",
+      "sha256": "6aa591112edd4176b60ff2a4c23a3ac583145e12b8b4444844ab49a365911b6f",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-03-app-architecture/README.md",
+      "sha256": "0d5c0ef171ae0780dc4fb2a6d5ee4c3b9eef533cd9cfaf5a2da4c6a68eb0dba1",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X0-restarted/README.md",
+      "sha256": "3012358fbe973ceba24375b7ea77780706a05a428be4c2931ff227d9729f8b54",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X2-builder-narative/RUNBOOK.md",
+      "sha256": "7d1501842d93c781d9aefc7e3b4dc7663eca84350a482898bb19fdbcd0d501a1",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 126,
+          "text": "Before assigning P1, read Composer's practical experience handoff:"
+        },
+        {
+          "line": 127,
+          "text": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X2-builder-narative/raw/handoff.composer-experience.cartan.2026-10-22.md"
+        },
+        {
+          "line": 233,
+          "text": "- Worktree is shared with active Composer work and operator folder renaming. Do not absorb,"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X2-builder-narative/STATUS.md",
+      "sha256": "4a2f4cf00e4768126f4e53f945890e039538c75a6795e0198075d62c22a65fa4",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/audit.x0-evidence.2026-10-23.md",
+      "sha256": "2a5d2063c7e44356dc2aa87e6e6acbd73d2021b1b84bae8cc0dd26f4bfeb7014",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 18,
+          "text": "The packet fulfills its original documentary requirements: dated output/rendered/PTTY distinctions; independent post-termios oracle and exact proposed budgets; failure/unknown retention; scoped Termbrana limits; reproducible bounded D4 search; three decision gaps; and Q objective/effects/prerequisites. L18–L21 introduce no retroactive documentary blocker."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/audit.x0-transfer.2026-10-23.md",
+      "sha256": "21bc63093e6c2ad091823b6db829eec2bcb41f62475cd71a78848cb6754e4ce7",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/audit.x2-evidence.2026-10-23.md",
+      "sha256": "412b608a20f188bf9b5541f5f9341d86b8fc3571535e86220a0af6040a3874a9",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/audit.x2-transfer.2026-10-23.md",
+      "sha256": "2d2cdc9e0e48473c292aea6a1b88310880a1400a5936d3943cd3f51d52824fc6",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 19,
+          "text": "**Keeper classification:** `note.stridularium` explicitly identifies itself as inherited phone-organ architectural input. Retain its original bytes/path and record an explicit `raw/note.*` guard disposition; do not present it as X2 process learning. `handoff.composer-experience` is attributed incoming practitioner evidence containing process lessons and proposed product tests; retain its provenanc"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/brief.x4-runbook-input.cartan.2026-10-23.md",
+      "sha256": "6c68223d8db0116ba5f9ba8cb989632fa4f9ed6377c7f24ea39d8857d1bc71ef",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 78,
+          "text": "closed-session-03 ownership prose (J1b). C2/C3/C4/J2 already own adjacent Termbrana, germline,"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/catalogue.hello-intake.cartan.2026-10-23.md",
+      "sha256": "c452f0ffeb2e7ca73de6f961d4333fbff9a310cb848c52c7c4ed2c422492e2f8",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/closure.x0-x2.cartan.2026-10-23.md",
+      "sha256": "419d4bf77154f25f21af451ef1c93638ca1af98b57ffd592953cc53a2186bcd7",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 58,
+          "text": "- X2 `raw/handoff.composer-experience.cartan.2026-10-22.md`: incoming attributed practitioner"
+        },
+        {
+          "line": 60,
+          "text": "  It remains separately classified by the original manifest; no Composer result becomes PTY proof."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/consult.closure-masterfiles.2026-10-23.md",
+      "sha256": "c43e5c788371d1a7f6618fda82f639d4dc696dfaf12fc0bd4cfa4730aab4af4f",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 24,
+          "text": "2. **Respect the existing correction owner.** X1’s post-promotion audit already identifies architecture header/provenance/pin debt, wrapper narrative lag, Termbrana README drift and germline lag. Carry this closure’s relevant evidence to that route; do not create a competing rewrite."
+        },
+        {
+          "line": 38,
+          "text": "| Houston addendum, Termbrana README, decisions stub, AGENTS saddle | **Carry existing findings:** respectively X1 audit C3, C2, C4 and J2. No adjacent edits through this closure. |"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/consult.hello-grounding.2026-10-23.md",
+      "sha256": "f4655cb6b3fc0b62bd5a96cd8ee64bc5a20bf60b8ee32b421a142e0370732dd0",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/handoff.csharp-method.cartan.2026-10-24.md",
+      "sha256": "f46be8fc275d84d7a4a19bedd02f2a1b63ac999b5fb6209d3052ece6349c180f",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/handoff.csharp-method.oraculum.2026-10-24.md",
+      "sha256": "0eb3cfdfef0f4c4842cc5bba58c1e04f45c2122e7f8b66a849b561d5efd76882",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 16,
+          "text": "  - termbrana README vs L21 (C2);"
+        },
+        {
+          "line": 21,
+          "text": "- **Not yours, in the tree:** Cartan's uncommitted observation files and README index lines (X0/X2 transfers, harvest.2026-10-23.agol.md); the X2, termpanum-X0 and composer beds; and this bed's other raw files, which are Cartan's."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/handoff.x0-source-contract.cartan.2026-10-23.md",
+      "sha256": "680156bda2d89f7631302cfc3a61b32c4f278daf52dacadd4df8cd63e88c8c33",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/handoff.x2-termpanum.cartan.2026-10-23.md",
+      "sha256": "491d63a106277fd2f47cdc63a05272f40a27fb28e150e478da70c6df65abdf0c",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/hello-01-contract.md",
+      "sha256": "09e4d283164d260c216f20f85a64bdd3943a6df1efca5faa1603d9851767d7a6",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 4,
+          "text": "Reads with: vist-01-principle-and-applications.md, termbrana-04-sublime-ide.md"
+        },
+        {
+          "line": 25,
+          "text": "inside the experiment bed, by the operator's decision. Termbrana's delivery gate and Ovitmugen's"
+        },
+        {
+          "line": 322,
+          "text": "hosts and other repos are out. So are Antensor, the socket and Termbrana. The per-family"
+        },
+        {
+          "line": 360,
+          "text": "`raw.settings`; the gate design chat on 2026-10-15; vist-01 and termbrana-04. This contract"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/hello-02-addendum-r1.md",
+      "sha256": "cb37212dca50794ffc9e169e50b9c2d4c960cb0665113b59eed5ada633669435",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 57,
+          "text": "Cross-session browsing, when Termbrana's history view needs it, goes through the project pulse"
+        },
+        {
+          "line": 100,
+          "text": "exist yet: Antensor, Termbrana and the daemon add their folders on first use (Foreman rule), and"
+        },
+        {
+          "line": 195,
+          "text": "file, while here it is a seat's attachment to a pane, as with Termbrana's pins. Key-value `.conf`"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/review.closure-transfer.2026-10-23.md",
+      "sha256": "a94d03c8d57d0e0da325826352b6f83290ea41a75a4f79ae902c9bca39286480",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/vist-01-principle-and-applications.md",
+      "sha256": "98c2c2fd4bea9a13f6051ee08a937933925681fde0721c636e732e47323df0c8",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 4,
+          "text": "Reads with: termbrana-04-sublime-ide.md and the Sella-v.0.1 collection"
+        },
+        {
+          "line": 61,
+          "text": "   vendor CLIs in tmux panes                 Termbrana, RUNBOOK, STATUS"
+        },
+        {
+          "line": 227,
+          "text": "| Termbrana pending views | evidence for the move from Awaiting receipt to Awaiting return, never acceptance |"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X5-spine-slice/RUNBOOK.md",
+      "sha256": "90fae027dd2e7edc733a18cb47e7c21afc872f148504b0b5849e15f94c391e46",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 35,
+          "text": "nabLarva has a map (docs/ARCHITECTURE.md), law (flag L1–L23) and three bricks that converged on one layering without coordination — composer = service, ovitmugen = view + gates, HELLO r1 = substrate — and no construction: observe and record have zero code. The workflow majkee wants, HELLO (\"read this file and give me the message back within the same bash\"), is delivery and cannot be built, observe"
+        },
+        {
+          "line": 44,
+          "text": "- Working split (`said: majkee`, X0-2): termbrana composes/submits, ends at a packet file in the bus; stridulatrix sends. This bed touches neither."
+        },
+        {
+          "line": 52,
+          "text": "| 1 | **Address registry** — contract + first writer (ovitmugen on pane creation) + first reader (status reader or termbrana target pick, whichever is cheaper). Seat-addressed, never PID/pane. | ovitmugen · one reader | component folder (name P1); writer code in ovitmugen.py |"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/nablarva-X5-spine-slice/STATUS.md",
+      "sha256": "5333b200d0fc1d28f01470bc30135ae1e51cf020d5ac843635d676a3eb8754f1",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/nablarva-communication-protocole/raw/LLM-esperanto.md",
+      "sha256": "5979327694f8255474e6113387959118c810c198dd4cabd61a53e16954c8acf6",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/ovitmugen-01-basement/RUNBOOK.md",
+      "sha256": "af85b1c9d9e8ba0b3c8b6075bad72ca141db66312491675343d03c3d6f29c52d",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 33,
+          "text": "organs. Other organs (nablarva bus, termbrana) will need to read the sessions. Majkee"
+        },
+        {
+          "line": 112,
+          "text": "  remote attach from home (`ov-up --host`), Alt-key bindings, t41 convergence, termbrana work."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/ovitmugen-01-basement/STATUS.md",
+      "sha256": "cf1d09952438eaa970072c3988057da60c101202fde413f623801fbc9322707f",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/ovitmugen-01-basement/pad.1-remote-cli-walk.md",
+      "sha256": "bda776281788ba04f638c212f5a65f39201ec5f5a847079da744fbaef864c73e",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/phone-console-01-browser/RUNBOOK.md",
+      "sha256": "64b4d8729d5eada6bb7d2c4012a70950ac2f066433c24d8a81319d529a7973c6",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 6,
+          "text": "  sessions, with a usable Redmi terminal, durable composer and shared prompts/files"
+        },
+        {
+          "line": 84,
+          "text": "vendor-neutral terminal offering the missing composer/vault controls could retire"
+        },
+        {
+          "line": 87,
+          "text": "Termbrana currently offers inert check/parse, not a renderer, source picker or sender."
+        },
+        {
+          "line": 103,
+          "text": "| terra-ui | Browser navigation, composer presentation and key palette under a named `web/` subset; excludes the transport module and storage adapter. |"
+        },
+        {
+          "line": 205,
+          "text": "- Ovitmugen-01, composer-01, X5 and termpanum have their own owners/gates. Reconcile"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/phone-console-01-browser/STATUS.md",
+      "sha256": "a591418a69c94d0086401c07bd93af0efd48140f24e6014de0632ef0899bdee2",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/promptbook-coder-foil/observation.md",
+      "sha256": "a5f2f6f82d0c422f941670b53ebf2e3f02b0295d29674e9237906a2e72258253",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 58,
+          "text": "Do not fold this into Termbrana before its M0 host contract is frozen. Reopen the foil when"
+        },
+        {
+          "line": 59,
+          "text": "either nabLarva's journal/task event schema is on the gavel table or Termbrana reaches the"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/pulse.md",
+      "sha256": "e12b7d20c0a039868047d2ddc0328679cdc9aa7bea728f9b8ffff52899d155bc",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 8,
+          "text": "| `documentation-X1-organ-discovery` | Majkee records GO or STOP on a reviewed Termbrana discovery packet containing evidenced session membership, source authority and lifecycle distinctions, documentation discrepancies, and a repeat lookup by an independent reader at the same recorded revision. | `/home/hruzam/unikuklatrix/nablarva/.dev/session/documentation-X1-organ-discovery/STATUS.md` |"
+        },
+        {
+          "line": 12,
+          "text": "| `composer-01-parse` | Phase 0 exit finding, brief §3 | `/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md` |"
+        },
+        {
+          "line": 13,
+          "text": "| `architecture-X1-bookkeeping` | Majkee records GO on one reviewed diff — docs/ARCHITECTURE.md r8 (C1, M3, M4 payable pins, C4, §7 organ table, §9 stale lines, the X0 decisions as `said: majkee`), PROJECT-DESIGN.md §3.4 removal + §3.8 one-cell touch, toolbox/termbrana/README.md C2 — every changed line mapped to one item of the edit list, Houston `card: consult` returning fits or stretches with no"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/recovery/RESURRECTION.broken-discussion.6378-TYLER.2026-08-07.md",
+      "sha256": "bdc2e7d9a071e9b676c734a277e34c4f4e974a8c10289678f48c8a150b825b4b",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/skill-report-test/CS.tyler.6378.2026-08-06.md",
+      "sha256": "c207d70c020e5c015226f00c24d30b9e8301392e45129c5a8f70259def3add50",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/skill-report-test/journal.tyler.md",
+      "sha256": "7641334ef55922fee37ba51386e8a1dba732598a0c02ea904852b0789dbe5226",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/skill-report-test/raw.synth.phase1.6378.md",
+      "sha256": "a5cada5d6135025b1d02cc3522159d0cf5a3e4dfdc5d5b5dc17849ad77dc4261",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/termbrana-M0-markdown-test/raw/majkee-cartan-log.md",
+      "sha256": "14b47cb448507c053f95b92d188b9804b12bdf53211174c851044d4ca76231eb",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 6,
+          "text": "session: termbrana-M0-markdown-test"
+        },
+        {
+          "line": 12,
+          "text": "Formalized output recorded for the `termbrana-M0-markdown-test` session."
+        },
+        {
+          "line": 179,
+          "text": "**SOURCE — version boundary.** Claude Code `2.1.288` added recovery of a user composer"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/termbrana-M0-markdown-test/raw/termbrana-M0-transcript-view.cli-handoff.md",
+      "sha256": "6408e744faf1168c338647e07204c075cdb79044f1fd19beffd857786c5c61b9",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 1,
+          "text": "# Termbrana M0 · Open a CLI session transcript at a pin"
+        },
+        {
+          "line": 9,
+          "text": "I reviewed the repository at `hruzam/nablarva`, branch `core`, commit `132699a4276c2f7cb94755b9c70f5f5e76cd8f2d`. Repository reading was limited to `docs/` and the matching `.dev/session/termbrana-M0*` notes. The handwritten page supplies the operator scenario. Treat the design below as a proposal."
+        },
+        {
+          "line": 13,
+          "text": "| [Architecture §§2–4 and organ index](https://github.com/hruzam/nablarva/blob/132699a4276c2f7cb94755b9c70f5f5e76cd8f2d/docs/ARCHITECTURE.md) | Termbrana includes a Zellij observer and a separate composition family. The observer reads, records and reports with provenance. Ovitmugen owns view/layout and protected process lifetime. Stridulatrix owns the planned delivery path. Sublime is the current "
+        },
+        {
+          "line": 15,
+          "text": "| [Majkee–Cartan M0 log, including Zeno’s investigation](https://github.com/hruzam/nablarva/blob/132699a4276c2f7cb94755b9c70f5f5e76cd8f2d/.dev/session/termbrana-M0-markdown-test/raw/majkee-cartan-log.md) | A prompt reappeared after a terminal window was killed and the session resumed. The one-hour interval was untested. The log distinguishes Codex 0.166.0 rollout history from a live app-server req"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/termbrana-X1-composer-sourcing/raw/handoff.cartan.runbook-preparation.2026-10-21.md",
+      "sha256": "66adf1a95bbff758dbaf4102ccc05a8b015c9d65d2f36e813ddc55ab7d110d1e",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 1,
+          "text": "# To myShell — prepare Termbrana X1 composer sourcing"
+        },
+        {
+          "line": 3,
+          "text": "From Cartan, navigator and STATUS owner of `composer-01-parse`, for Majkee's carriage."
+        },
+        {
+          "line": 11,
+          "text": "The next session name is **`termbrana-X1-composer-sourcing`**, under"
+        },
+        {
+          "line": 13,
+          "text": "generation. Majkee's following named session is **`termbrana-X2-composer-sublime-ide`**,"
+        },
+        {
+          "line": 24,
+          "text": "Read Majkee's [verbatim generation-X direction](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/direction.majkee.termbrana-generation-x.2026-10-21.md)."
+        },
+        {
+          "line": 33,
+          "text": "gate. Bring that decomposition and the remaining choices to Majkee. Prepare the"
+        },
+        {
+          "line": 40,
+          "text": "settles the product scope: Termbrana comprises the Zellij observer at"
+        },
+        {
+          "line": 41,
+          "text": "`/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/` and the reusable zsh plus"
+        },
+        {
+          "line": 42,
+          "text": "Python-stdlib composition family at `/home/hruzam/ia-sync/zsh/termbrana/`."
+        },
+        {
+          "line": 43,
+          "text": "Central Nablarva governance remains; no Termbrana-local harness, roster, devenv"
+        },
+        {
+          "line": 45,
+          "text": "L8′ places composer publication through ia-sync; it grants no publication action."
+        },
+        {
+          "line": 47,
+          "text": "The accepted composition implementation is Phase 0's inert parser, with pure"
+        },
+        {
+          "line": 51,
+          "text": "The [exit finding](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md)"
+        },
+        {
+          "line": 58,
+          "text": "The approved [GRAMMAR.md](/home/hruzam/ia-sync/zsh/termbrana/GRAMMAR.md)"
+        },
+        {
+          "line": 66,
+          "text": "**Termbrana–ovitmugen: direction B is settled.** They are independently useful"
+        },
+        {
+          "line": 68,
+          "text": "Composition must work without ovitmugen, an editor, tmux, an interactive shell or"
+        },
+        {
+          "line": 99,
+          "text": "The old Composer brief's Phase 1 included procedure plus live-role binding. A"
+        },
+        {
+          "line": 108,
+          "text": "and operator direction. Exact source schemas, budgets and decomposition still"
+        },
+        {
+          "line": 117,
+          "text": "   effort and host when bound. Cartan retains the current Composer pen; authoring"
+        },
+        {
+          "line": 139,
+          "text": "   cases mean germline composition instructions, supplied text/bytes, stdin, an"
+        },
+        {
+          "line": 191,
+          "text": "- [Composer RUNBOOK](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/RUNBOOK.md) and [STATUS](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/STATUS.md): fixed Phase 0 gate, existing ownership and recovery."
+        },
+        {
+          "line": 192,
+          "text": "- [Generation-X operator direction](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/direction.majkee.termbrana-generation-x.2026-10-21.md), [earlier product direction](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/direction.majkee.termbrana.2026-10-20.md) and [Phase 0 GO](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evide"
+        },
+        {
+          "line": 193,
+          "text": "- [Checked generation-X/shape handoff](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/handoff.termbrana-generation-x.2026-10-21.md): the scope correction and concrete documentation alignment package."
+        },
+        {
+          "line": 197,
+          "text": "- [PROJECT-DESIGN](/home/hruzam/unikuklatrix/nablarva/PROJECT-DESIGN.md), [whole-animal architecture](/home/hruzam/unikuklatrix/nablarva/docs/ARCHITECTURE.md), [Termbrana README](/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md) and [DECISIONS](/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md), especially ADR-0002 and the composition boundary."
+        },
+        {
+          "line": 198,
+          "text": "- Founding [project definition](/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/research/termbrana.project-definition.md), [execution plan](/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/research/termbrana.execution-plan.md) and [foil-theory addendum](/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/research/termbrana.addendum-to-foil-theory.md), interpreted with later L17."
+        },
+        {
+          "line": 199,
+          "text": "- [Houston layering consult](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/consult.houston.layering.2026-10-20.md) and [checked ovitmugen research](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/research.ovitmugen-layer.2026-10-20.md)."
+        },
+        {
+          "line": 201,
+          "text": "- [Native Houston shape audit](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/audit.houston.termbrana-shape.2026-10-21.md), [unapplied wrapper diff](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/audit.houston.termbrana-shape.2026-10-21.diff) and [head checks](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/head.aud"
+        },
+        {
+          "line": 205,
+          "text": "- [Source README](/home/hruzam/ia-sync/zsh/termbrana/README.md), [normative grammar](/home/hruzam/ia-sync/zsh/termbrana/GRAMMAR.md), [composer.py](/home/hruzam/ia-sync/zsh/termbrana/composer.py), [composer.zsh](/home/hruzam/ia-sync/zsh/termbrana/composer.zsh), plus adjacent `base.zsh`, `keyboard.zsh` and the four files in [tests/](/home/hruzam/ia-sync/zsh/termbrana/tests)."
+        },
+        {
+          "line": 206,
+          "text": "- [Exit finding](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md), [independent verifier](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/verification.phase0/verifier.finding.md), [final source receipt](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/source-copy.startup.phase0.json) an"
+        },
+        {
+          "line": 207,
+          "text": "- [Original build brief](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/brief.nabla.composer-build.2026-10-17.md) and [prior-art pass](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/research.nabla.composer-prior-art.2026-10-17.md): historical phase expectations, including the live-binding distinction. Prior art is not current vendor qualification."
+        },
+        {
+          "line": 208,
+          "text": "- [Raw provenance/map](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/raw/README.md), [raw 02 parser gate](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/raw/02_PARSER_GATE.md) and [SHA256SUMS](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/SHA256SUMS): frozen preparation corpus, not later grammar authority. Original raw stays exactly 19 fil"
+        },
+        {
+          "line": 209,
+          "text": "- [v3](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/grammar.builder.v3.md), [v4](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/grammar.builder.v4.md) and [C1 decision](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/decision.majkee.c1.2026-10-20.md): preserved history and accepted header removal; keep all bytes."
+        },
+        {
+          "line": 213,
+          "text": "- [Version index](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/README.md), [r2 candidate](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK.composer-02-resolve.candidate.md), [r3 naming candidate](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/next-phase.resolve/RUNBOOK."
+        },
+        {
+          "line": 214,
+          "text": "- [Initial challenger REVISE](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/challenge.native-resolve.2026-10-21.md), [Houston resolve consult](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/consult.houston.resolve.2026-10-21.md), [r2 challenge](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/challenge.native-resolv"
+        },
+        {
+          "line": 219,
+          "text": "- [G05 C1 POINT](/home/hruzam/ia-sync/.dev/session/germline-05-sella-germline-audit/_bus/POINT.01.c1-composition.flight.2026-10-20.md), [Cartan's attributed response](/home/hruzam/ia-sync/.dev/session/germline-05-sella-germline-audit/_bus/RETURN.01.c1-composition.cartan.md) and [G05 findings](/home/hruzam/ia-sync/.dev/session/germline-05-sella-germline-audit/findings.q1.md). Accepted G05 is preser"
+        },
+        {
+          "line": 220,
+          "text": "- [G02 program planning gavels](/home/hruzam/ia-sync/.dev/session/germline-02-guide-model-law/raw/GAVELS.program-guide-law.md): accepted planning rather than installed law; exceptional global-controller/project-function policies remain held. Its deferred C1(a–c) is distinct from Composer's C1 header removal."
+        },
+        {
+          "line": 229,
+          "text": "- [Current Sublime raw proposal](/home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X2-composer-sublime-ide/raw/termbrana-X3-sublime-ide.md): filename retains older X3 numbering. Its presumed loader, body-tag parsing, daemon/history and attach mechanisms are proposals, not parser capabilities. Use it to identify the future consumer contract; retain its owner's pen."
+        },
+        {
+          "line": 230,
+          "text": "- [Reusable contract-testing brief](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/brief.germline-contract-testing.md) and [experience transfer](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/experience-transfer.cartan.2026-10-21.md). The user-requested copy is at [G07 raw brief](/home/hruzam/ia-sync/.dev/session/germline-07-make-program/raw/"
+        },
+        {
+          "line": 233,
+          "text": "- Check [project observations](/home/hruzam/unikuklatrix/nablarva/.dev/observations) for `termbrana*` and predecessor `composer*` before authoring. Neither prefix had an observation file at this check; recheck and record `observations_read` correctly."
+        },
+        {
+          "line": 234,
+          "text": "- [Phase 0 preservation package](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.phase0/README.md) and [dated reconciliation](/home/hruzam/unikuklatrix/nablarva/.dev/session/composer-01-parse/evidence/publication.reconciliation.cartan.2026-10-21.json): immutable historical capture, not authorization to stage today's live tree. Later audits, directions, candid"
+        },
+        {
+          "line": 264,
+          "text": "bounded decomposition, the concrete unresolved decisions for Majkee, and a"
+        },
+        {
+          "line": 279,
+          "text": "to-myShell from-composer-01-parse (Cartan)"
+        },
+        {
+          "line": 280,
+          "text": "Read /home/hruzam/unikuklatrix/nablarva/.dev/session/termbrana-X1-composer-sourcing/raw/handoff.cartan.runbook-preparation.2026-10-21.md"
+        },
+        {
+          "line": 282,
+          "text": "Prepare the full-scope Termbrana X1 sourcing RUNBOOK for Majkee's review: common"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/termbrana-X2-composer-sublime-ide/raw/termbrana-X3-sublime-ide.md",
+      "sha256": "088d6dd3d3a80360b5fd1323242a2b1c21823151b496ac6cf2c30b40f1a8db35",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 7,
+          "text": "# Termbrana 04 — Sublime as the composing IDE"
+        },
+        {
+          "line": 25,
+          "text": "Sublime comes first. Zed and possibly Lite XL may follow, and VS Code matters least. Termbrana"
+        },
+        {
+          "line": 42,
+          "text": "| Compose | the exchange document in Termbrana syntax, with completions from the controller tables | draft file only, by Majkee's own save |"
+        },
+        {
+          "line": 73,
+          "text": "pins and Termbrana tags live in the body. Either the header declares the blocks by ID and the"
+        },
+        {
+          "line": 80,
+          "text": "  Sublime: Termbrana package                 office machine"
+        },
+        {
+          "line": 149,
+          "text": "# termbrana_link.py: illustrative skeleton, not installed"
+        },
+        {
+          "line": 233,
+          "text": "| Termbrana syntax | `.sublime-syntax` version 2 that `extends` Markdown; the grammar knows only the tag shape | the tag vocabulary comes from the controller tables at runtime |"
+        },
+        {
+          "line": 243,
+          "text": "Key bindings carry a selector context, so triggers fire only in Termbrana documents. Target the"
+        },
+        {
+          "line": 262,
+          "text": "| B | inspect, render and fold preview panels over the existing parser | Termbrana phases 0 to 2 in place |"
+        },
+        {
+          "line": 301,
+          "text": "with paths in prompts. The reading unit, whole exchange or message file, which Termbrana phase 0"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/termpanum-X0-source-contract/RUNBOOK.md",
+      "sha256": "3ad211ca21ffbaa9fe870cbd151ea4e973f418fc567ae7e61bfac4c6c04ed81b",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 64,
+          "text": "3. It records adopt/reject reasoning, stale-gate disposition and scoped Termbrana knowledge;"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/termpanum-X0-source-contract/STATUS.md",
+      "sha256": "bba250840c8c1ecf75b53a161211d640640af3272a4c6a0b899a6446ec7469a5",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/termpanum-X1-source-qualification/RUNBOOK.md",
+      "sha256": "5cbd0c0f33597fdbedf387f6b3fe0812414017840c825af9b23a1df8a8ddc5e3",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/termpanum-X1-source-qualification/STATUS.md",
+      "sha256": "b526bc772b70a1cc47e0e3508f903700dfdce5a65c4aa27983625a4169728c16",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/toolbox-ommatermia-00-brief/raw/brief-substrate-for-RUNBOOK.ommatermia.2026-09-04.md",
+      "sha256": "8360995ac29aaeb4aef445d63fb20cc3b7386ad5b977bc01c178252e3d5def71",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 145,
+          "text": "- Kept separate from: swarm/composition study · Costa protocol (shape borrowed, not merged)."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-ommatermia-00-brief/raw/seed.assymetry-triangulated-by-symmetry.graphical-sensing-boundary.2026-09-03.md",
+      "sha256": "3e723a502c842358f1c5091f7dceb581000f2a7ffce756419e15e17c80f90dca",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/toolbox-ommatermia-00-brief/raw/seed.graphical-sensing-boundary.2026-09-03.md",
+      "sha256": "36b7963927df585096e1c91bdb405b7ffc72f4ec0c1bf89e585ac3ebc9e14f8a",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 88,
+          "text": "- NOT merged with the swarm/composition study; keep separate."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-termbrana-01-brief/brief.md",
+      "sha256": "f5cce2481d5ec156c671a51b77b11a89973199ce03f09360942ef1851dccc8b5",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 1,
+          "text": "# brief — toolbox-termbrana · session 01 (founding brief)"
+        },
+        {
+          "line": 3,
+          "text": "`name: termbrana · status: DRAFT — challenge FOLDED, awaiting majkee gavel`"
+        },
+        {
+          "line": 13,
+          "text": "**Termbrana** = independent semantic observation, navigation, and replay layer for terminal"
+        },
+        {
+          "line": 14,
+          "text": "sessions. Zellij-first: `termbrana-core` (pure Rust) + `termbrana-zellij` (WASM observer"
+        },
+        {
+          "line": 24,
+          "text": "- **A1 — substrate adoption.** `termbrana.project-definition.md` + `termbrana.execution-plan.md`"
+        },
+        {
+          "line": 25,
+          "text": "  + `termbrana.addendum-to-foil-theory.md` adopted as the toolbox's founding canon;"
+        },
+        {
+          "line": 27,
+          "text": "  All five copied from `~/.remote/harvest/` (volatile surface) into `termbrana/research/` at"
+        },
+        {
+          "line": 28,
+          "text": "  repo creation, provenance headers attached (@Delta task). **Guard:** termbrana's Rust is"
+        },
+        {
+          "line": 32,
+          "text": "  checked 2026-08-15 per majkee's direction).** Own repo `~/unikuklatrix/nablarva/toolbox/termbrana/` —"
+        },
+        {
+          "line": 33,
+          "text": "  scope-group sibling of nablarva; git + gh PRIVATE, branch `core`. **Termbrana is a TOOLBOX"
+        },
+        {
+          "line": 38,
+          "text": "  - takes NO harness of its own: no AGENTS/CLAUDE/flag/pulse in termbrana — nablarva's"
+        },
+        {
+          "line": 39,
+          "text": "    harness governs; all dev sessions in nablarva `.dev/session/toolbox-termbrana-NN-<slug>/`;"
+        },
+        {
+          "line": 48,
+          "text": "  the product: `termbrana/{README,ARCHITECTURE,DECISIONS}.md` + `docs/` + `research/evidence/`"
+        },
+        {
+          "line": 51,
+          "text": "    scope locks concerning termbrana;"
+        },
+        {
+          "line": 52,
+          "text": "  - **`termbrana/DECISIONS.md`** = append-only ADR ledger scoped STRICTLY to"
+        },
+        {
+          "line": 57,
+          "text": "    `termbrana/README.md` states the above (topology gives a sibling repo no nablarva"
+        },
+        {
+          "line": 75,
+          "text": "  - **Axes:** median time-to-locate + success rate; termbrana vs native Zellij scrollback"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-termbrana-01-brief/evidence.host-versions.md",
+      "sha256": "040927047d2d250acefabb85d41f6ea55b4e31b773ca30f207c85ca1db96233c",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 1,
+          "text": "moved to termbrana/research/evidence/host-versions.md — safe to delete."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-termbrana-01-brief/pad.1-host-bringup.md",
+      "sha256": "c8c4ef40eb0ddaba4dabaa334a0e94a1125243b72268f7f539745ac16b56559d",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 14,
+          "text": "`/home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-01-brief/evidence.host-versions.md`"
+        },
+        {
+          "line": 15,
+          "text": "(moves to `termbrana/research/evidence/host-versions.md` when the repo is created — @Delta, session 02)"
+        },
+        {
+          "line": 162,
+          "text": "{ echo \"# host-versions — termbrana pin lock (office)\"; echo \"date: $(date +%F) · host: $MACHINE_NAME · pad: pad.1-host-bringup\"; echo; zellij --version; rustc --version; cargo --version; rustup target list --installed | grep wasi; pacman -Q zellij rustup; echo; echo \"crate pin (M0): zellij-tile = 0.44.3\"; } | tee /home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-01-brief/evidence."
+        },
+        {
+          "line": 172,
+          "text": "{ echo \"# host-versions — termbrana pin lock (office)\"; echo \"date: $(date +%F) · host: $MACHINE_NAME · pad: pad.1-host-bringup\"; echo; zellij --version; rustc --version; cargo --version; rustup target list --installed | grep wasi; pacman -Q zellij rustup; echo; echo \"crate pin (M0): zellij-tile = 0.44.3\"; } | tee /home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-01-brief/evidence."
+        },
+        {
+          "line": 173,
+          "text": "# host-versions — termbrana pin lock (office)"
+        },
+        {
+          "line": 201,
+          "text": "- Home-machine bring-up — separate pad, only when termbrana is worth running at home."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-termbrana-01-brief/research.epoch.host-versions.2026-08-15.md",
+      "sha256": "ef8cb10c9202ad7d4d8a320a8662cdaf4891100955b1c5cc15ec5c5a86e68eb5",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 118,
+          "text": "## Sections to refresh: [Zellij plugin-api-events/permissions exact symbol diff between 0.44.0 and 0.44.3; whether pacman `rust` package on Arch ships wasm target-add tooling without rustup; PROJECT.yaml/contract for this project was not read this run — if one exists at nablarva root or under toolbox-termbrana-01-brief, re-run with @eagle orientation first to extend scope correctly]"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-termbrana-02-m0-truthspike/CS.termbrana-readme.2026-08-24.md",
+      "sha256": "c7f73af66051b1ce7bf6f4ec98acbd65fa223f1939cf24dd6c7e36d3a7b0e66e",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 12,
+          "text": "  root: /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana"
+        },
+        {
+          "line": 26,
+          "text": "  objective: Review and close the evidence-backed Termbrana README without changing the M0 gate."
+        },
+        {
+          "line": 27,
+          "text": "  first_action: git -C /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana diff -- README.md"
+        },
+        {
+          "line": 30,
+          "text": "    - /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md"
+        },
+        {
+          "line": 38,
+          "text": "  - /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md"
+        },
+        {
+          "line": 41,
+          "text": "  - /home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-02-m0-truthspike/status.md"
+        },
+        {
+          "line": 42,
+          "text": "  - /home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-02-m0-truthspike/pad.1-m0-runtime-confirm.md"
+        },
+        {
+          "line": 50,
+          "text": "3. This task directory's `status.md`, then the Termbrana `README.md` diff."
+        },
+        {
+          "line": 54,
+          "text": "- `termbrana/core` is at `e319ed4`; only `README.md` is modified (153 insertions,"
+        },
+        {
+          "line": 58,
+          "text": "- Termbrana remains a toolbox governed centrally by Nablarva flag L11. It has no local"
+        },
+        {
+          "line": 61,
+          "text": "  Termbrana. That source work is a separate dirty ia-sync worktree until @majkee commits it."
+        },
+        {
+          "line": 74,
+          "text": "git -C /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana status --short"
+        },
+        {
+          "line": 75,
+          "text": "git -C /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana diff --check"
+        },
+        {
+          "line": 76,
+          "text": "git -C /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana diff -- README.md"
+        },
+        {
+          "line": 82,
+          "text": "- Do not create a Termbrana-local agent or continuity surface."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-termbrana-02-m0-truthspike/RUNBOOK.md",
+      "sha256": "fcfc83c6ac03f3637938ddd04fbdec8f870bff872df030be73f736a8f4b5837c",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 1,
+          "text": "# RUNBOOK: Termbrana M0 — host contract freeze"
+        },
+        {
+          "line": 4,
+          "text": "goal: Close termbrana M0 — sit pad.1, fold evidence into t02–t05, @Assay fresh-eyes pass, freeze the host contract."
+        },
+        {
+          "line": 15,
+          "text": "The bench copy at `~/reposoma/_runbook/termbrana/m0-close/` is pruned; reposoma git history"
+        },
+        {
+          "line": 16,
+          "text": "holds it. The superseded `termbrana-readme` draft (Proxima, 2026-08-24) was pruned with it —"
+        },
+        {
+          "line": 17,
+          "text": "its live content is item 4a below; its cold-start card now sits IN THIS FOLDER. GLOSS.termbrana.md opened at the session root 2026-09-02 (majkee lean; convention line for AGENTS.md pending his gavel)."
+        },
+        {
+          "line": 33,
+          "text": "Termbrana M0 closure — office session."
+        },
+        {
+          "line": 36,
+          "text": "You are @Oraculum working termbrana M0, running from ~/ia-sync for machine-layer"
+        },
+        {
+          "line": 48,
+          "text": "termbrana cannot build — stop and say so. Do not trust any file's `host:` header:"
+        },
+        {
+          "line": 56,
+          "text": "    .dev/session/toolbox-termbrana-02-m0-truthspike/status.md"
+        },
+        {
+          "line": 57,
+          "text": "    .dev/session/toolbox-termbrana-02-m0-truthspike/pad.1-m0-runtime-confirm.md"
+        },
+        {
+          "line": 61,
+          "text": "contract.\" Do not open M1 work, do not touch termbrana-core, do not plan lanes."
+        },
+        {
+          "line": 74,
+          "text": " a) toolbox/termbrana/README.md carries an uncommitted +153/−3 expansion by @Cartan. It is NOT"
+        },
+        {
+          "line": 75,
+          "text": "    stashed. Review against CS.termbrana-readme.2026-08-24.md (IN THIS FOLDER)."
+        },
+        {
+          "line": 90,
+          "text": "majkee owns commit, push, flag locks, and the M0 freeze itself. No termbrana-local"
+        },
+        {
+          "line": 97,
+          "text": ".dev/session/toolbox-termbrana-03-tunnel/RUNBOOK.md, L11-gated on this freeze)."
+        },
+        {
+          "line": 114,
+          "text": "- Gloss (operator learning, spans all termbrana sessions): `../GLOSS.termbrana.md` — opened 2026-09-02"
+        },
+        {
+          "line": 115,
+          "text": "- Session bed: `nablarva/.dev/session/toolbox-termbrana-02-m0-truthspike/` (this folder)"
+        },
+        {
+          "line": 116,
+          "text": "- README review card: `CS.termbrana-readme.2026-08-24.md` (this folder — moved from the"
+        },
+        {
+          "line": 118,
+          "text": "- Evidence: `toolbox/termbrana/research/evidence/` — `host-versions.md` is the pin record"
+        },
+        {
+          "line": 119,
+          "text": "- Canon: nablarva `flag.md` L6 · L9 · L11 · `toolbox/termbrana/DECISIONS.md`"
+        },
+        {
+          "line": 120,
+          "text": "- Re-entry: `~/reposoma/_mail/monkey/inbox/CS.termbrana-m0.2026-08-15.md`"
+        },
+        {
+          "line": 122,
+          "text": "- Next session (authored, L11-gated): `.dev/session/toolbox-termbrana-03-tunnel/RUNBOOK.md`"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-termbrana-02-m0-truthspike/handoff.md",
+      "sha256": "ea955c85e7077f32b0b4bd836f8e3e9a592983427314f890fef5de95da77f4fc",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 1,
+          "text": "# handoff — toolbox-termbrana · session 02 (M0 truth spike)"
+        },
+        {
+          "line": 2,
+          "text": "`NOTE 2026-09-02: paths below pre-date flag L12 — termbrana now lives at ~/unikuklatrix/nablarva/toolbox/termbrana/; Part 1 bootstrap commands are historical record, do not re-run.`"
+        },
+        {
+          "line": 5,
+          "text": "`read first: nablarva AGENTS.md → flag L11 → ../toolbox-termbrana-01-brief/brief.md →`"
+        },
+        {
+          "line": 6,
+          "text": "`~/.remote/harvest/termbrana.execution-plan.md (§1 authority order · §3 M0 · §12 assignment)`"
+        },
+        {
+          "line": 12,
+          "text": "# === termbrana — toolbox bootstrap (A2 mechanics, flag L11) ==="
+        },
+        {
+          "line": 13,
+          "text": "mkdir -p ~/unikuklatrix/termbrana"
+        },
+        {
+          "line": 14,
+          "text": "cd ~/unikuklatrix/termbrana"
+        },
+        {
+          "line": 16,
+          "text": "gh repo create termbrana --private --source=. --remote=origin"
+        },
+        {
+          "line": 22,
+          "text": "1. Copy the 5 harvest files `~/.remote/harvest/{termbrana.project-definition.md,"
+        },
+        {
+          "line": 23,
+          "text": "   termbrana.execution-plan.md,termbrana.addendum-to-foil-theory.md,foil_theory.md,"
+        },
+        {
+          "line": 24,
+          "text": "   foil_plugin.rs}` → `termbrana/research/`, each gaining a provenance header"
+        },
+        {
+          "line": 27,
+          "text": "2. Move `../toolbox-termbrana-01-brief/evidence.host-versions.md` →"
+        },
+        {
+          "line": 28,
+          "text": "   `termbrana/research/evidence/host-versions.md` (leave a one-line \"moved, safe to"
+        },
+        {
+          "line": 30,
+          "text": "3. `termbrana/README.md` — short product line + **Governance section (A3, verbatim"
+        },
+        {
+          "line": 34,
+          "text": "   nablarva `.dev/session/toolbox-termbrana-*`.\""
+        },
+        {
+          "line": 35,
+          "text": "4. `termbrana/DECISIONS.md` — ADR-0000: adoption record (cites flag L11 + session-01"
+        },
+        {
+          "line": 40,
+          "text": "**Machine layer:** `[termbrana]=\"/home/hruzam/unikuklatrix/termbrana\"` into"
+        },
+        {
+          "line": 42,
+          "text": "`~/ia-sync/zsh/`, @Delta fresh-read + `zsh -n`; one deploy covers nablarva + termbrana;"
+        },
+        {
+          "line": 62,
+          "text": "- Deliverables → `termbrana/research/evidence/`: five probe reports +"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-termbrana-02-m0-truthspike/pad.1-m0-runtime-confirm.md",
+      "sha256": "810a18d357f00d5a560a74ecfad449e4718470dcd05f23c010a1e15140e449df",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 5,
+          "text": "> Re-pathed 2026-09-02 (flag L12 unification): project now lives at toolbox/termbrana inside nablarva. Build artefacts did not travel — STEP 0′ below re-sits the state check at the new path before STEP 1."
+        },
+        {
+          "line": 15,
+          "text": "   whoever is driving session `toolbox-termbrana-02-m0-truthspike`) rather than"
+        },
+        {
+          "line": 26,
+          "text": "this pad collects. See `~/unikuklatrix/nablarva/toolbox/termbrana/research/evidence/t02"
+        },
+        {
+          "line": 33,
+          "text": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana"
+        },
+        {
+          "line": 37,
+          "text": "termbrana-spike"
+        },
+        {
+          "line": 41,
+          "text": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm"
+        },
+        {
+          "line": 52,
+          "text": "cd /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana"
+        },
+        {
+          "line": 54,
+          "text": "cargo build --locked --release --target wasm32-wasip1 -p termbrana-zellij"
+        },
+        {
+          "line": 60,
+          "text": "either shows nothing or shows a leftover `termbrana-spike [EXITED - attach to"
+        },
+        {
+          "line": 83,
+          "text": "cd /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana"
+        },
+        {
+          "line": 85,
+          "text": "cargo build --locked --release --target wasm32-wasip1 -p termbrana-zellij"
+        },
+        {
+          "line": 86,
+          "text": "ls -la target/wasm32-wasip1/release/termbrana-zellij.wasm"
+        },
+        {
+          "line": 87,
+          "text": "zellij delete-session termbrana-spike"
+        },
+        {
+          "line": 104,
+          "text": "❯ ls -la target/wasm32-wasip1/release/termbrana-zellij.wasm"
+        },
+        {
+          "line": 105,
+          "text": "-rwxr-xr-x 2 hruzam hruzam 1577266  2. zář 01.38 target/wasm32-wasip1/release/termbrana-zellij.wasm"
+        },
+        {
+          "line": 106,
+          "text": "❯ zellij delete-session termbrana-spike"
+        },
+        {
+          "line": 107,
+          "text": "Session: \"termbrana-spike\" successfully deleted."
+        },
+        {
+          "line": 115,
+          "text": "zellij attach -c termbrana-spike"
+        },
+        {
+          "line": 126,
+          "text": "cd /home/hruzam/unikuklatrix/nablarva/toolbox/termbrana"
+        },
+        {
+          "line": 127,
+          "text": "WASM=\"$(pwd)/target/wasm32-wasip1/release/termbrana-zellij.wasm\""
+        },
+        {
+          "line": 133,
+          "text": "matches `crates/termbrana-zellij/src/main.rs`'s `load()` comment)."
+        },
+        {
+          "line": 135,
+          "text": "Expected: the floating pane's first line reads something like `termbrana-zellij probe"
+        },
+        {
+          "line": 164,
+          "text": "zellij action pipe --plugin \"file:/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm\" --name termbrana-probe -- \"capture terminal <ID> 0\""
+        },
+        {
+          "line": 189,
+          "text": "❯ zellij action pipe --plugin \"file:/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm\" --name termbrana-probe -- \"capture terminal 0 0\""
+        },
+        {
+          "line": 210,
+          "text": "zellij action pipe --plugin \"file:/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm\" --name termbrana-probe -- \"clear\""
+        },
+        {
+          "line": 211,
+          "text": "zellij action pipe --plugin \"file:/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm\" --name termbrana-probe -- \"subscribe_render_reports\""
+        },
+        {
+          "line": 254,
+          "text": "zellij action pipe --plugin \"file:/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm\" --name termbrana-probe -- \"intercept_on\""
+        },
+        {
+          "line": 261,
+          "text": "zellij action pipe --plugin \"file:/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/target/wasm32-wasip1/release/termbrana-zellij.wasm\" --name termbrana-probe -- \"intercept_off\""
+        },
+        {
+          "line": 288,
+          "text": "#    zellij --session termbrana-spike action pipe --plugin \"file:…/termbrana-zellij.wasm\" --name termbrana-probe -- \"intercept_off\""
+        },
+        {
+          "line": 324,
+          "text": "yes \"termbrana perf fixture line\" | head -100000 > /tmp/big-fixture.txt"
+        },
+        {
+          "line": 341,
+          "text": "❯ yes \"termbrana perf fixture line\" | head -100000 > /tmp/big-fixture.txt"
+        },
+        {
+          "line": 351,
+          "text": "#    non-expert operator (focus landed on the probe / htop repeatedly). termbrana's operator is this person, not a zellij power-user."
+        },
+        {
+          "line": 358,
+          "text": "- `~/unikuklatrix/nablarva/toolbox/termbrana/research/evidence/t02-pane-content-semantics.md` (STEP 2),"
+        },
+        {
+          "line": 359,
+          "text": "- `~/unikuklatrix/nablarva/toolbox/termbrana/research/evidence/t03-input-behavior.md` (STEP 3),"
+        },
+        {
+          "line": 360,
+          "text": "- `~/unikuklatrix/nablarva/toolbox/termbrana/research/evidence/t04-geometry-rendering.md` (STEP 4),"
+        },
+        {
+          "line": 361,
+          "text": "- `~/unikuklatrix/nablarva/toolbox/termbrana/research/evidence/t05-performance.md` (STEP 5),"
+        },
+        {
+          "line": 362,
+          "text": "- `~/unikuklatrix/nablarva/toolbox/termbrana/research/evidence/pane-content-matrix.md` (fixture rows"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-termbrana-02-m0-truthspike/status.md",
+      "sha256": "b978b6a2e5d88b60bb73bb31df26a8b5e129afa711e5edd5983ac001adf901ff",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 5,
+          "text": "`gloss: ../GLOSS.termbrana.md (operator learning, uncanonical)`"
+        },
+        {
+          "line": 24,
+          "text": "Pad re-pathed to `toolbox/termbrana/` (flag L12)."
+        },
+        {
+          "line": 40,
+          "text": "`../GLOSS.termbrana.md` (new) · `toolbox/termbrana/research/evidence/host-versions.md` (+ fold"
+        },
+        {
+          "line": 48,
+          "text": "- 23 historical `unikuklatrix/nablarva/toolbox/termbrana` path refs in evidence/README/DECISIONS — sweep or"
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/toolbox-termpanum-00-brief/raw/brief-substrate-for-RUNBOOK.termpanum.2026-10-01.md",
+      "sha256": "1c3a4f42bd70849489cf01eb3c69c5816325595055ae4d2e5e52cf130155707c",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 10,
+          "text": "home: toolbox/termpanum/ · sessions .dev/session/toolbox-termpanum-* (termbrana's pattern, L12)"
+        },
+        {
+          "line": 18,
+          "text": "boundary (termbrana's M4 rule)."
+        },
+        {
+          "line": 33,
+          "text": "    inferred · unknown) + termbrana's provenance grade (raw_pty · rendered_ansi · rendered_text ·"
+        },
+        {
+          "line": 34,
+          "text": "    derived). Shared with ommatermia and termbrana; no fourth shape. Falsified if a field one of"
+        },
+        {
+          "line": 62,
+          "text": "- Zellij `subscribe` stays valid where Zellij hosts (termbrana, L11): rendered_text only."
+        },
+        {
+          "line": 114,
+          "text": "- termbrana M0 (frozen 2026-09-02) = what a Zellij plugin can capture."
+        },
+        {
+          "line": 161,
+          "text": "- 2026-09-02 termbrana M0 frozen — Zellij plugins never see raw_pty."
+        }
+      ]
+    },
+    {
+      "path": ".dev/session/voice-relay-00-probe/RUNBOOK.md",
+      "sha256": "6f9fbb6203acd8350f25e93e21cc8a30df5001a4a28fdb90d607a35e8b6700d5",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".dev/session/voice-relay-00-probe/STATUS.md",
+      "sha256": "f513218f352cd72ee7566f55b60e17d7af2484d4cdf34633d8a3472cf4020c42",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": ".germline/agents/houston/nablarva.md",
+      "sha256": "13f49b1005be54aec18f9e82738aa79c0e829a6f056a734e2ca0756f30ebbf79",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 25,
+          "text": "| organ bodies | an organ that has a home keeps it (e.g. termbrana → `toolbox/termbrana/`, own `DECISIONS.md` under L11); otherwise `docs/organs/<organ>.md` → folder when it outgrows a page — **proposed, not locked** (`inferred: symmetry`, open for gavel) | contract, key files, decisions in force, trajectory · another organ's truth |"
+        },
+        {
+          "line": 70,
+          "text": "  composition (hashes + body equality) → fresh-runtime proof per vendor → **majkee's real audit"
+        }
+      ]
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "92595168c561518540ebd14dbd2fd821d741c17c5dcdaf2c3deff03f807b567f",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 2,
+          "text": "toolbox/termbrana/target/"
+        }
+      ]
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "8f26baf8aff897785f8ba3fafae4475dfa13280b51da87c4deca8fea91d2c002",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 5,
+          "text": "`~/unikuklatrix/ (kukla = pupa — the cocoon matrix). One repo: nablarva/; termbrana at toolbox/termbrana/.`"
+        },
+        {
+          "line": 71,
+          "text": "- **Boundary:** Cluster A mechanism (session clipper / processor / composer) stays in"
+        },
+        {
+          "line": 74,
+          "text": "  Composer destination exception, majkee 2026-10-17: flag L8′ supersedes that location"
+        },
+        {
+          "line": 75,
+          "text": "  for composer work; publication passes to or through `~/ia-sync/`, with deploy or"
+        }
+      ]
+    },
+    {
+      "path": "PROJECT-DESIGN.md",
+      "sha256": "ae86ea1935277d07b38180f0d699d65369f4431c9a3749828044e4d2d4f0f363",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 121,
+          "text": "## 3.1. termbrana"
+        },
+        {
+          "line": 125,
+          "text": "[L17](.dev/session/flag.md) includes the Zellij observer at `toolbox/termbrana/`"
+        },
+        {
+          "line": 126,
+          "text": "and reusable composition at `~/ia-sync/zsh/termbrana/`, above session beds/vaults."
+        },
+        {
+          "line": 127,
+          "text": "The [Termbrana README](toolbox/termbrana/README.md#composition-and-explicit-input-direction)"
+        },
+        {
+          "line": 132,
+          "text": "Observer technical decisions live in [DECISIONS.md](toolbox/termbrana/DECISIONS.md)."
+        },
+        {
+          "line": 133,
+          "text": "Composition entry points, API and grammar are indexed by its"
+        },
+        {
+          "line": 134,
+          "text": "[source-family README](../../ia-sync/zsh/termbrana/README.md)."
+        },
+        {
+          "line": 139,
+          "text": " - optional `instatmux` dashboard/session integration; composition does not require it"
+        },
+        {
+          "line": 216,
+          "text": "- **A viewer never owns lifetime.** Frame, termbrana foil, a future GUI: they only *show*."
+        },
+        {
+          "line": 226,
+          "text": "- `ov ls --json` → termbrana reads it as its dashboard source (3.1 \"requires … dashboard part with sessions\")"
+        }
+      ]
+    },
+    {
+      "path": "PROJECT.yaml",
+      "sha256": "aac1198fe6eabd9f975928866defa1272d7d91a005f8ca6d7e303172d7d2ec96",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "2e31c0ceef2f99d2e9d1d9a2f300f354e8b28e74f6ca7a4c713522683cf69c49",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 61,
+          "text": "| **observation** | termpanum (observation lab) · VIST principle and candidates · Termbrana's Zellij observer | read, record, report with provenance | typing into sessions, injecting context, granting acceptance | locked: L13 (name) · said: PROJECT-DESIGN §3.6 · locked: L11/L17 (observer) · said: majkee Q3 |"
+        },
+        {
+          "line": 62,
+          "text": "| **composition** | Termbrana's composition family | validate and (planned) prepare text | transmission without checked target binding and explicit authority; autonomous sending from assistant drafts | locked: L17 |"
+        },
+        {
+          "line": 92,
+          "text": "5. **One body; independently useful clients.** Composition and ovitmugen remain independently"
+        },
+        {
+          "line": 98,
+          "text": "   Termbrana must work with nabLarva absent (said: toolbox/termbrana/README.md §Product direction)."
+        },
+        {
+          "line": 116,
+          "text": "| Optional parts fail soft | L17 \"independently useful clients\" · said: termbrana README \"standalone operation with nabLarva completely absent\" | — |"
+        },
+        {
+          "line": 118,
+          "text": "| Python computes, zsh acts | L17 (composition family: `composer.zsh` and adjacent Python stdlib; Python acceptance conditional on measured responsiveness) | does not decide docket 2 |"
+        },
+        {
+          "line": 131,
+          "text": "| **compose** | Termbrana composition family (locked: L17) | humans · editors · pipes · assistant drafts | L17 · L8′ · L8/L13 (OUTPUT(A) boundary) | Phase 0: packet validation with opaque byte preservation incl. body EOL; grammar v4 (locked: L17; said: composer handoff) | generation-X sourcing — common programs/controllers, germline, vendor shapes/rosters, SPECIAL incl. germline/pipes — and prepar"
+        },
+        {
+          "line": 138,
+          "text": "| **context sourcing · reading** | `unknown:` — a controller/function under the eventual sourcing program (said: majkee G5, direction) | builders · verifiers · planners · Houston · Termbrana/IDE clients | L16 · said: majkee G4/G5 | reading schedule: preparation before RUNBOOK, recipient reading at entry, refresh on change (said: majkee, gavel deck STEP 5 \"gaveled\") | Nablarva Boost reader concept,"
+        },
+        {
+          "line": 174,
+          "text": "- Working split (said: majkee, 2026-10-24, architecture-X0 deck X0-2): termbrana composes"
+        },
+        {
+          "line": 175,
+          "text": "  and submits, ending at a packet file in the bus; stridulatrix sends. Termbrana never writes"
+        },
+        {
+          "line": 177,
+          "text": "- Termbrana composition and ovitmugen are independently useful clients (locked: L17). Composition"
+        },
+        {
+          "line": 178,
+          "text": "  \"does not require a session bed, editor, tmux or ovitmugen\" (said: composer handoff,"
+        },
+        {
+          "line": 179,
+          "text": "  incorporation text; also termbrana README §Layering B)."
+        },
+        {
+          "line": 181,
+          "text": "  only on the accepted column (said: composer handoff, cycle37 correction)."
+        },
+        {
+          "line": 183,
+          "text": "  needs named remaining gates (said: composer handoff)."
+        },
+        {
+          "line": 185,
+          "text": "- Composer's architecture-owner proposal is attributed input to this row (said: majkee Q4). Its"
+        },
+        {
+          "line": 186,
+          "text": "  text is reproduced in the composer handoff at"
+        },
+        {
+          "line": 187,
+          "text": "  `nablarva@78059da:.dev/session/nablarva-X3-architecture-sitting/raw/handoff.composer-boundaries.cartan.2026-10-22.md`."
+        },
+        {
+          "line": 189,
+          "text": "  - L8′ moved the composer work's location and its publication to or through ia-sync."
+        },
+        {
+          "line": 193,
+          "text": "  - L8 placed Cluster A mechanism (clipper/processor/composer) in `applications-in-common` (locked:"
+        },
+        {
+          "line": 194,
+          "text": "    L8), and L8′ supersedes that location \"for this work\", the composer work (locked: L8′)."
+        },
+        {
+          "line": 379,
+          "text": "| **termbrana** | the terminal membrane: Zellij observer + composition family (locked: L17); composer work is its composition family (said: majkee G2) | observer `toolbox/termbrana/` with `DECISIONS.md` (locked: L11/L12) · composition `~/ia-sync/zsh/termbrana/` (locked: L17) |"
+        },
+        {
+          "line": 407,
+          "text": "  `../toolbox/termbrana/DECISIONS.md`). No root ADR series is opened."
+        },
+        {
+          "line": 468,
+          "text": "| X7 | Termbrana as a popup inside the tree | L17 (newer) |"
+        },
+        {
+          "line": 496,
+          "text": "- Sitting record and rulings: `nablarva@78059da:.dev/session/nablarva-X3-architecture-sitting/raw/{gavels.X4.2026-10-17.md,prompt.sitting.2026-10-17.md,brief.component-docs-and-nablarva-boost.2026-10-21.md,brief.nablarva-boost-reader-concept.2026-10-21.md,brief.adr-task-context.2026-10-21.md,brief.keys-command-discovery.2026-10-21.md,handoff.composer-boundaries.cartan.2026-10-22.md}`."
+        }
+      ]
+    },
+    {
+      "path": "docs/decisions/README.md",
+      "sha256": "47977009b3fc0bbb47d51346c98c1ee3730ae4103366e05e0ded1efeafa9de06",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": "meshup/REGISTRY.md",
+      "sha256": "a6a0371e5f808f3b9d4be77d000f962eeb38922dddcbe7c05ab500d6f7ca9466",
+      "tracked": true,
+      "matches": []
+    },
+    {
+      "path": "toolbox/termbrana/DECISIONS.md",
+      "sha256": "94d0b0b1e01dfc7cead09db6b27db7b65ff9cd28c8ef8e31f39ca744e85783d8",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 1,
+          "text": "# DECISIONS — Termbrana ADR Ledger"
+        },
+        {
+          "line": 11,
+          "text": "**Session:** toolbox-termbrana-01-brief/brief.md  "
+        },
+        {
+          "line": 17,
+          "text": "- `termbrana.project-definition.md` (Wave r0, role: founding canon)"
+        },
+        {
+          "line": 18,
+          "text": "- `termbrana.execution-plan.md` (Wave r0, role: founding canon)"
+        },
+        {
+          "line": 19,
+          "text": "- `termbrana.addendum-to-foil-theory.md` (Wave r0, role: founding canon)"
+        },
+        {
+          "line": 34,
+          "text": "Termbrana is an independent semantic observation and navigation layer. NablaRava is one optional consumer of its neutral outputs, never a dependency."
+        },
+        {
+          "line": 43,
+          "text": "**Authority:** nablarva session `toolbox-termbrana-02-m0-truthspike/handoff.md` (Part 2 assignment, execution-plan.md §12)"
+        },
+        {
+          "line": 89,
+          "text": "conclusion). `termbrana-zellij`'s M2 adapter must label every observation"
+        },
+        {
+          "line": 92,
+          "text": "future `termbrana-pty` component (addendum §3.1/§4, execution-plan.md §8) is the only"
+        },
+        {
+          "line": 112,
+          "text": "**Authority:** nablarva flag **L11** (majkee gavel 2026-08-15: \"no parallel coding before M0 freezes the host contract\"; pins locked same day) · session `toolbox-termbrana-02-m0-truthspike` (handoff.md §Gate; RUNBOOK.md §prompt-0 items 3–4)"
+        },
+        {
+          "line": 115,
+          "text": "**Gaveled by:** majkee, 2026-09-02 (session toolbox-termbrana-02-m0-truthspike; driver Oraculum; verbal gavel \"I am agreeing with that\" on r2)"
+        },
+        {
+          "line": 133,
+          "text": "- A parity host counts as *verified* only after `pad.1` **STEP 0′** is sat on it and a dated block is appended to `host-versions.md`. Until then, \"termbrana builds/runs\" is a statement about office only. Home is currently unverified (zellij absent as of 2026-09-02)."
+        },
+        {
+          "line": 175,
+          "text": "- ia-sync receives the home-parity task (packages or navigation MD) — machine layer, out of termbrana's tree."
+        }
+      ]
+    },
+    {
+      "path": "toolbox/termbrana/README.md",
+      "sha256": "a2cf0004cc152bd201134199c50c9a0a41143b8046459d72f6cb1ded20c5778e",
+      "tracked": true,
+      "matches": [
+        {
+          "line": 1,
+          "text": "# Termbrana"
+        },
+        {
+          "line": 3,
+          "text": "Termbrana's initial observer is a planned independent semantic observation, navigation,"
+        },
+        {
+          "line": 5,
+          "text": "composition family below is separate from this observer under flag L17."
+        },
+        {
+          "line": 9,
+          "text": "> `termbrana-core`, the review UI, JSONL persistence, and replay are not implemented yet."
+        },
+        {
+          "line": 15,
+          "text": "test result. Termbrana intends to retain inspectable observations and derive semantic"
+        },
+        {
+          "line": 26,
+          "text": "| Code on disk | `termbrana-zellij` 0.0.0: a read-only M0 probe harness |"
+        },
+        {
+          "line": 34,
+          "text": "model before Termbrana can observe it:"
+        },
+        {
+          "line": 40,
+          "text": "    -> future termbrana-zellij adapter"
+        },
+        {
+          "line": 41,
+          "text": "    -> future termbrana-core"
+        },
+        {
+          "line": 46,
+          "text": "states, or a pre-parser security record. A future `termbrana-pty` would have to allocate and"
+        },
+        {
+          "line": 56,
+          "text": "| `derived` | Blocks, highlights, filters, or summaries referencing parent observations | Planned in `termbrana-core` |"
+        },
+        {
+          "line": 58,
+          "text": "“Replay” means planned deterministic replay of retained Termbrana observations and derived"
+        },
+        {
+          "line": 77,
+          "text": "cargo build --locked --release --target wasm32-wasip1 -p termbrana-zellij"
+        },
+        {
+          "line": 84,
+          "text": "  \"file:$PWD/target/wasm32-wasip1/release/termbrana-zellij.wasm\""
+        },
+        {
+          "line": 92,
+          "text": "Zellij client. It is not a Termbrana dependency, capture protocol, semantic source, or replay"
+        },
+        {
+          "line": 111,
+          "text": "## Composition and explicit input direction"
+        },
+        {
+          "line": 119,
+          "text": "**Inferred — Astrobley, connective design reading:** composition is reusable"
+        },
+        {
+          "line": 122,
+          "text": "text or parts through shared composition interfaces. Contributing a draft and"
+        },
+        {
+          "line": 133,
+          "text": "defined in [product law §2.4](research/termbrana.project-definition.md#24-read-only-first)."
+        },
+        {
+          "line": 148,
+          "text": "`~/ia-sync/zsh/termbrana/composer.zsh` with family scripts; \"python if fast enough.\""
+        },
+        {
+          "line": 149,
+          "text": "**Locked — L17, Majkee GO, 2026-10-20:** the reusable composition family lives at"
+        },
+        {
+          "line": 150,
+          "text": "`~/ia-sync/zsh/termbrana/`, with a thin zsh entry and independent Python stdlib"
+        },
+        {
+          "line": 151,
+          "text": "parser, conditional on measured responsiveness. Its [source-family README](../../../../ia-sync/zsh/termbrana/README.md)"
+        },
+        {
+          "line": 152,
+          "text": "and [GRAMMAR.md](../../../../ia-sync/zsh/termbrana/GRAMMAR.md) describe the source-only Phase 0 interface. The existing"
+        },
+        {
+          "line": 153,
+          "text": "Rust/WASM observer remains at `toolbox/termbrana/`; its M2 benchmark/stop-rule binds"
+        },
+        {
+          "line": 159,
+          "text": "**Phase 0 qualification — 2026-10-21:** the [retained exit finding](../../.dev/session/composer-01-parse/evidence/phase0.exit.cartan.2026-10-21.md)"
+        },
+        {
+          "line": 165,
+          "text": "**Layering B — L17, amended by L21:** Termbrana composition and ovitmugen are independently useful"
+        },
+        {
+          "line": 168,
+          "text": "for them needs its own separate release. Composition"
+        },
+        {
+          "line": 201,
+          "text": "| M5 — PTY owner experiment | Parked | Separate ADR proves a raw-byte or pre-parser need that composition cannot meet |"
+        },
+        {
+          "line": 210,
+          "text": "- [`research/termbrana.project-definition.md`](research/termbrana.project-definition.md) — adopted product laws, boundary, domain model, and success criterion."
+        },
+        {
+          "line": 211,
+          "text": "- [`research/termbrana.execution-plan.md`](research/termbrana.execution-plan.md) — adopted r0 milestone plan; current status is superseded by later evidence."
+        },
+        {
+          "line": 212,
+          "text": "- [`research/termbrana.addendum-to-foil-theory.md`](research/termbrana.addendum-to-foil-theory.md) — corrected Zellij/PTY/security boundary."
+        },
+        {
+          "line": 215,
+          "text": "- [`crates/termbrana-zellij/src/main.rs`](crates/termbrana-zellij/src/main.rs) — current probe harness."
+        },
+        {
+          "line": 223,
+          "text": "Termbrana deliberately has no local `AGENTS.md`, Claude/Codex roster, harness, devenv twin,"
+        },
+        {
+          "line": 226,
+          "text": "`toolbox-termbrana-*`; operator-directed generation-X composition includes names"
+        },
+        {
+          "line": 227,
+          "text": "such as `termbrana-X1-composer-sourcing`, each requiring its own scope and launcher"
+        },
+        {
+          "line": 233,
+          "text": "`architect`, `challenger`, `researcher`, `implementer`, and `verifier` roles. Termbrana"
+        }
+      ]
+    }
+  ]
+}
