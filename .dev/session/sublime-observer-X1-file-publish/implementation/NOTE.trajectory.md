@@ -697,3 +697,80 @@ Let t_r be the instant `Store.revoke()` returns on the main thread. That is sync
 - Both payload `.py` files parse as Python 3.8. The payload holds exactly 5 files, and no `__pycache__` exists.
 
 No git action. STATUS, RUNBOOK, ledger, `_bus/`, `witness/`, README and the task file are untouched. No background process is left.
+
+---
+
+# Step 5c — removal submitted before any editor notification, per _bus/16 section 2 and the head's verdict (_bus/17) (home, 2026-11-17)
+
+Source: `/home/hruzam/unikuklatrix/nablarva/toolbox/sublime-observer/` only. The pre-5c source was snapshotted to a scratchpad only so the mutation run could use the pre-5c tests. That snapshot is not evidence. `contract.py` is unchanged, and no change to it was needed.
+
+## 1. What changed
+
+- **`SublimeObserver/publisher.py`, `_Runtime.unshare`, lines 212–226** (was 210–224). The `writer.submit(store.remove_share, …)` call now sits at line 216, inside the same `if self.store is not None:` block as `revoke()` (line 215). So it runs right after the revoke and before any editor call. `debouncer.cancel` stays at 217; it is in-memory only and not a notification. `erase_status` (218–221) was already guarded. `sublime.status_message` (222–226) is now inside `try/except Exception: pass`. No other line of the payload changed.
+- **Effect:** if a notification raises, the removal is still queued, and nothing propagates into the editor. Notifications are now best effort only.
+
+## 2. Routes that revoke (all go through `unshare`; line numbers after the change)
+
+| Route | Call site | Notification calls after revoke |
+|---|---|---|
+| Toggle unshare | `toggle`, publisher.py:189 | erase_status, status_message `unshared` |
+| Path unknown (raising `file_name()`) on events, save, publish | `path_allowed`, publisher.py:238 (reached from `touched` 254, `saved` 261, `publish` 283) | erase_status, status_message `unshared, path unknown (…)` |
+| Path unknown at the poll | `_poll` except, publisher.py:341 → `path_allowed` 238 | same |
+| Sealed path (event, forced save, publish, changed path at the poll via `touched`) | `path_allowed`, publisher.py:244 | erase_status, status_message `unshared, <reason>` |
+| Close | `closed`, publisher.py:271 | erase_status only (`why == 'closed'`) |
+| Invalid view at publish | `publish`, publisher.py:281 | erase_status only |
+| Invalid view at the poll | `_poll`, publisher.py:336 | erase_status only |
+
+On all seven routes, the removal is submitted at line 216, before either call. No route has a console print (`_log`) between revoke and submission.
+
+These are not revocation routes and are unchanged:
+- `_stopped` (writer `Stopped`) clears shares without revoke or removal, because the store is already `live=False`.
+- `stop()` (shutdown path, not ordered).
+- `toggle`'s `refused to share` message at line 201 is for a view that was never shared.
+
+## 3. Tests (`tests/test_publisher.py`, class `RevocationTests`)
+
+- **`test_failing_notification_on_revoke_still_queues_the_removal`** (lines 447–491).
+  - Five routes as subTests: unshare, sealed save, path unknown, close, invalid at the poll. Each route gets a fresh QueueWriter runtime, so a stuck share cannot carry into the next route.
+  - Each subTest shares and drains, then makes both `sublime.status_message` and the view's `erase_status` raise, and acts.
+  - After the drain it asserts: the share is gone from runtime shares, `store._pending == set()`, the share directory is gone, the heartbeat stamp equals now after 1.01 s, and `reader.publisher` accepts. The last assertion is that nothing propagated.
+  - The sealed route uses the synthetic `/srv/app/.env.local`, not a vault spelling.
+- **`test_two_pending_revocations_hold_the_heartbeat_until_both_removals_complete`** (lines 493–521).
+  - Shares A and B, drains, then unshares A by toggle and B by close. It asserts the queue is exactly `[remove_share(A), remove_share(B)]`, then advances 10 s.
+  - It runs only A's removal: A's directory is gone and B's remains. A direct heartbeat leaves the stamp unchanged, and `reader.publisher` gives NotLive.
+  - Then B's removal runs and a heartbeat writes now.
+- **Unit suite:** `python3 -I -S -B -m unittest discover -s /home/hruzam/unikuklatrix/nablarva/toolbox/sublime-observer/tests -v` → **107 run, 107 pass**, 4.4 s (105 before). Log: `evidence/unit-tests-5c.2026-11-17.txt`.
+- **Mutation check:** script `evidence/mutation-check-5c.py`, output `evidence/mutation-check-5c.2026-11-17.txt`. Each mutation runs on a temporary copy of the source with the full suite.
+  - **baseline:** 107 OK.
+  - **m1, exact pre-5c `unshare` body restored:** FAIL in 3 subTests (unshare, sealed save, path unknown). Each fails at the `_pending` assertion, which is the defect itself: the share stays pending. Close and invalid-at-poll pass under m1, as expected, because they call no unguarded notification.
+  - **m2, new order but `status_message` unguarded:** FAIL in the same 3 subTests, at `assertIsNone(raised)`. The removal happens, but the exception reaches the editor.
+  - **m3, `remove_share` clears all pending ids (`_pending.clear()`):** FAIL in `test_two_pending_…` (`1010.0 != 1000.0`, the heartbeat wrote between the two removals). The same mutation against the **pre-5c test suite: 105 OK, nothing caught**. This confirms assay's 5b finding.
+  - An earlier run of m1, before each subTest got a fresh runtime, also failed close and invalid-at-poll, but only through a share left pending by an earlier subTest. That run was superseded; its output was overwritten and not kept.
+- **Hash pins:** no test, and not the task file, pins a payload hash (grep for hex digests, `hashlib`, `digest` in `tests/*.py` except the witness recorder's own text hashing; grep in the task file). `test_install_task.py` is unchanged.
+
+## 4. Disposable trial
+
+`X1_EVIDENCE_DIR=<bed>/implementation/evidence X1_EVIDENCE_PREFIX=disposable-trial-5c X1_NO_OPERATOR_PROBES=1 python3 -I -B tests/disposable_trial.py`, run from the source root. The editor came only from `/tmp/nablarva-observer-4215`.
+
+- **22 of 22 pass**, 155 s. Report: `evidence/disposable-trial-5c.2026-11-17.json`. Console: `evidence/disposable-trial-5c.console.2026-11-17.txt`.
+- `installed_equals_payload: true`.
+- `proc_access.entries_not_self_and_not_started: []`, with 147 pinned pids.
+- `cleanup.started_processes_still_running: []`.
+- `run_user_sublime_observer_exists: skipped`.
+- The trial root was removed.
+- The trial file is unchanged (`ddb0a92b…5966`). The trial exercises unshare and close in the real editor, but not a raising notification. The new path is unit-test evidence only.
+
+## 5. Flagged, not acted on
+
+- `toggle` share route, lines 204–207: the share is put into `self.shares`, then `set_status` and `status_message` run unguarded before `publish` and `_arm_poll`. If either raises, the view counts as shared but is not published until its next event. The poll may also not be armed. This fails closed, since nothing is written, but it is the same class of issue on a non-revoking route. Outside the order.
+- With the real threaded Writer, the removal may now start on the writer thread while the main thread is still setting the status bar. Neither depends on the other (inferred).
+
+## 6. Hashes (sha256, payload)
+
+- `contract.py` `fc8d951bc31c7543259e6edde207a21322c78854789df28268dfbaa116489eef` (unchanged)
+- `publisher.py` `0fb95e5c9509dd89786f41e2c4b9c133c620b04b9e0d51a1be5cac959e4d30cb` (was `f519aec5…f8b2`)
+- `.python-version`, `.sublime-commands`, `.sublime-settings`: unchanged (`5b02189a…`, `63940d84…`, `449ad70b…`).
+- `tests/test_publisher.py` `4b226bb445a6d96b2c131b97969333c4bda54f03d047f52bb93e0431f81cf71f`. All other test files are byte-identical to pre-5c.
+- The payload holds exactly 5 files, and no `__pycache__` exists.
+
+No git action. STATUS, RUNBOOK, ledger, `_bus/`, `witness/`, README, the install task and `contract.py` are untouched. No install, `run.sh` call or deploy. No background process is left. The operator's editor and its profile were not listed, probed or touched.

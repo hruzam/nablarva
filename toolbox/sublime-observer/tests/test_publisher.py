@@ -444,6 +444,81 @@ class RevocationTests(PluginBase):
         w.drain()
         self.assertGreater(self.beat(), first)
 
+    def test_failing_notification_on_revoke_still_queues_the_removal(self):
+        # step 5c (_bus/16 section 2): every route that revokes submits the removal before any
+        # editor notification; a raising status_message or erase_status neither strands the
+        # pending revocation (heartbeats skipped until reload) nor propagates into the editor
+        def boom(*args):
+            raise RuntimeError('synthetic notification failure')
+
+        def sealed_save(v):
+            v.__dict__['path'] = '/srv/app/.env.local'
+            self.listener.on_post_save(v)
+
+        def path_unknown(v):
+            v.__dict__['file_name'] = boom
+            self.listener.on_modified(v)
+
+        def invalid_at_poll(v):
+            v.__dict__['valid'] = False
+            self.clock.advance(0.5 + 0.01)
+
+        routes = (('unshare', self.toggle), ('sealed save', sealed_save), ('path unknown', path_unknown),
+                  ('close', self.listener.on_close), ('invalid at the poll', invalid_at_poll))
+        for ident, (route, act) in enumerate(routes, 11):
+            with self.subTest(route=route):
+                w = self.queued()                   # fresh runtime: routes cannot leak into each other
+                v = self.view(ident)
+                self.toggle(v)
+                w.drain()
+                sid = self.share_id(v)
+                self.sub.status_message, v.__dict__['erase_status'] = boom, boom
+                raised = None
+                try:
+                    act(v)
+                except Exception as exc:
+                    raised = exc
+                finally:
+                    self.sub.status_message = self.sub.messages.append
+                self.assertNotIn(v.id(), self.rt.shares)
+                w.drain()
+                self.assertEqual(self.rt.store._pending, set())
+                self.assertFalse(os.path.exists(self.vdir(sid)))
+                self.clock.advance(1.0 + 0.01)
+                w.drain()
+                self.assertEqual(self.beat(), self.clock.now)       # the heartbeat resumed
+                reader.publisher(self.root, now=self.clock.now)
+                self.assertIsNone(raised)                           # nothing reached the editor
+
+    def test_two_pending_revocations_hold_the_heartbeat_until_both_removals_complete(self):
+        # step 5c (assay, 5b): completing one removal must not end another share's pending revocation
+        w = self.queued()
+        a, b = self.view(11), self.view(12)
+        self.toggle(a)
+        self.toggle(b)
+        w.drain()
+        sid_a, sid_b = self.share_id(a), self.share_id(b)
+        beat = self.beat()
+        self.toggle(a)                              # unshare A: removal queued
+        self.listener.on_close(b)                   # close B: removal queued behind it
+        remove = self.rt.store.remove_share
+        self.assertEqual(w.queue, [(remove, (sid_a,)), (remove, (sid_b,))])
+        self.clock.advance(10.0)                    # timers only queue heartbeats behind both removals
+        fn, args = w.queue.pop(0)
+        fn(*args)                                   # A's removal completes; B's is still pending
+        self.assertFalse(os.path.exists(self.vdir(sid_a)))
+        self.assertTrue(os.path.exists(self.vdir(sid_b)))
+        self.rt.store.heartbeat()
+        self.assertEqual(self.beat(), beat)
+        with self.assertRaises(reader.NotLive):
+            reader.publisher(self.root, now=self.clock.now)
+        fn, args = w.queue.pop(0)
+        fn(*args)                                   # B's removal completes: nothing pending
+        self.assertFalse(os.path.exists(self.vdir(sid_b)))
+        self.rt.store.heartbeat()
+        self.assertEqual(self.beat(), self.clock.now)
+        reader.publisher(self.root, now=self.clock.now)
+
 
 class PathUnknownTests(PluginBase):
     """Step 5b, R4: a raising file_name() never propagates into the editor; the share is revoked."""

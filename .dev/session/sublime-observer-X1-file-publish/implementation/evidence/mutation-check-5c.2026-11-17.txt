@@ -1,0 +1,27 @@
+PRE5C_TESTS = /tmp/claude-1000/-home-hruzam-ia-sync/4ab201b8-3687-47d5-96ce-e6cdb522bacc/scratchpad/pre5c/tests
+baseline-noop => Ran 107 tests in 4.318s -> OK
+m1 old-order-notification-before-submission => Ran 107 tests in 4.341s -> FAILED (failures=3)
+    caught by test_failing_notification_on_revoke_still_queues_the_removal
+      FAIL: test_failing_notification_on_revoke_still_queues_the_removal (test_publisher.RevocationTests.test_failing_notification_on_revoke_still_queues_the_removal) (route='unshare')
+        AssertionError: Items in the first set but not the second:
+      FAIL: test_failing_notification_on_revoke_still_queues_the_removal (test_publisher.RevocationTests.test_failing_notification_on_revoke_still_queues_the_removal) (route='sealed save')
+        AssertionError: Items in the first set but not the second:
+      FAIL: test_failing_notification_on_revoke_still_queues_the_removal (test_publisher.RevocationTests.test_failing_notification_on_revoke_still_queues_the_removal) (route='path unknown')
+        AssertionError: Items in the first set but not the second:
+    expected catcher test_failing_notification_on_revoke_still_queues_the_removal PRESENT
+m2 new-order-status-message-unguarded => Ran 107 tests in 4.352s -> FAILED (failures=3)
+    caught by test_failing_notification_on_revoke_still_queues_the_removal
+      FAIL: test_failing_notification_on_revoke_still_queues_the_removal (test_publisher.RevocationTests.test_failing_notification_on_revoke_still_queues_the_removal) (route='unshare')
+        AssertionError: RuntimeError('synthetic notification failure') is not None
+      FAIL: test_failing_notification_on_revoke_still_queues_the_removal (test_publisher.RevocationTests.test_failing_notification_on_revoke_still_queues_the_removal) (route='sealed save')
+        AssertionError: RuntimeError('synthetic notification failure') is not None
+      FAIL: test_failing_notification_on_revoke_still_queues_the_removal (test_publisher.RevocationTests.test_failing_notification_on_revoke_still_queues_the_removal) (route='path unknown')
+        AssertionError: RuntimeError('synthetic notification failure') is not None
+    expected catcher test_failing_notification_on_revoke_still_queues_the_removal PRESENT
+m3 removal-clears-all-pending-ids => Ran 107 tests in 4.335s -> FAILED (failures=1)
+    caught by test_two_pending_revocations_hold_the_heartbeat_until_both_removals_complete
+      FAIL: test_two_pending_revocations_hold_the_heartbeat_until_both_removals_complete (test_publisher.RevocationTests.test_two_pending_revocations_hold_the_heartbeat_until_both_removals_complete)
+        AssertionError: 1010.0 != 1000.0
+    expected catcher test_two_pending_revocations_hold_the_heartbeat_until_both_removals_complete PRESENT
+    same mutation, PRE-5C test suite: Ran 105 tests in 4.337s -> OK
+        (nothing caught)

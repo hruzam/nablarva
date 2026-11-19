@@ -1,0 +1,35 @@
+{
+  "scope": "synthetic owned PTY only",
+  "checks": {
+    "same_shell_file_requests_retain_cwd_env_function": true,
+    "fresh_process_does_not_retain_prior_cwd_env": true,
+    "tty_and_interactive_line_reply": true,
+    "ctrl_c_signals_foreground_child_shell_survives": true,
+    "pty_dimensions_change": true,
+    "open_pty_survives_brief_unobserved_interval": true
+  },
+  "qualified": false,
+  "python": "3.14.7 (main, Aug 10 2026, 07:46:56) [GCC 16.1.1 20260728]",
+  "pid_namespace": "pid:[4026532881]",
+  "temporary_root": "/tmp/terminal-workspace-probe-zg4833q0",
+  "owned_shell_pid": 4,
+  "shell_exit_status": 0,
+  "unproven": [
+    "native CLI attachment/permissions",
+    "human client attachment",
+    "actual detach/reconnect",
+    "input ownership/takeover",
+    "container isolation",
+    "rendered screen/TUI correctness",
+    "raw single-key mode",
+    "restart/replay safety"
+  ],
+  "all_feasibility_checks_pass": true,
+  "owned_shell_reaped": true,
+  "transcript": "\u001b[?2004hOWNED-PROBE> stty -echo; printf '\\nFIXTURE_READY\\n'\r\n\u001b[?2004l\r\r\nFIXTURE_READY\r\n\u001b[?2004hOWNED-PROBE> \u001b[?2004l\r\r\n\r\nFIRST_FILE_DONE\r\n\u001b[?2004hOWNED-PROBE> \u001b[?2004l\r\r\nFILE_STATE:/tmp/terminal-workspace-probe-zg4833q0/task-a:synthetic-state:4\r\nFUNCTION_RETAINED\r\n\r\nSECOND_FILE_DONE\r\n\u001b[?2004hOWNED-PROBE> \u001b[?2004l\r\r\n\r\nTTY_CONFIRMED\r\nSYNTHETIC_REPLY? \r\nREPLY:human-fixture-reply\r\n\u001b[?2004hOWNED-PROBE> \u001b[?2004l\r\r\nFOREGROUND_READY\r\n\r\nAFTER_INTERRUPT:42\r\n\u001b[?2004hOWNED-PROBE> \u001b[?2004l\r\r\n\r\nSHELL_SURVIVED:4:synthetic-state\r\n\u001b[?2004hOWNED-PROBE> \u001b[?2004l\r\r\n\r\nSIZE:37 101\r\n\r\nSIZE_DONE\r\n\u001b[?2004hOWNED-PROBE> \u001b[?2004l\r\r\n\r\nUNOBSERVED_INTERVAL_FINISHED\r\n\u001b[?2004hOWNED-PROBE> ",
+  "temporary_root_removed": true,
+  "command": "/usr/bin/python3 -I -S -B /home/hruzam/unikuklatrix/nablarva/.dev/session/terminal-workspace-X0-approaches/raw/probe.pty-feasibility.2026-11-17.py",
+  "script_sha256": "1de49ad35d4d7fa689bca0be43b1ee738c2aeb6aa05d465484fb1b0c7ffa0bea",
+  "exit_code": 0,
+  "stderr": ""
+}

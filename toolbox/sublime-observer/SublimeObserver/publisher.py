@@ -213,15 +213,17 @@ class _Runtime(object):
             return
         if self.store is not None:
             self.store.revoke(share.share_id)       # synchronous: queued captures are discarded
+            self.writer.submit(self.store.remove_share, share.share_id)     # before any notification
         self.debouncer.cancel(view_id)
-        try:
+        try:                                        # a failing notification must not reach the editor
             share.view.erase_status(STATUS_KEY)
         except Exception:
             pass
         if why != 'closed':
-            sublime.status_message('Sublime Observer: {}'.format(why))
-        if self.store is not None:
-            self.writer.submit(self.store.remove_share, share.share_id)
+            try:
+                sublime.status_message('Sublime Observer: {}'.format(why))
+            except Exception:
+                pass
 
     def path_allowed(self, view_id, force=False):
         """Synchronous sealed-path check of a shared view. Runs the rule when the file name
