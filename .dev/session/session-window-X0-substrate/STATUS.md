@@ -27,6 +27,7 @@ evidence_state:
     refreshes only on CLI events) — untested.
   - candidate: second tmux status row (handoff.senior-advice §1.3) — untested here.
 related_live_surfaces:
+  - line ledger: ../session-window-X.ledger.md (organ attach: ovitmugen)
   - ~/ia-sync/claude/hooks/statusline.sh + statusLine in ~/ia-sync/claude/settings.json —
     deployed Claude status line authored in this work; stays in ia-sync (deploy surface).
     Changes go through ia-sync compose-first + deploy.sh.
