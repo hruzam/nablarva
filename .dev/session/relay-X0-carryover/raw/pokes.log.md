@@ -78,3 +78,14 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - door: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message …` (no `--resume`), one call, after a look at the bottom rows of %59.
 - line: `[poke p10] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
 - p10 result: call before 21:40:34.100Z · after 21:40:34.276Z · exit 0 · `Queued message 01a2000d-cd4e-74f1-baae-cde8d41defb8`. Remote ref check by me: `origin/core` = `0646bef`, reflog "update by push" 2026-11-21 22:40:46 +0100. Push made.
+
+## p11 — engineer → exec (cycle 10)
+- target checked 2026-11-21T22:00:59Z, bottom rows only: %68 `seniorDev`, foreground `codex` (pid 3356822), footer thread `01a1fefc-0356-7ea1-860c-783a66a91211`, name `exec(codex)|astrobley`, idle composer.
+- door: `codex queue --thread 01a1fefc-0356-7ea1-860c-783a66a91211 --message …` (no `--resume`), one call. First use of this door for this thread.
+- line: `[poke p11] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/10.engineer.point.md — Majkee asked for you as his decision desk; start with theme T1 when he is ready`
+- call: before 22:01:14.445Z · after 22:01:14.646Z · exit 0 · `Queued message 01a20020-ba79-71c0-a2ab-37fef7836fd4 for thread 01a1fefc-0356-7ea1-860c-783a66a91211.`
+- claim level: queue call accepted. Read = only when the desk shows Majkee theme T1 or `_bus/10.exec.return.md` exists.
+
+## p12 — engineer → cartan (push-only, no cycle)
+- Same standing push duty as p10. Carries the commits that open cycle 10 and this log line. Result = the remote ref, checked by me.
+- line: `[poke p12] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
