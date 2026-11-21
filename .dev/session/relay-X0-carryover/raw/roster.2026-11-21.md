@@ -1,7 +1,7 @@
 ---
 kind: party roster (data for pokes; observed, not assumed)
 bed: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover
-rev: 3 (2026-11-21T21:30Z) — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
+rev: 3 (2026-11-21T21:15Z) — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
 observed_by: engineer · 2026-11-21T20:58Z · host home (hruzam) · read-only tmux queries + bottom rows of each pane + ~/.claude/sessions/*.json
 tmux: base session `helloWorld`, grouped views `helloWorld-37 … -41`. Windows by name — engineer, controller, oraculum, myShell, auditor. tmux 3.7c.
 versions: Claude Code 2.1.330 · codex-cli 0.171.0
