@@ -33,8 +33,10 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
   cwd: ~/unikuklatrix/nablarva
   door_in: codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<one line>"   # no --resume; queued is not read
   door_fallback: one labelled `[manual …]` line into %59 after a definite clean failure, look first
+  door_out: files only. His sandbox cannot reach tmux (`tmux display-message` → Operation not permitted, 01.cartan.return.md field 2), so he can send no bell and cannot look at panes.
   writes: only the RETURN path a POINT names
   note: NOT the X0 pen. The X0 controller is thread 01a1d582… on office.
+  confirmed: thread, cwd and co-thinker role by himself (cycle 01). Pane and model are my observation only.
 
 - seat: oraculum            # Codex-side feedback / audit
   vendor: codex
@@ -56,7 +58,8 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
   pane: "%61"
   cwd: ~/reposoma/.majkee   # operator vault, sealed (L22). I talk to the seat; I never read the vault.
   door_in: tmux pane %61 — one labelled line, look first (bottom rows only)
-  writes: her own files; in this bed only a RETURN path a POINT names
+  writes: her own files; in this bed only a RETURN path a POINT names. She does not commit project files (02.myshell.return.md).
+  confirmed: window list matches this roster (her own `tmux list-windows`, 2026-11-21T19:03Z, cycle 02).
 
 - seat: majkee
   vendor: human
@@ -69,6 +72,10 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
 1. **Challenge before a lock:** find the weakest point of my plan or document and say it plainly.
 2. **Non-author check at acceptance edges:** claims against the files, CONFIRMED / REFUTED / MISSING.
 3. **Codex-side hands** when a goal needs the Codex runtime (for example a Codex door in G3), by explicit POINT.
+
+**Open label (for Majkee, one line):** he told myShell that Cartan "will provide `controller` job and co-thinking, eventually can be
+asked for prviding some coding job" (02.myshell.return.md §4.1). I read "controller job" as *checking my work* (duty 2), not as a
+second pen. If he means more than that, this roster changes.
 
 He holds no pen here: no STATUS, no goal files, no git. He proposes goal changes in his RETURN. He may consult `oraculum` on the
 Codex side for one bounded question per cycle and publishes that answer verbatim, marked as oraculum's, inside his RETURN.

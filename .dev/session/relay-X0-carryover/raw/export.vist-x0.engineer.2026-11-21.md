@@ -6,7 +6,8 @@ origin_bed: ~/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld   # short na
 origin_revision: nablarva core 75227bc + three uncommitted origin edits that are not mine (see §2)
 archive_of_trial: ~/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests   # short name in this file is A/
 read: all 45 files of O/ (root 3, _bus 3, raw 39) on 2026-11-21
-status: UNVERIFIED by a non-author until cycle 01 closes (goal G2). A summary is a claim; the origin file wins.
+rev: 2 (2026-11-21) — repaired once after cartan's non-author check, cycle 01 (43 confirmed, 7 refuted, 7 missing-source; all 14 addressed below)
+status: checked once by a non-author (../_bus/01.cartan.return.md, ../_bus/01.engineer.verdict.md). A summary is still a claim; the origin file wins.
 ---
 
 # What the VIST X0 bed hands to the relay line
@@ -34,10 +35,11 @@ decision on the packet is still open.** No new experiment has run since 2026-11-
 | Operator desk: Trajectory `06352fda` (home), successor unbound | O/STATUS.md `operator_desk` |
 | Outside witness: Claude `c266d10a…`, note-only, moved to office; no sweep ever called | O/raw/witness.host-move.2026-11-19.md |
 
-Observed on home 2026-11-21 (mine, not in the origin files):
-- O/RUNBOOK.md has an **uncommitted edit by Majkee** (the `goal:` line). The committed bytes still match the review hash `9081d353…`. If that edit is committed, the review no longer covers the file.
-- O/majkee-personal-notes.md is untracked and his. `relay-X.ledger.md` and `vist-X.ledger.md` carry an uncommitted merge by myShell (Majkee's request, 2026-11-21).
-- The X0 desk session `06352fda` is not running: its pane `%49` shows a shell. The `controller` window in today's tmux party is a **fresh** Codex thread `01a1ff5e…`, not the X0 pen.
+Observed on home 2026-11-21 (mine, not in the origin files; each with its source):
+- O/RUNBOOK.md has an **uncommitted edit** of the `goal:` line. Disk differs from the review hash; `git show HEAD:` still matches `9081d353…` (cartan re-checked: HEAD 5/5, disk 4/5). If that edit is committed, the review no longer covers the file. *Whose edit:* Majkee said so in the engineer session on 2026-11-21 ("these are mine, now I am studying runbook"), about this edit and about O/majkee-personal-notes.md. Git itself shows no author for uncommitted work.
+- `relay-X.ledger.md` and `vist-X.ledger.md` carried an uncommitted merge. *Whose:* the ledger's own `by:` line and ../_bus/02.myshell.return.md (myShell, on Majkee's request, 2026-11-21).
+- The X0 desk session `06352fda` is not running here: `tmux list-windows -a` on 2026-11-21 showed pane `%49` with current command `zsh`. O/STATUS still names it as desk; that binding is a dated record, not a live fact.
+- The `controller` window in today's tmux party is a **fresh** Codex thread `01a1ff5e…` (its own footer; confirmed by that thread in ../_bus/01.cartan.return.md), not the X0 pen.
 
 ## 3. What is established and what is not
 
@@ -47,12 +49,14 @@ Observed on home 2026-11-21 (mine, not in the origin files):
 | Codex→Claude 3/3 through the tmux keystroke adapter | supported, version-specific screen reading | O/raw/handoff.vistmini-01-evidence… §1,§3 |
 | Claude→Codex through `codex queue --thread` (q01 first; three ordinary + scoped samples) | supported, **bounded** | O/raw/handoff.vistmini-01-evidence… §4; O/raw/handoff.vistmini-05-team.cartan… "Queue evidence has bounds" |
 | Claude→Codex by tmux keystrokes | **failed 0/3** (29, 29, 27); cause is a hypothesis (paste window) | O/raw/handoff.vistmini-01-evidence… §2; O/raw/handoff.vistmini-cartan.cartan… |
-| Codex→Codex native `send_message_to_thread` | stable on office; fails `-32600 active writer` when the thread is held elsewhere | O/raw/handoff.vistmini-01-evidence… §3 |
-| Claude→Claude / Codex→Claude native messaging | **seen once**, mechanism not inspected; not a qualified route | O/raw/handoff.vistmini-04-longrun… fact 2; O/raw/handoff.vistmini-05-team.cartan… |
+| Codex→Codex native `send_message_to_thread` | worked on office (cycles 09–11); one `-32600 active writer` failure on home. The cause is a clue, not an established rule | O/raw/handoff.vistmini-01-evidence… §3; O/raw/handoff.vistmini-cartan.cartan… ("a clue, not a causal fix") |
+| Codex→Claude through Claude cross-session messaging, via a "Codex delivery worker" | **reported once**; how the worker reached the session is unknown; not a qualified route | O/raw/handoff.vistmini-01-evidence… §1 (out of band), §3; O/raw/handoff.vistmini-05-team.cartan… |
+| Claude→Claude `SendMessage` / `ListAgents` | **documented, untested** in the evidence file. Handoff 04 fact 2 says it was "seen once working (oraculum → trajectory, cycle 09)" — an author account; handoff 05 says one reported SendMessage establishes no general route | O/raw/handoff.vistmini-01-evidence… §3; handoff 04 fact 2; handoff 05 |
 | Cross-vendor review found six overclaims (R1–R6) in the trial report | observed once; not a measured superiority result | handoff 04 fact 3; handoff 05 |
 | Controller succession by read-back → acceptance → activation → uptake | observed once, **warm** successor | O/raw/readback.controller…, acceptance.controller…, activation.controller…, checkpoint.controller… |
 | Six carried cases U01–U06 | **UNRUN / UNQUALIFIED** | O/raw/preregister.vistmini-carryover.cartan.2026-11-14.md |
 | Cross-host anything · permission boundaries · reliability numbers · survival of a CLI upgrade | **not established** | handoff 01 §5 |
+| The accepted trial report and the readable archived report are **different bytes** | accepted experimental report = ia-sync@3584a02, sha `dc219b62…`; the readable archive copy adds the later operator disposition, sha `fd1b1e20…` | O/raw/preparation.sources.2026-11-14.json (`accepted-report`); ~/ia-sync/.dev/records/vist/2026-11-14/MANIFEST.json maps every original path |
 
 Three successes are a smoke test, not statistics. Queue acceptance, submission, a native turn, a file read, a worked receipt and
 accepted work are six different observations (O/raw/cache.controller-office… "Review and coordination lessons").
@@ -60,8 +64,10 @@ accepted work are six different observations (O/raw/cache.controller-office… "
 ## 4. The C04 lesson (why "delivered" needs four layers)
 
 Source: O/raw/preparation.c04-timeline.2026-11-14.md. Same message type, two runs:
-- **r1:** the carrier accepted the queued message and the work arrived, but the sensor said `ready` while the receiver was still busy. Carrier success, **observation failure**.
-- **r2:** the sensor said `busy`, the queue accepted, the receiver took the turn later, the nonce matched.
+- **r1:** the carrier accepted the queued message and the work arrived, but the sample taken **for the new attempt** said `ready` while the receiver's setup turn was still running. Carrier success, **observation failure**.
+- **r2:** the sample for the new attempt said `busy`, the queue accepted, the receiver took the turn later, the nonce matched. One scoped correlation, not a qualified classifier.
+- In **both** runs the `ready` read *before* the call was stale data from the earlier setup attempt. Do not mix it with the new attempt's observation.
+- r1 and r2 are **different native receiver lifetimes** (different thread and PID, same pane) and different helper builds. The sender's wrapper timestamp is finer than the queue log (seconds only).
 
 Layers to keep apart: (1) native activity, (2) reported observation, (3) carrier acceptance, (4) receiver receipt. A later good receipt
 does not repair an earlier wrong observation.
@@ -90,28 +96,32 @@ nothing. Its exact file-access and redaction scope must be named in the assignme
 | Direction | Door | Evidence class |
 |---|---|---|
 | Claude→Codex | `codex queue --thread <uuid> --message <one line>` (no `--resume`) | worked in the trial; queued ≠ read |
-| Codex→Claude | tmux pane, look-first; adapter `bus-poke.sh` in A/scripts/ (archived, not live) | 3/3 in the trial; fails when the receiver is mid-work (exit 29) |
-| Codex→Codex | native thread messaging | stable when the target has no other writer |
-| Claude→Claude | native session messaging | seen once; untested here |
+| Codex→Claude | tmux pane, look-first; adapter `bus-poke.sh` in A/scripts/ (archived, not live) | 3/3 in the trial. Adapter codes: `24` busy, `29` unrecognised composer (handoff 01 §2). Handoff 04 reports that rings into a working Claude seat came back 29 |
+| Codex→Claude | Claude cross-session messaging via a delivery worker | reported once; mechanism unknown |
+| Codex→Codex | native thread messaging | worked on office; one active-writer failure on home; no rule established |
+| Claude→Claude | `SendMessage` / `ListAgents` | documented; untested in the evidence file; one author account of it working |
 | state of a Claude seat | `claude agents --json` | documented, not qualified |
 | state of a Codex seat | `read_thread` (Codex native) | used once for q01 |
 
-Versions: trial ran codex-cli 0.167.2 / Claude Code 2.1.286 (handoff 01). The packet probed 0.169.0 / 2.1.323. **Home today:
-codex-cli 0.171.0, Claude Code 2.1.330, tmux 3.7c.** No door has been re-checked on today's versions.
+Versions: handoff 01 records codex-cli 0.167.2 / Claude Code 2.1.286 for its early snapshot (2026-11-12). The archived trial report (line 83) cites Codex 0.169.0 / Claude 2.1.323 for the queue results and later signatures. The C04 timeline says installed-version probes do **not** prove which binary ran at event time. **Home today: codex-cli 0.171.0, Claude Code 2.1.330, tmux 3.7c** (re-checked by cartan). No door has been qualified on today's versions.
 
-Lead from this session (untested): Claude Code session files `~/.claude/sessions/<pid>.json` carry `peerProtocol`, `peerFeatures`
-(`notify_idle`, …) and a messaging socket field, plus live `name`, `status` (busy/idle) and the hosting `tmux` pane. That is a native
+Today's coordination, as observations only (../raw/pokes.log.md): one `codex queue` call was accepted and a native turn started within 8 s; one look-first tmux paste into a Claude pane was submitted. Cartan's Codex sandbox **cannot reach tmux** (`Operation not permitted`, his RETURN field 2), so from his seat there is no tmux door at all in this mode.
+
+Lead from this session (my own observation of the files on 2026-11-13 and 2026-11-21; **field meanings are not verified** against any documentation, and nobody else has checked it): Claude Code session files `~/.claude/sessions/<pid>.json` carry `peerProtocol`, `peerFeatures`
+(`notify_idle`, …) and a messaging socket field, plus live `name`, `status` (busy/idle) and the hosting `tmux` pane. That may be a native
 state probe and maybe a native door into Claude — the weak direction. Do not print the socket path or the `.key` files.
 
 ## 7. Rules that bind this line (pointer, never copy)
 
-- **Locks:** `~/unikuklatrix/nablarva/.dev/session/flag.md` — L12 (core, plain pull/push, never rebase, serial owned-path Git), L14 (relay foundations), L20 (observation ≠ decision ≠ action), L21 (each implementation / activation / delivery / transport operation needs its own release), L22 (`.majkee/`, `.hlm/` sealed from agent reading).
+- **Locks:** `~/unikuklatrix/nablarva/.dev/session/flag.md` — L12 (one repo, plain `git pull`/`push` on `core`, never `pull --rebase`, parallel work via `git worktree`), L14 (relay foundations; reserved names `relay-00-research` → `relay-01-pty` / `relay-02-tracker`), L20 (observation ≠ decision ≠ action), L21 (no **shared** layer, framework or transport implementation is authorised; implementing, activating, delivering through or adopting a transport for one needs its own separate release), L22 (`.majkee/`, `.hlm/` sealed from agent reading).
+- **Working holds, not locks:** serial, owned-path Git windows with foreign work left alone (O/STATUS `holds`); operation-specific authority per case — each proposed run names its action, owner, permission and side effects (O/raw/preparation.qualification-matrix…, O/raw/plan.runbook-and-team… "Release is action-specific").
+- **Operative decision for this line:** O/raw/decision.shared-file-poke-relay.majkee.2026-11-19.md — file-poke is shared and development-limited; future coordination work runs on **relay**; VIST X0 keeps its identity, gate and frozen packet; the L14 names and gates stay; launched RUNBOOKs are never rewritten and a retired chapter keeps a tombstone.
 - **Shared practice:** `~/reposoma/raw.guides/bus/GUIDE.md` (POINT / RETURN / VERDICT) and `~/reposoma/raw.guides/bus/res/file-poke.md` (provisional; write → poke → work → return → verify). The using session carries the retirement debt of file-poke.
 - **Fallback poke "like sudo":** look first, label `[manual …]`, once, never after an uncertain send, record it — O/raw/decision.majkee.fallback-poke.2026-11-14.md.
 - **Never retry or clear:** historical `t03` and `c08r1-05-ae3ee8e7` (home state file still present 2026-11-21).
 - **No carrier switch after an uncertain submission** until the receipt is reconciled. One logical message id across carriers.
 - **Author ≠ accepting reviewer.** Changed bytes after a review = a new review input.
-- **Match role and output before dispatch:** a read-only seat cannot write a RETURN; plan its publisher, never impersonate (O/raw/plan.runbook-and-team… "Reviewer output contract").
+- **Match role and output before dispatch:** a read-only seat cannot write a RETURN; plan its publisher, never impersonate (O/raw/plan.runbook-and-team… "Reviewer output contract"). The read-only route was used once: a hard read-only challenger's final was published verbatim, attributed, outside the BUS RETURN path (O/raw/review.shared-file-poke.challenger.2026-11-19.md).
 - **Majkee's decisions go to disk verbatim** with the question he answered.
 - **Disruptive cases run on disposable samples**, never on senior panes.
 
@@ -143,16 +153,16 @@ orchestration layer merely because the trial used one.
 ## 10. Decisions still owed by Majkee (carried, not mine to make)
 
 1. X0 packet: ACCEPT / REVISE / STOP. (O/STATUS.md)
-2. `git push` runs without a prompt for every seat in ia-sync and nablarva; "only the controller pushes" is not enforced. Keep or restore the prompt. (O/raw/cache.operator-desk.trajectory.2026-11-20.md, owed #2)
+2. `git push` without a prompt: the desk cache **reports** it for every seat in ia-sync and nablarva on all three hosts, so "only the controller pushes" is not enforced. Checked here only for Claude on home: `.claude/settings.local.json` in both repos allows `Bash(git push)` and `Bash(git push -q)`. Codex and the other hosts are not checked. Keep or restore the prompt. (O/raw/cache.operator-desk.trajectory.2026-11-20.md, owed #2)
 3. Witness hook extras beyond the brief (`-L <name>`, short aliases). (same file, owed #3; O/raw/witness.host-move…)
 4. Whether the fallback poke applies to the witness. (O/raw/witness.host-move…)
 
 ## 11. Tensions I see (engineer's view; not resolved anywhere in the origin bed)
 
-- **T1 — L14 D1 against the trial's evidence.** L14 D1 says PTY is the base layer and vendor doors (`codex queue`, Claude channels) are "weather, parked". The trial found the opposite in practice: keystrokes into Codex failed 0/3 and the vendor door worked. Trajectory's kept disagreement is handoff 02 S9 ("PTY = sensor, receipts = truth, native doors = actuator where they exist"). Measuring doors adopts nothing; adopting one touches L14 and is Majkee's call.
+- **T1 — L14 D1 and the trial's directional asymmetry.** L14 D1 keeps PTY as the base layer and parks vendor doors (`codex queue`, Claude channels) as "weather". The trial does **not** contradict that; it shows an asymmetry: PTY keystrokes delivered 3/3 **into Claude** and 0/3 **into Codex**, where the vendor door worked. Trajectory's kept disagreement is handoff 02 S9 ("PTY = sensor, receipts = truth, native doors = actuator where they exist"). The evidence supports comparing actuators under a release. It gives no ruling on the base layer; that stays Majkee's.
 - **T2 — two live beds on one line.** X0's gate is open while this bed starts. Rule I set for this bed: no U-case runs here until Majkee accepts the X0 packet or explicitly carries that case here.
-- **T3 — today's party panes are shell-rooted** (`exec zsh -l`, then the CLI). If an agent exits, a typed poke lands in a shell. Look before every typed line.
-- **T4 — evidence custody.** The eight local C04 inputs pinned by the packet live in `/tmp/vc08r1.tkz50zbf` and `/tmp/vc08r2.kk50sqqh` on home. Both exist today; a reboot loses them. The packet says hashes do not prove durable custody. Copying them needs Majkee's word (they are host-local, private material).
+- **T3 — today's party panes are shell-rooted.** My read-only tmux query on 2026-11-21 showed `pane_start_command` = `exec zsh -l` with `claude` / `codex` as the current command in all four windows (../raw/roster.2026-11-21.md). Nobody else has verified it (cartan's sandbox cannot query tmux). If an agent exits, a typed poke lands in a shell. Look before every typed line.
+- **T4 — evidence custody is unresolved.** The eight local C04 inputs pinned by the packet live in `/tmp/vc08r1.tkz50zbf` and `/tmp/vc08r2.kk50sqqh` on home. Both directories exist today (seen by me and by cartan); their bytes were not re-hashed. `/tmp` on home is `tmpfs` (`findmnt /tmp`), so its contents do not survive a reboot. The packet says hashes do not prove durable custody. Copying them needs Majkee's word (host-local, private material). Carried as goal G9.
 - **T5 — versions moved** since every recorded observation (§6).
 
 ## 12. Coverage map — every origin file
