@@ -1,7 +1,7 @@
 ---
 kind: party roster (data for pokes; observed, not assumed)
 bed: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover
-rev: 2 (2026-11-21T21:00Z) — team widened by Majkee, see decision.majkee.team-and-doors.2026-11-21.md
+rev: 3 (2026-11-21T21:30Z) — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
 observed_by: engineer · 2026-11-21T20:58Z · host home (hruzam) · read-only tmux queries + bottom rows of each pane + ~/.claude/sessions/*.json
 tmux: base session `helloWorld`, grouped views `helloWorld-37 … -41`. Windows by name — engineer, controller, oraculum, myShell, auditor. tmux 3.7c.
 versions: Claude Code 2.1.330 · codex-cli 0.171.0
@@ -32,13 +32,13 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
   window: controller
   pane: "%59"
   cwd: ~/unikuklatrix/nablarva
-  permissions: Full Access — Majkee's word (decision file) and the pane line "Permission selection requested … Full Access" seen 20:58Z. His own probe is asked in cycle 03; until it returns this is unconfirmed from his side.
+  permissions: Full Access — Majkee's word, and his own probe in cycle 03 (`:danger-full-access`, approval policy `never`; his report, consistent with what he did).
   door_in: codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<one line>"   # no --resume; queued is not read
   door_fallback: one labelled `[manual …]` line into %59 after a definite clean failure, look first
-  door_out: files, plus the reply bell into %58 once his probe shows tmux is reachable. In cycle 01 his sandbox could not reach tmux (01.cartan.return.md field 2); that was before the permission change.
+  door_out: files, plus the reply bell into %58 (bell r03 arrived 2026-11-21T21:08Z). Git remote reachable — one push made, 99ca617..a7321d6.
   writes: only the paths a POINT names. No STATUS, no goal files, no commits unless a POINT gives him owned paths.
   note: NOT the X0 pen. The X0 controller is thread 01a1d582… (office record).
-  confirmed: thread, cwd and the earlier co-thinker role by himself (cycle 01). Pane and model are my observation only.
+  confirmed: thread, cwd, controller role, tmux reach, push and bell by himself (cycle 03). Model is my observation only.
 
 - seat: oraculum            # opposer and counter-signature (role below)
   vendor: codex
@@ -49,9 +49,9 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
   pane: "%60"
   cwd: ~/unikuklatrix/nablarva
   door_in: codex queue --thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1 --message "<one line>"
-  door_out: files; reply bell if her sandbox reaches tmux (unknown until cycle 04 returns)
+  door_out: the RETURN file only. She can read tmux, but her identity file forbids operating a transport, so she rings no bell (04.oraculum.return.md field 4; ~/.germline/agents/oraculum/identity.md "Boundaries"). I check her RETURN path myself.
   writes: only the RETURN path a POINT names
-  seen: 20:58Z idle, "Standing by for trajectory's message".
+  confirmed: thread, pane, cwd and the opposer role by herself (cycle 04), with the correction above.
 
 - seat: auditor             # outside audit (role below); a second Cartan identity
   vendor: codex
@@ -62,9 +62,9 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
   pane: "%66"
   cwd: ~/unikuklatrix/nablarva
   door_in: codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<one line>"
-  door_out: files; reply bell if its sandbox reaches tmux (unknown until cycle 05 returns)
+  door_out: files, plus the reply bell into %58 (bell r05 arrived 2026-11-21T21:10Z). Git remote not probed.
   writes: only the RETURN path a POINT names
-  seen: 20:58Z idle, waiting for trajectory's message before reading further.
+  confirmed: seat, cwd, window and pane by itself (cycle 05). Model and thread id rest on Majkee's record and my dispatch.
 
 - seat: myshell             # Majkee's desk; continuity over the project task is partly her job (Majkee D3)
   vendor: claude
@@ -98,7 +98,9 @@ He holds no pen: no STATUS, no goal files, no release decisions. The push servic
 way around a permission another seat lacks (scar S7), and it is not to be stretched into "run this for me because I may not".
 
 **oraculum — opposer and counter-signature.** A peer of my tier from the other vendor. Called before a lock, before a gate text goes
-to Majkee, and before a goal that carries a release starts. Senior dev partner if a build is released. No pen.
+to Majkee, and before a goal that carries a release starts. Strategic review and synthesis only: by her identity file she does not
+implement or review code, does not operate transports and does not push. So she is **not** a senior dev partner and she rings no bell.
+A POINT to her asks for a file and nothing else. No pen.
 
 **auditor — outside audit.** One bounded audit of this bed now (cycle 05). Afterwards a candidate for the independent observer that
 G8 requires; otherwise Majkee can close the window. No pen.

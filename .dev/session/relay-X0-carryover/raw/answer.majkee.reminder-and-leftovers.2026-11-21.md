@@ -6,8 +6,14 @@ by: engineer · host home · checked 2026-11-21T21:00Z
 
 # 1. A vendor-neutral "friendly reminder" with a timer
 
-**Yes, and most of it is standard.** The pattern is a deadline, a watchdog, at most one harmless repeat, then a human is told.
+**Yes, and most of it is standard.** The pattern is a deadline, a finite check, and a human who is told.
 The goal is drafted as `../goals/G10.friendly-reminder.md`, with the edge cases listed there.
+
+*Corrected after cycles 04 and 05 (oraculum, auditor).* My first wording said "at most one harmless repeat". That was wrong:
+after an uncertain first send nothing is repeated until the receipt is reconciled (`~/reposoma/raw.guides/bus/res/file-poke.md`,
+"When the normal mechanism fails"). The same chapter already describes the check-in you are asking for ("Keep rhythm without a
+ping loop"): finite, file-only note, no empty reminders, no health inferred from silence. And a line typed into the waiting
+owner's own pane is also an input, so stage 1 only prints and writes a note.
 
 - **Seeing who is silent** needs no script: tmux `monitor-silence <seconds>` flags a window that printed nothing for that long.
   It is off on home today (`monitor-silence 0`). Setting it is your hand.

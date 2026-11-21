@@ -24,9 +24,8 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 - [ ] Origin bed `vist-X0-helloWorld` (VIST X0, not a relay session) — documentary gate OPEN; Majkee's ACCEPT / REVISE / STOP on the
   reviewed packet is owed · [STATUS](vist-X0-helloWorld/STATUS.md) · [RUNBOOK](vist-X0-helloWorld/RUNBOOK.md) ·
   its pen (Codex thread `01a1d582…`) sits on office; no seat on home records that decision today
-- [ ] relay X0 `relay-X0-carryover` — OPEN, gate PROVISIONAL (Majkee to confirm) · pen: engineer (trajectory, Claude) ·
-  co-thinker cartan (Codex) · carries the VIST X0 property by pointer; goals as small files, no RUNBOOK (provisional try) ·
-  [STATUS](relay-X0-carryover/STATUS.md) · [goals](relay-X0-carryover/goals/README.md)
+- [ ] relay X0 `relay-X0-carryover` — carries the VIST X0 property by pointer; goals as small files, no RUNBOOK (provisional try) ·
+  gate, pen and team live only in its [STATUS](relay-X0-carryover/STATUS.md) · [goals](relay-X0-carryover/goals/README.md)
 - [ ] Standing development debt — retire the provisional file-poke: qualify the actual replacement, map its
   coverage, then repair/remove the provisional chapter/manifest and authoring/future-session references under
   the accepted scope. The qualifying head owns that proposal; unresolved pieces carry forward.
