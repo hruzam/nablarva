@@ -77,3 +77,4 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - A push-only poke under the controller's standing push duty (roster, "cartan — controller", item 2). No POINT and no RETURN: the result is the remote ref, which I check myself with `git ls-remote` and the reflog. It carries the commit that closes cycle 09 and contains this log line.
 - door: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message …` (no `--resume`), one call, after a look at the bottom rows of %59.
 - line: `[poke p10] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
+- p10 result: call before 21:40:34.100Z · after 21:40:34.276Z · exit 0 · `Queued message 01a2000d-cd4e-74f1-baae-cde8d41defb8`. Remote ref check by me: `origin/core` = `0646bef`, reflog "update by push" 2026-11-21 22:40:46 +0100. Push made.

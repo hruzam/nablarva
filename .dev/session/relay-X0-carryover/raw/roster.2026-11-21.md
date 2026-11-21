@@ -1,9 +1,9 @@
 ---
 kind: party roster (data for pokes; observed, not assumed)
 bed: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover
-rev: 3 (2026-11-21T21:15Z) — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
+rev: 4 (2026-11-21T22:00Z) — exec desk added on Majkee's request (cycle 10). rev 3 — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
 observed_by: engineer · 2026-11-21T20:58Z · host home (hruzam) · read-only tmux queries + bottom rows of each pane + ~/.claude/sessions/*.json
-tmux: base session `helloWorld`, grouped views `helloWorld-37 … -41`. Windows by name — engineer, controller, oraculum, myShell, auditor. tmux 3.7c.
+tmux: base session `helloWorld`, grouped views `helloWorld-37 … -41`. Windows by name — engineer, controller, oraculum, myShell, auditor, seniorDev. tmux 3.7c.
 versions: Claude Code 2.1.330 · codex-cli 0.171.0
 warning: every pane root is `zsh -l` (the CLI was started from a shell). If an agent exits, typed text lands in a shell. Look before every typed line.
 stale_after: any window rebuild, CLI restart or host move. Pane ids and native ids must be re-read then.
@@ -66,6 +66,19 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
   writes: only the RETURN path a POINT names
   confirmed: seat, cwd, window and pane by itself (cycle 05). Model and thread id rest on Majkee's record and my dispatch.
 
+- seat: exec                # Majkee's decision desk for this bed (role below)
+  vendor: codex
+  model: GPT-6.2-Sol medium
+  thread: 01a1fefc-0356-7ea1-860c-783a66a91211
+  thread_name: "exec(codex)|astrobley"
+  window: seniorDev
+  pane: "%68"
+  cwd: ~/unikuklatrix/nablarva
+  door_in: codex queue --thread 01a1fefc-0356-7ea1-860c-783a66a91211 --message "<one line>"
+  door_out: files; one reply bell into %58 at the end of cycle 10 if its seat reaches tmux (not probed)
+  writes: only the two paths POINT 10 names — the walkthrough record and its RETURN
+  seen: 2026-11-21T21:58Z idle, footer carries the thread id, pid 3356822. Not yet confirmed by itself.
+
 - seat: myshell             # Majkee's desk; continuity over the project task is partly her job (Majkee D3)
   vendor: claude
   model: Fable 5.2 medium
@@ -104,6 +117,10 @@ A POINT to her asks for a file and nothing else. No pen.
 
 **auditor — outside audit.** One bounded audit of this bed now (cycle 05). Afterwards a candidate for the independent observer that
 G8 requires; otherwise Majkee can close the window. No pen.
+
+**exec — Majkee's decision desk.** Majkee asked for this seat to walk him through the owed decisions one theme at a time and to
+record his words verbatim (he usually asks myShell). It presents and records; it decides nothing, releases nothing and acts on no
+answer. I turn the record into assignments afterwards. No pen.
 
 **A second relay Cartan — not asked for.** One controller covers hands and push today, and an idle seat is a cost. I ask Majkee for it
 when crawling and reading start to eat the controller's context.

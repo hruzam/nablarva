@@ -1,7 +1,7 @@
 # STATUS: relay-X0-carryover
 
 ```yaml
-updated: 2026-11-21 22:40 CET
+updated: 2026-11-21 23:00 CET
 writer: engineer (trajectory · claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) · sole pen of this bed
 host: home · hruzam
 worktree: /home/hruzam/unikuklatrix/nablarva · core · upstream origin/core. Foreign uncommitted work present and left alone —
@@ -9,7 +9,7 @@ worktree: /home/hruzam/unikuklatrix/nablarva · core · upstream origin/core. Fo
 pen: engineer since 2026-11-21 (Majkee, raw/decision.majkee.open-bed.2026-11-21.md).
 team: >-
   Two at work — engineer (pen) and cartan (controller — hands, push, non-author check). Two on call — oraculum (opposer and
-  counter-signature; files only, no bell, no code) and auditor (outside audit). Desk — myshell (continuity).
+  counter-signature; files only, no bell, no code) and auditor (outside audit). Desks — myshell (continuity) and exec (Majkee's decision walkthrough, cycle 10).
   Roles, ids and doors are in the roster.
 shape: No RUNBOOK. Goals are small files in goals/ (provisional, uncanonical try — Majkee D3.5). This STATUS is the only doing-state
   and the only entry point. Goal files, goals/README.md and goals/OVERVIEW.md carry no "running" and no order.
@@ -22,13 +22,15 @@ files:
   incident: raw/incident.stray-claude-session.2026-11-21.md        # a Claude session started by accident in cycle 07; what it read
   roster: raw/roster.2026-11-21.md                                 # rev 3 — seats, doors, roles; re-read against live tmux before any poke
   pokes: raw/pokes.log.md                                          # every poke sent, append-only
+  walkthrough: raw/walkthrough.sheet.2026-11-21.md                 # the eleven decision themes put to Majkee, each with context, buys, cost, consequences
+  decisions_walkthrough: raw/decision.majkee.walkthrough.2026-11-21.md   # written by the exec desk during cycle 10; absent until Majkee starts
   goals_rules: goals/README.md
   goals_overview: goals/OVERVIEW.md                                # for Majkee — context, buys, cost, consequences; the goal files win
   line_ledger: ../relay-X.ledger.md
   card: ~/reposoma/_cold-start/card/CS.relay-X0-carryover.2026-11-21.md   # clean-table entry; a pointer, not a second state
 goals:   # every goal file, its rev, and where it stands. This list is the state; the files hold the definition.
   - G0.umbrella.md · rev 3 · proposed umbrella, NOT confirmed by Majkee for this bed
-  - G1.party-binding.md · rev 4 · bound — engineer, cartan, myshell, oraculum, auditor. Stays open for rebuilds and new seats.
+  - G1.party-binding.md · rev 4 · bound — engineer, cartan, myshell, oraculum, auditor; exec is being bound in cycle 10. Stays open for rebuilds and new seats.
   - G2.export-verified.md · rev 4 · DONE — export rev 4 after four non-author reads (14 points, 8, 1, none); closed by VERDICT 09
   - G3.door-inventory.md · rev 4 · DONE — raw/doors.inventory.2026-11-21.md, corrected and checked (VERDICTs 07, 08). No door adopted. Cycle 09 added the r06 observation.
   - G4.u01-unknown-view-fixture.md · rev 2 · waits for Majkee (executing bed + capture and redaction scope)
@@ -48,6 +50,7 @@ bus:     # every cycle. A cycle is closed only by its VERDICT.
   - 07 · cartan · G3 rev 3 door inventory · CLOSED with REVISE · 07.engineer.point.md, 07.cartan.return.md, 07.engineer.verdict.md
   - 08 · cartan · one push; re-check of export rev 3; correction of two inventory rows and the missing hazard · CLOSED (ACCEPT) · 08.engineer.point.md, 08.cartan.return.md, 08.engineer.verdict.md
   - 09 · cartan · one push; re-check of one sentence in export rev 4; r06 observation into the inventory · CLOSED (ACCEPT) · 09.engineer.point.md, 09.cartan.return.md, 09.engineer.verdict.md
+  - 10 · exec · decision walkthrough with Majkee, at his pace; the desk records verbatim and acts on nothing · OPEN · 10.engineer.point.md → 10.exec.return.md
 gate: >-
   PROVISIONAL (drafted by the pen holder with oraculum's wording, cycle 04; Majkee confirms or rewrites) — Will Majkee accept
   export rev 4 and the goal revisions listed under `goals:` above as the relay planning baseline? Acceptance is documentary only.
@@ -64,10 +67,11 @@ checkpoint: >-
   ran. The only intended sends are coordination pokes and bells. Cycle 08 closed — 7 of 8 repairs stand, the inventory is
   corrected and G3 is done; bell r06 turned out to be a paste whose Enter returned 0 and submitted nothing. Cycle 09 closed —
   the last export sentence stands, G2 is done. The team has stopped; everything further needs Majkee.
-in_flight: none. All nine cycles are closed. One push-only poke (p10) carries the closing commit; check `git status -sb`.
+in_flight:
+  - cycle 10 → exec desk · Majkee answers eleven themes at his own pace. No goal file is edited while it is open (goals/README.md rule 8).
 recovery_probe: |
   hostname -s; git -C /home/hruzam/unikuklatrix/nablarva status --short; git -C /home/hruzam/unikuklatrix/nablarva log --oneline -5
-  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; all nine cycles are closed
+  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; cycle 10 is open and human-paced
   tail -30 /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/pokes.log.md
   ls -d /tmp/vc08r1.tkz50zbf /tmp/vc08r2.kk50sqqh                                 # C04 inputs; gone after a reboot (tmpfs)
   Before any poke: re-read the roster against live tmux (window names, pane ids, footer thread ids). Ids go stale on rebuild.
@@ -90,10 +94,10 @@ holds:
   - Goals — a POINT names goal + rev; a goal under an open POINT is not edited (goals/README.md rule 8).
   - Help probes use the `--help` flag on documented subcommands only. A word after `claude` is a prompt and starts an agent (incident note).
 next: >-
-  Nothing runs. The team waits for Majkee. G5 is paper only, but its goal file puts it after G4, and G4 is his release;
-  I do not reorder that without him. His first words decide what opens — see `owed`.
+  Wait for RETURN 10. Then check the record against what the desk was asked, and turn each decision into its own assignment
+  with bounds. Nothing is acted on from the record by the desk itself. Until then nothing else runs.
 expected: >-
-  Majkee's word on the items under `owed`. A release for G4 (with its executing bed and capture scope) or G8 would start the next work.
+  A record file with Majkee's verbatim answers per theme, each marked decided, deferred, skipped or needs more.
 owed:
   - Majkee — the stray session's transcript (incident note) holds 40 lines of his personal notes — keep or delete.
   - Majkee — G9(a), what happens to the /tmp C04 inputs (copy host-local, or let go). The only item that can be lost.
@@ -109,6 +113,7 @@ open_costs_of_this_shape:   # real, accepted for the try, reported to Majkee
   - Without a RUNBOOK, authority and recovery depend on this STATUS staying complete. The audit of cycle 05 found it incomplete once already.
   - X0's open gate leaves two beds able to propose the next U-case; only the executing-bed hold separates them. (cartan, oraculum)
   - The pen holder drafts the gate, the goals and the verdicts. Two outside reads found seven real faults in one evening's work.
+  - The goal texts repaired after cycle 05 were not re-read by a non-author; only the export was read again. The gate asks Majkee to accept those revisions.
 presence: reposoma _active id e848f1047ab5e6562bfde21aeab037ef (unmark by this exact id when this session ends)
 provisional_coordination: uses ~/reposoma/raw.guides/bus/res/file-poke.md; retirement debt carried as goal G7 through
   /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X.ledger.md.
