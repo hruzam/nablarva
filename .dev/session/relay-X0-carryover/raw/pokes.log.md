@@ -32,3 +32,26 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - seen after (read-only pane look, 21:07:35Z): all three show `Working (… esc to interrupt)`; %60 shows `Read 04.engineer.point.md`. No key was typed into any pane.
 - claim level: three queue calls accepted and three native turns started. Read and worked = only when each RETURN exists and checks out.
 - commit carrying the POINTs: nablarva `a7321d6` (local, ahead 1 at poke time; the push is part of cycle 03).
+
+## Bells received (cycles 03–05)
+- `[bell r03]` from cartan arrived in pane %58 as input at about 2026-11-21T21:08Z, exact line as asked in the POINT. RETURN was on disk.
+- `[bell r05]` from the auditor arrived at about 21:10Z while I was mid-turn; it was queued and shown with the next tool result. RETURN was on disk.
+- oraculum rang no bell: her identity forbids operating a transport (04.oraculum.return.md field 6). Her RETURN was found by my own file check.
+- claim level: two bells delivered into a Claude pane by two Codex seats on today's versions, look-first, three separate calls. Observations of coordination, not a qualification.
+
+## p06, p07 — engineer → cartan (cycles 06, 07)
+- target checked 2026-11-21T21:17:25Z, bottom rows only: %59 `controller`, foreground `codex` (pid 2874067), footer thread `01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318`, turn finished ("Worked for 1m 16s"). Majkee's unsent draft still in the composer.
+- door: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message …` (no `--resume`), two calls, one per POINT
+- line: `[poke pNN] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/NN.engineer.point.md; the reply bell is in the file` (NN = 06, 07)
+- calls:
+  - p06: before 21:17:42.726Z · after 21:17:43.002Z · exit 0 · `Queued message 01a1fff8-e0c3-7213-90dc-0eda912f54d9`
+  - p07: before 21:17:43.005Z · after 21:17:43.301Z · exit 0 · `Queued message 01a1fff8-e1fa-75a2-9585-9de4f5d3f12d`
+- commits carrying the POINTs: nablarva `1a3c120` + `7698832` (local, ahead 2 at poke time), reposoma `b8b8a20` (ahead 1). Both pushes are step 1 of cycle 06.
+- claim level: two queue calls accepted. Whether the second message is taken as a separate turn after the first is unknown until RETURN 07 exists.
+- seen after (read-only pane look, 21:17:55Z and 21:18:09Z): `Working (… esc to interrupt)`, cycle 06 commands running (fetch, status, ledger diff). **Majkee's draft is no longer in the composer**; the pane showed the notice "Copy sent to terminal · paste to verify". Whether he sent or cleared it himself, or the arriving queue messages displaced it, I cannot tell. In cycle 03 one queue call left the same draft in place. Reported to Majkee.
+
+## Bells of cycles 06 and 07
+- `[bell r06]`: the exact line was **staged on my input row and never submitted**. It was still there at 2026-11-21T21:26Z (`❯ [bell r06] return at …/06.cartan.return.md`). No turn was started by it. Whether cartan sent the Enter is asked in cycle 08. I did not type into my own pane to clear it; it is left for Majkee's hand.
+- `[bell r07]`: withheld by cartan because his look showed the staged r06 line (07.cartan.return.md field 6). No input, no retry.
+- RETURNs 06 and 07 were found by my own finite file check.
+- claim level: one two-step input where the text arrived and the submit did not, on today's versions, cause unknown. An observation, not a test.

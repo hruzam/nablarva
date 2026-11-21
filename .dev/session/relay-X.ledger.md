@@ -9,7 +9,7 @@ authority: Majkee 2026-11-19 — shared provisional protocol and future communic
 naming: relay-X{0,1,…}-<phase> for experimental coordination sessions; first session `relay-X0-carryover` opened 2026-11-21
 attach: Delivery/coordination development; stridulatrix remains the named delivery organ under L13; no new organ adopted
 absorbs: vist-X.ledger.md (VIST · line X) — merged 2026-11-21; tombstone kept at the old address
-updated: 2026-11-21 (VIST line ledger merged in; reshaped to Open / Standing / Solved, no statement dropped; then first relay session row added)
+updated: 2026-11-21 (VIST line ledger merged in; reshaped to Open / Standing / Solved; first relay session row added; one prospective rule dropped in that step was restored after cartan's check, relay-X0-carryover cycle 06)
 by: nablarva.cartan (2026-11-19 text) · myShell (claude, home) — merge on Majkee's direct request 2026-11-21 ·
   engineer (trajectory, claude, home) — session-open row for relay-X0-carryover, 2026-11-21
 ---
@@ -22,8 +22,7 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 ## Open
 
 - [ ] Origin bed `vist-X0-helloWorld` (VIST X0, not a relay session) — documentary gate OPEN; Majkee's ACCEPT / REVISE / STOP on the
-  reviewed packet is owed · [STATUS](vist-X0-helloWorld/STATUS.md) · [RUNBOOK](vist-X0-helloWorld/RUNBOOK.md) ·
-  its pen (Codex thread `01a1d582…`) sits on office; no seat on home records that decision today
+  reviewed packet is owed · [STATUS](vist-X0-helloWorld/STATUS.md) · [RUNBOOK](vist-X0-helloWorld/RUNBOOK.md)
 - [ ] relay X0 `relay-X0-carryover` — carries the VIST X0 property by pointer; goals as small files, no RUNBOOK (provisional try) ·
   gate, pen and team live only in its [STATUS](relay-X0-carryover/STATUS.md) · [goals](relay-X0-carryover/goals/README.md)
 - [ ] Standing development debt — retire the provisional file-poke: qualify the actual replacement, map its
@@ -36,6 +35,9 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 - Origin: [VIST X0](vist-X0-helloWorld/STATUS.md), [agreed Cartan–Trajectory plan](vist-X0-helloWorld/raw/plan.runbook-and-team.cartan-trajectory.2026-11-14.md).
   X0 keeps its identity, documentary gate, frozen review packet and historical evidence; no retrospective
   rename or move. This ledger does not move or reopen it.
+- A further communication/coordination mechanism session belongs on **relay**, not the VIST observation line. Its exact slug,
+  gate, owner and release are set when the operator opens that session; none is activated here.
+  (Rule of the 2026-11-19 text, `git show 97b261c:.dev/session/relay-X.ledger.md`; dropped when the first session row was added, restored 2026-11-21.)
 - VIST retains its L20 observation principle and qualification questions. L20 keeps VIST observation separate
   from controller decisions and delivery; L21 requires operation-specific implementation/activation/delivery/transport
   release. The routing decision releases none of those operations.
