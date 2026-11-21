@@ -32,8 +32,11 @@ States: `draft` → `open` (Majkee or the pen holder agreed it is worth doing) �
 | [G7](G7.retire-file-poke.md) | Replace the provisional file-poke and retire it | draft | needs Majkee |
 | [G8](G8.door-probes-live.md) | Live door probes on samples (forked from G3) | draft | needs Majkee |
 | [G9](G9.custody-and-handoff.md) | Evidence custody and a clean-table hand-over | draft | part (a) needs Majkee |
+| [G10](G10.friendly-reminder.md) | A vendor-neutral friendly reminder when a seat is asleep (Majkee's question) | draft | needs Majkee |
 
-**Order I recommend** (cartan agreed in cycle 01): G2 first, before any released work → G9 → G4 (first released U-case) → G3 (read-only) → G5 (documentary) → G8 and G6 behind their releases → G7 last.
+**For Majkee:** [OVERVIEW.md](OVERVIEW.md) explains every goal in plain words — context, what it buys, cost, consequences. The goal files win.
+
+**Order I recommend** (cartan agreed in cycle 01): G2 first, before any released work → G9 → G4 (first released U-case) → G3 (read-only) → G5 (documentary) → G8 and G6 behind their releases → G7 last. Since Majkee asked that the team runs without him where no release is needed, G3 starts as soon as the wider team is bound (cycles 03–05); G4 waits for his release.
 
 Shared practice used here: `~/reposoma/raw.guides/bus/res/file-poke.md` (provisional). Its retirement debt is carried by this bed
 through the line ledger `../../relay-X.ledger.md` (G7).

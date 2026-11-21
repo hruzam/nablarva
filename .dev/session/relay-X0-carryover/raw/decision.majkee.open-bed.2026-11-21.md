@@ -48,7 +48,15 @@ or leave open; (5) may I restore the X0 RUNBOOK and use his new goal wording as 
   can give feedback inside a Codex-side iteration with Cartan.
 - **Door:** file first; the most solid available door for the poke; a labelled manual tmux line is the always-available fallback
   (rules: `vist-X0-helloWorld/raw/decision.majkee.fallback-poke.2026-11-14.md`, `~/reposoma/raw.guides/bus/res/file-poke.md`).
+  >to `trajectory` : poked agent should replay back.
 - **Goals as small files:** a provisional, uncanonical try in this bed (`goals/`). No RUNBOOK is authored here. This does not change
-  the RUNBOOK guide or any other bed.
-- **Push:** I commit locally as needed and push rarely (session close or a real need), not every turn.
+  the RUNBOOK guide or any other bed. I think untill mine presence is realy needed, run should be undisturbed within team within losing 
+- **Push:**   
+  >to `trajectory `from `majkee`: `controller` can without limitation (by poke)
 - **Not decided here:** any L21 release (implementation, activation, delivery, transport). Each goal names the release it needs.
+
+
+## Can we have some vendor neutral
+
+1. sidequest|product:`friendly reminder` script with timer if enybody asleep, with timer - mean edge cases, rather standard?
+2. what mechanisms left from vistMini?
