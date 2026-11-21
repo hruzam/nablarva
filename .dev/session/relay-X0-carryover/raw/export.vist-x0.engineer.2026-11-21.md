@@ -6,8 +6,8 @@ origin_bed: ~/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld   # short na
 origin_revision: nablarva core 75227bc + three uncommitted origin edits that are not mine (see §2)
 archive_of_trial: ~/ia-sync/.dev/records/vist/2026-11-14/vistMini-01-tests   # short name in this file is A/
 read: all 45 files of O/ (root 3, _bus 3, raw 39) on 2026-11-21
-rev: 3 (2026-11-21) — rev 1 was checked by cartan (cycle 01 — 43 confirmed, 7 refuted, 7 missing-source). rev 2 was my repair; cartan re-checked it (cycle 06 — 9 repaired, 5 repaired wrong, 3 statements stale). rev 3 repairs those eight.
-status: rev 3 is the author's second repair and is NOT yet re-checked by a non-author (asked in cycle 08). Trail — ../_bus/01.cartan.return.md, ../_bus/06.cartan.return.md and their VERDICTs. A summary is still a claim; the origin file wins.
+rev: 4 (2026-11-21) — rev 1 was checked by cartan (cycle 01 — 43 confirmed, 7 refuted, 7 missing-source). rev 2 was my repair; cartan re-checked it (cycle 06 — 9 repaired, 5 repaired wrong, 3 statements stale). rev 3 repaired those eight; cartan re-checked it (cycle 08 — 7 repaired, 1 repaired wrong). rev 4 narrows that one sentence in §2.
+status: rev 3 was re-checked by a non-author. rev 4 changes one bullet of §2 and this header, and that bullet is NOT yet re-checked (asked in cycle 09). Trail — ../_bus/01.cartan.return.md, ../_bus/06.cartan.return.md, ../_bus/08.cartan.return.md and their VERDICTs. A summary is still a claim; the origin file wins.
 ---
 
 # What the VIST X0 bed hands to the relay line
@@ -38,7 +38,7 @@ decision on the packet is still open.** No new experiment has run since 2026-11-
 Observed on home 2026-11-21 (mine, not in the origin files; each with its source):
 - O/RUNBOOK.md has an **uncommitted edit** of the `goal:` line. Disk differs from the review hash; `git show HEAD:` still matches `9081d353…` (cartan re-checked: HEAD 5/5, disk 4/5). If that edit is committed, the review no longer covers the file. *Whose edit:* Majkee said so in the engineer session on 2026-11-21 ("these are mine, now I am studying runbook"), about this edit and about O/majkee-personal-notes.md. Git itself shows no author for uncommitted work.
 - `relay-X.ledger.md` and `vist-X.ledger.md` carried an uncommitted merge. *Whose:* the ledger's own `by:` line and ../_bus/02.myshell.return.md (myShell, on Majkee's request, 2026-11-21).
-- The X0 desk session `06352fda`: its old pane `%49` shows a shell (my `tmux list-windows -a` on 2026-11-21; cartan again in cycle 06), and no Claude session file on home carries that id (`~/.claude/sessions/*.json`, ids only, 2026-11-21). So the desk is not in that pane and is not a live Claude session on home; this says nothing about other hosts. O/STATUS still names it as desk; that binding is a dated record, not a live fact.
+- The X0 desk session `06352fda`: two observations only. Its old pane `%49` showed a shell (my `tmux list-windows -a` on 2026-11-21; cartan again in cycle 06), and none of the files I listed under `~/.claude/sessions/` on home on 2026-11-21 carried that id. Neither shows that the session is gone — the listing was not shown to be complete, and other hosts were not looked at. O/STATUS still names it as desk; that binding is a dated record, not a live fact.
 - The `controller` window in today's tmux party is a **fresh** Codex thread `01a1ff5e…` (its own footer; confirmed by that thread in ../_bus/01.cartan.return.md), not the X0 pen.
 
 ## 3. What is established and what is not

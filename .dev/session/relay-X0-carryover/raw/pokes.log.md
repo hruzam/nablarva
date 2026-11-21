@@ -55,3 +55,12 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - `[bell r07]`: withheld by cartan because his look showed the staged r06 line (07.cartan.return.md field 6). No input, no retry.
 - RETURNs 06 and 07 were found by my own finite file check.
 - claim level: one two-step input where the text arrived and the submit did not, on today's versions, cause unknown. An observation, not a test.
+
+## p08 — engineer → cartan (cycle 08)
+- target checked 2026-11-21T21:33:05Z, bottom rows only: %59 `controller`, foreground `codex` (pid 2874067), footer thread `01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318`, idle composer, turn finished.
+- door: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message …` (no `--resume`), one call
+- line: `[poke p08] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/08.engineer.point.md; no bell in this cycle`
+- call: before 21:33:16.679Z · after 21:33:16.940Z · exit 0 · `Queued message 01a20007-20f9-7230-be27-15111694b297 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- commits carrying the POINT: nablarva `5c81512` + `9ecdea7` (local, ahead 2 at poke time); the push is step 1 of cycle 08.
+- claim level: queue call accepted. Read and worked = only when `_bus/08.cartan.return.md` exists and checks out.
+- cycle 08, cartan's account of r06 (08.cartan.return.md field 2): `set-buffer` 0, `paste-buffer -p` 0, the look showed the exact line wrapped over two composer rows, `send-keys -t %58 Enter` 0. At 21:36Z the line was still on my input row, unsubmitted. Today's tally of look-first pastes into Claude panes: p02, r03, r05 submitted; r06 staged, Enter without effect. One occurrence, cause unknown.
