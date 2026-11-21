@@ -1,7 +1,7 @@
 # STATUS: relay-X0-carryover
 
 ```yaml
-updated: 2026-11-21 20:12 CET
+updated: 2026-11-21 20:15 CET
 writer: engineer (trajectory · claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) · sole pen of this bed
 host: home · hruzam
 worktree: /home/hruzam/unikuklatrix/nablarva · core · upstream origin/core. Foreign uncommitted work present and left alone —
@@ -17,6 +17,7 @@ files:
   goals: goals/README.md                                    # rules + index G0–G9
   bus: _bus/                                                # cycle 01 (cartan check) and 02 (myshell) — both closed
   line_ledger: ../relay-X.ledger.md
+  card: ~/reposoma/_cold-start/card/CS.relay-X0-carryover.2026-11-21.md   # clean-table entry; a pointer, not a second state
 gate: >-
   PROVISIONAL (drafted by the pen holder; Majkee confirms or rewrites) — Majkee accepts the non-author-checked carry-over
   export and the first goal set as the clean-table start of relay work. Accepting it runs no goal that names a release.
@@ -28,7 +29,8 @@ checkpoint: >-
 goals_done: G2 export-verified
 goals_running: >-
   G1 party-binding — engineer, cartan, myshell bound and confirmed; oraculum not engaged, so not bound.
-  G9 custody-and-handoff — part (b) hand-over in progress; part (a) waits for Majkee.
+  G9 custody-and-handoff — part (b): card written, bed committed and pushed; presence stays marked until this session ends.
+  Part (a) waits for Majkee.
 in_flight: none
 recovery_probe: |
   hostname -s; git -C /home/hruzam/unikuklatrix/nablarva status --short; git -C /home/hruzam/unikuklatrix/nablarva log --oneline -5
