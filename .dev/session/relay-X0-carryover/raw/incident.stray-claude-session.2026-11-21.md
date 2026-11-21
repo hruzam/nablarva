@@ -1,7 +1,7 @@
 ---
 kind: incident note (facts, then rule)
 when: 2026-11-21T21:20:39Z to 21:20:55Z (16 seconds) · host home
-cycle: '07' (read-only door inventory, cartan)
+cycle: "07 (read-only door inventory, cartan)"
 reported_by: cartan, unprompted, in _bus/07.cartan.return.md field 2
 checked_by: engineer · 2026-11-21T21:26Z
 decision_owed: Majkee — keep or delete the transcript named below
