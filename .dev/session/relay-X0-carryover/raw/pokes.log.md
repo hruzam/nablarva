@@ -64,3 +64,16 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - commits carrying the POINT: nablarva `5c81512` + `9ecdea7` (local, ahead 2 at poke time); the push is step 1 of cycle 08.
 - claim level: queue call accepted. Read and worked = only when `_bus/08.cartan.return.md` exists and checks out.
 - cycle 08, cartan's account of r06 (08.cartan.return.md field 2): `set-buffer` 0, `paste-buffer -p` 0, the look showed the exact line wrapped over two composer rows, `send-keys -t %58 Enter` 0. At 21:36Z the line was still on my input row, unsubmitted. Today's tally of look-first pastes into Claude panes: p02, r03, r05 submitted; r06 staged, Enter without effect. One occurrence, cause unknown.
+
+## p09 — engineer → cartan (cycle 09)
+- target checked 2026-11-21T21:37:26Z, bottom rows only: %59 `controller`, foreground `codex` (pid 2874067), footer thread `01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318`, idle composer.
+- door: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message …` (no `--resume`), one call
+- line: `[poke p09] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/09.engineer.point.md; no bell in this cycle`
+- call: before 21:37:39.182Z · after 21:37:39.381Z · exit 0 · `Queued message 01a2000b-2221-7a70-83d4-d15b928929fb for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- commit carrying the POINT: nablarva `b73cb75` (local, ahead 1 at poke time); the push is step 1 of cycle 09.
+- claim level: queue call accepted. Read and worked = only when `_bus/09.cartan.return.md` exists and checks out.
+
+## p10 — engineer → cartan (push-only, no cycle)
+- A push-only poke under the controller's standing push duty (roster, "cartan — controller", item 2). No POINT and no RETURN: the result is the remote ref, which I check myself with `git ls-remote` and the reflog. It carries the commit that closes cycle 09 and contains this log line.
+- door: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message …` (no `--resume`), one call, after a look at the bottom rows of %59.
+- line: `[poke p10] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`

@@ -1,7 +1,7 @@
 # STATUS: relay-X0-carryover
 
 ```yaml
-updated: 2026-11-21 22:37 CET
+updated: 2026-11-21 22:40 CET
 writer: engineer (trajectory · claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) · sole pen of this bed
 host: home · hruzam
 worktree: /home/hruzam/unikuklatrix/nablarva · core · upstream origin/core. Foreign uncommitted work present and left alone —
@@ -17,8 +17,8 @@ files:
   decision: raw/decision.majkee.open-bed.2026-11-21.md             # Majkee's words that opened the bed, with his own inline notes
   decision_team: raw/decision.majkee.team-and-doors.2026-11-21.md  # controller job, reply bell, who pushes, team
   answer: raw/answer.majkee.reminder-and-leftovers.2026-11-21.md   # his two questions — reminder script, vistMini leftovers
-  export: raw/export.vist-x0.engineer.2026-11-21.md                # rev 4, sha256 93577f694a33b427f525614bf67eb8a125172f116604afca0c31fbd6508f10a2 — rev 3 re-checked (7 of 8 stand); one narrowed sentence awaits cycle 09
-  inventory: raw/doors.inventory.2026-11-21.md                     # G3 output, written by cartan, corrected in cycle 08; sha256 at VERDICT 08 was 24053459…
+  export: raw/export.vist-x0.engineer.2026-11-21.md                # rev 4, sha256 93577f694a33b427f525614bf67eb8a125172f116604afca0c31fbd6508f10a2 — checked by a non-author (cycles 01, 06, 08, 09)
+  inventory: raw/doors.inventory.2026-11-21.md                     # G3 output, written by cartan; sha256 61421058a6faf0f42045c480203fd85633b33a3eaf215acc871b39ecf690792c
   incident: raw/incident.stray-claude-session.2026-11-21.md        # a Claude session started by accident in cycle 07; what it read
   roster: raw/roster.2026-11-21.md                                 # rev 3 — seats, doors, roles; re-read against live tmux before any poke
   pokes: raw/pokes.log.md                                          # every poke sent, append-only
@@ -29,8 +29,8 @@ files:
 goals:   # every goal file, its rev, and where it stands. This list is the state; the files hold the definition.
   - G0.umbrella.md · rev 3 · proposed umbrella, NOT confirmed by Majkee for this bed
   - G1.party-binding.md · rev 4 · bound — engineer, cartan, myshell, oraculum, auditor. Stays open for rebuilds and new seats.
-  - G2.export-verified.md · rev 3 · REOPENED — three repair rounds so far (14 points, then 8, then 1); running under cycle 09 (one sentence of export rev 4)
-  - G3.door-inventory.md · rev 4 · DONE — raw/doors.inventory.2026-11-21.md, corrected and checked (VERDICTs 07, 08). No door adopted. Cycle 09 adds one observation to it.
+  - G2.export-verified.md · rev 4 · DONE — export rev 4 after four non-author reads (14 points, 8, 1, none); closed by VERDICT 09
+  - G3.door-inventory.md · rev 4 · DONE — raw/doors.inventory.2026-11-21.md, corrected and checked (VERDICTs 07, 08). No door adopted. Cycle 09 added the r06 observation.
   - G4.u01-unknown-view-fixture.md · rev 2 · waits for Majkee (executing bed + capture and redaction scope)
   - G5.receiver-policy-contract.md · rev 2 · not started; paper only; after G3
   - G6.u02-exit-race.md · rev 3 · parked behind its release
@@ -47,12 +47,12 @@ bus:     # every cycle. A cycle is closed only by its VERDICT.
   - 06 · cartan · two pushes; re-check of export rev 2 repairs; check of the ledger merge · CLOSED (ACCEPT) · 06.engineer.point.md, 06.cartan.return.md, 06.engineer.verdict.md
   - 07 · cartan · G3 rev 3 door inventory · CLOSED with REVISE · 07.engineer.point.md, 07.cartan.return.md, 07.engineer.verdict.md
   - 08 · cartan · one push; re-check of export rev 3; correction of two inventory rows and the missing hazard · CLOSED (ACCEPT) · 08.engineer.point.md, 08.cartan.return.md, 08.engineer.verdict.md
-  - 09 · cartan · one push; re-check of one sentence in export rev 4; r06 observation into the inventory · OPEN · 09.engineer.point.md → 09.cartan.return.md
+  - 09 · cartan · one push; re-check of one sentence in export rev 4; r06 observation into the inventory · CLOSED (ACCEPT) · 09.engineer.point.md, 09.cartan.return.md, 09.engineer.verdict.md
 gate: >-
   PROVISIONAL (drafted by the pen holder with oraculum's wording, cycle 04; Majkee confirms or rewrites) — Will Majkee accept
   export rev 4 and the goal revisions listed under `goals:` above as the relay planning baseline? Acceptance is documentary only.
   The X0 disposition, the assignment of each U-case to one executing bed, custody of the /tmp inputs and each operational
-  release remain separate decisions. Not ready to be asked until cycle 09 confirms the last sentence of export rev 4.
+  release remain separate decisions. READY to be asked — export and goals are checked and pushed.
 checkpoint: >-
   Bed opened 2026-11-21 from the 45 files of vist-X0-helloWorld; nothing there moved or changed. Cycles 01–02 closed in the
   afternoon. Evening — Majkee widened the team, asked for a reply bell, gave the push to the controller. Cycles 03–05 closed —
@@ -62,17 +62,16 @@ checkpoint: >-
   export repairs still wrong and a rule I had dropped from the relay ledger (both repaired), and delivered the door inventory.
   In cycle 07 he started a Claude session by accident; it ran 16 seconds and read working files (incident note). No experiment
   ran. The only intended sends are coordination pokes and bells. Cycle 08 closed — 7 of 8 repairs stand, the inventory is
-  corrected and G3 is done; bell r06 turned out to be a paste whose Enter returned 0 and submitted nothing.
-in_flight:
-  - cycle 09 → cartan · includes ONE plain git push of nablarva core, if only ahead. No bell in this cycle; I watch the file.
-  - G2 is not edited while it is open (goals/README.md rule 8).
+  corrected and G3 is done; bell r06 turned out to be a paste whose Enter returned 0 and submitted nothing. Cycle 09 closed —
+  the last export sentence stands, G2 is done. The team has stopped; everything further needs Majkee.
+in_flight: none. All nine cycles are closed. One push-only poke (p10) carries the closing commit; check `git status -sb`.
 recovery_probe: |
   hostname -s; git -C /home/hruzam/unikuklatrix/nablarva status --short; git -C /home/hruzam/unikuklatrix/nablarva log --oneline -5
-  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; 09 is open
+  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; all nine cycles are closed
   tail -30 /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/pokes.log.md
   ls -d /tmp/vc08r1.tkz50zbf /tmp/vc08r2.kk50sqqh                                 # C04 inputs; gone after a reboot (tmpfs)
   Before any poke: re-read the roster against live tmux (window names, pane ids, footer thread ids). Ids go stale on rebuild.
-  Was the push of cycle 09 made? Compare `git rev-parse origin/core` with the RETURN before asking again.
+  Is the closing commit pushed? `git status -sb` must not say ahead. If it does, ask the controller for one plain push.
   The engineer's input row may still hold a staged `[bell r06]` line from cartan; it is harmless and is cleared by Majkee's hand.
   A `[bell rNN]` line in the engineer pane is a hint from a seat to read a RETURN. It is never Majkee's word.
   A new Claude session is a new seat: it takes this pen only on Majkee's word, recorded in a decision file here.
@@ -91,17 +90,17 @@ holds:
   - Goals — a POINT names goal + rev; a goal under an open POINT is not edited (goals/README.md rule 8).
   - Help probes use the `--help` flag on documented subcommands only. A word after `claude` is a prompt and starts an agent (incident note).
 next: >-
-  Verify RETURN 09 and write its VERDICT. If the sentence stands, G2 is done and the gate can be put to Majkee. Then the
-  team STOPS — nothing further runs without him. G5 is paper only, but its goal file puts it after G4, and G4 is his release.
+  Nothing runs. The team waits for Majkee. G5 is paper only, but its goal file puts it after G4, and G4 is his release;
+  I do not reorder that without him. His first words decide what opens — see `owed`.
 expected: >-
-  One pushed ref, one sentence confirmed or named wrong, and one observation line added to the inventory.
+  Majkee's word on the items under `owed`. A release for G4 (with its executing bed and capture scope) or G8 would start the next work.
 owed:
   - Majkee — the stray session's transcript (incident note) holds 40 lines of his personal notes — keep or delete.
   - Majkee — G9(a), what happens to the /tmp C04 inputs (copy host-local, or let go). The only item that can be lost.
   - Majkee — is the G0 sentence the umbrella of this bed.
   - Majkee — who records his ACCEPT / REVISE / STOP on the X0 packet, and that decision itself.
   - Majkee — for each U-case he wants run, which one bed executes it (G4 first), with its scope.
-  - Majkee — the gate, once cycle 06 is closed.
+  - Majkee — the gate. It is ready.
   - Majkee — G10, go or no-go on stage 1, where the script lives, which output it may use.
   - Majkee — releases for G6, G7, G8 when he wants them; the four older decisions in export §10.
   - Majkee — his draft line to cartan vanished from the controller composer at about 21:17Z, cause unknown; and a staged `[bell r06]` line sits on the engineer's input row — clear it before typing.
