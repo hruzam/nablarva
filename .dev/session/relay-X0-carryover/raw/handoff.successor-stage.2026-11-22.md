@@ -1,6 +1,6 @@
 ---
 kind: handoff — source material for the RUNBOOK of the successor stage `relay-X1-<phase>` (generation X — Majkee, raw/decision.majkee.successor-name.2026-11-22.md; his earlier proposal for the phase word is `research`)
-status: DRAFT 3 by the pen holder — revised after Houston's consult (`stretches`, five constraints; _bus/16.houston.return.md) and after Oraculum's counter-read (REVISE, twelve points, all confirmed; _bus/17.oraculum.return.md, _bus/17.engineer.verdict.md). Not yet confirmed by Oraculum as landing her points, not yet put to Majkee.
+status: DRAFT 4 by the pen holder — revised after Houston's consult (`stretches`, five constraints; _bus/16.houston.return.md), after Oraculum's counter-read (REVISE, twelve points; _bus/17.oraculum.return.md) and after her confirming read (REVISE, three points; _bus/18.oraculum.return.md). All taken. She asked for no further read; the three last edits were not read by a non-author. Not yet put to Majkee.
 by: engineer (pen of relay-X0-carryover) · 2026-11-22 · host home
 authority: Majkee — walkthrough T8 (placement left to the engineer; "Trajectory brings back the exact test scope before live sends begin"; handoff files against orphans) · walkthrough 2, S1 (one new real capture for U01) and S5 (placement agreed)
 releases: NONE. This file proposes. Every operation that needs Majkee's release is listed in §6 on its own line. Nothing here opens a session.
@@ -36,7 +36,7 @@ base: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/   (relative paths
 | Coordination practice of one night, as observation only: 20 pokes by `codex queue` (p01, p03–p21), every call accepted and each followed by its RETURN or a pushed ref; 5 look-first pastes into Claude panes, 4 submitted, 1 staged with Enter returning 0 and no submit (r06, cause unknown) | `raw/pokes.log.md` |
 | Hazards found: a word after `claude` starts an agent; a list of forbidden git verbs is read as "no git"; a POINT that asks for one word gets one word | `raw/incident.stray-claude-session.2026-11-21.md` · `exp/` |
 | Majkee's decisions, verbatim | `raw/decision.majkee.*.md` (seven files) |
-| Lock fit — Houston, card consult: `stretches`. Counter-read — Oraculum: REVISE, taken | `_bus/16.houston.return.md` · `_bus/17.oraculum.return.md` |
+| Lock fit — Houston, card consult: `stretches`. Counter-read — Oraculum: REVISE twice, taken | `_bus/16.houston.return.md` · `_bus/17.oraculum.return.md` · `_bus/18.oraculum.return.md` |
 
 ## 2. Open work that leaves this bed
 
@@ -62,8 +62,12 @@ could have left this direction unanswered — my first table had no Claude → C
 **Receiver.** One disposable sample, `sample-codex`, in its own new tmux window, started in a new empty scratch folder outside every
 repository, with default approvals and the cheapest model. No party pane is ever a target. The sample gets one standing
 instruction at start — an input of its own, listed in §6: *when a message carries `NONCE:<value>`, write the value and the UTC
-time into `<scratch>/receipts/<value>.txt` and do nothing else.* Launch command and model are named in the release line; the
-exact flags are confirmed against `codex --help` on the day, not from memory.
+time into `<scratch>/receipts/<value>.txt` and do nothing else.*
+
+**Proposed start of `sample-codex`** (flags read from `codex --help` of 0.171.0 on 2026-11-22; read again on the day): tmux window
+`sample-codex`; scratch folder `~/.cache/nablarva/relay-x1-samples/<date>/sample-codex/`, new and outside every repository;
+command `codex -C <that folder> -m gpt-6.1-terra`, with no approval and no sandbox flag, so the defaults apply; launched by
+Majkee's hand in a window the exec desk prepares. If the model name is refused, startup is pending until he names another.
 
 **The two observations — same CLI version, same receiver configuration, one try each**
 
@@ -71,6 +75,10 @@ exact flags are confirmed against `codex --help` on the day, not from memory.
 |---|---|---|---|
 | **A** | `codex queue --thread <uuid> --message` | engineer → sample-codex | version and receiver configuration · the call with UTC before and after and its exit code · where the observation ends: carrier result, native turn seen, receipt with the same nonce |
 | **B** | tmux look-first paste, then Enter as a separate step | engineer → sample-codex | the same, and for each phase on its own: text staged on the input row · submit seen · native turn · receipt. **What changed in the method since the trial:** the trial's three Claude → Codex attempts (0 of 3 verified, Codex 0.167.2) went through the archived adapter; this is a hand-run paste with a look before and after each step, and the adapter is not reactivated. |
+
+**For each observation:** a fresh nonce, different for A and for B, is written into a POINT before the try. **Preconditions, looked
+at first and recorded:** the sample's thread id is read from its own footer; the agent is in the foreground of the pane; the input
+row is empty; no dialog is on screen. If one of them cannot be established, the try is NOT RUN.
 
 B is an agent operating a tmux push. L17 calls that a human-operated carrier "until separately qualified", and L4 records send-keys
 injection as a death. B is therefore one explicit exception for one measurement, in Majkee's words in its release line.
@@ -87,14 +95,20 @@ host-local folder beside the others (`~/.local/share/nablarva/custody/`, 0700/06
 | tmux paste, then Enter | controller → sample-claude | whether the reply bell (the pointer-only exception the line uses today) is worth keeping, and whether G6's seam is observable — r06 failed here once | a second sample, `sample-claude`; one explicit exception |
 | tmux paste, then Enter | engineer → sample-claude | the same, for a Claude-origin bell | `sample-claude`; one explicit exception |
 | `codex queue` | controller → sample-codex | only if a Codex → Codex route is being considered; a Codex-origin receipt is unknown | — |
-| tmux paste, then Enter | controller → sample-codex | only if B fails or a Codex → Codex PTY route is considered. The trial's 0 of 3 was Claude-origin and says nothing about this row. | one explicit exception |
+| tmux paste, then Enter | controller → sample-codex | only after a **definite** failure of B, or if a Codex → Codex PTY route is considered. After a definite failure it tells the sending side from the receiving side: if a Codex-origin paste is submitted where the Claude-origin one was not, the fault lies with the sender (the Claude seat's shell, sandbox or tmux reach); if both fail, it lies with the Codex composer under a tmux paste. An **uncertain** B is not a failure — it falls under "Stops", and neither sender nor carrier is switched. The trial's 0 of 3 was Claude-origin and says nothing about this row. | one explicit exception |
 | Claude `SendMessage` | engineer → sample-claude | only if `relay-00-research` asks for evidence on vendor doors, which D1 parks | `sample-claude`; first show, without sending, that the tool exists in the sender and can address an independent tmux-hosted session |
 | `mcp__codex_tui__send_message_to_thread` | controller → sample-codex | the same | the tool is enabled in the sender |
+
+**Proposed start of `sample-claude`, only if a released row needs it** (flags read from `claude --help` of 2.1.330 on 2026-11-22;
+read again on the day): tmux window `sample-claude`; scratch folder `~/.cache/nablarva/relay-x1-samples/<date>/sample-claude/`;
+`cd <that folder> && claude --model haiku` — no word after `claude`, and no `--permission-mode` flag, so the default mode applies;
+launched by Majkee's hand. If the model name is refused, startup is pending until he names another.
 
 **State probes ride along, read-only, no send.** During A and B the observer also records what `tmux display-message` says about
 the sample against what the pane shows. `claude agents --json` and `~/.claude/sessions/<pid>.json` (allowlisted keys, never the
 socket path) apply only when `sample-claude` exists; `claude agents --json` only if `claude --help` on the day lists `agents` as a
-subcommand — a word after `claude` that is not a subcommand is a prompt and starts an agent.
+subcommand (on 2.1.330 it does: "agents [options] — Manage background agents") — a word after `claude` that is not a subcommand
+is a prompt and starts an agent.
 
 **Outside this scope altogether, with the reason** — App Server `turn/start` / `turn/steer` (a second writer on a live thread;
 binding unknown) · `codex exec resume` and `claude -p --resume` (they start their own process; the startup hazard) · Claude
@@ -114,7 +128,7 @@ never released without its closing.
 
 Majkee chose one new real capture (S1). The search showed what it must be: a **native control of Claude that carries neither
 `Do you want to proceed?` nor `Esc to cancel` in its bottom six rows**. Which control that is must be found by looking on the
-day, on today's CLI version; nobody should assume it from memory. If no such control exists, the result is MISSING again.
+day, on today's CLI version; nobody should assume it from memory. If no such control exists, the result is MISSING again — a valid outcome at the gate.
 
 **One thing must be decided before the capture, because it cannot be done afterwards.** The matrix row asks for one read-only
 classification, at most 5 seconds, compared with what an independent observer saw.
@@ -138,7 +152,8 @@ classification, at most 5 seconds, compared with what an independent observer sa
   closed — plus `claude --version` at that moment. The observer only reads.
 - **Labelling rule:** a seat that did not pick the control answers two questions without the selector's opinion — is this a
   control the CLI drew that takes over the input; and does a rule of the frozen registry name it. The labeller only reads.
-- **Classification window, if released:** one run, at most 5 seconds, while the control is open.
+- **Classification window, if released:** one run, at most 5 seconds, while the control is open. Its actual output is recorded
+  beside the independent label, whatever it is. A disagreement between the two is a result, not a failed run.
 
 A Codex control would be a weaker fixture, because the matcher ignores Codex panes altogether.
 
@@ -163,7 +178,7 @@ session; a documentary handover has its own boundary; and even a pointer-only se
 1. Opening the successor bed `relay-X1-<phase>`: the phase word, its pen, its gate, and whether G0's sentence is its umbrella.
 
 **The two first observations**
-2. Starting `sample-codex` and closing it at the end by the same hand — launch command, model, scratch folder. Trust dialogs are his hand.
+2. Starting `sample-codex` and closing it at the end by the same hand — launcher Majkee; `codex -C ~/.cache/nablarva/relay-x1-samples/<date>/sample-codex -m gpt-6.1-terra`, default approvals and sandbox (§3). Trust dialogs are his hand. If he wants other values, startup is pending until he names them.
 3. The standing NONCE instruction typed into `sample-codex`.
 4. Observation A — `codex queue`, engineer → sample-codex, once.
 5. Observation B — tmux paste then Enter, **an agent (the engineer) sends**, → sample-codex, once. An explicit exception to L4 for this one measurement.
@@ -171,7 +186,7 @@ session; a documentary handover has its own boundary; and even a pointer-only se
 7. Keeping or deleting `sample-codex`'s session record afterwards.
 
 **Only if he wants a deferred row — each its own line**
-8. Starting `sample-claude` and closing it at the end by the same hand — launch command, model, scratch folder.
+8. Starting `sample-claude` and closing it at the end by the same hand — launcher Majkee; `cd ~/.cache/nablarva/relay-x1-samples/<date>/sample-claude && claude --model haiku`, default permission mode (§3). If he wants other values, startup is pending until he names them.
 9. The standing NONCE instruction typed into `sample-claude`.
 10. tmux paste then Enter, **an agent (the controller) sends**, → sample-claude, once. An explicit exception.
 11. tmux paste then Enter, **an agent (the engineer) sends**, → sample-claude, once. An explicit exception.
@@ -191,8 +206,9 @@ G6 and G7 ask for nothing now. A line that is not released is NOT RUN. A partial
 ## 7. Proposed gate for the successor (Majkee sets the real one when he opens it)
 
 > Majkee records GO or STOP on a witnessed probe packet: for each released row the carrier result, the native turn, the receipt
-> with the matching nonce and the observer's confirmation — or MISSING, NOT RUN or UNCERTAIN with its reason — and, if released,
-> one independently labelled genuine unknown-view fixture for U01. Every result stands as "tried once". The packet gives no verdict
+> with the matching nonce and the observer's confirmation — or MISSING, NOT RUN or UNCERTAIN with its reason — and, if the U01
+> capture is released, its own outcome: one independently labelled genuine unknown-view fixture, or a documented MISSING; if a
+> classification ran, its actual output beside the independent label, including any disagreement. Every result stands as "tried once". The packet gives no verdict
 > on the relay architecture, qualifies no door as a transport or as a replacement for the file-poke, presumes no exception to the
 > recorded death of send-keys injection, adopts nothing, and is evidence input for `relay-00-research` only.
 
