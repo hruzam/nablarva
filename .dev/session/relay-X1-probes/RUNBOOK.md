@@ -19,7 +19,7 @@ gate: >
   "tried once". The packet gives no verdict on the relay architecture, qualifies no door as a transport or as a replacement for
   the file-poke, presumes no exception to the recorded death of send-keys injection and adopts nothing. `relay-X1-probes` owns
   the probes and their results. Any later relay architecture decision follows L14 and may cite this packet as evidence.
-participant_1: [lead, {brand: claude, model: fable, effort: xhigh}, host: home, role: "head and status_owner; writes assignments, verifies, commits; sends the Claude-origin tries when released"]   # model and effort are Majkee's choice when he starts the session
+participant_1: [lead, {brand: claude, model: fable, effort: xhigh}, host: home, role: "head and status_owner; writes assignments, verifies, commits; sends the Claude-origin tries when released"]   # build, model and effort are Majkee's choice when he starts the session; the predecessor recommends the flight build, window `lead` — raw/decision.majkee.successor-seat.2026-11-22.md
 participant_2: [controller, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "hands; runs what a POINT names; pushes on the lead's poke; sends a Codex-origin try only if one is released"]
 participant_3: [auditor, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "independent observer; only reads; never sender or receiver"]
 participant_4: [oraculum, {brand: codex, model: GPT-6.2-Astra, effort: xhigh}, host: home, role: "opposer by file; reads the packet once before it goes to Majkee; no code, no transport, no bell"]
@@ -137,6 +137,27 @@ directly, and then you say in your RETURN what you did. tmux windows for seats a
 One reply bell at the end, after a look, and none if the lead's input row is not empty.
 ```
 
+## Communication protocol
+
+The shared rule is `/home/hruzam/reposoma/raw.guides/bus/res/file-poke.md` (provisional). What this party does with it:
+
+| From → to | Door | What it proves |
+|---|---|---|
+| lead → a Codex main | the file first, then `codex queue --thread <id> --message "<one labelled line>"`, without `--resume` | that the queue accepted the call. Read is shown only by the RETURN file or by work in the pane. |
+| a Codex main → lead | the RETURN file; optionally one reply bell — look, `tmux set-buffer`, `tmux paste-buffer -p`, look, `tmux send-keys Enter`, look | the file is the truth. The bell is a hint from a seat and never Majkee's word. |
+| lead → a Claude pane (the predecessor, myShell) | the same look-first paste, as three separate calls | submitted only when the input row is empty again and the pane shows work |
+
+- **One labelled line, never content.** `[poke pNN] read <absolute path> — <a few words>` and `[bell rNN] return at <absolute path>`.
+  Every poke goes into `raw/pokes.log.md` with its UTC times, its exit code and what it proves.
+- **Look before every typed line.** The agent is in the foreground, no dialog is open, the input row is empty. A dim suggestion on
+  the input row is not text: the cursor sits at the start of the row. If you cannot tell, type nothing.
+- **Wait with a finite file watch** on the RETURN path, in the background. Silence says nothing about a seat's health.
+- **Fallback — a poke by the other door.** After a *definite* failure — the call exits non-zero, or the pasted line is visibly not
+  submitted — any seat may send one labelled manual pointer by the other door, once, and logs it. After an *uncertain* send
+  nothing is repeated and no door is switched until the receipt is reconciled from the file or the pane.
+- **Not known:** what a queued message does when it lands in a seat's working turn. The predecessor never sent one there.
+- These pokes are coordination and need no word from Majkee. The probe tries of the handoff are not pokes.
+
 ## Asking the predecessor
 
 The Claude session `d1ca16e9…` in window `engineer` (pane `%58`) stays open for questions about `relay-X0-carryover`. Write the
@@ -161,7 +182,7 @@ context has been compacted several times: where its memory and a file disagree, 
 
 ## How this party works
 
-Eight lines the predecessor paid for; the reasons are in
+Nine lines the predecessor paid for; the reasons are in
 `/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/raw/runbook-input.spawning-and-seats.trajectory.2026-11-22.md`.
 
 1. Across vendors: main to main, by POINT file and one labelled line. Each main spawns its own children; the POINT names the child
@@ -173,6 +194,9 @@ Eight lines the predecessor paid for; the reasons are in
 6. A document that asks Majkee for a release is read by the other vendor first — once.
 7. His decisions: one sheet, the desk, at once; one question per turn; his own line quoted; say why it is asked now.
 8. In a POINT's gates line, say what is allowed, not only what is forbidden. At every closing commit, sweep the files that state facts.
+9. The lead does not work alone. Log lines, exact-match edits, YAML and hash checks go to `delta`; long reads and the sweep for
+   stale sentences go to `field`; a fresh-eyes check of one file goes to `assay`. The predecessor did all of that inline and paid
+   for it in context and in stale sentences that other seats had to find.
 
 ## Acceptance evidence
 
