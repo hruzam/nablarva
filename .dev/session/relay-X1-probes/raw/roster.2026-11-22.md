@@ -137,3 +137,5 @@ Sources: `raw/decision.majkee.countersignature.2026-11-22.md` · `raw/decision.m
 | majkee | human | every release; trust dialogs; starts and closes the samples | the exec desk for decisions; window `lead` for the lead's reports |
 
 Pokes there and back are the lead's call. A reply comes by the RETURN file; the bell is beside it.
+
+Confirmed by Majkee, typed in the lead session shortly before 14:05 UTC: "roster is correct, going to exec now". The table above is what he read.
