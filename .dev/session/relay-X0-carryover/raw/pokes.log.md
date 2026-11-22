@@ -117,3 +117,14 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - line: `[poke p15] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref. Majkee confirmed tonight: on my poke, no approval each time (raw/decision.majkee.push.2026-11-22.md). RETURN 12 is received; its verdict follows separately.`
 - call: before 02:28:35.694Z · after 02:28:35.996Z · exit 0 · `Queued message 01a20115-8007-7c83-b624-084dbf6d3b97`.
 - result, checked by me: `origin/core` = `2b5945e` = HEAD, reflog "update by push" 2026-11-22 03:28:49 +0100, `git ls-remote` agrees. Six commits went out (d8357e3 … 2b5945e).
+
+## p16 — engineer → auditor (cycle 13)
+- target checked 2026-11-22T02:32:25Z, bottom rows only: %66 `auditor`, foreground `codex`, footer thread `01a1ffdf-793f-76d2-8497-3f68f84a34a7`, idle composer, context 87% left.
+- door: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message …` (no `--resume`), one call.
+- line: `[poke p16] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/13.engineer.point.md — cycle 13: blind label of 46 captured screens, read-only; do not open the files it lists under do_not_open; no git, no helpers`
+- call: before 02:32:33.478Z · after 02:32:33.801Z · exit 0 · `Queued message 01a20119-20f6-7f60-a1f5-4c6e442e52eb for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- claim level: queue call accepted. Read = only when the auditor pane shows work on cycle 13 or `_bus/13.auditor.return.md` exists.
+
+## p17 — engineer → cartan (push-only, no cycle)
+- Carries the commit that closes cycle 12 and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
+- line: `[poke p17] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
