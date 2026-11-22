@@ -2,7 +2,7 @@
 kind: read-back and release sheet 1 — what the lead reads back to Majkee, and the release lines of the first run, one theme at a time
 by: lead (flight, pen of relay-X1-probes) · 2026-11-22 · host home
 for: the exec desk and Majkee
-status: DRAFT 2 — draft 1 was read once by Oraculum (REVISE, eight points, all taken — _bus/01.oraculum.return.md, _bus/01.lead.verdict.md). Her points were written in by the lead; draft 2 was then checked once by a fresh-eyes child of the lead (nine remarks, mostly departures from the handoff that were not marked as the lead's; all taken). She has not read draft 2.
+status: DRAFT 3 — draft 1 was read once by Oraculum (REVISE, eight points, all taken — _bus/01.oraculum.return.md, _bus/01.lead.verdict.md). Draft 2 was checked by a fresh-eyes child of the lead (nine remarks, all taken) and went to the desk. On Majkee's word the countersignature is Oraculum's: she read draft 2 and the handoff's late additions (REVISE, two points — _bus/04.oraculum.return.md, _bus/04.lead.verdict.md). Draft 3 takes her two points and two wording points. Each change against draft 2 is marked "(draft 3)". No ask has changed.
 rule: every line here points at or sums up a file. This sheet decides nothing and releases nothing. "Lead's view" is marked as such and is only a view.
 order: as numbered. S0 first. If S1 is not given, S2 to S6 are skipped. S7 closes — nothing starts before it.
 asked: lines 2, 3, 6, 4, 5 and 7 of the handoff's release menu (§6) — one sample, two observations. Nothing else.
@@ -42,8 +42,12 @@ be read again. (tmux is 3.7c.) The party's seats are bound and idle.
     step. The UTC times and the last phase witnessed are kept. What is not seen by then is recorded as not seen.
   - *Lead's addition:* **if A ends UNCERTAIN, B is NOT RUN** and the row comes back to you. Both use the one receiver, and a
     queued message that may still be pending could arrive inside B's measurement.
+  - *(draft 3, Oraculum)* **A try that was demonstrably never submitted is not UNCERTAIN.** If the queue call itself is
+    refused — it exits with an error and queues nothing — and the observer sees nothing arrive, A is recorded as a definite
+    failure of the carrier. That does not withhold B.
 - **Each layer is recorded on its own** — carrier result · native turn · receipt. A turn that is seen while the write is refused
-  is a delivered message with the receipt MISSING. No turn seen within the budget is an unresolved delivery, UNCERTAIN.
+  is a delivered message with the receipt MISSING. *(draft 3)* After a call that was accepted, no turn seen within the budget
+  is an unresolved delivery, UNCERTAIN.
 - **Where the evidence goes.** Receipts, the observer's captures and notes: a new private folder,
   `~/.local/share/nablarva/custody/x1-probes-2026-11-22/` (0700/0600, never Git). *Lead's addition, on Oraculum's point:* the
   auditor creates it and copies each receipt from the sample's folder into it, with its SHA-256, before the sample is closed.
@@ -58,7 +62,9 @@ be read again. (tmux is 3.7c.) The party's seats are bound and idle.
   `~/.cache/nablarva/relay-x1-samples/2026-11-22/sample-codex/`. The handoff does not say who creates it; *lead's view:* the
   desk, when it prepares the window. A trust dialog for the new folder, if one appears,
   is your hand. Closing the sample at the end is the same release: the lead tells you in the window `lead` (pane `%70`), and
-  writes the same into STATUS, once the observer's last read and its custody copy are on disk.
+  writes the same into STATUS. *(draft 3, Oraculum)* When that is: after the observer's last released read and its copy of
+  whatever receipts exist — a missing receipt is not waited for. If no observation is released, or no observer, there is
+  nothing to wait for and the sample can be closed at once.
 - **One thing the handoff left open.** It starts the sample with no sandbox and no approval flag, "so the defaults apply". Today's
   help shows both are flags (`-s read-only | workspace-write | danger-full-access`, `-a on-request | never`); your Codex config
   sets neither at top level; and the help does not say what the default is for a new folder. The sample must write one receipt
@@ -69,8 +75,9 @@ be read again. (tmux is 3.7c.) The party's seats are bound and idle.
   - *(a) as the handoff has it* — `codex -C <folder> -m gpt-6.1-terra`. The receiver is "whatever the default is"; a write
     prompt is possible, and then B's look at the input row is disturbed by a dialog.
   - *(b) explicit* — `codex -C <folder> -m gpt-6.1-terra -s workspace-write -a never`. The help speaks of the sandbox for
-    commands the model runs and of approvals for them: writing inside the working folder, and no question asked. A trust dialog
-    and a refused write stay possible. A refused write comes back to the model; the turn is then seen and the receipt is
+    commands the model runs and of approvals for them. *(draft 3)* It names the mode `workspace-write` and does not spell out
+    what the mode permits; that it allows writing inside the working folder is the lead's reading of the name. With `never`
+    no question is asked. A trust dialog and a refused write stay possible. A refused write comes back to the model; the turn is then seen and the receipt is
     MISSING. The receiver configuration is a named value in the packet, and the results of A and B hold for it only.
   - The model name `gpt-6.1-terra` was used by the controller for its helpers; as a value of `-m` on the command line it is not
     verified. If it is refused, startup waits until you name another.
@@ -122,7 +129,8 @@ be read again. (tmux is 3.7c.) The party's seats are bound and idle.
   bells (RUNBOOK, "Communication protocol"): `tmux set-buffer`, `tmux paste-buffer -p` into the sample's pane, then
   `tmux send-keys Enter`. The text is `NONCE:<another fresh value>`. Recorded per phase: text staged on the
   input row · submit seen · native turn · receipt. No party pane is a target. It runs after A, only if A did not end UNCERTAIN,
-  with the sample idle again.
+  with the sample idle again. *(draft 3)* Its nonce is written into a POINT before the try, as A's is. If you give B and not
+  A, B runs on its own preconditions and its own nonce.
 - **Why it needs your own words.** This is an agent operating a tmux push. L4 records send-keys injection as a death and L17
   calls tmux push a human-operated carrier. `docs/ARCHITECTURE.md`, lines 216–219: any claimed exception "returns to Majkee with
   its evidence. No future gate may presume that exception." So this is **one explicit exception to L4 for this one measurement**.

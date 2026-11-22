@@ -10,6 +10,9 @@
 > Added on Majkee's word of 2026-11-22 (`raw/decision.majkee.countersignature.2026-11-22.md`): the countersignature — the
 > qualified opposing read — is Oraculum's, a second thinking entity of a different brand. A child of the lead may read first;
 > its read is a fresh-eyes check and never replaces hers.
+> Added on his word of the same day (`raw/decision.majkee.seats-and-notice.2026-11-22.md`): the auditor is also the final work
+> audit agent; every notice is a poke and every reply is announced by one reply bell — Oraculum's too, which replaces "no
+> bell" where this file still said it.
 
 ```yaml
 goal: >
@@ -28,8 +31,8 @@ gate: >
   the probes and their results. Any later relay architecture decision follows L14 and may cite this packet as evidence.
 participant_1: [lead, {brand: claude, model: fable, effort: high}, host: home, role: "head and status_owner; writes assignments, verifies, commits; sends the Claude-origin tries when released"]   # the flight build, window `lead`, started by Majkee with model fable and effort high — raw/roster.2026-11-22.md
 participant_2: [controller, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "hands; runs what a POINT names; pushes on the lead's poke; sends a Codex-origin try only if one is released"]
-participant_3: [auditor, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "independent observer; only reads; never sender or receiver"]
-participant_4: [oraculum, {brand: codex, model: GPT-6.2-Astra, effort: xhigh}, host: home, role: "opposer by file; reads each document that asks Majkee for a release — the read-back sheet, the packet — once before it goes to him; no code, no transport, no bell"]
+participant_3: [auditor, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "independent observer; only reads; never sender or receiver; audits the finished work — the packet against the evidence — before it goes to Majkee"]
+participant_4: [oraculum, {brand: codex, model: GPT-6.2-Astra, effort: xhigh}, host: home, role: "opposer by file; reads each document that asks Majkee for a release — the read-back sheet, the packet — once before it goes to him; her read is the countersignature; no code, no transport; one reply bell"]
 participant_5: [exec, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "Majkee's decision desk; presents and records his decisions; tmux window work on his word"]
 participant_6: [majkee, {brand: human}, host: home, role: "every release; trust dialogs; starts and closes the samples; opens the U01 control by his own hand"]
 participant_7: [predecessor, {brand: claude, model: fable, effort: xhigh}, host: home, role: "on call for questions about the closed bed; answers by pointing at files; holds no pen"]
@@ -129,7 +132,7 @@ Never read .majkee/ or .hlm/.
 ```text
 You are the opposer for /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes. The lead asks you by a POINT in its
 _bus/, once for each document that asks Majkee for a release — the read-back sheet and the packet. You answer with one file at the path the POINT names: your verdict first,
-then your points with file and line, strongest first. No code, no transport, no bell, no pane input. Git read-only queries are
+then your points with file and line, strongest first. No code, no transport, no pane input except one reply bell after a look. Git read-only queries are
 allowed. Never read .majkee/ or .hlm/.
 ```
 
@@ -151,7 +154,7 @@ The shared rule is `/home/hruzam/reposoma/raw.guides/bus/res/file-poke.md` (prov
 | From → to | Door | What it proves |
 |---|---|---|
 | lead → a Codex main | the file first, then `codex queue --thread <id> --message "<one labelled line>"`, without `--resume` | that the queue accepted the call. Read is shown only by the RETURN file or by work in the pane. |
-| a Codex main → lead | the RETURN file; optionally one reply bell — look, `tmux set-buffer`, `tmux paste-buffer -p`, look, `tmux send-keys Enter`, look | the file is the truth. The bell is a hint from a seat and never Majkee's word. |
+| a Codex main → lead | the RETURN file and one reply bell — look, `tmux set-buffer`, `tmux paste-buffer -p`, look, `tmux send-keys Enter`, look | the file is the truth. The bell is a hint from a seat and never Majkee's word. |
 | lead → a Claude pane (the predecessor, myShell) | the same look-first paste, as three separate calls | submitted only when the input row is empty again and the pane shows work |
 
 - **One labelled line, never content.** `[poke pNN] read <absolute path> — <a few words>` and `[bell rNN] return at <absolute path>`.

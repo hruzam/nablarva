@@ -62,3 +62,14 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - proves: the queue accepted the call. It does not prove that the line was read.
 
 - p05 outcome: done — `git ls-remote origin refs/heads/core` = `59878f9` at 2026-11-22T13:45:06Z, equal to local HEAD; checked by the lead.
+
+## p06 — lead → oraculum · `codex queue`
+- authority: Majkee names her as the countersignature (raw/decision.majkee.countersignature.2026-11-22.md)
+- file first: `_bus/04.lead.point.md`, committed in ce3807c
+- looked first (2026-11-22T13:46:52Z): pane %60 — codex in the foreground, not dead, input row empty (placeholder only, cursor at the start), no dialog; footer thread id 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1. The pane showed the text-selection hint of Codex and a warning marker; the queue door does not type into the pane.
+- call: `codex queue --thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1 --message "<line>"`, without `--resume`
+- line: `[poke p06] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/04.lead.point.md — the countersignature, on Majkee's word: oppose the handoff's unread additions and sheet draft 2; return by file, no bell`
+- before: 2026-11-22T13:46:52Z · after: 2026-11-22T13:46:52Z · exit code: 0
+- output (first line): `Queued message 01a20382-7ad8-7853-9b8d-7bbfbb36e06a for thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1.`
+- proves: the queue accepted the call. It does not prove that the line was read.
+- read is shown by: `_bus/04.oraculum.return.md`, or by work in pane %60
