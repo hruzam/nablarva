@@ -1,6 +1,6 @@
 ---
 updated: 2026-11-22 14:41 UTC
-state: 'BOUND. The lead holds the pen. The read-back sheet is draft 3, countersigned by Oraculum. The exec desk put theme S0 to Majkee at 05:55 UTC and waits for his answer; the desk has read the note that the sheet is draft 3. The walkthrough has begun: Majkee answered S0 with yes (the desk''s record, read at 14:41 UTC); S1 to S7 are open and he is away until about 15:15 UTC. Nothing runs and nothing is released.'
+state: 'BOUND. The lead holds the pen. The read-back sheet is draft 3, countersigned by Oraculum. It is at the exec desk, which knows it is draft 3. The walkthrough has begun: Majkee answered S0 with yes (the desk''s record, read at 14:41 UTC); S1 to S7 are open and he is away until about 15:15 UTC. Nothing runs and nothing is released.'
 writer: 'lead (flight · claude cc738596-ba93-41f4-a8a6-30a6aef4139e) on home — window `lead`, pane %70'
 host: home (hruzam)
 worktree: '/home/hruzam/unikuklatrix/nablarva · core · origin/core was 21df208 at 13:57:11 UTC (the controller pushed on pokes p03, p05 and p09); commits after it are local until the next push poke (`git -C /home/hruzam/unikuklatrix/nablarva log --oneline origin/core..HEAD`) · dirty paths, all Majkee''s, never staged and never opened: .dev/session/relay-X1-probes/CACHE.md (his word, raw/decision.majkee.cache-and-commits.2026-11-22.md), .dev/session/vist-X0-helloWorld/RUNBOOK.md, .dev/session/vist-X0-helloWorld/majkee-personal-notes.md'
