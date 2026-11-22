@@ -3,6 +3,10 @@
 > A thin frame, written on 2026-11-22 by the outgoing lead of `relay-X0-carryover` at Majkee's request, so that the fresh lead
 > does not start from an empty page. The lead of this bed owns the file from the moment Majkee gives it the pen, and may change it
 > until it has read the plan back to him. From then on it is fixed. Where things stand is in `STATUS.md`, never here.
+>
+> Taken over by the lead on 2026-11-22 (`raw/decision.majkee.pen.2026-11-22.md`). Changed by the lead before the read-back: the
+> lead's effort as launched; Oraculum reads every document that asks Majkee for a release, once each — the frame gave her one
+> read, for the packet only, while its own line 6 of "How this party works" asks for such a read of every release document.
 
 ```yaml
 goal: >
@@ -19,10 +23,10 @@ gate: >
   "tried once". The packet gives no verdict on the relay architecture, qualifies no door as a transport or as a replacement for
   the file-poke, presumes no exception to the recorded death of send-keys injection and adopts nothing. `relay-X1-probes` owns
   the probes and their results. Any later relay architecture decision follows L14 and may cite this packet as evidence.
-participant_1: [lead, {brand: claude, model: fable, effort: xhigh}, host: home, role: "head and status_owner; writes assignments, verifies, commits; sends the Claude-origin tries when released"]   # build, model and effort are Majkee's choice when he starts the session; the predecessor recommends the flight build, window `lead` — raw/decision.majkee.successor-seat.2026-11-22.md
+participant_1: [lead, {brand: claude, model: fable, effort: high}, host: home, role: "head and status_owner; writes assignments, verifies, commits; sends the Claude-origin tries when released"]   # the flight build, window `lead`, started by Majkee with model fable and effort high — raw/roster.2026-11-22.md
 participant_2: [controller, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "hands; runs what a POINT names; pushes on the lead's poke; sends a Codex-origin try only if one is released"]
 participant_3: [auditor, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "independent observer; only reads; never sender or receiver"]
-participant_4: [oraculum, {brand: codex, model: GPT-6.2-Astra, effort: xhigh}, host: home, role: "opposer by file; reads the packet once before it goes to Majkee; no code, no transport, no bell"]
+participant_4: [oraculum, {brand: codex, model: GPT-6.2-Astra, effort: xhigh}, host: home, role: "opposer by file; reads each document that asks Majkee for a release — the read-back sheet, the packet — once before it goes to him; no code, no transport, no bell"]
 participant_5: [exec, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "Majkee's decision desk; presents and records his decisions; tmux window work on his word"]
 participant_6: [majkee, {brand: human}, host: home, role: "every release; trust dialogs; starts and closes the samples; opens the U01 control by his own hand"]
 participant_7: [predecessor, {brand: claude, model: fable, effort: xhigh}, host: home, role: "on call for questions about the closed bed; answers by pointing at files; holds no pen"]
@@ -64,8 +68,8 @@ Each step names what it needs. Details are in the handoff section given.
 0. **Bind.** The lead gets the pen from Majkee, written into a decision file in this bed's `raw/`. It re-reads the party against
    live tmux, writes its own roster, and rewrites `STATUS.md` as its own.
 1. **Read back, then ask.** Through the exec desk the lead reads back to Majkee which rows he selects, which bed owns each U-case,
-   the stop conditions and where the evidence goes (handoff §8). Then one sheet asks for the release lines of the first run —
-   handoff §6, lines 2–7.
+   the stop conditions and where the evidence goes (handoff §8). One sheet carries the read-back and asks for the release lines
+   of the first run — handoff §6, lines 2–7. Oraculum reads it once before it goes to the desk.
 2. **Start `sample-codex`** — Majkee's hand, in a window the exec desk prepares; the standing NONCE instruction goes in; the
    auditor takes a first look. Needs lines 2, 3 and 6. (Handoff §3, "Proposed start".)
 3. **Observation A** — the queue, lead → sample-codex, once. Needs line 4. POINT with a fresh nonce first; auditor observes;
@@ -121,7 +125,7 @@ Never read .majkee/ or .hlm/.
 
 ```text
 You are the opposer for /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes. The lead asks you by a POINT in its
-_bus/, at most once before the packet goes to Majkee. You answer with one file at the path the POINT names: your verdict first,
+_bus/, once for each document that asks Majkee for a release — the read-back sheet and the packet. You answer with one file at the path the POINT names: your verdict first,
 then your points with file and line, strongest first. No code, no transport, no bell, no pane input. Git read-only queries are
 allowed. Never read .majkee/ or .hlm/.
 ```
