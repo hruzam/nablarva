@@ -44,7 +44,7 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
   vendor: codex
   model: GPT-6.2-Astra xhigh, profile oraculum
   thread: 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1
-  thread_name: "oraculum(codex)-audit"
+  thread_name: "oraculum(codex).contraThinking|houston|astrobley"   # seen 2026-11-22T03:10Z; was "oraculum(codex)-audit" on 2026-11-21. The thread id is unchanged.
   window: oraculum
   pane: "%60"
   cwd: ~/unikuklatrix/nablarva

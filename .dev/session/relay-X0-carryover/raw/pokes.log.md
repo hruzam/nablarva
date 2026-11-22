@@ -157,3 +157,15 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 ## p21 — engineer → cartan (push-only, no cycle)
 - Carries the commits that close cycles 14 and 15 and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
 - line: `[poke p21] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
+- p21 result, checked by me: `origin/core` = `93915d9` = HEAD, reflog "update by push" 2026-11-22 04:01:32 +0100.
+
+## p22 — engineer → oraculum (cycle 17)
+- target checked 2026-11-22T03:10Z, bottom rows only: %60 `oraculum`, foreground `codex`, footer thread `01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1`, idle composer, context 80% left, profile oraculum. The thread name in the footer is now `oraculum(codex).contraThinking|houston|astrobley` (the roster had `oraculum(codex)-audit`); the id is unchanged. The footer also shows "1 warning · f2 to view"; no dialog on the input row.
+- door: `codex queue --thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1 --message …` (no `--resume`), one call.
+- line: `[poke p22] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/17.engineer.point.md — cycle 17: counter-read of the handoff for the successor stage and of the goal texts, before they go to Majkee; a file only, no bell`
+- call: before 03:10:44.327Z · after 03:10:44.528Z · exit 0 · queued for thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1 (message id in the terminal output of the call).
+- claim level: queue call accepted. Read = only when `_bus/17.oraculum.return.md` exists. She rings no bell.
+
+## p23 — engineer → cartan (push-only, no cycle)
+- Carries the handoff draft, the Houston consult and its verdict, POINT 17 and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
+- line: `[poke p23] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
