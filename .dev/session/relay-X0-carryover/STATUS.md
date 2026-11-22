@@ -1,7 +1,7 @@
 # STATUS: relay-X0-carryover
 
 ```yaml
-updated: 2026-11-22 04:01 CET
+updated: 2026-11-22 04:05 CET
 writer: engineer (trajectory · claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) · sole pen of this bed
 host: home · hruzam
 worktree: /home/hruzam/unikuklatrix/nablarva · core · upstream origin/core. The controller pushes on my poke; a poke that would
@@ -35,6 +35,7 @@ files:
   custody_tool_2: scripts/capture-folders-custody.py               # whole folders; written by me, reviewed and run by the controller (cycle 15)
   custody_private: ~/.local/share/nablarva/custody/                # host-local on home, 0700, never Git — c04-2026-11-21/ (eight pinned inputs) · u01-2026-11-22/ (crawl files, the selector's groups.md, the auditor's audit.blind.md) · vc08-full-2026-11-22/ (both capture folders whole, 171 files)
   u01_report: raw/u01.fixture-selection.2026-11-22.md              # masked selection report, written by cartan (cycle 12 text); result MISSING
+  handoff: raw/handoff.successor-stage.2026-11-22.md               # DRAFT 1 — what leaves this bed, the exact probe scope, the planned U01 capture, the releases Majkee would have to give; not yet consulted, counter-read or put to him
   exp: exp/                                                        # noncanonical notes on how the team works (Majkee, T10)
   goals_rules: goals/README.md
   goals_overview: goals/OVERVIEW.md                                # written for Majkee before the walkthrough; not rewritten since — the goal files win
@@ -73,6 +74,7 @@ bus:     # every cycle. A cycle is closed only by its VERDICT.
   - 13 · auditor · G4 rev 3 — blind label of the 46 frames without a signature literal; no native control found, none unsure; agrees with the selector 46 of 46; boundary answer on the r1 help frames matches · CLOSED (ACCEPT) · 13.engineer.point.md, 13.auditor.return.md, 13.engineer.verdict.md
   - 14 · exec · second decision walkthrough with Majkee — five themes, seven answers, each with his reply quoted; the desk acted on nothing · CLOSED (ACCEPT) · 14.engineer.point.md, 14.exec.return.md, 14.engineer.verdict.md
   - 15 · cartan · G9 rev 4 — non-author review of scripts/capture-folders-custody.py, one run; both capture folders in private custody, 171 files, 264,228 bytes; re-checked by me · CLOSED (ACCEPT) · 15.engineer.point.md, 15.cartan.return.md, 15.engineer.verdict.md
+  - 16 · houston (card consult, Claude-side, invoked by me) · lock fit of the handoff draft — L14 D1 and D4, L4, L20, L21 · OPEN · 16.engineer.point.md → 16.houston.return.md (his reply, recorded verbatim by me)
 gate: >-
   CONFIRMED by Majkee 2026-11-22 (sheet 2, S3 — wording as written) — Majkee records GO or STOP on what follows U01: an
   independently labelled result for X0-U01 (one genuine unknown native view selected from the released capture folders, or
@@ -106,7 +108,7 @@ checkpoint: >-
   both of my calls. Cycle 15 — the controller reviewed the copy script and ran it once; both capture folders are in private
   custody whole, 171 files, and my own comparison of source and copy agrees. Nothing released is left to run.
 in_flight:
-  - none. No cycle is open and no seat is working. The next work is mine — the handoff file for the successor stage.
+  - cycle 16 → houston · one read-only consult on the handoff draft. No party seat is working.
 decided_by_engineer:   # where Majkee left the call to me — both agreed by him on 2026-11-22 (sheet 2, S5 — "yes agree" and "yes")
   - 2026-11-22 · G8 placement (T8) · The live door probes leave this bed. They go to a successor research stage, with G6 parked
     beside them; Majkee's proposed name is `relay-X1-research`. Reasons — G8 is the first work that activates and delivers (L21)
@@ -118,7 +120,7 @@ decided_by_engineer:   # where Majkee left the call to me — both agreed by him
 recovery_probe: |
   hostname -s; git -C /home/hruzam/unikuklatrix/nablarva status --short; git -C /home/hruzam/unikuklatrix/nablarva log --oneline -6
   git -C /home/hruzam/unikuklatrix/nablarva rev-list --left-right --count origin/core...HEAD    # ahead after a closing commit means a push poke is owed to the controller; behind is not expected
-  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; no cycle is open after 15
+  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; cycle 16 (a consult run inside the engineer's session) is open
   tail -30 /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/pokes.log.md
   ls -ld ~/.local/share/nablarva/custody/*/                                       # private custody; modes must stay 0700
   ls -d /tmp/vc08r1.tkz50zbf /tmp/vc08r2.kk50sqqh                                 # the original capture folders; gone after a reboot (tmpfs). Both are in private custody whole since cycle 15.
