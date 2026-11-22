@@ -124,6 +124,8 @@ accepted baseline to my discretion (walkthrough T7).
 rule R1 it may record a summary he confirmed. He asked it to watch continuity, orphaned work and coordination across tasks. It can
 take a bounded fork (an `astrobley` child) when he or a POINT asks; for a sustained second coder he opens a dedicated
 `dev(codex)|astrobley` window. If I ask for a separate witness window, exec prepares it (T9). I turn its records into assignments. No pen.
+Since 2026-11-22 every decision this bed owes to Majkee goes through this desk: I write a sheet and poke the desk at once
+(raw/decision.majkee.desk-routing.2026-11-22.md).
 
 **A second relay Cartan — not asked for.** One controller covers hands and push today, and an idle seat is a cost. I ask Majkee for it
 when crawling and reading start to eat the controller's context.
@@ -145,7 +147,7 @@ and integrates. If a child cannot be started, the parent says so and substitutes
 parent with role, task, handle, writes and return_to.
 
 ```yaml
-children: []   # none standing. Finished — cycle 10, exec → Astrobley child `/root/c04_custody` (C04 custody copy). Cycle 11, cartan → three terra readers (default agent type, model gpt-6.1-terra) `/root/u01_r1`, `/root/u01_r2`, `/root/u01_archive`; each wrote only its own crawl.0N.md in the private U01 folder. Cycle 12 readers are added from his RETURN.
+children: []   # none standing. Finished — cycle 10, exec → Astrobley child `/root/c04_custody` (C04 custody copy). Cycle 11, cartan → three terra readers (default agent type, model gpt-6.1-terra) `/root/u01_r1`, `/root/u01_r2`, `/root/u01_archive`; each wrote only its own crawl.0N.md in the private U01 folder. Cycle 12, the same three readers were reused by follow-up tasks and wrote crawl.04–06.md.
 ```
 
 # Not in this party (do not address from old records)

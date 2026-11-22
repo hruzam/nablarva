@@ -110,3 +110,10 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - line: `[poke p14] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/11.engineer.verdict.md then _bus/12.engineer.point.md — cycle 11 closed with REVISE; cycle 12 is the second U01 pass: a verdict per group of frames; no git, no push`
 - call: before 02:23:31.029Z · after 02:23:31.433Z · exit 0 · `Queued message 01a20110-da51-7173-b69d-e446a32a4b9b for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
 - claim level: queue call accepted. Read = only when the controller pane shows work on cycle 12 or `_bus/12.cartan.return.md` exists.
+- p14 outcome: read — `_bus/12.cartan.return.md` written 2026-11-22 03:27 +0100, found by my file watch. No bell.
+
+## p15 — engineer → cartan (push-only, no cycle)
+- First push after Majkee's answer of 2026-11-22 (raw/decision.majkee.push.2026-11-22.md). Sent only after his cycle-12 turn had ended; target looked at 02:28:35Z, idle.
+- line: `[poke p15] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref. Majkee confirmed tonight: on my poke, no approval each time (raw/decision.majkee.push.2026-11-22.md). RETURN 12 is received; its verdict follows separately.`
+- call: before 02:28:35.694Z · after 02:28:35.996Z · exit 0 · `Queued message 01a20115-8007-7c83-b624-084dbf6d3b97`.
+- result, checked by me: `origin/core` = `2b5945e` = HEAD, reflog "update by push" 2026-11-22 03:28:49 +0100, `git ls-remote` agrees. Six commits went out (d8357e3 … 2b5945e).
