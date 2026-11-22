@@ -1,7 +1,7 @@
 ---
 kind: party roster (data for pokes; observed, not assumed)
 bed: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover
-rev: 5 (2026-11-22T02:13Z) — after Majkee's walkthrough (cycle 10) — exec confirmed and kept as his decision desk, auditor kept, bells optional, push held, child seats listed under their parent. rev 4 (2026-11-21T22:00Z) — exec desk added on Majkee's request. rev 3 — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
+rev: 5 (2026-11-22T02:13Z) — after Majkee's walkthrough (cycle 10) — exec confirmed and kept as his decision desk, auditor kept, bells optional, child seats listed under their parent; the push hold of that night was lifted by Majkee the same night. rev 4 (2026-11-21T22:00Z) — exec desk added on Majkee's request. rev 3 — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
 observed_by: engineer · 2026-11-21T20:58Z · host home (hruzam) · read-only tmux queries + bottom rows of each pane + ~/.claude/sessions/*.json
 tmux: base session `helloWorld`, grouped views `helloWorld-37 … -41`. Windows by name — engineer, controller, oraculum, myShell, auditor, seniorDev. tmux 3.7c.
 versions: Claude Code 2.1.330 · codex-cli 0.171.0
@@ -21,7 +21,7 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
   pane: "%58"
   cwd: ~/ia-sync            # work root for this bed is ~/unikuklatrix/nablarva (absolute paths)
   door_in: tmux pane %58 — one labelled line, look first. Typed text queues if I am mid-turn. Majkee types here too, so a non-empty input row means do not paste.
-  writes: STATUS.md, goals/, raw/ (own files), _bus/NN.engineer.*.md, pulse row, git commits. I do not push. Pushes are held since 2026-11-22 (walkthrough T9 item 1 reads two ways — see STATUS).
+  writes: STATUS.md, goals/, raw/ (own files), _bus/NN.engineer.*.md, pulse row, git commits. I do not push; the controller does, on my poke (Majkee 2026-11-22, raw/decision.majkee.push.2026-11-22.md).
   bell: reply bells are optional heads-ups (Majkee, walkthrough T10) — asked where they help, skipped where they would disturb a working seat. I still check RETURN paths myself with a finite file check.
 
 - seat: cartan              # controller (role below)
@@ -102,7 +102,7 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
 
 **cartan — controller.** Majkee's words define the job (decision file, item C). How I use it:
 1. **Hands.** Runs what a POINT names with an unrestricted shell: reading, crawling, probes, inventories. G3 is his first job after binding.
-2. **Push.** I commit path-scoped; on my poke he fetches, checks that `core` is only ahead, runs one plain `git push`, and reports the range. Never `pull --rebase`, never force. **Held since 2026-11-22** until Majkee says whether each push needs his own approval (walkthrough T9 item 1).
+2. **Push.** I commit path-scoped; on my poke he fetches, checks that `core` is only ahead, runs one plain `git push`, and reports the range. Never `pull --rebase`, never force. Held for a few hours on 2026-11-22 while one walkthrough answer read two ways; Majkee then confirmed — on my poke, without asking him each time.
 3. **Non-author check** of my documents, as in cycle 01.
 4. **Coding by POINT** when a goal is released. Then I check his work, or oraculum does; nobody accepts their own.
 5. **Codex-side subagents** (`houston`, `oraculum`, `astrobley`) when a POINT allows it. Their words are published verbatim and attributed. For U01 (cycle 11) he crawls through helpers with the model set to terra (Majkee, walkthrough T5).

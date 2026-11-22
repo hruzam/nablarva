@@ -1,15 +1,15 @@
 # STATUS: relay-X0-carryover
 
 ```yaml
-updated: 2026-11-22 03:22 CET
+updated: 2026-11-22 03:26 CET
 writer: engineer (trajectory · claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) · sole pen of this bed
 host: home · hruzam
-worktree: /home/hruzam/unikuklatrix/nablarva · core · upstream origin/core. Local commits are AHEAD of origin and stay so while
-  pushes are held (see holds). Foreign uncommitted work present and left alone — vist-X0-helloWorld/RUNBOOK.md (Majkee's goal
+worktree: /home/hruzam/unikuklatrix/nablarva · core · upstream origin/core. The controller pushes on my poke; a poke that would
+  land inside one of his working turns waits until the turn ends. Foreign uncommitted work present and left alone — vist-X0-helloWorld/RUNBOOK.md (Majkee's goal
   edit; he said it can be left as is), vist-X0-helloWorld/majkee-personal-notes.md (his).
 pen: engineer since 2026-11-21 (Majkee, raw/decision.majkee.open-bed.2026-11-21.md).
 team: >-
-  Two at work — engineer (pen) and cartan (controller — hands, crawling through helpers, non-author check; push held). On call —
+  Two at work — engineer (pen) and cartan (controller — hands, crawling through helpers, non-author check, push). On call —
   oraculum (opposer and counter-signature; files only, no bell, no code) and auditor (kept by Majkee as independent observer;
   labeller for U01). Desks — exec (Majkee's decision desk for this bed, kept; bounded forks) and myshell (continuity).
   Roles, ids, doors and the child-seat rule are in the roster (rev 5).
@@ -19,6 +19,7 @@ shape: No RUNBOOK. Goals are small files in goals/ — Majkee keeps the try "whe
 files:
   decision: raw/decision.majkee.open-bed.2026-11-21.md             # Majkee's words that opened the bed, with his own inline notes
   decision_team: raw/decision.majkee.team-and-doors.2026-11-21.md  # controller job, reply bell, who pushes, team
+  decision_push: raw/decision.majkee.push.2026-11-22.md            # the controller pushes on my poke without asking him each time; settles walkthrough T9 item 1
   decisions_walkthrough: raw/decision.majkee.walkthrough.2026-11-21.md   # his answers to eleven themes, written by the exec desk (cycle 10); sha256 a183f96b0995cee63be2964d2bece37a0826b477e04987cac5e45b3d3c9043a6; checked in _bus/10.engineer.verdict.md
   walkthrough: raw/walkthrough.sheet.2026-11-21.md                 # the sheet the desk worked from
   answer: raw/answer.majkee.reminder-and-leftovers.2026-11-21.md   # his two questions — reminder script, vistMini leftovers
@@ -46,7 +47,7 @@ goals:   # every goal file, its rev, and where it stands. This list is the state
   - G6.u02-exit-race.md · rev 3 · parked by Majkee (T8) until a scoped proposal; goes with G8 to the successor stage
   - G7.retire-file-poke.md · rev 3 · tracked, open obligation (T8) — the file-poke stays in use until a qualified replacement is approved; follows the bed that qualifies one
   - G8.door-probes-live.md · rev 1 · NOT released. Placement was left to me (T8) — see `decided_by_engineer`. No live send before Majkee has seen the exact test scope.
-  - G9.custody-and-handoff.md · rev 3 · (a) DONE — eight pinned inputs in private custody, 8 of 8 hashes re-checked (VERDICT 10) · (b) card written; presence stays marked until this session ends
+  - G9.custody-and-handoff.md · rev 4 · (a) DONE — eight pinned inputs in private custody, 8 of 8 hashes re-checked (VERDICT 10) · (b) card written; presence stays marked until this session ends
   - G10.friendly-reminder.md · rev 2 · deferred by Majkee (T6) to a later stage or a separate team; his design direction (chess clock, operator surface in the session-window helper) is in the record
 u_cases:   # all six belong to this bed since the STOP of X0 (T4). Belonging is not a release.
   - U01 → G4 · released (read-only search)
@@ -75,7 +76,7 @@ gate_passed: >-
   The baseline gate of cycles 04–09 — "Will Majkee accept export rev 4 and the goal revisions listed under `goals:` as the relay
   planning baseline?" — was accepted as written on 2026-11-21 (walkthrough T7; his "yes." to the desk's proposal). Documentary
   only; it released nothing. The revisions accepted were G0 r3, G1 r4, G2 r4, G3 r4, G4 r2, G5 r2, G6 r3, G7 r3, G8 r1, G9 r2,
-  G10 r2. G0, G4 and G9 moved one revision since, each only to record his decisions.
+  G10 r2. G0 and G4 moved one revision since and G9 two, each only to record his decisions.
 checkpoint: >-
   Bed opened 2026-11-21 from the 45 files of vist-X0-helloWorld. Cycles 01–09 (afternoon and evening) bound the team, checked
   the export four times, produced the door inventory, and repaired what two outside reads found. Cycle 10, night of
@@ -99,7 +100,7 @@ decided_by_engineer:   # where Majkee left the call to me
     hold two lines' doing-state honestly. It needs its own head; I can hand over what this bed learned about panes and pokes.
 recovery_probe: |
   hostname -s; git -C /home/hruzam/unikuklatrix/nablarva status --short; git -C /home/hruzam/unikuklatrix/nablarva log --oneline -6
-  git -C /home/hruzam/unikuklatrix/nablarva rev-list --left-right --count origin/core...HEAD    # ahead is expected while pushes are held; behind is not
+  git -C /home/hruzam/unikuklatrix/nablarva rev-list --left-right --count origin/core...HEAD    # ahead after a closing commit means a push poke is owed to the controller; behind is not expected
   ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; cycle 12 is open
   tail -30 /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/pokes.log.md
   ls -ld ~/.local/share/nablarva/custody/*/                                       # private custody; modes must stay 0700
@@ -111,7 +112,7 @@ holds:
   - L12 — core, plain pull/push, never pull --rebase. Working hold — path-scoped commits, foreign dirty work untouched.
   - L21 — no shared-layer, framework or transport implementation, activation or delivery. Released so far — G4's read-only search (T5) and G9(a), done. G6, G7, G8 and G10 are not released.
   - L22 — `.majkee/` and `.hlm/` are never read or listed. myshell works there; I talk to the seat only.
-  - Push — HELD since 2026-11-22. Walkthrough T9 item 1 reads two ways (VERDICT 10, mismatch 1) — either each push, the controller's too, needs Majkee's approval, or the controller pushes at once so that approval prompts do not stall a run. Until he says, I commit path-scoped and nobody pushes this bed. All seats work on the same disk on home, so nothing waits on it.
+  - Push — the controller pushes on my poke, without asking Majkee each time (his answer of 2026-11-22, raw/decision.majkee.push.2026-11-22.md; it settles walkthrough T9 item 1). I commit path-scoped and do not push from this session. One plain push, only when ahead and not behind. A push poke is not sent into a working turn of the controller.
   - Origin bed vist-X0-helloWorld — STOPPED by Majkee and closed (T4). I wrote its closing STATUS and decision file on his word. Nothing runs from it. Its folder stays in place; his two uncommitted files there are untouched.
   - U-cases — this bed is the one executing bed for U01–U06. Each case still needs its own assignment and release. Only U01's read-only search is released.
   - U01 scope (T5) — folders /tmp/vc08r1.tkz50zbf and /tmp/vc08r2.kk50sqqh; the vistMini archive only if they yield nothing; raw frames stay on the host and outside Git; anything shared is masked. A synthetic or simulated view is not part of U01.
@@ -131,11 +132,11 @@ expected: >-
   A selection report whose first line is SELECTED or MISSING, a private folder with the helpers' result files and, if selected,
   the candidate's copied source files and a label-free packet for the labeller.
 owed:
-  - Majkee — pushes (T9 item 1). One sentence — may the controller push on my poke without asking you each time, or do you approve each push yourself? Local commits wait on home until then.
   - Majkee — the other 163 files in the two /tmp folders are not in custody; only the eight pinned ones were asked for. Keep all of them, or let them go with the next reboot? A selected U01 frame is copied either way.
   - Majkee — the provisional gate above (confirm or rewrite).
   - Majkee — T6 part (d), the tmux `monitor-silence` one-liner, has no clear answer in the record. Say if you want it.
   - Majkee — opening the successor stage, when I bring the handoff file and the test scope.
+  - engineer — one push poke to the controller as soon as his cycle-12 turn ends (commits d8357e3 onward are local).
   - engineer — handoff file for G8, G6 and G7 with the exact test scope; Houston consult on L14 D1 and L21.
   - engineer — Oraculum's countersignature on the accepted goal texts (T7, my discretion). I intend to ask once cycle 11 is closed; the repaired goal texts were never re-read by a non-author.
   - engineer — G4 rev 4 once cycle 12 is closed — say which registry a U01 fixture must be absent from; three signature sets exist (VERDICT 11).
