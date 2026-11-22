@@ -52,3 +52,21 @@ systemd timer or unit named `vist`.
 I did not look for it again today. Those two ids stay untouched either way.
 
 **No door is qualified on today's versions.** That is what G3 and G8 are for.
+
+## Added 2026-11-22 — the tmux `monitor-silence` line you asked for (walkthrough 2, S4)
+
+You said yes to a trial as the exec desk proposed it: one window, one sitting, ten minutes. This is for your own hand; no seat sets it.
+
+```sh
+tmux set-option -w -t helloWorld:engineer monitor-silence 600    # flag the `engineer` window after 600 s without output
+tmux set-option -w -t helloWorld:engineer monitor-silence 0      # off again
+tmux show-options -w -t helloWorld:engineer monitor-silence      # what is set now
+```
+
+What it does on home as tmux is configured today (`silence-action other`, `visual-silence off`, both read on 2026-11-22):
+when the window has printed nothing for ten minutes and is not the window you are looking at, tmux rings the terminal bell and
+marks the window in the status bar with `~`. Looking at the window clears the mark.
+
+What it does not tell you: whether the agent is idle, working without output, or waiting for you. A window that is quiet for a
+good reason is flagged all the same — the `engineer` window is quiet whenever I wait on a file watch. It is a cue to look, nothing more.
+Any other window: replace `engineer` with its name (`controller`, `auditor`, `seniorDev`, …).
