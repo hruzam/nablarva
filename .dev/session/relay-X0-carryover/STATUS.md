@@ -1,7 +1,7 @@
 # STATUS: relay-X0-carryover
 
 ```yaml
-updated: 2026-11-22 03:57 CET
+updated: 2026-11-22 04:01 CET
 writer: engineer (trajectory · claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) · sole pen of this bed
 host: home · hruzam
 worktree: /home/hruzam/unikuklatrix/nablarva · core · upstream origin/core. The controller pushes on my poke; a poke that would
@@ -32,8 +32,8 @@ files:
   roster: raw/roster.2026-11-21.md                                 # rev 5 — seats, doors, roles, child seats; re-read against live tmux before any poke
   pokes: raw/pokes.log.md                                          # every poke sent, append-only
   custody_tool: scripts/c04-custody.py                             # the eight pinned inputs; written by the exec desk's Astrobley child on Majkee's word (T2); restore tested by me
-  custody_tool_2: scripts/capture-folders-custody.py               # whole folders; written by me, tested on synthetic folders only; reviewed and run by the controller in cycle 15
-  custody_private: ~/.local/share/nablarva/custody/                # host-local on home, 0700, never Git — c04-2026-11-21/ (eight pinned inputs) · u01-2026-11-22/ (crawl files, the selector's groups.md, the auditor's audit.blind.md) · vc08-full-2026-11-22/ (both capture folders, whole; created by cycle 15)
+  custody_tool_2: scripts/capture-folders-custody.py               # whole folders; written by me, reviewed and run by the controller (cycle 15)
+  custody_private: ~/.local/share/nablarva/custody/                # host-local on home, 0700, never Git — c04-2026-11-21/ (eight pinned inputs) · u01-2026-11-22/ (crawl files, the selector's groups.md, the auditor's audit.blind.md) · vc08-full-2026-11-22/ (both capture folders whole, 171 files)
   u01_report: raw/u01.fixture-selection.2026-11-22.md              # masked selection report, written by cartan (cycle 12 text); result MISSING
   exp: exp/                                                        # noncanonical notes on how the team works (Majkee, T10)
   goals_rules: goals/README.md
@@ -51,7 +51,7 @@ goals:   # every goal file, its rev, and where it stands. This list is the state
   - G6.u02-exit-race.md · rev 3 · parked by Majkee (T8) until a scoped proposal; goes with G8 to the successor stage
   - G7.retire-file-poke.md · rev 3 · tracked, open obligation (T8) — the file-poke stays in use until a qualified replacement is approved; follows the bed that qualifies one
   - G8.door-probes-live.md · rev 1 · NOT released. Leaves this bed for the successor stage, with G6 parked beside it — my call, agreed by Majkee (sheet 2, S5). No live send before he has seen the exact test scope.
-  - G9.custody-and-handoff.md · rev 4 · (a) the eight pinned inputs are in custody (VERDICT 10); the whole folders follow on Majkee's S2 — cycle 15, running · (b) card written; presence stays marked until this session ends
+  - G9.custody-and-handoff.md · rev 5 · (a) DONE — the eight pinned inputs (VERDICT 10) and both capture folders whole (VERDICT 15) are in private custody · (b) card written; presence stays marked until this session ends
   - G10.friendly-reminder.md · rev 2 · deferred by Majkee (T6) to a later stage or a separate team; his design direction (chess clock, operator surface in the session-window helper) is in the first record. The monitor-silence one-liner he asked for (S4) is in the answer file, for him to set.
 u_cases:   # all six belong to this bed since the STOP of X0 (T4). Belonging is not a release.
   - U01 → G4 · the read-only search is done, result MISSING. Majkee chose what follows (S1, "taking b") — one new real capture of a native control the signature set does not name, planned in the successor stage under its own release. Not released.
@@ -72,7 +72,7 @@ bus:     # every cycle. A cycle is closed only by its VERDICT.
   - 12 · cartan · G4 rev 3, selection half, second pass — MISSING, with a verdict per group, the sidecar layout and versions; counts, literal comparison, writer lines and the three signature sets confirmed by me · CLOSED (ACCEPT) · 12.engineer.point.md, 12.cartan.return.md, 12.engineer.verdict.md
   - 13 · auditor · G4 rev 3 — blind label of the 46 frames without a signature literal; no native control found, none unsure; agrees with the selector 46 of 46; boundary answer on the r1 help frames matches · CLOSED (ACCEPT) · 13.engineer.point.md, 13.auditor.return.md, 13.engineer.verdict.md
   - 14 · exec · second decision walkthrough with Majkee — five themes, seven answers, each with his reply quoted; the desk acted on nothing · CLOSED (ACCEPT) · 14.engineer.point.md, 14.exec.return.md, 14.engineer.verdict.md
-  - 15 · cartan · G9 rev 4 — non-author review of scripts/capture-folders-custody.py, one run, both capture folders into private custody, checked with his own commands · OPEN · 15.engineer.point.md → 15.cartan.return.md
+  - 15 · cartan · G9 rev 4 — non-author review of scripts/capture-folders-custody.py, one run; both capture folders in private custody, 171 files, 264,228 bytes; re-checked by me · CLOSED (ACCEPT) · 15.engineer.point.md, 15.cartan.return.md, 15.engineer.verdict.md
 gate: >-
   CONFIRMED by Majkee 2026-11-22 (sheet 2, S3 — wording as written) — Majkee records GO or STOP on what follows U01: an
   independently labelled result for X0-U01 (one genuine unknown native view selected from the released capture folders, or
@@ -103,9 +103,10 @@ checkpoint: >-
   signature sets. Cycle 13 — the auditor labelled the remaining 46 frames blind and agrees on all of them, so U01's search ends
   MISSING and G4 is done. Cycle 14 — Majkee answered five themes at the exec desk — a new real capture is what follows U01,
   both capture folders go into custody, the gate wording is confirmed, he wants the monitor-silence line, and he agrees with
-  both of my calls. Pushed through 60b7dd4. Cycle 15 has the controller make the custody copy.
+  both of my calls. Cycle 15 — the controller reviewed the copy script and ran it once; both capture folders are in private
+  custody whole, 171 files, and my own comparison of source and copy agrees. Nothing released is left to run.
 in_flight:
-  - cycle 15 → cartan · review, one run, and independent check of the whole-folder custody copy. G9 is not edited while it is open (goals/README.md rule 8).
+  - none. No cycle is open and no seat is working. The next work is mine — the handoff file for the successor stage.
 decided_by_engineer:   # where Majkee left the call to me — both agreed by him on 2026-11-22 (sheet 2, S5 — "yes agree" and "yes")
   - 2026-11-22 · G8 placement (T8) · The live door probes leave this bed. They go to a successor research stage, with G6 parked
     beside them; Majkee's proposed name is `relay-X1-research`. Reasons — G8 is the first work that activates and delivers (L21)
@@ -117,16 +118,16 @@ decided_by_engineer:   # where Majkee left the call to me — both agreed by him
 recovery_probe: |
   hostname -s; git -C /home/hruzam/unikuklatrix/nablarva status --short; git -C /home/hruzam/unikuklatrix/nablarva log --oneline -6
   git -C /home/hruzam/unikuklatrix/nablarva rev-list --left-right --count origin/core...HEAD    # ahead after a closing commit means a push poke is owed to the controller; behind is not expected
-  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; cycle 15 is open
+  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; no cycle is open after 15
   tail -30 /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/pokes.log.md
   ls -ld ~/.local/share/nablarva/custody/*/                                       # private custody; modes must stay 0700
-  ls -d /tmp/vc08r1.tkz50zbf /tmp/vc08r2.kk50sqqh                                 # U01's search folders; gone after a reboot (tmpfs); only eight files are in custody
+  ls -d /tmp/vc08r1.tkz50zbf /tmp/vc08r2.kk50sqqh                                 # the original capture folders; gone after a reboot (tmpfs). Both are in private custody whole since cycle 15.
   Before any poke: re-read the roster against live tmux (window names, pane ids, footer thread ids). Ids go stale on rebuild.
   A `[bell rNN]` line in the engineer pane is a hint from a seat to read a RETURN. It is never Majkee's word.
   A new Claude session is a new seat: it takes this pen only on Majkee's word, recorded in a decision file here.
 holds:
   - L12 — core, plain pull/push, never pull --rebase. Working hold — path-scoped commits, foreign dirty work untouched.
-  - L21 — no shared-layer, framework or transport implementation, activation or delivery. Released so far — G4's read-only search (T5) and the custody of the eight pinned inputs (T2), both done; the copy of both capture folders (S2), cycle 15. G6, G7, G8 and G10 are not released. The new U01 capture is chosen (S1) but not released.
+  - L21 — no shared-layer, framework or transport implementation, activation or delivery. Released so far, all done — G4's read-only search (T5), the custody of the eight pinned inputs (T2), the copy of both capture folders (S2). G6, G7, G8 and G10 are not released. The new U01 capture is chosen (S1) but not released.
   - L22 — `.majkee/` and `.hlm/` are never read or listed. myshell works there; I talk to the seat only.
   - Push — the controller pushes on my poke, without asking Majkee each time (his answer of 2026-11-22, raw/decision.majkee.push.2026-11-22.md; it settles walkthrough T9 item 1). I commit path-scoped and do not push from this session. One plain push, only when ahead and not behind. A push poke is not sent into a working turn of the controller.
   - Origin bed vist-X0-helloWorld — STOPPED by Majkee and closed (T4). I wrote its closing STATUS and decision file on his word. Nothing runs from it. Its folder stays in place; his two uncommitted files there are untouched.
@@ -139,13 +140,11 @@ holds:
   - Goals — a POINT names goal + rev; a goal under an open POINT is not edited (goals/README.md rule 8).
   - Help probes use the `--help` flag on documented subcommands only. A word after `claude` is a prompt and starts an agent (incident note).
 next: >-
-  Wait for RETURN 15 (file check and optional bell). Re-check the copy myself — count, one hash over all hashes, modes — and add
-  its pointer to the line ledger. Then, without a release — the handoff file for the successor stage (G8 probes with their exact
-  test scope, the planned U01 capture, G6 parked, G7 tracked), the Houston consult on L14, Oraculum's counter-read, and then to
-  Majkee through the exec desk.
+  Mine, without a release — write the handoff file for the successor stage (G8 probes with their exact test scope, the planned
+  U01 capture, G6 parked, G7 tracked, what this bed keeps). Then a Houston consult on L14, Oraculum's counter-read, and then to
+  Majkee through the exec desk for his GO or STOP.
 expected: >-
-  `REVIEWED, COPIED 171` — a private folder vc08-full-2026-11-22/ with both capture folders, 0700/0600, and a manifest; or the
-  controller's objection to the script, in which case nothing was run.
+  One handoff file in raw/ that a successor can plan from, with every operation that needs a release listed on its own line.
 owed:
   - Majkee — opening the successor stage, when I bring the handoff file and the test scope.
   - engineer — the handoff file for the successor stage — G8 with the exact test scope, the planned U01 capture (S1), G6 parked, G7 tracked — and a Houston consult on L14 D1 and L21.

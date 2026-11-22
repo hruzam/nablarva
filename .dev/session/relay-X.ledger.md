@@ -9,7 +9,7 @@ authority: Majkee 2026-11-19 — shared provisional protocol and future communic
 naming: relay-X{0,1,…}-<phase> for experimental coordination sessions; first session `relay-X0-carryover` opened 2026-11-21
 attach: Delivery/coordination development; stridulatrix remains the named delivery organ under L13; no new organ adopted
 absorbs: vist-X.ledger.md (VIST · line X) — merged 2026-11-21; tombstone kept at the old address
-updated: 2026-11-22 (origin bed stopped and closed by Majkee — moved to Solved; C04 custody entry added by the exec desk on his direct word) · 2026-11-21 (VIST line ledger merged in; reshaped to Open / Standing / Solved; first relay session row added; one prospective rule dropped in that step was restored after cartan's check, relay-X0-carryover cycle 06)
+updated: 2026-11-22 (origin bed stopped and closed by Majkee — moved to Solved; C04 custody entry added by the exec desk on his direct word; whole-folder custody entry added by the engineer) · 2026-11-21 (VIST line ledger merged in; reshaped to Open / Standing / Solved; first relay session row added; one prospective rule dropped in that step was restored after cartan's check, relay-X0-carryover cycle 06)
 by: nablarva.cartan (2026-11-19 text) · myShell (claude, home) — merge on Majkee's direct request 2026-11-21 ·
   engineer (trajectory, claude, home) — session-open row for relay-X0-carryover, 2026-11-21; origin-bed STOP row, 2026-11-22 ·
   exec desk's Astrobley child (codex, home) — C04 custody entry, 2026-11-21, on Majkee's direct word
@@ -75,3 +75,15 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
   to harvest the original inputs, or `python3 <tool> export <custody-root> <new-private-restore-folder>` to restore the same relative
   paths. It checks frozen sizes/hashes, refuses existing destinations and Git worktrees, and writes a manifest last.
   Each restore creates another private copy under the operator's custody; captures and manifests stay host-local, outside Git.
+
+- [x] Whole capture folders in custody — Majkee walkthrough 2, S2, 2026-11-22; copied by the controller (cartan) on home (`hruzam`)
+  with a script written by the engineer and reviewed by him.
+  [Decision](relay-X0-carryover/raw/decision.majkee.walkthrough-2.2026-11-22.md) · [check](relay-X0-carryover/_bus/15.engineer.verdict.md).
+  Purpose is to keep the evidence under the U01 result (MISSING) and the C10 help frames across loss of `/tmp`.
+  Private root `/home/hruzam/.local/share/nablarva/custody/vc08-full-2026-11-22/`; `MANIFEST.json` there lists every file with
+  its size, SHA-256 before and after, and capture time. Both folders whole — 171 files, 264,228 bytes; folders 0700, files 0600;
+  modification times kept. The eight pinned inputs in it are byte-equal to the C04 custody copy above.
+  Original `/tmp` folders remain in place. Content correctness and completeness of the original capture remain unqualified.
+  [Tool](relay-X0-carryover/scripts/capture-folders-custody.py) — `python3 <tool> <new-private-folder>`; it refuses an existing
+  destination, a Git worktree and any symlink in a source. The U01 working files (helpers' crawl reports, the selector's table, the
+  auditor's blind labels) are beside it in `custody/u01-2026-11-22/`, also private.

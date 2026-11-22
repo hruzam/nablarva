@@ -152,3 +152,8 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - call: before 02:57:47.684Z · after 02:57:47.960Z · exit 0 · `Queued message 01a20130-3ba1-7d91-9871-e5d0153a21fb for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
 - claim level: queue call accepted. Read = only when the controller pane shows work on cycle 15 or `_bus/15.cartan.return.md` exists.
 - push: the commits that close cycle 14 are local. No push poke is sent into his working turn; one goes out when RETURN 15 is in.
+- p20 outcome: read — `_bus/15.cartan.return.md` written 2026-11-22 03:58 +0100, found by my file watch. No bell (optional, omitted).
+
+## p21 — engineer → cartan (push-only, no cycle)
+- Carries the commits that close cycles 14 and 15 and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
+- line: `[poke p21] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
