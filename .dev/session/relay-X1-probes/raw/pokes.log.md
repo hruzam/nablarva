@@ -73,3 +73,15 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - output (first line): `Queued message 01a20382-7ad8-7853-9b8d-7bbfbb36e06a for thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1.`
 - proves: the queue accepted the call. It does not prove that the line was read.
 - read is shown by: `_bus/04.oraculum.return.md`, or by work in pane %60
+
+- p06 outcome: read — her RETURN was on disk by 2026-11-22T13:48:45Z; REVISE, two points; checked in `_bus/04.lead.verdict.md`. Her footer went from 50% to 39% of context left over that cycle.
+
+## p07 — lead → oraculum · `codex queue`
+- file first: `_bus/05.lead.point.md`, committed in b533679
+- looked first (2026-11-22T13:54:27Z): pane %60 — codex in the foreground, not dead, input row empty (placeholder only, cursor at the start), no dialog; footer thread id 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1; idle, 39% of context left; a warning marker in the footer row.
+- call: `codex queue --thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1 --message "<line>"`, without `--resume`
+- line: `[poke p07] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/05.lead.point.md — your REVISE is taken; sign sheet draft 3 or send it back; return by file and one reply bell`
+- before: 2026-11-22T13:54:27Z · after: 2026-11-22T13:54:28Z · exit code: 0
+- output (first line): `Queued message 01a20389-6e99-7b32-82a1-9e7fb56cdf6e for thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1.`
+- proves: the queue accepted the call. It does not prove that the line was read.
+- read is shown by: `_bus/05.oraculum.return.md`, by her reply bell `[bell r05]` in pane %70, or by work in pane %60

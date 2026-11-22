@@ -33,7 +33,7 @@ and the live footer of the desk is `exec(codex)|astrobley · 01a1fefc-0356-7ea1-
 footer is a paste of the first by mistake and the decision loop stays with the exec desk, or he moved the decision loop to
 the auditor. I asked him. Until he answers, nothing is re-routed: the walkthrough stays at the exec desk, where it is.
 
-# Second part — a few minutes later, about 13:55 UTC
+# Second part — a few minutes later, between 13:52 and 13:54 UTC
 
 **Majkee:**
 > NAd of course, if you need advice about anything from your predecesor, this is she: `Fable 5.2 xhigh . ~/ia-sync . ctx 47% left . engineer(calude)|delta|vector|assay . 4f923bb7-ee15-447b-8954-408e16955530`
@@ -43,7 +43,7 @@ the auditor. I asked him. Until he answers, nothing is re-routed: the walkthroug
 on her command line (`d1ca16e9…`); his line settles which one is live. Her context is at 47%, so a question to her is one
 file and one labelled line, and only when a file does not already answer it.
 
-# Third part — about 13:58 UTC
+# Third part — right after, before 13:54 UTC
 
 **Majkee:**
 > poking there and back is in your competence, you may asked whoever you need as same as expect reply than by some developed mechanism and poke as fallback.
