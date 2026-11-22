@@ -145,7 +145,7 @@ and integrates. If a child cannot be started, the parent says so and substitutes
 parent with role, task, handle, writes and return_to.
 
 ```yaml
-children: []   # none standing. Cycle 10 — exec ran one Astrobley child (`/root/c04_custody`) for the C04 custody copy; finished. Cycle 11 — cartan's terra helpers are added from his RETURN.
+children: []   # none standing. Finished — cycle 10, exec → Astrobley child `/root/c04_custody` (C04 custody copy). Cycle 11, cartan → three terra readers (default agent type, model gpt-6.1-terra) `/root/u01_r1`, `/root/u01_r2`, `/root/u01_archive`; each wrote only its own crawl.0N.md in the private U01 folder. Cycle 12 readers are added from his RETURN.
 ```
 
 # Not in this party (do not address from old records)
