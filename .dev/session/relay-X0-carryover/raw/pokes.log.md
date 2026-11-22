@@ -128,3 +128,5 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 ## p17 — engineer → cartan (push-only, no cycle)
 - Carries the commit that closes cycle 12 and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
 - line: `[poke p17] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
+- p17 result, checked by me: `origin/core` = `6ba4334` = HEAD, reflog "update by push" 2026-11-22 03:33:05 +0100.
+- p16 outcome: read — `_bus/13.auditor.return.md` written 2026-11-22 03:33 +0100, found by my file watch. No bell (optional, omitted).

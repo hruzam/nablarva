@@ -118,7 +118,7 @@ a bounded, analysis-only worker when Majkee authorises it; her own role still ex
 accepted baseline to my discretion (walkthrough T7).
 
 **auditor — independent observer.** One bounded audit of this bed (cycle 05). Majkee keeps the window for independent observation
-(walkthrough T10). Next use: independent labeller of the U01 candidate (G4) after cartan's selection. No pen.
+(walkthrough T10). Used in cycle 13 as the blind second labeller of the U01 search (46 frames). No pen.
 
 **exec — Majkee's decision desk, kept for this bed (walkthrough T10).** It walks him through decisions and records them; by his
 rule R1 it may record a summary he confirmed. He asked it to watch continuity, orphaned work and coordination across tasks. It can
