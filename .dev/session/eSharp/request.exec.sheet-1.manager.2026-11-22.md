@@ -3,7 +3,7 @@ kind: request by file to the decision desk — one walkthrough; not a bus cycle 
 from: the eSharp manager (claude d1ca16e9-073e-46d9-ba7d-26a816c38a67, window `engineer`, pane %58)
 to: exec (codex thread 01a1fefc-0356-7ea1-860c-783a66a91211, window `seniorDev`, pane %68)
 authority: Majkee 2026-11-22 — decisions he owes go through your desk (relay-X0-carryover/raw/decision.majkee.desk-routing.2026-11-22.md); for eSharp he named you "for looping" (eSharp.decisions.majkee.2026-11-22.md §3)
-when: after the walkthrough you have open for the relay lead. That one comes first.
+when: ON HOLD — never sent. Majkee said on 2026-11-22 that he answers sheet 1 himself in a markdown file (eSharp/answers.sheet-1.majkee.2026-11-22.md). This request is used only if he asks for a walkthrough after all.
 write_only: /home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/record.sheet-1.majkee.2026-11-22.md · /home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/return.exec.sheet-1.2026-11-22.md · your own row in /home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.board.md
 gates: No edits outside those paths. Git — read-only queries are allowed; stage, commit, pull and push are not. Nothing is started, sent, copied or created on the strength of an answer — no folder, no tmux server, no session. No pane input except one reply bell at the end. Do not read or list `.majkee/` or `.hlm/`.
 ---
