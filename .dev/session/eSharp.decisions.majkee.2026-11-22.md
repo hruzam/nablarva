@@ -62,7 +62,23 @@ his vault; whether the helper group continues `session-window-X0-substrate` or o
 **What follows.** The six points of section 2 stand as agreed. The dashboard is `eSharp.board.md` beside this file — plain
 markdown, no script. It also holds the manager's pointer table for the groups, so there is one board, not two.
 
+## 5. Which group takes which line
+
+**Majkee:**
+> perfect, thank you
+> ---
+> 1st group is for: `ession-window-X.ledger.md`
+> 2nd is for: `terminal-workspace-X.ledger.md`, read this new one to consider how is differ from actual shape, is more fresher and think many aspect was catched there: `/home/hruzam/unikuklatrix/nablarva/.dev/session/terminal-workspace-X0-approaches/raw/NEW.read-before-continue.shared-terminal-organ-card.md`.
+> ---
+> do you think you be able to stu both to not stay mad or blurry memory?
+
+**What follows.** Group 1 (Claude head, Codex controller, Codex auditor as opposer) takes the session-window line. Group 2 (Codex
+head, Codex controller, Claude auditor) takes the terminal-workspace line, and the NEW card is read against today's bed first.
+My answer to his question: yes, by not reading either line raw — two reader agents write one brief each, with file-and-line
+pointers (`eSharp/brief.session-window.2026-11-22.md`, `eSharp/brief.terminal-workspace.2026-11-22.md`), and the RUNBOOKs are
+written from the briefs. I also read the NEW card itself, as he asked.
+
 ## Not decided here
 
-The scopes and gates of the two groups; which group takes which line; the heads' and controllers' sessions; which seat pushes;
+The gates of the two groups; the heads' and controllers' sessions; which seat pushes;
 the name of the separate tmux server; whether `eSharp` becomes a named protocol in the RUNBOOK guide — that is his gavel, later.
