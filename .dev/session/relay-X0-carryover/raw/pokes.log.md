@@ -182,3 +182,17 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 ## p25 — engineer → cartan (push-only, no cycle)
 - Carries the commit that closes cycle 17 (handoff draft 3, six goal revisions) and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
 - line: `[poke p25] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
+- p25 result, checked by me: `origin/core` = `cda6a73` = HEAD, reflog "update by push" 2026-11-22 04:18:18 +0100.
+- p24 outcome: read — `_bus/18.oraculum.return.md` written 2026-11-22 04:18 +0100 (she worked 40 s), found by my file watch.
+
+## p26 — engineer → exec (cycle 19)
+- Sent at once after Oraculum's last three points were in, on Majkee's routing of 2026-11-22.
+- target checked 2026-11-22T03:22Z, bottom rows only: %68 `seniorDev`, foreground `codex`, footer thread `01a1fefc-0356-7ea1-860c-783a66a91211`, idle composer (it had worked 8 s at 04:21 on something of Majkee's), context 72% left.
+- door: `codex queue --thread 01a1fefc-0356-7ea1-860c-783a66a91211 --message …` (no `--resume`), one call.
+- line: `[poke p26] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/19.engineer.point.md — the gate of the bed: six themes of sheet 3 for Majkee, H1 first (GO or STOP on the handoff); one question each; no release line is asked; start with H1 when he is ready`
+- call: before 03:22:59.054Z · after 03:22:59.243Z · exit 0 · queued for thread 01a1fefc-0356-7ea1-860c-783a66a91211.
+- claim level: queue call accepted. Read = only when the desk shows Majkee theme H1 or `_bus/19.exec.return.md` exists.
+
+## p27 — engineer → cartan (push-only, no cycle)
+- Carries the commit that closes cycle 18 (handoff draft 4, sheet 3, POINT 19) and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
+- line: `[poke p27] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
