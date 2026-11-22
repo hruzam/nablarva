@@ -131,3 +131,16 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - proves: the queue accepted the call.
 
 - p11 outcome: done — `git ls-remote origin refs/heads/core` = `22d3906` at 2026-11-22T14:41:59Z, equal to local HEAD; checked by the lead. The push carried the engineer session's commit 824dfe9, on the note n03 she left in pane %70 at about 14:40Z.
+
+- bell r02 (exec → lead): arrived in pane %70 at about 2026-11-22T21:42Z, after the lead's file watch had picked up `_bus/02.exec.return.md` at 21:42:15Z. A seat's hint; the RETURN and the record were read from the files.
+- pre-return look (no poke): at 2026-11-22T15:52:00Z a timed look at the bottom rows of the desk's pane %68 showed the S1 question as its last line, so no poke was sent. Nothing of the look is kept but that.
+
+## p12 — lead → controller · `codex queue`
+- looked first (2026-11-22T21:50:38Z): pane %59 — codex in the foreground, not dead, input row empty (placeholder only), no dialog. No POINT: the duty is prompt-1 of the RUNBOOK. Done is shown by origin/core = `a5275ed`.
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p12] push duty — prompt-1 in /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md: nablarva core — fetch; only if ahead and not behind, one plain git push; never rebase, never force; write no file, type into no pane; I verify the remote ref. The stack carries two commits of the engineer session (c22c060, 37f5e79, eSharp files) beside three of the lead`
+- before: 2026-11-22T21:50:47Z · after: 2026-11-22T21:50:48Z · exit code: 0
+- output (first line): `Queued message 01a2053d-876b-7d71-b3a3-35cda382be49 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call.
+
+- p12 outcome: done — `git ls-remote origin refs/heads/core` = `a5275ed` at 2026-11-22T21:51:13Z, equal to local HEAD; checked by the lead. The push carried c572881, c22c060, 37f5e79, b3f33fc and a5275ed.
