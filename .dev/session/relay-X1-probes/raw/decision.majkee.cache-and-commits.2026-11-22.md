@@ -31,3 +31,23 @@ Three open points, put to him at the end of the lead's reports between 05:56 and
 # What it does not give
 
 No release line. No push by the lead. No reading of any operator vault.
+
+# Second part — a few minutes later, shortly before 13:38 UTC
+
+**Majkee:**
+> but CACHE.md should help to you because of orphans, you may poke `myShell` for that. If decission loop is needed I'll go throught with `exec` -> poke him.
+
+**My reading.**
+
+- **The file stays his and stays unopened by me.** "Leave" was his answer to "read it or leave it"; this sentence says its
+  content should help the lead with orphans — work, evidence or duty without an owner — and names the way to it: `myShell`,
+  his desk for continuity across tasks. So I ask her what in it is meant for this bed. If her reading is that I should open
+  the file, I ask him through the desk first.
+- **A poke to `myShell` is allowed for this.** One labelled line by the look-first paste (she is a Claude session), after a
+  POINT file: `_bus/03.lead.point.md`, poke p04 in `raw/pokes.log.md`.
+- **Decisions go through the exec desk.** If the orphans need a decision of his, I put them on one sheet and poke the desk —
+  his standing routing, said again. The walkthrough of read-back sheet 1 already waits there (theme S0, asked 05:55 UTC); it
+  is not poked a second time.
+
+**What it does not give.** No release line. No permission to read or list an operator vault: of `myShell`'s pane I read the
+bottom rows only, for the look before the paste, and keep nothing of them.

@@ -39,3 +39,15 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 
 - p02 outcome: read — the desk ran one turn from the queue, ended 2026-11-22T05:55:26Z, and put theme S0 to Majkee. Seen by the lead at 2026-11-22T06:54Z in the desk's own session record (entry types, times and the desk's last message only; nothing of Majkee's read). At that time: no record file, no RETURN, no answer. The first watch on the RETURN path ended empty at 06:53:38Z after 58 minutes; nothing was sent again. The desk's pane showed Codex's selection hint row at 06:53Z, so its newest text may be off screen in that window until a key is pressed there by Majkee's hand; the lead did not touch the pane.
 
+## p04 — lead → myShell · look-first paste (a Claude pane)
+- authority: Majkee, typed in the lead session shortly before 13:38Z — "you may poke `myShell` for that" (raw/decision.majkee.cache-and-commits.2026-11-22.md, second part)
+- file first: `_bus/03.lead.point.md`
+- looked first (2026-11-22T13:39:13Z): pane %61 — claude in the foreground, not dead, not in a tmux mode, no dialog. The input row showed words, all of them dim in the styled capture, with the cursor at the start of the row (`cursor_x` 2): a suggestion, not text. Only the bottom rows of the pane were read; nothing of them is kept.
+- staged: `tmux set-buffer -b p04 '<line>'`, then `tmux paste-buffer -p -b p04 -t %61` — 2026-11-22T13:39:28Z, both exit code 0
+- line: `[poke p04] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/03.lead.point.md — from the lead of relay-X1-probes, on Majkee's word: three questions about orphans and CACHE.md; return by file`
+- looked again: the line sat on the input row as plain text, on two rows, `cursor_x` 95, nothing else on the row
+- submit: `tmux send-keys -t %61 Enter` — 2026-11-22T13:39:41Z, exit code 0
+- looked once more (13:39:46Z): the input row was empty, the line stood above it as a submitted prompt, and the pane showed a working turn
+- proves: the line was submitted and a turn started. It does not prove that the POINT was read to the end.
+- read is shown by: `_bus/03.myshell.return.md`
+
