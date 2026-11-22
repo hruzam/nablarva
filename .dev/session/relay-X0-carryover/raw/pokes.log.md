@@ -102,3 +102,11 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - line: `[poke p13] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/11.engineer.point.md — cycle 11, G4 rev 3: U01 selection, released by Majkee; read-only, through terra helpers; no git, no push`
 - call: before 02:13:49.565Z · after 02:13:49.880Z · exit 0 · `Queued message 01a20107-fa9b-79a3-a7aa-87f9a20f3fc6 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
 - claim level: queue call accepted. Read = only when the controller pane shows work on cycle 11 or `_bus/11.cartan.return.md` exists.
+- p13 outcome: read — the controller pane showed work 35 s after the call; `_bus/11.cartan.return.md` written 2026-11-22 03:19 +0100. No bell (optional, omitted by him). Found by my file watch.
+
+## p14 — engineer → cartan (cycle 12)
+- target checked 2026-11-22T02:23:30Z, bottom rows only: %59 `controller`, foreground `codex`, footer thread `01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318`, idle composer, context 51% left.
+- door: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message …` (no `--resume`), one call.
+- line: `[poke p14] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/11.engineer.verdict.md then _bus/12.engineer.point.md — cycle 11 closed with REVISE; cycle 12 is the second U01 pass: a verdict per group of frames; no git, no push`
+- call: before 02:23:31.029Z · after 02:23:31.433Z · exit 0 · `Queued message 01a20110-da51-7173-b69d-e446a32a4b9b for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- claim level: queue call accepted. Read = only when the controller pane shows work on cycle 12 or `_bus/12.cartan.return.md` exists.
