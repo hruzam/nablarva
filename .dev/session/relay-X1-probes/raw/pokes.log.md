@@ -19,3 +19,23 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 
 - p01 outcome: read — her RETURN was on disk by 2026-11-22T05:50:07Z (file time 05:49Z); REVISE, eight points; checked in `_bus/01.lead.verdict.md`.
 
+## p02 — lead → exec · `codex queue`
+- looked first (2026-11-22T05:54:53Z): pane %68 — codex in the foreground, not dead, input row empty (placeholder only), no dialog; footer thread id as in the roster; idle. File first: `_bus/02.lead.point.md`, committed in d49da40. Read is shown by `_bus/02.exec.return.md` or by work in the pane.
+- call: `codex queue --thread 01a1fefc-0356-7ea1-860c-783a66a91211 --message "<line>"`, without `--resume`
+- line: `[poke p02] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/02.lead.point.md — a walkthrough for Majkee: the read-back and six release lines; follow its return and bell instructions`
+- before: 2026-11-22T05:55:06Z · after: 2026-11-22T05:55:06Z · exit code: 0
+- output (first line): `Queued message 01a201d2-91dc-7d52-92ac-500eb1e7ac9d for thread 01a1fefc-0356-7ea1-860c-783a66a91211.`
+- proves: the queue accepted the call, if the exit code is 0. It does not prove that the line was read.
+
+## p03 — lead → controller · `codex queue`
+- looked first (2026-11-22T05:54:53Z): pane %59 — codex in the foreground, not dead, input row empty (placeholder only), no dialog; footer thread id as in the roster; idle. No POINT: the duty is prompt-1 of the RUNBOOK and Majkee's push decision of 2026-11-22. Done is shown by origin/core = d49da40.
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p03] push duty — prompt-1 in /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md: nablarva core — fetch; only if ahead and not behind, one plain git push; never rebase, never force; write no file, type into no pane; I verify the remote ref`
+- before: 2026-11-22T05:55:06Z · after: 2026-11-22T05:55:07Z · exit code: 0
+- output (first line): `Queued message 01a201d2-92be-7b92-9467-e0ff2d51db28 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call, if the exit code is 0. It does not prove that the line was read.
+
+- p03 outcome: done — `git ls-remote origin refs/heads/core` = `d49da40` at 2026-11-22T05:55:40Z, equal to local HEAD; checked by the lead.
+
+- p02 outcome: read — the desk ran one turn from the queue, ended 2026-11-22T05:55:26Z, and put theme S0 to Majkee. Seen by the lead at 2026-11-22T06:54Z in the desk's own session record (entry types, times and the desk's last message only; nothing of Majkee's read). At that time: no record file, no RETURN, no answer. The first watch on the RETURN path ended empty at 06:53:38Z after 58 minutes; nothing was sent again. The desk's pane showed Codex's selection hint row at 06:53Z, so its newest text may be off screen in that window until a key is pressed there by Majkee's hand; the lead did not touch the pane.
+
