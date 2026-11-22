@@ -206,3 +206,8 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - Their result is the remote ref, checked by me and reported to Majkee. No further entry follows; the bed is closed.
 
 **Tally of this bed, as observation only.** `codex queue`: every call from p01 to p29 except p02 was accepted by the queue; each assignment was followed by its RETURN and each push poke by the remote ref. Look-first pastes into Claude panes: p02, r03, r05, r10 and r19 submitted; r06 staged and not submitted, cause unknown; r14 not rung. This qualifies nothing.
+
+## After closure — p28, p29 results and one more poke
+- p28 result, checked by me: nablarva `origin/core` = `1020da5`, reflog "update by push" 2026-11-22 04:43:40 +0100. p29 result: reposoma `origin/core` = `7a22aba`, reflog "update by push" 2026-11-22 04:44:00 +0100.
+- I wrote above that no further entry follows. One does: after the bed was closed Majkee asked me, in the engineer session, to share my experience with spawning and seats in a file for the new RUNBOOK, and whether I had anything for myShell. Two notes went into `../../relay-X1-probes/raw/`, with two pointer lines in that bed's opening STATUS.
+- p30 — engineer → cartan (push-only): carries that commit. Line: `[poke p30] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`. Result = the remote ref, reported to Majkee.
