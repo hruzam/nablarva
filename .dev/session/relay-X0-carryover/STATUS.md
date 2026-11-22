@@ -1,7 +1,7 @@
 # STATUS: relay-X0-carryover
 
 ```yaml
-updated: 2026-11-22 04:10 CET
+updated: 2026-11-22 04:17 CET
 writer: engineer (trajectory · claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) · sole pen of this bed
 host: home · hruzam
 worktree: /home/hruzam/unikuklatrix/nablarva · core · upstream origin/core. The controller pushes on my poke; a poke that would
@@ -21,6 +21,7 @@ files:
   decision_team: raw/decision.majkee.team-and-doors.2026-11-21.md  # controller job, reply bell, who pushes, team
   decision_push: raw/decision.majkee.push.2026-11-22.md            # the controller pushes on my poke without asking him each time; settles walkthrough T9 item 1
   decision_desk: raw/decision.majkee.desk-routing.2026-11-22.md    # decisions owed by him go through the exec desk — I write a sheet and poke the desk at once
+  decision_successor: raw/decision.majkee.successor-name.2026-11-22.md   # the successor is generation X — its slug is relay-X1-<phase>; the phase word is his when he opens it
   decisions_walkthrough: raw/decision.majkee.walkthrough.2026-11-21.md   # his answers to eleven themes, written by the exec desk (cycle 10); sha256 a183f96b0995cee63be2964d2bece37a0826b477e04987cac5e45b3d3c9043a6; checked in _bus/10.engineer.verdict.md
   walkthrough: raw/walkthrough.sheet.2026-11-21.md                 # the sheet the desk worked from (cycle 10)
   sheet_2: raw/walkthrough.sheet-2.2026-11-22.md                   # five themes for the exec desk (cycle 14) — U01 result, rest of the captures, gate, monitor-silence, two calls of mine
@@ -35,7 +36,7 @@ files:
   custody_tool_2: scripts/capture-folders-custody.py               # whole folders; written by me, reviewed and run by the controller (cycle 15)
   custody_private: ~/.local/share/nablarva/custody/                # host-local on home, 0700, never Git — c04-2026-11-21/ (eight pinned inputs) · u01-2026-11-22/ (crawl files, the selector's groups.md, the auditor's audit.blind.md) · vc08-full-2026-11-22/ (both capture folders whole, 171 files)
   u01_report: raw/u01.fixture-selection.2026-11-22.md              # masked selection report, written by cartan (cycle 12 text); result MISSING
-  handoff: raw/handoff.successor-stage.2026-11-22.md               # DRAFT 2 — what leaves this bed, the exact probe scope, the planned U01 capture, fifteen release lines; revised after Houston's consult (`stretches`, five constraints taken); not yet counter-read by Oraculum or put to Majkee
+  handoff: raw/handoff.successor-stage.2026-11-22.md               # DRAFT 3 — two first observations (Claude → Codex, queue and tmux), six deferred rows, the U01 capture, a release menu of nineteen lines; revised after Houston (`stretches`) and Oraculum (REVISE); her confirmation and Majkee's GO or STOP are still open
   exp: exp/                                                        # noncanonical notes on how the team works (Majkee, T10)
   goals_rules: goals/README.md
   goals_overview: goals/OVERVIEW.md                                # written for Majkee before the walkthrough; not rewritten since — the goal files win
@@ -43,17 +44,17 @@ files:
   origin_closed: ../vist-X0-helloWorld/STATUS.md                   # stopped by Majkee; his words in ../vist-X0-helloWorld/raw/decision.majkee.stop-and-carry.2026-11-21.md
   card: ~/reposoma/_cold-start/card/CS.relay-X0-carryover.2026-11-21.md   # clean-table entry; a pointer, not a second state
 goals:   # every goal file, its rev, and where it stands. This list is the state; the files hold the definition.
-  - G0.umbrella.md · rev 4 · umbrella of this bed, confirmed by Majkee (T3)
+  - G0.umbrella.md · rev 5 · umbrella of this bed, confirmed by Majkee (T3). Whether the successor takes the same sentence is his word when he opens it.
   - G1.party-binding.md · rev 4 · bound — engineer, cartan, myshell, oraculum, auditor, exec (confirmed itself in cycle 10). Stays open for rebuilds and new seats.
   - G2.export-verified.md · rev 4 · DONE — closed by VERDICT 09
   - G3.door-inventory.md · rev 4 · DONE — VERDICTs 07, 08. No door adopted.
-  - G4.u01-unknown-view-fixture.md · rev 4 · DONE — result MISSING (cycles 11–13). The selector's table and the auditor's blind labels agree on all 46 frames without a signature literal; the other 15 are help or approval screens. The case U01 itself stays untested; what follows is asked of Majkee (sheet 2, S1).
-  - G5.receiver-policy-contract.md · rev 2 · not started; paper only; covers U03–U06, which this bed now owns (T4)
-  - G6.u02-exit-race.md · rev 3 · parked by Majkee (T8) until a scoped proposal; goes with G8 to the successor stage
-  - G7.retire-file-poke.md · rev 3 · tracked, open obligation (T8) — the file-poke stays in use until a qualified replacement is approved; follows the bed that qualifies one
+  - G4.u01-unknown-view-fixture.md · rev 5 · DONE — result MISSING (cycles 11–13). The selector's table and the auditor's blind labels agree on all 46 frames without a signature literal; the other 15 are help or approval screens. The case U01 itself stays untested; Majkee decided what follows (S1 — one new real capture, in the successor stage, under its own release).
+  - G5.receiver-policy-contract.md · rev 3 · not started; paper only; covers U03–U06, which this bed owns (T4). The handoff proposes that it moves to the successor; Majkee may keep it here.
+  - G6.u02-exit-race.md · rev 4 · parked by Majkee (T8) until a scoped proposal; goes with G8 to the successor stage (S5)
+  - G7.retire-file-poke.md · rev 4 · tracked, open obligation (T8) — the file-poke stays in use until a qualified replacement has his three words (coverage, adoption, retirement); outside the successor's gate
   - G8.door-probes-live.md · rev 1 · NOT released. Leaves this bed for the successor stage, with G6 parked beside it — my call, agreed by Majkee (sheet 2, S5). No live send before he has seen the exact test scope.
   - G9.custody-and-handoff.md · rev 5 · (a) DONE — the eight pinned inputs (VERDICT 10) and both capture folders whole (VERDICT 15) are in private custody · (b) card written; presence stays marked until this session ends
-  - G10.friendly-reminder.md · rev 2 · deferred by Majkee (T6) to a later stage or a separate team; his design direction (chess clock, operator surface in the session-window helper) is in the first record. The monitor-silence one-liner he asked for (S4) is in the answer file, for him to set.
+  - G10.friendly-reminder.md · rev 3 · deferred by Majkee (T6) to a later stage or a separate team; it belongs to the session-window helper group, which gets its own lead (S5). The monitor-silence one-liner he asked for (S4) is in the answer file, for him to set.
 u_cases:   # all six belong to this bed since the STOP of X0 (T4). Belonging is not a release.
   - U01 → G4 · the read-only search is done, result MISSING. Majkee chose what follows (S1, "taking b") — one new real capture of a native control the signature set does not name, planned in the successor stage under its own release. Not released.
   - U02 → G6 · parked
@@ -75,7 +76,8 @@ bus:     # every cycle. A cycle is closed only by its VERDICT.
   - 14 · exec · second decision walkthrough with Majkee — five themes, seven answers, each with his reply quoted; the desk acted on nothing · CLOSED (ACCEPT) · 14.engineer.point.md, 14.exec.return.md, 14.engineer.verdict.md
   - 15 · cartan · G9 rev 4 — non-author review of scripts/capture-folders-custody.py, one run; both capture folders in private custody, 171 files, 264,228 bytes; re-checked by me · CLOSED (ACCEPT) · 15.engineer.point.md, 15.cartan.return.md, 15.engineer.verdict.md
   - 16 · houston (card consult, Claude-side, invoked by me) · lock fit of the handoff draft — verdict `stretches`, five constraints, all landed in draft 2 · CLOSED (ACCEPT) · 16.engineer.point.md, 16.houston.return.md (his reply, recorded verbatim by me), 16.engineer.verdict.md
-  - 17 · oraculum · counter-read of handoff draft 2 and of the goal texts, before they go to Majkee · OPEN · 17.engineer.point.md → 17.oraculum.return.md (file only, no bell)
+  - 17 · oraculum · counter-read of handoff draft 2 and of the goal texts — her verdict REVISE, twelve points, all confirmed at her lines and taken · CLOSED (ACCEPT) · 17.engineer.point.md, 17.oraculum.return.md, 17.engineer.verdict.md
+  - 18 · oraculum · does handoff draft 3 and do the six goal revisions land her points — COUNTERSIGN, or what is missing · OPEN · 18.engineer.point.md → 18.oraculum.return.md (file only, no bell)
 gate: >-
   CONFIRMED by Majkee 2026-11-22 (sheet 2, S3 — wording as written) — Majkee records GO or STOP on what follows U01: an
   independently labelled result for X0-U01 (one genuine unknown native view selected from the released capture folders, or
@@ -89,7 +91,7 @@ gate_passed: >-
   The baseline gate of cycles 04–09 — "Will Majkee accept export rev 4 and the goal revisions listed under `goals:` as the relay
   planning baseline?" — was accepted as written on 2026-11-21 (walkthrough T7; his "yes." to the desk's proposal). Documentary
   only; it released nothing. The revisions accepted were G0 r3, G1 r4, G2 r4, G3 r4, G4 r2, G5 r2, G6 r3, G7 r3, G8 r1, G9 r2,
-  G10 r2. G0 and G4 moved one revision since and G9 two, each only to record his decisions.
+  G10 r2. Since then, to record his decisions and to repair what two counter-reads found — G0 r5, G4 r5, G5 r3, G6 r4, G7 r4, G9 r5, G10 r3. G1, G2, G3 and G8 are unchanged.
 checkpoint: >-
   Bed opened 2026-11-21 from the 45 files of vist-X0-helloWorld. Cycles 01–09 (afternoon and evening) bound the team, checked
   the export four times, produced the door inventory, and repaired what two outside reads found. Cycle 10, night of
@@ -109,9 +111,12 @@ checkpoint: >-
   both of my calls. Cycle 15 — the controller reviewed the copy script and ran it once; both capture folders are in private
   custody whole, 171 files, and my own comparison of source and copy agrees. Nothing released is left to run. Cycle 16 — I wrote the
   handoff for the successor stage; Houston's consult returned `stretches` with five constraints and found two sentences of mine
-  that contradicted my own files; draft 2 takes all of it. Cycle 17 has Oraculum counter-read it before Majkee sees it.
+  that contradicted my own files; draft 2 took all of it. Cycle 17 — Oraculum's counter-read returned REVISE — my probe table had
+  lost the trial's own direction (Claude → Codex by tmux), and six goal files carried stale sentences. Draft 3 starts with two
+  observations in that direction and defers the rest; the goals are corrected. Majkee said the successor is generation X —
+  relay-X1-<phase>. Cycle 18 asks her whether draft 3 lands her points.
 in_flight:
-  - cycle 17 → oraculum · one strategic counter-read, file only. No goal file and no handoff text is edited while it is open (goals/README.md rule 8).
+  - cycle 18 → oraculum · one short confirming read, file only. No goal file and no handoff text is edited while it is open (goals/README.md rule 8).
 decided_by_engineer:   # where Majkee left the call to me — both agreed by him on 2026-11-22 (sheet 2, S5 — "yes agree" and "yes")
   - 2026-11-22 · G8 placement (T8) · The live door probes leave this bed. They go to a successor research stage, with G6 parked
     beside them; Majkee's proposed name is `relay-X1-research`. Reasons — G8 is the first work that activates and delivers (L21)
@@ -123,7 +128,7 @@ decided_by_engineer:   # where Majkee left the call to me — both agreed by him
 recovery_probe: |
   hostname -s; git -C /home/hruzam/unikuklatrix/nablarva status --short; git -C /home/hruzam/unikuklatrix/nablarva log --oneline -6
   git -C /home/hruzam/unikuklatrix/nablarva rev-list --left-right --count origin/core...HEAD    # ahead after a closing commit means a push poke is owed to the controller; behind is not expected
-  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; cycle 17 is open — oraculum rings no bell, watch the file
+  ls /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/     # compare with `bus:` above; cycle 18 is open — oraculum rings no bell, watch the file
   tail -30 /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/pokes.log.md
   ls -ld ~/.local/share/nablarva/custody/*/                                       # private custody; modes must stay 0700
   ls -d /tmp/vc08r1.tkz50zbf /tmp/vc08r2.kk50sqqh                                 # the original capture folders; gone after a reboot (tmpfs). Both are in private custody whole since cycle 15.
@@ -145,14 +150,14 @@ holds:
   - Goals — a POINT names goal + rev; a goal under an open POINT is not edited (goals/README.md rule 8).
   - Help probes use the `--help` flag on documented subcommands only. A word after `claude` is a prompt and starts an agent (incident note).
 next: >-
-  Wait for RETURN 17 (file watch; she rings no bell). Take her points into the handoff and, where she finds contradictions, into
-  the goal texts. Then one sheet for Majkee through the exec desk — GO or STOP on the handoff, and which of its fifteen release
-  lines he gives when he opens the successor.
+  Wait for RETURN 18 (file watch; she rings no bell). If she countersigns — one sheet for Majkee through the exec desk — GO or STOP
+  on the handoff; if GO, the phase word, the pen and the gate of the successor relay-X1-<phase>, and which lines of the release
+  menu he wants on its table. If she names something missing, take it first.
 expected: >-
-  COUNTERSIGN, REVISE or STOP, with her points strongest first, each with file and line.
+  COUNTERSIGN, or a short list of what draft 3 still misses, with file and line.
 owed:
   - Majkee — opening the successor stage, when I bring the handoff file and the test scope.
-  - engineer — handoff draft 2 is written and consulted (Houston, `stretches`). Owed still — Oraculum's counter-read (cycle 17, running), the revision from it, then the sheet for Majkee through the exec desk.
+  - engineer — handoff draft 3 is written, consulted (Houston, `stretches`) and counter-read (Oraculum, REVISE, taken). Owed still — her confirming read (cycle 18, running), then the sheet for Majkee through the exec desk.
   - open, old — Majkee's draft line vanished from the controller composer at about 21:17Z on 2026-11-21, cause unknown.
 open_costs_of_this_shape:   # real, accepted for the try, reported to Majkee
   - Changeable goal files can retarget running or reviewed work. Mitigated by rule 8, not removed. (cartan, cycle 01)
