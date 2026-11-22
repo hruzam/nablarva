@@ -85,3 +85,26 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - output (first line): `Queued message 01a20389-6e99-7b32-82a1-9e7fb56cdf6e for thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1.`
 - proves: the queue accepted the call. It does not prove that the line was read.
 - read is shown by: `_bus/05.oraculum.return.md`, by her reply bell `[bell r05]` in pane %70, or by work in pane %60
+
+- p07 outcome: read — her RETURN was on disk by 2026-11-22T13:55:41Z; COUNTERSIGNED; checked in `_bus/05.lead.verdict.md`. No bell: withheld under a limit of her own seat, said in her field 6; the watch picked the file up.
+
+## p08 — lead → exec · `codex queue`
+- file first: `_bus/02.lead.note-1.md`, committed in 21df208
+- looked first (2026-11-22T13:56:51Z): pane %68 — codex in the foreground, not dead, input row empty (placeholder only), no dialog; footer thread id 01a1fefc-0356-7ea1-860c-783a66a91211, 62% of context left. The pane still showed the selection hint row of Codex; the queue door does not type into the pane, and p02 was read through the same state.
+- call: `codex queue --thread 01a1fefc-0356-7ea1-860c-783a66a91211 --message "<line>"`, without `--resume`
+- line: `[poke p08] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/02.lead.note-1.md — the sheet is now draft 3, countersigned; S0 stands as you asked it; end your turn with the S0 question`
+- before: 2026-11-22T13:56:51Z · after: 2026-11-22T13:56:51Z · exit code: 0
+- output (first line): `Queued message 01a2038b-a038-7263-8a47-dfe758dd02bb for thread 01a1fefc-0356-7ea1-860c-783a66a91211.`
+- proves: the queue accepted the call. It does not prove that the line was read.
+- read is shown by: a new turn in the desk's session record after 13:56:51Z; no RETURN is asked for this note
+
+## p09 — lead → controller · `codex queue`
+- looked first (2026-11-22T13:56:51Z): pane %59 — codex in the foreground, not dead, input row empty (cursor at the start), no dialog; footer thread id as in the roster. No POINT: the duty is prompt-1 of the RUNBOOK. Done is shown by origin/core = `21df208`.
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p09] push duty — prompt-1 in /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md: nablarva core — fetch; only if ahead and not behind, one plain git push; never rebase, never force; write no file, type into no pane; I verify the remote ref`
+- before: 2026-11-22T13:56:51Z · after: 2026-11-22T13:56:52Z · exit code: 0
+- output (first line): `Queued message 01a2038b-a10e-7b61-b630-f75a48e63eb1 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call. It does not prove that the line was read.
+
+- p08 outcome: read — the desk ran one turn that ended 2026-11-22T13:57:07Z; its closing lines say it picked up p08 and repeat the S0 question to Majkee. Seen by the lead in the desk's own session record (entry types, times and the end of the desk's last message only).
+- p09 outcome: done — `git ls-remote origin refs/heads/core` = `21df208` at 2026-11-22T13:57:11Z, equal to local HEAD; checked by the lead.
