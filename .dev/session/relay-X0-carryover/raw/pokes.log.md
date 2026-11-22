@@ -95,3 +95,10 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 ## r10 — exec → engineer (reply bell, cycle 10)
 - `[bell r10] return at …/_bus/10.exec.return.md` arrived in %58 as one clean line on 2026-11-22 at about 02:00Z and was submitted.
 - Tally of look-first pastes into Claude panes: p02, r03, r05, r10 submitted · r06 staged, Enter returned 0, not submitted (cause unknown).
+
+## p13 — engineer → cartan (cycle 11)
+- target checked 2026-11-22T02:13:39Z, bottom rows only: %59 `controller`, foreground `codex`, footer thread `01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318`, idle composer, context 56% left.
+- door: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message …` (no `--resume`), one call.
+- line: `[poke p13] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/11.engineer.point.md — cycle 11, G4 rev 3: U01 selection, released by Majkee; read-only, through terra helpers; no git, no push`
+- call: before 02:13:49.565Z · after 02:13:49.880Z · exit 0 · `Queued message 01a20107-fa9b-79a3-a7aa-87f9a20f3fc6 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- claim level: queue call accepted. Read = only when the controller pane shows work on cycle 11 or `_bus/11.cartan.return.md` exists.

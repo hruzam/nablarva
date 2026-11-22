@@ -1,7 +1,7 @@
 ---
 kind: party roster (data for pokes; observed, not assumed)
 bed: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover
-rev: 5 (2026-11-22T02:20Z) — after Majkee's walkthrough (cycle 10) — exec confirmed and kept as his decision desk, auditor kept, bells optional, push held, child seats listed under their parent. rev 4 (2026-11-21T22:00Z) — exec desk added on Majkee's request. rev 3 — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
+rev: 5 (2026-11-22T02:13Z) — after Majkee's walkthrough (cycle 10) — exec confirmed and kept as his decision desk, auditor kept, bells optional, push held, child seats listed under their parent. rev 4 (2026-11-21T22:00Z) — exec desk added on Majkee's request. rev 3 — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
 observed_by: engineer · 2026-11-21T20:58Z · host home (hruzam) · read-only tmux queries + bottom rows of each pane + ~/.claude/sessions/*.json
 tmux: base session `helloWorld`, grouped views `helloWorld-37 … -41`. Windows by name — engineer, controller, oraculum, myShell, auditor, seniorDev. tmux 3.7c.
 versions: Claude Code 2.1.330 · codex-cli 0.171.0
