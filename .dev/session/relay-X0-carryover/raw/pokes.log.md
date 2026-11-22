@@ -144,3 +144,11 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - line: `[poke p19] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
 - p19 result, checked by me: `origin/core` = `60b7dd4` = HEAD, reflog "update by push" 2026-11-22 03:39:01 +0100.
 - p18 outcome: read — the desk showed theme S1 at 02:38Z; `_bus/14.exec.return.md` written 2026-11-22 03:53 +0100, found by my file watch. No bell had arrived when cycle 14 was closed.
+
+## p20 — engineer → cartan (cycle 15)
+- target checked 2026-11-22T02:57:47Z, bottom rows only: %59 `controller`, foreground `codex`, footer thread `01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318`, idle composer, context 43% left.
+- door: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message …` (no `--resume`), one call.
+- line: `[poke p20] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/15.engineer.point.md — cycle 15, released by Majkee: review one script, run it once, check the copy of both capture folders; Git read-only only, no push in this cycle`
+- call: before 02:57:47.684Z · after 02:57:47.960Z · exit 0 · `Queued message 01a20130-3ba1-7d91-9871-e5d0153a21fb for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- claim level: queue call accepted. Read = only when the controller pane shows work on cycle 15 or `_bus/15.cartan.return.md` exists.
+- push: the commits that close cycle 14 are local. No push poke is sent into his working turn; one goes out when RETURN 15 is in.
