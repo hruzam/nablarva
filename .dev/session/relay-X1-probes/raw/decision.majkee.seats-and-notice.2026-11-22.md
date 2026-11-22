@@ -3,7 +3,7 @@ kind: operator decision, verbatim — the final work audit seat, the decision lo
 from: majkee, typed in the lead session (claude cc738596-ba93-41f4-a8a6-30a6aef4139e, window `lead`, pane %70) on home, 2026-11-22, about 13:51 UTC
 recorded_by: flight (lead of relay-X1-probes), the session he typed into
 decides: two seat roles and one rule of notice. No line of the handoff's release menu.
-open: one point — the second seat line carries the same footer as the first. See "Not settled".
+open: nothing — the one open point (which seat holds the decision loop) was settled by him in the fourth part: the exec desk.
 ---
 
 # What Majkee said
@@ -53,6 +53,18 @@ file and one labelled line, and only when a file does not already answer it.
 developed — the RETURN file at the path the POINT names, which my finite file watch picks up — and a reply poke (the bell)
 is the fallback beside it. So a POINT names the RETURN path always and asks for the bell as well; a seat that cannot ring it
 says so in its RETURN, and the file alone still counts.
+
+# Fourth part — the open point is settled, about 14:00 UTC
+
+I had asked which seat holds the decision loop, since his line carried the auditor's footer twice.
+
+**Majkee:**
+> decision loop stays with exec. Should i write again roster to you, who is who and for what?
+
+**My reading.** The decision, gavel and check loop is the exec desk — thread `01a1fefc-0356-7ea1-860c-783a66a91211`, window
+`seniorDev`, pane `%68` — as before. The second footer was a repeat of the first. "Not settled" above is settled; nothing was
+re-routed in between. On the roster: no need for him to write it again — `raw/roster.2026-11-22.md` is rev 2 with the roles
+as he named them today, and I read them back to him in one table.
 
 # What it does not give
 

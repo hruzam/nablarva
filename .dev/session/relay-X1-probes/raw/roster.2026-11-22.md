@@ -1,7 +1,7 @@
 ---
 kind: party roster (data for pokes; observed, not assumed)
 bed: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes
-rev: 1 (2026-11-22T05:42Z) — the lead's first read at binding. Starting list was ../../relay-X0-carryover/raw/roster.2026-11-21.md (rev 5).
+rev: 2 (2026-11-22T14:02Z) — roles as Majkee named them during the day, section "Rev 2" at the end; ids not re-read except where that section says. Rev 1 (2026-11-22T05:42Z) was the lead's first read at binding. Starting list was ../../relay-X0-carryover/raw/roster.2026-11-21.md (rev 5).
 observed_by: lead · 2026-11-22T05:41Z · host home (hruzam) · read-only tmux queries, the bottom rows of panes %58 %59 %60 %66 %68, and four allowlisted keys of ~/.claude/sessions/*.json (pid, sessionId, cwd, name). Pane %61 (myShell) was not captured.
 tmux: base session `helloWorld`, 7 windows, grouped views `helloWorld-37 … -43`. tmux 3.7c.
 versions: Claude Code 2.1.330 · codex-cli 0.171.0 — the same as in the RUNBOOK frame.
@@ -97,7 +97,7 @@ stale_after: any window rebuild, CLI restart or host move. Re-read pane ids and 
 # Present in the tmux group, not a seat of this bed
 
 - `myShell` — window index 3, pane `%61`, a Claude session whose working directory is an operator vault (L22). Majkee's desk.
-  This bed does not address it and this lead has not captured its pane.
+  This bed does not address it and this lead has not captured its pane. — Rev 2: superseded, see the end.
 
 # The lead's children (Claude subagents; none standing)
 
@@ -119,3 +119,21 @@ children: []   # none standing
 # Roles
 
 As in `../RUNBOOK.md` (participants and prompts 1–4) and the predecessor's roster, section "Roles I set". Not repeated here.
+
+# Rev 2 — who is who and for what, as Majkee named it on 2026-11-22
+
+Sources: `raw/decision.majkee.countersignature.2026-11-22.md` · `raw/decision.majkee.seats-and-notice.2026-11-22.md` ·
+`raw/decision.majkee.cache-and-commits.2026-11-22.md`. Footers as he pasted them or as the lead saw them at the time given.
+
+| Seat | Who | What for | Reached by |
+|---|---|---|---|
+| lead | Claude, this session, window `lead`, pane `%70` | pen; plans, assigns, checks, commits; sends the Claude-origin tries when released | — |
+| exec | Codex, `exec(codex)\|astrobley`, thread `01a1fefc-0356-7ea1-860c-783a66a91211`, window `seniorDev`, pane `%68` — 62% left at 13:56Z | **the decision, gavel and check loop with Majkee** ("decision loop stays with exec"); tmux windows on his word | POINT file + `codex queue`; RETURN file and a reply bell |
+| oraculum | Codex, `oraculum(codex).contraThinking\|houston\|astrobley`, thread `01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1`, window `oraculum`, pane `%60` — 39% left at 13:54Z | **the countersignature** — the qualified opposing read by a second thinking entity of a different brand; every sheet that asks him for a release, and the packet | POINT file + `codex queue`; RETURN file; she rings no bell (a limit of her own seat) |
+| auditor | Codex, `auditor(codex.cartan)\|houston`, thread `01a1ffdf-793f-76d2-8497-3f68f84a34a7`, window `auditor`, pane `%66` — 82% left as he pasted it | independent observer of each try, and **the final work audit agent** — the packet against the evidence before it goes to him | POINT file + `codex queue`; RETURN file and a reply bell |
+| controller | Codex, `controller(codex)\|houston\|oraculum\|astrobley`, thread `01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318`, window `controller`, pane `%59` | hands; pushes on the lead's poke; a Codex-origin try only if one is released | `codex queue`; the remote ref shows a push |
+| predecessor | Claude, `engineer(calude)\|delta\|vector\|assay`, session `4f923bb7-ee15-447b-8954-408e16955530`, window `engineer`, pane `%58` — 47% left as he pasted it | on call for advice about the closed bed; holds no pen | one file + look-first paste |
+| myShell | Claude, session `a857e21d-3f9d-4cf3-93f4-bbe9aa33ec66`, window `myShell`, pane `%61`, working directory in an operator vault | Majkee's continuity desk — orphaned work across his tasks; not a seat of this bed, askable on his word; wrote `CACHE.md` for the lead | POINT file + look-first paste; RETURN file and a reply bell. Only the bottom rows of the pane are ever read, for the look. |
+| majkee | human | every release; trust dialogs; starts and closes the samples | the exec desk for decisions; window `lead` for the lead's reports |
+
+Pokes there and back are the lead's call. A reply comes by the RETURN file; the bell is beside it.
