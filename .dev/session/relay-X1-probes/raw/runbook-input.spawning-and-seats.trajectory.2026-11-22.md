@@ -42,8 +42,10 @@ In the roster a child goes under its parent with role, task, handle, writes and 
 rules out code review, pushing and operating a transport. I first asked her for a reply bell and called her a senior dev
 partner; both were wrong and she said so. Asked for what she is — the opposer, by file — she was the most valuable reader of
 the night: she found that my probe table had lost the trial's own direction. For a second coding body, ask a controller or a
-dev main to spawn `astrobley`; the desk says an Oraculum main can commission a bounded, analysis-only worker if Majkee
-authorises it, and that her own role still excludes coding. I did not test that.
+dev main to spawn `astrobley`; the desk says an Oraculum who runs as a main can — with Majkee's explicit
+authorisation and where the runtime supports it — commission a bounded execution worker; the worker keeps its own role and she
+stays the advisor. An Oraculum that is itself a child is analysis-only. (I first wrote this wrong; the desk corrected it in its
+own note, `runbook-input.decision-desk.exec.2026-11-22.md`.) I did not test it.
 
 **Three roles for anything that touches evidence.** I wrote the folder-copy script and tested it on synthetic folders; the
 controller reviewed it as a non-author and ran it on the real ones; I re-checked the result with commands that were not the
@@ -110,7 +112,7 @@ held a draft; that was the right call.
 - A Codex seat starting a Claude agent **on purpose**. The only start was the accident.
 - Claude `SendMessage` between tmux-hosted sessions.
 - What a Codex child costs in tokens. I saw only its parent's footer.
-- Whether an Oraculum main really commissions a worker when asked.
+- Whether an Oraculum main really commissions an execution worker when asked and authorised. The desk did not try it either.
 
 ## 4. If I wrote the RUNBOOK, these lines would be in it
 

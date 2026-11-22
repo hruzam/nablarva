@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-22 04:13 UTC
+updated: 2026-11-22 04:14 UTC
 state: OPENED by Majkee on 2026-11-22 ("open now on `home`"). This is an opening skeleton written by the outgoing pen of relay-X0-carryover. The pen is VACANT until the fresh lead binds. Nothing runs and nothing is released.
 writer: 'engineer (trajectory · claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) on home — one opening write, as the pen of the predecessor bed, so that the open work has a router row. The fresh lead rewrites this file as its own.'
 host: home (hruzam)
@@ -12,7 +12,7 @@ source: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/h
 runbook_input: raw/runbook-input.spawning-and-seats.trajectory.2026-11-22.md — the outgoing lead's experience with seats, children and context cost, written on Majkee's request after the predecessor closed. Noncanonical; the lead decides what to take.
 note_for_myshell: raw/note.to-myshell.continuity.trajectory.2026-11-22.md — continuity pointers for Majkee's desk; not this bed's work.
 decisions: raw/decision.majkee.pokes-and-continuity.2026-11-22.md — pokes are in the competence of whoever is in charge; run without him until an approval, a gavel or a decision is really needed; the RUNBOOK frame; the predecessor on call.
-requested: raw/request.exec.experience.trajectory.2026-11-22.md — the exec desk was asked for one page on its role; its answer is expected at raw/runbook-input.decision-desk.exec.2026-11-22.md and is committed by the predecessor when it lands.
+runbook_input_desk: raw/runbook-input.decision-desk.exec.2026-11-22.md — the exec desk's page on its role as Majkee's mouth, ears and eyes, written on request (raw/request.exec.experience.trajectory.2026-11-22.md). Read by the predecessor; it corrects one sentence of the predecessor's note, and that sentence is corrected. Noncanonical; the lead decides.
 carried: 'The live door probes (handoff section 3 — two first observations, Claude to Codex, and six deferred rows) · the planned new U01 capture (section 4) · the exit race U02, parked · retiring the file-poke, tracked and outside this gate · the paper receiver contract for U03–U06, not started. The cases X0-U01 … X0-U06 belong to this bed. Belonging is not a release.'
 released: 'Nothing. Lines 2–19 of the handoff''s release menu (section 6) are not given. Before asking for any of them, the lead reads back to Majkee which rows he selects, which bed owns each U-case, the stop conditions and where the evidence goes (handoff section 8).'
 shape: 'RUNBOOK.md exists as a thin frame, written by the outgoing lead of the predecessor at Majkee''s request (raw/decision.majkee.pokes-and-continuity.2026-11-22.md). It is not launched — the lead owns it from its binding and may change it until it has read the plan back to Majkee; then it is fixed. Goal files remain possible under a named sub-session (walkthrough T10 of the predecessor).'
