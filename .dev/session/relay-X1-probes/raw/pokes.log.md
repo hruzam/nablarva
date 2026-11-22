@@ -108,3 +108,16 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 
 - p08 outcome: read — the desk ran one turn that ended 2026-11-22T13:57:07Z; its closing lines say it picked up p08 and repeat the S0 question to Majkee. Seen by the lead in the desk's own session record (entry types, times and the end of the desk's last message only).
 - p09 outcome: done — `git ls-remote origin refs/heads/core` = `21df208` at 2026-11-22T13:57:11Z, equal to local HEAD; checked by the lead.
+
+## p10 — lead → exec · `codex queue`
+- authority: Majkee, typed in the lead session shortly before 14:04Z — "please poke `exec`" (raw/decision.majkee.seats-and-notice.2026-11-22.md, fifth part)
+- file first: none new — the line points at the running `_bus/02.lead.point.md`
+- looked first (2026-11-22T14:04:33Z): pane %68 — codex in the foreground, not dead, input row empty (placeholder only), no dialog. The transcript region still showed the desk's reply of 05:15Z as its last text and the selection hint row of Codex below the footer, although the desk's session record held two later turns (05:55Z, 13:57Z): the view was pinned by an old text selection, so Majkee at that window saw none of them.
+- call: `codex queue --thread 01a1fefc-0356-7ea1-860c-783a66a91211 --message "<line>"`, without `--resume`
+- line: `[poke p10] Majkee is at your window now for the walkthrough of /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/02.lead.point.md (sheet draft 3). Your screen there is pinned by an old text selection, so he may not see your last turns: put the S0 question to him again as the last line of this turn, then go on theme by theme as he answers`
+- before: 2026-11-22T14:05:25Z · after: 2026-11-22T14:05:25Z · exit code: 0
+- output (first line): `Queued message 01a20393-77ea-7e72-9874-5d9420a09270 for thread 01a1fefc-0356-7ea1-860c-783a66a91211.`
+- proves: the queue accepted the call.
+
+- p10 outcome: read and shown — the desk's turn ended 2026-11-22T14:05:29Z; the pane then showed the S0 question as its last line and the ordinary footer row, the selection hint gone. Whether a key of Majkee's or the new turn released the view is not known. The lead typed nothing into the pane.
+- observation for the stage (not a probe result): a queued message can run a whole turn in a Codex main that its own window does not show, while a text selection pins the view. "The seat was poked and answered" and "the human at that window saw it" are two facts.

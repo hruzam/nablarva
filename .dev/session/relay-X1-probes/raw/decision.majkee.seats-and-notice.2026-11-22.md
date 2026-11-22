@@ -66,6 +66,19 @@ I had asked which seat holds the decision loop, since his line carried the audit
 re-routed in between. On the roster: no need for him to write it again — `raw/roster.2026-11-22.md` is rev 2 with the roles
 as he named them today, and I read them back to him in one table.
 
+# Fifth part — shortly before 14:04 UTC
+
+He had said "roster is correct, going to exec now", and came back:
+
+**Majkee:**
+> please poke `exec`, one of side goals is get to point when manualy is relayed almost nothing, max things which explicitly needs that.
+
+**My reading.** Two things. The act: poke the exec desk now — done as poke p10; its window had been showing an old reply
+because a text selection pinned the view, and the desk's two later turns were not on his screen. The side goal, his words: a
+party in which he relays almost nothing by hand — only what explicitly needs him. For this lead it means: when he has to
+carry a line between two windows, that is a defect of my coordination to remove, not a step of the plan; and before I tell
+him "it waits for you at seat X", I look at what that seat's window shows him.
+
 # What it does not give
 
 No release line.
