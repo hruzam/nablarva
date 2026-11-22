@@ -1,9 +1,9 @@
 ---
-kind: handoff — source material for the RUNBOOK of the successor stage `relay-X1-<phase>` (generation X — Majkee, raw/decision.majkee.successor-name.2026-11-22.md; his earlier proposal for the phase word is `research`)
-status: DRAFT 4 by the pen holder — revised after Houston's consult (`stretches`, five constraints; _bus/16.houston.return.md), after Oraculum's counter-read (REVISE, twelve points; _bus/17.oraculum.return.md) and after her confirming read (REVISE, three points; _bus/18.oraculum.return.md). All taken. She asked for no further read; the three last edits were not read by a non-author. Not yet put to Majkee.
+kind: handoff — source material for the RUNBOOK of the successor stage `relay-X1-probes` (generation X — Majkee, raw/decision.majkee.successor-name.2026-11-22.md; phase word chosen by him, walkthrough 3, H2)
+status: DRAFT 4 by the pen holder — revised after Houston's consult (`stretches`, five constraints; _bus/16.houston.return.md), after Oraculum's counter-read (REVISE, twelve points; _bus/17.oraculum.return.md) and after her confirming read (REVISE, three points; _bus/18.oraculum.return.md). All taken. ACCEPTED — Majkee recorded GO on draft 4 on 2026-11-22 (walkthrough 3, H1; _bus/19.engineer.verdict.md). This text is draft 4 with his answers H2–H6 written in and nothing else changed — the name, the last clause of the gate, G5 and the umbrella, the pen, the opening. Oraculum's last three points and these entries were written in by the engineer and read by nobody else.
 by: engineer (pen of relay-X0-carryover) · 2026-11-22 · host home
 authority: Majkee — walkthrough T8 (placement left to the engineer; "Trajectory brings back the exact test scope before live sends begin"; handoff files against orphans) · walkthrough 2, S1 (one new real capture for U01) and S5 (placement agreed)
-releases: NONE. This file proposes. Every operation that needs Majkee's release is listed in §6 on its own line. Nothing here opens a session.
+releases: NONE. His GO accepted this file as the successor's starting document; it released no session start, no send and no capture. Every operation that needs his release is listed in §6 on its own line.
 base: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/   (relative paths start here)
 ---
 
@@ -13,7 +13,10 @@ base: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/   (relative paths
 
 - It is **not** `relay-00-research`. That name stays reserved for the L14 D4 sequence, and this stage does not stand in for it.
   Regulated delivery waits on that research verdict (`docs/ARCHITECTURE.md` line 209); nothing here is regulated delivery.
-- It gives **no verdict on the relay architecture**. Its packet is offered to `relay-00-research` as evidence input, nothing more.
+- It gives **no verdict on the relay architecture**. In Majkee's confirmed words (walkthrough 3, H4): "`relay-X1-probes` owns the
+  probes and their results. Any later relay architecture decision follows L14 and may cite this packet as evidence." This
+  sentence replaced Houston's wording that the packet is offered to `relay-00-research` as evidence input only. The constraint
+  was not forgotten; he reworded it.
 - It **qualifies no door** — neither as a relay transport nor as the replacement for the file-poke. G7's three words (coverage,
   adoption, retirement) are not in its gate.
 - Each result is recorded as **"tried once"**. It is not cited to reopen L4 or L14 D1 except through the flag's own route for
@@ -46,9 +49,9 @@ base: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/   (relative paths
 | **U01 — one new real capture** (Majkee, S1: "taking b") | chosen, not released | planned operation, §4 |
 | **G6 — U02, the exit race** (`goals/G6.u02-exit-race.md`) | parked by Majkee (T8) | parked. It needs a carrier where text and submit are two steps, and isolation. Observation B of §3 may show whether that seam can be observed; r06 is one unexplained event at exactly that seam. A scoped proposal comes back to Majkee before anything runs. |
 | **G7 — retire the file-poke** (`goals/G7.retire-file-poke.md`) | tracked (T8) | tracked, outside the successor's gate (§0). The file-poke stays in use under its rules. A bed that qualifies a replacement maps what it covers and returns for three separate words: coverage, adoption, retirement. |
-| **G5 — receiver contract for U03–U06** (`goals/G5.receiver-policy-contract.md`) | not started; paper only | paper work. **Proposal** — it moves; Majkee may keep it here instead. |
+| **G5 — receiver contract for U03–U06** (`goals/G5.receiver-policy-contract.md`) | not started; paper only | paper work. It moves — Majkee, walkthrough 3, H5 ("to probes"). |
 | **G10 — friendly reminder** | deferred by Majkee (T6) | not the successor's. It belongs to the session-window helper group, which gets its own lead (S5). Pointer only: `goals/G10.friendly-reminder.md`, `raw/decision.majkee.walkthrough.2026-11-21.md` T6. |
-| **G0 — the umbrella sentence** | confirmed by Majkee as the umbrella of **this bed** (T3) | **Proposal** — the successor takes the same sentence. That is Majkee's word when he opens it; his confirmation so far covers this bed only. |
+| **G0 — the umbrella sentence** | confirmed by Majkee for this bed (T3) | the successor's umbrella, carried as written — Majkee, walkthrough 3, H5 ("carry as is -> yes.") |
 
 Nothing else is open. G2, G3 and G4 are done; G9 ends with this session; G1 is this party's housekeeping and the roster is the successor's starting list (`raw/roster.2026-11-21.md` — re-read against live tmux).
 
@@ -165,7 +168,7 @@ session; a documentary handover has its own boundary; and even a pointer-only se
 
 | Lock | Finding | Where it landed |
 |---|---|---|
-| **L14 D4** — research sequence, `relay-00-research` first | an X stage may carry the probes without bypassing the sequence only if it says it is not `relay-00-research`, gives no architecture verdict, offers its packet as evidence input only, and qualifies no door | §0, §7 |
+| **L14 D4** — research sequence, `relay-00-research` first | an X stage may carry the probes without bypassing the sequence only if it says it is not `relay-00-research`, gives no architecture verdict, offers its packet as evidence input only, and qualifies no door | §0, §7 — the evidence clause was reworded by Majkee (H4) |
 | **L14 D1** (vendor doors parked) | a one-shot measurement fits — parked is not forbidden; results are "tried once" and reopen nothing | §0, §3 |
 | **L4** (send-keys injection, a recorded death) · **L17** (tmux push is a human-operated carrier until separately qualified) | qualification work cannot reopen it; each agent-operated tmux try is an explicit exception that returns to Majkee with its evidence; no gate presumes it | §0, §3, §6, §7 |
 | **L21** — each activation and delivery needs its own release | one line per try and per input; start and close of a sample together; record deletion on its own | §6 |
@@ -175,7 +178,7 @@ session; a documentary handover has its own boundary; and even a pointer-only se
 ## 6. What Majkee would have to release — a menu, one line each, none implied by another
 
 **To begin**
-1. Opening the successor bed `relay-X1-<phase>`: the phase word, its pen, its gate, and whether G0's sentence is its umbrella.
+1. Opening the successor bed — **given** (walkthrough 3, H2–H6): `relay-X1-probes`, a fresh lead, the gate of §7, G0's sentence as its umbrella, opened now on home. Lines 2–19 are **not** given.
 
 **The two first observations**
 2. Starting `sample-codex` and closing it at the end by the same hand — launcher Majkee; `codex -C ~/.cache/nablarva/relay-x1-samples/<date>/sample-codex -m gpt-6.1-terra`, default approvals and sandbox (§3). Trust dialogs are his hand. If he wants other values, startup is pending until he names them.
@@ -203,24 +206,28 @@ session; a documentary handover has its own boundary; and even a pointer-only se
 
 G6 and G7 ask for nothing now. A line that is not released is NOT RUN. A partial release gives a partial packet, and that is a valid packet.
 
-## 7. Proposed gate for the successor (Majkee sets the real one when he opens it)
+## 7. The gate of the successor — confirmed by Majkee (walkthrough 3, H4)
 
 > Majkee records GO or STOP on a witnessed probe packet: for each released row the carrier result, the native turn, the receipt
 > with the matching nonce and the observer's confirmation — or MISSING, NOT RUN or UNCERTAIN with its reason — and, if the U01
 > capture is released, its own outcome: one independently labelled genuine unknown-view fixture, or a documented MISSING; if a
 > classification ran, its actual output beside the independent label, including any disagreement. Every result stands as "tried once". The packet gives no verdict
 > on the relay architecture, qualifies no door as a transport or as a replacement for the file-poke, presumes no exception to the
-> recorded death of send-keys injection, adopts nothing, and is evidence input for `relay-00-research` only.
+> recorded death of send-keys injection and adopts nothing. `relay-X1-probes` owns the probes and their results. Any later relay
+> architecture decision follows L14 and may cite this packet as evidence.
 
-## 8. Team — proposal only
+## 8. Team — decided by Majkee (walkthrough 3, H3)
 
-A **new** pen for the successor, started from the cold-start card and this file: this pen has been through more than one context
-reset in one bed. Oraculum agrees. The controller, the auditor as observer and the exec desk can carry over.
+A **fresh lead** takes the successor's pen, started from the cold-start card
+`~/reposoma/_cold-start/card/CS.relay-X1-probes.2026-11-22.md` and this file. In his words: "frsh one, `engineer` has many
+compacting cycles behind. Part of team with higher ctx can remain because of continuity, I can eventually change them during run,
+so the tmux session can stay +/- as is." The controller, the auditor, Oraculum and the exec desk can carry over; the lead re-reads
+their bindings against live tmux first.
 
 **Before any activation the new pen reads back to Majkee** which rows he selected, which bed owns each U-case, the stop
 conditions, and where the evidence goes. Nothing starts before he has heard that back.
 
 ## 9. What stays behind
 
-`relay-X0-carryover` closes when Majkee has recorded GO or STOP on this handoff. Its files stay where they are; the successor reads
+`relay-X0-carryover` closed on Majkee's GO, 2026-11-22. Its files stay where they are; the successor reads
 them by path. The private custody folders stay on home; the line ledger points at them.

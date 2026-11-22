@@ -9,7 +9,7 @@ authority: Majkee 2026-11-19 — shared provisional protocol and future communic
 naming: relay-X{0,1,…}-<phase> for experimental coordination sessions; first session `relay-X0-carryover` opened 2026-11-21
 attach: Delivery/coordination development; stridulatrix remains the named delivery organ under L13; no new organ adopted
 absorbs: vist-X.ledger.md (VIST · line X) — merged 2026-11-21; tombstone kept at the old address
-updated: 2026-11-22 (origin bed stopped and closed by Majkee — moved to Solved; C04 custody entry added by the exec desk on his direct word; whole-folder custody entry added by the engineer) · 2026-11-21 (VIST line ledger merged in; reshaped to Open / Standing / Solved; first relay session row added; one prospective rule dropped in that step was restored after cartan's check, relay-X0-carryover cycle 06)
+updated: 2026-11-22 (relay X0 closed on Majkee's GO, relay X1 `relay-X1-probes` opened by him; origin bed stopped and closed by Majkee — moved to Solved; C04 custody entry added by the exec desk on his direct word; whole-folder custody entry added by the engineer) · 2026-11-21 (VIST line ledger merged in; reshaped to Open / Standing / Solved; first relay session row added; one prospective rule dropped in that step was restored after cartan's check, relay-X0-carryover cycle 06)
 by: nablarva.cartan (2026-11-19 text) · myShell (claude, home) — merge on Majkee's direct request 2026-11-21 ·
   engineer (trajectory, claude, home) — session-open row for relay-X0-carryover, 2026-11-21; origin-bed STOP row, 2026-11-22 ·
   exec desk's Astrobley child (codex, home) — C04 custody entry, 2026-11-21, on Majkee's direct word
@@ -22,13 +22,14 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 
 ## Open
 
-- [ ] relay X0 `relay-X0-carryover` — carries the VIST X0 property by pointer and, since the STOP of the origin bed, its open cases
-  X0-U01 … X0-U06; goals as small files, no RUNBOOK (provisional try) ·
-  gate, pen and team live only in its [STATUS](relay-X0-carryover/STATUS.md) · [goals](relay-X0-carryover/goals/README.md)
+- [ ] relay X1 `relay-X1-probes` — opened by Majkee 2026-11-22 ("open now on `home`"), fresh lead, pen vacant until it binds.
+  Carries the live door probes, the planned U01 capture, the parked exit race, the paper receiver contract and the cases
+  X0-U01 … X0-U06; nothing is released · gate, pen and team live only in its [STATUS](relay-X1-probes/STATUS.md) ·
+  starting document [handoff](relay-X0-carryover/raw/handoff.successor-stage.2026-11-22.md)
 - [ ] Standing development debt — retire the provisional file-poke: qualify the actual replacement, map its
   coverage, then repair/remove the provisional chapter/manifest and authoring/future-session references under
   the accepted scope. The qualifying head owns that proposal; unresolved pieces carry forward.
-  Carried now by `relay-X0-carryover` as goal [G7](relay-X0-carryover/goals/G7.retire-file-poke.md).
+  Carried now by `relay-X1-probes` as a tracked obligation outside its gate; text in [G7](relay-X0-carryover/goals/G7.retire-file-poke.md).
 
 ## Standing (holds while the line lives)
 
@@ -59,6 +60,9 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 - [x] Origin bed `vist-X0-helloWorld` (VIST X0, not a relay session) — STOPPED by Majkee 2026-11-21; closed record, left in place;
   all its material and open cases carried to `relay-X0-carryover` ·
   [decision](vist-X0-helloWorld/raw/decision.majkee.stop-and-carry.2026-11-21.md) · [STATUS](vist-X0-helloWorld/STATUS.md)
+- [x] relay X0 `relay-X0-carryover` closed on Majkee's GO, 2026-11-22 — export checked, door inventory on paper, U01's search of the
+  trial captures MISSING, both capture folders in custody, handoff accepted ·
+  [decision](relay-X0-carryover/raw/decision.majkee.walkthrough-3.2026-11-22.md) · [STATUS](relay-X0-carryover/STATUS.md)
 - [x] First relay-line session opened: `relay-X0-carryover` (Majkee 2026-11-21) ·
   [decision](relay-X0-carryover/raw/decision.majkee.open-bed.2026-11-21.md) — replaces the former Open item "next session … not opened"
 - [x] VIST line ledger merged into this one (Majkee 2026-11-21) · previous texts: `git show 97b261c:.dev/session/vist-X.ledger.md`

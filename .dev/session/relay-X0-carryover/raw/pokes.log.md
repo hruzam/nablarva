@@ -196,3 +196,13 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 ## p27 — engineer → cartan (push-only, no cycle)
 - Carries the commit that closes cycle 18 (handoff draft 4, sheet 3, POINT 19) and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
 - line: `[poke p27] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
+- p27 result, checked by me: `origin/core` = `6cdaadc` = HEAD, reflog "update by push" 2026-11-22 04:23:13 +0100.
+- p26 outcome: read — the desk showed theme H1 at 04:23 +0100; `_bus/19.exec.return.md` written 2026-11-22 04:36 +0100, found by my file watch. The desk first withheld the reply bell because my input row held an unsent draft; `[bell r19]` then arrived in %58 as one clean line at about 04:40 +0100, after the record had been read and checked.
+
+## p28, p29 — engineer → cartan (push-only, the last of this bed)
+- p28 — nablarva `core`: the commit that closes this bed and opens `relay-X1-probes`. p29 — reposoma `core`: the two cold-start cards.
+- line p28: `[poke p28] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
+- line p29: `[poke p29] push duty: reposoma core — fetch, only if ahead and not behind, one plain git push; path-limited git only, never list .majkee; write no file, type into no pane; I verify the ref`
+- Their result is the remote ref, checked by me and reported to Majkee. No further entry follows; the bed is closed.
+
+**Tally of this bed, as observation only.** `codex queue`: every call from p01 to p29 except p02 was accepted by the queue; each assignment was followed by its RETURN and each push poke by the remote ref. Look-first pastes into Claude panes: p02, r03, r05, r10 and r19 submitted; r06 staged and not submitted, cause unknown; r14 not rung. This qualifies nothing.
