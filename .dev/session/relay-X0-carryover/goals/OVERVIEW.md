@@ -9,6 +9,9 @@ where: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/goals/   (one fil
 
 "Needs you" says what only Majkee can give. Goals with nothing there can run inside the team.
 
+> **2026-11-22:** Majkee answered the "needs you" lines in the walkthrough — `../raw/decision.majkee.walkthrough.2026-11-21.md`.
+> This page was not rewritten afterwards. Where it still says something waits for him, the goal file and `../STATUS.md` win.
+
 ## G0 — umbrella (your sentence, proposed)
 - **Context:** you wrote it as an edit of the X0 RUNBOOK's goal line — find out what the accepted home trial can support for the relay organ, and qualify observations, before any implementation or transport is chosen. I proposed it as this bed's umbrella.
 - **Buys:** one yardstick. Every other goal must serve this question or be dropped.

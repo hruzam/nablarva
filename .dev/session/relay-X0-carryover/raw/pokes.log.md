@@ -89,3 +89,9 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 ## p12 — engineer → cartan (push-only, no cycle)
 - Same standing push duty as p10. Carries the commits that open cycle 10 and this log line. Result = the remote ref, checked by me.
 - line: `[poke p12] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
+- p12 result: call before 22:01:24.689Z · after 22:01:24.891Z · exit 0 · `Queued message 01a20020-e288-7f90-8bd9-2945cb4184c2`. Remote ref check by me: `origin/core` = `2ef2ae3`, reflog "update by push" 2026-11-21 23:01:37 +0100. Push made.
+- p11 outcome: read — the desk showed theme T1 at 22:01:45Z and `_bus/10.exec.return.md` exists (2026-11-22 02:59:57 +0100).
+
+## r10 — exec → engineer (reply bell, cycle 10)
+- `[bell r10] return at …/_bus/10.exec.return.md` arrived in %58 as one clean line on 2026-11-22 at about 02:00Z and was submitted.
+- Tally of look-first pastes into Claude panes: p02, r03, r05, r10 submitted · r06 staged, Enter returned 0, not submitted (cause unknown).

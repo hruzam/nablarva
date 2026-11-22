@@ -40,3 +40,7 @@ this CLI turns words into a prompt. The gate "nothing is started" was broken by 
 **Rule from now on.** Help probes use the `--help` flag on documented subcommands only. Never `<cli> help <words>` on a CLI where
 a positional argument can be a prompt. For this line it is also a finding: one wrong word on a command line activates an agent
 that reads the working tree in default permission mode. It goes into the door inventory as a hazard (cycle 08).
+
+**Majkee's decision on the transcript, 2026-11-21 (walkthrough T1, verbatim):** "If team need, we can keep such solleague or his
+memmory. If personal notes here meaning file in previous session vist-X0 there were anything secret. If question is only about
+transcript, you can let it as is. no harm." — the transcript stays where it is. Nobody deletes it.

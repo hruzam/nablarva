@@ -1,7 +1,7 @@
 ---
 kind: party roster (data for pokes; observed, not assumed)
 bed: ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover
-rev: 4 (2026-11-21T22:00Z) — exec desk added on Majkee's request (cycle 10). rev 3 — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
+rev: 5 (2026-11-22T02:20Z) — after Majkee's walkthrough (cycle 10) — exec confirmed and kept as his decision desk, auditor kept, bells optional, push held, child seats listed under their parent. rev 4 (2026-11-21T22:00Z) — exec desk added on Majkee's request. rev 3 — each seat's own probe recorded (cycles 03–05); oraculum's row corrected by her identity file. rev 2 widened the team after decision.majkee.team-and-doors.2026-11-21.md
 observed_by: engineer · 2026-11-21T20:58Z · host home (hruzam) · read-only tmux queries + bottom rows of each pane + ~/.claude/sessions/*.json
 tmux: base session `helloWorld`, grouped views `helloWorld-37 … -41`. Windows by name — engineer, controller, oraculum, myShell, auditor, seniorDev. tmux 3.7c.
 versions: Claude Code 2.1.330 · codex-cli 0.171.0
@@ -21,8 +21,8 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
   pane: "%58"
   cwd: ~/ia-sync            # work root for this bed is ~/unikuklatrix/nablarva (absolute paths)
   door_in: tmux pane %58 — one labelled line, look first. Typed text queues if I am mid-turn. Majkee types here too, so a non-empty input row means do not paste.
-  writes: STATUS.md, goals/, raw/ (own files), _bus/NN.engineer.*.md, pulse row, git commits. I do not push; the controller does.
-  bell: a reply bell is asked from every poked seat (Majkee's note). I still check RETURN paths myself with a finite file check.
+  writes: STATUS.md, goals/, raw/ (own files), _bus/NN.engineer.*.md, pulse row, git commits. I do not push. Pushes are held since 2026-11-22 (walkthrough T9 item 1 reads two ways — see STATUS).
+  bell: reply bells are optional heads-ups (Majkee, walkthrough T10) — asked where they help, skipped where they would disturb a working seat. I still check RETURN paths myself with a finite file check.
 
 - seat: cartan              # controller (role below)
   vendor: codex
@@ -75,9 +75,9 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
   pane: "%68"
   cwd: ~/unikuklatrix/nablarva
   door_in: codex queue --thread 01a1fefc-0356-7ea1-860c-783a66a91211 --message "<one line>"
-  door_out: files; one reply bell into %58 at the end of cycle 10 if its seat reaches tmux (not probed)
-  writes: only the two paths POINT 10 names — the walkthrough record and its RETURN
-  seen: 2026-11-21T21:58Z idle, footer carries the thread id, pid 3356822. Not yet confirmed by itself.
+  door_out: files, plus the reply bell into %58 (bell r10 arrived 2026-11-22 at about 02:00Z).
+  writes: the walkthrough record and its RETURN (POINT 10). Beyond that only what Majkee tells it directly at the desk (cycle 10 — the custody tool, the custody entry in the line ledger, exp/README.md) or what a later POINT names.
+  confirmed: binding by itself (10.exec.return.md field 4). Permissions not probed by me.
 
 - seat: myshell             # Majkee's desk; continuity over the project task is partly her job (Majkee D3)
   vendor: claude
@@ -102,10 +102,10 @@ stale_after: any window rebuild, CLI restart or host move. Pane ids and native i
 
 **cartan — controller.** Majkee's words define the job (decision file, item C). How I use it:
 1. **Hands.** Runs what a POINT names with an unrestricted shell: reading, crawling, probes, inventories. G3 is his first job after binding.
-2. **Push.** I commit path-scoped; on my poke he fetches, checks that `core` is only ahead, runs one plain `git push`, and reports the range. Never `pull --rebase`, never force.
+2. **Push.** I commit path-scoped; on my poke he fetches, checks that `core` is only ahead, runs one plain `git push`, and reports the range. Never `pull --rebase`, never force. **Held since 2026-11-22** until Majkee says whether each push needs his own approval (walkthrough T9 item 1).
 3. **Non-author check** of my documents, as in cycle 01.
 4. **Coding by POINT** when a goal is released. Then I check his work, or oraculum does; nobody accepts their own.
-5. **Codex-side subagents** (`houston`, `oraculum`, `astrobley`) when a POINT allows it. Their words are published verbatim and attributed.
+5. **Codex-side subagents** (`houston`, `oraculum`, `astrobley`) when a POINT allows it. Their words are published verbatim and attributed. For U01 (cycle 11) he crawls through helpers with the model set to terra (Majkee, walkthrough T5).
 
 He holds no pen: no STATUS, no goal files, no release decisions. The push service is Majkee's routing, written down; it is not a
 way around a permission another seat lacks (scar S7), and it is not to be stretched into "run this for me because I may not".
@@ -113,25 +113,44 @@ way around a permission another seat lacks (scar S7), and it is not to be stretc
 **oraculum — opposer and counter-signature.** A peer of my tier from the other vendor. Called before a lock, before a gate text goes
 to Majkee, and before a goal that carries a release starts. Strategic review and synthesis only: by her identity file she does not
 implement or review code, does not operate transports and does not push. So she is **not** a senior dev partner and she rings no bell.
-A POINT to her asks for a file and nothing else. No pen.
+A POINT to her asks for a file and nothing else. No pen. The exec desk adds (10.exec.return.md field 4): as a main she can commission
+a bounded, analysis-only worker when Majkee authorises it; her own role still excludes coding. Majkee left a countersignature of the
+accepted baseline to my discretion (walkthrough T7).
 
-**auditor — outside audit.** One bounded audit of this bed now (cycle 05). Afterwards a candidate for the independent observer that
-G8 requires; otherwise Majkee can close the window. No pen.
+**auditor — independent observer.** One bounded audit of this bed (cycle 05). Majkee keeps the window for independent observation
+(walkthrough T10). Next use: independent labeller of the U01 candidate (G4) after cartan's selection. No pen.
 
-**exec — Majkee's decision desk.** Majkee asked for this seat to walk him through the owed decisions one theme at a time and to
-record his words verbatim (he usually asks myShell). It presents and records; it decides nothing, releases nothing and acts on no
-answer. I turn the record into assignments afterwards. No pen.
+**exec — Majkee's decision desk, kept for this bed (walkthrough T10).** It walks him through decisions and records them; by his
+rule R1 it may record a summary he confirmed. He asked it to watch continuity, orphaned work and coordination across tasks. It can
+take a bounded fork (an `astrobley` child) when he or a POINT asks; for a sustained second coder he opens a dedicated
+`dev(codex)|astrobley` window. If I ask for a separate witness window, exec prepares it (T9). I turn its records into assignments. No pen.
 
 **A second relay Cartan — not asked for.** One controller covers hands and push today, and an idle seat is a cost. I ask Majkee for it
 when crawling and reading start to eat the controller's context.
 
 **myshell — continuity.** Told where this bed is. May be asked to hold or check continuity notes. No pen here.
 
-**Reply bell (Majkee's note, all seats).** After the RETURN is on disk: look at the target pane first (foreground is the agent, input
+**Manual fallback pointer (walkthrough T9).** Any seat may send one labelled manual pointer after a definite failed delivery — look
+first, log it. An uncertain delivery is reconciled before any fallback.
+
+**Reply bell — an optional heads-up (Majkee's note; walkthrough T10: skip it when it would disturb a working seat).** After the RETURN is on disk: look at the target pane first (foreground is the agent, input
 row empty, no dialog), then one labelled line `[bell rNN] return at <path>`, pasted and submitted as separate steps, once. If the
 pane is not clean, nothing is typed and the RETURN says so. A bell is a hint; the file is the truth.
 
+# Child seats (Majkee to the exec desk, 2026-11-22; 10.exec.return.md fields 4 and 5)
+
+Every Codex main can spawn children, among them `astrobley`, a coder. I ask the parent by POINT and name the child type, the task
+name, one outcome, the paths it reads and the exact paths it owns, the gates, the done-check and the return path. The parent verifies
+and integrates. If a child cannot be started, the parent says so and substitutes nothing silently. A child is listed here under its
+parent with role, task, handle, writes and return_to.
+
+```yaml
+children: []   # none standing. Cycle 10 — exec ran one Astrobley child (`/root/c04_custody`) for the C04 custody copy; finished. Cycle 11 — cartan's terra helpers are added from his RETURN.
+```
+
 # Not in this party (do not address from old records)
+
+The X0 bed is stopped and closed (Majkee 2026-11-21); the three below hold nothing there any more.
 
 - X0 controller `nablarva.cartan`, Codex thread `01a1d582…` — office record of 2026-11-19.
 - X0 witness, Claude `c266d10a…` — office.

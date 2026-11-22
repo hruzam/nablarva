@@ -22,19 +22,22 @@ States in a goal file: `draft` → `open` (worth doing; Majkee or the pen holder
 
 | Goal | One line | Release |
 |---|---|---|
-| [G0](G0.umbrella.md) | Proposed umbrella goal for the relay organ (Majkee's sentence, not yet confirmed for this bed) | — |
+| [G0](G0.umbrella.md) | Umbrella goal for the relay organ (Majkee's sentence, confirmed for this bed) | — |
 | [G1](G1.party-binding.md) | The party is bound: who, where, which door, which bell | given (coordination) |
 | [G2](G2.export-verified.md) | The carry-over export is checked by a non-author | none |
 | [G3](G3.door-inventory.md) | Which door candidates exist per direction on today's versions (read-only) | none |
-| [G4](G4.u01-unknown-view-fixture.md) | U01: find one genuine unknown native view, or report MISSING | needs Majkee |
+| [G4](G4.u01-unknown-view-fixture.md) | U01: find one genuine unknown native view, or report MISSING | given (read-only search) |
 | [G5](G5.receiver-policy-contract.md) | U03–U06: one candidate receiver contract and oracle sheet | none to draft |
 | [G6](G6.u02-exit-race.md) | U02: receiver exits between text and Enter | needs Majkee |
 | [G7](G7.retire-file-poke.md) | Replace the provisional file-poke and retire it | needs Majkee |
 | [G8](G8.door-probes-live.md) | Live door probes on samples (forked from G3) | needs Majkee |
-| [G9](G9.custody-and-handoff.md) | Evidence custody and a clean-table hand-over | part (a) needs Majkee |
+| [G9](G9.custody-and-handoff.md) | Evidence custody and a clean-table hand-over | part (a) given and done |
 | [G10](G10.friendly-reminder.md) | A vendor-neutral friendly reminder when a seat is asleep (Majkee's question) | needs Majkee |
 
 **For Majkee:** [OVERVIEW.md](OVERVIEW.md) explains every goal in plain words — context, what it buys, cost, consequences. The goal files win.
+
+**Sub-sessions (Majkee, walkthrough T10).** Goals as small files stay where they make sense. Where a colleague's session or a chain
+of sessions needs its own working loop, it may get a `GOAL.md` under a named sub-session folder. None exists yet.
 
 Shared practice used here: `~/reposoma/raw.guides/bus/res/file-poke.md` (provisional). Its retirement debt is carried by this bed
 through the line ledger `../../relay-X.ledger.md` (G7).
