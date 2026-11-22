@@ -130,3 +130,15 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 - line: `[poke p17] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
 - p17 result, checked by me: `origin/core` = `6ba4334` = HEAD, reflog "update by push" 2026-11-22 03:33:05 +0100.
 - p16 outcome: read — `_bus/13.auditor.return.md` written 2026-11-22 03:33 +0100, found by my file watch. No bell (optional, omitted).
+
+## p18 — engineer → exec (cycle 14)
+- Sent at once after the U01 result was checked, on Majkee's routing of 2026-11-22 (raw/decision.majkee.desk-routing.2026-11-22.md).
+- target checked 2026-11-22T02:38:24Z, bottom rows only: %68 `seniorDev`, foreground `codex`, footer thread `01a1fefc-0356-7ea1-860c-783a66a91211`, idle composer, context 79% left.
+- door: `codex queue --thread 01a1fefc-0356-7ea1-860c-783a66a91211 --message …` (no `--resume`), one call.
+- line: `[poke p18] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/14.engineer.point.md — Majkee routed his decisions through your desk; five themes of sheet 2, one question each; start with S1 when he is ready`
+- call: before 02:38:31.832Z · after 02:38:32.133Z · exit 0 · `Queued message 01a2011e-98a7-79b3-8e92-801437a3dbad for thread 01a1fefc-0356-7ea1-860c-783a66a91211.`
+- claim level: queue call accepted. Read = only when the desk shows Majkee theme S1 or `_bus/14.exec.return.md` exists.
+
+## p19 — engineer → cartan (push-only, no cycle)
+- Carries the commit that closes cycle 13 and opens cycle 14, and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
+- line: `[poke p19] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
