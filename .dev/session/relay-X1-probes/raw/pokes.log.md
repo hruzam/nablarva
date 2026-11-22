@@ -51,3 +51,14 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - proves: the line was submitted and a turn started. It does not prove that the POINT was read to the end.
 - read is shown by: `_bus/03.myshell.return.md`
 
+- p04 outcome: read — her RETURN was on disk by 2026-11-22T13:40:42Z; checked in `_bus/03.lead.verdict.md`. Her reply bell `[bell r03]` arrived in pane %70 afterwards, submitted.
+
+## p05 — lead → controller · `codex queue`
+- looked first (2026-11-22T13:44:31Z): pane %59 — codex in the foreground, not dead, input row empty (placeholder only, cursor at the start), no dialog; footer thread id as in the roster; idle. No POINT: the duty is prompt-1 of the RUNBOOK. Done is shown by origin/core = `59878f9`.
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p05] push duty — prompt-1 in /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md: nablarva core — fetch; only if ahead and not behind, one plain git push; never rebase, never force; write no file, type into no pane; I verify the remote ref`
+- before: 2026-11-22T13:44:41Z · after: 2026-11-22T13:44:41Z · exit code: 0
+- output (first line): `Queued message 01a20380-7c50-70b3-855a-6544be1efd8a for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call. It does not prove that the line was read.
+
+- p05 outcome: done — `git ls-remote origin refs/heads/core` = `59878f9` at 2026-11-22T13:45:06Z, equal to local HEAD; checked by the lead.

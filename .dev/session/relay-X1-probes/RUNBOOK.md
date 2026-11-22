@@ -7,6 +7,9 @@
 > Taken over by the lead on 2026-11-22 (`raw/decision.majkee.pen.2026-11-22.md`). Changed by the lead before the read-back: the
 > lead's effort as launched; Oraculum reads every document that asks Majkee for a release, once each — the frame gave her one
 > read, for the packet only, while its own line 6 of "How this party works" asks for such a read of every release document.
+> Added on Majkee's word of 2026-11-22 (`raw/decision.majkee.countersignature.2026-11-22.md`): the countersignature — the
+> qualified opposing read — is Oraculum's, a second thinking entity of a different brand. A child of the lead may read first;
+> its read is a fresh-eyes check and never replaces hers.
 
 ```yaml
 goal: >
