@@ -13,6 +13,10 @@
 > Added on his word of the same day (`raw/decision.majkee.seats-and-notice.2026-11-22.md`): the auditor is also the final work
 > audit agent; every notice is a poke and every reply is announced by one reply bell — Oraculum's too, which replaces "no
 > bell" where this file still said it.
+> Corrected after the read-back, on Majkee's word only (`raw/decision.majkee.roster-correction.2026-11-22.md`): Oraculum is
+> the second thinking voice for a strategic decision on the lead's side — not a reader of every loop or every sheet; the
+> auditor is the other-brand counterpart of the lead's `assay` for a bigger piece of work made final — in this bed, the
+> packet; any seat may spawn `houston` for project alignment. The roles below are rewritten to say so.
 
 ```yaml
 goal: >
@@ -31,8 +35,8 @@ gate: >
   the probes and their results. Any later relay architecture decision follows L14 and may cite this packet as evidence.
 participant_1: [lead, {brand: claude, model: fable, effort: high}, host: home, role: "head and status_owner; writes assignments, verifies, commits; sends the Claude-origin tries when released"]   # the flight build, window `lead`, started by Majkee with model fable and effort high — raw/roster.2026-11-22.md
 participant_2: [controller, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "hands; runs what a POINT names; pushes on the lead's poke; sends a Codex-origin try only if one is released"]
-participant_3: [auditor, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "independent observer; only reads; never sender or receiver; audits the finished work — the packet against the evidence — before it goes to Majkee"]
-participant_4: [oraculum, {brand: codex, model: GPT-6.2-Astra, effort: xhigh}, host: home, role: "opposer by file; reads each document that asks Majkee for a release — the read-back sheet, the packet — once before it goes to him; her read is the countersignature; no code, no transport; one reply bell"]
+participant_3: [auditor, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "independent observer of the tries, if Majkee releases the observer; never sender or receiver; and, from the other brand, what the lead's `assay` child does — for a bigger piece of work made final: a pre-production check for red flags, leaks and weaknesses; in this bed the packet; not for each small step"]
+participant_4: [oraculum, {brand: codex, model: GPT-6.2-Astra, effort: xhigh}, host: home, role: "second thinking voice of the other brand — co-thinking and triangulation when the lead faces a strategic decision of its own; not every loop and not every sheet; writes no code herself — a child of hers (astrobley, luna) may do that or send her reply poke"]
 participant_5: [exec, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, role: "Majkee's decision desk; presents and records his decisions; tmux window work on his word"]
 participant_6: [majkee, {brand: human}, host: home, role: "every release; trust dialogs; starts and closes the samples; opens the U01 control by his own hand"]
 participant_7: [predecessor, {brand: claude, model: fable, effort: xhigh}, host: home, role: "on call for questions about the closed bed; answers by pointing at files; holds no pen"]
@@ -75,7 +79,7 @@ Each step names what it needs. Details are in the handoff section given.
    live tmux, writes its own roster, and rewrites `STATUS.md` as its own.
 1. **Read back, then ask.** Through the exec desk the lead reads back to Majkee which rows he selects, which bed owns each U-case,
    the stop conditions and where the evidence goes (handoff §8). One sheet carries the read-back and asks for the release lines
-   of the first run — handoff §6, lines 2–7. Oraculum reads it once before it goes to the desk.
+   of the first run — handoff §6, lines 2–7. Oraculum read it before it went to the desk (three reads in all; not the rule for later sheets).
 2. **Start `sample-codex`** — Majkee's hand, in a window the exec desk prepares; the standing NONCE instruction goes in; the
    auditor takes a first look. Needs lines 2, 3 and 6. (Handoff §3, "Proposed start".)
 3. **Observation A** — the queue, lead → sample-codex, once. Needs line 4. POINT with a fresh nonce first; auditor observes;
@@ -85,7 +89,7 @@ Each step names what it needs. Details are in the handoff section given.
    sender or carrier is switched.
 5. **Only what Majkee adds.** A deferred row (handoff §3, the table with the decision each row would inform) or the U01 capture
    (handoff §4). For U01, whether a classification runs is decided **before** the capture.
-6. **The packet.** One row per released line, with NOT RUN, UNCERTAIN and MISSING as valid rows. Oraculum reads it once. One sheet
+6. **The packet.** One row per released line, with NOT RUN, UNCERTAIN and MISSING as valid rows. The auditor checks it against the evidence — the final check, from the other brand. Oraculum is asked only if the lead faces a strategic decision on it. One sheet
    takes it to Majkee for GO or STOP. The samples are closed by the hand that started them; what happens to their session
    records is his line 7 (and 16).
 
@@ -131,7 +135,7 @@ Never read .majkee/ or .hlm/.
 
 ```text
 You are the opposer for /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes. The lead asks you by a POINT in its
-_bus/, once for each document that asks Majkee for a release — the read-back sheet and the packet. You answer with one file at the path the POINT names: your verdict first,
+_bus/ when it faces a strategic decision of its own and wants a second thinking voice of another brand — not for every loop. You answer with one file at the path the POINT names: your verdict first,
 then your points with file and line, strongest first. No code, no transport, no pane input except one reply bell after a look. Git read-only queries are
 allowed. Never read .majkee/ or .hlm/.
 ```

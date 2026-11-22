@@ -121,3 +121,13 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 
 - p10 outcome: read and shown — the desk's turn ended 2026-11-22T14:05:29Z; the pane then showed the S0 question as its last line and the ordinary footer row, the selection hint gone. Whether a key of Majkee's or the new turn released the view is not known. The lead typed nothing into the pane.
 - observation for the stage (not a probe result): a queued message can run a whole turn in a Codex main that its own window does not show, while a text selection pins the view. "The seat was poked and answered" and "the human at that window saw it" are two facts.
+
+## p11 — lead → controller · `codex queue`
+- looked first (2026-11-22T14:41:37Z): pane %59 — codex in the foreground, not dead, input row empty (cursor at the start), no dialog; footer thread id as in the roster. No POINT: the duty is prompt-1 of the RUNBOOK. Done is shown by origin/core = `22d3906`.
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p11] push duty — prompt-1 in /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md: nablarva core — fetch; only if ahead and not behind, one plain git push; never rebase, never force; write no file, type into no pane; I verify the remote ref. The stack carries one commit of the engineer session (824dfe9, two eSharp files) beside the lead's`
+- before: 2026-11-22T14:41:37Z · after: 2026-11-22T14:41:37Z · exit code: 0
+- output (first line): `Queued message 01a203b4-9c51-7c12-b18d-e256f24b2777 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call.
+
+- p11 outcome: done — `git ls-remote origin refs/heads/core` = `22d3906` at 2026-11-22T14:41:59Z, equal to local HEAD; checked by the lead. The push carried the engineer session's commit 824dfe9, on the note n03 she left in pane %70 at about 14:40Z.

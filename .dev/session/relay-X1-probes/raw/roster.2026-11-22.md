@@ -1,7 +1,7 @@
 ---
 kind: party roster (data for pokes; observed, not assumed)
 bed: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes
-rev: 2 (2026-11-22T14:02Z) — roles as Majkee named them during the day, section "Rev 2" at the end; ids not re-read except where that section says. Rev 1 (2026-11-22T05:42Z) was the lead's first read at binding. Starting list was ../../relay-X0-carryover/raw/roster.2026-11-21.md (rev 5).
+rev: 3 (2026-11-22T14:57Z) — two roles narrowed by Majkee, section "Rev 3" at the end. Rev 2 (2026-11-22T14:02Z) — roles as Majkee named them during the day, section "Rev 2" at the end; ids not re-read except where that section says. Rev 1 (2026-11-22T05:42Z) was the lead's first read at binding. Starting list was ../../relay-X0-carryover/raw/roster.2026-11-21.md (rev 5).
 observed_by: lead · 2026-11-22T05:41Z · host home (hruzam) · read-only tmux queries, the bottom rows of panes %58 %59 %60 %66 %68, and four allowlisted keys of ~/.claude/sessions/*.json (pid, sessionId, cwd, name). Pane %61 (myShell) was not captured.
 tmux: base session `helloWorld`, 7 windows, grouped views `helloWorld-37 … -43`. tmux 3.7c.
 versions: Claude Code 2.1.330 · codex-cli 0.171.0 — the same as in the RUNBOOK frame.
@@ -139,3 +139,13 @@ Sources: `raw/decision.majkee.countersignature.2026-11-22.md` · `raw/decision.m
 Pokes there and back are the lead's call. A reply comes by the RETURN file; the bell is beside it.
 
 Confirmed by Majkee, typed in the lead session shortly before 14:05 UTC: "roster is correct, going to exec now". The table above is what he read.
+
+# Rev 3 — two roles narrowed by Majkee, shortly before 14:56 UTC
+
+Source: `raw/decision.majkee.roster-correction.2026-11-22.md`. The Rev 2 table stands except for these rows.
+
+| Seat | What for — as corrected |
+|---|---|
+| oraculum | the second thinking voice of the other brand: co-thinking and triangulation **when the lead faces a strategic decision of its own** — not every loop, not every sheet. She writes no code; a child of hers (`astrobley`, about what `trajectory` is here; `luna` for a reply poke) may. |
+| auditor | from the other brand, what the lead's `assay` child does — **for a bigger piece of work made final**: a pre-production check for red flags, leaks and weaknesses. In this bed: the packet. Observer of the tries only if he releases that at the desk (sheet theme S3). |
+| any seat | may spawn `houston` for alignment with the project and for navigating documentation and logs; the seat decides. |
