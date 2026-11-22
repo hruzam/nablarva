@@ -169,3 +169,16 @@ A queued or typed line is not proof that it was read; the RETURN file is.
 ## p23 — engineer → cartan (push-only, no cycle)
 - Carries the handoff draft, the Houston consult and its verdict, POINT 17 and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
 - line: `[poke p23] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
+- p23 result, checked by me: `origin/core` = `72773b8` = HEAD, reflog "update by push" 2026-11-22 04:10:58 +0100.
+- p22 outcome: read — `_bus/17.oraculum.return.md` written 2026-11-22 04:12 +0100 (she worked 1 m 41 s), found by my file watch.
+
+## p24 — engineer → oraculum (cycle 18)
+- target checked 2026-11-22T03:17Z, bottom rows only: %60 `oraculum`, foreground `codex`, footer thread `01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1`, idle composer, context 63% left.
+- door: `codex queue --thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1 --message …` (no `--resume`), one call.
+- line: `[poke p24] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/_bus/18.engineer.point.md — cycle 18: your REVISE is taken in full; one short confirming read of handoff draft 3 and six goal revisions; COUNTERSIGN or what is missing; a file only, no bell`
+- call: before 03:18:04.084Z · after 03:18:04.271Z · exit 0 · queued for thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1.
+- claim level: queue call accepted. Read = only when `_bus/18.oraculum.return.md` exists.
+
+## p25 — engineer → cartan (push-only, no cycle)
+- Carries the commit that closes cycle 17 (handoff draft 3, six goal revisions) and this log. Sent after a look at %59 (idle). Result = the remote ref, checked by me and written with the next entry.
+- line: `[poke p25] push duty, roster item 2: nablarva core — fetch, only if ahead and not behind, one plain git push; write no file, type into no pane; I verify the ref`
