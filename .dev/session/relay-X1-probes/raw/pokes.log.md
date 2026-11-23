@@ -434,3 +434,13 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - output (first line): `Queued message 01a20a19-555c-7560-bdfa-c1f200d25fd2 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 
 - p35 outcome: done — `_bus/21.auditor.return.md` at 20:30:28Z: REVISE, every number holds; all points taken; bell r21 arrived in %70. VERDICT 21. (A script of the lead that was to update STATUS and commit failed on its own quoting before it changed anything; it was run again.)
+
+## p36 — lead → auditor (pane %66) · `codex queue`
+- authority: Majkee in the lead session, 2026-11-23 (raw/decision.majkee.e-series.2026-11-23.md, first part, committed 4642130 before the poke)
+- file first: `_bus/23.lead.observer.md` (4642130)
+- looked first (20:40:47Z): pane %66 — not working (bottom rows searched for a working indicator by the same command)
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p36] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/23.lead.observer.md — one more witnessed send now (E1, a denial at a chooser): Majkee released it and sits at the sample; preflight, watch, then the marker _bus/23.auditor.ready.md; the sender calls within seconds of your marker`
+- before: 2026-11-23T20:40:47Z · exit code: 0
+- output (first line): `Queued message 01a20a23-caa3-7e22-9eae-12e2050a8b9f for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. The marker followed at 20:41:52.904Z, the lead's call at 20:41:53.813Z.
