@@ -1,7 +1,7 @@
 ---
 kind: witnessed probe packet 4 — three further tries in the chooser samples of relay-X1-probes, for Majkee's word
 by: lead (flight, pen of relay-X1-probes) · 2026-11-23 · host home
-status: DRAFT 2 — written from the verdicts of cycles 23, 24 and 26. Draft 1 (rows E1 and E2) was never checked: its check was held when Majkee asked for the try again. Not yet checked by the auditor, not yet decided by Majkee.
+status: FOR THE GATE — written from the verdicts of cycles 23, 24 and 26. Draft 1 (rows E1 and E2) was never checked: its check was held when Majkee asked for the try again. Draft 2 was checked by the auditor, the seat of the other brand — REVISE; every number in the three rows holds against its source and the result words stand; its points on the inventory, on the samples' present state, on how far observation 5 reaches and on his literal words are all taken here (_bus/25.auditor.return.md, _bus/25.lead.verdict.md). The auditor has not read this revision. Not yet decided by Majkee.
 rule: as in packet.md and packet-3.md — every row points at a file; raw captures, receipt copies and notes are private, in ~/.local/share/nablarva/custody/x1-chooser-2026-11-23/ on home. What packet-3.md says about the second sample, its settings and the observer holds here too and is not repeated.
 ---
 
@@ -16,8 +16,8 @@ nothing and closes no path.
 # What was released, and by whom
 
 Majkee, in the lead's window — `raw/decision.majkee.gate-4.2026-11-23.md` (the invitation) and
-`raw/decision.majkee.e-series.2026-11-23.md`: "go E1"; "go E2", with his own statement of what he does at the chooser;
-his request to start again; "go E3". There was no written scope beyond the lead's proposals in its window and the
+`raw/decision.majkee.e-series.2026-11-23.md`, four parts: his release of E1; his release of E2, with his own statement
+of what he does at the chooser; his request to start again; his release of E3. There was no written scope beyond the lead's proposals in its window and the
 observer briefs; no second seat challenged these tries before they ran. Carrier `codex queue` only.
 
 # The samples
@@ -25,8 +25,8 @@ observer briefs; no second seat challenged these tries before they ran. Carrier 
 - **E1 and E2:** the second sample — the session of the third packet (pane `%73`, thread `01a209ec…`).
 - **E3:** a fresh third sample — folder `~/.cache/nablarva/relay-x1-samples/2026-11-23/sample-codex-2`, window
   `sample-codex-2`, pane `%74`, thread `01a20a3c-575a-7e11-a902-512db96dcaa3`; the same flags, the standing
-  instruction as its first prompt. Started by Majkee, by his go; the lead saw in tmux metadata that the pane runs the
-  prepared script; no seat observed the hand. The observer's pre-check before any send
+  instruction as its first prompt. Who started it: Majkee, by his release that followed. Separately, the lead saw in
+  tmux metadata that the pane runs the prepared script. No seat observed the hand. The observer's pre-check before any send
   (`_bus/26.auditor.precheck.md`): workspace-write, on-request, reviewer user; its first and only turn completed at
   21:07:42.840; idle.
 
@@ -87,17 +87,23 @@ All times UTC, 2026-11-23. No send was retried into the sample that held it. Ver
    record, no change of the pane.
 4. **Twice a message that the carrier accepted was not seen to arrive:** E2's first, and E3's second. The carrier's
    answer — exit 0 and a message id — was the same as for the three that arrived.
-5. **What the two have in common, as far as the lead can name it:** by the time each could have started a turn, the
-   sample's last turn had ended as aborted after a denial. The three messages that arrived (D1, E1, E3's first) each
-   met a sample whose last turn had completed. No try separated this difference from others; it is a candidate
-   reading.
+5. **What the two have in common, and what they do not.** In common: by the time each could have started a turn, the
+   sample's last turn had ended as aborted after a denial; the three messages that arrived (D1, E1, E3's first) each
+   met a sample whose last turn had completed. Not in common (the auditor): E2's first went to an idle session after
+   the abort and asked for an action outside; E3's second went to a session where a chooser still stood and asked for
+   a receipt only — receiver history, timing and the shape of the request differ. When a message becomes eligible and
+   when the program would dispatch it is not known. The shared aborted turn is a candidate, no more.
 6. E3's first message took about 8.6 seconds from the carrier's acceptance to the start of its turn; D1's and E1's
    about one second.
 
 # What this packet does not show
 
 - **Whether the two messages are lost or still wait,** and what would release them — a prompt typed by a human, a
-  resume, a restart. Nothing was tried.
+  resume, a restart. Nothing was tried. By the auditor's look at 21:24: neither nonce occurs in either sample's
+  record or receipts, or in the third sample's bottom rows; the program's help names no read-only way to look up an
+  accepted message id.
+- What a chooser does across an interrupt and a resume. Not tested here; an earlier report of his about a resume is
+  outside these rows.
 - **What becomes of a message accepted while a chooser stands when the human approves** and the turn completes.
 - Whether an aborted turn is the reason, or something else the tries did not vary.
 - What "No" does when a note to the program is typed with it.
@@ -119,7 +125,7 @@ All times UTC, 2026-11-23. No send was retried into the sample that held it. Ver
 - **Private, on home:** `~/.local/share/nablarva/custody/x1-chooser-2026-11-23/` — the observer's `c23.*`, `c24.*`,
   `c26.*`; the lead's call outputs `c23.lead.call.out`, `c24.lead.call1.out`, `c26.lead.call1.out`,
   `c26.lead.call2.out`.
-- **Originals:** three receipts in the second sample's `receipts/` (D1's among them), one in the third's.
+- **Originals:** two receipts in the second sample's `receipts/` — D1's and E1's — and one in the third's, E3's first.
 
 # Left behind
 
@@ -128,7 +134,11 @@ All times UTC, 2026-11-23. No send was retried into the sample that held it. Ver
     a receipt named after `x1g-70415ddddd` and for the folder `wait-probe`;
   - third sample, thread `01a20a3c…`, message id `01a20a41-4f67-7693-bd63-a7da4c67ce43` — if it arrives it asks for
     a receipt named after `x1k-fe1e8c5f92` and nothing else.
-- Both samples are still up, a tracker runs on the second — all his to close.
+- **The second sample's pane `%73` no longer exists** (the auditor at 21:24, and the lead's own look at tmux
+  metadata). Its tracker logged the loss of its binding, the end of the terminal and its own stop at 21:06:43; its
+  processes are gone. Who closed the pane, no seat observed. Whether the message accepted for that thread can still
+  arrive anywhere is not known.
+- The third sample, pane `%74`, is still up — his to close.
 - Prepared files beside the samples: `sample-codex-2/`, `start-sample-2.sh`, `instruction-2.txt`.
 
 # What his word on this packet would and would not mean — the lead's proposal
@@ -139,6 +149,6 @@ All times UTC, 2026-11-23. No send was retried into the sample that held it. Ver
 
 # Still owed when this was written — acts, not results
 
-1. The samples closed and the tracker stopped, its script and log handed over — his own acts with the auditor.
-2. A copy of the private folder to office and its pointer in the line ledger — the controller, on a POINT of the lead,
-   after the tracker has stopped.
+1. The third sample closed — his own act. The tracker's script and log handed over — between him and the auditor.
+2. A copy of the private folder to office and its pointer in the line ledger — the controller, on a POINT of the
+   lead; the tracker has stopped, so nothing in that folder is still being written by it.
