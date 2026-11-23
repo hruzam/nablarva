@@ -389,3 +389,12 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - p31 outcome: done — `_bus/18.oraculum.return.md` at 19:08:58Z, under a minute; REVISE, all points taken (one in a changed form). VERDICT 18.
 
 - bell r18 from Oraculum reached pane %70 at about 19:42Z, half an hour after her RETURN had been read. It carried one more sentence: a report that Majkee says the new sample is running. A seat's report is not his word. The lead looked at tmux metadata at 19:42:49Z: pane %73, window `sample-codex`, `codex` in the foreground, started by the scope's start script.
+
+## p32 — lead → auditor (pane %66) · `codex queue`
+- authority: the lead's call — a look-only pre-check on a sample Majkee started by his own hand (scope raw/scope.chooser-test.2026-11-23.md, step 3); no send into the sample
+- file first: `_bus/19.lead.observer.md` (committed just before)
+- looked first (2026-11-23T19:44:01Z): pane %66 — codex dead=0 cx=2, input row `› Ask Codex to do anything`, not working, no dialog
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p32] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/19.lead.observer.md — PHASE A only: the look-only pre-check of the new sample in pane %73; write the pre-check file, bell r19 into %70, then wait; no watch yet`
+- before: 2026-11-23T19:44:01Z · after: 2026-11-23T19:44:01Z · exit code: 0
+- output (first line): `Queued message 01a209ef-d1db-7a01-a390-e64ea4928c63 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
