@@ -455,3 +455,5 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - before: 2026-11-23T20:54:16Z · exit code: 0
 - output (first line): `Queued message 01a20a30-21e0-7512-a948-1501bc618506 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 - proves: the queue accepted the call. Marker 1 followed at 20:55:29.788Z, the lead's first call at 20:55:30.701Z. Marker 2 did not appear within 75 seconds; the second call was not made.
+
+- p37 outcome: done — `_bus/24.auditor.return.md` at 21:02:38Z: the first message of E2 was not seen to arrive in 361 samples; no chooser, so no second marker; the second call NOT RUN. VERDICT 24.
