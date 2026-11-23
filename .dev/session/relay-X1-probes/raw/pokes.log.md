@@ -156,3 +156,17 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - proves: the queue accepted the call. Read is shown by `_bus/06.auditor.return.md`.
 
 - p13 outcome: read and answered — `_bus/06.auditor.return.md` was picked up by the lead's file watch at 2026-11-23T11:19:04Z; the reply bell r06 arrived in pane %70 some minutes later. Checked in `_bus/06.lead.verdict.md`.
+
+## p14 — lead → auditor · `codex queue`
+- authority: lines 4 and 6 of the release menu (raw/decision.majkee.walkthrough-1.2026-11-22.md, S4, S3); Majkee in the lead session shortly before 11:24:50Z: "instruction is in, I am at the sample window"
+- file first: `_bus/07.lead.point.md` (committed in 047f4f7)
+- looked first (2026-11-23T11:24:50Z): pane %66 — codex in the foreground, not dead, input row empty (placeholder only), no dialog
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p14] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/07.lead.point.md — observation A: second look, then start the watch and write the marker; I call within two minutes of your marker`
+- before: 2026-11-23T11:24:50Z · after: 2026-11-23T11:24:50Z · exit code: 0
+- output (first line): `Queued message 01a20826-cefd-70a0-b956-9eafba2ddfb7 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. Read is shown by the marker `_bus/07.auditor.ready.md`, written 56 seconds later.
+
+- not a poke — **observation A, the one released try**: made at 2026-11-23T11:25:48.953Z; its record is `_bus/07.lead.try.md`, not this log.
+
+- p14 outcome: read and answered — marker `_bus/07.auditor.ready.md` at 2026-11-23T11:25:46Z; `_bus/07.auditor.return.md` picked up by the lead's file watch at 11:36:07Z; reply bell r07 arrived in pane %70 about a minute later. Checked in `_bus/07.lead.verdict.md`.
