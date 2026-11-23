@@ -42,3 +42,16 @@ sample.
 He asks whether the try can be made again. It is a wish, not yet a release: the lead answers that a new try is made in
 a fresh sample that he starts, and waits for his go there. His remark on the approval dialogue is answered in the lead's
 window: the stored rule covers one folder only, and in E2 no command was attempted at all.
+
+# Fourth part — shortly before 2026-11-23T21:10:39Z
+
+The lead had answered that a new try is possible in a fresh sample, named the one command that starts it, and asked him
+to type the go once it has answered.
+
+**Majkee:**
+> go E3
+
+**My reading:** he has started the third sample and releases E3: the try of E2 made anew there — a first message that
+brings up a chooser (folder `hold-probe`), a second message that asks for a receipt only once the observer's marker
+says the chooser stands; he leaves the chooser for more than thirty seconds and then presses `esc`. Two sends, each
+once; no retry. The lead saw by tmux metadata that a window `sample-codex-2` exists; no seat observed the hand.
