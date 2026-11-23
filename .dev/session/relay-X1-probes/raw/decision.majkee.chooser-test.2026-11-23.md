@@ -79,3 +79,14 @@ which of the two yes options he chose.
    belongs to a later phase. **The lead does not take this up in this bed:** it would be a different test, with its own
    scope, its own risks and its own release, and nothing of it is done unannounced here. It is noted as a possible later
    question for the line.
+
+# Third part — which key, typed in the same session shortly before 20:29 UTC
+
+The lead had written that it read his answer as (p) and that he should correct it only if it was (y).
+
+**Majkee:**
+> if U R asking which key, than can be two ways. Option number, in this case I realy pressed `2` on upper keyboard line, but `p` working same, there are two possible ways nr|letter
+
+**My reading:** he pressed the number key `2` — option 2 of the chooser, the yes that stops asking for that command
+prefix. The letter (p) selects the same option. This agrees with the stored rule the auditor found
+(`_bus/20.auditor.return.md`).

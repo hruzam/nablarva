@@ -410,3 +410,14 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - before: 2026-11-23T20:13:12Z · exit code: 0
 - output (first line): `Queued message 01a20a0a-8ce0-7cf2-af86-72146ece6f41 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 - proves: the queue accepted the call. The marker followed at 20:14:02.929Z.
+
+- p33 outcome: done — marker 20:14:02.929Z, the lead's call 20:14:03.393Z; `_bus/19.auditor.return.md` at 20:24:39Z: chooser 20:14:17–20:21:36Z, approval by outcome. Bell r19 for the RETURN had not arrived when the lead's file watch showed it.
+
+## p34 — lead → auditor (pane %66) · `codex queue`
+- authority: the lead's call — look-only follow-up to RETURN 19
+- file first: `_bus/20.lead.point.md` (committed just before)
+- looked first (2026-11-23T20:26:17Z): pane %66 — codex dead=0 cx=2, input row `› Ask Codex to do anything`, not working, no dialog
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p34] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/20.lead.point.md — look-only follow-up to RETURN 19: is a do-not-ask-again rule stored (which option was chosen), how far it reaches, his pasted chooser against your captures; RETURN to the path it names, bell r20 into %70`
+- before: 2026-11-23T20:26:17Z · after: 2026-11-23T20:26:17Z · exit code: 0
+- output (first line): `Queued message 01a20a16-83fb-71f1-b533-71cd931d1f7f for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
