@@ -491,3 +491,4 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - looked first (2026-11-23T21:58:31Z): pane %59 — not working
 - before: 2026-11-23T21:58:31Z · exit code: 0
 - output (first line): `Queued message 01a20a6a-f78f-7341-8d84-04b19a1367cb for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- outcome: done — `_bus/28.controller.return.md` at 21:59Z: 160 files, 4,181,188 bytes on each host, all SHA-256 equal; pushed 38c1f3d..6b63c63. VERDICT 28.
