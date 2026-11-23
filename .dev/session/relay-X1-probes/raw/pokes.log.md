@@ -288,3 +288,26 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - not a poke — **the second send of the approval series**: made by the lead at 2026-11-23T12:45:07.977Z; its record is `_bus/12.lead.try.md`, not this log.
 
 - p23 outcome: read and answered — marker `_bus/12.auditor.ready.md` at 2026-11-23T12:45:05Z; `_bus/12.auditor.return.md` picked up by the lead's file watch at 12:55:28Z; reply bell r12 arrived in pane %70 shortly after. Checked in `_bus/12.lead.verdict.md`.
+
+## p24 — lead → auditor · `codex queue`
+- file first: `_bus/13.lead.point.md` (committed in 4dbd315)
+- looked first (2026-11-23T12:57:34Z): pane %66 — codex in the foreground, not dead, input row empty (placeholder only), no dialog
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p24] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/13.lead.point.md — the final check of packet-2.md (draft 1) against the evidence; RETURN and one bell. If Majkee is with you about the tracker, finish with him first`
+- before: 2026-11-23T12:57:34Z · after: 2026-11-23T12:57:35Z · exit code: 0
+- output (first line): `Queued message 01a2087b-b6a3-7803-ac99-5d29f52bdd07 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call.
+
+- p24 outcome: read and answered — `_bus/13.auditor.return.md` picked up by the lead's file watch at 2026-11-23T12:59:01Z, 86 seconds after the poke; reply bell r13 arrived shortly after. Checked in `_bus/13.lead.verdict.md`.
+
+## p25 — lead → controller · `codex queue`
+- looked first (2026-11-23T12:57:35Z): pane %59 — codex in the foreground, not dead, cursor at the start of the input row. No POINT: the duty is prompt-1 of the RUNBOOK. Done is shown by origin/core = `4dbd315`.
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p25] push duty — prompt-1 in /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md: nablarva core — fetch; only if ahead and not behind, one plain git push; never rebase, never force; write no file, type into no pane; I verify the remote ref`
+- before: 2026-11-23T12:57:35Z · after: 2026-11-23T12:57:35Z · exit code: 0
+- output (first line): `Queued message 01a2087b-b769-7c40-a703-545e928ca29b for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call.
+
+- p25 outcome: done — `git ls-remote origin refs/heads/core` = `4dbd315` at 2026-11-23T12:57:55Z, equal to local HEAD; checked by the lead. For this poke the lead read the pane's metadata and not its bottom rows — the controller had been seen idle half an hour before; the look was thinner than the rule asks.
+
+- not the lead's pokes — a side quest between two other seats, found in `raw/` at 2026-11-23T12:59Z: `raw/sidequest.myshell.custody-copy-office.2026-11-23.md` (myShell → controller, on Majkee's word typed in her session) and `raw/sidequest.controller.custody-copy-office.return.2026-11-23.md` (the controller's return: the second copy of this stage's private folder is on office, a snapshot of about 12:55Z).
