@@ -337,3 +337,15 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - incoming, not the lead's poke — **note n05 from myShell**, pasted into pane %70 at about 2026-11-23T13:25Z: it points at `raw/note.myshell.l14-names-amended.2026-11-23.md` — by her report, on Majkee's word in her session, she amended the reserved names under L14 D4 in `flag.md` and the matching line of the relay ledger; both edits are uncommitted. No reply asked. The lead commits her note and neither of the two edits: a lock file is committed on his direct word only.
 
 - two children of the lead, no pokes: `vector` narrowed and applied the renumbering of the reserved relay chapters (about 13:32–13:33Z), `assay` checked the wiring (PASS, nothing to repair in the four documents; one scratch line in `dock.md` flagged, which the lead then brought up to date). On Majkee's word in `raw/decision.majkee.l14-names.2026-11-23.md`.
+
+## p28 — lead → controller · `codex queue`
+- authority: Majkee in the lead session, 2026-11-23 (raw/decision.majkee.l14-names.2026-11-23.md, second part)
+- file first: `_bus/15.lead.point.md` (committed in 2354505)
+- looked first (2026-11-23T13:35:57Z): pane %59 — codex in the foreground, not dead, input row empty (placeholder only), no dialog
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p28] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/15.lead.point.md — on Majkee's word: one commit of exactly five paths (the L14 D4 renumbering), then the push duty; RETURN to the path it names`
+- before: 2026-11-23T13:35:57Z · after: 2026-11-23T13:35:58Z · exit code: 0
+- output (first line): `Queued message 01a2089e-da99-7d21-89c7-bf728307305d for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call.
+
+- p28 outcome: done — commit `d0281b6` by the controller at 2026-11-23T13:36:26Z, five paths; `git ls-remote origin refs/heads/core` = `d0281b6` at 13:36:56Z, equal to local HEAD; `_bus/15.controller.return.md` read; no bell (optional). Checked in `_bus/15.lead.verdict.md`.
