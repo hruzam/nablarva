@@ -184,3 +184,32 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - not a poke — **observation B, the one released exception to L4**: paste at 2026-11-23T11:42:11.668Z, Enter at 11:42:29.659Z, into the sample's pane %72 and nowhere else; its record is `_bus/08.lead.try.md`, not this log.
 
 - p15 outcome: read and answered — marker `_bus/08.auditor.ready.md` at 2026-11-23T11:41:49Z; `_bus/08.auditor.return.md` picked up by the lead's file watch at 11:52:21Z; reply bell r08 arrived in pane %70 shortly after. Checked in `_bus/08.lead.verdict.md`.
+
+## p16 — auditor → lead · look-first tmux pointer
+
+- File first: `raw/request.auditor.tracker-approval.2026-11-23.md`, on Majkee's direct request after VERDICTs 07 and 08 confirmed both planned observations.
+- Looked first: pane %70, `claude`, live, empty input at cursor column 2, no visible dialog.
+- Line: `[poke p16] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/raw/request.auditor.tracker-approval.2026-11-23.md — Majkee asks for one tracker approval test`
+- Paste: 2026-11-23T11:55:51.909Z–11:55:51.922Z, exit 0. Verified the exact wrapped line before Enter.
+- Enter: 2026-11-23T11:56:15.967Z–11:56:15.974Z, exit 0. At 11:56:21.038Z the input had cleared and showed a working indicator. This establishes submission, with reading and action still to be confirmed.
+
+## p16 — lead → controller · `codex queue`
+- looked first (2026-11-23T11:55:17Z): pane %59 — codex in the foreground, not dead, input row empty (placeholder only), no dialog. No POINT: the duty is prompt-1 of the RUNBOOK. Done is shown by origin/core = `7b42fb2`.
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p16] push duty — prompt-1 in /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md: nablarva core — fetch; only if ahead and not behind, one plain git push; never rebase, never force; write no file, type into no pane; I verify the remote ref`
+- before: 2026-11-23T11:55:17Z · after: 2026-11-23T11:55:17Z · exit code: 0
+- output (first line): `Queued message 01a20842-adc9-7bd2-88e3-25296250ef87 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call.
+
+- p16 outcome: done — `git ls-remote origin refs/heads/core` = `7b42fb2` at 2026-11-23T11:55:38Z, equal to local HEAD; checked by the lead. Eleven commits, all the lead's.
+
+- incoming, not the lead's poke — **a note from the auditor**, pasted into pane %70 at about 2026-11-23T11:56Z and labelled by it `[poke p16]` (the same number as the lead's push poke above; the numbers of this log are the lead's): it points at `raw/request.auditor.tracker-approval.2026-11-23.md` — Majkee, through the auditor, asks for one approval-dialog side test in the sample for his tracker. A seat's relay, not his word in this session.
+
+## p17 — lead → auditor · `codex queue`
+- file first: `raw/reply.lead.tracker-approval.2026-11-23.md` — no seat sends anything into the sample; both released tries are spent; Majkee may type the line himself; no RETURN asked
+- looked first (2026-11-23T11:57:02Z): pane %66 — codex in the foreground, not dead, input row empty (placeholder only), no dialog
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p17] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/raw/reply.lead.tracker-approval.2026-11-23.md — reply to your tracker request: no seat sends; Majkee types it himself and tells you when; no RETURN needed`
+- before: 2026-11-23T11:57:02Z · after: 2026-11-23T11:57:02Z · exit code: 0
+- output (first line): `Queued message 01a20844-497a-7343-b87f-e28a6143e5fa for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. No RETURN is asked.

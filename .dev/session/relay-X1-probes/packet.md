@@ -1,7 +1,7 @@
 ---
 kind: witnessed probe packet — the result rows of relay-X1-probes, for Majkee's GO or STOP
 by: lead (flight, pen of relay-X1-probes) · 2026-11-23 · host home
-status: DRAFT 1 — written from the verdicts of cycles 02, 06, 07 and 08; not yet checked by the auditor (the final check, from the other brand); not yet before Majkee
+status: DRAFT 2 — written from the verdicts of cycles 02, 06, 07 and 08; draft 1 was compared with its sources by a fresh-eyes child of the lead (every number matched; seven statements lacked a source or an attribution — all taken here); not yet checked by the auditor (the final check, from the other brand); not yet before Majkee
 rule: every row points at a file. Raw captures, receipts and notes are private, in ~/.local/share/nablarva/custody/x1-probes-2026-11-22/ on home; this file carries times, values, hashes and categories only.
 ---
 
@@ -16,16 +16,16 @@ on line 5 — **closes no path**. Any later relay architecture decision follows 
 
 Majkee, at the exec desk, 2026-11-22: lines 2, 3, 6, 4, 5 and 7 of the handoff's menu
 (`raw/decision.majkee.walkthrough-1.2026-11-22.md`; read into rows by `_bus/02.lead.verdict.md`). Lines 8 to 19 were not
-asked. He started the sample himself on 2026-11-23 (`raw/decision.majkee.sample-up.2026-11-23.md`).
+asked. He reports that he started the sample himself on 2026-11-23 (`raw/decision.majkee.sample-up.2026-11-23.md`).
 
 # The rows
 
 | Line | What | Result | Where |
 |---|---|---|---|
-| 2 | Start of `sample-codex` by Majkee's hand — `codex -C <folder> -m gpt-6.1-terra`, no sandbox flag, no approval flag | **DONE** — started 2026-11-23, about 11:04 UTC by the name of its session record; window `sample-codex`, pane `%72`, folder `~/.cache/nablarva/relay-x1-samples/2026-11-22/sample-codex/`; the model name was accepted. Whose hand: his own line, "It was me". | his word of 2026-11-23; `_bus/06.auditor.return.md` |
-| 2 | Close of the sample by the same hand | **OPEN** — the sample still runs. It is closed by his hand after the observer's last read; asked on the gate sheet. | — |
+| 2 | Start of `sample-codex` by Majkee's hand — `codex -C <folder> -m gpt-6.1-terra`, no sandbox flag, no approval flag | **DONE** — on 2026-11-23. When: the lead's tmux watch first saw codex in the foreground of the pane at 11:05:04 UTC; the name of the session record carries 12-04-52, which the lead reads as local time, 11:04:52 UTC (the file itself appeared only with the first turn — the first look at 11:17 found none). Window `sample-codex`, pane `%72`, folder `~/.cache/nablarva/relay-x1-samples/2026-11-22/sample-codex/`; the model name was accepted. Whose hand: his own line, "It was me" — nobody else can confirm it. The command without flags is what he released; the observer read the resulting configuration, not the command line. | his word of 2026-11-23; `_bus/02.lead.verdict.md`; `_bus/06.auditor.return.md` (pane, folder, no record yet); `_bus/07.auditor.return.md` (record name, configuration) |
+| 2 | Close of the sample by the same hand | **NOT YET DONE** — an act still owed, not a result: the sample still runs. It is closed by his hand after the observer's last read; asked on the gate sheet. | — |
 | 3 | The standing NONCE instruction, by his hand | **DONE** — the first input of the sample's record carries the `NONCE:` trigger and the path of the sample's own `receipts/` folder (the observer: yes and yes; the text is not in the repository). The first look, before it, found no session record at all. | `_bus/06.lead.verdict.md`; `_bus/07.auditor.return.md` |
-| 6 | The auditor as observer, its reads, the private folder | **DONE** — the folder exists, 0700, files 0600. The observer wrote its note of each try before it read anything of the sender, and was told neither nonce. | `_bus/06.auditor.return.md`, `_bus/07.auditor.return.md`, `_bus/08.auditor.return.md` |
+| 6 | The auditor as observer, its reads, the private folder | **DONE** — the folder exists, 0700, files 0600. The observer was told neither nonce and was instructed to write its note of each try before reading anything of the sender; its RETURN 06 says no sender file was read, RETURNs 07 and 08 do not repeat that — asked again in the final check. | `_bus/06.auditor.return.md`, `_bus/07.auditor.return.md`, `_bus/08.auditor.return.md` |
 | 4 | **Observation A** — `codex queue`, lead → `sample-codex`, once | **carrier: accepted · native turn: seen · receipt: present, nonce matches · observer: confirms** | `_bus/07.lead.verdict.md` |
 | 5 | **Observation B** — tmux paste, then Enter as a separate step, lead → `sample-codex`, once; one explicit exception to L4 | **staged: seen · the paste alone submitted nothing · submit by the separate Enter: seen · native turn: seen · receipt: present, nonce matches · observer: confirms** | `_bus/08.lead.verdict.md` |
 | 7 | The sample's session record | **KEPT** on home through the gate — `~/.codex/sessions/2026/11/23/rollout-2026-11-23T12-04-52-01a20814-8698-75a1-9754-e976fb0cea82.jsonl`. Its deletion is asked on the gate sheet. | `_bus/07.auditor.return.md` |
@@ -83,15 +83,22 @@ The results of A and B hold for this configuration only.
 
 # The environment during the tries
 
-- **A tracker of Majkee's own** — three reading processes that he asked the auditor to set up — read the sample's pane,
-  record and receipt metadata, its process chain and byte counts of its terminal output. It ran through all of A. During B
-  it ended at 11:42:24 (between the paste and the Enter); a replacement, again on his direct word, started at 11:45:01. It
-  sends nothing and is not the evidence of any row. Its files are in `tracker.2EvwcVSe/` in the private folder; the lead
-  did not open them.
+- **A tracker, by the observer's account requested by Majkee** — he told the lead the same morning that he wants to track
+  the sample "on elemental level". All of this paragraph is the observer's word (RETURNs 07 and 08); the lead did not
+  open the tracker's files. Three processes; they read the sample's pane, record and receipt metadata, its process chain,
+  runtime metadata of its thread and byte counts of its terminal output. All three were running at A's preflight. During
+  B the first tracker ended at 11:42:24 (between the paste and the Enter) and a replacement, again on his direct word to
+  the auditor, started at 11:45:01. It is not the evidence of any row. Its files are in `tracker.2EvwcVSe/` in the
+  private folder.
 - **The auditor did that work for him inside its observation turn of B.** Its watch was a detached process; it shows no
   gap and an empty error file.
-- **tmux showed seven grouped sessions** (`helloWorld-37` to `-43`) beside `helloWorld` on the morning of 2026-11-23 —
-  further views of the same windows. The lead takes them to be Majkee's attaches and has asked him.
+- **tmux showed seven grouped sessions** (`helloWorld-37` to `-43`) beside `helloWorld` — the lead's own reading of
+  `tmux list-panes -a` at 05:46 UTC on 2026-11-23, written down here for the first time; the observer speaks of "grouped
+  views". They show the same windows. The lead takes them to be Majkee's attaches, has told him so, and has no answer yet.
+- **After the tries** the auditor relayed a wish of Majkee's for one approval-dialog side test in the sample for his
+  tracker (`raw/request.auditor.tracker-approval.2026-11-23.md`). No seat sends anything for it: both released tries are
+  spent. If he types it himself, it is his own act in his own sample, outside the rows of this packet
+  (`raw/reply.lead.tracker-approval.2026-11-23.md`).
 - **The exec desk's fork as his tutor** (his word at S7): it is not a seat of this party. He says the start was his hand.
 
 # What the tries showed beside their rows — observations, not results
@@ -103,7 +110,7 @@ The results of A and B hold for this configuration only.
    expected the id only after the first turn.
 3. **tmux metadata does not tell a working Codex pane from an idle one** — the foreground command and the cursor did not
    move during either turn. The cursor does move with staged text on the input row.
-4. **`codex queue` without `--resume` started a turn in an idle session within a fraction of a second.**
+4. **In this one try, `codex queue` without `--resume` started a turn in the idle sample within a fraction of a second** of the call.
 5. **A window can hide a seat's turns.** On 2026-11-22 the exec desk had asked its question and its window did not show
    it for eight hours, because an old text selection pinned the view (`raw/pokes.log.md`, p10). "The seat answered" and
    "the human saw it" are two facts.
@@ -113,8 +120,11 @@ The results of A and B hold for this configuration only.
 - Anything about a **busy** receiver. What a queued message or a paste does in a working turn is not known.
 - Anything about an input row that already holds text, longer or multi-line text, a paste without bracketed paste, a
   Claude receiver, a Codex sender, another host, or another version.
-- Why the trial's three Claude → Codex attempts through the archived adapter failed (0 of 3 verified, Codex 0.167.2).
+- Why the trial's three Claude → Codex attempts through the archived adapter failed (0 of 3 verified, Codex 0.167.2 — handoff §3).
 - Reliability. Each door was tried once. One success is not a rate.
+- **Independence beyond two seats.** The sender of both tries is also the author of this packet, and the observer of both
+  tries is also its last checker. Everything ran on one host, under one user, in one tmux server. For B the observer saw
+  the nonce staged on the input row before it arrived, so "not told" holds there only until the paste.
 - The observer's own limit: a watch at one- or two-second steps cannot see a dialog or a partial paste that begins and
   ends between two samples. The record's entries speak against both.
 
