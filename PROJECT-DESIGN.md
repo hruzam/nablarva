@@ -66,8 +66,8 @@ boundary with an operator workbench and a process-owning room host, using the
 earlier sessions and observed workflow. Existing session tools remain reusable.
 
 [L14](.dev/session/flag.md) supplies the current premises: PTY is the relay's base layer, files
-are the spine, and research precedes build (`relay-00-research` → `relay-01-pty` ·
-`relay-02-tracker`). Termpanum is the first-build plan. Vendor doors remain weather;
+are the spine, and research precedes build (`relay-X2-research` → `relay-X3-pty` ·
+`relay-X4-tracker`; formerly `relay-00-research` / `relay-01-pty` / `relay-02-tracker`). Termpanum is the first-build plan. Vendor doors remain weather;
 the research verdict and blind triangulation must precede a relay-architecture lock.
 The architecture session proposes final organ homes; lifecycle and journal-store
 choices remain docket 4 and 5. Its first automated exchange depends on that research
@@ -274,7 +274,7 @@ no bond to specific `.dev/session/<specific-session>`
   consumes termpanum observations without turning observation into acceptance
 - lifecycle (docket 4), store (docket 5), command prefix and final source home remain
   open. [Session 03 survivors](meshup/seam.cross-vendor-relay.2026-08-05/raw/survivors.nablarva-03.2026-10-05.md)
-  preserve its architecture proposals after closure; relay-00-research supplies
+  preserve its architecture proposals after closure; relay-X2-research supplies
   the transport/research verdict for subsequent work
 - shape and sources: [room registry design](meshup/room.brokered-journal.2026-07-31/DESIGN.md);
   cross-vendor research: [seam design](meshup/seam.cross-vendor-relay.2026-08-05/DESIGN.md)

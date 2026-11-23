@@ -42,7 +42,9 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 - VIST retains its L20 observation principle and qualification questions. L20 keeps VIST observation separate
   from controller decisions and delivery; L21 requires operation-specific implementation/activation/delivery/transport
   release. The routing decision releases none of those operations.
-- Existing L14 names `relay-00-research` → `relay-01-pty` / `relay-02-tracker` remain reserved and unchanged.
+- L14 names stay reserved: `relay-X2-research` → `relay-X3-pty` / `relay-X4-tracker` (or the next free X numbers at opening, in this order).
+  Amended by Majkee 2026-11-23 from `relay-00-research` / `relay-01-pty` / `relay-02-tracker`, because X0 and X1 are taken on this line
+  (first by myShell on his word, then renumbered to cover research, [decision](relay-X1-probes/raw/decision.majkee.l14-names.2026-11-23.md)).
   New experimental routing does not bypass that research/triangulation sequence when the work falls under it.
   The existing stridulatrix organ name is unchanged.
 - Shared temporary practice: [BUS file-poke chapter](../../../../reposoma/raw.guides/bus/res/file-poke.md) —

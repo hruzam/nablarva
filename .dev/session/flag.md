@@ -97,6 +97,13 @@
   · D4 Research before build: sweep → PTY research → tracker draft. Canon mapping gaveled:
     `relay-00-research` (verdict gate) → `relay-01-pty` · `relay-02-tracker`; touches the
     LAB toolbox.
+    Names amended (majkee 2026-11-23): the relay line is counted in generation X, and X0 and
+    X1 are taken (`relay-X0-carryover`, `relay-X1-probes`). The three reserved chapters are
+    `relay-X2-research` (was `relay-00-research`, the verdict gate), `relay-X3-pty` (was
+    `relay-01-pty`) and `relay-X4-tracker` (was `relay-02-tracker`) — or the next free X
+    numbers at opening, in this order. The order (research verdict gate, then PTY research
+    before the tracker draft) and the research gate are unchanged. Source:
+    `relay-X1-probes/raw/decision.majkee.l14-names.2026-11-23.md`.
   · D5 Phone = thin lens: sessions live on the workstation; attaching advisory; detaching
     never closes a bed. Design drafted by majkee in `stridularium-00-design` + thin wrapper
     `.dev/session/AGENTS.stridularium-design.md` (beside AGENTS.PROJECT-DESIGN.md).
@@ -331,6 +338,7 @@ seed §open-6 = docket 6.)
 - docket 7 → CLOSED by L13 (majkee 2026-10-01): stridularium = phone app · stridulatrix = broker+CLI · termpanum = lab.
 - untabled-4 path `meshup/nabla_drafts/report.seam-probe.2026-08-01.md` → resolves by the prefix rule to `raw.nablarva/nabla-buffer-brideAndBook/report.seam-probe.2026-08-01.md` (cleanup-00-meshup, 2026-10-01).
 - L9 pulse-role clause → superseded in place by L9′ (2026-08-27); all other L9 clauses live.
+- L14 D4's names `relay-00-research` · `relay-01-pty` · `relay-02-tracker` → `relay-X2-research` · `relay-X3-pty` · `relay-X4-tracker`, or the next free X numbers at opening, in this order (majkee, 2026-11-23; X0 and X1 taken); order, research gate and all other L14 provisions unchanged.
 - docket 1 → lean recorded by L14 D2 (file plane is the spine); formal gavel pending.
 - O2 → lean recorded by L14 D5/D6 + stridularium bridge (hardened Tailscale + Termux, then mosh); transport gavel pending.
 - L17's phrase "shared mechanisms belong at a narrow integration boundary" and its phrase "no common framework or transport is authorized by the Phase 0 build" → superseded by L21 (majkee, 2026-10-23); all other L17 provisions live.

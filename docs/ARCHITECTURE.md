@@ -79,7 +79,8 @@ later (said: majkee Q5).
    orchestration" stays dead. nablarva.v0's rule "content lives in files; tmux only rings the doorbell" is
    the same direction (said: nablarva.v0, candidate). The doorbell's *mechanism* is open (§4, deliver row).
 2. **Relay work is research-gated.** Research precedes build: the canon mapping is
-   `relay-00-research` (verdict gate) → `relay-01-pty` · `relay-02-tracker` (locked: L14 D4). Blind
+   `relay-X2-research` (verdict gate) → `relay-X3-pty` · `relay-X4-tracker` (locked: L14 D4;
+   formerly `relay-00-research` / `relay-01-pty` / `relay-02-tracker`). Blind
    triangulation precedes locking the relay architecture (locked: L14 D7). These are relay-work
    constraints, not prerequisites for this document.
 3. **Observation never depends on, or grants, delivery.** Discovery is not delivery authority.
@@ -449,7 +450,7 @@ R9-1 N9). Every item stays open.
 | O3 — room repo topology | — | none; stays open |
 | O4 — monitor brick-set | — | none; Sublime is the current working target (said: majkee G2), not an editor choice |
 
-**Relay research.** The `relay-00-research` verdict (locked: L14 D4) and the blind triangulation
+**Relay research.** The `relay-X2-research` verdict (locked: L14 D4) and the blind triangulation
 before a relay-architecture lock (locked: L14 D7) are outstanding for relay work. They are not
 prerequisites for this document.
 

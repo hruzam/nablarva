@@ -48,7 +48,7 @@
 Each line keeps X1's own wording and owner. None of them blocks X1's gate. A future head picks one up and gives it a bed, a pulse line or a flag proposal, or deletes it when it is stale. The X1 originals are in git history at X1's prune commit (X1 RUNBOOK U-table, STATUS next:, raw/pad.1-tunnel-support.md). Harness/germline items went to ia-sync germline-03 raw/HANDOFF.oraculum.x1-carried-items.2026-10-23.md, not here.
 
 - **N6 lean added** (said: majkee 2026-10-23): "I'll try manage sessions to have continuous shape by line, that was my question before if we should have flat session numbering or by worktree, organs can develop in subchapters different organ sub-organs in sub loop".
-- **U1** relay-00-research: open, or gavel ADOPT-on-own-work · owner majkee.
+- **U1** relay-X2-research (was relay-00-research): open, or gavel ADOPT-on-own-work · owner majkee.
 - **U2** Asymmetry's two blind replies (D7): do they exist, and where? · owner majkee. Relates to L14 D7 (triangulation before locking the relay architecture).
 - **U3** first fixture (one tmux session, build-plan §0.2 probes, pane_tty↔PID join; feeds docket 8) · owner: the termpanum line (X2's successor bed termpanum-X0-source-contract and its followers).
 - **U4** nablarva-04 app-architecture restart from survivors.nablarva-03; "may fold INTO this bed after check 4" · owner majkee + oraculum · **UNVERIFIED** (said: myShell relay 2026-10-23: "Do not mark either completed merely from the new architecture").
