@@ -170,3 +170,17 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - not a poke — **observation A, the one released try**: made at 2026-11-23T11:25:48.953Z; its record is `_bus/07.lead.try.md`, not this log.
 
 - p14 outcome: read and answered — marker `_bus/07.auditor.ready.md` at 2026-11-23T11:25:46Z; `_bus/07.auditor.return.md` picked up by the lead's file watch at 11:36:07Z; reply bell r07 arrived in pane %70 about a minute later. Checked in `_bus/07.lead.verdict.md`.
+
+## p15 — lead → auditor · `codex queue`
+- authority: lines 5 and 6 of the release menu (raw/decision.majkee.walkthrough-1.2026-11-22.md, S5, S3); A not UNCERTAIN (_bus/07.lead.verdict.md)
+- file first: `_bus/08.lead.point.md` (committed in b684179)
+- looked first (2026-11-23T11:40:34Z): pane %66 — codex in the foreground, not dead, input row empty (placeholder only), no dialog
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p15] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/08.lead.point.md — observation B: preflight, then start the one-second watch and write the marker; I paste within two minutes of your marker`
+- before: 2026-11-23T11:40:34Z · after: 2026-11-23T11:40:34Z · exit code: 0
+- output (first line): `Queued message 01a20835-36c8-7f01-a85b-a00affc2a275 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. Read is shown by the marker `_bus/08.auditor.ready.md`, written 75 seconds later.
+
+- not a poke — **observation B, the one released exception to L4**: paste at 2026-11-23T11:42:11.668Z, Enter at 11:42:29.659Z, into the sample's pane %72 and nowhere else; its record is `_bus/08.lead.try.md`, not this log.
+
+- p15 outcome: read and answered — marker `_bus/08.auditor.ready.md` at 2026-11-23T11:41:49Z; `_bus/08.auditor.return.md` picked up by the lead's file watch at 11:52:21Z; reply bell r08 arrived in pane %70 shortly after. Checked in `_bus/08.lead.verdict.md`.
