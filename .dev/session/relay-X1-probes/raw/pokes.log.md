@@ -213,3 +213,13 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - before: 2026-11-23T11:57:02Z · after: 2026-11-23T11:57:02Z · exit code: 0
 - output (first line): `Queued message 01a20844-497a-7343-b87f-e28a6143e5fa for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 - proves: the queue accepted the call. No RETURN is asked.
+
+## p18 — lead → auditor · `codex queue`
+- authority: Majkee, 2026-11-22 — the auditor makes the final check of a bigger piece of work, from the other brand (raw/decision.majkee.roster-correction.2026-11-22.md); RUNBOOK step 6
+- file first: `_bus/09.lead.point.md` (committed in e9d10f3)
+- looked first (2026-11-23T11:58:07Z): pane %66 — codex in the foreground, not dead, input row empty (placeholder only), no dialog
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p18] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/09.lead.point.md — the final check of packet.md (draft 2) against the evidence; RETURN and one bell. If Majkee has a side test running with you, finish with him first`
+- before: 2026-11-23T11:58:07Z · after: 2026-11-23T11:58:07Z · exit code: 0
+- output (first line): `Queued message 01a20845-460a-7b01-add2-425d53757bc8 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. Read is shown by `_bus/09.auditor.return.md`.
