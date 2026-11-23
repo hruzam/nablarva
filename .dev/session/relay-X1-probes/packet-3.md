@@ -1,7 +1,7 @@
 ---
 kind: witnessed probe packet 3 — the chooser test of relay-X1-probes, for Majkee's word
 by: lead (flight, pen of relay-X1-probes) · 2026-11-23 · host home
-status: FOR THE GATE — written from the verdicts of cycles 19 and 20. Draft 1 was checked by the auditor, the seat of the other brand — REVISE; every number in the row holds against its source; its points on cause, on how far four sentences reach and on attribution are all taken here (_bus/21.auditor.return.md, _bus/21.lead.verdict.md). The auditor has not read this revision. Not yet decided by Majkee.
+status: FOR THE GATE — written from the verdicts of cycles 19 and 20. Draft 1 was checked by the auditor, the seat of the other brand — REVISE; every number in the row holds against its source; its points on cause, on how far four sentences reach and on attribution are all taken here (_bus/21.auditor.return.md, _bus/21.lead.verdict.md). The auditor has not read this revision. DECIDED — Majkee, in the lead's window, 2026-11-23: GO (raw/decision.majkee.gate-4.2026-11-23.md; _bus/22.lead.verdict.md). Nothing in this file is changed after his GO but this line.
 rule: as in packet.md — every row points at a file; raw captures, the receipt copy and notes are private, in ~/.local/share/nablarva/custody/x1-chooser-2026-11-23/ on home. What packet.md says about the observer, the limits and the environment holds here too and is not repeated.
 ---
 
