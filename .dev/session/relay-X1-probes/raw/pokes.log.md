@@ -398,3 +398,15 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - line: `[poke p32] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/19.lead.observer.md — PHASE A only: the look-only pre-check of the new sample in pane %73; write the pre-check file, bell r19 into %70, then wait; no watch yet`
 - before: 2026-11-23T19:44:01Z · after: 2026-11-23T19:44:01Z · exit code: 0
 - output (first line): `Queued message 01a209ef-d1db-7a01-a390-e64ea4928c63 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+
+- p32 outcome: done — `_bus/19.auditor.precheck.md` at 19:45:11Z: holds (workspace-write, on-request, reviewer user; thread 01a209ec…; instruction in; idle); bell r19 arrived in %70.
+
+## p33 — lead → auditor (pane %66) · `codex queue`
+- authority: Majkee in the lead session, 2026-11-23 (raw/decision.majkee.chooser-test.2026-11-23.md, committed 6de709a before the poke)
+- file first: `_bus/19.lead.observer.md` (6af0491), phase B
+- looked first (20:13:12Z): pane %66 — not working (bottom rows searched for a working indicator by the same command)
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p33] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/19.lead.observer.md — PHASE B now: Majkee released the send and sits at the sample; preflight, detached watch, then the marker _bus/19.auditor.ready.md; the sender calls within seconds of your marker`
+- before: 2026-11-23T20:13:12Z · exit code: 0
+- output (first line): `Queued message 01a20a0a-8ce0-7cf2-af86-72146ece6f41 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. The marker followed at 20:14:02.929Z.
