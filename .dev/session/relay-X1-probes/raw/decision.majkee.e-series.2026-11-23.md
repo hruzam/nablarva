@@ -29,3 +29,16 @@ The lead had reported E1 and asked for "go E2" or "no E2", and which answer he w
 for more than thirty seconds and then presses `esc` — the denial, the same choice as option 3. Meanwhile the lead's
 armed command queues the second message, once the observer's second marker says the chooser stands. He also confirms
 that in E1 he pressed `esc`. Two sends, each once; no retry.
+
+# Third part — shortly before 2026-11-23T21:05:40Z
+
+The lead had told him that E2's first send was accepted and that the second was not made, and asked what he saw at the
+sample.
+
+**Majkee:**
+> Ok, I had to miss anything, because it loking even nothing happend on probe side, but I waited here on your session display untill bash will not be run, maybe I am not reading situation right. But creating file now will not repeat aprooval dialogue. If possible can we start again?
+
+**My reading:** his account of E2 — he saw nothing happen at the sample. That agrees with the observer: nothing arrived.
+He asks whether the try can be made again. It is a wish, not yet a release: the lead answers that a new try is made in
+a fresh sample that he starts, and waits for his go there. His remark on the approval dialogue is answered in the lead's
+window: the stored rule covers one folder only, and in E2 no command was attempted at all.
