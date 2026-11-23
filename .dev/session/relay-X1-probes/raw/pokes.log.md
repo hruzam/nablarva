@@ -158,7 +158,7 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - p13 outcome: read and answered — `_bus/06.auditor.return.md` was picked up by the lead's file watch at 2026-11-23T11:19:04Z; the reply bell r06 arrived in pane %70 some minutes later. Checked in `_bus/06.lead.verdict.md`.
 
 ## p14 — lead → auditor · `codex queue`
-- authority: lines 4 and 6 of the release menu (raw/decision.majkee.walkthrough-1.2026-11-22.md, S4, S3); Majkee in the lead session shortly before 11:24:50Z: "instruction is in, I am at the sample window"
+- authority: lines 4 and 6 of the release menu (raw/decision.majkee.walkthrough-1.2026-11-22.md, S4, S3); Majkee's go-ahead in the lead session shortly before 11:24:50Z (raw/decision.majkee.sample-up.2026-11-23.md, second part)
 - file first: `_bus/07.lead.point.md` (committed in 047f4f7)
 - looked first (2026-11-23T11:24:50Z): pane %66 — codex in the foreground, not dead, input row empty (placeholder only), no dialog
 - call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
@@ -223,3 +223,6 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - before: 2026-11-23T11:58:07Z · after: 2026-11-23T11:58:07Z · exit code: 0
 - output (first line): `Queued message 01a20845-460a-7b01-add2-425d53757bc8 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 - proves: the queue accepted the call. Read is shown by `_bus/09.auditor.return.md`.
+
+- p18 outcome: read and answered — `_bus/09.auditor.return.md` picked up by the lead's file watch at 2026-11-23T11:59:52Z, 105 seconds after the poke; reply bell r09 arrived in pane %70 shortly after. Checked in `_bus/09.lead.verdict.md`.
+- p17 outcome: no RETURN was asked; RETURN 09 says no side test was visible in the sample's record at its check.

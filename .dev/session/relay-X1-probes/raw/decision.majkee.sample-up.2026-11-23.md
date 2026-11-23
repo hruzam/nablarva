@@ -39,6 +39,22 @@ smooth, named permission level is the better subject for the later samples he ha
 
 `CACHE.exec.md` is not opened and not staged by the lead until he says it is for the lead to read.
 
+# Second part — the same day, shortly before 11:24:50 UTC, in the same session
+
+The observer's first look had found that no turn had run in the sample, so the standing instruction was not in. The lead
+asked him to enter it and to say when.
+
+**Majkee:**
+> instruction is in, I am at the sample window
+
+**My reading:** line 3 is done by his hand, and he is where a dialog on the sample would need him. The lead then wrote the
+nonce for A and poked the observer (`_bus/07.lead.try.md`).
+
+Earlier, at about 21:53 UTC on 2026-11-22, also in this session, on how he would tell the lead that the sample is up:
+
+**Majkee:**
+> i'll inform you with address as usual.
+
 # What it does not give
 
 No new release line.
