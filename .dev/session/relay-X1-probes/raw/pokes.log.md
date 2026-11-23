@@ -372,3 +372,18 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - before: 2026-11-23T19:04:26Z · after: 2026-11-23T19:04:27Z · exit code: 0
 - output (first line): `Queued message 01a209cb-971c-7d51-bfe4-895437f8e54b for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 - proves: the queue accepted the call.
+
+- p29 outcome: done — `_bus/16.controller.return.md`; office copy 250 files, all SHA-256 equal, nothing deleted; push to `38c1f3d`, checked by the lead's own `git ls-remote` at 19:06Z; bell r16 arrived in %70. VERDICT 16.
+- p30 outcome: done — `_bus/17.auditor.return.md` at 19:05:54Z; seven answers, one "not knowable without a try"; bell r17 arrived in %70. VERDICT 17.
+
+## p31 — lead → oraculum (pane %60) · `codex queue`
+- authority: the lead's own call — a strategic decision of the lead before a release is asked (STATUS `team`); Majkee named her for consultation on 2026-11-23 (raw/decision.majkee.scheduler-doorbell.2026-11-23.md, first part)
+- file first: `_bus/18.lead.point.md` (committed in 95a472e)
+- looked first (2026-11-23T19:08:12Z): pane %60 — codex dead=0 cx=2, input row `› Ask Codex to do anything`, not working, no dialog
+- call: `codex queue --thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1 --message "<line>"`, without `--resume`
+- line: `[poke p31] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/18.lead.point.md — the lead asks one challenge of a test scope before it costs Majkee's presence: weakest assumption, verdict, four choices; forty lines; RETURN to the path it names, bell r18 into %70`
+- before: 2026-11-23T19:08:12Z · after: 2026-11-23T19:08:12Z · exit code: 0
+- output (first line): `Queued message 01a209cf-090b-7b90-917a-00fbf6a106dc for thread 01a1ff2e-7d3a-7320-a65c-cc34fdea4ee1.`
+- proves: the queue accepted the call.
+
+- p31 outcome: done — `_bus/18.oraculum.return.md` at 19:08:58Z, under a minute; REVISE, all points taken (one in a changed form). VERDICT 18.

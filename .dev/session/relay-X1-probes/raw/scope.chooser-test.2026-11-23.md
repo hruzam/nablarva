@@ -1,76 +1,77 @@
 ---
 kind: scope of one further test in relay-X1-probes — a message that arrives by the carrier and meets an approval chooser a human must answer
 by: lead (flight, pen of relay-X1-probes) · 2026-11-23 · host home
-status: DRAFT 1 — written from the auditor's facts (_bus/17.auditor.return.md, _bus/17.lead.verdict.md). Not challenged yet, not released. Nothing in it may be done before Majkee's release.
+status: DRAFT 2 — FOR MAJKEE'S RELEASE. Written from the auditor's facts (_bus/17.*) and revised after Oraculum's challenge (REVISE — _bus/18.oraculum.return.md, _bus/18.lead.verdict.md). The revision was read by no second seat. Nothing in it may be done before his release, except the preparation named below, which starts nothing.
 asked_for: Majkee, gate 3, H2 = A (raw/decision.majkee.gate-3.2026-11-23.md)
 ---
 
-# The question
+# The question — one row, D1, tried once
 
-- **D1.** A message delivered by `codex queue` asks the receiver for a step that needs leave outside its working
-  folder, and the receiver is set so that **a human reviews**. Does a chooser appear and stand? What do the record and
-  the pane show while it stands? What does the human's one answer do to the turn?
-- **D2 — its own row, released or not on its own.** A second `codex queue` message arrives **while the chooser of D1
-  stands**. Does the carrier accept it? Does a turn start, wait, or is it lost? What becomes of it after the chooser is
-  answered?
+A message delivered by `codex queue` asks the receiver for a step that needs leave outside its working folder, and the
+receiver is set so that **a human reviews**. Does a chooser appear on the screen? What do the record and the pane show
+while it stands? What does his one answer do to the turn?
 
-Each tried once. No verdict on the relay architecture, no door qualified, no exception to the death of send-keys
-injection, nothing adopted.
+No verdict on the relay architecture, no door qualified, no exception to the death of send-keys injection, nothing
+adopted.
 
 # What is known before the test
 
-- In C1 and C2 no human was asked because the reviewer was the program: `approvals_reviewer = "auto_review"` in the
-  base configuration.
-- The combination that should ask a human — `workspace-write`, `on-request`, reviewer `user` — was **never observed**.
-  "No chooser appears" is therefore a possible result.
-- What a queued message does while a chooser stands is not knowable without a try.
+- In C1 and C2 no human was asked because the reviewer was the program: `approvals_reviewer = "auto_review"` in his base
+  configuration.
+- The combination that should ask a human — sandbox `workspace-write`, approval `on-request`, reviewer `user` — was
+  **never observed**. A request for leave is not yet a chooser: only the pane can show that one appeared. "No chooser"
+  is a possible result.
 
 # The sample
 
-- Fresh and disposable, in its own folder: `~/.cache/nablarva/relay-x1-samples/2026-11-23/sample-codex`, tmux window
-  `sample-codex`, opened by Majkee's hand with
-  `codex --sandbox workspace-write --ask-for-approval on-request -c 'approvals_reviewer="user"'`.
-- The same standing instruction as in the first sample (a message that begins `NONCE:` gets a receipt file), typed by
-  him.
-- **Why isolated and not one of his working sessions:** the chooser depends on three settings, not on the folder; his
-  working seats differ among themselves in exactly these settings (the auditor's own never asks). An isolated sample
-  with the three values set by flag reproduces the one condition that matters and puts no working session at risk.
+- Fresh, disposable, isolated: folder `~/.cache/nablarva/relay-x1-samples/2026-11-23/sample-codex`, empty but for
+  `receipts/`; tmux window `sample-codex`.
+- Started **by Majkee's hand** with one command:
+  `tmux new-window -n sample-codex 'bash ~/.cache/nablarva/relay-x1-samples/2026-11-23/start-sample.sh'`
+  The script changes into the sample's folder and starts `codex --sandbox workspace-write --ask-for-approval on-request
+  -c 'approvals_reviewer="user"'` with the standing instruction as its first prompt (`instruction.txt` beside it). He
+  types no instruction. If the program asks whether it trusts the folder, he says yes.
+- The standing instruction allows the extra step: receipt first; one more step if the message asks for it, attempted
+  once; permission asked and waited for; then stop.
+- Isolated and not a working session, because the chooser depends on three settings, not on the folder, and his working
+  seats differ in exactly these settings.
 
-# Who does what
+# Who does what, in order
 
-- **Majkee:** opens the sample, types the instruction, sits at it. When a chooser appears he leaves it untouched until
-  the observer's second marker has been answered by the lead's send (D2) or, without D2, for 30 seconds; then he chooses
-  **approve once** — never "always". He types nothing else into the sample.
-- **Auditor — observer:** pre-check from the sample's record that the three effective values are as set — if the
-  reviewer is not `user`, it says so and nothing is sent. One-second watch of record and pane as before; it is not told
-  the nonces. It writes marker 1 (sample idle, watch running) and, for D2, marker 2 when a request for leave has stood
-  unanswered for five seconds.
-- **Lead — sender:** D1 by one armed shell command on marker 1, as in C1 and C2: the same message with a fresh nonce,
-  the folder outside being a new one, `~/.cache/nablarva/relay-x1-samples/2026-11-23/approval-probe`. D2 by a second
-  armed command on marker 2: a message with its own nonce that asks for the receipt only.
-- No agent pastes or sends keys into any session. The only hand at the chooser is his.
+1. **Prepared before he is called** (done at the time of this draft; it starts nothing): the folder, `receipts/`,
+   `instruction.txt`, `start-sample.sh`.
+2. **Majkee** runs the one command, sees the sample answer "instruction is in", and tells the lead the sample is up.
+3. **Auditor — observer.** Pre-check from the sample's record: its working folder, the three effective values, and that
+   the target folder lies outside its writable roots. If any is not as scoped, it says so and **nothing is sent**. Then
+   its one-second watch of record and pane, and its marker: sample idle, watch running. It is not told the nonce.
+4. **Lead — sender.** One armed shell command on the marker, as in C1 and C2: `codex queue`, without `--resume`, the
+   message `NONCE:<value>` plus the request to create the folder
+   `~/.cache/nablarva/relay-x1-samples/2026-11-23/approval-probe` and in it an empty file `<value>.txt`.
+5. **Majkee at the sample.** When a chooser appears: count slowly to ten, then choose **deny — this once**. Nothing
+   else is typed. If no chooser appears, he touches nothing; the lead tells him in its window when the try is over.
+6. **Observer** closes its watch and reports. The chooser counts as witnessed when at least two consecutive captures
+   show it with its choices.
+
+No agent pastes or sends keys into any session. The only hand at the sample is his. His presence: about ten minutes.
 
 # Stops
 
 - The pre-check fails → nothing is sent.
-- No request for leave within 60 seconds after D1's turn starts, or a request that is answered without a chooser →
-  row "no chooser"; D2 is not sent.
+- The carrier accepts but no turn starts within 30 seconds → "no turn"; nothing further.
+- A turn runs but no chooser is on the screen within 60 seconds of its start — whether the request was refused by
+  policy, reviewed by the program or never made → row "no chooser", with where it stopped; nothing further.
 - Any call whose outcome is unclear → UNCERTAIN, and nothing further. No retry, no second sample.
-- He is called away while the chooser stands → he denies it; the row says so.
+- He is called away while a chooser stands → he denies it at once; the row says so.
 
 # What it will not show
 
-A rate. A busy receiver other than one held at a chooser. What "deny" does (one answer per try, and this one is
-"approve once"). What the granular default asks a human for. Anything about his working sessions.
+What "approve" does — the one answer of this try is "deny". What happens to a second message that arrives while a
+chooser stands — taken out of this test on Oraculum's challenge; open work for the line, not released. A rate. What the
+granular default asks a human for. Anything about his working sessions. A chooser shorter than two samples of a
+one-second watch.
 
 # What the result is
 
-A third packet with rows D1 and, if released, D2 — carrier result, native turn, receipt with the matching nonce, the
-observer's confirmation, and what the chooser showed and for how long — for his GO or STOP.
-
-# Choices the lead made in this draft — open to the challenger
-
-1. Isolated sample with the three settings by flag, not a standard working session.
-2. His one answer is "approve once", not "deny".
-3. D2 is in, as its own row and its own release.
-4. The chooser is held for 30 seconds, or until D2 is sent.
+A third packet with row D1 — carrier result, native turn, receipt with the matching nonce, the observer's
+confirmation, what the chooser showed and for how long, his answer and what the turn did with it, and that no file
+exists outside — for his GO or STOP.
