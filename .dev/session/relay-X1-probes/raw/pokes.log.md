@@ -248,3 +248,5 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - proves: the queue accepted the call.
 
 - p20 outcome so far: read and shown — at 2026-11-23T12:07:11Z the desk's pane showed the G0 question as the last line of a turn that had just ended, above an empty input row. The lead looked at the bottom rows only and typed nothing. The RETURN comes at the end of the walkthrough.
+
+- p20 outcome: read and answered — the walkthrough ran from 2026-11-23T12:07Z; `_bus/10.exec.return.md` was picked up by the lead's file watch at 12:23:11Z; reply bell r10 arrived in pane %70 shortly after. Checked in `_bus/10.lead.verdict.md`: GO on the first packet; the bed stays open.

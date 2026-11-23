@@ -1,7 +1,7 @@
 ---
 kind: witnessed probe packet — the result rows of relay-X1-probes, for Majkee's GO or STOP
 by: lead (flight, pen of relay-X1-probes) · 2026-11-23 · host home
-status: FOR THE GATE — written from the verdicts of cycles 02, 06, 07 and 08. Draft 1 was compared with its sources by a fresh-eyes child of the lead. Draft 2 was checked by the auditor, the seat of the other brand — REVISE; the gate evidence holds and no rerun is needed; its points on wording, times, custody and what is asked are all taken here (_bus/09.auditor.return.md, _bus/09.lead.verdict.md). The auditor has not read this revision. Not yet decided by Majkee.
+status: FOR THE GATE — written from the verdicts of cycles 02, 06, 07 and 08. Draft 1 was compared with its sources by a fresh-eyes child of the lead. Draft 2 was checked by the auditor, the seat of the other brand — REVISE; the gate evidence holds and no rerun is needed; its points on wording, times, custody and what is asked are all taken here (_bus/09.auditor.return.md, _bus/09.lead.verdict.md). The auditor has not read this revision. DECIDED — Majkee, at the exec desk, 2026-11-23: GO, in his word "ok, than `GO`" (raw/decision.majkee.gate-2.2026-11-23.md, G2; _bus/10.lead.verdict.md). By his answer at G9 the bed is not retired: it stays open for further tests and a second packet. Nothing in this file is changed after his GO but this line.
 rule: every row points at a file. Raw captures, receipts and notes are private, in ~/.local/share/nablarva/custody/x1-probes-2026-11-22/ on home; this file carries times, values, hashes and categories only.
 ---
 

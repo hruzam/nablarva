@@ -17,6 +17,10 @@
 > the second thinking voice for a strategic decision on the lead's side — not a reader of every loop or every sheet; the
 > auditor is the other-brand counterpart of the lead's `assay` for a bigger piece of work made final — in this bed, the
 > packet; any seat may spawn `houston` for project alignment. The roles below are rewritten to say so.
+> Extended on his word at the gate, 2026-11-23 (`raw/decision.majkee.gate-2.2026-11-23.md`, G9, recorded verbatim at his
+> request): after his GO on the first packet the bed is not retired — it stays open under the same umbrella for further
+> tests and a second packet, by short POINTs, with no new bed and no new RUNBOOK for small steps. Gate sentence, locks and
+> holds below are unchanged; every further send still needs his word.
 
 ```yaml
 goal: >
