@@ -333,3 +333,5 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - proves: the queue accepted the call.
 
 - p26 outcome so far: read and shown — at 2026-11-23T13:02:41Z the desk's pane showed the H0 question as the last line of a turn that had just ended, above an empty input row; 52% of its context left. The lead looked at the bottom rows only and typed nothing.
+
+- incoming, not the lead's poke — **note n05 from myShell**, pasted into pane %70 at about 2026-11-23T13:25Z: it points at `raw/note.myshell.l14-names-amended.2026-11-23.md` — by her report, on Majkee's word in her session, she amended the reserved names under L14 D4 in `flag.md` and the matching line of the relay ledger; both edits are uncommitted. No reply asked. The lead commits her note and neither of the two edits: a lock file is committed on his direct word only.
