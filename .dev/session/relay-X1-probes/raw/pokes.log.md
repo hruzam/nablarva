@@ -457,3 +457,20 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - proves: the queue accepted the call. Marker 1 followed at 20:55:29.788Z, the lead's first call at 20:55:30.701Z. Marker 2 did not appear within 75 seconds; the second call was not made.
 
 - p37 outcome: done — `_bus/24.auditor.return.md` at 21:02:38Z: the first message of E2 was not seen to arrive in 361 samples; no chooser, so no second marker; the second call NOT RUN. VERDICT 24.
+
+## p38 — lead → auditor (pane %66) · `codex queue`
+- authority: Majkee in the lead session, 2026-11-23 (raw/decision.majkee.e-series.2026-11-23.md, fourth part, committed db3d516 before the poke)
+- file first: `_bus/26.lead.observer.md` (db3d516) — phase A, the pre-check of the third sample
+- looked first (21:10:39Z): pane %66 — not working
+- before: 2026-11-23T21:10:39Z · exit code: 0
+- output (first line): `Queued message 01a20a3f-24ea-7a91-926d-7ddab25f7fe1 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- outcome: done — `_bus/26.auditor.precheck.md` at 21:11Z: READY, thread 01a20a3c-575a-7e11-a902-512db96dcaa3.
+- note: the number p38 was reserved in STATUS for POINT 25, which was held and never poked.
+
+## p39 — lead → auditor (pane %66) · `codex queue`
+- authority: as p38
+- file first: `_bus/26.lead.observer.md`, phase B; `_bus/26.lead.try.md` committed f80e4d2 before the poke
+- looked first (21:11:53Z): pane %66 — not working
+- before: 2026-11-23T21:11:53Z · exit code: 0
+- output (first line): `Queued message 01a20a40-4607-71c3-9653-112a819e9ac1 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. Marker 1 followed at 21:12:35.442Z and the lead's first call at 21:12:36.102Z; marker 2 at 21:13:01.521Z and the second call at 21:13:01.900Z.
