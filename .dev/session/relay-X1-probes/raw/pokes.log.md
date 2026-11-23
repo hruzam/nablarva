@@ -484,3 +484,10 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - before: 2026-11-23T21:23:24Z · exit code: 0
 - output (first line): `Queued message 01a20a4a-d077-7cd0-8a32-d82d220a0e7d for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 - outcome: done — `_bus/25.auditor.return.md` at 21:24Z: REVISE; numbers and result words hold; inventory, present state, observation 5 and his literal words corrected. VERDICT 25.
+
+## p41 — lead → controller (pane %59) · `codex queue`
+- authority: Majkee's earlier word on the private evidence and his GO on the fourth packet (raw/decision.majkee.gate-5.2026-11-23.md); the push is the controller's standing duty
+- file first: `_bus/28.lead.point.md`, committed before the poke
+- looked first (2026-11-23T21:58:31Z): pane %59 — not working
+- before: 2026-11-23T21:58:31Z · exit code: 0
+- output (first line): `Queued message 01a20a6a-f78f-7341-8d84-04b19a1367cb for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
