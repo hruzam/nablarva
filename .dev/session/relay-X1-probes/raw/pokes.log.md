@@ -387,3 +387,5 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - proves: the queue accepted the call.
 
 - p31 outcome: done — `_bus/18.oraculum.return.md` at 19:08:58Z, under a minute; REVISE, all points taken (one in a changed form). VERDICT 18.
+
+- bell r18 from Oraculum reached pane %70 at about 19:42Z, half an hour after her RETURN had been read. It carried one more sentence: a report that Majkee says the new sample is running. A seat's report is not his word. The lead looked at tmux metadata at 19:42:49Z: pane %73, window `sample-codex`, `codex` in the foreground, started by the scope's start script.
