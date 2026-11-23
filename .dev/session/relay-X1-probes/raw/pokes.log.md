@@ -226,3 +226,25 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 
 - p18 outcome: read and answered — `_bus/09.auditor.return.md` picked up by the lead's file watch at 2026-11-23T11:59:52Z, 105 seconds after the poke; reply bell r09 arrived in pane %70 shortly after. Checked in `_bus/09.lead.verdict.md`.
 - p17 outcome: no RETURN was asked; RETURN 09 says no side test was visible in the sample's record at its check.
+
+## p19 — lead → controller · `codex queue`
+- looked first (2026-11-23T12:06:25Z): pane %59 — codex in the foreground, not dead, input row empty (placeholder only), no dialog. No POINT: the duty is prompt-1 of the RUNBOOK. Done is shown by origin/core = `2e2303f`.
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p19] push duty — prompt-1 in /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md: nablarva core — fetch; only if ahead and not behind, one plain git push; never rebase, never force; write no file, type into no pane; I verify the remote ref`
+- before: 2026-11-23T12:06:25Z · after: 2026-11-23T12:06:25Z · exit code: 0
+- output (first line): `Queued message 01a2084c-df16-7a13-aa41-1b1bc4ee8cfe for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call.
+
+- p19 outcome: done — `git ls-remote origin refs/heads/core` = `2e2303f` at 2026-11-23T12:06:45Z, equal to local HEAD; checked by the lead.
+
+## p20 — lead → exec · `codex queue`
+- authority: decisions Majkee owes go through the exec desk — "decision loop stays with exec" (raw/decision.majkee.seats-and-notice.2026-11-22.md)
+- file first: `_bus/10.lead.point.md`, with `raw/sheet.gate-2.2026-11-23.md` and `packet.md` (all committed in 2e2303f and pushed)
+- looked first (2026-11-23T12:06:45Z): pane %68 — codex in the foreground, not dead, input row empty (placeholder only), no dialog, 58% of context left at 12:04Z
+- call: `codex queue --thread 01a1fefc-0356-7ea1-860c-783a66a91211 --message "<line>"`, without `--resume`
+- line: `[poke p20] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/10.lead.point.md — the gate of relay-X1-probes: walk Majkee through gate sheet 2, G0 to G10; end this turn with the G0 question as its last line`
+- before: 2026-11-23T12:06:45Z · after: 2026-11-23T12:06:45Z · exit code: 0
+- output (first line): `Queued message 01a2084d-2fca-7643-9a85-745d47ba1aa3 for thread 01a1fefc-0356-7ea1-860c-783a66a91211.`
+- proves: the queue accepted the call.
+
+- p20 outcome so far: read and shown — at 2026-11-23T12:07:11Z the desk's pane showed the G0 question as the last line of a turn that had just ended, above an empty input row. The lead looked at the bottom rows only and typed nothing. The RETURN comes at the end of the walkthrough.
