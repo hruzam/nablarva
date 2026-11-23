@@ -311,3 +311,25 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - p25 outcome: done — `git ls-remote origin refs/heads/core` = `4dbd315` at 2026-11-23T12:57:55Z, equal to local HEAD; checked by the lead. For this poke the lead read the pane's metadata and not its bottom rows — the controller had been seen idle half an hour before; the look was thinner than the rule asks.
 
 - not the lead's pokes — a side quest between two other seats, found in `raw/` at 2026-11-23T12:59Z: `raw/sidequest.myshell.custody-copy-office.2026-11-23.md` (myShell → controller, on Majkee's word typed in her session) and `raw/sidequest.controller.custody-copy-office.return.2026-11-23.md` (the controller's return: the second copy of this stage's private folder is on office, a snapshot of about 12:55Z).
+
+## p27 — lead → controller · `codex queue`
+- looked first (2026-11-23T13:02:01Z): pane %59 — codex in the foreground, not dead, input row empty (placeholder only), no dialog. No POINT: the duty is prompt-1 of the RUNBOOK. Done is shown by origin/core = `f66df74`.
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p27] push duty — prompt-1 in /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md: nablarva core — fetch; only if ahead and not behind, one plain git push; never rebase, never force; write no file, type into no pane; I verify the remote ref`
+- before: 2026-11-23T13:02:01Z · after: 2026-11-23T13:02:01Z · exit code: 0
+- output (first line): `Queued message 01a2087f-c88f-7c10-bca3-4d08a179882c for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call.
+
+- p27 outcome: done — `git ls-remote origin refs/heads/core` = `f66df74` at 2026-11-23T13:02:22Z, equal to local HEAD; checked by the lead.
+
+## p26 — lead → exec · `codex queue` (sent after p27; the numbers follow the order of writing, not of sending)
+- authority: decisions Majkee owes go through the exec desk (raw/decision.majkee.seats-and-notice.2026-11-22.md)
+- file first: `_bus/14.lead.point.md`, with `raw/sheet.gate-3.2026-11-23.md` and `packet-2.md` (all committed in f66df74 and pushed)
+- looked first (2026-11-23T13:02:22Z): pane %68 — codex in the foreground, not dead, input row empty (placeholder only), no dialog
+- call: `codex queue --thread 01a1fefc-0356-7ea1-860c-783a66a91211 --message "<line>"`, without `--resume`
+- line: `[poke p26] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/14.lead.point.md — the second packet of relay-X1-probes: walk Majkee through gate sheet 3, H0 to H6, seven short themes; end this turn with the H0 question as its last line`
+- before: 2026-11-23T13:02:22Z · after: 2026-11-23T13:02:22Z · exit code: 0
+- output (first line): `Queued message 01a20880-1ac8-7a10-a356-45520cd6b648 for thread 01a1fefc-0356-7ea1-860c-783a66a91211.`
+- proves: the queue accepted the call.
+
+- p26 outcome so far: read and shown — at 2026-11-23T13:02:41Z the desk's pane showed the H0 question as the last line of a turn that had just ended, above an empty input row; 52% of its context left. The lead looked at the bottom rows only and typed nothing.
