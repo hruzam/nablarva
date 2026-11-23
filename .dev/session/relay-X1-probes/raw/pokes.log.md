@@ -474,3 +474,5 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - before: 2026-11-23T21:11:53Z · exit code: 0
 - output (first line): `Queued message 01a20a40-4607-71c3-9653-112a819e9ac1 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 - proves: the queue accepted the call. Marker 1 followed at 21:12:35.442Z and the lead's first call at 21:12:36.102Z; marker 2 at 21:13:01.521Z and the second call at 21:13:01.900Z.
+
+- p39 outcome: done — `_bus/26.auditor.return.md` at 21:21Z: the first message arrived and met a chooser (93 samples); the second, accepted while it stood, was not seen at the receiver through the watch; the turn aborted on his denial. VERDICT 26.
