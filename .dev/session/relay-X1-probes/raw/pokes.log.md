@@ -446,3 +446,12 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - proves: the queue accepted the call. The marker followed at 20:41:52.904Z, the lead's call at 20:41:53.813Z.
 
 - p36 outcome: done — `_bus/23.auditor.return.md` at 20:48:03Z: chooser in 22 samples, then the turn aborted by the user; nothing created outside. VERDICT 23.
+
+## p37 — lead → auditor (pane %66) · `codex queue`
+- authority: Majkee in the lead session, 2026-11-23 (raw/decision.majkee.e-series.2026-11-23.md, second part, committed 11898ff before the poke)
+- file first: `_bus/24.lead.observer.md` (11898ff)
+- looked first (20:54:16Z): pane %66 — not working (bottom rows searched for a working indicator by the same command)
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- before: 2026-11-23T20:54:16Z · exit code: 0
+- output (first line): `Queued message 01a20a30-21e0-7512-a948-1501bc618506 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. Marker 1 followed at 20:55:29.788Z, the lead's first call at 20:55:30.701Z. Marker 2 did not appear within 75 seconds; the second call was not made.
