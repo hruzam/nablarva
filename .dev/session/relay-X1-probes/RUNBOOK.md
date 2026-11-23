@@ -21,6 +21,9 @@
 > request): after his GO on the first packet the bed is not retired — it stays open under the same umbrella for further
 > tests and a second packet, by short POINTs, with no new bed and no new RUNBOOK for small steps. Gate sentence, locks and
 > holds below are unchanged; every further send still needs his word.
+> Names, on his word of 2026-11-23 (`raw/decision.majkee.l14-names.2026-11-23.md`): the chapter this file calls
+> `relay-00-research` is reserved from now on as `relay-X2-research` (flag L14 D4, amended; then `relay-X3-pty`,
+> `relay-X4-tracker`). The text below keeps the name it was written with.
 
 ```yaml
 goal: >
