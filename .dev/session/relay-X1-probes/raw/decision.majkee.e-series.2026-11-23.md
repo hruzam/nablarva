@@ -17,3 +17,15 @@ message while a chooser stands. It asked him to type the go when he sits at the 
 (pane %73), asking for a receipt and then for an empty file in a new outside folder, `denial-probe`, which the rule
 stored in the third packet's try does not cover. When the chooser appears he counts to five and chooses "No" (esc). No
 retry. E2 is not released by this.
+
+# Second part — shortly before 2026-11-23T20:54:16Z
+
+The lead had reported E1 and asked for "go E2" or "no E2", and which answer he wants to give at the chooser.
+
+**Majkee:**
+> go E2. only repeating for sure: you or delegated on auditor call situation for approval window. I will let it as is >30s , than press `esc` (did last time) which is in this situation `denial` as same as pressing `3` on non-numerical part of keybord. meaining `2|with shift @`.
+
+**My reading:** he releases E2 and is at the sample. The lead's first send brings up the chooser; he leaves it untouched
+for more than thirty seconds and then presses `esc` — the denial, the same choice as option 3. Meanwhile the lead's
+armed command queues the second message, once the observer's second marker says the chooser stands. He also confirms
+that in E1 he pressed `esc`. Two sends, each once; no retry.
