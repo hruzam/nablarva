@@ -93,3 +93,12 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
   [Tool](relay-X0-carryover/scripts/capture-folders-custody.py) — `python3 <tool> <new-private-folder>`; it refuses an existing
   destination, a Git worktree and any symlink in a source. The U01 working files (helpers' crawl reports, the selector's table, the
   auditor's blind labels) are beside it in `custody/u01-2026-11-22/`, also private.
+- [x] Private evidence of `relay-X1-probes` on two hosts — Majkee, gate 2 (G6) and gate 3 (H4), 2026-11-23; copied by the
+  controller (cartan) from home (`hruzam`) to office (`hruzam-120922`) over the tailnet by SSH.
+  [Gate 2](relay-X1-probes/raw/decision.majkee.gate-2.2026-11-23.md) · [gate 3](relay-X1-probes/raw/decision.majkee.gate-3.2026-11-23.md) ·
+  [snapshot](relay-X1-probes/raw/sidequest.controller.custody-copy-office.return.2026-11-23.md) · [last pass](relay-X1-probes/_bus/16.controller.return.md).
+  Private root on both hosts `/home/hruzam/.local/share/nablarva/custody/x1-probes-2026-11-22/` — the observer's notes, watches and
+  captures of observations A, B, C1 and C2, the receipt copies, the lead's call outputs, the tracker's script and logs. 250 files,
+  1,350,078 bytes on each host; every SHA-256 equal at the last pass (2026-11-23, about 19:05 UTC, the controller's check); folders
+  0700, files 0600; outside Git. It is the evidence under [packet 1](relay-X1-probes/packet.md) and
+  [packet 2](relay-X1-probes/packet-2.md); the packets qualify nothing.

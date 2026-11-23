@@ -349,3 +349,26 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - proves: the queue accepted the call.
 
 - p28 outcome: done — commit `d0281b6` by the controller at 2026-11-23T13:36:26Z, five paths; `git ls-remote origin refs/heads/core` = `d0281b6` at 13:36:56Z, equal to local HEAD; `_bus/15.controller.return.md` read; no bell (optional). Checked in `_bus/15.lead.verdict.md`.
+
+## Between p28 and p29 — the fork's pokes
+Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are in `raw/pokes.fork.log.md` (raw/note.lead.fork-seat.2026-11-23.md says why). Reply bell r14 from the exec desk reached pane %70 shortly after 19:02 UTC, after the lead's file watch had already shown the RETURN.
+
+## p29 — lead → pane %59 · `codex queue`
+- authority: Majkee at the exec desk, 2026-11-23 (raw/decision.majkee.gate-3.2026-11-23.md, H4); the push is the controller's standing duty
+- file first: `_bus/16.lead.point.md` (committed in 38c1f3d)
+- looked first (2026-11-23T19:04:26Z): pane %59 — codex dead=0 cx=2, input row `› Ask Codex to do anything`, not working, no dialog
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p29] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/16.lead.point.md — on Majkee's approval (H4): the last pass of the office copy, nothing deleted; then the push duty; RETURN to the path it names, bell r16 into %70`
+- before: 2026-11-23T19:04:26Z · after: 2026-11-23T19:04:26Z · exit code: 0
+- output (first line): `Queued message 01a209cb-956b-7a33-b80e-cf807b822059 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call.
+
+## p30 — lead → pane %66 · `codex queue`
+- authority: Majkee at the exec desk, 2026-11-23 (raw/decision.majkee.gate-3.2026-11-23.md, H2 = A) — fact-finding for the scope; no send released
+- file first: `_bus/17.lead.point.md` (committed in 38c1f3d)
+- looked first (2026-11-23T19:04:26Z): pane %66 — codex dead=0 cx=2, input row `› Ask Codex to do anything`, not working, no dialog
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p30] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/17.lead.point.md — facts for the scope of the chooser test Majkee asked for (H2 = A): seven questions, look only, no send and no session; RETURN to the path it names, bell r17 into %70`
+- before: 2026-11-23T19:04:26Z · after: 2026-11-23T19:04:27Z · exit code: 0
+- output (first line): `Queued message 01a209cb-971c-7d51-bfe4-895437f8e54b for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call.
