@@ -23,6 +23,16 @@ decides: the first send of the approval series may go now; the sender; the hand 
 4. **The second copy on office (G6) is the controller's job, over the tailnet by SSH,** on a POINT of the lead. The lead
    sends it after the series, when the private folder is complete.
 
+# Second part — the same day, shortly before 12:43 UTC, in the same session
+
+**Majkee:**
+> 1. mode switched, go for second send
+
+**My reading:** he has switched the sample's approval mode by his own hand and gives the go for the second send of the
+series. It arrived while the observer was still closing its watch of the first send; the second is made only after that
+RETURN is in and the observer's new preflight says the sample is idle — the two observations must not run into each
+other. The sender is the lead again, the carrier `codex queue`, the message the same with a fresh nonce.
+
 # What it does not give
 
 No tmux paste or send-keys by an agent. No third send. No word on the second send yet — that needs his go after the switch.

@@ -250,3 +250,25 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - p20 outcome so far: read and shown — at 2026-11-23T12:07:11Z the desk's pane showed the G0 question as the last line of a turn that had just ended, above an empty input row. The lead looked at the bottom rows only and typed nothing. The RETURN comes at the end of the walkthrough.
 
 - p20 outcome: read and answered — the walkthrough ran from 2026-11-23T12:07Z; `_bus/10.exec.return.md` was picked up by the lead's file watch at 12:23:11Z; reply bell r10 arrived in pane %70 shortly after. Checked in `_bus/10.lead.verdict.md`: GO on the first packet; the bed stays open.
+
+## p21 — lead → controller · `codex queue`
+- looked first (2026-11-23T12:27:39Z): pane %59 — codex in the foreground, not dead, input row empty (placeholder only), no dialog. No POINT: the duty is prompt-1 of the RUNBOOK. Done is shown by origin/core = `7bcf714`.
+- call: `codex queue --thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318 --message "<line>"`, without `--resume`
+- line: `[poke p21] push duty — prompt-1 in /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md: nablarva core — fetch; only if ahead and not behind, one plain git push; never rebase, never force; write no file, type into no pane; I verify the remote ref`
+- before: 2026-11-23T12:27:39Z · after: 2026-11-23T12:27:39Z · exit code: 0
+- output (first line): `Queued message 01a20860-4faf-7e70-b10a-28205a47f123 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- proves: the queue accepted the call.
+
+- p21 outcome: done — `git ls-remote origin refs/heads/core` = `7bcf714` at 2026-11-23T12:28:00Z, equal to local HEAD; checked by the lead.
+
+## p22 — lead → auditor · `codex queue`
+- authority: Majkee at the exec desk, 2026-11-23, G3 (the approval series) and his go in the lead session shortly before 12:31Z (raw/decision.majkee.approval-series-go.2026-11-23.md)
+- file first: `_bus/11.lead.observer.md` (committed in ad86894)
+- looked first (2026-11-23T12:31:54Z): pane %66 — codex in the foreground, not dead, input row empty (placeholder only), no dialog
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p22] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/11.lead.observer.md — approval series, first send: preflight, start the one-second watch, write the marker with the thread line; the call follows within seconds of your marker`
+- before: 2026-11-23T12:31:54Z · after: 2026-11-23T12:31:54Z · exit code: 0
+- output (first line): `Queued message 01a20864-3354-7fe3-8390-8ea889d905c7 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. Read is shown by the marker `_bus/11.auditor.ready.md`, written 46 seconds later.
+
+- not a poke — **the first send of the approval series**: made by the lead at 2026-11-23T12:32:43.561Z; its record is `_bus/11.lead.try.md`, not this log.
