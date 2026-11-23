@@ -144,3 +144,15 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - proves: the queue accepted the call.
 
 - p12 outcome: done — `git ls-remote origin refs/heads/core` = `a5275ed` at 2026-11-22T21:51:13Z, equal to local HEAD; checked by the lead. The push carried c572881, c22c060, 37f5e79, b3f33fc and a5275ed.
+
+## p13 — lead → auditor · `codex queue`
+- authority: line 6 of the release menu, given by Majkee on 2026-11-22 (raw/decision.majkee.walkthrough-1.2026-11-22.md, S3); the sample is up by his word of 2026-11-23 (raw/decision.majkee.sample-up.2026-11-23.md)
+- file first: `_bus/06.lead.point.md` (committed in a5275ed)
+- looked first (2026-11-23T11:16:14Z and again at 11:16:50Z): pane %66 — codex in the foreground, not dead, input row empty (placeholder only), no dialog; footer thread id as in the roster; 77% of context left
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p13] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/06.lead.point.md — you are released as observer; the sample is up: private folder, first look, a 60-second dry watch; RETURN and one bell`
+- before: 2026-11-23T11:16:52Z · after: 2026-11-23T11:16:53Z · exit code: 0
+- output (first line): `Queued message 01a2081f-857b-7200-b0b0-c36119fbb268 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. Read is shown by `_bus/06.auditor.return.md`.
+
+- p13 outcome: read and answered — `_bus/06.auditor.return.md` was picked up by the lead's file watch at 2026-11-23T11:19:04Z; the reply bell r06 arrived in pane %70 some minutes later. Checked in `_bus/06.lead.verdict.md`.
