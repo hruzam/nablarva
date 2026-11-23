@@ -286,3 +286,5 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - proves: the queue accepted the call. Read is shown by the marker `_bus/12.auditor.ready.md`, written 78 seconds later.
 
 - not a poke — **the second send of the approval series**: made by the lead at 2026-11-23T12:45:07.977Z; its record is `_bus/12.lead.try.md`, not this log.
+
+- p23 outcome: read and answered — marker `_bus/12.auditor.ready.md` at 2026-11-23T12:45:05Z; `_bus/12.auditor.return.md` picked up by the lead's file watch at 12:55:28Z; reply bell r12 arrived in pane %70 shortly after. Checked in `_bus/12.lead.verdict.md`.
