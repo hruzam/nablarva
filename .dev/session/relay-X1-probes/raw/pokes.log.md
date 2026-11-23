@@ -421,3 +421,16 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - line: `[poke p34] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/20.lead.point.md — look-only follow-up to RETURN 19: is a do-not-ask-again rule stored (which option was chosen), how far it reaches, his pasted chooser against your captures; RETURN to the path it names, bell r20 into %70`
 - before: 2026-11-23T20:26:17Z · after: 2026-11-23T20:26:17Z · exit code: 0
 - output (first line): `Queued message 01a20a16-83fb-71f1-b533-71cd931d1f7f for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+
+- p34 outcome: done — `_bus/20.auditor.return.md` at 20:27:15Z: the persistent yes, by a stored user-level rule and the record's save message. VERDICT 20.
+
+## p35 — lead → auditor (pane %66) · `codex queue`
+- authority: the lead's call — the final check of a packet before the gate, as in cycles 09 and 13
+- file first: `_bus/21.lead.point.md` (committed in 971022d)
+- looked first (2026-11-23T20:29:21Z): pane %66 — codex dead=0 cx=2, input row `› Ask Codex to do anything`, not working, no dialog
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p35] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/21.lead.point.md — the final check of packet-3.md against the evidence before Majkee's word: PASS or REVISE; RETURN to the path it names, bell r21 into %70`
+- before: 2026-11-23T20:29:21Z · after: 2026-11-23T20:29:22Z · exit code: 0
+- output (first line): `Queued message 01a20a19-555c-7560-bdfa-c1f200d25fd2 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+
+- p35 outcome: done — `_bus/21.auditor.return.md` at 20:30:28Z: REVISE, every number holds; all points taken; bell r21 arrived in %70. VERDICT 21. (A script of the lead that was to update STATUS and commit failed on its own quoting before it changed anything; it was run again.)
