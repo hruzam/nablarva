@@ -272,3 +272,17 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - proves: the queue accepted the call. Read is shown by the marker `_bus/11.auditor.ready.md`, written 46 seconds later.
 
 - not a poke — **the first send of the approval series**: made by the lead at 2026-11-23T12:32:43.561Z; its record is `_bus/11.lead.try.md`, not this log.
+
+- p22 outcome: read and answered — marker `_bus/11.auditor.ready.md` at 2026-11-23T12:32:40Z; `_bus/11.auditor.return.md` present at 12:43Z; reply bell r11 arrived in pane %70 at about 12:45Z, while the lead's command for cycle 12 was running.
+
+## p23 — lead → auditor · `codex queue`
+- authority: Majkee at the exec desk, 2026-11-23, G3, and his go for the second send in the lead session shortly before 12:43Z (raw/decision.majkee.approval-series-go.2026-11-23.md, second part)
+- file first: `_bus/11.lead.observer.md`, which serves cycle 12 with `12` for `11` (committed in ad86894)
+- looked first (2026-11-23T12:43:47Z): pane %66 — codex in the foreground, not dead, input row empty (placeholder only), no dialog; its RETURN 11 was already written
+- call: `codex queue --thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 --message "<line>"`, without `--resume`
+- line: `[poke p23] cycle 12 — read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/_bus/11.lead.observer.md again with 12 for 11 and c12 for c11: second send of the approval series, after the mode switch. In the preflight also take the names in the outside folder as a baseline. Marker with the thread line; the call follows within seconds`
+- before: 2026-11-23T12:43:47Z · after: 2026-11-23T12:43:47Z · exit code: 0
+- output (first line): `Queued message 01a2086f-1578-7f02-82d7-b2daeeb36553 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- proves: the queue accepted the call. Read is shown by the marker `_bus/12.auditor.ready.md`, written 78 seconds later.
+
+- not a poke — **the second send of the approval series**: made by the lead at 2026-11-23T12:45:07.977Z; its record is `_bus/12.lead.try.md`, not this log.
