@@ -1,5 +1,5 @@
 ---
-goal: Establish what the accepted home trial can support for VIST observation qualification before selecting a new implementation or transport.
+goal: Establish what the accepted home trial can support for RELAY organ, based on VIST aproach and list into observation qualification before selecting a new implementation or transport.
 gate: >-
   Majkee accepts an independently reviewed, observation-first preparation packet for VIST X0:
   a source-pinned historical C04 r1/r2 timeline distinguishing native activity, reported
