@@ -2,6 +2,7 @@
 kind: operator words, verbatim — the experimental shape `eSharp`. Noncanonical record; it opens no session and releases nothing.
 from: majkee, typed in the engineer session (claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) on home, 2026-11-22
 recorded_by: trajectory, in that session — so that his words survive the clear of the session
+continued: 2026-11-25 — sections 7 to 9 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting)
 ---
 
 # eSharp — what Majkee said, what I answered, what he agreed
@@ -100,7 +101,106 @@ Dictated on a phone on 2026-11-22 at about 16:05 CET; kept as the speech-to-text
 - **Seats.** He is open to fewer. My proposal is in the answer file, T1 — only group 1's three seats now.
 - **Scars.** He wants data on how the shape works. I keep `eSharp/observations.manager.2026-11-22.md`.
 
+## 7. His answers to sheet 1
+
+Written by him into `eSharp/answers.sheet-1.majkee.2026-11-22.md` between 22 and 25 Nov, and copied here by script, line for
+line, spelling kept. The headings are the answer file's own; the full questions are there and in `eSharp/sheet-1.2026-11-22.md`.
+
+**E1 — Group 1's bed**
+>to trajectory: confirming `session-window-X1-surface` in case if previous session can be considered as closed, or at least we have to close it 'FLR'.
+
+**E2 — Group 1's gate**
+>to trajectory:
+>1. confirming.
+>2. There might be also run some scheduler timer or something or poke status (little asking back). reported by flight: `.dev/session/eSharp/raw/inventory.relay-x1-helpers.2026-11-23.md`, lefting ctx --> status line per vendor
+>3. in other words extendable.
+>4. To be honest I asked organ architect also about mechanism similar as session helper: as is `ovitmugen` to help generated according scheme cli window+helper one pair for each intendet CLI participant. Older helper is fine in some way, I used it often, but is also little cage, because helper and cli are only panes in one window, I can not able to run paralelly two terminals alongiside with two CLI session and jumping between views was so smooht. SO maybe I be glad to start from scratch and maybe left `session helper` (zsh) as separate window with extended controlls for multisessiosn (f.e. settin timers, or some run conditions, that shared terminal f.e.) --> how far go with that is up to you and maybe more session enigineer even.
+>5. Than I can remove from status line pane of CLI almost all, when have own output, so helping window should read CLI type and recognize (possible |overkill, overengineering?).
+
+**E3 — One seat pushes the shared checkout**
+>to trajectory: proposing one shared controller, from now we will call `supervisor` or each or shared with `rellay` group --> I have to infrom `flight`s group.
+
+**E4 — Two separate tmux servers**
+>to trajectory:
+>1. `tmux -L session-window` for group 1 and `tmux -L terminal-workspace` for group 2.
+>2.  Where you are going to live? Isn't better 'all on one place' server if I resume yur session?
+
+**E5 — Close the shared-terminal preparation bed with GO**
+>to trajectory: the document which I showed I assume last `Nabla` + `Vawe` should be master document from zero stage only what is not contradictional. Should include some regime similar as permissions to CLI, like
+> stage 1: `each approve, record type to approved, only potential risk, full approval`, stage N: `administrator, root` (with optimal protection policy),..,local small model 1 GB `Laya (421M) – Lightweight, open-weight (Apache-2.0) local decision model built as a free alternative to Jev. Runs fast on CPU or Mac without autoregressive text generation, directly scoring and outputting option probabilities for agent routing, tool selection, and classification.
+` - you may spawn researc. In fact Id like from you more orchestration than most deep engineering, so each session can have roster like : "`lead.terwor`: spawn subagent `epoch` or `researcher` to know or let it be, because `majkee` knows plan enough.
+
+**E6 — The card types into panes twice; lock L4 says send-keys injection is dead**
+> to trajectory: Not sure, if not missing something, but `poke` almost all the time working fallback is yust `send_keys`. Dead means more comunity in researches prooved, that has unsufficient chracter, but on the other hand, why not use, what is working (?) of course both group or even you can consult with `houston` - separate tmux-window-session or spawn?
+> As much as catched  from you last time was that we can have only helper widnows, because shared pane breaking our rellay design (?)
+> I wrote higher, that one helper per CLI, but maybe one bigger dashboard. could be enough, but I have one gig problem with cuting text lines in shrinking windows (its panes) instead 'writeln' at least where you need copy or read of.
+
+**E7 — Group 2's gate**
+>to trajectory: depending, what are you considering as optimal, or what is designed already. I would be glad, if start to design. To be honest not sure what you are asking for (???). I hoped that card can say enough to:
+>- in case is needed, make small technical research `spawns`,
+>- than set axioms to plan steps and
+>- start building `CLI first` philosophy, but usable for human user also, that is main purpose: `shared terminal`
+
+**E8 — The release to build v0**
+> to trajectory: polemising with myself higher, maybe you can give me recomendation with reasosns first, why this or that has better reason, because this two sessions are very close to each other, so you can maintain to not beting themselves and can share resources, or isolated `sand box` (helpers) for tests.
+
+**O1 — Did I hear the organ right? (your voice note)**
+> to trajectory: Yes ledger **ovitmugen**, but terminal is somewhere **ovitmugen|termbrana** to be honest sometimes not sure if such organing was optimal idea. Not leaving but even not pushing on it as you can see in session naming.
+
+**O2 — One word from the voice note**
+> to trajectory: To be honest, should be only one word organ should hold only two pipes, on computer is backend projecting and comunicating with frontend on mobile phone.
+
+**T1 — Fewer seats (only if you want to say something)**
+> to trajectory: my roster proposal is this file: `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/roster-proposal.eSharp.md`
+
+## 8. His voice answers to sheet 2
+
+Dictated on a phone on 2026-11-25 at 15:34 UTC; copied by script from the session transcript, as the speech-to-text delivered
+it. "Tmax" is tmux; "where you would believe" is where you would live. The questions are in
+`eSharp/answers.sheet-2.majkee.2026-11-25.md`: A1–A5 needed his word, B1–B5 were decided unless he objected.
+
+**Majkee:**
+> So, thank you for your reading and answering. Now I am on voice mode and going to answer to you. So, first one, it's a good question. Now it's holding, I don't think, nothing important. But yes, if for the future, and I'm a little bit possessed by safety and protection, not only on a computer itself, but by the scope, and doing such, let's say, stupid thing. So I think later I go down with the repository as public back to the discreet, but or hidden, but my chatbots, even not ChatGPT, even not Claude, can connect to the repositories which are not connected to the, or which are not set on the public. This is a connector issue. Maybe it's a way I should check it and then test with some of my chatbots if the situation is better now. But yes, for the future or for the case, there should be some kind of the decision of what can be sent to the GitHub and what not, because you know, there can be some how to say, personal things now aren't, but in the future, who knows. And so I am just only informing you that from the first second you noticed this or asked me, I started to research how I can have some internal GitHub with similar capabilities, but can be able to move the caches through the hosts by the different, let's say, uncompromisable way. The second, FLR means only for legal reason. I hope this shortcut is well known, but as much as I see, not. Okay, 3. Does it mean each group has its own Tmax server, but still unanswered where you would believe? If I should left you where you are, or you can have some your own one. Okay, if it's a proposal, A4, or question, maybe it's good plan, because with somebody I usually do with the auditor last time or with the exec, but I think the working group which you were part of before was too rich. I think 3 agents per bigger task is more than enough. We will see. Yes, to the shared terminal also, because I read it in the different line. Look, I should have some kind of permissions there set, at least allowed or not allowed, or I need to be informed that somebody is trying to push the bash in case when the terminal pipe is not open, or I am not expecting that the terminal pipe is open for somebody. So this is the just safety protection. Maybe we can make a group of forbidden bashes, but you know, this is not the 100% safe. So I hope some clever permission mode can at least later arrive, and only or I can only allow the shared terminal session only with selected agents. Then again is maybe the work for the session helper window group. That's also why I think these two things are close to each other. 5. Yes, this is the approval. Yeah, I think I said everything what I have in the head, or what can be. I'm not saying that it must be 100% same as I proposed, but on the other hand, something like gate on this should be made to not have an unsafe place on the computer for any intruder, for example. And of course it should be more than one terminal session which can be shared. For example, if we have 2 working groups and they need each their own as a property, as a session property, they should have it available. So I think that's all from my side.
+
+**My reading — mine, not his words.**
+- **A1, the public repository.** Nothing important is exposed now, so the four files already on the remote stay. The repository
+  stays public for the present, because his chat applications cannot connect to a repository that is not public; he will test
+  whether that has improved. He wants a rule for what may go to GitHub, and he has begun to look for an internal Git host and a
+  private way to move caches between hosts. Until then: caches, raw captures, transcripts and personal notes do not go into Git.
+- **A2.** "FLR" is "for legal reason": `session-window-X0-substrate` is closed for the record and stays in place.
+- **A3, the sandbox release.** He answered with a question — does each group have its own tmux server, and where do I live. My
+  answer: each group has its own server for what it builds and tests; every seat, and I, stay in `helloWorld`. **The release
+  itself he has not given.** It stands in group 1's RUNBOOK as proposed.
+- **A4, group 2.** Accepted for now ("maybe it's good plan … We will see"). Three agents for a bigger task are enough.
+- **New for the shared terminal.** A permission setting, at least allowed or not allowed. He is told when somebody tries to send
+  a command while the terminal is not open, or not expected to be open for that sender. Perhaps a list of forbidden commands,
+  which he knows is not a full protection. A cleverer permission mode later. A shared terminal only for selected agents. The
+  telling may be work for the session-window group — a seam between the two groups.
+- **A5, the approval ladder.** Approved. It need not match his proposal, but a gate there must exist, so that the organ is no
+  open door for an intruder. More than one terminal can be shared: each working group has its own, as a property of the session.
+- **B1–B5.** He raised no objection, so they stand: one shared `supervisorCli`; caches outside Git; all seats in `helloWorld`;
+  Houston by spawn; the roster as he wrote it, with one name corrected. He did not confirm them in words.
+- **"go".** He did not say the word. I take these answers as leave to write — this record, the closing of the old bed, group 1's
+  RUNBOOK, STATUS and briefs — and nothing more. No session is started and no sandbox is used on the strength of them.
+
+## 9. The auto-compact setting
+
+**Majkee** (2026-11-25 15:43 UTC, interrupting the work above):
+> Sorry, maybe I setting your autocompact accidentally to the 10% or context window instead of 90%. So we should stop here because you would be compacting again and again until I will sitting on the computer, because I suppose from mobile application I'm not able to set it. Or you may check, but I don't think.
+
+**Majkee** (15:50 UTC, after I reported `"autoCompactWindow": 100000` in `~/.claude/settings.json`):
+> Okay, set the number first on 900,000 and ask this by poke your old controller, which you are cooperated before, to do it, because I think you don't have any permission to change it by nature. Maybe I'm wrong, but I think yes, but for him it shouldn't be the problem.
+
+**What followed.** POINT `eSharp/_bus/01.manager.point.md` to the relay controller, carrying his words as the release for that one
+edit; the controller changed the value to `900000` at 16:00 UTC (`eSharp/_bus/01.controller.return.md`). At 16:18 UTC, back at
+the computer, he ran `/autocompact` himself, which set the same value for the running session and rewrote the file. The ia-sync
+source `~/ia-sync/claude/settings.json` does not carry the key; whether it should is his call.
+
 ## Not decided here
 
-The gates of the two groups; the heads' and controllers' sessions; which seat pushes;
-the name of the separate tmux server; whether `eSharp` becomes a named protocol in the RUNBOOK guide — that is his gavel, later.
+- The sandbox release for group 1 (sheet 2, A3): worded, not given.
+- The rule for what may go to the public remote, and how caches travel between hosts — his research.
+- One word for the phone organ (O2), and the organ of the terminal line (O1).
+- Whether the relay bed retires or stays open.
+- Group 2's sessions and its start; the old terminal bed is closed by the new lead.
+- Whether `eSharp` becomes a named protocol in the RUNBOOK guide — his gavel, later.

@@ -21,3 +21,18 @@ why: Majkee — "we can still collect the data … how it is working, where are 
   back the two points that carry weight.
 - **Seats cost context even when idle-looking.** The controller went from 56% to 40% in one night mostly on small jobs; the
   opposer lost 6–17% per read. A group of three is three budgets to watch.
+
+# 2026-11-25 — the day the manager kept forgetting
+
+- **One wrong number in one setting stopped the manager.** The auto-compact window stood at 100,000 instead of 900,000: three
+  compactions in an hour, each a summary of the one before. What survived was what was in files. His voice answers to sheet 2
+  existed only in the session, so they were copied by script from the transcript into the record before anything else.
+  → `../eSharp.decisions.majkee.2026-11-22.md`, sections 8 and 9.
+- **The repair came by two routes, and they did not collide.** The controller changed the value on a POINT within four minutes;
+  Majkee ran the native command at the computer eighteen minutes later. The POINT said "if the value is not 100000, change
+  nothing" — a check-before line is cheap insurance when the human may act as well. → `_bus/01.manager.point.md`.
+- **A wrong assumption failed safely.** The controller first looked for the key at the top level, stopped without writing, and
+  corrected its check. → `_bus/01.controller.return.md`.
+- **A voice answer answers what was heard.** Sheet 2 asked a yes or no on the sandbox release; the answer was a question back.
+  The release stands as "proposed, not given" in the RUNBOOK instead of being read into his words.
+- **Times written before the clock was read ran a quarter of an hour ahead.** Found at the validation step and corrected.

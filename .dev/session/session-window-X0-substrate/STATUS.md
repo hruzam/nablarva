@@ -1,12 +1,8 @@
-# STATUS: session-window-X0-substrate
-
-```yaml
-updated: 2026-11-19
-writer: trajectory · claude · home (bed move ia-sync → nablarva)
+updated: 2026-11-25 16:28 UTC
+writer: trajectory · claude · home (the bed's only writer; this is its closing snapshot)
 host: home · hruzam (office not inspected)
-origin: >-
-  Moved verbatim from ~/ia-sync/.dev/session/helper-utils-00-tmux/raw/ (sha256 identical,
-  ia-sync tombstone MOVED.md left there). The ia-sync bed never had a STATUS; this is the first.
+worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD eb26f28 when written (the closing commit follows)
+state: CLOSED 2026-11-25, for the record. No GO and no STOP was ever recorded on this gate.
 gate: >-
   PROVISIONAL — Majkee to confirm or rewrite. Majkee records GO or STOP on a
   small personal session-window helper scope: what the first version does
@@ -14,34 +10,40 @@ gate: >-
   route (native status line vs. tmux metadata pane vs. second tmux status row),
   and independent views with usable scrollback as default behaviour.
 checkpoint: >-
-  Substrate only. Raw inputs gathered 2026-11-13/14 on home: Cartan goal substrate,
-  Claude probe export, Cartan live tmux setup + comfort profile, retiring-Trajectory
-  senior advice. No helper code written; no scheme schema; no design lock.
+  Closed on Majkee's word. Sheet 1, E1: "confirming `session-window-X1-surface` in case if previous session can be
+  considered as closed, or at least we have to close it 'FLR'"; his voice answer of 2026-11-25: "FLR means only for legal
+  reason". Both are verbatim in /home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.decisions.majkee.2026-11-22.md,
+  sections 7 and 8. The provisional gate above was never confirmed, so nothing was decided in this bed. It holds substrate
+  only: no helper code, no scheme schema, no design lock. The line continues in
+  /home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X1-surface/ under a gate he confirmed.
 in_flight: none
-evidence_state:
-  - observed (home 2026-11-13): native Claude statusLine line truncates with … at width.
-  - conflict (unresolved): official docs claim multiline output + COLUMNS + session_name/effort
-    fields; not verified against the installed CLI (now 2.1.328 on home). First probe = dump one
-    real statusLine stdin payload.
-  - candidate: statusLine callback tees its JSON to a file a metadata pane reads (exact data,
-    refreshes only on CLI events) — untested.
-  - candidate: second tmux status row (handoff.senior-advice §1.3) — untested here.
+recovery_probe: >-
+  Read-only: `git -C /home/hruzam/unikuklatrix/nablarva log --oneline -3 -- .dev/session/session-window-X0-substrate/`.
+  The newest commit is the closing one; a newer commit, or a dirty path here, means somebody wrote into a closed bed —
+  ask before going on. The live position of the line is
+  /home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X1-surface/STATUS.md.
+carried_to_X1:
+  - >-
+    Observed on home, 2026-11-13 — the native Claude status line cuts its text with … at the pane width.
+  - >-
+    Unresolved conflict — the official docs promise multiline output, COLUMNS and the fields session_name and effort;
+    never checked against the installed CLI. The first probe, one real status-line input record, was never run.
+  - >-
+    Candidate, untested — the status-line command also writes its input to a file that a metadata pane reads.
+  - >-
+    Candidate, untested — a second tmux status row (raw/handoff.senior-advice.trajectory.2026-11-14.md, section 1.3).
+  - >-
+    Open with Majkee — where the helper and its scheme files live; which part extends ovitmugen and which stays separate.
+  - >-
+    The chess clock deferred to this line (../session-window-X.ledger.md, section Open).
 related_live_surfaces:
-  - line ledger: ../session-window-X.ledger.md (organ attach: ovitmugen)
-  - ~/ia-sync/claude/hooks/statusline.sh + statusLine in ~/ia-sync/claude/settings.json —
-    deployed Claude status line authored in this work; stays in ia-sync (deploy surface).
-    Changes go through ia-sync compose-first + deploy.sh.
-  - raw/tmux-comfort.conf was manually loaded into home's tmux server only; not on office.
-  - sibling matter: terminal-workspace-X0-approaches (shared task terminal) — overlapping
-    ground (tmux, panes, views); keep scopes separate unless Majkee merges them.
+  - ~/ia-sync/claude/hooks/statusline.sh and statusLine in ~/ia-sync/claude/settings.json — the deployed Claude status
+    line; stays in ia-sync; changes go through its compose-first rule and deploy.sh.
+  - raw/tmux-comfort.conf was loaded by hand into home's tmux server only; not on office.
 holds:
-  - No build, no deploy, no canon. Gate text above is provisional until Majkee confirms.
-  - Claude ↔ Cartan cooperation rhythm: Majkee explains; not invented here.
-  - Home tmux session helper-utils-00-tmux (+ --claude/--codex views) is home-local, not transported.
-next: >-
-  On office: Majkee confirms/rewrites the gate; then the first probe — capture the installed
-  Claude statusLine stdin payload and record which fields exist (effort, session_name,
-  context_window, multiline behaviour), with CLI version.
-expected: >-
-  A confirmed gate and one version-stamped payload record, resolving the truncation-vs-docs conflict.
-```
+  - The bed stays in place and tracked; raw/ is the successor's substrate and is read there by path. It is not retired
+    under the runbook guide (unregister from Git, ignore) — that step changes what other hosts receive and is Majkee's
+    word, later.
+  - Nothing in this file is an assignment. A reader who wants to act goes to the successor's STATUS.
+next: none in this bed — read /home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X1-surface/STATUS.md
+expected: no further change to this file.
