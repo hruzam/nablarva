@@ -2,7 +2,7 @@
 kind: operator words, verbatim — the experimental shape `eSharp`. Noncanonical record; it opens no session and releases nothing.
 from: majkee, typed in the engineer session (claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) on home, 2026-11-22
 recorded_by: trajectory, in that session — so that his words survive the clear of the session
-continued: 2026-11-25 — sections 7 to 9 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting)
+continued: 2026-11-25 — sections 7 to 10 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting, his six points and the tmux tree)
 ---
 
 # eSharp — what Majkee said, what I answered, what he agreed
@@ -196,11 +196,76 @@ edit; the controller changed the value to `900000` at 16:00 UTC (`eSharp/_bus/01
 the computer, he ran `/autocompact` himself, which set the same value for the running session and rewrote the file. The ia-sync
 source `~/ia-sync/claude/settings.json` does not carry the key; whether it should is his call.
 
+## 10. Still open — his six points, and the tmux tree
+
+Typed at the computer on 2026-11-25 at 16:58 UTC, after my report on group 1; copied by script from the session transcript.
+
+**Majkee:**
+> `[still open]`
+>
+> 0. still have no answer from you, if each team has its own tmux session + sandbox tmux (at least that with shared terminal plan), whre you would live or your successor, separate one? please give me instructions, how I should design tmux things for you and colleagues. Than I will return filled `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md`
+>
+> ---
+>
+> 1. one word:  `stridulariium` (first try as web test ob cable was here: `phone-console-01-browser
+> `) also intending name for mobile app itself (frontend). If we need special name spawn: `houston` to codify by himself.
+> 2. i'll need for few experiments, so I retire by myself.
+> 3. GIT ignore or what: in `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md`
+> 4. your teams will have one shared in their tmux server if comon or that one will live with same with you. still depending on your exact roster design. you wrote, that accepting, but still not sure how you want to create that tmux session|window|pane tree. But yes I neeed to inform `relay` team about your projects.
+> 5. in `4.`
+> 6. ok, agree with order, but maybe session helper window team should know, there can be spare places and also pipes to conect|attach| release shared terminal session or at least maintain settings --> for me is this UI question still open, because in `.dev/_back-log` or maybe in decumentation itself I have some linked ideas on skin|UI|UX.
+>
+> ---
+
+**My answer to 0 — the tmux tree.** It replaces the wording of sheet 2, B3: one server as before, but each group in a tmux
+session of its own.
+
+```text
+the usual tmux server — every seat lives here
+  session helloWorld     the shared seats, and the relay party as it is today
+    engineer             the eSharp manager, pane %58; after a clear the successor is the same pane
+    exec · myShell       the decision desk · the second eye
+    supervisorCli        NEW — one pane, Codex
+    lead · auditor · supervisor-relay · seniorDev · sample-codex-2    the relay party; Majkee retires it himself
+  session seswin         NEW — group 1
+    lead                 one pane, Claude (flight)       nick lead.seswin
+    audit                one pane, Codex (Oraculum)      nick audit.seswin
+  session terwor         LATER — group 2
+    lead                 one pane, Codex (Cartan)        nick lead.terwor
+    audit                one pane, Claude (Oraculum)     nick audit.terwor
+server tmux -L session-window        group 1's sandbox — tests only, never a seat; not created yet
+server tmux -L terminal-workspace    group 2's sandbox — later
+```
+
+- **One seat is one window with one pane.** No split in a seat's window.
+- **No dot in a window name.** tmux reads a dot in a target as the pane separator: a read-only query for `helloWorld:lead.zzz`
+  answered with the relay lead's pane `%70`. A window called `lead.seswin` could be looked up as the window `lead`. The nicks
+  keep their dot; the windows are `lead` and `audit` inside `seswin`.
+- **Names stay** once a seat has started. His views stay as he makes them today — one grouped view per window.
+- **Why a session per group.** It is his own pattern (`vist`, `traj-home`, `helloWorld` are each one party). A tmux status row
+  belongs to a session, so a group can carry its own row later without a change to `helloWorld`. And his "shared terminal as a
+  session property" then has a session to belong to. Pointer lines are not affected: a pane id is valid in every session of one
+  server.
+
+**My reading of 1 to 6 — mine, not his words.**
+- **1.** The one word is `stridulariium` as he typed it; I take it as *stridularium*, the name the locks give the phone lens. It
+  names the organ and the phone application itself; `phone-console-01-browser` was its first try. Not asked back: the open bed
+  `architecture-X1-bookkeeping` has in its gate a line that retires "stridularium" as a cultural name. If the name must be
+  codified, that is a Houston consult — spawned when a line needs it, not now.
+- **2.** The relay bed stays open for a few experiments of his; he retires it himself.
+- **3.** What happens with the ignore rule he writes into sheet 2.
+- **4, 5.** `supervisorCli` lives beside the manager in `helloWorld`, because it serves three lines. He tells the relay group
+  about the two projects himself. I read "5. in 4." as: the same holds for the exec desk; I send it nothing until asked.
+- **6.** The order stands. New for group 1: the surface keeps spare places, and it may hold the controls of a shared terminal —
+  connect, attach, release, or at least its settings. The UI question is open for him; his ideas are in
+  `.dev/_backlog/skin-remote-controll/` and in `docs/ARCHITECTURE.md` (the organ `instarmux`, the skin). Both are now in group 1's
+  RUNBOOK as inputs.
+
 ## Not decided here
 
 - The sandbox release for group 1 (sheet 2, A3): worded, not given.
-- The rule for what may go to the public remote, and how caches travel between hosts — his research.
-- One word for the phone organ (O2), and the organ of the terminal line (O1).
-- Whether the relay bed retires or stays open.
+- The rule for what may go to the public remote, and how caches travel between hosts — his research; the ignore rule he answers in sheet 2.
+- The organ of the terminal line (O1); whether the phone organ's name is codified (section 10, point 1).
+- The UI of the helper surface — spare places, controls of a shared terminal (section 10, point 6).
 - Group 2's sessions and its start; the old terminal bed is closed by the new lead.
 - Whether `eSharp` becomes a named protocol in the RUNBOOK guide — his gavel, later.

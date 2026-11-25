@@ -16,9 +16,9 @@ gate: >
   status row · metadata pane) tried side by side on a separate tmux server, each checked for whether inspection and one
   pointer line still reach the intended pane; one recommended smallest first version, with the place for the chess clock.
   No helper is built yet.
-participant_1: [lead.seswin, {brand: claude, model: set by Majkee at launch, effort: set by Majkee at launch}, host: home, role: "head and status_owner — the flight build, window `lead.seswin`; plans, writes the assignments, verifies, commits by file name; asks for every release"]
-participant_2: [audit.seswin, {brand: codex, model: set by Majkee at launch, effort: set by Majkee at launch}, host: home, role: "a fresh Oraculum session, window `audit.seswin`; thinks with the lead and criticises honestly while the work is conceptual; witness of the packet when the sandbox part arrives; writes no code herself"]
-participant_3: [supervisorCli, {brand: codex, model: gpt-6.1-sol, effort: max}, host: home, role: "one fresh seat shared with the relay line and, later, with group 2; window `supervisorCli`; pushes on a head's poke, runs bounded work a POINT names, makes caches on request"]   # model and effort as his roster names them
+participant_1: [lead.seswin, {brand: claude, model: set by Majkee at launch, effort: set by Majkee at launch}, host: home, role: "head and status_owner — the flight build; tmux session `seswin`, window `lead`; plans, writes the assignments, verifies, commits by file name; asks for every release"]
+participant_2: [audit.seswin, {brand: codex, model: set by Majkee at launch, effort: set by Majkee at launch}, host: home, role: "a fresh Oraculum session; tmux session `seswin`, window `audit`; thinks with the lead and criticises honestly while the work is conceptual; witness of the packet when the sandbox part arrives; writes no code herself"]
+participant_3: [supervisorCli, {brand: codex, model: gpt-6.1-sol, effort: max}, host: home, role: "one fresh seat shared with the relay line and, later, with group 2; window `supervisorCli` in `helloWorld`; pushes on a head's poke, runs bounded work a POINT names, makes caches on request"]   # model and effort as his roster names them
 participant_4: [majkee, {brand: human}, host: home, role: "every release; starts the seats and the sample sessions; trust and permission dialogs; GO or STOP"]
 participant_5: [exec, {brand: codex}, host: home, role: "his decision desk, shared by all lines, window `exec`; takes him through a sheet and records his words"]
 participant_6: [manager, {brand: claude}, host: home, role: "the eSharp manager, window `engineer`; carries what one group needs from another and orders the sheets to Majkee; holds no pen in this bed"]
@@ -43,8 +43,11 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
   - `lead.seswin|houston|trajectory|delta|epoch`
   - `audit.seswin|houston|astrobley` — "Can provide tests" in his roster is the leave to commission tests from `astrobley`.
   - `supervisorCli|houston|astrobley|oraculum`
-- **Where things run.** Every seat lives in `helloWorld` on the usual tmux server. What is built and tested lives only on the
-  server `tmux -L session-window` and in the scratch folder `~/.cache/nablarva/session-window/`.
+- **Where things run.** Every seat lives on the usual tmux server: this group in its own tmux session `seswin` (windows `lead`
+  and `audit`, one pane each), the shared seats in `helloWorld` (`supervisorCli`, `exec`, `engineer`). A window name carries no
+  dot — tmux reads a dot in a target as the pane separator; the nicks keep theirs. What is built and tested lives only on the
+  server `tmux -L session-window` and in the scratch folder `~/.cache/nablarva/session-window/`. The tree and its reasons are
+  in the decisions record, section 10.
 - **The sandbox release is proposed, not given.** Its wording (sheet 2, A3): "Inside its own tmux server and its own scratch
   folder (`~/.cache/nablarva/<line>/`), with harmless commands, the group may build, run and stop what it needs without asking —
   including typing into its own test panes there. Everything outside — `helloWorld`, any seat's pane, your daily shell, ia-sync
@@ -84,7 +87,9 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
    own look. Then one recommended smallest first version, which answers: where the chess clock sits; one helper per CLI or one
    dashboard; the helper as a window of its own, started from scratch, and what the old zsh helper keeps as a control window;
    how the helper knows which CLI it serves (the manager's view: from the launch recipe, not by reading the pane — the lead
-   may disagree); how the record grows (timers, poke status, context left per vendor); where a shared-terminal notice would show.
+   may disagree); how the record grows (timers, poke status, context left per vendor); where a shared-terminal notice would show;
+   which spare places the surface keeps, and where the controls of a shared terminal would sit — connect, attach, release,
+   its settings (decisions, section 10, point 6; the UI question is open for Majkee).
 6. **The gate.** One sheet takes the packet to Majkee for GO or STOP. Sample sessions are closed by the hand that started them.
 
 ## prompt-0 — lead.seswin
@@ -143,11 +148,12 @@ The draft chapter on cross-vendor seats would name this exchange `mail`; the par
 - **L12** — branch `core`, plain pull and push, never `pull --rebase`, never force. Commits by file name, never a folder.
 - **L20, L21** — what a try shows authorizes nothing; every activation and every delivery needs its own release.
 - **L4, L17** — typing into a pane is a recorded death as a way to deliver. Inside the sandbox it is covered by the sandbox
-  release only, and only for the group's own test panes. No seat's pane and no pane of `helloWorld` is ever a target of a try.
+  release only, and only for the group's own test panes. No seat's pane and no pane on the usual tmux server is ever a target of a try.
 - **L22** — `.majkee/` and `.hlm/` are never read or listed. The home of the helper there is Majkee's to name.
 - **The deployed status line is not changed:** `/home/hruzam/ia-sync/claude/hooks/statusline.sh`, `/home/hruzam/ia-sync/claude/settings.json`,
   the live `/home/hruzam/.claude/settings.json`. No `deploy.sh`.
-- **`helloWorld` is not rearranged:** no option, status row, pane or window of the usual tmux server is changed for a test.
+- **The seat sessions are not rearranged:** no option, status row, pane or window of `helloWorld` or `seswin` — nothing on the
+  usual tmux server — is changed for a test.
   Never `tmux kill-server`, on any server; the sandbox is stopped session by session, by name.
 - A trust or permission dialog on a sample is cleared by Majkee's hand only. A process nobody started stops the run.
 - ovitmugen (`/home/hruzam/ia-sync/zsh/session/ovitmugen.*`) is read as evidence and not changed; it stays a separate client.
@@ -165,13 +171,15 @@ The draft chapter on cross-vendor seats would name this exchange `mail`; the par
 ## References
 
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X.ledger.md` — the line ledger: open points, the chess clock pointers
-- `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.decisions.majkee.2026-11-22.md` — his words: sections 7 (E1, E2, E4, E6) and 8
+- `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.decisions.majkee.2026-11-22.md` — his words: sections 7 (E1, E2, E4, E6), 8 and 10 (the tmux tree)
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md` — A3 the release; B1 to B5
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/brief.session-window.2026-11-22.md` — the reader's brief; its section 7 is the read-first list
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X0-substrate/raw/` — the substrate; `goal-substrate.2026-11-13.md` (fields, widths), `handoff.senior-advice.trajectory.2026-11-14.md` (rule 3, the second status row)
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/raw/inventory.relay-x1-helpers.2026-11-23.md` — 46 helpers the relay bed made; what exists already
 - `/home/hruzam/unikuklatrix/nablarva/.dev/_backlog/termpanum-session-tracker/00_HANDOFF.md` — myShell's tracker proposal
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/goals/G10.friendly-reminder.md` — the chess clock, as defined
+- `/home/hruzam/unikuklatrix/nablarva/.dev/_backlog/skin-remote-controll/` — Majkee's linked ideas on the skin, UI and UX; read before the recommendation is drawn
+- `/home/hruzam/unikuklatrix/nablarva/docs/ARCHITECTURE.md`, line 386 — the organ `instarmux`, the skin: UI only if zsh and tmux are not enough
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.board.md` — the shared seats and what one group needs from another
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md` — locks L4, L12, L17, L20, L21, L22
 - `/home/hruzam/reposoma/raw.guides/bus/GUIDE.md` · `/home/hruzam/reposoma/raw.guides/status/GUIDE.md` — POINT, RETURN, VERDICT; the shape of STATUS
