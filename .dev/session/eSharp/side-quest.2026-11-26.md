@@ -3,7 +3,7 @@ kind: side-quest — a first collection by the eSharp manager, from its own work
 asked_by: Majkee, in his roster of 2026-11-26, section 0 ("collect syntax due session work experiences")
 by: the eSharp manager (trajectory · claude · home) · 2026-11-26
 also_asked: myShell (continuity) — request.myShell.side-quest.2026-11-26.md · seniorDev (opposition) — after her first RETURN
-state: first pass. Sections 3, 5 and 7 are my views and wait for an opposing read.
+state: second pass. Sections 3, 5 and 7 are my views; seniorDev's opposing read is folded in as section 8. myShell's part is not asked yet — her input row was not empty.
 ---
 
 # Side-quest — syntax, rosters, the supervisor seat, caches, the poke as mail, the RUNBOOK shape
@@ -117,3 +117,36 @@ the organ runs it, and the result is a file. No seat types into the terminal. Th
   Today that is three files: the board, the decisions record and your roster. They could be one.
 - **In each group's RUNBOOK:** one `head_note` line that names the protocol and points at that page.
 - Whether it becomes a named protocol is your gavel.
+
+## 8. The opposing read — seniorDev, 2026-11-26
+
+Her file: `_bus/05.seniorDev.return.md`. All three views hold with changes. What changes in mine:
+
+**On section 3 — the supervisor seat and the cost of the shape**
+- **Only one of my three things is shown.** The first RETURN supports one publisher. It says little for a standing cache
+  writer. And a head that reaches the limit of its permissions is first a reason to ask who authorized the act — not a reason
+  to pass it to a seat that can. I take that: "an act a head has no permission for" needs Majkee's word in the POINT, always.
+- **The benefit nobody has seen yet:** a supervisor that catches a conflict between two requests that are each valid alone.
+  One such case is recorded, or that benefit stays open.
+- **More tokens and faster progress are both guesses.** Keep the three counts, but against the same kind of accepted work done
+  by a head and an auditor alone: tokens including children and shared seats, with missing figures marked; the minutes a shared
+  seat really blocked a result; your sittings together with your active minutes; and the time to an accepted result, rework
+  included. Two busy groups alone say little.
+
+**On section 5 — the poke as mail for the shared terminal** — these are inputs for group 2's frame
+- **What exactly was approved?** An approval is bound to the asking seat, the exact content of the request, and that one
+  opening of the terminal. A changed request or a reopened terminal needs a new decision.
+- **A second ring for the same request** returns the decision that already exists.
+- **If a command may have run before its result was written,** the record says "outcome unknown", and it is reconciled before
+  any retry. Otherwise one approval can become two executions.
+
+**On section 7 — the shape for eSharp**
+- **A seam needs an owner.** If group 1 stops after group 2 has taken its field list — who tells group 2 whether it may rely
+  on that version? The page per arc names, for every seam: its owner, the evidence the receiving head accepts, and who brings
+  an unsettled dependency back to you.
+- **The board links your dated decision and the STATUS,** and keeps apart what you authorized and who can be reached today.
+- **Staggered starts stay provisional** until a second arc has earned the rule.
+
+**What she adds.** Follow one dissenting RETURN all the way to your decision sheet, and ask whether you saw the objection that
+could have changed your choice. Today's case is the first: her dissent on the sandbox is in the decisions record, section 11,
+and in my report to you, beside my own withdrawn view.
