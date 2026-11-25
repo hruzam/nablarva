@@ -18,10 +18,10 @@ gate: >
   No helper is built yet.
 participant_1: [lead.seswin, {brand: claude, model: set by Majkee at launch, effort: set by Majkee at launch}, host: home, role: "head and status_owner — the flight build; tmux session `seswin`, window `lead`; plans, writes the assignments, verifies, commits by file name; asks for every release"]
 participant_2: [audit.seswin, {brand: codex, model: set by Majkee at launch, effort: set by Majkee at launch}, host: home, role: "a fresh Oraculum session; tmux session `seswin`, window `audit`; thinks with the lead and criticises honestly while the work is conceptual; witness of the packet when the sandbox part arrives; writes no code herself"]
-participant_3: [supervisorCli, {brand: codex, model: gpt-6.1-sol, effort: max}, host: home, role: "one fresh seat shared with the relay line and, later, with group 2; window `supervisorCli` in `helloWorld`; pushes on a head's poke, runs bounded work a POINT names, makes caches on request"]   # model and effort as his roster names them
+participant_3: [supervisorCli, {brand: codex, model: gpt-6.1-sol, effort: max}, host: home, role: "one fresh seat shared with the relay line and, later, with group 2; window `supervisorCli` in `helloWorld`; pushes on a head's poke, runs bounded work a POINT names, makes caches on request"]   # his roster says effort max; its footer showed high on 2026-11-26
 participant_4: [majkee, {brand: human}, host: home, role: "every release; starts the seats and the sample sessions; trust and permission dialogs; GO or STOP"]
 participant_5: [exec, {brand: codex}, host: home, role: "his decision desk, shared by all lines, window `exec`; takes him through a sheet and records his words"]
-participant_6: [manager, {brand: claude}, host: home, role: "the eSharp manager, window `engineer`; carries what one group needs from another and orders the sheets to Majkee; holds no pen in this bed"]
+participant_6: [manager, {brand: claude}, host: home, role: "the eSharp manager; session `helloWorld`, window `eSharp`; carries what one group needs from another and orders the sheets to Majkee; holds no pen in this bed"]
 status_owner: lead.seswin
 schema_note: runbook GUIDE verified 2026-11-19 · status GUIDE verified 2026-09-05 · bus file-poke chapter verified 2026-11-19, provisional
 ```
@@ -44,10 +44,13 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
   - `audit.seswin|houston|astrobley` — "Can provide tests" in his roster is the leave to commission tests from `astrobley`.
   - `supervisorCli|houston|astrobley|oraculum`
 - **Where things run.** Every seat lives on the usual tmux server: this group in its own tmux session `seswin` (windows `lead`
-  and `audit`, one pane each), the shared seats in `helloWorld` (`supervisorCli`, `exec`, `engineer`). A window name carries no
-  dot — tmux reads a dot in a target as the pane separator; the nicks keep theirs. What is built and tested lives only on the
-  server `tmux -L session-window` and in the scratch folder `~/.cache/nablarva/session-window/`. The tree and its reasons are
-  in the decisions record, section 10.
+  and `audit`, one pane each), the shared seats in `helloWorld` (`supervisorCli`, `exec`, `eSharp`). A window name carries no
+  dot — tmux reads a dot in a target as the pane separator; the nicks keep theirs. The tree and its reasons are in the
+  decisions record, section 10; Majkee's own map is in his roster.
+- **Where things are tried is open.** This frame says a separate server, `tmux -L session-window`. Majkee has since prepared a
+  tmux session `sandbox` on the usual server, with windows for the two samples and one for this group. Which of the two holds
+  is asked of him (decisions, section 11), and the release wording follows his answer. Until then neither is used. The scratch
+  folder is `~/.cache/nablarva/session-window/` either way.
 - **The sandbox release is proposed, not given.** Its wording (sheet 2, A3): "Inside its own tmux server and its own scratch
   folder (`~/.cache/nablarva/<line>/`), with harmless commands, the group may build, run and stop what it needs without asking —
   including typing into its own test panes there. Everything outside — `helloWorld`, any seat's pane, your daily shell, ia-sync
@@ -57,7 +60,8 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
   those are the lead's own call (`/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/raw/decision.majkee.pokes-and-continuity.2026-11-22.md`).
 - **Never into Git** — this repository's GitHub remote is public: caches, raw pane captures, transcripts, raw status-line input
   records, personal notes. They stay in the scratch folder. The bed gets field names, types, cleaned examples and a pointer line.
-- **Caches** (sheet 2, B2): made by `supervisorCli` on request, at `~/.cache/nablarva/session-window/CACHE.<posture>.md`. A cache
+- **Caches** (sheet 2, B2): made by `supervisorCli` on request, at `~/.cache/nablarva/seswin/CACHE.<window name>.md` — named by the tmux window,
+  as his roster asks. A cache
   is never authority — STATUS wins — and it does not travel to another host.
 - **Text that must be read or copied is written whole and wrapped, never cut at the pane edge** (his E6). Every route is checked for it.
 - **The seam to group 2 is files only.** This group writes the one list of status fields; group 2 reads it for its own status
@@ -105,7 +109,7 @@ You may spawn houston, trajectory, delta and epoch, and you do not work alone: l
 Nothing is built, started or typed on the sandbox server until Majkee has given the sandbox release in his own words; you ask
 for it on one sheet through the exec desk, after audit.seswin has read the sheet. Coordination pokes are yours to send.
 Nothing private goes into Git — the remote is public. Never read .majkee/ or .hlm/.
-What you need from another group, or it from you, goes through the eSharp manager (window `engineer`): a file and one pointer line.
+What you need from another group, or it from you, goes through the eSharp manager (session `helloWorld`, window `eSharp`): a file and one pointer line.
 Done when Majkee has recorded GO or STOP on the packet.
 ```
 
@@ -171,7 +175,7 @@ The draft chapter on cross-vendor seats would name this exchange `mail`; the par
 ## References
 
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X.ledger.md` — the line ledger: open points, the chess clock pointers
-- `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.decisions.majkee.2026-11-22.md` — his words: sections 7 (E1, E2, E4, E6), 8 and 10 (the tmux tree)
+- `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.decisions.majkee.2026-11-22.md` — his words: sections 7 (E1, E2, E4, E6), 8, 10 (the tmux tree) and 11 (the sandbox question)
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md` — A3 the release; B1 to B5
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/brief.session-window.2026-11-22.md` — the reader's brief; its section 7 is the read-first list
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X0-substrate/raw/` — the substrate; `goal-substrate.2026-11-13.md` (fields, widths), `handoff.senior-advice.trajectory.2026-11-14.md` (rule 3, the second status row)

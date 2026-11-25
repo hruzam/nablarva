@@ -2,7 +2,7 @@
 kind: operator words, verbatim — the experimental shape `eSharp`. Noncanonical record; it opens no session and releases nothing.
 from: majkee, typed in the engineer session (claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) on home, 2026-11-22
 recorded_by: trajectory, in that session — so that his words survive the clear of the session
-continued: 2026-11-25 — sections 7 to 10 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting, his six points and the tmux tree)
+continued: 2026-11-25 and 2026-11-26 — sections 7 to 11 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting, his six points and the tmux tree, the name and his roster)
 ---
 
 # eSharp — what Majkee said, what I answered, what he agreed
@@ -261,11 +261,70 @@ server tmux -L terminal-workspace    group 2's sandbox — later
   `.dev/_backlog/skin-remote-controll/` and in `docs/ARCHITECTURE.md` (the organ `instarmux`, the skin). Both are now in group 1's
   RUNBOOK as inputs.
 
+## 11. The name, the two partners, and his roster with the tmux map
+
+Typed at the computer on 2026-11-25 at 23:41 UTC (2026-11-26, shortly before one in the night, his time); copied by script
+from the session transcript.
+
+**Majkee:**
+> 0. `stridularium` , i know about contradiction, please send `delta` to overwrite.
+>
+> ---
+>
+> 1. updated roster, your closest partners:
+>  - `$36 | 2 seniorDev @58 | %60`,
+>  - `$36 | 8 supervisorCli @73 | %75`
+> are running already. You may brief them.
+>
+> ---
+>
+> 2. other tmux sessions all already also available. I need only attach them. So i'll wake them on your request.
+
+His updated roster — `eSharp/roster-proposal.eSharp.md` — came with it. It holds the tmux map he built, a side-quest for the
+manager with myShell, and this, in his words: "accepting points as was proposed in text bellow" — the four rules of section 10.
+
+**My reading — mine, not his words.**
+- **0. The name.** The word is `stridularium`. Lock L24 of 2026-10-25 had retired it as a cultural name, "replacement name
+  pending"; that is the contradiction he knows. On his word a `delta` child wrote lock L25, which withdraws L24, and changed the
+  four places that repeated the retirement: `flag.md`, `docs/ARCHITECTURE.md` (organ table; one open item removed),
+  `PROJECT-DESIGN.md` (heading 3.8) and `docs/organs/stridularium.md`. L24's own text stays in place, as the ledger does with
+  every amended lock. Records, patches and evidence of the closed beds were not touched.
+- **1. The two partners.** `seniorDev` (pane `%60`, Codex, Oraculum profile) is the manager's thinking partner of the other
+  brand — his roster, section 4.2. `supervisorCli` (pane `%75`, Codex) is the shared seat. Both are briefed by a POINT and one
+  pointer line: `eSharp/_bus/02.manager.point.md`, `eSharp/_bus/03.manager.point.md`.
+- **2. The other sessions.** `seswin` and `terwor` exist with a shell in each window; he starts the CLIs when I ask.
+- **From the roster.** The manager lives at `helloWorld`, window `eSharp`, pane `%77` — the old pane `%58` is gone. A cache is
+  named by its tmux window (`CACHE.<window name>.md`). Group 2's auditor is the `flight` build on Fable, not an Oraculum build.
+  The relay lead keeps its own auditor as its partner of the other brand.
+- **The side-quest** (roster, section 0) is accepted: syntax that seats really understand, what building rosters taught, whether
+  the supervisor seat earns its place, where a cache should hang, the poke as a kind of mail, and the shape of a RUNBOOK for
+  this way of working. A first collection is `eSharp/side-quest.2026-11-26.md`; myShell and `seniorDev` are asked for theirs.
+
+**One thing I ask back — the sandbox.** His map has a tmux session `sandbox` on the usual server (windows `codex-sample`,
+`claude-sample`, `session`, `terminal`). My release text and group 1's gate say "a separate tmux server". The two cannot both
+hold, because the sample CLIs and the things tried on them must sit together. My view: use his `sandbox` session.
+- Tests then run under his real tmux settings; a new server would start without the comfort settings he loaded by hand.
+- Every pane id is unique on one server. A second server counts again from `%0`, and a command that forgets its `-L` flag would
+  land on the usual server.
+- His views work there as they are.
+- The cost: the wall becomes a rule. A wrong global option or a kill would reach every seat. So: only options of the session
+  `sandbox` and its windows; targets only by the sandbox's own pane ids; never `kill-server`.
+
+The release, reworded for it — **proposed, not given**:
+
+> Inside the tmux session `sandbox` on the usual server — its panes, and panes made there — and the scratch folder
+> `~/.cache/nablarva/<line>/`, with harmless commands, the group may build, run and stop what it needs without asking, including
+> typing into the sandbox's own panes. It sets only options of the session `sandbox` and its windows: nothing global, nothing
+> on the server, no other session. Everything outside — every seat's pane, `helloWorld`, `seswin`, `terwor`, your daily shell,
+> ia-sync and its deploy, office — returns to you. The sample CLIs in `codex-sample` and `claude-sample` are started by you.
+
+With his yes, group 1's gate would read "in the sandbox tmux session" where it now says "on a separate tmux server".
+
 ## Not decided here
 
-- The sandbox release for group 1 (sheet 2, A3): worded, not given.
+- The sandbox: his `sandbox` session or a separate tmux server, and the release for it (section 11) — worded, not given.
 - The rule for what may go to the public remote, and how caches travel between hosts — his research; the ignore rule he answers in sheet 2.
-- The organ of the terminal line (O1); whether the phone organ's name is codified (section 10, point 1).
+- The organ of the terminal line (O1).
 - The UI of the helper surface — spare places, controls of a shared terminal (section 10, point 6).
-- Group 2's sessions and its start; the old terminal bed is closed by the new lead.
-- Whether `eSharp` becomes a named protocol in the RUNBOOK guide — his gavel, later.
+- Group 2's start; the old terminal bed is closed by the new lead.
+- Whether `eSharp` becomes a named protocol in the RUNBOOK guide — his gavel, later; the side-quest gathers what it would need.

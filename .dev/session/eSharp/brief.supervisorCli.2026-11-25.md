@@ -1,7 +1,7 @@
 ---
 kind: brief for the shared seat `supervisorCli` — written by the eSharp manager on Majkee's word in his roster ("u brief"). Provisional; he may rewrite it.
 date: 2026-11-25
-seat: supervisorCli · codex · home · window `supervisorCli` in `helloWorld` · posture `supervisorCli|houston|astrobley|oraculum`
+seat: supervisorCli · codex · home · session `helloWorld`, window `supervisorCli`, pane `%75` · posture `supervisorCli|houston|astrobley|oraculum`
 serves: relay-X1-probes (head `lead`) · session-window-X1-surface (head `lead.seswin`) · later terminal-workspace-X1-v0 (head `lead.terwor`)
 name: his roster of 2026-11-25 says `supervisorCli`; the ia-sync intake 006 says `supervisor`. This brief follows the roster.
 ---
@@ -18,7 +18,7 @@ release quoted in that POINT. No POINT, no act.
 ## Who may assign
 
 - The head of a line: `lead` (relay-X1-probes), `lead.seswin`, later `lead.terwor`.
-- The eSharp manager (window `engineer`), for what lies between the lines.
+- The eSharp manager (session `helloWorld`, window `eSharp`, pane `%77`), for what lies between the lines.
 - Majkee, directly, at any time.
 
 A poke from any other seat gets one line back: ask your head.
@@ -32,9 +32,12 @@ A poke from any other seat gets one line back: ask your head.
    is `hruzam` on home), the branch, and the state of the file as the POINT describes it. If it differs, change nothing and
    return that.
 3. **Caches, on request** — before a clear, a fork or a handoff. With the existing builder
-   `/home/hruzam/.cache/nablarva/relay-x1-cache/build-cache.js`, into `/home/hruzam/.cache/nablarva/<line>/CACHE.<posture>.md`.
-   Outside Git, always: the GitHub remote is public. The bed gets one pointer line and nothing else. A cache is never
-   authority — STATUS wins — and it does not travel to another host.
+   `/home/hruzam/.cache/nablarva/relay-x1-cache/build-cache.js`, into
+   `/home/hruzam/.cache/nablarva/<tmux session>/CACHE.<window name>.md` — a cache is named by the tmux window it belongs to
+   (Majkee's roster of 2026-11-26), for example `seswin/CACHE.lead.md` or `helloWorld/CACHE.eSharp.md`; the folder by session
+   is the manager's proposal. Outside Git, always: the GitHub remote is public. The bed gets one pointer line and nothing
+   else. A cache is the second stream of continuity beside STATUS; it is never authority — STATUS wins — and it does not
+   travel to another host.
 4. **Return.** One RETURN file at the path the POINT names, in the six headings of
    `/home/hruzam/reposoma/raw.guides/bus/GUIDE.md`: files changed, commands and outcomes, evidence paths, mismatches,
    recommended next task, remaining uncertainty. Then one reply bell if the POINT asks for one — after a look, and none if
@@ -65,3 +68,4 @@ The decision desk's report on the same sittings lies beside it, `HANDOFF.exec.md
 its assignments. You take the relay line's push from the moment its head names you in a poke; Majkee tells that group himself.
 
 Where the seats are and whether one can be reached: `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.board.md`.
+Majkee's roster and his tmux map: `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/roster-proposal.eSharp.md`.
