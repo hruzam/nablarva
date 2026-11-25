@@ -1,8 +1,8 @@
-updated: 2026-11-25 23:50 UTC
+updated: 2026-11-25 23:54 UTC
 writer: lead.seswin · claude
 host: home · hruzam
 worktree: >-
-  /home/hruzam/unikuklatrix/nablarva · core · HEAD 5f22248 when written (the commit with this snapshot follows) · dirty, not
+  /home/hruzam/unikuklatrix/nablarva · core · HEAD 3a9b91b when written (the commit with this snapshot follows) · dirty, not
   this bed's: .dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md and .dev/session/eSharp/roster-proposal.eSharp.md
   (Majkee's edits), nano.2280604.save (untracked, his)
 gate: >
@@ -16,9 +16,10 @@ checkpoint: >-
   (trajectory · claude; session `helloWorld`, window `eSharp`), not by the lead. Majkee built the tmux session `seswin` on
   2026-11-26: window `lead` (pane %80) and window `audit` (pane %81) hold a shell each and no CLI yet. The shared
   `supervisorCli` runs in `helloWorld` (pane %75) and has its brief. The predecessor bed is closed for the record
-  (/home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X0-substrate/STATUS.md). Where things are tried, and the
-  release for it, are asked of Majkee and not given
-  (/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.decisions.majkee.2026-11-22.md, section 11).
+  (/home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X0-substrate/STATUS.md). The sandbox release is asked of
+  Majkee and not given (/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.decisions.majkee.2026-11-22.md, section 11).
+  The manager's partner of the other brand has read this frame; her changes are in the RUNBOOK
+  (/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/_bus/03.seniorDev.return.md).
 in_flight: none
 recovery_probe: >-
   Read-only, three looks.
@@ -30,8 +31,8 @@ recovery_probe: >-
   `tmux list-panes -s -t sandbox -F '#{window_name} #{pane_current_command}'` shows only `zsh`, while nothing is released.
   Anything else without a release file in raw/ means something was started without leave: touch nothing and tell Majkee.
 holds:
-  - Where things are tried is not settled and its release is not given. No `tmux -L session-window` server, nothing run or
-    typed in the tmux session `sandbox`, no sample CLI, no capture, until Majkee's yes is in a decision file in this bed's raw/.
+  - The sandbox release is not given. No `tmux -L session-window` server, nothing run or typed in his tmux session
+    `sandbox`, no sample CLI, no capture, until Majkee's yes is in a decision file in this bed's raw/.
   - No seat's pane and no pane on the usual tmux server is ever a target of a try. The deployed status line, ia-sync and the
     live Claude settings are not changed; no deploy.
   - The GitHub remote is public. No cache, capture, transcript or raw status-line record goes into Git.

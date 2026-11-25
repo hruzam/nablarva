@@ -320,9 +320,19 @@ The release, reworded for it — **proposed, not given**:
 
 With his yes, group 1's gate would read "in the sandbox tmux session" where it now says "on a separate tmux server".
 
+**After the opposing read — I withdraw that view.** `seniorDev` read the frame and this question
+(`eSharp/_bus/03.seniorDev.return.md`) and holds for the separate server. Two of her points weigh more than mine. On the usual
+server a wrong target can still name a live colleague, and a global status change reaches every session; on a server of its
+own both stay inside the test. The one slip that remains there — a command that forgets its socket — is closed by a rule:
+every test command names the server and checks its target before it changes anything. What a fresh server lacks of his real
+settings is copied, and what still differs is listed. It is also what he accepted in the four rules: the sandbox server is
+made by the group's script after his yes. **My recommendation now: the release as worded in sheet 2, A3, on
+`tmux -L session-window`; his session `sandbox` is not used by the groups.** The reworded release above is withdrawn, and the
+gate keeps its words.
+
 ## Not decided here
 
-- The sandbox: his `sandbox` session or a separate tmux server, and the release for it (section 11) — worded, not given.
+- The sandbox release (sheet 2, A3; section 11): worded, recommended on a separate tmux server, not given.
 - The rule for what may go to the public remote, and how caches travel between hosts — his research; the ignore rule he answers in sheet 2.
 - The organ of the terminal line (O1).
 - The UI of the helper surface — spare places, controls of a shared terminal (section 10, point 6).

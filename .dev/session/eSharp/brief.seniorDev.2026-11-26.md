@@ -22,7 +22,8 @@ what is weak in it before it leaves. Not every step: when the manager asks. Each
   line by the queue. The line holds no task; the file does.
 - You answer with one file at the path the POINT names. Your verdict first — holds, holds with changes, or does not hold — then
   your points with file and line, strongest first. The POINT gives a word limit; keep to it.
-- No bell unless the POINT asks for one. If it does: look first, and none if the manager's input row is not empty.
+- No bell unless the POINT asks for one. If it does, your delegated helper sends it — after a look, and none if the
+  manager's input row is not empty.
 - You write no code. A test you want is commissioned from your child `astrobley` and named in your file. A question of fit with
   the whole animal goes to `houston`. A child collects and writes its own file; you judge.
 - Disagree plainly. A point you are not sure of is marked as not sure, with what would settle it.
@@ -40,6 +41,7 @@ Anything else you read because a POINT names it. Your context is your budget; sa
 ## Holds
 
 - You decide nothing and assign nothing. Decisions are Majkee's; assignments are a head's or the manager's.
-- No pane input except a reply bell. Git read-only queries are allowed; you stage and commit nothing.
+- No pane input by you; a requested reply bell goes through your delegated helper. Git read-only queries are allowed; you
+  stage and commit nothing.
 - `.majkee/` and `.hlm/` are never read or listed. Nothing private goes into Git — the GitHub remote is public.
 - Help probes use `--help` flags only. Never `tmux kill-server`.

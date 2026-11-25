@@ -47,10 +47,12 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
   and `audit`, one pane each), the shared seats in `helloWorld` (`supervisorCli`, `exec`, `eSharp`). A window name carries no
   dot — tmux reads a dot in a target as the pane separator; the nicks keep theirs. The tree and its reasons are in the
   decisions record, section 10; Majkee's own map is in his roster.
-- **Where things are tried is open.** This frame says a separate server, `tmux -L session-window`. Majkee has since prepared a
-  tmux session `sandbox` on the usual server, with windows for the two samples and one for this group. Which of the two holds
-  is asked of him (decisions, section 11), and the release wording follows his answer. Until then neither is used. The scratch
-  folder is `~/.cache/nablarva/session-window/` either way.
+- **Where things are tried.** On a separate server, `tmux -L session-window`, made by the group's prepared script after
+  Majkee's yes — the third of the four rules he accepted. He has also prepared a tmux session `sandbox` on the usual server;
+  the group does not use it unless he says so. The manager leaned to it and withdrew that after the opposing read
+  (`eSharp/_bus/03.seniorDev.return.md`): on the usual server a wrong target can name a live seat, and a global option reaches
+  every session. What a fresh server lacks of his real tmux settings is copied into the test setup, and every difference left
+  is listed in the packet. The scratch folder is `~/.cache/nablarva/session-window/`. His word is asked: decisions, section 11.
 - **The sandbox release is proposed, not given.** Its wording (sheet 2, A3): "Inside its own tmux server and its own scratch
   folder (`~/.cache/nablarva/<line>/`), with harmless commands, the group may build, run and stop what it needs without asking —
   including typing into its own test panes there. Everything outside — `helloWorld`, any seat's pane, your daily shell, ia-sync
@@ -77,23 +79,33 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
    directory, context left, session name, session id, transcript path (his order), then the slots he wants it to grow into —
    clock and timers, poke status, alerts. For each: where Claude gives it, where Codex gives it, how fresh it is, known or not
    known. Sources, by reading: the deployed `/home/hruzam/ia-sync/claude/hooks/statusline.sh`, the official documentation with
-   its date (an `epoch` spawn), and for Codex what a session shows without anything typed into it.
+   its date (an `epoch` spawn), and for Codex what a session shows without anything typed into it. A row read from
+   documentation or from a script is marked provisional until a sample has shown, separately, that the field is received and
+   that it is displayed.
 2. **Read back, then ask.** One sheet through the exec desk: the plan read back, the sandbox release as worded above, and the
    script that starts the sample sessions. `audit.seswin` reads the sheet first, once.
 3. **Capture what is really received** — needs the release. Majkee starts one sample Claude session and one sample Codex session
    from the prepared script, on the sandbox server. The Claude sample gets its own settings file from the scratch folder
    (`claude --settings <file>`), whose status-line command also writes its input there; the deployed hook is not touched.
-   The Codex sample is read only.
-4. **The three routes side by side** — needs the release. The same checks for each: what it shows in a narrow and in a wide
-   pane, and whether long text is wrapped or cut; whether `capture-pane` inspection still reads the intended pane; whether one
-   pointer line still reaches the intended pane; whether tmux marks the agent's window as busy; how it refreshes and what that costs.
+   The Codex sample is read only: nothing is typed into it, and what it would receive stays NOT RUN.
+4. **The three routes side by side** — needs the release. Before the first check the lead writes down the two everyday paths —
+   how a seat inspects a pane and how it sends a pointer line, by name and by id — the pane each check expects to reach, and
+   two fixed widths. The same checks for each route: what it shows at both widths, and whether long text is wrapped or cut;
+   which pane the inspection really read; which pane the pointer line really reached — sent to the Claude sample or to a
+   disposable shell, never to the Codex sample; which window tmux marked as active; how it refreshes and what that costs.
+   For the metadata pane the checks are repeated while that pane holds the focus and prints fresh output and the sample is
+   idle. A route that reaches the wrong pane is out for the first version. If every route fails a required check, STOP is a
+   useful result. Every command names the test server and checks the server and its own target together before it changes anything.
 5. **The packet.** `packet.status-surface.<date>.md`: one row per check — PASS, FAIL or NOT RUN — written by the witness from her
-   own look. Then one recommended smallest first version, which answers: where the chess clock sits; one helper per CLI or one
-   dashboard; the helper as a window of its own, started from scratch, and what the old zsh helper keeps as a control window;
+   own look, before she reads the lead's account. The recommendation is the lead's: it cites her rows, and she does not sign
+   it. One recommended smallest first version, which answers: where the chess clock would sit — its place only; its timing and
+   controls are not tried here; the helper as a window of its own, started from scratch, and what the old zsh helper keeps as a control window;
    how the helper knows which CLI it serves (the manager's view: from the launch recipe, not by reading the pane — the lead
    may disagree); how the record grows (timers, poke status, context left per vendor); where a shared-terminal notice would show;
    which spare places the surface keeps, and where the controls of a shared terminal would sit — connect, attach, release,
-   its settings (decisions, section 10, point 6; the UI question is open for Majkee).
+   its settings (decisions, section 10, point 6; the UI question is open for Majkee). One helper per CLI or one dashboard is
+   not settled by this packet — no check here keeps two independent views open side by side — so the sheet names it as open,
+   with the trial that would settle it.
 6. **The gate.** One sheet takes the packet to Majkee for GO or STOP. Sample sessions are closed by the hand that started them.
 
 ## prompt-0 — lead.seswin
