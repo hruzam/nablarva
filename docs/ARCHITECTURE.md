@@ -381,7 +381,7 @@ it off the machine surface" (said: AGENTS.md, Standing rules).
 | **ovitmugen** | tmux frame and session view manager (said: PROJECT-DESIGN §3.2); view/layout + protected process lifetime (locked: L17) | code `~/ia-sync/zsh/session/ovitmugen.*` (observed); whether `zsh/session/` stays its code home is open (said: majkee R9-1 N11) · body: interim in PROJECT-DESIGN §3.2 (said: majkee Q2); body home `unknown:` |
 | **termpanum** | observation lab (locked: L13, name); the read-only ear (said: PROJECT-DESIGN §3.6) | proposed `toolbox/termpanum/` (said: PROJECT-DESIGN §3.6) — not created |
 | **stridulatrix** | broker and CLI (locked: L13) | `unknown:` (said: PROJECT-DESIGN §3.7) · design `../meshup/room.brokered-journal.2026-07-31/` |
-| **stridularium** | the phone app, the human's door (locked: L13); cultural name retired (locked: L24); phone organ, body and existing paths preserved; replacement name pending; all other L13 provisions remain in force | body [`organs/stridularium.md`](organs/stridularium.md) · code home proposed `stridularium/{android,host}` (said: same) |
+| **stridularium** | the phone app, the human's door (locked: L13); the name stays and also names the mobile application itself (locked: L25, which withdraws L24's retirement); all other L13 provisions remain in force | body [`organs/stridularium.md`](organs/stridularium.md) · code home proposed `stridularium/{android,host}` (said: same) |
 | **muticula** | file-backed concurrency coordination in one checkout (said: PROJECT-DESIGN §3.5) | `unknown:` |
 | **instarmux** | the skin — UI only if zsh + tmux + the simplified way are not enough; Slint a candidate under it (said: majkee, 2026-10-24, X0 organs §7; deck X0-6) | `unknown:` |
 
@@ -488,7 +488,6 @@ is said: nablarva.v0 against the cited locks. Detail is in the X3 arc,
 - the operational VIST admission receiver
 - the OUTPUT(A) ↔ stridularium boundary note (L8)
 - the configuration mechanism for the selected substrate homes (§4.8; said: majkee, 2026-10-24, architecture-X0 deck X0-4)
-- stridularium: cultural name retired (locked: L24); phone organ, body and existing paths preserved; replacement name pending; all other L13 provisions remain in force. This document renames nothing.
 
 ## Sources and pins
 

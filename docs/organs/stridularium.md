@@ -9,7 +9,7 @@ created: 2026-10-02 · oraculum (journal 2026-10-01 §1 item 7 · TASK 2) · ske
 
 # Phone organ — design wrapper
 
-The cultural name “stridularium” is retired under L24; this existing path remains.
+The name “stridularium” stays: L25 withdraws its retirement under L24. It names the organ and the mobile application itself.
 
 ## What it is (one paragraph)
 
@@ -24,7 +24,7 @@ and receives output — nothing more by design; never Android functions outside 
 
 ## Names
 
-Historical names: stridularium (L13; cultural name retired by L24) and k0k0nV3R /
+Name: stridularium (L13; kept by L25, which withdraws L24). Historical name: k0k0nV3R /
 coconvergence (Cartan's working name, 2026-09-29). Existing registry paths remain.
 The earlier `stridularium/{android,host}` placement was a native-app proposal, not
 an implemented tree; the closed session 03 does not own the current browser pilot.

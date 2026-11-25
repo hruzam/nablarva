@@ -281,6 +281,13 @@
   as a cultural name. The phone organ, its body and existing paths remain; replacement name
   pending. All other L13 provisions remain in force.
 
+- **L25 · L24 withdrawn — the name stays** (majkee, 2026-11-26): “stridularium” is the one word for
+  the phone organ — one organ with two pipes, a backend on the computer and a frontend on the
+  phone — and the name of the mobile application itself. L24's retirement and its “replacement
+  name pending” no longer hold; L24's text stays in place. His words: “`stridularium` , i know about
+  contradiction, please send `delta` to overwrite.” Record: `eSharp.decisions.majkee.2026-11-22.md`,
+  sections 7 (O2), 10 and 11. All other L13 provisions remain in force.
+
 ## Named deferral thresholds (folded from abolished plan.md)
 
 - Domain seat: earned when a build-task class repeats 3× (not before)
@@ -345,3 +352,4 @@ seed §open-6 = docket 6.)
 - L12's seal wording "`.hlm/` = operator vault" → read as covering every operator vault by L22 (majkee, 2026-10-23); text stays in place.
 - L12's bare "sync.sh / deploy.sh / SYNC_DISCIPLINE.md retired" → qualified to the nablarva.devenv trio by L23 (majkee, 2026-10-23).
 - L13's cultural name “stridularium” for the phone app → retired by L24 (majkee, 2026-10-25); the phone organ, body, existing paths and all other L13 provisions remain.
+- L24's retirement of the cultural name “stridularium” → withdrawn by L25 (majkee, 2026-11-26); the name stays for the phone organ and names the mobile application itself; L24's text stays in place.
