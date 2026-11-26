@@ -1,7 +1,7 @@
 # STATUS: relay-X2-research
 
 ```yaml
-updated: 2026-11-26 04:22 UTC
+updated: 2026-11-26 04:30 UTC
 writer: lead · flight · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8 (Fable 5.2, effort high) · tmux pane %70, window `lead`, session group helloWorld · woken by Majkee on 2026-11-26 with the cold-start card
 host: home (hruzam)
 worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD a48c313 when this was written, level with the local origin/core ref (no fetch was made) · other sessions commit here; dirty paths that are not this bed's — .dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md, .dev/session/eSharp/roster-proposal.eSharp.md, nano.2280604.save (untracked, repository root)
@@ -47,8 +47,15 @@ checkpoint: >
   lead's DRAFT 1 of the verdict to be wrong on one point: its "no relay-X3-pty" repeated the Termpanum brief's rule
   "stop building the tap when hooks cover every state", which Majkee struck on 2026-10-02 (the record:
   meshup/lab.observability-probes.2026-08-01/DESIGN.md, line 14). DRAFT 1 was never committed. research-verdict.md
-  is now DRAFT 2 — ADOPT, ranked before REFUSE and REINVENT, the floor of D1 kept, both chapters narrowed and not
-  cancelled. It is not opposed, not committed as the verdict, and not the verdict.
+  was then DRAFT 2 — ADOPT with a delta of three things to make — committed as a draft in d95f6d9 (cycle 08,
+  ACCEPT; remote at d95f6d9 at 04:23 UTC). Cycle 07 is closed (ACCEPT): the auditor opposed DRAFT 2 with REVISE and
+  ranked REFUSE first — the bridge that runs completed every assignment without a courier, the draft's delta
+  answered failures nobody had seen in routine use, and its §6 and §10 designed an architecture. The lead checked
+  that against the sources and takes it: of the five lacks the delta was built on, none is a failure of routine
+  use. research-verdict.md is now the VERDICT text of step 5, third version: REFUSE, then ADOPT, then REINVENT; a
+  falsifier counted in the poke logs; the cost of REFUSE named (the provisional file-poke's debt, goal G7, and its
+  carrier a vendor door that D1 parks) as a decision owed by Majkee. The auditor has not read this version. It is
+  on disk and goes to the controller for the commit that step 5 names (POINT 09).
   A notice from the eSharp manager (its _bus/11), addressed
   to the head of relay-X1-probes, reached this window at about 04:02 UTC; read, it changes nothing in this bed.
 routing: >
@@ -80,13 +87,14 @@ harvest_rows: >
   lock. U23 adopted — a present state is looked at in the same turn, or carries its observation time and the pending check.
 in_flight: |
   as of the `updated:` time above; raw/pokes.log.md has what the carrier answered and when each watch ends
-  - POINT 07 → auditor: opposition to research-verdict.md (DRAFT 2) — ranking, weakest claim, sources, locks,
-    conditions and falsifier, what is missing; PASS or REVISE; 30 minutes at most.
-  - POINT 08 → controller: one checkpoint commit of eleven named paths (cycles 05 and 06, both maps, the refresh
-    pass, the auditor's table, the tmux facts, the draft verdict as a draft) and one push.
+  - POINT 09 → controller: the commit of the verdict (six named paths) and one push; it reports the commit's time
+    and the file's SHA-256. This is the commit of RUNBOOK step 5.
   - the ask to Majkee on the brief (raw/brief.blind.relay-research.corrections.2026-11-26.md, "What Majkee is
     asked"), put in the lead's pane at 04:04 UTC; his answer goes verbatim into raw/decision.majkee.brief.2026-11-26.md.
-  - no child of the lead is running.
+    Until the brief is sent there is no blind answer and no list of differences.
+  - the auditor's context: 18% left at 04:25 UTC. One more check of it is owed (step 6). Whether it compacts or
+    another seat takes the check is Majkee's to grant; put to him with the report of this cycle.
+  - no child of the lead is running; no POINT is open at the auditor or the exec desk.
 recovery_probe: |
   commands (read-only):
     sed -n '1,12p' /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/STATUS.md
@@ -112,9 +120,9 @@ holds: >
   The blind answer is not read before research-verdict.md is committed. The seats seniorDev, myShell, eSharp and
   supervisorCli are not poked.
 next: >
-  Majkee's answer on the brief, recorded; then the brief goes out by the hand he names. VERDICTs on RETURNs 07 and
-  08. The auditor's opposition taken into the verdict; the commit whose status line no longer says DRAFT is the one
-  that counts for step 5 — only after it may a blind answer be read. Then the differences, the auditor's check of
-  verdict and differences, and the one ask to Majkee: GO or STOP.
-expected: raw/decision.majkee.brief.2026-11-26.md; _bus/07 and _bus/08 with RETURN and VERDICT; research-verdict.md past DRAFT.
+  VERDICT on RETURN 09. Majkee's answer on the brief, recorded; the brief goes out by the hand he names; the answer
+  is filed verbatim and read by the lead only now that the verdict is committed. Then the list of differences —
+  listed, never merged — the auditor's check of verdict and differences (step 6), and the one ask to Majkee: GO or
+  STOP. If he says no blind answer is to be waited for, the step-6 check runs on the verdict alone.
+expected: _bus/09 with RETURN and VERDICT; raw/decision.majkee.brief.2026-11-26.md; the blind answer in raw/; raw/differences.*.md; raw/decision.majkee.*.md with GO or STOP.
 ```
