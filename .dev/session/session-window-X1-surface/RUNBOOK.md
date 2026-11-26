@@ -3,6 +3,8 @@
 > A thin frame, written on 2026-11-25 by the eSharp manager at Majkee's request, so that the lead of group 1 does not start from
 > an empty page. The lead owns this file from the moment Majkee gives it the pen, and may change it until it has read the plan
 > back to him. From then on it is fixed. Where things stand is in `STATUS.md`, never here.
+> The pen passed to lead.seswin on 2026-11-26 (`raw/decision.majkee.pen.2026-11-26.md`); its changes before the read-back
+> answer its first read of the frame (`eSharp/_bus/07.lead.seswin.return.md`) and the manager's reply (`eSharp/_bus/09.manager.point.md`).
 
 ```yaml
 goal: >
@@ -16,8 +18,8 @@ gate: >
   status row · metadata pane) tried side by side on a separate tmux server, each checked for whether inspection and one
   pointer line still reach the intended pane; one recommended smallest first version, with the place for the chess clock.
   No helper is built yet.
-participant_1: [lead.seswin, {brand: claude, model: opus-5.5, effort: xhigh}, host: home, role: "head and status_owner — the flight build; tmux session `seswin`, window `lead`; plans, writes the assignments, verifies, commits by file name; asks for every release"]
-participant_2: [audit.seswin, {brand: codex, model: GPT-6.2-Astra, effort: high}, host: home, role: "a fresh Oraculum session; tmux session `seswin`, window `audit`; thinks with the lead and criticises honestly while the work is conceptual; witness of the packet when the sandbox part arrives; writes no code herself"]
+participant_1: [lead.seswin, {brand: claude, model: claude-opus-5-5, effort: xhigh}, host: home, role: "head and status_owner — the flight build; tmux `$44 | 0 lead @78 | %80`; plans, writes the assignments, verifies, commits by file name; asks for every release"]   # model and effort as launched, own record 2026-11-26
+participant_2: [audit.seswin, {brand: codex, model: gpt-6.2-astra, effort: high}, host: home, role: "a fresh Oraculum session; tmux `$44 | 1 audit @79 | %81`; thinks with the lead and criticises honestly while the work is conceptual; witness of the packet when the sandbox part arrives; writes no code herself"]   # model and effort from her own session record, eSharp/_bus/08.audit.seswin.return.md:3
 participant_3: [supervisorCli, {brand: codex, model: gpt-6.1-sol, effort: max}, host: home, role: "one fresh seat shared with the relay line and, later, with group 2; window `supervisorCli` in `helloWorld`; pushes on a head's poke, runs bounded work a POINT names, makes caches on request"]   # his roster says effort max; its footer showed high on 2026-11-26
 participant_4: [majkee, {brand: human}, host: home, role: "every release; starts the seats and the sample sessions; trust and permission dialogs; GO or STOP"]
 participant_5: [exec, {brand: codex}, host: home, role: "his decision desk, shared by all lines, window `exec`; takes him through a sheet and records his words"]
@@ -40,20 +42,26 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
   `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.decisions.majkee.2026-11-22.md`, section 7. Generation X, host home.
 - **Roster, in his syntax** — `seat|who it may spawn`; `a-><b> : [task]` means a spawns b for that task. Three seats, and he wants
   no more for a bigger task. His file: `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/roster-proposal.eSharp.md`.
-  - `lead.seswin|houston|trajectory|delta|epoch` — as launched on 2026-11-26 its session is named `lead|trajectory|delta|epoch|assay`;
-    the lead settles the list with Majkee when it binds.
+  - `lead.seswin|trajectory|delta|epoch|assay` — the posture in his roster, chapter 2. His pen word widens it: "you may spawn
+    whoever you want-need. You can even spawn your `houston` and `oraculum`" (`raw/decision.majkee.pen.2026-11-26.md`). The
+    children he lists are in chapter 5 of the roster.
   - `audit.seswin|houston|astrobley` — "Can provide tests" in his roster is the leave to commission tests from `astrobley`.
+    Houston is vendor-neutral, so either seat may spawn it for a question; the one whose context window can take the load
+    spawns it (pen word, point 2).
   - `supervisorCli|houston|astrobley|oraculum`
 - **Where things run.** Every seat lives on the usual tmux server: this group in its own tmux session `seswin` (windows `lead`
   and `audit`, one pane each), the shared seats in `helloWorld` (`supervisorCli`, `exec`, `eSharp`). A window name carries no
   dot — tmux reads a dot in a target as the pane separator; the nicks keep theirs. The tree and its reasons are in the
   decisions record, section 10; Majkee's own map is in his roster.
 - **Where things are tried.** On the separate tmux server Majkee made himself on 2026-11-26: `tmux -L sandbox-server`, session
-  `sandbox`, four shell windows — `codex-sample` (`%0`), `claude-sample` (`%1`), `session` (`%2`), `terminal` (`%3`). This
-  group uses the two sample windows and `session`; `terminal` is group 2's. Window and pane ids there are local to that server
-  and can repeat ids of the usual one, so every command names the server and checks its target there before it changes
-  anything. The server is shared with group 2: only options of that session and its windows are set, nothing global. What it
-  lacks of his real tmux settings is copied into the test setup, and every difference left is listed in the packet. The
+  `sandbox` (`$0`), three shell windows — `codex-sample` (`@0`, `%0`), `claude-sample` (`@1`, `%1`), `session` (`@2`, `%2`).
+  Group 2 has a session of its own on the same server, `sandbox-terwor` (`$1`, window `terminal`, `%4`); the earlier fourth
+  window `terminal` of `sandbox` is gone (seen read-only 2026-11-26 02:44 UTC). The session `sandbox` therefore serves only
+  this group; the lead has asked Majkee to confirm that in words. Window and pane ids there are local to that server and can
+  repeat ids of the usual one, so every command names the server, targets the session as `=sandbox`, and checks its target
+  there before it changes anything. The server is still shared with group 2, so only options of the session `sandbox` and its
+  windows are set, nothing global. Of his real tmux settings, what is a session or window option is copied into the test
+  setup; what is a server option is not copied but listed in the packet as a difference, together with every other one. The
   scratch folder is `~/.cache/nablarva/session-window/`. His map: chapter 6 of his roster.
 - **The sandbox release is proposed, not given.** Its wording (sheet 2, A3): "Inside its own tmux server and its own scratch
   folder (`~/.cache/nablarva/<line>/`), with harmless commands, the group may build, run and stop what it needs without asking —
@@ -62,6 +70,10 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
   probes." Until his yes is in a decision file in this bed's `raw/`, steps 3 and 4 below are NOT RUN and nothing is run or typed on that server.
 - **What needs no release:** reading, the field list, the plan, the sheets, the spawns the roster names, and coordination pokes —
   those are the lead's own call (`/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/raw/decision.majkee.pokes-and-continuity.2026-11-22.md`).
+  Reading includes read-only tmux queries on both servers: `list-*`, `display-message -p`, and `capture-pane -p` of the
+  sandbox's own panes; a seat's pane is looked at only in its bottom rows, before a pointer line. The start script for the
+  samples and the release sheet may be written before the release, never run (the manager's correction of his brief,
+  `eSharp/_bus/09.manager.point.md`, point 3).
 - **Never into Git** — this repository's GitHub remote is public: caches, raw pane captures, transcripts, raw status-line input
   records, personal notes. They stay in the scratch folder. The bed gets field names, types, cleaned examples and a pointer line.
 - **Caches** (sheet 2, B2): made by `supervisorCli` on request, at `~/.cache/nablarva/seswin/CACHE.<window name>.md` — named by the tmux window,
@@ -71,7 +83,8 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
 - **The seam to group 2 is files only.** This group writes the one list of status fields; group 2 reads it for its own status
   line. Majkee also wants to be told when somebody tries to send a command to a shared terminal that is closed, or not expected
   to be open for that sender (decisions, section 8). The packet says where such a notice would be shown; it builds nothing for it.
-- Versions when this was written: Claude Code 2.1.332, codex-cli 0.171.0, tmux 3.7c. Read them again on the day.
+- Versions, read on 2026-11-26 at the bind: Claude Code 2.1.332, codex-cli 0.172.0 (the frame had 0.171.0), tmux 3.7c. Read
+  them again on the day of every try.
 
 ## The order of work
 
@@ -89,10 +102,16 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
 3. **Capture what is really received** — needs the release. Majkee starts one sample Claude session in the window
    `claude-sample` and one sample Codex session in `codex-sample`, from the prepared script. The Claude sample gets its own settings file from the scratch folder
    (`claude --settings <file>`), whose status-line command also writes its input there; the deployed hook is not touched.
+   `--settings` adds to the layers Claude loads; it replaces none of them. Seen on 2026-11-26: no layer (user, user local,
+   project, project local) holds a hook, and the live `~/.claude/hooks/statusline.sh` is byte-identical with the ia-sync copy.
+   Installed plugins and the account's connectors still load. The start script names its choice on them (`--setting-sources`,
+   `--strict-mcp-config`, or neither) and the sample's permission mode, and the packet lists both as differences from his
+   everyday session.
    The Codex sample is read only: nothing is typed into it, and what it would receive stays NOT RUN.
 4. **The three routes side by side** — needs the release. Before the first check the lead writes down the two everyday paths —
    how a seat inspects a pane and how it sends a pointer line, by name and by id — the pane each check expects to reach, and
-   two fixed widths. The same checks for each route: what it shows at both widths, and whether long text is wrapped or cut;
+   two fixed widths. The text of the pointer line is fixed in the same note: one labelled line naming a file in the scratch
+   folder whose only request is a one-word reply, so that the Claude sample needs no tool beyond reading that file. The same checks for each route: what it shows at both widths, and whether long text is wrapped or cut;
    which pane the inspection really read; which pane the pointer line really reached — sent to the Claude sample or to a
    disposable shell, never to the Codex sample; which window tmux marked as active; how it refreshes and what that costs.
    For the metadata pane the checks are repeated while that pane holds the focus and prints fresh output and the sample is
@@ -119,7 +138,8 @@ its read chain, then this bed's STATUS.md, then this RUNBOOK, then section 7 (th
 /home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/brief.session-window.2026-11-22.md.
 You do not hold the pen until Majkee says so and his words are in a decision file in this bed's raw/.
 You write STATUS.md, the assignments in _bus/, your verdicts and the commits (by file name; supervisorCli pushes on your poke).
-You may spawn houston, trajectory, delta and epoch, and you do not work alone: long reads, sweeps and checks go to a child.
+You may spawn any child you need — the roster's chapter 5, houston and oraculum included (raw/decision.majkee.pen.2026-11-26.md)
+— and you do not work alone: long reads, sweeps and checks go to a child.
 Nothing is built, started or typed on the sandbox server until Majkee has given the sandbox release in his own words; you ask
 for it on one sheet through the exec desk, after audit.seswin has read the sheet. Coordination pokes are yours to send.
 Nothing private goes into Git — the remote is public. Never read .majkee/ or .hlm/.
