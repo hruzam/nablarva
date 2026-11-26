@@ -1,4 +1,4 @@
-updated: 2026-11-26 02:59 UTC
+updated: 2026-11-26 03:04 UTC
 writer: lead.seswin · claude · flight build, claude-opus-5-5, effort xhigh — the first snapshot the lead wrote itself
 host: home · hruzam
 worktree: >-
@@ -16,20 +16,15 @@ checkpoint: >-
   matches live tmux: `$44 | 0 lead @78 | %80` claude (this seat) and `$44 | 1 audit @79 | %81` codex (audit.seswin,
   gpt-6.2-astra, effort high by her own record). RUNBOOK.md carries the lead's changes from its first read (roster and real
   models, the sandbox server as it now stands, read-only queries, versions, the Claude sample's settings, the pointer text) and
-  stays open to change until the read-back at step 2. Step 1 is written; step 2's sheet is drafted
-  (raw/sheet.readback-1.2026-11-26.md, draft 1) and is with audit.seswin for her once-read.
-in_flight:
-  - s11 · audit.seswin · once-read of the step-2 sheet · queued 02:57:59 UTC · _bus/11.audit.point.md →
-    _bus/11.audit.seswin.return.md
-  - returned: s05 attempt 3 · delta folded audit.seswin's s07 corrections into raw/fields.2026-11-26.md (78 lines); s06
-    attempt 3 FAIL on one overclaim that came from the lead's own brief, corrected by the lead; s06 attempt 4 PASS
-  - returned: s07 audit.seswin, the Codex column read in Codex's release source, "holds with corrections", 02:56:33
-    (_bus/07.audit.seswin.return.md)
-  - returned: s08 trajectory, the start scripts under ~/.cache/nablarva/session-window/ (outside Git), with COLUMNS and
-    LINES in the record on the lead's follow-up; s09 assay PASS on all six checks, nothing run
-  - returned (file times, UTC): s01 02:47:17 · s03 02:47:38 · s02 02:48:06 · s05 attempt 1, then FAIL by s06, then attempt
-    2: raw/fields.2026-11-26.md 02:51:41 · s06 PASS on attempt 2, 02:52:14. s04 notice to the manager queued in %77 at
-    02:47 (raw/pokes.log.md, row 3).
+  stays open to change until the read-back at step 2. Step 1 is written; step 2's sheet is in draft 2
+  (raw/sheet.readback-1.2026-11-26.md), after audit.seswin's once-read, and is being checked by assay.
+in_flight: none — the step-2 sheet is ready and waits for Majkee's choice of route: through the exec desk (the manager
+  orders it there) or read in the lead's pane
+  - returned: s13 assay PASS on sheet draft 2 (attempt 2, after one FAIL: S2 had cited a script check older than the last
+    script edits); s09 assay PASS attempt 2 on nine checks of the start scripts in their final form; s08 trajectory
+    follow-ups 2–4 (Codex `nohooks` default, pane pin, banner after checks, Enter prompt before exec, README)
+  - lead's own fault, disclosed in the sheet's status: draft 1 as committed in 699c6f7 kept the overclaimed provider wording
+    in "Why now"; draft 2 corrects it
 recovery_probe: >-
   Read-only, three looks.
   (1) `ls /home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X1-surface/_bus/` — a `.point.md` without its
@@ -56,8 +51,8 @@ asked_of_majkee:
     lead reads it as audit.seswin (`$44 | 1 audit @79 | %81`) until he says otherwise.
   - That the session `sandbox` is now group 1's alone. His act (the session `sandbox-terwor`) says so; his words do not yet.
 next: >-
-  When s01–s03 have returned, the lead issues the field list (raw/fields.2026-11-26.md) to a child that writes it from the
-  three returns, and has @assay check it against them; every row stays provisional until a sample shows it. Then step 2:
-  the read-back sheet with the release and the start script, read once by audit.seswin before it goes to the exec desk.
+  Majkee says how the sheet reaches him. Then the sheet raw/sheet.readback-1.2026-11-26.md (draft 2) goes that way; his
+  answers go, in his words, into decision files in raw/: the release as decision.majkee.release.2026-11-26.md.
 expected: >-
-  Three return files in _bus/, then raw/fields.2026-11-26.md with source and date on every row and an assay verdict.
+  A decision file per answered theme. With an S1 yes and S2 approval, Majkee types the approved starts in the sandbox, and
+  step 3 begins. Without them, steps 3 and 4 stay NOT RUN and the packet says so.

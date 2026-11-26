@@ -114,9 +114,15 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
      files on the path above its folder; Codex loads `~/.codex/AGENTS.md` and `~/.codex/hooks.json`, so his Codex hooks fire.
    - A trust answer writes into his everyday files: Codex adds a project entry to `~/.codex/config.toml`, Claude records it in
      `~/.claude.json`. That is his hand at his dialog; the closing step lists such entries and he decides whether they stay.
-   - Each start script leaves a start marker in the scratch folder before it starts its CLI; at closing,
-     `find ~/.claude ~/.claude.json ~/.codex -newer <marker>` lists what each CLI wrote outside the scratch folder, and the
-     packet carries that list (names only).
+   - Each start script leaves a start marker in the scratch folder before it starts its CLI. At closing,
+     `find ~/.claude ~/.claude.json ~/.codex -newer <marker>` lists candidate changes in the searched places. Only what a
+     sample-specific identifier ties to a sample is attributed to it: another live CLI can write there in the same interval,
+     and a file outside those places, or one made and removed in between, is missed. Other sessions' file names stay out of
+     the packet (audit.seswin, `_bus/11.audit.seswin.return.md`, point 4).
+   - Plain Codex runs his global SessionStart hook, a `git pull` in `~/.remote` that can read a task file into the sample.
+     The Codex start script therefore defaults to `codex --disable hooks`; `plain` is his choice on the sheet, and the packet
+     records which ran (her point 1).
+   - Both start scripts also pin the original pane id (`%1` Claude, `%0` Codex), so a split window cannot redirect a start.
    The Codex sample is read only: nothing is typed into it, and what it would receive stays NOT RUN.
 4. **The three routes side by side** — needs the release. Before the first check the lead writes down the two everyday paths —
    how a seat inspects a pane and how it sends a pointer line, by name and by id — the pane each check expects to reach, and
@@ -128,7 +134,9 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
    idle. A route that reaches the wrong pane is out for the first version. If every route fails a required check, STOP is a
    useful result. Every command names the test server and checks the server and its own target together before it changes anything.
 5. **The packet.** `packet.status-surface.<date>.md`: one row per check — PASS, FAIL or NOT RUN — written by the witness from her
-   own look, before she reads the lead's account. The recommendation is the lead's: it cites her rows, and she does not sign
+   own look, before she reads the lead's account. For each check the lead sends her the check id, the expected target, the
+   widths and a time to look, with the result blank. It holds the state for her read-only look, or keeps the original,
+   unannotated evidence in the scratch folder. She gives a reason for every NOT RUN, and a known mismatch is FAIL (her point 6). The recommendation is the lead's: it cites her rows, and she does not sign
    it. One recommended smallest first version, which answers: where the chess clock would sit — its place only; its timing and
    controls are not tried here; the helper as a window of its own, started from scratch, and what the old zsh helper keeps as a control window;
    how the helper knows which CLI it serves (the manager's view: from the launch recipe, not by reading the pane — the lead
