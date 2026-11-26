@@ -84,5 +84,14 @@ Exit 0 shows that the queue accepted the call, nothing more.
 - line: `[poke p09] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/09.lead.point.md — commit the verdict and push`
 - carrier: called before 2026-11-26T04:30:48Z · exit code 0 · output (first line): `Queued message 01a2161e-d34c-7262-9ee3-fb3364067d80 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
 - watch: on `_bus/09.controller.return.md`, ends 2026-11-26T04:42:48Z
+- RETURN seen: 2026-11-26T04:31:37Z (the watch) · commit 14e40b0 of the six named paths, committer time 04:31:02 UTC; the verdict file's SHA-256 b37d0794…9d2deb, the same by the lead's own sum; the push carried 9209e32 and 14e40b0; remote at 14e40b0 (the lead's own look, 04:31:44Z) · VERDICT 09: ACCEPT
+
+## p10 — lead → controller (pane %59) · `codex queue`
+- authority: Majkee 2026-11-26, raw/decision.majkee.go-and-routing.2026-11-26.md; file-poke chapter (provisional)
+- file first: `_bus/10.lead.point.md`, committed before the poke (7c9d328)
+- looked first (2026-11-26T04:47:50Z): footer shows thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318, input row empty, not working · Context 83% left
+- line: `[poke p10] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/10.lead.point.md — checkpoint commit and push`
+- carrier: called before 2026-11-26T04:47:50Z · exit code 0 · output (first line): `Queued message 01a2162e-6c67-7121-9f83-64564bcdcf8b for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- watch: on `_bus/10.controller.return.md`, ends 2026-11-26T04:59:50Z
 - RETURN seen: —
 
