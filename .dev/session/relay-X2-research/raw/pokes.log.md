@@ -95,3 +95,49 @@ Exit 0 shows that the queue accepted the call, nothing more.
 - watch: on `_bus/10.controller.return.md`, ends 2026-11-26T04:59:50Z
 - RETURN seen: 2026-11-26T04:48:30Z (the watch) · commit b638e07 of the three named paths; the push carried 7c9d328 and b638e07; remote at b638e07 (the lead's own look, 04:48:36Z) · VERDICT 10: ACCEPT
 
+> **The field "operator had to step in"** — from p11 on, by Majkee's answer 6 of 2026-11-26 and the verdict's falsifier
+> (Erratum 1). "yes" only when he had to carry or repair this pointer himself because the sender could not tell from
+> files whether it had arrived or what state the recipient was in — with the reason written beside it. His strategic
+> decisions, planned samples and help unrelated to the pointer are "no". A pointer counts once. "—" is unknown, not no.
+> The count starts at p11 from zero; the entries before it carry no such field.
+
+## p11 — lead → auditor (pane %66) · `codex queue`
+- authority: Majkee 2026-11-26, raw/decision.majkee.go-and-routing.2026-11-26.md; file-poke chapter (provisional)
+- file first: `_bus/11.lead.point.md`, committed before the poke (0ef1ca0)
+- looked first (2026-11-26T23:51:28Z): footer shows thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7, input row empty, not working · Context 90% left
+- line: `[poke p11] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/11.lead.point.md — the check of step 6: verdict and differences`
+- carrier: called before 2026-11-26T23:51:28Z · exit code 0 · output (first line): `Queued message 01a21a45-7268-76a2-85c1-2166cc9b44a4 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- watch: on `_bus/11.auditor.return.md`, ends 2026-11-27T00:26:28Z
+- RETURN seen: 2026-11-26T23:53:56Z (the watch; under nine minutes after the call) · the auditor: REVISE on the step-6 check — REFUSE can stand; an erratum to the verdict, corrected labels in the differences, two details restored in the ledger entry; taken — VERDICT 11 · the auditor's footer: 68% context left at 23:54:00Z
+- operator had to step in: no (the field the verdict's falsifier counts; from p11 on, by Majkee's answer 6 of 2026-11-26)
+
+## p12 — lead → controller (pane %59) · `codex queue`
+- authority: Majkee 2026-11-26, raw/decision.majkee.go-and-routing.2026-11-26.md; file-poke chapter (provisional)
+- file first: `_bus/12.lead.point.md`, committed before the poke (0ef1ca0)
+- looked first (2026-11-26T23:51:28Z): footer shows thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318, input row empty, not working · Context 83% left
+- line: `[poke p12] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/12.lead.point.md — checkpoint commit and push`
+- carrier: called before 2026-11-26T23:51:29Z · exit code 0 · output (first line): `Queued message 01a21a45-7411-7031-864c-c3538fa5ad92 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- watch: on `_bus/12.controller.return.md`, ends 2026-11-27T00:03:29Z
+- RETURN seen: 2026-11-26T23:52:10Z (the watch) · commit 27ccd8a of the six named paths; the push carried 0ef1ca0 and 27ccd8a; remote at 27ccd8a (the lead's own look, 23:52:16Z) · VERDICT 12: ACCEPT
+- operator had to step in: no (the field the verdict's falsifier counts; from p11 on, by Majkee's answer 6 of 2026-11-26)
+
+## p14 — lead → controller (pane %59) · `codex queue`
+- authority: Majkee 2026-11-26, raw/decision.majkee.go-and-routing.2026-11-26.md; file-poke chapter (provisional)
+- file first: `_bus/14.lead.point.md`, committed before the poke (0631720)
+- looked first (2026-11-26T23:56:46Z): footer shows thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318, input row empty, not working · Context 82% left
+- line: `[poke p14] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/14.lead.point.md — commit the erratum and push`
+- carrier: called before 2026-11-26T23:56:47Z · exit code 0 · output (first line): `Queued message 01a21a4a-4e31-71d2-a8c9-202ad0456f66 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- watch: on `_bus/14.controller.return.md`, ends 2026-11-27T00:08:47Z
+- RETURN seen: —
+- operator had to step in: —
+
+## p13 — lead → auditor (pane %66) · `codex queue`
+- authority: RUNBOOK prompt-0 step 6; file-poke chapter (provisional)
+- file first: `_bus/13.lead.point.md`, committed before the poke (0631720)
+- looked first (2026-11-26T23:56:57Z): footer shows thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7, input row empty, not working · Context 68% left
+- line: `[poke p13] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/13.lead.point.md — confirm the erratum and the revisions`
+- carrier: called before 2026-11-26T23:56:58Z · exit code 0 · output (first line): `Queued message 01a21a4a-795b-7261-9517-0f188f2fafd4 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- watch: on `_bus/13.auditor.return.md`, ends 2026-11-27T00:16:58Z
+- RETURN seen: —
+- operator had to step in: —
+

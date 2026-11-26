@@ -1,7 +1,7 @@
 ---
 kind: differences between the committed verdict and the blind answer — an independent reader's list
 by: a reader child of the lead that saw only V, BR and AR
-status: unchecked
+status: checked by the auditor in cycle 11 (`_bus/11.auditor.return.md`); the text below is as the reader wrote it and is NOT corrected here — the corrections to its rows 8, 9, 22, 24, 36, 43, 59, to its §4 item 4 and to its §5 are in `raw/differences.verdict-vs-blind-answer.lead.2026-11-27.md`, §8
 ---
 
 # Differences — V and AR side by side

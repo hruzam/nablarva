@@ -58,16 +58,18 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
   - **`relay-X3-pty` stays reserved and is not closed for good** (Majkee 2026-11-26, entered by the lead of
     `relay-X2-research` on his direct word; no bed is opened by this entry). The idea it is kept for: one uniform,
     vendor-neutral core in code — a mailbox whose header names sender and recipient, with a receipt coming back as a
-    file — and one adapter per vendor, chosen by who the recipient is; code rings, no agent types into a foreign
-    pane; the pointer stays a short text that names a file. Waking the recipient is the unsolved part.
+    file — and one adapter per vendor, chosen by who the recipient is, possibly on both sides; code rings, no agent
+    types into a foreign pane; the pointer stays a short text that names a file. Waking the recipient is the
+    unsolved part.
     His words: [answer 6](relay-X2-research/raw/decision.majkee.brief-and-check.2026-11-26.md) ·
     Symmetry's side note, untested: [note](relay-X2-research/raw/note.symmetry.codex-submit-and-wake.2026-11-26.md).
-    The one small question, if it ever opens (the note's §3): on the installed Codex CLI in the installed tmux on this
-    host, for which way of writing (plain keystrokes, bracketed paste) and which gap before Enter does a one-line
+    The one small question, if it ever opens (the note's §3): on Codex CLI 0.172.0 in tmux 3.7c — the versions
+    installed on this host on 2026-11-26 — for which way of writing (plain keystrokes, bracketed paste) and which gap before Enter does a one-line
     pointer submit — counted over a named number of tries, with submission read from the rollout and not from the screen.
     It comes back when one of these holds ([verdict §10](relay-X2-research/research-verdict.md), and one more):
-    the verdict's falsifier is observed — more than two of fifty consecutive pointers that the operator had to carry
-    or repair, counted from zero as of 2026-11-26 · tmux releases program status (OSC 7501) · Majkee decides the
+    the verdict's falsifier is observed — in routine use, not in planned samples, more than two of fifty consecutive
+    pointers that the operator had to carry or repair because the sender could not tell from files whether the
+    pointer had arrived or what state the recipient was in; counted from zero as of 2026-11-26 · tmux releases program status (OSC 7501) · Majkee decides the
     carrier (verdict §7) · Majkee's own word.
 - Shared temporary practice: [BUS file-poke chapter](../../../../reposoma/raw.guides/bus/res/file-poke.md) —
   canonical location is `~/reposoma/raw.guides/bus/res/file-poke.md`; not owned by the one VIST bed. RUNBOOKs

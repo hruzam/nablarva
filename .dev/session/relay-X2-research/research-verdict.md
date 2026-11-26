@@ -4,6 +4,7 @@ by: lead (flight · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8) · 2026-11-26 �
 status: VERDICT — the text of RUNBOOK step 5. Third version. Opposed once by the auditor (cycle 07, REVISE on DRAFT 2); what was taken and what was not is in `_bus/07.lead.verdict.md`. The auditor has not read this version; its check of step 6 is outstanding. Majkee has not read it as the verdict.
 history: DRAFT 1 (04:12 UTC, never committed) said ADOPT and "no relay-X3-pty" — that repeated a rule struck on 2026-10-02 and was withdrawn. DRAFT 2 (commit d95f6d9) said ADOPT with a delta of three things to make; the auditor showed that the delta answered failures nobody had seen in routine use, and that it designed an architecture. This version ranks REFUSE first.
 blind: no answer to this bed's send copy of the L14 D7 brief exists — the brief is not sent. Whether the brief of 2026-09-30 was ever sent or answered is recorded as unknown (`meshup/seam.cross-vendor-relay.2026-08-05/DESIGN.md`, line 31).
+erratum: ERRATUM 1, written 2026-11-26 23:55 UTC after the auditor's check of step 6 (cycle 11, REVISE). The committed answer that was set against the blind answer is this file at commit 14e40b0 (SHA-256 b37d0794…9d2deb) and stays readable there: `git show 14e40b0:.dev/session/relay-X2-research/research-verdict.md`. Every change since is listed at the end under "Erratum 1"; the ranking is unchanged. The `status:` and `blind:` lines above are as of 14e40b0 — since then the brief was sent, a blind answer was filed, and the auditor has read this file.
 gate: Majkee records GO or STOP on this verdict. It locks no architecture, opens neither relay-X3-pty nor relay-X4-tracker, releases no build and qualifies no door.
 judged: the relay program — a PTY impulse layer for relay between interactive CLI agent sessions, and a mechanical tracker of their states — under L14 D1, D2, D5 and D6 as given. The constraints are inputs and are not judged.
 ---
@@ -23,7 +24,8 @@ the lab, its tap — is not part of this refusal; it stands under its own gate.
 
 - **Second, ADOPT:** if the falsifier is observed, the evidence already says what to take — states from the signals
   the vendors' programs emit themselves, never a classifier of screen content — and only for the state the observed
-  failure names.
+  failure names. *(Erratum 1: that sentence fits a failure of state. If the failures counted are of delivery or of
+  waking, what is compared is chosen by them; this verdict names no remedy for those.)*
 - **Last, REINVENT:** right only if a state that a decision needs is served by no emitted signal, no native status
   surface and not by the floor.
 
@@ -31,6 +33,10 @@ the lab, its tap — is not part of this refusal; it stands under its own gate.
 show, within any fifty consecutive pointers, more than two that the operator had to carry or repair himself because
 the sender could not tell from files whether the pointer had arrived or what state the recipient was in. Then the
 smaller composition does not serve the need, and ADOPT leads. The number is a proposal; it is his to set.
+*(Erratum 1.)* "More than two" means three. A pointer is counted once, with the reason he stepped in written down;
+his strategic decisions, planned samples and help unrelated to the pointer do not count; an entry left blank or
+unresolved is unknown, not a no. Crossing the threshold shows a need that is not served. It does not show which
+remedy — a state signal, evidence of receipt, or a way to wake an idle recipient; the failures counted say that.
 
 **What REFUSE costs, said once and plainly.** The composition that runs is provisional, and its carrier toward a
 Codex seat is a vendor door that D1 parks. Refusing the program leaves that debt standing (§7). Paying it is a
@@ -149,7 +155,7 @@ for this version). They are the pieces a small composition needs around it, and 
 | | State without reading the screen | A way in for a message | Marks |
 |---|---|---|---|
 | **Claude Code** 2.1.332 (installed) | hooks for prompt, tool use, permission request, notification, stop, compaction before and after, session end (W row 15; A) · `claude agents --json` since 2.1.145 of 2026-05-19, wait reasons since 2.1.162 of 2026-06-03; documented as listing every live session (A; R 3b; L) · the status sequence OSC 7501 since 2.1.295 of 2026-10-08 | messages between Claude sessions, on by default since 2.1.224 of 2026-08-07; a one-shot notice when a session next goes idle, 2.1.236 (W row 13; A) · a per-session inbox socket offered to "a script or hook", auth line documented, message format not (R 3c) · channels, a research preview since 2.1.80 (A) | agent view is a research preview; whether the listing reports a session in a tmux pane is untested |
-| **Codex CLI** 0.172.0 (installed) | hooks on by default since 0.124.0 of 2026-04-23; the page read today lists fourteen events, among them permission request, stop, interrupt, compaction, session end (A; R 2d) · thread status for a client of the server that owns the thread (W row 21; A) · OSC 7501 since 0.163.0 of 2026-10-15, blocking kinds since 0.164.0 (A) | `codex queue` since 0.149.0 of 2026-08-20; optional resume since 0.166.0; acceptance says nothing of receipt (R 2a; A) · a native mailbox in 0.171 and 0.172 whose reach beyond one session tree is not stated — R infers a tree (R 2b) | hooks must be trusted before they run; one report of the status sequence saying idle while a prompt waited (R 2c) |
+| **Codex CLI** 0.172.0 (installed) | hooks on by default since 0.124.0 of 2026-04-23; the page read today lists fourteen events, among them permission request, stop, interrupt, compaction, session end (A; R 2d) · thread status for a client of the server that owns the thread (W row 21; A) · OSC 7501 since 0.163.0 of 2026-10-15, blocking kinds since 0.164.0 (A) | `codex queue` since 0.149.0 of 2026-08-20; optional resume since 0.166.0; acceptance says nothing of receipt (R 2a; A) · agent messages acknowledged in 0.171, whose release line names no mailbox; injected plaintext agent mail routed through a native mailbox in 0.172; reach beyond one session tree is not stated — R infers a tree (R 2b) *(Erratum 1)* | hooks must be trusted before they run; one report of the status sequence saying idle while a prompt waited (R 2c) |
 | **Antigravity CLI** 1.5.x | the status-line script receives `agent_state`, `tool_confirmation_pending`, a count of queued input (R 4b; A) · six hook events, none for permission, compaction or exit (R 4a) · OSC 7501 since 1.4.0 of 2026-10-16 (A) | Remote Control, opt-in, since 1.2.6; ACP for the client that owns the connection, since 1.5.0 (A). No supported delivery by a third party into an ordinary running session was found (A, gap 2) | — |
 | **Gemini CLI** 0.71.1 | hooks on by default since 0.26.0: before and after the agent loop, tool permission, before compression, session end best-effort (A) · no OSC 7501, a request is open (A) | ACP, for the client that owns the connection (A) | for individuals it stopped serving Google AI Pro, Ultra and free Code Assist on 2026-06-18 (Google's notice of 2026-05-19, cited in `brief.blind.relay-research.corrections.2026-11-26.md`, C3) |
 
@@ -172,8 +178,11 @@ for this version). They are the pieces a small composition needs around it, and 
   neither compaction nor the death of a process.
 - *For the relay:* a supported way to address a message into a live session, with an acknowledgment correlated to
   the recipient's turn, on both first-class endpoints. Neither vendor need ship anything across vendors for that.
-  Today Claude Code has it for Claude peers only; Codex has the way in without the acknowledgment. None found
-  announced.
+  *(Erratum 1, replacing "Today Claude Code has it for Claude peers only".)* Today Claude Code documents ways in —
+  from a Claude peer, with the recipient's policy outcome and an optional notice at its next idle or exit; through
+  a channel, in research preview; and an inbox socket for a script or hook, its message format undocumented (W row
+  13; R 3c) — and for none of them an acknowledgment tied to the turn that read the pointer. Codex has the way in
+  without the acknowledgment. None found announced.
 
 # 5. Why this ranking
 
@@ -194,17 +203,22 @@ others document, for states the vendors' programs now emit.
 
 1. **The composition keeps serving.** Test: the falsifier's count, kept in the poke logs the line already writes —
    pointer, carrier's answer, end of the watch, RETURN seen, and one more field: whether the operator had to step
-   in. It costs one field, and nothing is built.
-2. **The refusal does not hold up the floor.** Test: the lab's qualification names as its prerequisite "an applicable
-   recorded L14 D4 verdict" (T), not a relay chapter; if Majkee does not take this verdict as that one, the
-   condition fails and he should know it before he says GO or STOP.
+   in, and why *(Erratum 1: "and why"; the limits of the count are with the falsifier above)*. It costs one field,
+   and nothing is built.
+2. **The refusal does not hold up the floor.** *(Erratum 1 — the first wording was wrong on a fact.)* Test: the lab's
+   qualification names as its first prerequisite "an applicable recorded L14 D4 verdict, or Majkee's explicit
+   recorded exception specifying exactly Q's executable effects" (T, `research-disposition.md`, release
+   prerequisites) — not a relay chapter. So the floor has two ways on, and neither is this verdict's to give: he
+   takes this verdict as the applicable one, or he records that exception. The lab's four further prerequisites
+   stand either way; neither this verdict nor a GO on it releases the qualification.
 3. **If ADOPT is triggered, an emitted state is taken only after it is compared with independent truth.** Test, as
    the auditor framed it (Q): a named mix of events per vendor, a tolerance in time, labels made by an observer who
    does not read the signal, "unknown" and "missing" as outcomes of their own — and a single false *idle* before an
    input counts as a failure whatever the aggregate. Two emitted signals agreeing with each other proves nothing.
 4. **If a receipt is ever made, it keeps four facts apart:** accepted by the carrier; seen by the recipient's hook;
-   file read; answered. Test: each has its own record, with the recipient and the turn named, and a deadline after
-   which a missing one is reported.
+   file read; answered. Test *(Erratum 1 — the first wording chose an implementation)*: for each of the four there
+   is evidence of its own, and a deadline after which a missing one is reported; the recipient's turn may be
+   unknown at acceptance and named later.
 
 # 7. Decisions owed — not made here
 
@@ -213,7 +227,10 @@ others document, for states the vendors' programs now emit.
   from Majkee: that he accepts what a replacement covers, that he adopts its transport, that he retires the
   chapter. Two ways lie open and both are his: take the bridge that runs, with its vendor door, as what gets
   qualified — or hold D1 strictly, which means an impulse through the terminal into a Codex pane, which L4 forbids
-  an agent today. Only the second would be a reason to open `relay-X3-pty`.
+  an agent today. The second would be a reason to open `relay-X3-pty`. *(Erratum 1: the first wording said "Only the
+  second". L14 reserves the order and the decision to Majkee; it does not make these two ways the only ones. His
+  later direction on that chapter is his own and is recorded apart: answer 6 of
+  `raw/decision.majkee.brief-and-check.2026-11-26.md`, and the entry in `relay-X.ledger.md`.)*
 - **The shape of any state record.** The events map of 2026-10-02 holds that events are append-only facts and state
   is derived, never stored (O). DRAFT 2's stored state line ran against it. The auditor names an existing gate for
   per-writer observations and derived views (Q); who owns such a record, and how it overlaps, is owed before
@@ -253,3 +270,24 @@ is first.
 
 What GO and STOP mean on this verdict is his to say. As the lead reads the RUNBOOK: GO takes the verdict as the
 recorded answer of L14 D4 — here, that the program stays closed on evidence; STOP sets the verdict aside.
+
+# Erratum 1 — 2026-11-26 23:55 UTC
+
+Made after the auditor's check of step 6 (`_bus/11.auditor.return.md`, REVISE). The answer that was set against the
+blind answer is commit 14e40b0 and is not changed there. Each change below rests on sources the bed held before the
+blind answer was opened, or on this verdict's own text; none takes anything from the blind answer. The ranking —
+REFUSE, ADOPT, REINVENT — is unchanged. Each changed place is marked "(Erratum 1)" where it stands.
+
+| # | Where | What was wrong | Source of the correction |
+|---|---|---|---|
+| 1 | §6, condition 2 | said the condition fails unless Majkee takes this verdict as the lab's applicable one; the lab's own text allows a second way, his explicit recorded exception | T, `research-disposition.md`, "Release prerequisites" |
+| 2 | §4, the relay's retiring change | "Today Claude Code has it for Claude peers only" — "it" meant a way in *and* a turn-tied acknowledgment; Claude Code documents several ways in and that acknowledgment for none | W row 13; R 3c; the vendor's page on message delivery, as the auditor read it |
+| 3 | §4, Codex row | "a native mailbox in 0.171 and 0.172" — 0.171's line names acknowledged agent messages and no mailbox; the mailbox routing is 0.172's | R 2b |
+| 4 | §7, the carrier | "Only the second would be a reason to open relay-X3-pty" — an exclusivity L14 does not give | `flag.md`, L14 |
+| 5 | the falsifier; §6 condition 1 | not wrong, but loose: what counts, what does not, what a blank means, and that crossing the threshold shows a need and no remedy | this verdict's own text; the auditor's reading (cycle 11) |
+| 6 | "Second, ADOPT" | named an emitted state as what to take even where the counted failure would be one of delivery | this verdict's own falsifier |
+| 7 | §6, condition 4 | "each has its own record, with the recipient and the turn named" chose an implementation | the auditor's reading (cycle 11) |
+
+Not corrected here, because the correction would come from the blind answer: the five sentences listed in
+`raw/differences.verdict-vs-blind-answer.lead.2026-11-27.md`, §7. They stay as committed and are for the gate.
+
