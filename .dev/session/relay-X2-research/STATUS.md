@@ -1,7 +1,7 @@
 # STATUS: relay-X2-research
 
 ```yaml
-updated: 2026-11-26 03:58 UTC
+updated: 2026-11-26 04:01 UTC
 writer: lead · flight · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8 (Fable 5.2, effort high) · tmux pane %70, window `lead`, session group helloWorld · woken by Majkee on 2026-11-26 with the cold-start card
 host: home (hruzam)
 worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD a48c313 when this was written, level with the local origin/core ref (no fetch was made) · other sessions commit here; dirty paths that are not this bed's — .dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md, .dev/session/eSharp/roster-proposal.eSharp.md, nano.2280604.save (untracked, repository root)
@@ -16,7 +16,11 @@ checkpoint: >
   the line ledger, the research chapter and the file-poke chapter. The roster is reconciled against live tmux (below).
   Majkee's go and his routing word are recorded (raw/decision.majkee.go-and-routing.2026-11-26.md). POINTs 01 to 03
   are written, one to each codex seat. The seam folder's brief, seed, decisions and DESIGN.md are read by the lead.
-  No RETURN is in, no research result is in, the send copy of the brief is not written.
+  Cycles 01 to 03 are closed, each ACCEPT: the three seats have taken this bed; the controller pushed ff2331b
+  (remote core at ff2331b, looked at 04:00 UTC); the auditor found no tracked record that the blind brief was ever
+  sent or answered. The send copy of the brief and the list of its four corrections are written (raw/brief.blind.*),
+  resting on a research child's dated check of the vendor facts that the lead has read. Neither is checked by the
+  auditor yet, neither is shown to Majkee, nothing is sent. The evidence map and the wheel research are not in.
 routing: >
   By Majkee's word of 2026-11-26, later than the RUNBOOK: git operations go to the controller where the lead can
   split them — for this bed the controller commits and pushes what a POINT names, against prompt-2's "do not push
@@ -46,12 +50,14 @@ harvest_rows: >
   lock. U23 adopted — a present state is looked at in the same turn, or carries its observation time and the pending check.
 in_flight: |
   as of the `updated:` time above; raw/pokes.log.md has what the carrier answered and when each watch ends
-  - POINT 01 → auditor (seat intake, four facts) · POINT 02 → controller (seat intake, fetch and push, Codex-side
-    facts) · POINT 03 → exec (seat intake, two facts). Open until each has a RETURN and a VERDICT.
-  - three children of the lead, in the background, each writing one file in raw/: a reader child →
-    prior-evidence.map.md (step 2) · a research child → research.brief-facts.epoch.2026-11-26.md (the vendor facts
-    the send copy needs) · a research child → research.wheel-and-harness.epoch.2026-11-26.md (step 4, wheel and
-    vendor harness). A file of theirs on disk is not a checked result until the lead has read it.
+  - POINT 04 → auditor: check of the brief's send copy and its corrections (PASS or REVISE). Open.
+  - POINT 05 → auditor: a position-free research line by its child, own artifact
+    raw/research.wheel-and-harness.auditor.2026-11-26.md. Written and committed; poked only after RETURN 04 —
+    one POINT at a time per seat.
+  - two children of the lead, in the background, each writing one file in raw/: a reader child →
+    prior-evidence.map.md (step 2) · a research child → research.wheel-and-harness.epoch.2026-11-26.md (step 4).
+    A file of theirs on disk is not a checked result until the lead has read it.
+  - seats' context at 04:00 UTC: auditor 46%, controller 89%, exec 33%.
 recovery_probe: |
   commands (read-only):
     sed -n '1,12p' /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/STATUS.md
@@ -77,8 +83,8 @@ holds: >
   The blind answer is not read before research-verdict.md is committed. The seats seniorDev, myShell, eSharp and
   supervisorCli are not poked.
 next: >
-  VERDICTs on RETURNs 01 to 03 as they come. Then step 3: the send copy of the blind brief, written once the
-  brief-facts file is in, checked by the auditor (POINT), its corrections put to Majkee in one ask. Then a
-  position-free research line to the auditor's subagent (POINT), shaped by what RETURN 01 says it can reach.
-expected: _bus/01 to 03 with RETURNs and VERDICTs; raw/prior-evidence.map.md; the brief's send copy with the auditor's RETURN on it.
+  VERDICT on RETURN 04; the auditor's points taken into the send copy; then the one ask to Majkee — the corrections
+  C1 to C4, the ranking of endpoints to confirm, and who sends the brief. Poke 05 once RETURN 04 is in. A checkpoint
+  commit and push by the controller (POINT) when the children's files are in.
+expected: _bus/04 and 05 with RETURNs and VERDICTs; raw/decision.majkee.brief.*.md; raw/prior-evidence.map.md; the two research tables.
 ```
