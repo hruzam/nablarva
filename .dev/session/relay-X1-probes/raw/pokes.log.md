@@ -500,3 +500,10 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - before: 2026-11-23T22:09:17Z · exit code: 0
 - output (first line): `Queued message 01a20a74-cf76-7d92-a050-c29f4e82804f for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
 - outcome: done — `_bus/29.controller.return.md` at 22:14Z: the inventory, 46 entries, in `.dev/session/eSharp/raw/`, untracked. VERDICT 29.
+
+## p43 — lead → auditor (pane %66) · `codex queue`
+- authority: the lead's call — the other vendor's check of the closing documents
+- file first: `_bus/30.lead.point.md`, committed before the poke
+- looked first (2026-11-26T03:07:16Z): pane %66 — not working
+- before: 2026-11-26T03:07:16Z · exit code: 0
+- output (first line): `Queued message 01a215d2-59ba-75b3-8037-d71c0b8fbc9e for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`

@@ -1,7 +1,7 @@
 ---
 kind: handoff from relay-X1-probes to the successor stage of the relay line
 by: lead (flight · claude b155ba44-0c27-4b9c-85e1-8f74daad22d6) · 2026-11-26 · host home
-status: DRAFT 1 — written at closure. Not yet checked by a second seat; not yet accepted by Majkee. Section 4 (the successor's gate) is deliberately empty until the lead has read L14's sources.
+status: DRAFT 2 — draft 1 written at closure and given to the auditor for its check (POINT 30); section 4, the proposal for the successor, added after the lead read L14's sources and not part of that check. Not yet accepted by Majkee.
 authority: Majkee, 2026-11-26 — raw/decision.majkee.close.2026-11-26.md
 ---
 
@@ -61,11 +61,44 @@ three arrived, two were not seen to arrive within their watches. The carrier's a
 - **Helpers built ad hoc** are listed once, with what each stands for:
   `.dev/session/eSharp/raw/inventory.relay-x1-helpers.2026-11-23.md`.
 
-## 4. The gate of the successor — to be proposed
+## 4. The successor — proposed by the lead, nothing of it decided
 
-Empty on purpose. L14 D4 names the next chapter `relay-X2-research` and calls it the verdict gate: research before
-build, sweep → PTY research → tracker draft; D7 asks for a blind triangulation before the relay architecture is locked.
-The lead reads those sources and brings Majkee one proposal — slug, gate sentence, umbrella, team, first release menu.
+**What L14 prescribes** (read on 2026-11-26: `../flag.md` L14 with the amendment of 2026-11-23;
+`meshup/seam.cross-vendor-relay.2026-08-05/raw/decisions.relay.2026-09-30.md` D4 and D7;
+`~/reposoma/raw.guides/runbook/res/research.md`):
+
+- The next chapter is `relay-X2-research`, the big-scope research gate: one session that decides whether the relay
+  program — a PTY impulse layer for session relay and its tracker, under D1 to D3 — should be built at all.
+- It answers three checks, dated and sourced: **wheel** (does something existing cover it), **overengineering**
+  (would a smaller composition of existing parts serve) and **vendor harness** (will the platforms ship it natively,
+  and which native change would retire the build).
+- It ends in one ranked verdict — **REINVENT, ADOPT or REFUSE** — with its recommendation on disk. `relay-X3-pty` and
+  `relay-X4-tracker` open only after it.
+- D7: two blind briefs to the other vendor line before the relay architecture is locked — one on research, one on
+  architecture; each ends in a committed answer and a falsifier, never in consensus.
+
+**The lead's proposal:**
+
+| | Proposed | Why |
+|---|---|---|
+| Slug | `relay-X2-research` | the reserved name; X2 is free |
+| Gate | *Majkee records GO or STOP on a recorded research VERDICT for the relay program — REINVENT, ADOPT or REFUSE, ranked, with its recommendation on disk — resting on a dated and sourced wheel check, overengineering check and vendor-harness check, with the blind research brief of L14 D7 returned beside it. The verdict locks no architecture and releases no build.* | the research guide's gate in this project's form; the last sentence keeps D7's second brief and the architecture lock outside |
+| Evidence it may cite | the door inventory of X0; the four packets of X1; the helper inventory in `eSharp/raw/`; whatever sibling beds have qualified | cited as evidence, never as a verdict |
+| Releases it needs | none to begin: reading, dated web research, one blind brief to the other vendor line. No session is started, nothing is sent into a sample | a research bed activates nothing |
+| Team | the lead as its head; a dated-research seat for the three checks; the auditor as the checker of the verdict file; the controller's seat as second-vendor reader; the blind brief by a relay that carries no position; the exec desk for the gate | as he named the team on 2026-11-26 |
+
+**Open points the lead cannot settle:**
+
+1. **Who authors its RUNBOOK.** The predecessor's head wrote this bed's frame; the lead can do the same for X2 with
+   the planning protocol, or he names a planning seat.
+2. **Whether D7's research brief belongs inside X2** (proposed above) or before it.
+3. **Overlap.** By their gate lines in `../pulse.md` — the lead has not read these beds — `terminal-workspace-X0-approaches`
+   already gathers dated native and reuse alternatives for a shared terminal, and `termpanum-X1-source-qualification`
+   and `nablarva-02-pipe-qualification` qualify sources and a native assignment path. The wheel check of X2 must
+   start from what they hold, or it repeats them.
+4. **The umbrella.** X0 and X1 carried his sentence about what the home trial can support. A research gate may want
+   its own; none is proposed.
+
 Until he has opened it, there is no successor bed.
 
 ## 5. Locks this touches
