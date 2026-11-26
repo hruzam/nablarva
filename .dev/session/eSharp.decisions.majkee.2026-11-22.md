@@ -2,7 +2,7 @@
 kind: operator words, verbatim — the experimental shape `eSharp`. Noncanonical record; it opens no session and releases nothing.
 from: majkee, typed in the engineer session (claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) on home, 2026-11-22
 recorded_by: trajectory, in that session — so that his words survive the clear of the session
-continued: 2026-11-25 and 2026-11-26 — sections 7 to 12 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting, his six points and the tmux tree, the name and his roster, the sandbox server)
+continued: 2026-11-25 and 2026-11-26 — sections 7 to 13 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting, his six points and the tmux tree, the name and his roster, the sandbox server, a test session for each group)
 ---
 
 # eSharp — what Majkee said, what I answered, what he agreed
@@ -365,9 +365,43 @@ Typed at the computer on 2026-11-26 at 02:00 UTC (three in the night, his time);
   wording of sheet 2, A3.
 - **3.** He reads the files this record points at.
 
+## 13. The whisper again, and a test session for each group
+
+Typed at the computer on 2026-11-26 at 02:46 UTC; copied by script from the session transcript.
+
+**Majkee:**
+> ## 0. The Whisper
+>
+> As much as I know, you need first move caret, even think at the end on advice like in terminal command whisper works, but there is enough to press key `right-arow`
+>
+> ---
+>
+> ## 1. Group 1
+>
+> made:
+> `❯ tmux -L sandbox-server new-session -d -s sandbox-terwor -n terminal -c ~/unikuklatrix/nablarva
+> ❯ tmux -L sandbox-server kill-window -t '=sandbox:terminal'`
+>
+> ---
+>
+> ## 2.
+>
+> Going to read finaly documents, local `lead` -> seswin, has replies.
+
+**My reading — mine, not his words.**
+- **0.** A suggestion is taken only after the caret is moved — the right-arrow key is enough — as with the whisper of a shell.
+  So a bare Enter should not send it. That agrees with the documentation, which names Tab and right-arrow and is silent on a
+  bare Enter. My rule for a pointer line stays the same; I also saw that a paste makes the suggestion go away.
+- **1.** He ran the two lines. On `tmux -L sandbox-server` the session `sandbox` now has three windows — `codex-sample`,
+  `claude-sample`, `session` — for group 1, and group 2 has a session of its own, `sandbox-terwor`, with the window `terminal`
+  (pane `%4`). The lead's point about the status row is settled with that.
+- **2.** He answered the lead in its own pane. His words there give lead.seswin the pen and widen whom it may spawn:
+  `session-window-X1-surface/raw/decision.majkee.pen.2026-11-26.md`. From that moment the bed's RUNBOOK and STATUS are the
+  lead's, and the manager writes nothing in it. The lead's record says it plainly: the sandbox release is still not given.
+
 ## Not decided here
 
-- The sandbox release (sheet 2, A3): worded, not given. The place is settled — his server `tmux -L sandbox-server` (section 12).
+- The sandbox release (sheet 2, A3): worded, not given. The place is settled — his server `tmux -L sandbox-server`, one session for each group (sections 12 and 13). The lead of group 1 asks for it at its read-back.
 - The rule for what may go to the public remote, and how caches travel between hosts — his research; the ignore rule he answers in sheet 2.
 - The organ of the terminal line (O1).
 - The UI of the helper surface — spare places, controls of a shared terminal (section 10, point 6).
