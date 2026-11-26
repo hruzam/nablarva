@@ -195,6 +195,8 @@ that is not a need.
 research lines that agree: the vendors' own hooks; the program status a pane reports, once tmux releases it; the
 published pattern of turning either into a record on the file plane. The delta is then the smallest thing that
 serves the one state the failure names — and its shape is a design decision still owed (§7), not this verdict's.
+*(Erratum 1.)* If a qualifying failure concerns state detection, the cited vendor signals are candidates. If it
+concerns receipt or waking, compare remedies for that failure. The count establishes the need for that comparison.
 
 **REINVENT last.** A classifier of the screen would be at least the seventh published one, with the breakage the
 others document, for states the vendors' programs now emit.
@@ -285,9 +287,13 @@ REFUSE, ADOPT, REINVENT — is unchanged. Each changed place is marked "(Erratum
 | 3 | §4, Codex row | "a native mailbox in 0.171 and 0.172" — 0.171's line names acknowledged agent messages and no mailbox; the mailbox routing is 0.172's | R 2b |
 | 4 | §7, the carrier | "Only the second would be a reason to open relay-X3-pty" — an exclusivity L14 does not give | `flag.md`, L14 |
 | 5 | the falsifier; §6 condition 1 | not wrong, but loose: what counts, what does not, what a blank means, and that crossing the threshold shows a need and no remedy | this verdict's own text; the auditor's reading (cycle 11) |
-| 6 | "Second, ADOPT" | named an emitted state as what to take even where the counted failure would be one of delivery | this verdict's own falsifier |
+| 6 | "Second, ADOPT"; §5 "ADOPT second" | named an emitted state as what to take even where the counted failure would be one of delivery | this verdict's own falsifier |
 | 7 | §6, condition 4 | "each has its own record, with the recipient and the turn named" chose an implementation | the auditor's reading (cycle 11) |
 
-Not corrected here, because the correction would come from the blind answer: the five sentences listed in
-`raw/differences.verdict-vs-blind-answer.lead.2026-11-27.md`, §7. They stay as committed and are for the gate.
+Of the five points in the comparison's §7 (`raw/differences.verdict-vs-blind-answer.lead.2026-11-27.md`), item 1 is
+corrected above from the original sources. Items 2–5 remain in the comparison for Majkee.
+
+Completed 2026-11-26 23:58 UTC after the auditor's confirmation (`_bus/13.auditor.return.md`, REVISE on wording): the
+qualification of row 6 repeated in §5 "ADOPT second", where the ranking is read; and this closing note, which had
+said all five sentences stay as committed.
 

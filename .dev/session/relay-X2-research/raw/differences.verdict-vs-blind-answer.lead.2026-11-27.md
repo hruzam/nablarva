@@ -4,7 +4,7 @@ by: lead (flight · claude 689d87d0) · written 2026-11-26 23:46 UTC · home
 compared: V = `research-verdict.md` as committed in 14e40b0 (SHA-256 b37d0794…9d2deb, 2026-11-26 04:31 UTC) · AR = `.dev/_backlog/first-blind-triangulation-relay/blind-relay-triangulation-asymmetry-2026-11-26.md` (Asymmetry, verdict ADOPT, filed by Majkee) · BR = the brief as sent, `.dev/_backlog/first-blind-triangulation-relay/brief.symmetry.blind.relay-research.send-copy.2026-11-26.md` — byte-identical to the bed's send copy (the auditor's `cmp`, exit 0)
 order: AR was first opened by the lead on 2026-11-26 at about 23:44 UTC, nineteen hours after V's commit. RUNBOOK step 5 is kept on that point.
 fault: before writing this list the lead read Symmetry's master brief (`raw/master.symmetry.relay-and-floor.collision.2026-11-26.md`) whole. Its front matter says the lead should read it only after this file is written, because its §3 and §4 hold Symmetry's own comparison. The lead read the instruction and the comparison in the same pass. This list is therefore not independent of Symmetry's. The remedy taken: a reader child that saw only V, BR and AR wrote its own list (`raw/differences.independent-reader.2026-11-27.md`); §6 below says where the two lists differ. Rows of this file that coincide with Symmetry's §3 are marked (S).
-status: REVISION 2, 2026-11-26 23:56 UTC — checked by the auditor in cycle 11 (`_bus/11.auditor.return.md`, REVISE); its corrections of labels are taken in place and listed in §8. Nothing is decided here; Majkee gates the comparison.
+status: REVISION 2, 2026-11-26 23:56 UTC — checked by the auditor in cycle 11 (`_bus/11.auditor.return.md`, REVISE); its corrections of labels are taken in place and listed in §8; five wordings reconciled 2026-11-26 23:58 UTC after its confirmation (`_bus/13.auditor.return.md`). Nothing is decided here; Majkee gates the comparison.
 ---
 
 # 1. The two answers, each in its own words
@@ -49,13 +49,13 @@ status: REVISION 2, 2026-11-26 23:56 UTC — checked by the auditor in cycle 11 
 | 12 | `codex queue --resume` | "optional resume since 0.166.0" (§4); not used by this line | "a failed resume can produce a warning while the command still exits successfully" (§4) | AR adds the exit-status behaviour |
 | 13 | The terminal as the common layer | D1, an input that is not judged; its floor unconditional (§8) | narrowed: "making terminal-derived state the universal authority for activation" is what it would not endorse; tmux kept as "the operator's terminal and fallback transport" | different scope — the brief wrote "His current choice", so AR judged what V takes as given (S) |
 | 14 | The kind of falsifier | a count in routine use; if met, ADOPT leads | a controlled comparison of hcom and native interfaces against a small PTY relay; if met, REINVENT narrowly | different axis — neither falsifier tests the other's verdict (S) |
-| 15 | The acceptance cases | condition 3 names a mix of events, a tolerance, "unknown" as an outcome | a longer list: idle, working, approval, question, compaction, interruption, background tasks, restart; a human draft in the composer; a phone disconnect and reattach; a changed pane width; a deliberately ambiguous retry (§8) | V names the human draft as a reported failure (§2) and is silent on the last four as test cases |
+| 15 | The acceptance cases | condition 3 names a mix of events, a tolerance, "unknown" as an outcome | a longer list: idle, working, approval, question, compaction, interruption, background tasks, restart; a human draft in the composer; a phone disconnect and reattach; a changed pane width; a deliberately ambiguous retry (§8) | V names the human draft as a reported failure (§2) and is silent on phone reconnect, pane width and the ambiguous retry as test cases |
 | 16 | Repeated delivery | not addressed | "Exactly once" needs an idempotent pointer or a recognised completed effect (§7) | one side silent |
 | 17 | Which revision of the file was read | D2: the file is the truth; revision not addressed | "A message about a file does not prove the correct file revision was read" (§7) | one side silent |
 | 18 | An observer that arrives late | not addressed as such | events before observation are lost; records may lag (§7) | one side silent |
 | 19 | ACP v2 preview | not mentioned | `running`, `requires_action`, `idle`; an idempotency key; a preview, not shown implemented (§4; P2) | one side silent |
-| 20 | The need | served today: eight pointers of this bed, 48 of the predecessor (§3) | not examined; the brief's wish is taken as the requirement | one side silent — AR could not know |
-| 21 | The host | tmux 3.7c, Claude Code 2.1.332, Codex 0.172.0 installed (§1, §4) | "Actual workstation version not inspected" | AR could not know |
+| 20 | The need | served today: eight pointers of this bed, 48 of the predecessor (§3) | not examined; the brief's wish is taken as the requirement | one side silent — not supplied by the brief |
+| 21 | The host | tmux 3.7c, Claude Code 2.1.332, Codex 0.172.0 installed (§1, §4) | "Actual workstation version not inspected" | host not inspected by AR |
 | 22 | What stays open after the verdict | the carrier under D1 and L4 — a decision of Majkee's (§7) | an adoption trial of hcom on the deployed versions | follows from row 1 |
 
 # 4. Factual claims in AR that would bear on V if true — not judged here
@@ -89,9 +89,9 @@ What it has that the lead's list lacks — the ones that matter:
 | 34, 44 | limits AR states for Claude's hooks (`Stop` excludes interruption; `idle_prompt` delayed about 60 seconds) and for Antigravity's status callback (throttled; can be disabled after repeated failures) | V lists both surfaces without those limits |
 | its §6 | AR says of itself that "Existing conversation context describes the operator's workflow" | AR was blind to V and to this bed, not to the operator; what that context held is in no file here |
 
-What the lead's list has that the reader's does not: the note that the brief as sent is byte-equal to the bed's send
-copy apart from trailing spaces (the lead's `diff`; the reader could not check it), and the marking of rows that
-coincide with Symmetry's comparison.
+What the lead's list has that the reader's does not: the note that the copies are byte-identical (the brief as sent and
+the bed's send copy; the auditor's `cmp` — the reader could not check it), and the marking of rows that coincide
+with Symmetry's comparison.
 
 Where the two lists disagree with each other: nowhere that the lead found. The reader's row 59 says V's front matter
 ("the brief is not sent") is contradicted by AR's existence; both are true of their own time — V was committed on
@@ -108,8 +108,9 @@ Listed for the gate. V is not changed: it is the committed answer, and the RUNBO
    with less." — written without hcom having been read; the auditor's table held it only as a README's claim. AR
    read its source and tests. Whether hcom does more with less for this operator is open, not settled for V.
 4. V §4, Antigravity row, "No supported delivery by a third party into an ordinary running session was found" —
-   AR reads the ACP documentation and two fixes of 23 and 24 November as attachment to a running session, to be
-   checked on a pinned version (row 10 above).
+   AR reads the ACP documentation and the fix of 1.5.15 (prompts lost when attaching to a running session) as
+   attachment to a running session, to be checked on a pinned version; the fix of 1.5.16 concerns the forwarding of
+   a subagent's prompts (row 10 above).
 5. V §4, "On paper the contingency is closed" (Antigravity's approval state) — AR names two ways that callback can
    go silent.
 
