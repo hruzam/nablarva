@@ -36,3 +36,18 @@ why: Majkee — "we can still collect the data … how it is working, where are 
 - **A voice answer answers what was heard.** Sheet 2 asked a yes or no on the sandbox release; the answer was a question back.
   The release stands as "proposed, not given" in the RUNBOOK instead of being read into his words.
 - **Times written before the clock was read ran a quarter of an hour ahead.** Found at the validation step and corrected.
+
+# 2026-11-26 — the first day with partners
+
+- **The partner of the other brand changed a recommendation before it left.** I leaned to a test session on the usual tmux
+  server; `seniorDev` opposed, and I withdrew. One POINT, one RETURN, three minutes. → `_bus/03.seniorDev.return.md`.
+- **The lead found in its first read what two reads before it had missed.** A status row is an option of the tmux session, so
+  one sandbox session for two groups cannot hold. Neither I nor the opposing read saw it. → `_bus/07.lead.seswin.return.md`.
+- **A sheet that forbids "anything on any tmux server" forbids the reads its own STATUS asks for.** The lead ran two read-only
+  queries and reported its own breach unasked. The fault was my wording: say what is allowed, not only what is forbidden.
+- **I rewrote STATUS a minute after the pointer line went out,** so the seat read the old one. STATUS first, then the poke.
+- **The whisper.** A Claude pane can show a suggested next prompt in its input row. It reads like a draft. The cursor tells
+  them apart: at the start of the row for a suggestion, behind the text for typed words. What a bare Enter does there is not
+  documented — so: look after the paste, Enter only when the pasted line is in the row.
+- **A shared seat's input row can be in use for hours.** myShell's row held Majkee's own draft when I came to ask her; the
+  request waited. A poke is not the only door — a request file that he passes on is as good.
