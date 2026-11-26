@@ -22,14 +22,19 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 
 ## Open
 
-- [ ] relay X1 `relay-X1-probes` — opened by Majkee 2026-11-22 ("open now on `home`"), fresh lead, pen vacant until it binds.
-  Carries the live door probes, the planned U01 capture, the parked exit race, the paper receiver contract and the cases
-  X0-U01 … X0-U06; nothing is released · gate, pen and team live only in its [STATUS](relay-X1-probes/STATUS.md) ·
-  starting document [handoff](relay-X0-carryover/raw/handoff.successor-stage.2026-11-22.md)
+- [ ] Successor of relay X1 — **not opened.** By L14 D4 the next reserved chapter is `relay-X2-research` (or the next free X
+  number at opening). Its slug, gate, owner and release are set when Majkee opens it; the lead of X1 prepares one proposal on
+  his word of 2026-11-26 · starting document [handoff](relay-X1-probes/raw/handoff.successor-stage.2026-11-26.md)
+- [ ] Open work carried out of relay X1 (handoff §2) — lines 8 to 19 of the X0 release menu and the U01 capture, never released;
+  the cases X0-U01 … X0-U06; the parked exit race; the paper receiver contract. New from X1's packets, nothing tried: whether an
+  accepted `codex queue` message that did not arrive is lost or waits, and what releases one; a second message while an approval
+  chooser stands, answered with approval; what a stored allow rule does later; a chooser across interrupt and resume. Belonging
+  to the line is not a release.
 - [ ] Standing development debt — retire the provisional file-poke: qualify the actual replacement, map its
   coverage, then repair/remove the provisional chapter/manifest and authoring/future-session references under
   the accepted scope. The qualifying head owns that proposal; unresolved pieces carry forward.
-  Carried now by `relay-X1-probes` as a tracked obligation outside its gate; text in [G7](relay-X0-carryover/goals/G7.retire-file-poke.md).
+  Carried by `relay-X1-probes` until it closed on 2026-11-26; from then by the line, for the next relay bed to take up
+  (handoff §2); text in [G7](relay-X0-carryover/goals/G7.retire-file-poke.md).
 
 ## Standing (holds while the line lives)
 
@@ -93,6 +98,12 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
   [Tool](relay-X0-carryover/scripts/capture-folders-custody.py) — `python3 <tool> <new-private-folder>`; it refuses an existing
   destination, a Git worktree and any symlink in a source. The U01 working files (helpers' crawl reports, the selector's table, the
   auditor's blind labels) are beside it in `custody/u01-2026-11-22/`, also private.
+- [x] relay X1 `relay-X1-probes` closed on Majkee's word, 2026-11-26 — four witnessed probe packets, each with his GO:
+  [packet 1](relay-X1-probes/packet.md) (A, B) · [packet 2](relay-X1-probes/packet-2.md) (C1, C2) ·
+  [packet 3](relay-X1-probes/packet-3.md) (D1) · [packet 4](relay-X1-probes/packet-4.md) (E1, E2, E3). Every row stands as
+  tried once; the packets qualify no door and adopt nothing. Closed for the record and left tracked: its files are read by path ·
+  [decision](relay-X1-probes/raw/decision.majkee.close.2026-11-26.md) · [handoff](relay-X1-probes/raw/handoff.successor-stage.2026-11-26.md) ·
+  [STATUS](relay-X1-probes/STATUS.md) · [process record](../observations/relay-X1-probes.flight.2026-11-26.md)
 - [x] Private evidence of `relay-X1-probes` on two hosts — Majkee, gate 2 (G6) and gate 3 (H4), 2026-11-23; copied by the
   controller (cartan) from home (`hruzam`) to office (`hruzam-120922`) over the tailnet by SSH.
   [Gate 2](relay-X1-probes/raw/decision.majkee.gate-2.2026-11-23.md) · [gate 3](relay-X1-probes/raw/decision.majkee.gate-3.2026-11-23.md) ·
