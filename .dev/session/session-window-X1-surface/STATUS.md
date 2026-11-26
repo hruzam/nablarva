@@ -1,4 +1,4 @@
-updated: 2026-11-26 03:04 UTC
+updated: 2026-11-26 04:50 UTC
 writer: lead.seswin · claude · flight build, claude-opus-5-5, effort xhigh — the first snapshot the lead wrote itself
 host: home · hruzam
 worktree: >-
@@ -18,8 +18,9 @@ checkpoint: >-
   models, the sandbox server as it now stands, read-only queries, versions, the Claude sample's settings, the pointer text) and
   stays open to change until the read-back at step 2. Step 1 is written; step 2's sheet is in draft 2
   (raw/sheet.readback-1.2026-11-26.md), after audit.seswin's once-read, and is being checked by assay.
-in_flight: none — the step-2 sheet is ready and waits for Majkee's choice of route: through the exec desk (the manager
-  orders it there) or read in the lead's pane
+in_flight: none — waiting on Majkee. At about 04:48 UTC he said he will read the sheet himself, after a nap, with a delay
+  of some hours ("fine, going to read, but have small nap"). The lead parks; no poke, no child, nothing on the test server.
+  e46c931 (sheet draft 2) is on origin/core, carried by a later push of another bed; nothing of this bed is waiting to be pushed.
   - returned: s13 assay PASS on sheet draft 2 (attempt 2, after one FAIL: S2 had cited a script check older than the last
     script edits); s09 assay PASS attempt 2 on nine checks of the start scripts in their final form; s08 trajectory
     follow-ups 2–4 (Codex `nohooks` default, pane pin, banner after checks, Enter prompt before exec, README)
