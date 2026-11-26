@@ -1,7 +1,7 @@
 # STATUS: relay-X2-research
 
 ```yaml
-updated: 2026-11-26 04:30 UTC
+updated: 2026-11-26 04:47 UTC
 writer: lead · flight · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8 (Fable 5.2, effort high) · tmux pane %70, window `lead`, session group helloWorld · woken by Majkee on 2026-11-26 with the cold-start card
 host: home (hruzam)
 worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD a48c313 when this was written, level with the local origin/core ref (no fetch was made) · other sessions commit here; dirty paths that are not this bed's — .dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md, .dev/session/eSharp/roster-proposal.eSharp.md, nano.2280604.save (untracked, repository root)
@@ -55,7 +55,8 @@ checkpoint: >
   use. research-verdict.md is now the VERDICT text of step 5, third version: REFUSE, then ADOPT, then REINVENT; a
   falsifier counted in the poke logs; the cost of REFUSE named (the provisional file-poke's debt, goal G7, and its
   carrier a vendor door that D1 parks) as a decision owed by Majkee. The auditor has not read this version. It is
-  on disk and goes to the controller for the commit that step 5 names (POINT 09).
+  committed as the verdict in 14e40b0 (cycle 09, ACCEPT): committer time 04:31:02 UTC, SHA-256 b37d0794…9d2deb,
+  remote core at 14e40b0 at 04:31 UTC. From that commit on a blind answer may be read; none exists.
   A notice from the eSharp manager (its _bus/11), addressed
   to the head of relay-X1-probes, reached this window at about 04:02 UTC; read, it changes nothing in this bed.
 routing: >
@@ -87,14 +88,19 @@ harvest_rows: >
   lock. U23 adopted — a present state is looked at in the same turn, or carries its observation time and the pending check.
 in_flight: |
   as of the `updated:` time above; raw/pokes.log.md has what the carrier answered and when each watch ends
-  - POINT 09 → controller: the commit of the verdict (six named paths) and one push; it reports the commit's time
-    and the file's SHA-256. This is the commit of RUNBOOK step 5.
-  - the ask to Majkee on the brief (raw/brief.blind.relay-research.corrections.2026-11-26.md, "What Majkee is
-    asked"), put in the lead's pane at 04:04 UTC; his answer goes verbatim into raw/decision.majkee.brief.2026-11-26.md.
-    Until the brief is sent there is no blind answer and no list of differences.
-  - the auditor's context: 18% left at 04:25 UTC. One more check of it is owed (step 6). Whether it compacts or
-    another seat takes the check is Majkee's to grant; put to him with the report of this cycle.
-  - no child of the lead is running; no POINT is open at the auditor or the exec desk.
+  - Majkee said in the lead's pane (about 2026-11-26 04:47 UTC) that he goes to read and then rests; hours may pass before he is
+    back. The bed waits; nothing is to be done in his absence but this checkpoint.
+  - POINT 10 → controller: a checkpoint commit of three named paths (cycle 09's RETURN and VERDICT, the poke log)
+    and one push. After it the only uncommitted files are cycle 10's own RETURN and VERDICT, the poke log's last
+    entry, and the open decision file below.
+  - no POINT is open at the auditor or the exec desk; no child of the lead is running.
+  - three things are with Majkee, put in the lead's pane at 04:30 UTC: (1) the brief — is the endpoint ranking his,
+    and who sends it and files the answer (raw/brief.blind.relay-research.corrections.2026-11-26.md, "What Majkee is
+    asked"; first put at 04:04 UTC); (2) the auditor's context, 18% left at 04:25 UTC, with the step-6 check still
+    owed — compaction or another seat; (3) whether a blind answer is waited for at all.
+  - at his request (his pane message after 04:32 UTC) a file he writes into himself lies ready:
+    raw/decision.majkee.brief-and-check.2026-11-26.md — a short reading list and six questions, each with a line
+    "MAJKEE:" for his own words. OPEN; uncommitted until he has written. GO or STOP is not asked in it.
 recovery_probe: |
   commands (read-only):
     sed -n '1,12p' /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/STATUS.md
@@ -120,9 +126,9 @@ holds: >
   The blind answer is not read before research-verdict.md is committed. The seats seniorDev, myShell, eSharp and
   supervisorCli are not poked.
 next: >
-  VERDICT on RETURN 09. Majkee's answer on the brief, recorded; the brief goes out by the hand he names; the answer
-  is filed verbatim and read by the lead only now that the verdict is committed. Then the list of differences —
-  listed, never merged — the auditor's check of verdict and differences (step 6), and the one ask to Majkee: GO or
-  STOP. If he says no blind answer is to be waited for, the step-6 check runs on the verdict alone.
-expected: _bus/09 with RETURN and VERDICT; raw/decision.majkee.brief.2026-11-26.md; the blind answer in raw/; raw/differences.*.md; raw/decision.majkee.*.md with GO or STOP.
+  Majkee's word on the three things above, recorded verbatim in raw/decision.majkee.*.md. Then, as he says: the
+  brief goes out by the hand he names and the answer is filed verbatim; the lead reads it (the verdict is
+  committed), lists the differences without merging; the auditor — or the seat he names — checks verdict and
+  differences (step 6); and the one ask to him: GO or STOP.
+expected: raw/decision.majkee.brief.2026-11-26.md; the blind answer in raw/; raw/differences.*.md; the step-6 RETURN; raw/decision.majkee.*.md with GO or STOP.
 ```
