@@ -22,9 +22,10 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 
 ## Open
 
-- [ ] Successor of relay X1 — **not opened.** By L14 D4 the next reserved chapter is `relay-X2-research` (or the next free X
-  number at opening). Its slug, gate, owner and release are set when Majkee opens it; the lead of X1 prepares one proposal on
-  his word of 2026-11-26 · starting document [handoff](relay-X1-probes/raw/handoff.successor-stage.2026-11-26.md)
+- [ ] relay X2 `relay-X2-research` — opened by Majkee 2026-11-26 with the L14 research gate (REINVENT, ADOPT or REFUSE on the
+  relay program); RUNBOOK authored by the closing head of X1 and parked; no lead bound yet, no research done · gate, pen and team
+  live only in its [STATUS](relay-X2-research/STATUS.md) · [opening word](relay-X2-research/raw/decision.majkee.open.2026-11-26.md) ·
+  starting document [handoff](relay-X1-probes/raw/handoff.successor-stage.2026-11-26.md)
 - [ ] Open work carried out of relay X1 (handoff §2) — lines 8 to 19 of the X0 release menu and the U01 capture, never released;
   the cases X0-U01 … X0-U06; the parked exit race; the paper receiver contract. New from X1's packets, nothing tried: how long an
   accepted `codex queue` message is kept and what releases it (of two that did not arrive within their watch, one arrived
