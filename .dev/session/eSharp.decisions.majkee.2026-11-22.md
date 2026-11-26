@@ -2,7 +2,7 @@
 kind: operator words, verbatim — the experimental shape `eSharp`. Noncanonical record; it opens no session and releases nothing.
 from: majkee, typed in the engineer session (claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) on home, 2026-11-22
 recorded_by: trajectory, in that session — so that his words survive the clear of the session
-continued: 2026-11-25 and 2026-11-26 — sections 7 to 13 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting, his six points and the tmux tree, the name and his roster, the sandbox server, a test session for each group)
+continued: 2026-11-25 and 2026-11-26 — sections 7 to 14 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting, his six points and the tmux tree, the name and his roster, the sandbox server, a test session for each group, the end of the relay on-call duty)
 ---
 
 # eSharp — what Majkee said, what I answered, what he agreed
@@ -398,6 +398,20 @@ Typed at the computer on 2026-11-26 at 02:46 UTC; copied by script from the sess
 - **2.** He answered the lead in its own pane. His words there give lead.seswin the pen and widen whom it may spawn:
   `session-window-X1-surface/raw/decision.majkee.pen.2026-11-26.md`. From that moment the bed's RUNBOOK and STATUS are the
   lead's, and the manager writes nothing in it. The lead's record says it plainly: the sandbox release is still not given.
+
+## 14. The relay on-call duty ends
+
+Typed at the computer on 2026-11-26 at 04:00 UTC, after I passed on myShell's guess that a predecessor kept "on call" is a
+seat without need; copied by script from the session transcript.
+
+**Majkee:**
+> drop the relay on-call duty - it was only intended to contnuity, if fresh agent|head seems to be lost Or I have miss something when was prepared set of instructions for him. No necessary as babysitting whole run.
+
+**My reading — mine, not his words.** The duty is dropped. It was meant for the start only — in case the fresh head was lost,
+or something was missing in the instructions prepared for it — not for the whole run. The manager no longer stands by for
+`relay-X1-probes`; what the closed bed knows is in its files. The relay lead is told by one notice
+(`eSharp/_bus/11.manager.notice.md`). Its RUNBOOK still names the duty and the old pane `%58`; that file is the relay lead's
+and is not changed by me.
 
 ## Not decided here
 
