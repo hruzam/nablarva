@@ -1,7 +1,7 @@
 # STATUS: relay-X2-research
 
 ```yaml
-updated: 2026-11-26 04:01 UTC
+updated: 2026-11-26 04:03 UTC
 writer: lead · flight · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8 (Fable 5.2, effort high) · tmux pane %70, window `lead`, session group helloWorld · woken by Majkee on 2026-11-26 with the cold-start card
 host: home (hruzam)
 worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD a48c313 when this was written, level with the local origin/core ref (no fetch was made) · other sessions commit here; dirty paths that are not this bed's — .dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md, .dev/session/eSharp/roster-proposal.eSharp.md, nano.2280604.save (untracked, repository root)
@@ -19,8 +19,11 @@ checkpoint: >
   Cycles 01 to 03 are closed, each ACCEPT: the three seats have taken this bed; the controller pushed ff2331b
   (remote core at ff2331b, looked at 04:00 UTC); the auditor found no tracked record that the blind brief was ever
   sent or answered. The send copy of the brief and the list of its four corrections are written (raw/brief.blind.*),
-  resting on a research child's dated check of the vendor facts that the lead has read. Neither is checked by the
-  auditor yet, neither is shown to Majkee, nothing is sent. The evidence map and the wheel research are not in.
+  resting on a research child's dated check of the vendor facts that the lead has read. Cycle 04 is closed: the
+  auditor answered REVISE on both, all its points are taken (revision 2); the auditor has not read the revision. The
+  ask on the brief is put to Majkee — the ranking of endpoints to confirm, and who sends it; no answer yet, nothing
+  sent. The evidence map and the wheel research are not in. A notice from the eSharp manager (its _bus/11), addressed
+  to the head of relay-X1-probes, reached this window at about 04:02 UTC; read, it changes nothing in this bed.
 routing: >
   By Majkee's word of 2026-11-26, later than the RUNBOOK: git operations go to the controller where the lead can
   split them — for this bed the controller commits and pushes what a POINT names, against prompt-2's "do not push
@@ -50,14 +53,14 @@ harvest_rows: >
   lock. U23 adopted — a present state is looked at in the same turn, or carries its observation time and the pending check.
 in_flight: |
   as of the `updated:` time above; raw/pokes.log.md has what the carrier answered and when each watch ends
-  - POINT 04 → auditor: check of the brief's send copy and its corrections (PASS or REVISE). Open.
   - POINT 05 → auditor: a position-free research line by its child, own artifact
-    raw/research.wheel-and-harness.auditor.2026-11-26.md. Written and committed; poked only after RETURN 04 —
-    one POINT at a time per seat.
+    raw/research.wheel-and-harness.auditor.2026-11-26.md; 40 minutes at most, then INCOMPLETE. Open.
+  - the ask to Majkee on the brief (raw/brief.blind.relay-research.corrections.2026-11-26.md, "What Majkee is
+    asked"), put in the lead's pane; his answer goes verbatim into raw/decision.majkee.brief.2026-11-26.md.
   - two children of the lead, in the background, each writing one file in raw/: a reader child →
     prior-evidence.map.md (step 2) · a research child → research.wheel-and-harness.epoch.2026-11-26.md (step 4).
     A file of theirs on disk is not a checked result until the lead has read it.
-  - seats' context at 04:00 UTC: auditor 46%, controller 89%, exec 33%.
+  - commit 8c2e9d9 and what follows it are local; the push goes to the controller with the next checkpoint POINT.
 recovery_probe: |
   commands (read-only):
     sed -n '1,12p' /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/STATUS.md
@@ -83,8 +86,8 @@ holds: >
   The blind answer is not read before research-verdict.md is committed. The seats seniorDev, myShell, eSharp and
   supervisorCli are not poked.
 next: >
-  VERDICT on RETURN 04; the auditor's points taken into the send copy; then the one ask to Majkee — the corrections
-  C1 to C4, the ranking of endpoints to confirm, and who sends the brief. Poke 05 once RETURN 04 is in. A checkpoint
-  commit and push by the controller (POINT) when the children's files are in.
-expected: _bus/04 and 05 with RETURNs and VERDICTs; raw/decision.majkee.brief.*.md; raw/prior-evidence.map.md; the two research tables.
+  Majkee's answer on the brief, recorded; then the brief goes out by the hand he names. The children's files read
+  and checked as they come; a checkpoint commit and push by the controller (POINT). VERDICT on RETURN 05. Then the
+  overengineering check and research-verdict.md.
+expected: raw/decision.majkee.brief.2026-11-26.md; raw/prior-evidence.map.md; the two research tables; _bus/05 with RETURN and VERDICT.
 ```

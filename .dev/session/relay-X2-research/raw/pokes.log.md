@@ -32,3 +32,12 @@ Exit 0 shows that the queue accepted the call, nothing more.
 - watch: on `_bus/03.exec.return.md`, ends 2026-11-26T04:18:37Z
 - RETURN seen: 2026-11-26T03:59:16Z (the watch; 39 s after the call; the file was amended at 03:59:51Z) · bell r03 reached pane %70 while the lead was mid-turn · VERDICT 03: ACCEPT
 
+## p04 — lead → auditor (pane %66) · `codex queue`
+- authority: RUNBOOK prompt-0 step 3 — the outgoing brief is checked before Majkee reads it
+- file first: `_bus/04.lead.point.md`, committed before the poke (8c2e9d9)
+- looked first (2026-11-26T04:02:00Z): pane %66 — thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7 in the footer, input row the empty placeholder, not working
+- line: `[poke p04] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/04.lead.point.md — check of the blind brief's send copy, PASS or REVISE`
+- carrier: called before 2026-11-26T04:02:01Z · exit code 0 · output (first line): `Queued message 01a21604-772b-7993-b396-91c3ccf6a586 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- watch: on `_bus/04.auditor.return.md`, ends 2026-11-26T04:22:01Z
+- RETURN seen: 2026-11-26T04:02:49Z (the watch; 48 s after the call) · bell r04 reached pane %70 while the lead was mid-turn · the auditor: REVISE on the send copy; all points taken · VERDICT 04
+

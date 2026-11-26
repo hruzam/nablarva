@@ -11,7 +11,7 @@ use: wheel check + vendor-harness check for a big-scope research gate
 
 ## Situation
 
-One operator runs interactive CLI coding agents from three vendors in tmux on a workstation, reached from a phone over Tailscale. Claude Code and Codex CLI are the first-class endpoints. Google's are second-level: Antigravity CLI (`agy`, Google's successor to Gemini CLI) and Gemini CLI itself, which stopped serving personal tiers on 2026-06-18 and persists for enterprise and paid-API use. Sessions coordinate through markdown files: each session folder holds its state and a `_bus/` of message files between seats. The operator relays between sessions by hand; since 2026-11-19 seats may also send each other a one-line pointer to a file, as a provisional practice with the operator as the fallback. He wants routine relay automated; only strategic decisions should reach him.
+One operator runs interactive CLI coding agents from three vendors in tmux on a workstation, reached from a phone over Tailscale. Claude Code and Codex CLI are the first-class endpoints. Google's are second-level: Antigravity CLI (`agy`, Google's successor to Gemini CLI) and Gemini CLI itself, which on 2026-06-18 stopped serving Google AI Pro, Ultra and free Code Assist for individuals, and continues for organizational access and paid API keys. Sessions coordinate through markdown files: each session folder holds its state and a `_bus/` of message files between seats. He wants routine relay automated; only strategic decisions should reach him.
 
 His current choice: the PTY/terminal is the common layer to build on, because every CLI runs in one. The terminal should yield only the signal that something happened; content goes to files.
 
