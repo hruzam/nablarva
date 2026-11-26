@@ -105,9 +105,10 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 - [x] Private evidence of the chooser tests of `relay-X1-probes` on two hosts — Majkee, gate 3 (H4) and his GO on the fourth
   packet, 2026-11-23; copied by the controller (cartan) from home (`hruzam`) to office (`hruzam-120922`) over the tailnet by SSH.
   [Gate 3](relay-X1-probes/raw/decision.majkee.gate-3.2026-11-23.md) · [gate 5](relay-X1-probes/raw/decision.majkee.gate-5.2026-11-23.md) ·
-  [the copy](relay-X1-probes/_bus/28.controller.return.md).
+  [the copy](relay-X1-probes/_bus/28.controller.return.md) · [second pass, 2026-11-26](relay-X1-probes/raw/sidequest.controller.custody-copy-office-2.return.2026-11-26.md).
   Private root on both hosts `/home/hruzam/.local/share/nablarva/custody/x1-chooser-2026-11-23/` — the observer's notes, watches and
-  captures of rows D1, E1, E2 and E3, the receipt copies, the lead's call outputs, the tracker's folder. 160 files, 4,181,188 bytes
-  on each host; every SHA-256 equal at the copy (2026-11-23, about 21:59 UTC, the controller's check); folders 0700, files 0600;
+  captures of rows D1, E1, E2 and E3, the receipt copies, the lead's call outputs, the tracker's folder; since 2026-11-26 also `tracker-sample2-2026-11-26.rsztjnz1/`, nine files
+  of a later tracker run that the lead did not order and has not read — outside the packets. 169 files, 5,538,087 bytes
+  on each host; every SHA-256 equal at the second pass (2026-11-26, the controller's check, on myShell's request and Majkee's word); folders 0700, files 0600;
   outside Git. It is the evidence under [packet 3](relay-X1-probes/packet-3.md) and [packet 4](relay-X1-probes/packet-4.md); the
   packets qualify nothing.
