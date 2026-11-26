@@ -106,7 +106,17 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
    project, project local) holds a hook, and the live `~/.claude/hooks/statusline.sh` is byte-identical with the ia-sync copy.
    Installed plugins and the account's connectors still load. The start script names its choice on them (`--setting-sources`,
    `--strict-mcp-config`, or neither) and the sample's permission mode, and the packet lists both as differences from his
-   everyday session.
+   everyday session. Chosen in the prepared script (`~/.cache/nablarva/session-window/`, outside Git): neither, and no
+   `--permission-mode` flag, so the CLI starts in its own start mode. Four facts the sheet states plainly:
+   - Effort is read from the raw record, never from the pane: the deployed script falls back to `effortLevel` from his
+     settings when no effort arrives, so the pane can show an effort the session never sent.
+   - The samples are not clean of his everyday context: Claude loads the global `~/.claude/CLAUDE.md` and the instruction
+     files on the path above its folder; Codex loads `~/.codex/AGENTS.md` and `~/.codex/hooks.json`, so his Codex hooks fire.
+   - A trust answer writes into his everyday files: Codex adds a project entry to `~/.codex/config.toml`, Claude records it in
+     `~/.claude.json`. That is his hand at his dialog; the closing step lists such entries and he decides whether they stay.
+   - Each start script leaves a start marker in the scratch folder before it starts its CLI; at closing,
+     `find ~/.claude ~/.claude.json ~/.codex -newer <marker>` lists what each CLI wrote outside the scratch folder, and the
+     packet carries that list (names only).
    The Codex sample is read only: nothing is typed into it, and what it would receive stays NOT RUN.
 4. **The three routes side by side** — needs the release. Before the first check the lead writes down the two everyday paths —
    how a seat inspects a pane and how it sends a pointer line, by name and by id — the pane each check expects to reach, and

@@ -1,4 +1,4 @@
-updated: 2026-11-26 02:52 UTC
+updated: 2026-11-26 02:56 UTC
 writer: lead.seswin · claude · flight build, claude-opus-5-5, effort xhigh — the first snapshot the lead wrote itself
 host: home · hruzam
 worktree: >-
@@ -18,9 +18,15 @@ checkpoint: >-
   models, the sandbox server as it now stands, read-only queries, versions, the Claude sample's settings, the pointer text) and
   stays open to change until the read-back at step 2. Step 1 has started.
 in_flight:
-  - s01 · epoch · Claude status-line input by the documentation · _bus/01.epoch-claude.point.md → _bus/01.epoch-claude.return.md
-  - s02 · epoch · Codex session data by the documentation · _bus/02.epoch-codex.point.md → _bus/02.epoch-codex.return.md
-  - s03 · field · statusline.sh, the X0 substrate and G10, by reading · _bus/03.field-local.point.md → _bus/03.field-local.return.md
+  - s07 · audit.seswin · the Codex column of the field list from Codex's own sources (Majkee's note: the Codex side has
+    better sources) · queued 02:52:42 UTC · _bus/07.audit.point.md → _bus/07.audit.seswin.return.md
+  - s10 · lead · the step-2 sheet (read-back, sandbox release, start script), in raw/; audit.seswin reads it once before it
+    goes to the exec desk
+  - returned: s08 trajectory, the start scripts under ~/.cache/nablarva/session-window/ (outside Git), with COLUMNS and
+    LINES in the record on the lead's follow-up; s09 assay PASS on all six checks, nothing run
+  - returned (file times, UTC): s01 02:47:17 · s03 02:47:38 · s02 02:48:06 · s05 attempt 1, then FAIL by s06, then attempt
+    2: raw/fields.2026-11-26.md 02:51:41 · s06 PASS on attempt 2, 02:52:14. s04 notice to the manager queued in %77 at
+    02:47 (raw/pokes.log.md, row 3).
 recovery_probe: >-
   Read-only, three looks.
   (1) `ls /home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X1-surface/_bus/` — a `.point.md` without its
