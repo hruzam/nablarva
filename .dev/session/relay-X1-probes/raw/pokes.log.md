@@ -524,3 +524,11 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - before: 2026-11-26T03:28:11Z · exit code: 0
 - output (first line): `Queued message 01a215e5-7f44-72d0-aea7-a4687069b25f for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 - outcome: done — `_bus/32.auditor.return.md` at 03:29Z: REVISE on the new bed's RUNBOOK and STATUS; all points taken. VERDICT 32.
+
+## p46 — lead → auditor (pane %66) · `codex queue`
+- authority: the lead's call — check of an addition to the new bed's launcher
+- file first: `_bus/33.lead.point.md`, committed before the poke
+- looked first (2026-11-26T03:45:37Z): pane %66 — not working
+- before: 2026-11-26T03:45:37Z · exit code: 0
+- output (first line): `Queued message 01a215f5-7517-7060-9beb-35d8215b9628 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- outcome: done — `_bus/33.auditor.return.md` at 03:46Z: REVISE on the fallback wording; all points taken. VERDICT 33.

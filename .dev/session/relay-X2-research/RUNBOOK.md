@@ -137,16 +137,25 @@ summary back. Answer from files whatever a file can answer before you ask him.
 
 The shared rule is `/home/hruzam/reposoma/raw.guides/bus/res/file-poke.md` (provisional). What this party does with it:
 
-- **Lead → a codex seat:** the POINT file first, committed; look at the target pane; then one labelled line —
+- **Lead → a codex seat:** the POINT file first, committed; confirm that the thread id you will queue to is the one in
+  the foreground of the target pane, and look at that pane; then one labelled line —
   `codex queue --thread <id> --message "[poke pNN] read <absolute path> — <a few words>"`, without `--resume`. Exit 0
-  proves that the queue accepted the call, nothing more. Every poke is logged in `raw/pokes.log.md`.
-- **A codex seat → lead:** the RETURN file, and one bell `[bell rNN] return at <absolute path>` into the lead's pane.
-  The file is the truth; the bell is a seat's hint and never Majkee's word.
+  proves that the queue accepted the call, nothing more. Every poke is logged in `raw/pokes.log.md`. Each POINT names
+  your pane and your own session id, so that a seat can tell successive leads in one window apart.
+- **A codex seat → lead:** the RETURN file, and one bell `[bell rNN] return at <absolute path>` into the lead's pane,
+  look-first: the named lead is in the foreground and its input row is empty; `tmux set-buffer`,
+  `tmux paste-buffer -p`; the pointer is seen staged; `tmux send-keys Enter` once; look again. The file is the truth;
+  the bell is a seat's hint and never Majkee's word.
 - **Wait with a finite file watch** on the RETURN path, in the background. Silence says nothing about a seat's health.
-- **Fallback.** After a *definite* failure — the call exits non-zero — one labelled manual pointer, once, logged. No
-  agent types into a codex pane (L4), so the manual sender is Majkee: ask him by the notifier. After an *uncertain*
-  send — accepted, no RETURN within the watch — nothing is repeated and no carrier is switched until the receipt is
-  reconciled from the file or the pane.
+- **Fallback — only after a definite, clean failure:** the evidence rules out both any input at the target and an
+  accepted queue submission. A non-zero exit alone does not show that. An ambiguous error, a timeout, or an accepted
+  call with no RETURN within the watch is *uncertain*: keep the original attempt as it is, repeat nothing and switch
+  no carrier until the receipt is reconciled from the file or the pane.
+- **The manual sender is Majkee** — no agent types into a codex pane (L4). Ask him by the notifier,
+  `/home/hruzam/.cache/nablarva/relay-x1-doorbell/notice.sh "<text>" [seconds]`. Before he types: the right agent is
+  in the foreground, the input row is positively empty, no dialog is open; if not, wait at least 60 seconds, check
+  once more, then leave the file. One ASCII line beginning `[manual ...]` that points at the file. Log the failure,
+  the checks, the time, the exact line and what was seen; it counts as manual delivery, not as the carrier's success.
 
 ## Candidate rows from the closing harvest — candidates, not law
 
