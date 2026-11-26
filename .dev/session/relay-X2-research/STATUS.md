@@ -1,7 +1,7 @@
 # STATUS: relay-X2-research
 
 ```yaml
-updated: 2026-11-26 04:06 UTC
+updated: 2026-11-26 04:22 UTC
 writer: lead · flight · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8 (Fable 5.2, effort high) · tmux pane %70, window `lead`, session group helloWorld · woken by Majkee on 2026-11-26 with the cold-start card
 host: home (hruzam)
 worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD a48c313 when this was written, level with the local origin/core ref (no fetch was made) · other sessions commit here; dirty paths that are not this bed's — .dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md, .dev/session/eSharp/roster-proposal.eSharp.md, nano.2280604.save (untracked, repository root)
@@ -25,7 +25,31 @@ checkpoint: >
   sent. The research child's wheel and vendor-harness table is in (50 rows) and read by the lead; no second seat has
   checked it, and its own header lists what it could not verify. The lead looked at the installed Claude side's help
   text and environment (raw/facts.local-claude-side.lead.2026-11-26.md) — two points differ from the table and are
-  kept as differing. The evidence map is not in. A notice from the eSharp manager (its _bus/11), addressed
+  kept as differing. Cycle 06 is closed (ACCEPT): the controller committed the table and the local facts (337a0a1)
+  and pushed; the remote stood at ae0586e at 04:08 UTC; the installed tmux manual (3.7c) is quoted on eight points
+  and does not contain the string 7501 (the controller's search, not re-run). The evidence map is in
+  (raw/prior-evidence.map.md, 29 lines of sources) and read by the lead. It surfaced a second body of earlier
+  research that the lead's list had missed: .dev/research/ (vendor events, hooks versus PTY, events map, a
+  pty-community folder) and the termpanum-X0 packet that Majkee accepted on 2026-10-22 as ready input for this
+  very decision. The lead has read that packet's research-disposition.md: it recommends ADOPT for the narrow
+  lab/source method only and says in its own words that it is not the D4 verdict. Three things in the map are wrong
+  or stale and are not to be cited from it: its DESIGN.md line says "blind briefs sent" where the file says unknown;
+  it places h11 and h12 in DESIGN.md (they are in HYPOTHESES.md); and HYPOTHESES.md lists as confirmed (2026-10-02)
+  the claim that none of nine tools reads state off the screen, which today's research table found only partly
+  held. The research child's second, narrow pass is in and read
+  (raw/research.wheel-and-harness.refresh.epoch.2026-11-26.md): it corrects the first pass on four rows and leaves
+  tmux's handling of OSC 7501 not found — wrongly, as it turned out. Cycle 05 is closed (ACCEPT): the auditor's
+  child, on the other vendor's model and from the question alone, returned a second source table (20 rows, four
+  endpoints, five gaps). It disagreed with the lead's passes on tmux; the lead read tmux's primary pages again
+  (raw/facts.tmux-release-and-7501.lead.2026-11-26.md) and the auditor's table holds: tmux 3.8 was released on
+  2026-09-09, and two commits of 2026-11-12 and 2026-11-23, in no release, give tmux pane formats for the program
+  status sequence OSC 7501. The second evidence map is in and read (raw/prior-evidence.map-2.md). It showed the
+  lead's DRAFT 1 of the verdict to be wrong on one point: its "no relay-X3-pty" repeated the Termpanum brief's rule
+  "stop building the tap when hooks cover every state", which Majkee struck on 2026-10-02 (the record:
+  meshup/lab.observability-probes.2026-08-01/DESIGN.md, line 14). DRAFT 1 was never committed. research-verdict.md
+  is now DRAFT 2 — ADOPT, ranked before REFUSE and REINVENT, the floor of D1 kept, both chapters narrowed and not
+  cancelled. It is not opposed, not committed as the verdict, and not the verdict.
+  A notice from the eSharp manager (its _bus/11), addressed
   to the head of relay-X1-probes, reached this window at about 04:02 UTC; read, it changes nothing in this bed.
 routing: >
   By Majkee's word of 2026-11-26, later than the RUNBOOK: git operations go to the controller where the lead can
@@ -56,16 +80,13 @@ harvest_rows: >
   lock. U23 adopted — a present state is looked at in the same turn, or carries its observation time and the pending check.
 in_flight: |
   as of the `updated:` time above; raw/pokes.log.md has what the carrier answered and when each watch ends
-  - POINT 05 → auditor: a position-free research line by its child, own artifact
-    raw/research.wheel-and-harness.auditor.2026-11-26.md; 40 minutes at most, then INCOMPLETE. Open.
-  - POINT 06 → controller: a checkpoint commit of three named paths and a push; the installed tmux manual's own words
-    on eight points. Open.
+  - POINT 07 → auditor: opposition to research-verdict.md (DRAFT 2) — ranking, weakest claim, sources, locks,
+    conditions and falsifier, what is missing; PASS or REVISE; 30 minutes at most.
+  - POINT 08 → controller: one checkpoint commit of eleven named paths (cycles 05 and 06, both maps, the refresh
+    pass, the auditor's table, the tmux facts, the draft verdict as a draft) and one push.
   - the ask to Majkee on the brief (raw/brief.blind.relay-research.corrections.2026-11-26.md, "What Majkee is
     asked"), put in the lead's pane at 04:04 UTC; his answer goes verbatim into raw/decision.majkee.brief.2026-11-26.md.
-  - two children of the lead, in the background, each writing one file in raw/: the reader child →
-    prior-evidence.map.md (step 2) · a second, narrow research pass →
-    research.wheel-and-harness.refresh.epoch.2026-11-26.md (the first pass's unverified points, six of them).
-    A file of theirs on disk is not a checked result until the lead has read it.
+  - no child of the lead is running.
 recovery_probe: |
   commands (read-only):
     sed -n '1,12p' /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/STATUS.md
@@ -91,8 +112,9 @@ holds: >
   The blind answer is not read before research-verdict.md is committed. The seats seniorDev, myShell, eSharp and
   supervisorCli are not poked.
 next: >
-  Majkee's answer on the brief, recorded; then the brief goes out by the hand he names. VERDICTs on RETURNs 05 and
-  06. The map and the refresh pass read as they come. Then the overengineering check, the two research tables laid
-  side by side, and research-verdict.md — to the auditor for opposition before it is committed as the verdict.
-expected: raw/decision.majkee.brief.2026-11-26.md; raw/prior-evidence.map.md; the two research tables and the refresh; _bus/05 and 06 with RETURNs and VERDICTs.
+  Majkee's answer on the brief, recorded; then the brief goes out by the hand he names. VERDICTs on RETURNs 07 and
+  08. The auditor's opposition taken into the verdict; the commit whose status line no longer says DRAFT is the one
+  that counts for step 5 — only after it may a blind answer be read. Then the differences, the auditor's check of
+  verdict and differences, and the one ask to Majkee: GO or STOP.
+expected: raw/decision.majkee.brief.2026-11-26.md; _bus/07 and _bus/08 with RETURN and VERDICT; research-verdict.md past DRAFT.
 ```
