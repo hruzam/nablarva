@@ -1,7 +1,7 @@
 # STATUS: relay-X2-research
 
 ```yaml
-updated: 2026-11-26 04:47 UTC
+updated: 2026-11-26 23:51 UTC
 writer: lead · flight · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8 (Fable 5.2, effort high) · tmux pane %70, window `lead`, session group helloWorld · woken by Majkee on 2026-11-26 with the cold-start card
 host: home (hruzam)
 worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD a48c313 when this was written, level with the local origin/core ref (no fetch was made) · other sessions commit here; dirty paths that are not this bed's — .dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md, .dev/session/eSharp/roster-proposal.eSharp.md, nano.2280604.save (untracked, repository root)
@@ -56,7 +56,20 @@ checkpoint: >
   falsifier counted in the poke logs; the cost of REFUSE named (the provisional file-poke's debt, goal G7, and its
   carrier a vendor door that D1 parks) as a decision owed by Majkee. The auditor has not read this version. It is
   committed as the verdict in 14e40b0 (cycle 09, ACCEPT): committer time 04:31:02 UTC, SHA-256 b37d0794…9d2deb,
-  remote core at 14e40b0 at 04:31 UTC. From that commit on a blind answer may be read; none exists.
+  remote core at 14e40b0 at 04:31 UTC. Cycle 10 closed (a checkpoint, b638e07). Majkee then rested; he came back
+  on 2026-11-26 at about 23:40 UTC with his answers written in his own hand
+  (raw/decision.majkee.brief-and-check.2026-11-26.md): the endpoint ranking is his; the removed sentence stays out;
+  he sent the brief himself to Asymmetry and filed the answer under .dev/_backlog/first-blind-triangulation-relay/;
+  the blind answer is to be waited for; the auditor compacts and goes on; the falsifier's threshold stands and its
+  count starts from zero; relay-X3-pty is not closed for good and gets one entry in the line ledger. The lead made
+  that entry (relay-X.ledger.md, Standing). The blind answer says ADOPT (hcom first, vendor interfaces, tmux and the
+  Markdown bus kept). The lead opened it about nineteen hours after the verdict's commit — step 5's order is kept.
+  Two lists of differences exist, neither merged: a reader child's that saw only verdict, brief and answer (60
+  rows, the main list) and the lead's shorter one. A fault of the lead: it read Symmetry's master brief
+  (raw/master.symmetry.relay-and-floor.collision.2026-11-26.md) before writing its own list, against that brief's
+  reading order; named in the list's front matter, and the reader child's list is the remedy. Asymmetry's two
+  floor answers under .dev/_backlog/blind-triangulation-programatic-approach/ are not read by the lead; they belong
+  to the lab line.
   A notice from the eSharp manager (its _bus/11), addressed
   to the head of relay-X1-probes, reached this window at about 04:02 UTC; read, it changes nothing in this bed.
 routing: >
@@ -88,19 +101,13 @@ harvest_rows: >
   lock. U23 adopted — a present state is looked at in the same turn, or carries its observation time and the pending check.
 in_flight: |
   as of the `updated:` time above; raw/pokes.log.md has what the carrier answered and when each watch ends
-  - Majkee said in the lead's pane (about 2026-11-26 04:47 UTC) that he goes to read and then rests; hours may pass before he is
-    back. The bed waits; nothing is to be done in his absence but this checkpoint.
-  - POINT 10 → controller: a checkpoint commit of three named paths (cycle 09's RETURN and VERDICT, the poke log)
-    and one push. After it the only uncommitted files are cycle 10's own RETURN and VERDICT, the poke log's last
-    entry, and the open decision file below.
-  - no POINT is open at the auditor or the exec desk; no child of the lead is running.
-  - three things are with Majkee, put in the lead's pane at 04:30 UTC: (1) the brief — is the endpoint ranking his,
-    and who sends it and files the answer (raw/brief.blind.relay-research.corrections.2026-11-26.md, "What Majkee is
-    asked"; first put at 04:04 UTC); (2) the auditor's context, 18% left at 04:25 UTC, with the step-6 check still
-    owed — compaction or another seat; (3) whether a blind answer is waited for at all.
-  - at his request (his pane message after 04:32 UTC) a file he writes into himself lies ready:
-    raw/decision.majkee.brief-and-check.2026-11-26.md — a short reading list and six questions, each with a line
-    "MAJKEE:" for his own words. OPEN; uncommitted until he has written. GO or STOP is not asked in it.
+  - POINT 11 → auditor (compacted, 90% context at 23:46 UTC): the check of step 6 — the committed verdict, the two
+    lists of differences, the lead's five sentences of V that the comparison weakens, rank one against the blind
+    answer, the ledger entry; PASS or REVISE; 30 minutes at most.
+  - POINT 12 → controller: a checkpoint commit of six named paths (the ledger, Majkee's answer file, the two lists,
+    Symmetry's note and master brief) and one push. Nothing under .dev/_backlog/ is staged — it is Majkee's.
+  - no child of the lead is running; nothing is open with Majkee.
+  - from p11 on every poke-log entry carries the field the falsifier counts: whether the operator had to step in.
 recovery_probe: |
   commands (read-only):
     sed -n '1,12p' /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/STATUS.md
@@ -126,9 +133,9 @@ holds: >
   The blind answer is not read before research-verdict.md is committed. The seats seniorDev, myShell, eSharp and
   supervisorCli are not poked.
 next: >
-  Majkee's word on the three things above, recorded verbatim in raw/decision.majkee.*.md. Then, as he says: the
-  brief goes out by the hand he names and the answer is filed verbatim; the lead reads it (the verdict is
-  committed), lists the differences without merging; the auditor — or the seat he names — checks verdict and
-  differences (step 6); and the one ask to him: GO or STOP.
-expected: raw/decision.majkee.brief.2026-11-26.md; the blind answer in raw/; raw/differences.*.md; the step-6 RETURN; raw/decision.majkee.*.md with GO or STOP.
+  VERDICTs on RETURNs 11 and 12. The auditor's points taken. Then the one ask to Majkee: GO or STOP on
+  research-verdict.md, with the differences beside it — recorded verbatim in raw/decision.majkee.gate.*.md. At
+  closure: the line ledger's row for this bed, the provisional file-poke's debt accounted for, the process record
+  to .dev/observations/, and the field "operator had to step in" handed to whoever writes the next poke logs.
+expected: _bus/11 and _bus/12 with RETURN and VERDICT; raw/decision.majkee.gate.*.md with GO or STOP.
 ```
