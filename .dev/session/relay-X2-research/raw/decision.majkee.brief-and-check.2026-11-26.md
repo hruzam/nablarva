@@ -31,8 +31,11 @@ The send copy says: Claude Code and Codex CLI are first-class; Antigravity CLI a
 Two files attribute this to you on 2026-10-02; I did not find your own wording. If you strike it, the original
 clause comes back — three products named, no rank.
 
-MAJKEE:
-
+> from MAJKEE:
+```
+Yes, the ranking is mine and still holds: Claude Code and Codex CLI first-class, Antigravity CLI and Gemini CLI second-level. The earlier records are syntheses, not my verbatim words — take this line as the verbatim one. Cursor CLI may join the second level later; that is a note, not a change to the brief.
+```
+> from MAJKEE END
 
 ## 2. The brief — one sentence I took out
 
@@ -40,15 +43,22 @@ The original says: "Today the operator relays between sessions by hand." Since 2
 the auditor advised leaving it out, because any replacement would tell the blind reader what we found. Out, or back
 in as it stood?
 
-MAJKEE:
-
+> from MAJKEE:
+```
+Out. A blind brief should not carry anything that could steer the reader.
+```
+> from MAJKEE END
 
 ## 3. The brief — who sends it, and who files the answer?
 
 Not the lead: I must not see the answer before I have listed the differences, and I should not carry it. The
 controller could send it and file the answer verbatim in `raw/`. Or you send it yourself. Say who, and to whom.
 
-MAJKEE:
+> from MAJKEE:
+```
+I send it myself, to Asymmetry, through the browser chat. I file the answer myself, verbatim, in raw/.
+```
+> from MAJKEE END
 
 
 ## 4. Or no blind answer at all?
@@ -56,7 +66,11 @@ MAJKEE:
 If you do not want to wait for one, say so. Then the auditor checks the verdict alone and I ask you GO or STOP.
 The RUNBOOK's gate names the brief "returned beside" the verdict, so dropping it is your call, not mine.
 
-MAJKEE:
+> from MAJKEE:
+```
+Wait for the blind answer.
+```
+> from MAJKEE END
 
 
 ## 5. The auditor is at 18% of its context
@@ -64,10 +78,22 @@ MAJKEE:
 One more check by it is owed (the verdict, and the differences if there are any). Three ways: it compacts and
 goes on; a fresh seat takes the check — `spare-codex` is free; or the check is kept very small and it runs as it is.
 
-MAJKEE:
+> from MAJKEE:
+```
+The auditor auto-compacts and goes on. Codex seats hold up well after compaction in my experience.
+```
+> from MAJKEE END
 
 
 ## 6. Anything else — a correction, a doubt, a thing I missed
 
-MAJKEE:
+> from MAJKEE:
+```
+6. - Falsifier: more than two in fifty is fine as the threshold. My own unquantified impression is that we were near it, so the count matters; it starts from zero, because the "operator had to step in" field did not exist before.
+- Do not close relay-X3-pty for good. What runs today works for me and I could stop here — that is exactly why I do not want the original idea orphaned. The vendor-neutral, programmatic line stays my direction: one uniform core (a mailbox with a header naming sender and recipient, a receipt coming back out as a file) and one adapter per vendor, chosen by who the recipient is, possibly on both sides. Hard-coded code does the ringing, not an agent typing into a foreign pane. The pointer stays a short text that names a file. Waking the recipient is the unsolved part and I know it.
+- Lead: anchor this where the line will find it — one entry in relay-X.ledger.md under the reserved relay-X3-pty, no new file: the idea in two lines, a pointer to this answer and to Symmetry's note, the one small question from the note (§3), and the return conditions the verdict already names (§10) plus one more: my own word.
+- Symmetry made a small side research on 2026-11-26; see raw/note.symmetry.codex-submit-and-wake.2026-11-26.md. It is hers, untested.
+- Cursor CLI: a note only, see answer 1.
+```
+> from MAJKEE END
 
