@@ -1,4 +1,4 @@
-updated: 2026-11-26 02:56 UTC
+updated: 2026-11-26 02:59 UTC
 writer: lead.seswin · claude · flight build, claude-opus-5-5, effort xhigh — the first snapshot the lead wrote itself
 host: home · hruzam
 worktree: >-
@@ -16,12 +16,15 @@ checkpoint: >-
   matches live tmux: `$44 | 0 lead @78 | %80` claude (this seat) and `$44 | 1 audit @79 | %81` codex (audit.seswin,
   gpt-6.2-astra, effort high by her own record). RUNBOOK.md carries the lead's changes from its first read (roster and real
   models, the sandbox server as it now stands, read-only queries, versions, the Claude sample's settings, the pointer text) and
-  stays open to change until the read-back at step 2. Step 1 has started.
+  stays open to change until the read-back at step 2. Step 1 is written; step 2's sheet is drafted
+  (raw/sheet.readback-1.2026-11-26.md, draft 1) and is with audit.seswin for her once-read.
 in_flight:
-  - s07 · audit.seswin · the Codex column of the field list from Codex's own sources (Majkee's note: the Codex side has
-    better sources) · queued 02:52:42 UTC · _bus/07.audit.point.md → _bus/07.audit.seswin.return.md
-  - s10 · lead · the step-2 sheet (read-back, sandbox release, start script), in raw/; audit.seswin reads it once before it
-    goes to the exec desk
+  - s11 · audit.seswin · once-read of the step-2 sheet · queued 02:57:59 UTC · _bus/11.audit.point.md →
+    _bus/11.audit.seswin.return.md
+  - returned: s05 attempt 3 · delta folded audit.seswin's s07 corrections into raw/fields.2026-11-26.md (78 lines); s06
+    attempt 3 FAIL on one overclaim that came from the lead's own brief, corrected by the lead; s06 attempt 4 PASS
+  - returned: s07 audit.seswin, the Codex column read in Codex's release source, "holds with corrections", 02:56:33
+    (_bus/07.audit.seswin.return.md)
   - returned: s08 trajectory, the start scripts under ~/.cache/nablarva/session-window/ (outside Git), with COLUMNS and
     LINES in the record on the lead's follow-up; s09 assay PASS on all six checks, nothing run
   - returned (file times, UTC): s01 02:47:17 · s03 02:47:38 · s02 02:48:06 · s05 attempt 1, then FAIL by s06, then attempt
