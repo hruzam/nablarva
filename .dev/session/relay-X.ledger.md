@@ -23,7 +23,7 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 ## Open
 
 - [ ] relay X2 `relay-X2-research` — opened by Majkee 2026-11-26 with the L14 research gate (REINVENT, ADOPT or REFUSE on the
-  relay program); RUNBOOK authored by the closing head of X1 and parked; no lead bound yet, no research done · gate, pen and team
+  relay program); RUNBOOK authored by the closing head of X1 · gate, pen, team and progress
   live only in its [STATUS](relay-X2-research/STATUS.md) · [opening word](relay-X2-research/raw/decision.majkee.open.2026-11-26.md) ·
   starting document [handoff](relay-X1-probes/raw/handoff.successor-stage.2026-11-26.md)
 - [ ] Open work carried out of relay X1 (handoff §2) — lines 8 to 19 of the X0 release menu and the U01 capture, never released;

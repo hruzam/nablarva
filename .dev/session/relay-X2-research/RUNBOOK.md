@@ -1,8 +1,8 @@
 # RUNBOOK: relay-X2-research
 
 > Authored on 2026-11-26 by the closing head of `relay-X1-probes` (flight) in the planning posture, on Majkee's word
-> (`raw/decision.majkee.open.2026-11-26.md`). Fixed from the moment the lead of this bed has read it. Where things stand
-> is in `STATUS.md`, never here.
+> (`raw/decision.majkee.open.2026-11-26.md`); checked once by the auditor before any lead read it. Fixed from the moment
+> the lead of this bed has read it. Where things stand is in `STATUS.md`, never here.
 
 ```yaml
 goal: >
@@ -15,10 +15,10 @@ gate: >
   vendor-harness check, with the blind research brief of L14 D7 returned beside it. The verdict locks no architecture
   and releases no build.
 participant_1: [lead, {brand: claude, model: fable, effort: high}, host: home, role: "head and status_owner; reads, assigns, writes the verdict, commits and pushes its own work"]
-participant_2: [auditor, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, instrument: resident, role: "the other vendor's check of every document before Majkee reads it; independent reader of the Codex-side facts"]
+participant_2: [auditor, {brand: codex, model: GPT-6.2-Astra, effort: high}, host: home, instrument: resident, role: "the other vendor's check of every document before Majkee reads it, the outgoing brief included"]
 participant_3: [controller, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, instrument: resident, role: "hands and second reader, window supervisor-relay; runs what a POINT names; no push duty"]
 participant_4: [exec, {brand: codex, model: GPT-6.2-Sol, effort: medium}, host: home, instrument: resident, role: "Majkee's decision desk for a gavel loop, if the head needs more than one ask"]
-participant_5: [majkee, {brand: human}, host: home, role: "the gate word; sends the blind brief to the other vendor line and brings its answer back, or names who does; every release"]
+participant_5: [majkee, {brand: human}, host: home, role: "the gate word; sender of the blind brief, or names its courier; gates the comparison of the two answers; every release"]
 status_owner: lead
 schema_note: "runbook/GUIDE.md and status/GUIDE.md as read on 2026-11-26; res/research.md (gaveled 2026-09-03) is this session's shape"
 observations_read:
@@ -26,36 +26,35 @@ observations_read:
   - /home/hruzam/unikuklatrix/nablarva/.dev/observations/harvest.2026-11-26.auditor.md
 ```
 
-The codex seats' models are copied from the predecessor's RUNBOOK and were not re-read; the lead reconciles the roster
-against live tmux in its first step.
+The codex seats' models are as their panes' footers showed them to the auditor on 2026-11-26. The lead reconciles the
+roster against live tmux in its first step.
 
 ## Why this session exists
 
 L14 D4 puts research before build: one session that decides whether the relay program should exist at all, before
-`relay-X3-pty` and `relay-X4-tracker` may open. A seed and two blind briefs were written on 2026-09-30 and the session
-was never opened. Since then two beds on this line produced evidence — a door inventory on paper and four witnessed
-probe packets — and sibling beds qualified sources and gathered alternatives. The scope is big (session relay, a
-mechanical tracker, a phone lens), so the golden rule is a gate of its own here. A NO costs this one session; a missed
-NO costs a program.
+`relay-X3-pty` and `relay-X4-tracker` may open. The seed of 2026-09-30 says in its own status line that the session
+was not opened. Since then two beds on this line produced evidence — a door inventory on paper and four witnessed
+probe packets. The scope is big (session relay, a mechanical tracker, a phone lens), so the golden rule is a gate of
+its own here. A NO costs this one session; a missed NO costs a program.
 
 ## Fixed facts
 
 - **The operator's constraints are inputs, not subjects.** L14 D1 (PTY is the base layer; vendor doors are weather,
   parked), D2 (the file plane is the spine; no transport is truth), D5 and D6 (the phone is a thin, app-scoped lens)
-  precede the research. D3 (discrete states, never comprehension) is pending under docket 8. The verdict may say that
-  a constraint costs something; it does not reopen one.
-- **A seed and the blind research brief exist** — `seed.relay-research.2026-09-30.md` and
-  `brief.blind.relay-research.2026-09-30.md` (References). The brief is addressed from Majkee to the other vendor
-  line and names its own deliverable: a source table, per-vendor detectable states, gaps, a verdict and one
-  falsifier. Whether it was ever sent or answered is recorded as unknown (`DESIGN.md`, line 31).
-- **The second blind brief, on architecture, is not this session's.** It belongs to the architecture lock.
-- **Evidence this line already holds** is cited, never re-run: the predecessor beds' packets and handoffs, and the
-  helper inventory. `relay-X1-probes` is closed; its rows stand as tried once and qualify no door.
-- **Other beds hold part of the wheel check** — by their gates: `terminal-workspace-X0-approaches` (dated native and
-  reuse alternatives), `termpanum-X1-source-qualification` and `termpanum-X0-source-contract` (a tmux output source),
-  `nablarva-02-pipe-qualification` (a native assignment path). They are read by path; their pens are their heads'.
-- **Dates rule.** Vendor behaviour changes release to release. A statement about a vendor without a source and a date
-  is not evidence; training memory is not a source.
+  precede the research. D3 (discrete states, never comprehension) is pending under docket 8. "PTY as impulse layer"
+  is a proposed boundary, not a lock. The verdict may say what a constraint costs; it does not reopen one.
+- **A seed and the blind research brief exist** (References). The brief is addressed from Majkee to the other vendor
+  line — Asymmetry (ChatGPT) — and names its deliverable: a source table, per-vendor detectable states, gaps, a
+  verdict and one falsifier. Whether it was ever sent or answered is recorded as unknown (`DESIGN.md`, line 31).
+- **D7 asks for two blind briefs before the architecture is locked.** Only the research brief is this session's.
+- **Evidence this line already holds** is cited, never re-run: the predecessor beds' door inventory, packets and
+  handoffs, and the helper inventory. `relay-X1-probes` is closed; its rows stand as tried once and qualify no door.
+- **Sibling beds are sources to inspect, not results to cite.** `terminal-workspace-X0-approaches`,
+  `termpanum-X0-source-contract`, `termpanum-X1-source-qualification` and `nablarva-02-pipe-qualification` touch the
+  wheel check. Their present state is in their own STATUS files; any result taken from them carries its date and its
+  state there. Their pens are their heads'.
+- **Dates rule.** A statement about a vendor without a source and a date is not evidence; training memory is not a
+  source.
 - **Several sessions commit in this checkout.** Each commits path-scoped and pushes its own work; a plain push carries
   every local commit on `core`.
 
@@ -63,116 +62,131 @@ NO costs a program.
 
 ```text
 You are the lead and status_owner of /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/ on host home.
-Read in order: /home/hruzam/unikuklatrix/nablarva/AGENTS.md, .dev/session/flag.md (L4, L12, L14, L20, L21, L22),
-.dev/session/pulse.md, this RUNBOOK, STATUS.md, then the two files under observations_read. Then:
+Every path below is under /home/hruzam/unikuklatrix/nablarva/ unless it starts with /.
+Read in order: AGENTS.md, .dev/session/flag.md (L4, L12, L14, L20, L21, L22), .dev/session/pulse.md, PROJECT.yaml,
+.dev/session/relay-X2-research/RUNBOOK.md and STATUS.md, then the two files under observations_read.
+Your POINTs go to .dev/session/relay-X2-research/_bus/NN.lead.point.md, RETURNs come back as
+_bus/NN.<seat>.return.md, your dispositions are _bus/NN.lead.verdict.md. Majkee's words are recorded verbatim in
+.dev/session/relay-X2-research/raw/decision.majkee.<topic>.<date>.md and nowhere else.
 
-1. Reconcile the roster against live tmux and say in STATUS what differs. Poke no seat outside participants 2 to 4.
-2. Map what is already held, by path, into raw/prior-evidence.map.md: the seed, the brief, DESIGN.md and
-   HYPOTHESES.md of the seam folder; the two relay beds' packets and handoffs; the helper inventory; the sibling
-   beds named in Fixed facts. One line per item: what it establishes, its date, what it does not show.
-3. The blind brief first, because it runs in parallel. Check the 2026-09-30 brief for stale facts (vendors, versions,
-   dates). Change facts only — add no finding and no lean of this line. Bring it to Majkee in one ask: he sends it, or
-   names who does. File the answer verbatim in raw/ before you read it against your own work.
+1. Reconcile the roster against live tmux and write what differs into STATUS. Poke no seat outside participants 2 to 4.
+2. Map what is already held, by path, into .dev/session/relay-X2-research/raw/prior-evidence.map.md: the seed, the
+   brief, DESIGN.md and HYPOTHESES.md of the seam folder; the two relay beds' packets and handoffs; the helper
+   inventory; the sibling beds of Fixed facts. One line each: what it establishes, its date and state, what it does
+   not show.
+3. The blind brief first, because it runs in parallel. Leave the dated original untouched. Make a send copy in
+   raw/ that corrects stale facts only (vendors, versions, dates) and carries no finding and no lean of this line;
+   have the auditor check it; show Majkee the corrections in one ask. He sends it, or names the courier. When the
+   answer comes back it is filed verbatim in raw/ and stays unread by you and by your research child.
 4. The three checks of /home/hruzam/reposoma/raw.guides/runbook/res/research.md, each dated and sourced:
-   wheel — a dated research pass by a research child (@Epoch class), in the brief's source-table shape;
+   wheel — a dated research pass by a research child of yours (a subagent, @Epoch class; not a new CLI session), in
+   the brief's source-table shape;
    overengineering — would a smaller composition serve: the file plane, the file-poke with a finite watch, native
    status surfaces, the recurring kinds in the helper inventory;
    vendor harness — what the vendors ship or have announced, and the native change that would retire the build.
-5. Write research-verdict.md in the bed: one ranked verdict — REINVENT, ADOPT or REFUSE — its recommendation, any
-   condition stated testably, and one falsifier. Put the blind answer beside it and list where the two differ. Do not
-   merge them: the termination is a committed answer and a falsifier, never consensus.
-6. Give the verdict file to the auditor for its check before Majkee reads it; take its points; then ask him for GO or
-   STOP in one ask. Record his words verbatim in raw/decision.majkee.*.md and nowhere else.
+5. Write .dev/session/relay-X2-research/research-verdict.md: one ranked verdict — REINVENT, ADOPT or REFUSE — with its
+   recommendation, every condition stated testably, and one falsifier. For ADOPT, name the existing thing and the
+   delta it needs. Commit it. Only after that commit read the blind answer, and list where the two differ. Do not
+   merge them: the termination is a committed answer and a falsifier, never consensus. Majkee gates the comparison.
+6. Give the verdict file and the list of differences to the auditor before Majkee reads them; take its points; then
+   ask him for GO or STOP in one ask.
 
-Done when: his GO or STOP on research-verdict.md is recorded. Return upward to Majkee only for the gate word, a
-release, a lock, or an act that reaches outside this bed; decide everything else with the team and report it as done.
+Done when: his GO or STOP on research-verdict.md is recorded. Return upward to Majkee only for the gate word, the
+brief, a release, a lock, or an act that reaches outside this bed; decide everything else with the team and report it
+as done.
 ```
 
 ## prompt-1 — auditor
 
 ```text
 You are the auditor of /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/ (codex, resident, host home).
-You act on a POINT of the lead: a file in _bus/, announced by one poke line. You look and report; you change nothing
-outside your RETURN. Your standing task: check every document that goes to Majkee against its sources before he reads
-it — numbers, dates, links, and above all sentences that claim more than their source shows. Answer PASS or REVISE in
-the first line of field 4. Write the RETURN to the path the POINT names and ring one reply bell into the lead's pane.
+You act on a POINT of the lead: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/NN.lead.point.md,
+announced by one poke line. You look and report; you change nothing outside your RETURN at
+/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/NN.auditor.return.md. Your standing task: check
+every document that goes to Majkee against its sources before he reads it — the outgoing brief, the verdict, the list
+of differences: numbers, dates, links, and above all sentences that claim more than their source shows. PASS or
+REVISE in the first line of field 4. One reply bell into the lead's pane is your allowance; you send nothing else.
 ```
 
 ## prompt-2 — controller
 
 ```text
 You are the controller of /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/ (codex, resident, host
-home, window supervisor-relay). You act on a POINT of the lead: a file in _bus/, announced by one poke line. You run
-exactly what it names — local, read-only facts of the Codex side (installed version, help surfaces, changelog as
-shipped), a second reading of a source table — and write a RETURN to the path it names, with one reply bell. You
-start no session, send nothing into any session, and do not push for this bed.
+home, window supervisor-relay). You act on a POINT of the lead:
+/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/NN.lead.point.md, announced by one poke line.
+You run exactly what it names — local, read-only facts of the Codex side (installed version, help surfaces, changelog
+as shipped), a second reading of a source table — and write
+/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/NN.controller.return.md. One reply bell into
+the lead's pane is your allowance; apart from it you start no session, send nothing into any session, and do not
+push for this bed.
 ```
 
 ## prompt-3 — exec
 
 ```text
 You are Majkee's decision desk for /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/ (codex, resident,
-host home). Only if the lead sends a sheet: present its questions one at a time, record his answers verbatim in the
-file the sheet names, read the summary back. Answer from files whatever a file can answer before you ask him.
+host home). Only if the lead sends a sheet under /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/raw/:
+present its questions one at a time, record his answers verbatim in the decision file the sheet names, read the
+summary back. Answer from files whatever a file can answer before you ask him.
 ```
 
 ## Candidate rows from the closing harvest — candidates, not law
 
-Carried from `harvest.2026-11-26.auditor.md`; the lead adopts, adapts or declines each and says so once in STATUS.
+From `harvest.2026-11-26.auditor.md`; the lead adopts, adapts or declines each and says so once in STATUS.
 
-- **U20** — a receipt records carrier acceptance, end of watch and later arrival separately.
-- **U21** — a comparison of trials names how the target's last turn ended and what earlier actions may affect it.
-- **U22** — before any walkthrough, the desk answers what files can answer; his time goes to choices that change the work.
+- **U20** — a receipt records carrier acceptance, end of watch and later arrival separately, and keeps the original
+  watch deadline when later evidence appears.
+- **U21** — a pair of trials names how the target's last turn ended and which earlier actions may affect the
+  comparison; independent trials use fresh samples, a trial of queued input may deliberately keep the first turn.
+- **U22** — before any walkthrough the desk answers what files can answer; his time goes to choices that change the work.
 - **U23** — an interim claim is checked against current evidence before he hears it, or carries its observation time
   and names the pending check.
 
 ## Known constraints + destructive holds
 
-- **Nothing is activated and nothing is delivered** (L21): no session is started, no sample, no message into any
-  session except coordination pokes to participants 2 to 4. The windows `spare-codex` and `spare-claude` are free;
-  starting anything in them needs Majkee's own word.
+- **Nothing is activated and nothing is delivered** (L21): no CLI session is started and no sample; nothing goes into
+  any session except coordination pokes to participants 2 to 4 and their reply bells. The windows `spare-codex` and
+  `spare-claude` are free; starting anything in them needs Majkee's own word.
 - **L4** — send-keys injection is a recorded death; the one exception is spent. Reply bells into the lead's pane are
   an older, separate allowance.
 - **L12** — branch `core`, plain pull and push, never rebase, never force; commits path-scoped; history is not
   rewritten. Other sessions' files are never staged.
 - **L14** — the verdict locks no architecture, opens neither `relay-X3-pty` nor `relay-X4-tracker`, and qualifies no
-  door. **L20** — observations authorize nothing. **L22** — `.majkee/` and `.hlm/` are never read or listed.
+  door. **L20** — observations authorize nothing. **L22** — `.majkee/` and `.hlm/` are never read or listed, in any
+  repository; git commands there are path-scoped.
 - **His typed words** stand verbatim only in `raw/decision.majkee.*.md`. A bell or a note from a seat is never his word.
-- **Nothing private goes into Git.** `CACHE.*.md` files in any bed are his continuity files: never opened, and
-  excluded from every search. `~/.codex/rules/default.rules` and `~/.codex/config.toml` are his.
+- **Nothing private goes into Git.** `CACHE.md` and `CACHE.*.md` in any bed are his continuity files: never opened,
+  and excluded from every search. `~/.codex/rules/default.rules` and `~/.codex/config.toml` are his.
 - **Not this bed's seats:** `seniorDev`, `myShell`, `eSharp`, `supervisorCli`. They are not poked.
 - **Web research reads; it posts nothing** and sends no private path, name or address to any service.
 
 ## Acceptance evidence
 
-- `research-verdict.md`: the three checks, each with dated sources; one ranked verdict with its recommendation and a
-  falsifier; conditions stated testably.
+- `research-verdict.md`, committed before the blind answer was read: the three checks with dated sources; one ranked
+  verdict with its recommendation and a falsifier; for ADOPT the named thing and its delta.
 - The source table and `raw/prior-evidence.map.md`.
-- The blind brief as sent and its answer verbatim in `raw/`, with the list of differences beside the verdict.
-- The auditor's RETURN on the verdict file, and the lead's VERDICT on that RETURN.
-- Majkee's GO or STOP in `raw/decision.majkee.*.md`.
+- The brief's send copy as checked and sent, its answer verbatim, and the list of differences.
+- The auditor's RETURNs on the brief and on the verdict, with the lead's VERDICTs.
+- Majkee's GO or STOP in `raw/decision.majkee.*.md`. On GO the verdict file is the founding reference of whatever
+  opens next under L14; a REFUSE that he accepts ends the scope here, and that is a success of the gate.
 
 ## References
 
-- `/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md` — L14 with the amendment of 2026-11-23; the locks named above.
+- `/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md` — L14 with the amendment of 2026-11-23; the locks above.
 - `/home/hruzam/reposoma/raw.guides/runbook/res/research.md` — the research gate: three checks, three verdicts.
-- `/home/hruzam/unikuklatrix/nablarva/meshup/seam.cross-vendor-relay.2026-08-05/raw/` — `decisions.relay.2026-09-30.md`,
-  `seed.relay-research.2026-09-30.md`, `brief.blind.relay-research.2026-09-30.md`; beside it `DESIGN.md`, `HYPOTHESES.md`.
+- `/home/hruzam/unikuklatrix/nablarva/meshup/seam.cross-vendor-relay.2026-08-05/raw/decisions.relay.2026-09-30.md`
+- `/home/hruzam/unikuklatrix/nablarva/meshup/seam.cross-vendor-relay.2026-08-05/raw/seed.relay-research.2026-09-30.md`
+- `/home/hruzam/unikuklatrix/nablarva/meshup/seam.cross-vendor-relay.2026-08-05/raw/brief.blind.relay-research.2026-09-30.md`
+- `/home/hruzam/unikuklatrix/nablarva/meshup/seam.cross-vendor-relay.2026-08-05/DESIGN.md` and `HYPOTHESES.md` beside it.
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/raw/handoff.successor-stage.2026-11-26.md` — what the
   predecessor established and left open; its section 3 before poking anyone.
 - `/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X.ledger.md` — the line ledger: open work, custody pointers.
-- `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/raw/inventory.relay-x1-helpers.2026-11-23.md` — helpers built
-  ad hoc and the kinds that recur.
-- `/home/hruzam/unikuklatrix/nablarva/.dev/session/terminal-workspace-X0-approaches/STATUS.md`,
-  `.../termpanum-X1-source-qualification/STATUS.md`, `.../termpanum-X0-source-contract/STATUS.md`,
-  `.../nablarva-02-pipe-qualification/STATUS.md` — the sibling beds named in Fixed facts.
-- `/home/hruzam/reposoma/raw.guides/bus/GUIDE.md` and `/home/hruzam/reposoma/raw.guides/bus/res/file-poke.md` — POINT,
-  RETURN, VERDICT and the file-poke.
-
-## What closes the gate
-
-Majkee's recorded GO or STOP on `research-verdict.md`. On GO the verdict file becomes the founding reference of
-whatever opens next under L14; on a REFUSE that he accepts, the scope ends here and that is a success of the gate.
+- `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/raw/inventory.relay-x1-helpers.2026-11-23.md`
+- `/home/hruzam/unikuklatrix/nablarva/.dev/session/terminal-workspace-X0-approaches/STATUS.md`
+- `/home/hruzam/unikuklatrix/nablarva/.dev/session/termpanum-X0-source-contract/STATUS.md`
+- `/home/hruzam/unikuklatrix/nablarva/.dev/session/termpanum-X1-source-qualification/STATUS.md`
+- `/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-02-pipe-qualification/STATUS.md`
+- `/home/hruzam/reposoma/raw.guides/bus/GUIDE.md` and `/home/hruzam/reposoma/raw.guides/bus/res/file-poke.md`
 
 ## What this session deliberately does not do
 
@@ -183,11 +197,9 @@ whatever opens next under L14; on a REFUSE that he accepts, the scope ends here 
 
 ## Seat to wake
 
-A fresh lead: @Flight in project-session mode, driven by Majkee, on the carriage `relay-X1-probes` ran on (claude,
-fable, effort high), in the window `lead`. Reason: the work is one head coordinating a research child and two
-resident seats of the other vendor toward one written verdict — the shape the predecessor ran. If he wants the verdict
-written by a strategist instead, the same RUNBOOK serves @Oraculum as head with no other change than participant_1.
-The operator wakes the seat, with the cold-start card.
+A fresh lead — @Flight in project-session mode, driven by Majkee, in the window `lead`: one head coordinating a
+research child and resident seats of the other vendor toward one written verdict. The reasons and the alternative are
+in the cold-start card. The operator wakes the seat.
 
 ## Provisional coordination carry-forward
 
