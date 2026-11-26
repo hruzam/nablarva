@@ -1,0 +1,16 @@
+```bash
+codex -s workspace-write -a on-request
+```
+or
+
+```bash
+codex -m gpt-6.1-terra --approve-for-me
+```
+
+---
+
+fork `exec` helping agent: `codex resume 01a20540-dcb5-7270-810f-d73f7c164e1e`
+
+---
+
+tmux new-window -n sample-codex 'bash ~/.cache/nablarva/relay-x1-samples/2026-11-23/start-sample.sh'

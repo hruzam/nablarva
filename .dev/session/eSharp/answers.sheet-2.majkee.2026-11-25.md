@@ -20,7 +20,7 @@ token- or key-shaped string; the only mail address in them is the commit trailer
 Meant so? If not, the quickest full stop is yours alone: set the repository to private. Taking the files out of future commits
 (stop tracking, one ignore rule) I can prepare; taking them out of the history is a rewrite, which L12 forbids without your word.
 
-> to trajectory:
+> to trajectory: 
 > to trajectory END
 
 ### A2 — "FLR"
@@ -28,7 +28,7 @@ You wrote that `session-window-X0-substrate` must at least be closed "FLR". I do
 guide. My reading: X0 gets a closing STATUS — closed, its gate never recorded, its open points carried into X1 — and stays in
 place. Right? And what do the letters stand for?
 
-> to trajectory:
+> to trajectory: I hoped that would be understood as some 'street wocalbulary' -> 'for legal reasons'.
 > to trajectory END
 
 ### A3 — The release you asked me to recommend (E8): one sandbox release per group

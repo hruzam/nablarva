@@ -93,5 +93,5 @@ Exit 0 shows that the queue accepted the call, nothing more.
 - line: `[poke p10] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/10.lead.point.md — checkpoint commit and push`
 - carrier: called before 2026-11-26T04:47:50Z · exit code 0 · output (first line): `Queued message 01a2162e-6c67-7121-9f83-64564bcdcf8b for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
 - watch: on `_bus/10.controller.return.md`, ends 2026-11-26T04:59:50Z
-- RETURN seen: —
+- RETURN seen: 2026-11-26T04:48:30Z (the watch) · commit b638e07 of the three named paths; the push carried 7c9d328 and b638e07; remote at b638e07 (the lead's own look, 04:48:36Z) · VERDICT 10: ACCEPT
 
