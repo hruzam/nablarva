@@ -70,6 +70,9 @@ _bus/NN.<seat>.return.md, your dispositions are _bus/NN.lead.verdict.md. Majkee'
 .dev/session/relay-X2-research/raw/decision.majkee.<topic>.<date>.md and nowhere else.
 
 1. Reconcile the roster against live tmux and write what differs into STATUS. Poke no seat outside participants 2 to 4.
+   The three codex seats stay in their windows from relay-X1-probes and remember that bed, not this one: your first
+   POINT to each names this bed, tells the seat to read its prompt in this RUNBOOK, and names your own pane for the
+   reply bell (read it from tmux, do not assume the predecessor's). Ask them for facts by POINT; take no briefing.
 2. Map what is already held, by path, into .dev/session/relay-X2-research/raw/prior-evidence.map.md: the seed, the
    brief, DESIGN.md and HYPOTHESES.md of the seam folder; the two relay beds' packets and handoffs; the helper
    inventory; the sibling beds of Fixed facts. One line each: what it establishes, its date and state, what it does
@@ -129,6 +132,21 @@ host home). Only if the lead sends a sheet under /home/hruzam/unikuklatrix/nabla
 present its questions one at a time, record his answers verbatim in the decision file the sheet names, read the
 summary back. Answer from files whatever a file can answer before you ask him.
 ```
+
+## How this party talks
+
+The shared rule is `/home/hruzam/reposoma/raw.guides/bus/res/file-poke.md` (provisional). What this party does with it:
+
+- **Lead → a codex seat:** the POINT file first, committed; look at the target pane; then one labelled line —
+  `codex queue --thread <id> --message "[poke pNN] read <absolute path> — <a few words>"`, without `--resume`. Exit 0
+  proves that the queue accepted the call, nothing more. Every poke is logged in `raw/pokes.log.md`.
+- **A codex seat → lead:** the RETURN file, and one bell `[bell rNN] return at <absolute path>` into the lead's pane.
+  The file is the truth; the bell is a seat's hint and never Majkee's word.
+- **Wait with a finite file watch** on the RETURN path, in the background. Silence says nothing about a seat's health.
+- **Fallback.** After a *definite* failure — the call exits non-zero — one labelled manual pointer, once, logged. No
+  agent types into a codex pane (L4), so the manual sender is Majkee: ask him by the notifier. After an *uncertain*
+  send — accepted, no RETURN within the watch — nothing is repeated and no carrier is switched until the receipt is
+  reconciled from the file or the pane.
 
 ## Candidate rows from the closing harvest — candidates, not law
 
