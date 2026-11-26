@@ -141,3 +141,23 @@ scope:
 > to trajectory: u brief. i propose also making caches by js -> `CACHE.<posture>.md`. Should be also providing second continuity of steream.
 > to trajectory END
 
+---
+
+# 6. SANDBOX
+
+`sandbox-server` is a separate tmux server. Its `sandbox` session has four shell
+windows. Use `-L sandbox-server` to target this server. Window and pane IDs are
+local to each server.
+
+```bash
+tmux -L sandbox-server list-windows -t '=sandbox' -F '#{session_id} | #{window_index} #{window_name} #{window_id} | #{pane_id}'
+```
+
+```text
+$0 | 0 codex-sample @0 | %0
+$0 | 1 claude-sample @1 | %1
+$0 | 2 session @2 | %2
+$0 | 3 terminal @3 | %3
+```
+
+Attach from a fresh terminal with `tmux -L sandbox-server attach-session -t '=sandbox'`.
