@@ -40,7 +40,7 @@ pattern: /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/
 - p02 outcome: read — the desk ran one turn from the queue, ended 2026-11-22T05:55:26Z, and put theme S0 to Majkee. Seen by the lead at 2026-11-22T06:54Z in the desk's own session record (entry types, times and the desk's last message only; nothing of Majkee's read). At that time: no record file, no RETURN, no answer. The first watch on the RETURN path ended empty at 06:53:38Z after 58 minutes; nothing was sent again. The desk's pane showed Codex's selection hint row at 06:53Z, so its newest text may be off screen in that window until a key is pressed there by Majkee's hand; the lead did not touch the pane.
 
 ## p04 — lead → myShell · look-first paste (a Claude pane)
-- authority: Majkee, typed in the lead session shortly before 13:38Z — "you may poke `myShell` for that" (raw/decision.majkee.cache-and-commits.2026-11-22.md, second part)
+- authority: Majkee, typed in the lead session shortly before 13:38Z — his permission to poke myShell for that (raw/decision.majkee.cache-and-commits.2026-11-22.md, second part)
 - file first: `_bus/03.lead.point.md`
 - looked first (2026-11-22T13:39:13Z): pane %61 — claude in the foreground, not dead, not in a tmux mode, no dialog. The input row showed words, all of them dim in the styled capture, with the cursor at the start of the row (`cursor_x` 2): a suggestion, not text. Only the bottom rows of the pane were read; nothing of them is kept.
 - staged: `tmux set-buffer -b p04 '<line>'`, then `tmux paste-buffer -p -b p04 -t %61` — 2026-11-22T13:39:28Z, both exit code 0
@@ -507,3 +507,4 @@ Pokes `fp01`, `fp01r1`, `fp02` and `fp03` of 2026-11-23, 14:45 to 16:46 UTC, are
 - looked first (2026-11-26T03:07:16Z): pane %66 — not working
 - before: 2026-11-26T03:07:16Z · exit code: 0
 - output (first line): `Queued message 01a215d2-59ba-75b3-8037-d71c0b8fbc9e for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
+- outcome: done — `_bus/30.auditor.return.md` at 03:08Z: REVISE; one unarrived message arrived two days later; summaries, counts and his quoted words corrected. VERDICT 30.

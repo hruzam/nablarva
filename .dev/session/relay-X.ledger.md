@@ -26,8 +26,9 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
   number at opening). Its slug, gate, owner and release are set when Majkee opens it; the lead of X1 prepares one proposal on
   his word of 2026-11-26 · starting document [handoff](relay-X1-probes/raw/handoff.successor-stage.2026-11-26.md)
 - [ ] Open work carried out of relay X1 (handoff §2) — lines 8 to 19 of the X0 release menu and the U01 capture, never released;
-  the cases X0-U01 … X0-U06; the parked exit race; the paper receiver contract. New from X1's packets, nothing tried: whether an
-  accepted `codex queue` message that did not arrive is lost or waits, and what releases one; a second message while an approval
+  the cases X0-U01 … X0-U06; the parked exit race; the paper receiver contract. New from X1's packets, nothing tried: how long an
+  accepted `codex queue` message is kept and what releases it (of two that did not arrive within their watch, one arrived
+  two days later just after a manual turn, one is unresolved); a second message while an approval
   chooser stands, answered with approval; what a stored allow rule does later; a chooser across interrupt and resume. Belonging
   to the line is not a release.
 - [ ] Standing development debt — retire the provisional file-poke: qualify the actual replacement, map its

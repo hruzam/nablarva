@@ -7,24 +7,26 @@ kind: session-process record — what this session taught about running sessions
 
 # relay-X1-probes — process record of its head
 
-Five days, one head (forked once), four packets, about forty pokes. What follows is for the next head on the relay
+Five calendar dates, one head (forked once), four packets, 48 logged pokes. What follows is for the next head on the relay
 line, at authoring.
 
 ## Faults of the head — each happened, each cost something
 
-1. **Stating a present state without looking.** Four times the head told the operator something as fact that it had
-   inferred: that neither approval mode asks the human (packet 2); that a stored rule lets any session run a command
-   (packet 3); that a sample "stays as it is" when its pane was already gone, and a receipt count (packet 4). Each time
-   the numbers of the try were right and the sentence around them was not. Each time the other vendor's final check
-   caught it — after the operator had already heard it.
-2. **Guessed clock times,** twice, written into STATUS. Read the clock in the same command that writes the time.
+1. **Stating a present state without looking.** Four sentences of the head were corrected by the other vendor's
+   final check (`_bus/13`, `_bus/21`, `_bus/25.lead.verdict.md` in the bed): that neither approval mode asks the
+   human (packet 2); that a stored rule lets any session run a command (packet 3); that a sample "stays as it is"
+   when its pane was already gone, and a receipt count (packet 4). Each time the numbers of the try were right and the
+   sentence around them was not. Three of the four the head had already said to the operator before the check came
+   back — those verdicts record it; the receipt count stood only in a draft.
+2. **Guessed clock times,** on at least two occasions (commits 18a33ea and 6b63c63 correct them), written into
+   a VERDICT and into STATUS. Read the clock in the same command that writes the time.
 3. **A missing shell variable read as a fact about the world.** `TMUX_PANE` was unset in the forked session's shell;
    the head concluded it had no pane, told three seats not to bell it and told the operator to go back to the other
    session. He corrected it from what he saw on his screen.
 4. **Two tries in one sample.** The head proposed two sends for one session and saw only afterwards that the first
    had changed what the second met. A fresh sample per try costs the operator one command.
-5. **A precondition that did not say enough.** "Idle" did not say how the last turn had ended; the one try that
-   failed turned on exactly that.
+5. **A precondition that did not say enough.** "Idle" did not say how the last turn had ended; the one first
+   message that was not seen to arrive differed from the others in exactly that. Whether that is the cause is not known.
 6. **His typed words in files that are not decision files** — a try file, a packet, three briefs. Caught by the
    auditor each time. Paraphrase everywhere; verbatim only in `raw/decision.majkee.*.md`.
 7. **Shell slips with a blast radius:** `pkill -f` on a pattern that matched the head's own shell; two heredocs on one
@@ -35,8 +37,9 @@ line, at authoring.
 
 ## What carried
 
-- **File first, then a one-line poke, then a RETURN file, a finite watch on it, and a bell as a hint.** No reply was
-  lost in the whole bed. A bell or a note from a seat is never the operator's word, also when it relays his.
+- **File first, then a one-line poke, then a RETURN file, a finite watch on it, and a bell as a hint.** Every one
+  of the 48 logged pokes has a documented outcome; one early poke at first timed out without a RETURN. That is what
+  was documented, not a guarantee. A bell or a note from a seat is never the operator's word, also when it relays his.
 - **The armed send:** nonce and message committed before the call; one shell command waits for the observer's marker
   file, checks it and calls once, with no model turn between marker and call; a second marker written by the
   observer's own detached script armed a second call within a second of the event.
@@ -50,11 +53,11 @@ line, at authoring.
 ## Carriage facts worth knowing before the next bed
 
 - A session forked into the background is refused every write into a shared checkout until the project's settings
-  carry `worktree.bgIsolation = none`. The head kept its files outside the repository for four hours rather than
-  launder writes through another session.
+  carry `worktree.bgIsolation = none`. The head kept its files outside the repository for 4 hours 21 minutes (14:29 to 18:50 UTC on
+  2026-11-23, this fork only) rather than launder writes through another session.
 - Several sessions now commit in one checkout. A plain push carries every local commit on the branch, whoever made it.
-- The coordination carrier this line uses for its own pokes was observed, in samples, to accept a message that never
-  arrived. Pair every poke with a watch on the reply file.
+- The coordination carrier this line uses for its own pokes was observed, in samples, to accept messages that did not arrive
+  within their watch; one of them arrived two days later, just after a turn made by hand. Pair every poke with a watch on the reply file.
 
 ## Candidates for the next RUNBOOK — the head's, not harvested
 
