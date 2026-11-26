@@ -66,7 +66,7 @@ Exit 0 shows that the queue accepted the call, nothing more.
 - line: `[poke p07] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/07.lead.point.md — oppose the draft verdict`
 - carrier: called before 2026-11-26T04:22:55Z · exit code 0 · output (first line): `Queued message 01a21617-9cb1-7aa2-9715-23740d7b8437 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 - watch: on `_bus/07.auditor.return.md`, ends 2026-11-26T04:57:55Z
-- RETURN seen: —
+- RETURN seen: 2026-11-26T04:25:17Z (the watch) · the auditor: REVISE on DRAFT 2 of the verdict, REFUSE ranked first; taken — VERDICT 07 · the auditor's footer showed 18% context left at 04:25:21Z (33% before the poke) · bell r07 not seen in the lead's pane at the time of this entry
 
 ## p08 — lead → controller (pane %59) · `codex queue`
 - authority: Majkee 2026-11-26, raw/decision.majkee.go-and-routing.2026-11-26.md; file-poke chapter (provisional)
@@ -75,5 +75,14 @@ Exit 0 shows that the queue accepted the call, nothing more.
 - line: `[poke p08] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/08.lead.point.md — checkpoint commit and push`
 - carrier: called before 2026-11-26T04:22:56Z · exit code 0 · output (first line): `Queued message 01a21617-9db7-7042-bdf5-523add47d63c for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
 - watch: on `_bus/08.controller.return.md`, ends 2026-11-26T04:34:56Z
+- RETURN seen: 2026-11-26T04:23:52Z (the watch; under two minutes after the call) · commit d95f6d9 of the eleven named paths; the push carried 497947b and d95f6d9; remote at d95f6d9 (the lead's own look, 04:23:57Z) · VERDICT 08: ACCEPT
+
+## p09 — lead → controller (pane %59) · `codex queue`
+- authority: Majkee 2026-11-26, raw/decision.majkee.go-and-routing.2026-11-26.md; file-poke chapter (provisional)
+- file first: `_bus/09.lead.point.md`, committed before the poke (9209e32)
+- looked first (2026-11-26T04:30:48Z): footer shows thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318, input row empty, not working · Context 84% left
+- line: `[poke p09] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/09.lead.point.md — commit the verdict and push`
+- carrier: called before 2026-11-26T04:30:48Z · exit code 0 · output (first line): `Queued message 01a2161e-d34c-7262-9ee3-fb3364067d80 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- watch: on `_bus/09.controller.return.md`, ends 2026-11-26T04:42:48Z
 - RETURN seen: —
 
