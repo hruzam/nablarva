@@ -1,7 +1,7 @@
 ---
 kind: decision file — Majkee's own words, typed by him into this file
 prepared_by: lead (flight · claude 689d87d0) · 2026-11-26 04:35 UTC · the questions and the reading list are the lead's; everything under a line "MAJKEE:" is his
-status: OPEN — waiting for his answers. Not committed until he has written.
+status: ANSWERED — Majkee wrote his answers into this file himself (file time 2026-11-26 23:37 UTC) and told the lead so in its pane. The lead changed this one line afterwards and nothing else. His words stand between the lines `> from MAJKEE:` and `> from MAJKEE END`.
 not_in_this_file: GO or STOP on the verdict. That ask comes later, after the auditor's check of step 6.
 ---
 
@@ -95,5 +95,35 @@ The auditor auto-compacts and goes on. Codex seats hold up well after compaction
 - Symmetry made a small side research on 2026-11-26; see raw/note.symmetry.codex-submit-and-wake.2026-11-26.md. It is hers, untested.
 - Cursor CLI: a note only, see answer 1.
 ```
+
+refference: `.dev/session/relay-X2-research/raw/note.symmetry.codex-submit-and-wake.2026-11-26.md`
+
 > from MAJKEE END
 
+
+---
+
+# Blind triangulations and independent researches
+
+> from MAJKEE:
+```
+1. Two blind triangulations - one requested on `Asymmetry` be `lead`:
+
+`.dev/_backlog/first-blind-triangulation-relay/blind-relay-triangulation-asymmetry-2026-11-26.md` 
+`.dev/_backlog/first-blind-triangulation-relay/brief.symmetry.blind.relay-research.send-copy.2026-11-26.md`
+
+
+2. Back on programmatic floor - we can invent alongside the working way:
+
+`dev/_backlog/blind-triangulation-programatic-approach/asymmetry.session-telemetry-floor.blind-review.md`
+`dev/_backlog/blind-triangulation-programatic-approach/asymmetry.session-telemetry-floor.round-2.md`
+`dev/_backlog/blind-triangulation-programatic-approach/brief.blind.session-telemetry-floor.2026-11-26.md`
+`dev/_backlog/blind-triangulation-programatic-approach/brief.open.session-telemetry-floor.round-2.2026-11-26.md` 
+
+---
+
+3. master BRIEF
+
+`.dev/session/relay-X2-research/raw/master.symmetry.relay-and-floor.collision.2026-11-26.md`
+```
+> from MAJKEE END

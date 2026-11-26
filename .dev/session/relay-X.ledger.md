@@ -9,10 +9,11 @@ authority: Majkee 2026-11-19 — shared provisional protocol and future communic
 naming: relay-X{0,1,…}-<phase> for experimental coordination sessions; first session `relay-X0-carryover` opened 2026-11-21
 attach: Delivery/coordination development; stridulatrix remains the named delivery organ under L13; no new organ adopted
 absorbs: vist-X.ledger.md (VIST · line X) — merged 2026-11-21; tombstone kept at the old address
-updated: 2026-11-22 (relay X0 closed on Majkee's GO, relay X1 `relay-X1-probes` opened by him; origin bed stopped and closed by Majkee — moved to Solved; C04 custody entry added by the exec desk on his direct word; whole-folder custody entry added by the engineer) · 2026-11-21 (VIST line ledger merged in; reshaped to Open / Standing / Solved; first relay session row added; one prospective rule dropped in that step was restored after cartan's check, relay-X0-carryover cycle 06)
+updated: 2026-11-26 (entry under the reserved `relay-X3-pty`, on Majkee's direct word in relay-X2-research — the idea it is kept for and its return conditions; written 2026-11-26 23:44 UTC) · 2026-11-22 (relay X0 closed on Majkee's GO, relay X1 `relay-X1-probes` opened by him; origin bed stopped and closed by Majkee — moved to Solved; C04 custody entry added by the exec desk on his direct word; whole-folder custody entry added by the engineer) · 2026-11-21 (VIST line ledger merged in; reshaped to Open / Standing / Solved; first relay session row added; one prospective rule dropped in that step was restored after cartan's check, relay-X0-carryover cycle 06)
 by: nablarva.cartan (2026-11-19 text) · myShell (claude, home) — merge on Majkee's direct request 2026-11-21 ·
   engineer (trajectory, claude, home) — session-open row for relay-X0-carryover, 2026-11-21; origin-bed STOP row, 2026-11-22 ·
-  exec desk's Astrobley child (codex, home) — C04 custody entry, 2026-11-21, on Majkee's direct word
+  exec desk's Astrobley child (codex, home) — C04 custody entry, 2026-11-21, on Majkee's direct word ·
+  lead of relay-X2-research (flight, claude 689d87d0, home) — the `relay-X3-pty` entry under Standing, 2026-11-26, on Majkee's direct word
 ---
 
 # relay · line X · ledger
@@ -54,6 +55,20 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
   (first by myShell on his word, then renumbered to cover research, [decision](relay-X1-probes/raw/decision.majkee.l14-names.2026-11-23.md)).
   New experimental routing does not bypass that research/triangulation sequence when the work falls under it.
   The existing stridulatrix organ name is unchanged.
+  - **`relay-X3-pty` stays reserved and is not closed for good** (Majkee 2026-11-26, entered by the lead of
+    `relay-X2-research` on his direct word; no bed is opened by this entry). The idea it is kept for: one uniform,
+    vendor-neutral core in code — a mailbox whose header names sender and recipient, with a receipt coming back as a
+    file — and one adapter per vendor, chosen by who the recipient is; code rings, no agent types into a foreign
+    pane; the pointer stays a short text that names a file. Waking the recipient is the unsolved part.
+    His words: [answer 6](relay-X2-research/raw/decision.majkee.brief-and-check.2026-11-26.md) ·
+    Symmetry's side note, untested: [note](relay-X2-research/raw/note.symmetry.codex-submit-and-wake.2026-11-26.md).
+    The one small question, if it ever opens (the note's §3): on the installed Codex CLI in the installed tmux on this
+    host, for which way of writing (plain keystrokes, bracketed paste) and which gap before Enter does a one-line
+    pointer submit — counted over a named number of tries, with submission read from the rollout and not from the screen.
+    It comes back when one of these holds ([verdict §10](relay-X2-research/research-verdict.md), and one more):
+    the verdict's falsifier is observed — more than two of fifty consecutive pointers that the operator had to carry
+    or repair, counted from zero as of 2026-11-26 · tmux releases program status (OSC 7501) · Majkee decides the
+    carrier (verdict §7) · Majkee's own word.
 - Shared temporary practice: [BUS file-poke chapter](../../../../reposoma/raw.guides/bus/res/file-poke.md) —
   canonical location is `~/reposoma/raw.guides/bus/res/file-poke.md`; not owned by the one VIST bed. RUNBOOKs
   using it carry its retirement obligation. Preserve launched/frozen RUNBOOKs; retain a retired chapter pointer
