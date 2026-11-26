@@ -16,8 +16,8 @@ gate: >
   status row · metadata pane) tried side by side on a separate tmux server, each checked for whether inspection and one
   pointer line still reach the intended pane; one recommended smallest first version, with the place for the chess clock.
   No helper is built yet.
-participant_1: [lead.seswin, {brand: claude, model: set by Majkee at launch, effort: set by Majkee at launch}, host: home, role: "head and status_owner — the flight build; tmux session `seswin`, window `lead`; plans, writes the assignments, verifies, commits by file name; asks for every release"]
-participant_2: [audit.seswin, {brand: codex, model: set by Majkee at launch, effort: set by Majkee at launch}, host: home, role: "a fresh Oraculum session; tmux session `seswin`, window `audit`; thinks with the lead and criticises honestly while the work is conceptual; witness of the packet when the sandbox part arrives; writes no code herself"]
+participant_1: [lead.seswin, {brand: claude, model: opus-5.5, effort: xhigh}, host: home, role: "head and status_owner — the flight build; tmux session `seswin`, window `lead`; plans, writes the assignments, verifies, commits by file name; asks for every release"]
+participant_2: [audit.seswin, {brand: codex, model: GPT-6.2-Astra, effort: high}, host: home, role: "a fresh Oraculum session; tmux session `seswin`, window `audit`; thinks with the lead and criticises honestly while the work is conceptual; witness of the packet when the sandbox part arrives; writes no code herself"]
 participant_3: [supervisorCli, {brand: codex, model: gpt-6.1-sol, effort: max}, host: home, role: "one fresh seat shared with the relay line and, later, with group 2; window `supervisorCli` in `helloWorld`; pushes on a head's poke, runs bounded work a POINT names, makes caches on request"]   # his roster says effort max; its footer showed high on 2026-11-26
 participant_4: [majkee, {brand: human}, host: home, role: "every release; starts the seats and the sample sessions; trust and permission dialogs; GO or STOP"]
 participant_5: [exec, {brand: codex}, host: home, role: "his decision desk, shared by all lines, window `exec`; takes him through a sheet and records his words"]
@@ -40,24 +40,26 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
   `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp.decisions.majkee.2026-11-22.md`, section 7. Generation X, host home.
 - **Roster, in his syntax** — `seat|who it may spawn`; `a-><b> : [task]` means a spawns b for that task. Three seats, and he wants
   no more for a bigger task. His file: `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/roster-proposal.eSharp.md`.
-  - `lead.seswin|houston|trajectory|delta|epoch`
+  - `lead.seswin|houston|trajectory|delta|epoch` — as launched on 2026-11-26 its session is named `lead|trajectory|delta|epoch|assay`;
+    the lead settles the list with Majkee when it binds.
   - `audit.seswin|houston|astrobley` — "Can provide tests" in his roster is the leave to commission tests from `astrobley`.
   - `supervisorCli|houston|astrobley|oraculum`
 - **Where things run.** Every seat lives on the usual tmux server: this group in its own tmux session `seswin` (windows `lead`
   and `audit`, one pane each), the shared seats in `helloWorld` (`supervisorCli`, `exec`, `eSharp`). A window name carries no
   dot — tmux reads a dot in a target as the pane separator; the nicks keep theirs. The tree and its reasons are in the
   decisions record, section 10; Majkee's own map is in his roster.
-- **Where things are tried.** On a separate server, `tmux -L session-window`, made by the group's prepared script after
-  Majkee's yes — the third of the four rules he accepted. He has also prepared a tmux session `sandbox` on the usual server;
-  the group does not use it unless he says so. The manager leaned to it and withdrew that after the opposing read
-  (`eSharp/_bus/03.seniorDev.return.md`): on the usual server a wrong target can name a live seat, and a global option reaches
-  every session. What a fresh server lacks of his real tmux settings is copied into the test setup, and every difference left
-  is listed in the packet. The scratch folder is `~/.cache/nablarva/session-window/`. His word is asked: decisions, section 11.
+- **Where things are tried.** On the separate tmux server Majkee made himself on 2026-11-26: `tmux -L sandbox-server`, session
+  `sandbox`, four shell windows — `codex-sample` (`%0`), `claude-sample` (`%1`), `session` (`%2`), `terminal` (`%3`). This
+  group uses the two sample windows and `session`; `terminal` is group 2's. Window and pane ids there are local to that server
+  and can repeat ids of the usual one, so every command names the server and checks its target there before it changes
+  anything. The server is shared with group 2: only options of that session and its windows are set, nothing global. What it
+  lacks of his real tmux settings is copied into the test setup, and every difference left is listed in the packet. The
+  scratch folder is `~/.cache/nablarva/session-window/`. His map: chapter 6 of his roster.
 - **The sandbox release is proposed, not given.** Its wording (sheet 2, A3): "Inside its own tmux server and its own scratch
   folder (`~/.cache/nablarva/<line>/`), with harmless commands, the group may build, run and stop what it needs without asking —
   including typing into its own test panes there. Everything outside — `helloWorld`, any seat's pane, your daily shell, ia-sync
   and its deploy, office — returns to you. Sample CLI sessions are started by you from a prepared script, as in the relay
-  probes." Until his yes is in a decision file in this bed's `raw/`, steps 3 and 4 below are NOT RUN and nobody starts that server.
+  probes." Until his yes is in a decision file in this bed's `raw/`, steps 3 and 4 below are NOT RUN and nothing is run or typed on that server.
 - **What needs no release:** reading, the field list, the plan, the sheets, the spawns the roster names, and coordination pokes —
   those are the lead's own call (`/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X1-probes/raw/decision.majkee.pokes-and-continuity.2026-11-22.md`).
 - **Never into Git** — this repository's GitHub remote is public: caches, raw pane captures, transcripts, raw status-line input
@@ -84,8 +86,8 @@ group 1 of the experimental shape `eSharp`; group 2 (the shared terminal) starts
    that it is displayed.
 2. **Read back, then ask.** One sheet through the exec desk: the plan read back, the sandbox release as worded above, and the
    script that starts the sample sessions. `audit.seswin` reads the sheet first, once.
-3. **Capture what is really received** — needs the release. Majkee starts one sample Claude session and one sample Codex session
-   from the prepared script, on the sandbox server. The Claude sample gets its own settings file from the scratch folder
+3. **Capture what is really received** — needs the release. Majkee starts one sample Claude session in the window
+   `claude-sample` and one sample Codex session in `codex-sample`, from the prepared script. The Claude sample gets its own settings file from the scratch folder
    (`claude --settings <file>`), whose status-line command also writes its input there; the deployed hook is not touched.
    The Codex sample is read only: nothing is typed into it, and what it would receive stays NOT RUN.
 4. **The three routes side by side** — needs the release. Before the first check the lead writes down the two everyday paths —
@@ -170,7 +172,8 @@ The draft chapter on cross-vendor seats would name this exchange `mail`; the par
   the live `/home/hruzam/.claude/settings.json`. No `deploy.sh`.
 - **The seat sessions are not rearranged:** no option, status row, pane or window of `helloWorld` or `seswin` — nothing on the
   usual tmux server — is changed for a test.
-  Never `tmux kill-server`, on any server; the sandbox is stopped session by session, by name.
+  Never `tmux kill-server`, on any server. The sandbox server and its session are Majkee's; the group closes only the
+  panes and windows it made there.
 - A trust or permission dialog on a sample is cleared by Majkee's hand only. A process nobody started stops the run.
 - ovitmugen (`/home/hruzam/ia-sync/zsh/session/ovitmugen.*`) is read as evidence and not changed; it stays a separate client.
 - The closed bed `/home/hruzam/unikuklatrix/nablarva/.dev/session/session-window-X0-substrate/` is read, never written.

@@ -2,7 +2,7 @@
 kind: operator words, verbatim — the experimental shape `eSharp`. Noncanonical record; it opens no session and releases nothing.
 from: majkee, typed in the engineer session (claude d1ca16e9-073e-46d9-ba7d-26a816c38a67) on home, 2026-11-22
 recorded_by: trajectory, in that session — so that his words survive the clear of the session
-continued: 2026-11-25 and 2026-11-26 — sections 7 to 11 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting, his six points and the tmux tree, the name and his roster)
+continued: 2026-11-25 and 2026-11-26 — sections 7 to 12 (his answers to sheet 1, his voice answers to sheet 2, the auto-compact setting, his six points and the tmux tree, the name and his roster, the sandbox server)
 ---
 
 # eSharp — what Majkee said, what I answered, what he agreed
@@ -330,9 +330,44 @@ made by the group's script after his yes. **My recommendation now: the release a
 `tmux -L session-window`; his session `sandbox` is not used by the groups.** The reworded release above is withdrawn, and the
 gate keeps its words.
 
+## 12. The whisper, the two seats of group 1, and the sandbox server
+
+Typed at the computer on 2026-11-26 at 02:00 UTC (three in the night, his time); copied by script from the session transcript.
+
+**Majkee:**
+> 0. myShell pane: this is claude native whisper, theoreticaly I can look, if possble to switch off, if disturbing.
+>
+> ---
+>
+> 1.`seswin` lead + audit are running, you may brief them.
+> 2. sandbox tmux server created: see in `/home/hruzam/unikuklatrix/nablarva/.dev/session/eSharp/roster-proposal.eSharp.md` chapter `# 6. SANDBOX` LN224-242
+>
+> ---
+>
+> 3. I am going read files which you pointed for me in `eSharp.decisions.majkee.2026-11-22.md`
+
+**My reading — mine, not his words.**
+- **0. The whisper.** The text I saw in myShell's input row was Claude's own suggestion for the next prompt, not his draft. I
+  can tell the two apart without his help: with a suggestion the cursor stays at the start of the row, with typed text it sits
+  behind the text. So it need not be switched off for me. If he wants it off: `/config`, item "Prompt suggestions"; or
+  `"promptSuggestionEnabled": false` in a settings file; or `CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION=false`
+  (https://code.claude.com/docs/en/interactive-mode.md, read by a `claude-code-guide` child on 2026-11-26). The documentation
+  does not say what a bare Enter does while a suggestion is shown — so the rule for every pointer line into a Claude pane
+  stays: look after the paste, and press Enter only when my own line is in the row.
+- **1. Group 1's seats.** `seswin:lead` (pane `%80`, Claude, the flight build on Opus 5.5) and `seswin:audit` (pane `%81`,
+  Codex, Oraculum profile) run. Each got its brief: `eSharp/_bus/07.manager.point.md`, `eSharp/_bus/08.manager.point.md`.
+  The pen is still his to give.
+- **2. The sandbox server.** He made it himself: `tmux -L sandbox-server`, session `sandbox`, four shell windows (his roster,
+  chapter 6). It is one server for both groups — not one each, as sheet 1 (E4) and my frame had it. I follow his: group 1's
+  RUNBOOK, STATUS and the board now name it; group 1 uses `codex-sample`, `claude-sample` and `session`, group 2 `terminal`.
+  With that the question of section 11 is closed: a separate server, his. **The release itself is still not given**: he made
+  the place, he has not yet said what the group may do in it. The lead asks at its read-back (RUNBOOK, step 2) with the
+  wording of sheet 2, A3.
+- **3.** He reads the files this record points at.
+
 ## Not decided here
 
-- The sandbox release (sheet 2, A3; section 11): worded, recommended on a separate tmux server, not given.
+- The sandbox release (sheet 2, A3): worded, not given. The place is settled — his server `tmux -L sandbox-server` (section 12).
 - The rule for what may go to the public remote, and how caches travel between hosts — his research; the ignore rule he answers in sheet 2.
 - The organ of the terminal line (O1).
 - The UI of the helper surface — spare places, controls of a shared terminal (section 10, point 6).
