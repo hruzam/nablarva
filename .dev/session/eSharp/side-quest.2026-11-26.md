@@ -2,8 +2,8 @@
 kind: side-quest — a first collection by the eSharp manager, from its own work in the relay beds and in eSharp. Experience and views, no verdict. Noncanonical.
 asked_by: Majkee, in his roster of 2026-11-26, section 0 ("collect syntax due session work experiences")
 by: the eSharp manager (trajectory · claude · home) · 2026-11-26
-also_asked: myShell (continuity) — request.myShell.side-quest.2026-11-26.md · seniorDev (opposition) — after her first RETURN
-state: second pass. Sections 3, 5 and 7 are my views; seniorDev's opposing read is folded in as section 8. myShell's part is not asked yet — her input row was not empty.
+also_asked: myShell (continuity) — request.myShell.side-quest.2026-11-26.md, answer.myShell.side-quest.2026-11-26.md · seniorDev (opposition) — _bus/05.seniorDev.return.md
+state: third pass, closed for now. Sections 3, 5 and 7 are my views; section 8 is seniorDev's opposing read; section 9 is myShell's view from outside; section 10 is what I would put before Majkee.
 ---
 
 # Side-quest — syntax, rosters, the supervisor seat, caches, the poke as mail, the RUNBOOK shape
@@ -150,3 +150,54 @@ Her file: `_bus/05.seniorDev.return.md`. All three views hold with changes. What
 **What she adds.** Follow one dissenting RETURN all the way to your decision sheet, and ask whether you saw the objection that
 could have changed your choice. Today's case is the first: her dissent on the sandbox is in the decisions record, section 11,
 and in my report to you, beside my own withdrawn view.
+
+## 9. The view from outside — myShell, 2026-11-26
+
+Her file: `answer.myShell.side-quest.2026-11-26.md`. She watched the same days across your tasks. What she saw that I did not:
+
+**Read wrongly**
+- **A question about "the pen" without the bed's name** — the answer was applied to the wrong bed.
+- **An example taken as the order** — one sample name in a sentence was read as the rule.
+- **"Queued", exit 0, read as delivered.** One line arrived two days later.
+- **Times without a zone**, and a morning check reused in an afternoon answer.
+- The dim suggestion on a Claude input row, read as typed text — my own case of yesterday.
+
+**Where the thread broke**
+- A handoff read only by its author. Context figures that were spoken and never filed. A cache that was stale on two points
+  nine hours after it was written — and it was only 70 lines. Copies and tools kept in a private place with no pointer in
+  the bed. Reserved names in a lock that disagreed with the live line.
+- **What would have held it:** every claim says when it was checked and by whom; every thing kept outside the bed gets one
+  line in STATUS.
+
+**What the window lock should hold** — her list, and I take it as it stands: the window's name and its former names; session
+id and pane id with the time they were read; the bed and its STATUS path; who holds the pen; the last decision file; open
+threads as paths; the next step; the writer and the time. **Left out:** copied gate text, percentages, lessons, content,
+anything private. And a warning: windows were renamed twice in three days, so the key itself moves.
+
+**Rosters**
+- **Missed:** a reader who is not the author at every hand-over; and an owner for the session-window line, which had none
+  for days.
+- **There without need (her guess):** the predecessor kept "on call" after the new lead had bound. And she herself sent the
+  controller two copy jobs that any child could have done — the drift I named in section 3, seen in practice.
+
+**Where my collection was wrong**
+- Section 1, "the line carries no instruction": one of her notes carried new names in the line itself.
+- Section 2, "one desk records your words": your words were also typed to her and to the lead. **A decision given in one
+  seat's window reaches a bed only if that seat writes a file there. That seam has no owner.**
+
+## 10. What I would put before you — mine, for your word
+
+1. **The pointer line stays as it is,** with two additions: it names the bed whenever it is about a pen or a decision, and
+   every time in a file carries its zone.
+2. **"Queued" is not "delivered".** The receipt is the answer file. A line can arrive days late, so its label should let the
+   receiver see how old it is.
+3. **Your words reach a bed by a file, whoever heard them.** The seat you type to writes the decision file in the bed
+   concerned, as the lead did with the pen today, or passes a pointer to that bed's head. This closes the seam in section 9.
+4. **The cache is a lock, not a memory:** her field list, keyed by the tmux window with its former names, with writer and
+   time, read as "true when written". Who writes it is still open.
+5. **Every hand-over gets one reader who did not write it,** and every line has an owner at all times.
+6. **The supervisor keeps the push.** Its other two uses are not shown yet; a job a child can do stays with the child.
+7. **Measure one closed cycle** before judging the shape — seniorDev's counts in section 8, against a lead and an auditor
+   working alone.
+8. **If the shape stays:** one protocol chapter in the runbook guide and one page per arc that names an owner for every seam.
+   No RUNBOOK for eSharp itself.

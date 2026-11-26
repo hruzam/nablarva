@@ -56,7 +56,7 @@ Where things are tried: Majkee's separate tmux server, `tmux -L sandbox-server` 
 
 - The sandbox release for group 1 (sheet 2, A3): worded, not given. The lead asks Majkee for it at its read-back.
 - The exec desk has not been told about this board.
-- myShell is not asked for her part of the side-quest yet (`eSharp/request.myShell.side-quest.2026-11-26.md`): her input row was in use each time the manager looked.
+- The side-quest is collected in three passes — the manager, `seniorDev`, myShell: `eSharp/side-quest.2026-11-26.md`. Its section 10 lists eight points that wait for Majkee's word.
 - The relay group hears about the shared `supervisorCli` and the two projects from Majkee himself (sheet 1, E3; decisions, section 10).
 - The relay bed stays open for a few experiments of his; he retires it himself.
 
