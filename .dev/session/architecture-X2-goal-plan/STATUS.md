@@ -1,7 +1,7 @@
 # STATUS: architecture-X2-goal-plan
 
 ```yaml
-updated: 2026-11-27 04:25 UTC
+updated: 2026-11-27 05:32 UTC
 writer: lead (flight) · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8
 host: home · hruzam
 worktree: '/home/hruzam/unikuklatrix/nablarva · core · HEAD cda56e5 at authoring, one local commit ahead of the remote (78be1c2). Not this bed''s and left alone: .dev/_backlog/ (Majkee''s), .dev/session/relay-X2-research/roster.md (his).'
@@ -13,8 +13,13 @@ checkpoint: >
   for Majkee) are in it. Six keys. The ask is open in raw/decision.majkee.goal-plan.2026-11-27.md.
 in_flight: |
   - open with Majkee: his keys K1 to K6, or STOP, in raw/decision.majkee.goal-plan.2026-11-27.md.
-  - POINT 02 → controller: a checkpoint commit of this bed's files and the pulse.md row, and one push.
-  - no child of the lead is running. A heartbeat timer may still fire once; it needs no action.
+  - cycle 02 closed (ACCEPT): checkpoint 547ee1c and the controller's receipt 14b9f1e are on the remote. On disk and
+    not committed: _bus/02.lead.verdict.md, the last lines of raw/pokes.log.md, this STATUS.
+  - RESTING since 2026-11-27 05:32 UTC: no POINT is out, no child runs, no watch and no timer runs. The lead watched the
+    decision file for 56 minutes after the ask (two watches of 28 minutes, the last ended 05:32 UTC); Majkee wrote
+    nothing into it and nothing in the lead's pane. The lead stopped watching on purpose — an idle wake costs tokens.
+  - to resume, any head: read GOAL.plan.md, then raw/decision.majkee.goal-plan.2026-11-27.md; if his block is still
+    empty there is nothing to do but wait for him.
   - poke count: ten routine pointers in the window with POINT 02 (eight carried in), none where the operator had to
     step in.
 recovery_probe: >
