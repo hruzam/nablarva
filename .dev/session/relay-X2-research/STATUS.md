@@ -1,7 +1,7 @@
 # STATUS: relay-X2-research
 
 ```yaml
-updated: 2026-11-26 23:59 UTC
+updated: 2026-11-27 00:40 UTC
 writer: lead · flight · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8 (Fable 5.2, effort high) · tmux pane %70, window `lead`, session group helloWorld · woken by Majkee on 2026-11-26 with the cold-start card
 host: home (hruzam)
 worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD a48c313 when this was written, level with the local origin/core ref (no fetch was made) · other sessions commit here; dirty paths that are not this bed's — .dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md, .dev/session/eSharp/roster-proposal.eSharp.md, nano.2280604.save (untracked, repository root)
@@ -77,7 +77,10 @@ checkpoint: >
   REVISION 2; the ledger entry and the poke log's counted field are aligned. Cycle 14 closed (ea395e5, on the remote). Cycle 13
   closed (ACCEPT): the auditor confirmed the seven corrections and that nothing of the blind answer entered the
   ranking, and asked for seven wordings — the verdict's §5 and closing note, the log's counting rule (planned
-  samples are skipped, not counted as no), four places in the differences. Taken, its sentences verbatim.
+  samples are skipped, not counted as no), four places in the differences. Taken, its sentences verbatim. Cycle 16
+  closed (24a887d, on the remote). Cycle 15 closed (ACCEPT): the auditor's PASS — Majkee can be asked GO or STOP on
+  the files as they stand; REFUSE remains the recommendation. RUNBOOK step 6's check is done. The one ask is open:
+  raw/decision.majkee.gate.2026-11-27.md, for him to write into.
   A notice from the eSharp manager (its _bus/11), addressed
   to the head of relay-X1-probes, reached this window at about 04:02 UTC; read, it changes nothing in this bed.
 routing: >
@@ -108,12 +111,16 @@ harvest_rows: >
   adopted — the exec desk answers from files first; Majkee is asked only for the gate word, the brief, a release or a
   lock. U23 adopted — a present state is looked at in the same turn, or carries its observation time and the pending check.
 in_flight: |
-  as of the `updated:` time above; raw/pokes.log.md has what the carrier answered and when each watch ends
-  - POINT 15 → auditor (63% context at 23:57 UTC): one last look at the seven wordings as they landed; PASS or
-    REVISE; 10 minutes at most. No fourth round for anything that does not bear on what Majkee decides.
-  - POINT 16 → controller: one commit of seven named paths (the verdict, the lead's differences, the poke log,
-    cycles 13 and 14) and one push.
-  - no child of the lead is running; nothing is open with Majkee until RETURN 15 is in.
+  as of the `updated:` time above; raw/pokes.log.md has what the carrier answered and when the watch ends
+  - open with Majkee: GO or STOP on research-verdict.md, in raw/decision.majkee.gate.2026-11-27.md.
+  - POINT 17 → exec desk (pane %68), on Majkee's own word (raw/decision.majkee.exec-walk.2026-11-27.md): brief
+    itself, RETURN "ready" within 25 minutes, then walk him through what his GO or STOP means — in its pane, at his
+    pace, every code said in full, plain English, examples. It explains; it does not decide and writes nothing into
+    the gate file.
+  - on disk and not committed: _bus/15.auditor.return.md, _bus/15.lead.verdict.md, _bus/16.controller.return.md,
+    _bus/16.lead.verdict.md, raw/pokes.log.md (from p15's outcome on), raw/decision.majkee.gate.2026-11-27.md,
+    raw/decision.majkee.exec-walk.2026-11-27.md. They go with the closing commit. The remote is at 24a887d.
+  - poke log, p11 to p16: six routine pointers, none where the operator had to step in.
 recovery_probe: |
   commands (read-only):
     sed -n '1,12p' /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/STATUS.md
@@ -139,9 +146,10 @@ holds: >
   The blind answer is not read before research-verdict.md is committed. The seats seniorDev, myShell, eSharp and
   supervisorCli are not poked.
 next: >
-  VERDICTs on RETURNs 15 and 16. On the auditor's PASS: the one ask to Majkee — GO or STOP on research-verdict.md
-  (with ERRATUM 1), the differences beside it — in a file he writes into, raw/decision.majkee.gate.*.md. At
-  closure: the line ledger's row for this bed, the provisional file-poke's debt accounted for, the process record
-  to .dev/observations/, and the counting rule handed to whoever writes the next poke logs.
-expected: _bus/15 and _bus/16 with RETURN and VERDICT; raw/decision.majkee.gate.*.md with GO or STOP.
+  RETURN 17 (ready) and its VERDICT; tell Majkee the exec desk is ready. After the walk: his word in
+  raw/decision.majkee.gate.2026-11-27.md — a bell from a seat is never it; he said he will then finish a file with
+  the lead. Then closure: the status line of the gate file; the line ledger's row for this bed with the provisional
+  file-poke's debt accounted for; the process record to .dev/observations/; the counting rule handed to whoever
+  writes the next poke logs; one closing commit and push through the controller.
+expected: _bus/17.exec.return.md; then raw/decision.majkee.gate.2026-11-27.md with GO or STOP between his markers.
 ```
