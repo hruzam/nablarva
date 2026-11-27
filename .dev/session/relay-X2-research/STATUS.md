@@ -1,7 +1,7 @@
 # STATUS: relay-X2-research
 
 ```yaml
-updated: 2026-11-27 03:52 UTC
+updated: 2026-11-27 03:54 UTC
 writer: lead · flight · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8 (Fable 5.2, effort high) · tmux pane %70, window `lead`, session group helloWorld · woken by Majkee on 2026-11-26 with the cold-start card
 host: home (hruzam)
 worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD a48c313 when this was written, level with the local origin/core ref (no fetch was made) · other sessions commit here; dirty paths that are not this bed's — .dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md, .dev/session/eSharp/roster-proposal.eSharp.md, nano.2280604.save (untracked, repository root)
@@ -117,7 +117,8 @@ in_flight: |
     file-poke debt under Open); the process record .dev/observations/relay-X2-research.flight.2026-11-27.md; this
     bed's row removed from pulse.md. The bed is closed for the record and left tracked, as relay-X1-probes was: its
     verdict is read by path.
-  - POINT 18 → controller: the closing commit of the named paths and one push.
+  - closing commit bf1d2de (fourteen named paths) and the controller's RETURN 18 (78be1c2), both on the remote; the
+    remote head was 78be1c2 at the lead's own look. No VERDICT 18 is written: the bed is closed, the check is this line.
   - not committed on purpose: roster.md (Majkee's; it quotes his private journal) and everything under
     .dev/_backlog/ (his).
   - owed and carried, not this bed's any more: the planning assignment (ledger, Open); a harvest pass over
@@ -151,5 +152,5 @@ next: >
   Nothing in this bed after the controller's closing commit. What opens next is in relay-X.ledger.md, Open — the
   planning assignment, with Majkee's remarks of 2026-11-27 (own worktree for a second development; tests in a
   session worktree; less bureaucracy).
-expected: _bus/18.controller.return.md; then no further file in this bed.
+expected: no further file in this bed.
 ```
