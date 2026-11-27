@@ -150,8 +150,8 @@ Exit 0 shows that the queue accepted the call, nothing more.
 - line: `[poke p15] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/15.lead.point.md — one last look at the wordings`
 - carrier: called before 2026-11-26T23:59:29Z · exit code 0 · output (first line): `Queued message 01a21a4c-c929-7033-bbd3-ec1e77b91bc6 for thread 01a1ffdf-793f-76d2-8497-3f68f84a34a7.`
 - watch: on `_bus/15.auditor.return.md`, ends 2026-11-27T00:13:29Z
-- RETURN seen: —
-- operator had to step in: —
+- RETURN seen: 2026-11-26T23:59:52Z (the watch) · the auditor: PASS — "Lead can ask Majkee for GO or STOP on the files as they stand" · VERDICT 15: ACCEPT · its footer: 61% context left at 00:00:34Z
+- operator had to step in: no
 
 ## p16 — lead → controller (pane %59) · `codex queue`
 - authority: RUNBOOK prompt-2; Majkee 2026-11-26, raw/decision.majkee.go-and-routing.2026-11-26.md; file-poke chapter (provisional)
@@ -160,6 +160,26 @@ Exit 0 shows that the queue accepted the call, nothing more.
 - line: `[poke p16] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/16.lead.point.md — commit the wordings and push`
 - carrier: called before 2026-11-26T23:59:42Z · exit code 0 · output (first line): `Queued message 01a21a4c-f9fc-7141-aeb0-56672c0ca98a for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
 - watch: on `_bus/16.controller.return.md`, ends 2026-11-27T00:11:42Z
-- RETURN seen: —
+- RETURN seen: 2026-11-27T00:00:22Z (the watch) · commit 24a887d of the seven named paths; the push carried a342ed6 and 24a887d; remote at 24a887d (the lead's own look, 00:00:34Z) · the reply bell r16 reached the lead's pane afterwards · VERDICT 16: ACCEPT
+- operator had to step in: no
+
+## p17 — lead → exec desk (pane %68) · `codex queue`
+- authority: Majkee 2026-11-27, raw/decision.majkee.exec-walk.2026-11-27.md; file-poke chapter (provisional)
+- file first: `_bus/17.lead.point.md`, committed before the poke (02a9d72)
+- looked first (2026-11-27T00:40:49Z): footer shows thread 01a1fefc-0356-7ea1-860c-783a66a91211, input row empty, not working · Context 93% left
+- line: `[poke p17] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/17.lead.point.md — brief yourself, then walk Majkee through his gate decision`
+- carrier: called before 2026-11-27T00:40:49Z · exit code 0 · output (first line): `Queued message 01a21a72-a0b7-77b1-9fee-efd87f7f4b1d for thread 01a1fefc-0356-7ea1-860c-783a66a91211.`
+- watch: on `_bus/17.exec.return.md`, ends 2026-11-27T01:10:49Z
+- RETURN seen: 2026-11-27T00:41:48Z (the watch; about a minute after the call) · the exec desk: READY; three mismatches noted, one taken into the gate file (the RUNBOOK names no consequence for STOP) · VERDICT 17: ACCEPT · its footer: 90% context left at 00:41:52Z
+- operator had to step in: no
+
+## p18 — lead → controller (pane %59) · `codex queue`
+- authority: Majkee 2026-11-27, GO — raw/decision.majkee.gate.2026-11-27.md; file-poke chapter (provisional)
+- file first: `_bus/18.lead.point.md`, committed before the poke (8b6b386)
+- looked first (2026-11-27T03:52:36Z): footer shows thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318, input row empty, not working · Context 80% left
+- line: `[poke p18] read /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/_bus/18.lead.point.md — the closing commit and push`
+- carrier: called before 2026-11-27T03:52:36Z · exit code 0 · output (first line): `Queued message 01a21b22-3688-75d1-9cd4-cd0d65f27c01 for thread 01a1ff5e-6fa1-75e1-88f9-33b8c7fe6318.`
+- watch: on `_bus/18.controller.return.md`, ends 2026-11-27T04:04:36Z
+- RETURN seen: — (the bed is closed; the outcome is in the controller's RETURN 18 and in git log)
 - operator had to step in: —
 

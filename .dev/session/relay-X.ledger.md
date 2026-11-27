@@ -9,11 +9,12 @@ authority: Majkee 2026-11-19 — shared provisional protocol and future communic
 naming: relay-X{0,1,…}-<phase> for experimental coordination sessions; first session `relay-X0-carryover` opened 2026-11-21
 attach: Delivery/coordination development; stridulatrix remains the named delivery organ under L13; no new organ adopted
 absorbs: vist-X.ledger.md (VIST · line X) — merged 2026-11-21; tombstone kept at the old address
-updated: 2026-11-26 (entry under the reserved `relay-X3-pty`, on Majkee's direct word in relay-X2-research — the idea it is kept for and its return conditions; written 2026-11-26 23:44 UTC) · 2026-11-22 (relay X0 closed on Majkee's GO, relay X1 `relay-X1-probes` opened by him; origin bed stopped and closed by Majkee — moved to Solved; C04 custody entry added by the exec desk on his direct word; whole-folder custody entry added by the engineer) · 2026-11-21 (VIST line ledger merged in; reshaped to Open / Standing / Solved; first relay session row added; one prospective rule dropped in that step was restored after cartan's check, relay-X0-carryover cycle 06)
+updated: 2026-11-27 (relay X2 closed on Majkee's GO; what opens next and the intervention count carried under Open) · 2026-11-26 (entry under the reserved `relay-X3-pty`, on Majkee's direct word in relay-X2-research — the idea it is kept for and its return conditions; written 2026-11-26 23:44 UTC) · 2026-11-22 (relay X0 closed on Majkee's GO, relay X1 `relay-X1-probes` opened by him; origin bed stopped and closed by Majkee — moved to Solved; C04 custody entry added by the exec desk on his direct word; whole-folder custody entry added by the engineer) · 2026-11-21 (VIST line ledger merged in; reshaped to Open / Standing / Solved; first relay session row added; one prospective rule dropped in that step was restored after cartan's check, relay-X0-carryover cycle 06)
 by: nablarva.cartan (2026-11-19 text) · myShell (claude, home) — merge on Majkee's direct request 2026-11-21 ·
   engineer (trajectory, claude, home) — session-open row for relay-X0-carryover, 2026-11-21; origin-bed STOP row, 2026-11-22 ·
   exec desk's Astrobley child (codex, home) — C04 custody entry, 2026-11-21, on Majkee's direct word ·
-  lead of relay-X2-research (flight, claude 689d87d0, home) — the `relay-X3-pty` entry under Standing, 2026-11-26, on Majkee's direct word
+  lead of relay-X2-research (flight, claude 689d87d0, home) — the `relay-X3-pty` entry under Standing, 2026-11-26, on Majkee's direct word;
+  the session-close rows, 2026-11-27
 ---
 
 # relay · line X · ledger
@@ -23,10 +24,19 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 
 ## Open
 
-- [ ] relay X2 `relay-X2-research` — opened by Majkee 2026-11-26 with the L14 research gate (REINVENT, ADOPT or REFUSE on the
-  relay program); RUNBOOK authored by the closing head of X1 · gate, pen, team and progress
-  live only in its [STATUS](relay-X2-research/STATUS.md) · [opening word](relay-X2-research/raw/decision.majkee.open.2026-11-26.md) ·
-  starting document [handoff](relay-X1-probes/raw/handoff.successor-stage.2026-11-26.md)
+- [ ] **What opens next — not opened by this ledger.** Majkee's planning assignment of 2026-11-27 to the team: one GOAL
+  plan for relay tests, the observation floor and a first consumer, a bounded hcom review, continuity and production
+  lines · [his words](relay-X2-research/raw/decision.majkee.original-intent.2026-11-27.md) ·
+  [his remarks with the GO](relay-X2-research/raw/decision.majkee.gate.2026-11-27.md) (a second development gets its own
+  worktree; how tests are treated in a session worktree; less bureaucracy) ·
+  [the architect's finding on its home](relay-X2-research/raw/consult.houston.goal-plan-home.2026-11-27.md) — a bed of its
+  own, not a relay chapter, never under the reserved `relay-X3-pty` or `relay-X4-tracker`; unchecked by a second seat ·
+  founding reference under L14: [the verdict](relay-X2-research/research-verdict.md).
+- [ ] **The count of the operator's interventions** (the verdict's falsifier; threshold accepted by Majkee 2026-11-26:
+  three in fifty consecutive routine pointers). Rule: [poke log of X2](relay-X2-research/raw/pokes.log.md), the quoted
+  block before p11. State at X2's closure: seven routine pointers (p11 to p17), none where he had to step in. The
+  next bed of the line that pokes carries the field and the rule in its own log and continues the window; planned
+  samples are skipped, a blank is unknown.
 - [ ] Open work carried out of relay X1 (handoff §2) — lines 8 to 19 of the X0 release menu and the U01 capture, never released;
   the cases X0-U01 … X0-U06; the parked exit race; the paper receiver contract. New from X1's packets, nothing tried: how long an
   accepted `codex queue` message is kept and what releases it (of two that did not arrive within their watch, one arrived
@@ -36,7 +46,8 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
 - [ ] Standing development debt — retire the provisional file-poke: qualify the actual replacement, map its
   coverage, then repair/remove the provisional chapter/manifest and authoring/future-session references under
   the accepted scope. The qualifying head owns that proposal; unresolved pieces carry forward.
-  Carried by `relay-X1-probes` until it closed on 2026-11-26; from then by the line, for the next relay bed to take up
+  Carried by `relay-X1-probes` until it closed on 2026-11-26 and by `relay-X2-research` until it closed on 2026-11-27 —
+  that bed used the chapter for seventeen pointers and qualified nothing; from then by the line, for the next relay bed to take up
   (handoff §2); text in [G7](relay-X0-carryover/goals/G7.retire-file-poke.md).
 
 ## Standing (holds while the line lives)
@@ -123,6 +134,14 @@ observation approach (L20) and as the origin bed; it no longer has a separate li
   tried once; the packets qualify no door and adopt nothing. Closed for the record and left tracked: its files are read by path ·
   [decision](relay-X1-probes/raw/decision.majkee.close.2026-11-26.md) · [handoff](relay-X1-probes/raw/handoff.successor-stage.2026-11-26.md) ·
   [STATUS](relay-X1-probes/STATUS.md) · [process record](../observations/relay-X1-probes.flight.2026-11-26.md)
+- [x] relay X2 `relay-X2-research` closed on Majkee's GO, 2026-11-27 — the L14 D4 research gate. Verdict accepted:
+  **REFUSE** first (the relay program as scoped on 2026-09-30 does not open now), then ADOPT, then REINVENT; it locks no
+  architecture and releases no build. `relay-X3-pty` stays reserved and not closed for good (Standing, above).
+  [Verdict](relay-X2-research/research-verdict.md) with Erratum 1 — the version set against the blind answer is commit
+  14e40b0 · [differences against the blind answer](relay-X2-research/raw/differences.verdict-vs-blind-answer.lead.2026-11-27.md) ·
+  [decision](relay-X2-research/raw/decision.majkee.gate.2026-11-27.md) · [STATUS](relay-X2-research/STATUS.md) ·
+  [process record](../observations/relay-X2-research.flight.2026-11-27.md). Closed for the record and left tracked: its
+  files are read by path.
 - [x] Private evidence of `relay-X1-probes` on two hosts — Majkee, gate 2 (G6) and gate 3 (H4), 2026-11-23; copied by the
   controller (cartan) from home (`hruzam`) to office (`hruzam-120922`) over the tailnet by SSH.
   [Gate 2](relay-X1-probes/raw/decision.majkee.gate-2.2026-11-23.md) · [gate 3](relay-X1-probes/raw/decision.majkee.gate-3.2026-11-23.md) ·
