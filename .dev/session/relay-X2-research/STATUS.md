@@ -1,7 +1,7 @@
 # STATUS: relay-X2-research
 
 ```yaml
-updated: 2026-11-27 00:40 UTC
+updated: 2026-11-27 03:52 UTC
 writer: lead · flight · claude 689d87d0-6d49-4c5c-ae33-7fe561e92ac8 (Fable 5.2, effort high) · tmux pane %70, window `lead`, session group helloWorld · woken by Majkee on 2026-11-26 with the cold-start card
 host: home (hruzam)
 worktree: /home/hruzam/unikuklatrix/nablarva · core · HEAD a48c313 when this was written, level with the local origin/core ref (no fetch was made) · other sessions commit here; dirty paths that are not this bed's — .dev/session/eSharp/answers.sheet-2.majkee.2026-11-25.md, .dev/session/eSharp/roster-proposal.eSharp.md, nano.2280604.save (untracked, repository root)
@@ -111,16 +111,18 @@ harvest_rows: >
   adopted — the exec desk answers from files first; Majkee is asked only for the gate word, the brief, a release or a
   lock. U23 adopted — a present state is looked at in the same turn, or carries its observation time and the pending check.
 in_flight: |
-  as of the `updated:` time above; raw/pokes.log.md has what the carrier answered and when the watch ends
-  - open with Majkee: GO or STOP on research-verdict.md, in raw/decision.majkee.gate.2026-11-27.md.
-  - POINT 17 → exec desk (pane %68), on Majkee's own word (raw/decision.majkee.exec-walk.2026-11-27.md): brief
-    itself, RETURN "ready" within 25 minutes, then walk him through what his GO or STOP means — in its pane, at his
-    pace, every code said in full, plain English, examples. It explains; it does not decide and writes nothing into
-    the gate file.
-  - on disk and not committed: _bus/15.auditor.return.md, _bus/15.lead.verdict.md, _bus/16.controller.return.md,
-    _bus/16.lead.verdict.md, raw/pokes.log.md (from p15's outcome on), raw/decision.majkee.gate.2026-11-27.md,
-    raw/decision.majkee.exec-walk.2026-11-27.md. They go with the closing commit. The remote is at 24a887d.
-  - poke log, p11 to p16: six routine pointers, none where the operator had to step in.
+  GATE CLOSED — Majkee's GO, 2026-11-27 03:50 UTC, verbatim in raw/decision.majkee.gate.2026-11-27.md (typed in the
+  lead's pane, copied by the lead). The verdict REFUSE is accepted as the recorded answer of L14 D4.
+  - closure done on disk: the line ledger (this bed under Solved; what opens next, the intervention count and the
+    file-poke debt under Open); the process record .dev/observations/relay-X2-research.flight.2026-11-27.md; this
+    bed's row removed from pulse.md. The bed is closed for the record and left tracked, as relay-X1-probes was: its
+    verdict is read by path.
+  - POINT 18 → controller: the closing commit of the named paths and one push.
+  - not committed on purpose: roster.md (Majkee's; it quotes his private journal) and everything under
+    .dev/_backlog/ (his).
+  - owed and carried, not this bed's any more: the planning assignment (ledger, Open); a harvest pass over
+    .dev/observations/ (closure rule of 2026-10-07), folded into the first check of the next launcher.
+  - poke log, p11 to p17: seven routine pointers, none where the operator had to step in.
 recovery_probe: |
   commands (read-only):
     sed -n '1,12p' /home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X2-research/STATUS.md
@@ -146,10 +148,8 @@ holds: >
   The blind answer is not read before research-verdict.md is committed. The seats seniorDev, myShell, eSharp and
   supervisorCli are not poked.
 next: >
-  RETURN 17 (ready) and its VERDICT; tell Majkee the exec desk is ready. After the walk: his word in
-  raw/decision.majkee.gate.2026-11-27.md — a bell from a seat is never it; he said he will then finish a file with
-  the lead. Then closure: the status line of the gate file; the line ledger's row for this bed with the provisional
-  file-poke's debt accounted for; the process record to .dev/observations/; the counting rule handed to whoever
-  writes the next poke logs; one closing commit and push through the controller.
-expected: _bus/17.exec.return.md; then raw/decision.majkee.gate.2026-11-27.md with GO or STOP between his markers.
+  Nothing in this bed after the controller's closing commit. What opens next is in relay-X.ledger.md, Open — the
+  planning assignment, with Majkee's remarks of 2026-11-27 (own worktree for a second development; tests in a
+  session worktree; less bureaucracy).
+expected: _bus/18.controller.return.md; then no further file in this bed.
 ```
